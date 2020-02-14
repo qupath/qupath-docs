@@ -124,8 +124,6 @@ To use it, you create an exporter for a specific ``ImageData``, customize it as 
    * Script to export image tiles (can be customized in various ways).
    */
 
-  import qupath.lib.gui.ml.TileExporter
-
   // Get the current image (supports 'Run for project')
   def imageData = getCurrentImageData()
 

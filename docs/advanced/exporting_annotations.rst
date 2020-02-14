@@ -233,7 +233,6 @@ The following script applies this to export overlapping image tiles, and associa
 
 ::
 
-  import qupath.lib.gui.ml.TileExporter
   import qupath.lib.images.servers.LabeledImageServer
 
   def imageData = getCurrentImageData()
