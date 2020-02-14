@@ -93,7 +93,7 @@ Here, I would remove any '(Opal)' parts.
   
   2. Run a script like the following:
   
-  .. code-block::
+  .. code-block:: groovy
   
     setChannelNames(
          'PDL1',
