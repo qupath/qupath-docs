@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-114,-70)">
+        <g id="Move" transform="matrix(1,0,0,1,6,70)">
+            <g transform="matrix(2,-2.44929e-16,-4.89859e-17,0.6,-131,-39.414)">
+                <path d="M121.5,80.25L121.5,84L120,79L121.5,74L121.5,77.75L125.5,77.75L125.5,74L127,79L125.5,84L125.5,80.25L121.5,80.25Z" style="fill:black;"/>
+            </g>
+            <g transform="matrix(1.01267e-15,2.00401,-0.6,8.11483e-17,163.4,-239.495)">
+                <path d="M121.497,80.25L121.497,84L120,79L121.497,74L121.497,77.75L125.503,77.75L125.503,74L127,79L125.503,84L125.503,80.25L121.497,80.25Z" style="fill:black;"/>
+            </g>
+        </g>
+    </g>
+</svg>

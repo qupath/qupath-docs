@@ -1,2 +1,0 @@
-# qupath-docs
-QuPath documentation

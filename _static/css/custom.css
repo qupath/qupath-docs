@@ -1,0 +1,15 @@
+.shadow-image {
+  box-shadow: 4px 4px 8px rgba(1, 1, 1, 0.2);
+}
+
+div.figure {
+  align: center;
+}
+
+p.caption {
+  margin: 5px;
+}
+
+.inline-icon {
+  width: 1.5em;
+}
