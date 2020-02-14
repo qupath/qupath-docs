@@ -102,8 +102,9 @@ Here, I would remove any '(Opal)' parts.
          'CD68',
          'PD1',
          'CK'
-     )
-  
+    )
+     
+
 .. tip:: 
   
   The original names are not lost.

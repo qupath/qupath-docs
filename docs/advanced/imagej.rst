@@ -28,6 +28,7 @@ The commands described here are accessible from the *ImageJ toolbar button* in Q
 .. figure:: images/imagej_toolbar.jpg
   :class: shadow-image
   :align: center
+  :width: 40%
 
   ImageJ menu in the QuPath toolbar
 
@@ -66,6 +67,7 @@ ImageJ menu in the QuPath toolbar
 .. figure:: images/imagej_downsample.jpg
   :class: shadow-image
   :align: center
+  :width: 50%
 
   ImageJ downsample value
 
@@ -116,8 +118,8 @@ In the screenshot above, the original image was sent first by running the *Send 
 QuPath objects and ImageJ ROIs
 ------------------------------
 
-The closest thing that ImageJ has to a `QuPath object <../concepts/objects>` is an ImageJ `ROI <https://imagej.nih.gov/ij/docs/guide/146-10.html#toc-Section-10>`_ (*Region Of Interest* - sometimes also called a *Selection*).
-Similarly, where QuPath stores multiple objects relating to a single image in a `hierarchy <../concepts/object_hierarchy>`, ImageJ uses `overlays <https://imagej.nih.gov/ij/docs/guide/146-11.html>`_.
+The closest thing that ImageJ has to a :doc:`QuPath object <../concepts/objects>` is an ImageJ `ROI <https://imagej.nih.gov/ij/docs/guide/146-10.html#toc-Section-10>`_ (*Region Of Interest* - sometimes also called a *Selection*).
+Similarly, where QuPath stores multiple objects relating to a single image in a :doc:`hierarchy <../concepts/object_hierarchy>`, ImageJ uses `overlays <https://imagej.nih.gov/ij/docs/guide/146-11.html>`_.
 
 ImageJ ROIs and overlays cannot represent all the same information that can be contained within QuPath objects and hierarchies, but they can contain some.
 Consequently, when sending an image region to ImageJ, QuPath uses them to make its best effort to convert its objects into the most ImageJ-friendly form that it can.
@@ -133,7 +135,7 @@ The screenshot above depicts how this works.
 The selected object within QuPath defines the region that will be sent, and - so long as it isn't a rectangle - this becomes converted into a selected ROI in ImageJ (shown in yellow in both applications).
 All other QuPath objects within the region are converted into ROIs and added to the ImageJ overlay.
 
-The names of the ROIs are also set according to how they appear in QuPath, often based upon their `classification <../concepts/classifications>`.
+The names of the ROIs are also set according to how they appear in QuPath, often based upon their :doc:`classification <../concepts/classifications>`.
 In the above screenshot, the ImageJ command :menuselection:`Image --> Overlay --> To ROI Manager` was run to create the list that is shown, where each ROI's name can be seen.
 
 .. note::
