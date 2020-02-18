@@ -13,6 +13,12 @@ This page contains answers to common questions that arise when using QuPath.
 General
 =======
 
+I can't install QuPath!
+=======================
+
+See :doc:`../intro/installation` for details and troubleshooting.
+
+
 How do I ask my own question?
 =============================
 
