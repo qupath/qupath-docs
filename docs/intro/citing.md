@@ -26,21 +26,25 @@ The following key indicates what, if anything, was cited in the main references 
 
 ### Contents
 
-### Contents
-
-* [2020](#2020) (19)
+* [2020](#2020) (26)
 * [2019](#2019) (144)
 * [2018](#2018) (48)
 * [2017](#2017) (5)
 
 ### 2020
 
+1. Ansermet, C. et al. (2020). Renal tubular Arginase‐2 participates in the formation of the corticomedullary urea gradient and attenuates kidney damage in ischemia‐reperfusion injury in mice. **Acta Physiologica**. 😞
+
 1. Arafah, K. et al. (2020). Microproteomics and Immunohistochemistry Reveal Differences in Aldo‐Keto Reductase Family 1 Member C3 (AKR1C3) in Tissue Specimens of Ulcerative Colitis and Crohn's Disease. **Proteomics: Clinical Applications**. https://doi.org/10.1002/prca.201900110 📗
 
 1. Blagih, J. et al. (2020). Cancer-Specific Loss of p53 Leads to a Modulation of
 Myeloid and T Cell Responses. **Cell Reports**. https://doi.org/10.1016/j.celrep.2019.12.028 📗
 
+1. Brial, F. et al. (2020). The Natural Metabolite 4-Cresol Improves Glucose Homeostasis and Enhances β-Cell Function. **Cell Reports**. https://doi.org/10.1016/j.celrep.2020.01.066 😞
+
 1. Caruana, D. et al. (2020). Association between low estrogen receptor positive breast cancer and staining performance. **npj Breast Cancer**. https://doi.org/10.1038/s41523-020-0146-2 📗
+
+1. Cengiz, I. F. et al. (2020). Entrapped in cage (EiC) scaffolds of 3D-printed polycaprolactone and porous silk fibroin for meniscus tissue engineering. **Biofabrication**. https://doi.org/10.1088/1758-5090/ab779f 📗
 
 1. Cummings, M. et al. (2020). Decreasing formalin concentration improves quality of DNA extracted from formalin-fixed paraffin-embedded tissue specimens without compromising tissue morphology or immunohistochemical staining. **Journal of Clinical Pathology**. https://dx.doi.org/10.1136/jclinpath-2019-206368 📗
 
@@ -48,9 +52,13 @@ Myeloid and T Cell Responses. **Cell Reports**. https://doi.org/10.1016/j.celrep
 
 1. Kaalund, S. S. et al. (2020). Locus coeruleus pathology in progressive supranuclear palsy, and its relation to disease severity. **Acta Neuropathologica Communications**. https://doi.org/10.1186/s40478-020-0886-0 😞
 
+1. Gil, K. N. et al. (2020). Rorqual whale nasal plugs: protecting the respiratory tract against water entry and barotrauma. **Journal of Experimental Biology**. https://doi.org/10.1242/jeb.219691 📗
+
 1. Karn, T. et al. (2020). A small hypoxia signature predicted pCR response to bevacizumab in the neoadjuvant GeparQuinto breast cancer trial. **Clinical Cancer Research**. https://doi.org/10.1158/1078-0432.CCR-19-1954 📗
 
 1. Kelly, L. et al. (2020). Increased Hypothalamic Projections to the Lateral Hypothalamus and Responses to Leptin in Rat Neonates From High Fat Fed Mothers. **Frontiers in Neuroscience**. https://doi.org/10.3389/fnins.2019.01454 📗
+
+1. Kubach, J. et al. (2020). Same same but different: A Web‐based deep learning application revealed classifying features for the histopathologic distinction of cortical malformations. **Epilepsia**. https://doi.org/10.1111/epi.16447 📗
 
 1. Kurppa, K. J. et al. (2020). Treatment-Induced Tumor Dormancy through YAP-Mediated Transcriptional Reprogramming of the Apoptotic Pathway. **Cancer Cell**. https://doi.org/10.1016/j.ccell.2019.12.006 📗
 
@@ -62,6 +70,8 @@ Myeloid and T Cell Responses. **Cell Reports**. https://doi.org/10.1016/j.celrep
 
 1. Morriss, N. J. et al. (2020). Automated quantification of immunohistochemical staining of large animal brain tissue using QuPath software. **Neuroscience**. https://doi.org/10.1016/j.neuroscience.2020.01.006 📗
 
+1. Mysona, B. A. et al. (2020). QuPath Automated Analysis of Optic Nerve Degeneration in Brown Norway Rats. **Translational Vision Science & Technology**. https://doi.org/10.1167/tvst.9.3.22 📗
+
 1. Orgaz, J. L. et al. (2020). Myosin II Reactivation and Cytoskeletal Remodeling as a Hallmark and a Vulnerability in Melanoma Therapy Resistance. **Cancer Cell**. https://doi.org/10.1016/j.ccell.2019.12.003 📗
 
 1. Romero, J. M. et al. (2020). A four-chemokine signature is associated with a T cell-inflamed phenotype in primary and metastatic pancreatic cancer. **Clinical Cancer Research**. https://doi.org/10.1158/1078-0432.CCR-19-2803 📗
@@ -69,6 +79,8 @@ Myeloid and T Cell Responses. **Cell Reports**. https://doi.org/10.1016/j.celrep
 1. Rowe, C. W. et al. (2020). Innervation of papillary thyroid cancer and its association with extra-thyroidal invasion. **Scientific Reports**. https://doi.org/10.1038/s41598-020-58425-5 📗
 
 1. Rubey, M. et al. (2020). DLL1- and DLL4-Mediated Notch Signaling is Essential for Adult Pancreatic Islet Homeostasis. **Diabetes**. https://doi.org/10.2337/db19-0795 📗
+
+1. Sirotkina, M. A. et al. (2020). In vivo assessment of functional and morphological alterations in tumors under treatment using OCT-angiography combined with OCT-elastography. **Biomedical Optics Express**. https://doi.org/10.1364/BOE.386419 😞
 
 1. Śledzińska, A. et al. (2020). Regulatory T Cells Restrain Interleukin-2- and Blimp-1-Dependent Acquisition of Cytotoxic Function by CD4+ T Cells.  **Immunity**. https://doi.org/10.1016/j.immuni.2019.12.007 😞
 
