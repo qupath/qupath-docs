@@ -363,6 +363,7 @@ Previously, you had to do some awkward gymnastics to convert a ``ROI`` into a ``
 Here's a script applying this to pull out a region from an RGB image for a selected ROI, and show that region in ImageJ along with a new binary mask:
 
 .. code-block:: groovy
+
   import qupath.lib.regions.*
   import ij.*
   import java.awt.Color
@@ -386,6 +387,7 @@ Here's a script applying this to pull out a region from an RGB image for a selec
   g2d.fill(shape)
   g2d.dispose()
   new ImagePlus("Mask", imgMask).show()
+
 
 The mask is generated using Java's built-in rendering of Shapes.
 
