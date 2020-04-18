@@ -255,7 +255,7 @@ If you may have a z-stack, you can define the z-slice and time point in your req
 If you have a selected object with a ``ROI`` in the image, you can also use that to create the request:
 
 .. code-block:: groovy
-  
+
   import qupath.lib.regions.*
 
   def server = getCurrentServer()
@@ -269,14 +269,14 @@ If you have a selected object with a ``ROI`` in the image, you can also use that
 
 .. note::
   The *server path* previously was an image path and it could be used to construct a new server... but this is no longer the case. Rather, the key thing now is that it must be unique for a server, since it is used for caching.
-  
+
   `server.getPath()`  may be renamed to `server.getID()` or similar in the future to reflect this.
 
 
 Creating ROIs
 =============
 
-.. warning:: 
+.. warning::
   Previously, there were public constructors for ROIs. **You shouldn't use these now!**
 
 You can create new ROIs using the static methods in the ``ROIs`` class.
@@ -360,8 +360,9 @@ Previously, you had to do some awkward gymnastics to convert a ``ROI`` into a ``
   print shape
 
 
-  Here's a script applying this to pull out a region from an RGB image for a selected ROI, and show that region in ImageJ along with a new binary mask:
-  .. code-block:: groovy
+Here's a script applying this to pull out a region from an RGB image for a selected ROI, and show that region in ImageJ along with a new binary mask:
+
+.. code-block:: groovy
   import qupath.lib.regions.*
   import ij.*
   import java.awt.Color
@@ -377,7 +378,7 @@ Previously, you had to do some awkward gymnastics to convert a ``ROI`` into a ``
 
   // Create a binary mask & show in ImageJ
   def shape = roi.getShape()
-  def imgMask = new BufferedImage(img.getWidth(), img.getHeight(), BufferedImage.TYPE*BYTE*GRAY)
+  def imgMask = new BufferedImage(img.getWidth(), img.getHeight(), BufferedImage.TYPE_BYTE_GRAY)
   def g2d = imgMask.createGraphics()
   g2d.scale(1.0/request.getDownsample(), 1.0/request.getDownsample())
   g2d.translate(-request.getX(), -request.getY())

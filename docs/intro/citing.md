@@ -26,37 +26,75 @@ The following key indicates what, if anything, was cited in the main references 
 
 ### Contents
 
-* [2020](#2020) (26)
+* [2020](#2020) (55)
 * [2019](#2019) (144)
 * [2018](#2018) (48)
 * [2017](#2017) (5)
 
 ### 2020
 
-1. Ansermet, C. et al. (2020). Renal tubular Arginase‐2 participates in the formation of the corticomedullary urea gradient and attenuates kidney damage in ischemia‐reperfusion injury in mice. **Acta Physiologica**. 😞
+1. Ansermet, C. et al. (2020). Renal tubular Arginase‐2 participates in the formation of the corticomedullary urea gradient and attenuates kidney damage in ischemia‐reperfusion injury in mice. **Acta Physiologica**. https://doi.org/10.1111/apha.13457 😞
+
+1. April-Monn, S. L. et al. (2020). 3D Primary Cell Culture: A Novel Preclinical Model For Pancreatic Neuroendocrine Tumors (PanNETs). **Neuroendocrinology**. https://doi.org/10.1159/000507669 📗
 
 1. Arafah, K. et al. (2020). Microproteomics and Immunohistochemistry Reveal Differences in Aldo‐Keto Reductase Family 1 Member C3 (AKR1C3) in Tissue Specimens of Ulcerative Colitis and Crohn's Disease. **Proteomics: Clinical Applications**. https://doi.org/10.1002/prca.201900110 📗
+
+1. Ataca, D. et al. (2020). The secreted protease Adamts18 links hormone action to activation of the mammary stem cell niche. **Nature Communications**. https://doi.org/10.1038/s41467-020-15357-y 😞
+
+1. Beck, O. et al. (2020). Safety and Activity of the Combination of Ceritinib and Dasatinib in Osteosarcoma. **Cancers**. https://doi.org/10.3390/cancers12040793 📗
+
+1. Berben, L. et al. (2020). Computerized scoring protocol for identification and quantification of different immune cell populations in breast tumor regions using QuPath software. **Histopathology**. https://doi.org/10.1111/his.14108 📗
+
+1. Berger, S. et al. (2020). Severe hydroxymethylbilane synthase deficiency causes depression-like behavior and mitochondrial dysfunction in a mouse model of homozygous dominant acute intermittent porphyria. **Acta Neuropathologica Communications**. https://doi.org/10.1186/s40478-020-00910-z 📗
 
 1. Blagih, J. et al. (2020). Cancer-Specific Loss of p53 Leads to a Modulation of
 Myeloid and T Cell Responses. **Cell Reports**. https://doi.org/10.1016/j.celrep.2019.12.028 📗
 
 1. Brial, F. et al. (2020). The Natural Metabolite 4-Cresol Improves Glucose Homeostasis and Enhances β-Cell Function. **Cell Reports**. https://doi.org/10.1016/j.celrep.2020.01.066 😞
 
+1. Bulle, A. et al. (2020). Gemcitabine Recruits M2-Type Tumor-Associated Macrophages into the Stroma of Pancreatic Cancer. **Translational Oncology**. https://doi.org/10.1016/j.tranon.2020.01.004 📗
+
 1. Caruana, D. et al. (2020). Association between low estrogen receptor positive breast cancer and staining performance. **npj Breast Cancer**. https://doi.org/10.1038/s41523-020-0146-2 📗
 
 1. Cengiz, I. F. et al. (2020). Entrapped in cage (EiC) scaffolds of 3D-printed polycaprolactone and porous silk fibroin for meniscus tissue engineering. **Biofabrication**. https://doi.org/10.1088/1758-5090/ab779f 📗
 
+1. Chaursiya, S. et al. (2020). Oncolytic poxvirus CF33-hNIS-ΔF14.5 favorably modulates tumor immune microenvironment and works synergistically with anti-PD-L1 antibody in a triple-negative breast cancer model. **OncoImmunology**. https://doi.org/10.1080/2162402X.2020.1729300 😞
+
+1. Chung, K. M. et al. (2020). Endocrine-Exocrine Signaling Drives Obesity-Associated Pancreatic Ductal Adenocarcinoma. **Cell**. https://doi.org/10.1016/j.cell.2020.03.062 😞
+
 1. Cummings, M. et al. (2020). Decreasing formalin concentration improves quality of DNA extracted from formalin-fixed paraffin-embedded tissue specimens without compromising tissue morphology or immunohistochemical staining. **Journal of Clinical Pathology**. https://dx.doi.org/10.1136/jclinpath-2019-206368 📗
 
-1. Elsherbini D. M. et al. (2020).   Effect of meloxicam (cyclooygenase-2 inhibitor) versus vitamin D3 (cholecalciferol) as ameliorating agents of progressive doxorubicin-induced nephrotoxicity in rats. **Anatomy & Cell Biolology**. https://doi.org/10.5115/acb.19.231 📗
+1. Elsherbini D. M. et al. (2020). Effect of meloxicam (cyclooygenase-2 inhibitor) versus vitamin D3 (cholecalciferol) as ameliorating agents of progressive doxorubicin-induced nephrotoxicity in rats. **Anatomy & Cell Biology**. https://doi.org/10.5115/acb.19.231 📗
+
+1. Eshed-Eisenbach, Y. et al. (2020). Precise Spatiotemporal Control of Nodal Na+ Channel Clustering by Bone Morphogenetic Protein-1/Tolloid-like Proteinases. **Neuron**. https://doi.org/10.1016/j.neuron.2020.03.001 📗
+
+1. Eskiocak, U. et al. (2020). Differentiated agonistic antibody targeting CD137 eradicates large tumors without hepatotoxicity. **JCI Insight**. https://doi.org/10.1172/jci.insight.133647 😞
 
 1. Kaalund, S. S. et al. (2020). Locus coeruleus pathology in progressive supranuclear palsy, and its relation to disease severity. **Acta Neuropathologica Communications**. https://doi.org/10.1186/s40478-020-0886-0 😞
 
+1. Karn, T. et al. (2020). A Small Hypoxia Signature Predicted pCR Response to Bevacizumab in the Neoadjuvant GeparQuinto Breast Cancer Trial. **Clinical Cancer Research**. https://doi.org/10.1158/1078-0432.CCR-19-1954 📗
+
 1. Gil, K. N. et al. (2020). Rorqual whale nasal plugs: protecting the respiratory tract against water entry and barotrauma. **Journal of Experimental Biology**. https://doi.org/10.1242/jeb.219691 📗
+
+1. Gonzalez, D. et al. (2020). Feasibility of a Deep Learning Algorithm to Distinguish Large Cell Neuroendocrine from Small Cell Lung Carcinoma in Cytology Specimens. **Cytopathology**. https://doi.org/10.1111/cyt.12829 😞
+
+1. Goto, Y. et al. (2020). Muscarinic receptors promote castration-resistant growth of prostate cancer through a FAK–YAP signaling axis. **Oncogene**. https://doi.org/10.1038/s41388-020-1272-x 📗
+
+1. Gupta, S. et al. (2020). Digital quantitative assessment of PD-L1 using digital spatial profiling. **Laboratory Investigation**. https://doi.org/10.1038/s41374-020-0424-5 📗
+
+1. Herrspiegel, C. et al. (2020). Digital morphometry of tumor nuclei correlates to BAP-1 status, monosomy 3, gene expression class and survival in uveal melanoma. **Experimental Eye Research**. https://doi.org/10.1016/j.exer.2020.107987 📗
+
+1. Jung, S. et al. (2020). Seizure-induced neuronal apoptosis is related to dysregulation of the RNA-edited GluR2 subunit in the developing mouse brain. **Brain Research**. https://doi.org/10.1016/j.brainres.2020.146760 😞
 
 1. Karn, T. et al. (2020). A small hypoxia signature predicted pCR response to bevacizumab in the neoadjuvant GeparQuinto breast cancer trial. **Clinical Cancer Research**. https://doi.org/10.1158/1078-0432.CCR-19-1954 📗
 
+1. Kerby, A. et al. (2020). Placental Morphology and Cellular Characteristics in Stillbirths in Women With Diabetes and Unexplained Stillbirths. **Archives of Pathology & Laboratory Medicine**. https://doi.org/10.5858/arpa.2019-0524-OA 📗
+
 1. Kelly, L. et al. (2020). Increased Hypothalamic Projections to the Lateral Hypothalamus and Responses to Leptin in Rat Neonates From High Fat Fed Mothers. **Frontiers in Neuroscience**. https://doi.org/10.3389/fnins.2019.01454 📗
+
+1. Kim, Y. et al. (2020). Identification and Validation of VEGFR2 Kinase as a Target of Voacangine by a Systematic Combination of DARTS and MSI. **Biomolecules**. https://doi.org/10.3390/biom10040508 📗
+
+1. Kim, Y. et al. (2020). Protein Expression in Metastatic Melanoma and the Link to Disease Presentation in a Range of Tumor Phenotypes. **Cancers**. https://doi.org/10.3390/cancers12030767 📗
 
 1. Kubach, J. et al. (2020). Same same but different: A Web‐based deep learning application revealed classifying features for the histopathologic distinction of cortical malformations. **Epilepsia**. https://doi.org/10.1111/epi.16447 📗
 
@@ -66,13 +104,27 @@ Myeloid and T Cell Responses. **Cell Reports**. https://doi.org/10.1016/j.celrep
 
 1. Liu, C-H. et al. (2020). Nodal β spectrins are required to maintain Na+ channel clustering and axon integrity. **eLife**. https://doi.org/10.7554/eLife.52378.sa1 📗
 
+1. Liu, J. Y. W. et al. (2020). Granule Cell Dispersion in Human Temporal Lobe Epilepsy: Proteomics Investigation of Neurodevelopmental Migratory Pathways. **Frontiers in Cellular Neuroscience**. https://doi.org/10.3389/fncel.2020.00053 📗
+
+1. Mannix, R. et al. (2020). Internal jugular vein compression collar mitigates histopathological alterations after closed head rotational head impact in swine: A pilot study. **Neuroscience**. https://doi.org/10.1016/j.neuroscience.2020.04.009 😞
+
 1. Marotte, L. et al. (2020). Increased antitumor efficacy of PD-1-deficient melanoma-specific human lymphocytes. **Journal for ImmunoTherapy of Cancer**. http://dx.doi.org/10.1136/jitc-2019-000311 📗
+
+1. Moyano‐Galceran, L. et al. (2020). Adaptive RSK‐EphA2‐GPRC5A signaling switch triggers chemotherapy resistance in ovarian cancer. **EMBO Molecular Medicine**. https://doi.org/10.15252/emmm.201911177 📗
 
 1. Morriss, N. J. et al. (2020). Automated quantification of immunohistochemical staining of large animal brain tissue using QuPath software. **Neuroscience**. https://doi.org/10.1016/j.neuroscience.2020.01.006 📗
 
+1. Mulvaney, E. et al. (2020). NTP42, a novel antagonist of the thromboxane receptor, attenuates experimentally induced pulmonary arterial hypertension. **BMC Pulmonary Medicine**. https://dx.doi.org/10.21203/rs.2.18445/v4 📗
+
+1. Muthalagu, N. et al. (2020). Repression of the Type I Interferon pathway underlies MYC & KRAS-dependent evasion of NK & B cells in Pancreatic Ductal Adenocarcinoma. **Cancer Discovery**. http://doi.org/10.1158/2159-8290.CD-19-0620 😞
+
 1. Mysona, B. A. et al. (2020). QuPath Automated Analysis of Optic Nerve Degeneration in Brown Norway Rats. **Translational Vision Science & Technology**. https://doi.org/10.1167/tvst.9.3.22 📗
 
+1. Nair-Menon, J. et al. (2020). Predominant Distribution of the RNAi Machinery at Apical Adherens Junctions in Colonic Epithelia Is Disrupted in Cancer. **International Journal of Molecular Sciences**. https://doi.org/10.3390/ijms21072559 📗
+
 1. Orgaz, J. L. et al. (2020). Myosin II Reactivation and Cytoskeletal Remodeling as a Hallmark and a Vulnerability in Melanoma Therapy Resistance. **Cancer Cell**. https://doi.org/10.1016/j.ccell.2019.12.003 📗
+
+1. Prieto‐Garcia, C. et al. (2020). Maintaining protein stability of ∆Np63 via USP28 is required by squamous cancer cells. **EMBO Molecular Medicine**. https://doi.org/10.15252/emmm.201911101 📗
 
 1. Romero, J. M. et al. (2020). A four-chemokine signature is associated with a T cell-inflamed phenotype in primary and metastatic pancreatic cancer. **Clinical Cancer Research**. https://doi.org/10.1158/1078-0432.CCR-19-2803 📗
 
@@ -80,9 +132,15 @@ Myeloid and T Cell Responses. **Cell Reports**. https://doi.org/10.1016/j.celrep
 
 1. Rubey, M. et al. (2020). DLL1- and DLL4-Mediated Notch Signaling is Essential for Adult Pancreatic Islet Homeostasis. **Diabetes**. https://doi.org/10.2337/db19-0795 📗
 
+1. Schottlaender, L. V. et al. (2020). Bi-allelic JAM2 Variants Lead to Early-Onset Recessive Primary Familial Brain Calcification. **AJHG**. https://doi.org/10.1016/j.ajhg.2020.02.007 😞
+
 1. Sirotkina, M. A. et al. (2020). In vivo assessment of functional and morphological alterations in tumors under treatment using OCT-angiography combined with OCT-elastography. **Biomedical Optics Express**. https://doi.org/10.1364/BOE.386419 😞
 
 1. Śledzińska, A. et al. (2020). Regulatory T Cells Restrain Interleukin-2- and Blimp-1-Dependent Acquisition of Cytotoxic Function by CD4+ T Cells.  **Immunity**. https://doi.org/10.1016/j.immuni.2019.12.007 😞
+
+1. Talbot, J. et al. (2020). Feeding-dependent VIP neuron–ILC3 circuit regulates the intestinal barrier. **Nature**. https://doi.org/10.1038/s41586-020-2039-9 📗
+
+1. Tedeschi, A. et al. (2020). Cep55 promotes cytokinesis of neural progenitors but is dispensable for most mammalian cell divisions. **Nature Communications**. https://doi.org/10.1038/s41467-020-15359-w 📗
 
 1. Xie, C. et al. (2020). Immune checkpoint blockade in combination with stereotactic body radiotherapy in patients with metastatic pancreatic ductal adenocarcinoma. **Clinical Cancer Research**. https://doi.org/10.1158/1078-0432.CCR-19-3624 😞
 
@@ -114,11 +172,11 @@ Myeloid and T Cell Responses. **Cell Reports**. https://doi.org/10.1016/j.celrep
 
 1. Bhumika, S. et al. (2019). A Late Critical Period for Frequency Modulated Sweeps in the Mouse Auditory System. **Cerebral Cortex**. https://doi.org/10.1093/cercor/bhz262 😞
 
-1.  Binzer-Panchal, A. et al. (2019). Integrated Molecular Analysis of Undifferentiated Uterine Sarcomas Reveals Clinically Relevant Molecular Subtypes. **Clinical Cancer Research**. https://doi.org/10.1158/1078-0432.CCR-18-2792 📗 
+1.  Binzer-Panchal, A. et al. (2019). Integrated Molecular Analysis of Undifferentiated Uterine Sarcomas Reveals Clinically Relevant Molecular Subtypes. **Clinical Cancer Research**. https://doi.org/10.1158/1078-0432.CCR-18-2792 📗
 
-1. Bolli, E. et al. (2019). Stromal-targeting radioimmunotherapy mitigates the progression of therapy-resistant tumors. **Journal of Controlled Release**. https://doi.org/10.1016/j.jconrel.2019.10.024 📗 
+1. Bolli, E. et al. (2019). Stromal-targeting radioimmunotherapy mitigates the progression of therapy-resistant tumors. **Journal of Controlled Release**. https://doi.org/10.1016/j.jconrel.2019.10.024 📗
 
-1. Bulgarelli, J. et al. (2019). Dendritic Cell Vaccination in Metastatic Melanoma Turns "Non-T Cell Inflamed” Into “T-Cell Inflamed" Tumors. **Frontiers in Immunology**. https://doi.org/10.3389/fimmu.2019.02353 📗 
+1. Bulgarelli, J. et al. (2019). Dendritic Cell Vaccination in Metastatic Melanoma Turns "Non-T Cell Inflamed” Into “T-Cell Inflamed" Tumors. **Frontiers in Immunology**. https://doi.org/10.3389/fimmu.2019.02353 📗
 
 1. Buschmann, J. et al. (2019). Hybrid nanocomposite as a chest wall graft with improved integration by adipose-derived stem cells. **Scientific Reports**. https://doi.org/10.1038/s41598-019-47441-9 😞
 
@@ -383,9 +441,9 @@ Support of Tumor Development. **Cell Reports**. https://doi.org/10.1016/j.celrep
 
 ### 2018
 
-1. Acs, B. et al. (2018). Ki67 Reproducibility Using Digital Image Analysis : An Inter-Platform and Inter-Operator Study. **Laboratory Investigation**. https://doi.org/10.1038/s41374-018-0123-7 📗 
+1. Acs, B. et al. (2018). Ki67 Reproducibility Using Digital Image Analysis : An Inter-Platform and Inter-Operator Study. **Laboratory Investigation**. https://doi.org/10.1038/s41374-018-0123-7 📗
 
-1. Allen, W. L. et al. (2018). Transcriptional Subtyping and CD8 Immunohistochemistry Identifies Patients With Stage II and III Colorectal Cancer With Poor Prognosis Who Benefit From Adjuvant Chemotherapy. **JCO Precision Oncology**. https://doi.org/10.1200/PO.17.00241 😞 
+1. Allen, W. L. et al. (2018). Transcriptional Subtyping and CD8 Immunohistochemistry Identifies Patients With Stage II and III Colorectal Cancer With Poor Prognosis Who Benefit From Adjuvant Chemotherapy. **JCO Precision Oncology**. https://doi.org/10.1200/PO.17.00241 😞
 
 1. Avgustinova A. et al. (2018) Loss of G9a preserves mutation patterns but increases chromatin accessibility, genomic instability and aggressiveness in skin tumours. **Nature Cell Biology**. https://doi.org/10.1038/s41556-018-0233-x 😞
 
@@ -393,89 +451,89 @@ Support of Tumor Development. **Cell Reports**. https://doi.org/10.1016/j.celrep
 
 1. Bankhead, P. et al. (2018). Integrated tumor identification and automated scoring minimizes pathologist involvement and provides new insights to key biomarkers in breast cancer. **Laboratory Investigation**. https://doi.org/10.1038/labinvest.2017.131
 
-1. Bevan, R. J. et al. (2018). Meningeal inflammation and cortical demyelination in acute multiple sclerosis. **Annals of Neurology**. https://doi.org/10.1002/ana.25365 📗 
+1. Bevan, R. J. et al. (2018). Meningeal inflammation and cortical demyelination in acute multiple sclerosis. **Annals of Neurology**. https://doi.org/10.1002/ana.25365 📗
 
 1. Cagnet, S. et al. (2018). Oestrogen receptor α AF-1 and AF-2 domains have cell population-specific functions in the mammary epithelium. **Nature Communications**. https://doi.org/10.1038/s41467-018-07175-0 😞
 
-1. Charni-Natan, M. et al. (2018). Various stress stimuli rewire the profile of liver secretome in a p53-dependent manner. **Cell Death & Disease**. https://doi.org/10.1038/s41419-018-0697-4 📗 
+1. Charni-Natan, M. et al. (2018). Various stress stimuli rewire the profile of liver secretome in a p53-dependent manner. **Cell Death & Disease**. https://doi.org/10.1038/s41419-018-0697-4 📗
 
-1. Cherif-Feildel, M. et al. (2018). Morphological and molecular criteria allow the identification of putative germ stem cells in a lophotrochozoan, the Pacific oyster Crassostrea gigas. **Histochemistry and Cell Biology**. https://doi.org/10.1007/s00418-018-1740-3 📗 
+1. Cherif-Feildel, M. et al. (2018). Morphological and molecular criteria allow the identification of putative germ stem cells in a lophotrochozoan, the Pacific oyster Crassostrea gigas. **Histochemistry and Cell Biology**. https://doi.org/10.1007/s00418-018-1740-3 📗
 
-1. Coulson-Gilmer, C. et al. (2018). Stanniocalcin 2 expression is associated with a favourable outcome in male breast cancer. **Journal of Pathology: Clinical Research**. https://doi.org/10.1002/cjp2.106 📗 
+1. Coulson-Gilmer, C. et al. (2018). Stanniocalcin 2 expression is associated with a favourable outcome in male breast cancer. **Journal of Pathology: Clinical Research**. https://doi.org/10.1002/cjp2.106 📗
 
-1. Cunnea, P. et al (2018). Clinical Value of Bioelectrical Properties of Cancerous Tissue in Advanced Epithelial Ovarian Cancer Patients. **Scientific Reports**. https://doi.org/10.1038/s41598-018-32720-8 📗 
+1. Cunnea, P. et al (2018). Clinical Value of Bioelectrical Properties of Cancerous Tissue in Advanced Epithelial Ovarian Cancer Patients. **Scientific Reports**. https://doi.org/10.1038/s41598-018-32720-8 📗
 
 1. Delvaeye, T. et al. (2018). Noninvasive whole-body imaging of phosphatidylethanolamine as a cell death marker using 99m Tc-duramycin during TNF-induced SIRS. **Journal of Nuclear Medicine**. https://doi.org/10.2967/jnumed.117.205815 😞
 
-1. Dunne, P. D. et al. (2018). Bcl-xL as a poor prognostic biomarker and predictor of response to adjuvant chemotherapy specifically in BRAF-mutant stage II and III colon cancer. **Oncotarget**. https://doi.org/10.18632/oncotarget.24481 📗 
+1. Dunne, P. D. et al. (2018). Bcl-xL as a poor prognostic biomarker and predictor of response to adjuvant chemotherapy specifically in BRAF-mutant stage II and III colon cancer. **Oncotarget**. https://doi.org/10.18632/oncotarget.24481 📗
 
-1. Fumet, J, et al. (2018). Prognostic and Predictive Role of CD8 and PD-L1 Determination in Lung Tumor Tissue of Patients under Anti-PD-1 Therapy. **British Journal of Cancer**. https://doi.org/10.1038/s41416-018-0220-9 📙 
+1. Fumet, J, et al. (2018). Prognostic and Predictive Role of CD8 and PD-L1 Determination in Lung Tumor Tissue of Patients under Anti-PD-1 Therapy. **British Journal of Cancer**. https://doi.org/10.1038/s41416-018-0220-9 📙
 
-1. Garcia-Orue, I. et al. (2018). Composite nanofibrous membranes of PLGA/Aloe vera containing lipid nanoparticles for wound dressing applications. **International Journal of Pharmaceutics**. https://doi.org/10.1016/j.ijpharm.2018.12.010 😞 
+1. Garcia-Orue, I. et al. (2018). Composite nanofibrous membranes of PLGA/Aloe vera containing lipid nanoparticles for wound dressing applications. **International Journal of Pharmaceutics**. https://doi.org/10.1016/j.ijpharm.2018.12.010 😞
 
-1. Ge, Y. et al. (2018). Alternative splice variants of DCLK1 mark cancer stem cells, promote self-renewal and drug-resistance, and can be targeted to inhibit tumorigenesis in kidney cancer. **International Journal of Cancer**. https://doi.org/10.1002/ijc.31400 📗 
+1. Ge, Y. et al. (2018). Alternative splice variants of DCLK1 mark cancer stem cells, promote self-renewal and drug-resistance, and can be targeted to inhibit tumorigenesis in kidney cancer. **International Journal of Cancer**. https://doi.org/10.1002/ijc.31400 📗
 
 1. Gorlé, N. et al. (2018). The choroid plexus epithelium as a novel player in the stomach-brain axis during Helicobacter infection. **Brain, Behavior, and Immunity**. https://doi.org/10.1016/J.BBI.2017.12.010 😞
 
-1. Graule, J. et al. (2018). CDX2 in Colorectal Cancer Is an Independent Prognostic Factor and Regulated by Promoter Methylation and Histone Deacetylation in Tumors of the Serrated Pathway. **Clinical Epigenetics**. https://doi.org/10.1186/s13148-018-0548-2 📙 
+1. Graule, J. et al. (2018). CDX2 in Colorectal Cancer Is an Independent Prognostic Factor and Regulated by Promoter Methylation and Histone Deacetylation in Tumors of the Serrated Pathway. **Clinical Epigenetics**. https://doi.org/10.1186/s13148-018-0548-2 📙
 
 1. Gray, M. E. et al. (2018). Biocompatibility of common implantable sensor materials in a tumor xenograft model. **Journal of Biomedical Materials Research Part B: Applied Biomaterials**. https://doi.org/10.1002/jbm.b.34254 😞
 
 1. Herfs, M. et al. (2018). A dualistic model of primary anal canal adenocarcinoma with distinct cellular origins, etiologies, inflammatory microenvironments and mutational signatures: implications for personalised medicine. **British Journal of Cancer**. https://doi.org/10.1038/s41416-018-0049-2 😞
 
-1. Humphries, M. P. et al. (2018). Critical Appraisal of Programmed Death Ligand 1 Reflex Diagnostic Testing: Current Standards and Future Opportunities. **Journal of Thoracic Oncology**. https://doi.org/10.1016/j.jtho.2018.09.025 📗 
+1. Humphries, M. P. et al. (2018). Critical Appraisal of Programmed Death Ligand 1 Reflex Diagnostic Testing: Current Standards and Future Opportunities. **Journal of Thoracic Oncology**. https://doi.org/10.1016/j.jtho.2018.09.025 📗
 
-1. Huovinen, J. et al. (2018). Pharmacokinetics of intra-articular vitamin D analogue calcipotriol in sheep and metabolism in human synovial and mesenchymal stromal cells. **The Journal of Steroid Biochemistry and Molecular Biology**. https://doi.org/10.1016/j.jsbmb.2018.12.006 😞 
+1. Huovinen, J. et al. (2018). Pharmacokinetics of intra-articular vitamin D analogue calcipotriol in sheep and metabolism in human synovial and mesenchymal stromal cells. **The Journal of Steroid Biochemistry and Molecular Biology**. https://doi.org/10.1016/j.jsbmb.2018.12.006 😞
 
 1. Isambert, N, et al. (2018). Fluorouracil and Bevacizumab plus Anakinra for Patients with Metastatic Colorectal Cancer Refractory to Standard Therapies (IRAFU): A Single-Arm Phase 2 Study. **OncoImmunology**. https://doi.org/10.1080/2162402X.2018.1474319 😞
 
-1. Kather, J. N. et al. (2018). High-throughput screening of combinatorial immunotherapies with patient-specific in silico models of metastatic colorectal cancer. **Cancer Research**. https://doi.org/10.1158/0008-5472.CAN-18-1126 📗 
+1. Kather, J. N. et al. (2018). High-throughput screening of combinatorial immunotherapies with patient-specific in silico models of metastatic colorectal cancer. **Cancer Research**. https://doi.org/10.1158/0008-5472.CAN-18-1126 📗
 
-1. Kather, J. N. et al. (2018). Topography of cancer-associated immune cells in human solid tumors. **eLife**. https://doi.org/10.7554/eLife.36967 📗 
+1. Kather, J. N. et al. (2018). Topography of cancer-associated immune cells in human solid tumors. **eLife**. https://doi.org/10.7554/eLife.36967 📗
 
-1. Keller, A. et al. (2018). Prion pathogenesis is unaltered in a mouse strain with a permeable blood-brain barrier. **PLOS Pathogens**. https://doi.org/10.1371/journal.ppat.1007424 📗 
+1. Keller, A. et al. (2018). Prion pathogenesis is unaltered in a mouse strain with a permeable blood-brain barrier. **PLOS Pathogens**. https://doi.org/10.1371/journal.ppat.1007424 📗
 
 1. Kim, K. et al. (2018). Androgen Deprivation Therapy Potentiates the Efficacy of Vascular Targeted Photodynamic Therapy of Prostate Cancer Xenografts. **Clinical Cancer Research**. https://doi.org/10.1158/1078-0432.CCR-17-3474 😞
 
-1. Kriegsmann, K. et al. (2018). Combined Immunohistochemistry after Mass Spectrometry Imaging for superior spatial information. **PROTEOMICS - Clinical Applications**. https://doi.wiley.com/10.1002/prca.201800035 📗 
+1. Kriegsmann, K. et al. (2018). Combined Immunohistochemistry after Mass Spectrometry Imaging for superior spatial information. **PROTEOMICS - Clinical Applications**. https://doi.wiley.com/10.1002/prca.201800035 📗
 
-1. Lambrechts, D. et al. (2018). Phenotype molding of stromal cells in the lung tumor microenvironment. **Nature Medicine**. https://doi.org/10.1038/s41591-018-0096-5 😞 
+1. Lambrechts, D. et al. (2018). Phenotype molding of stromal cells in the lung tumor microenvironment. **Nature Medicine**. https://doi.org/10.1038/s41591-018-0096-5 😞
 
-1. Ledys, F. et al. (2018). RAS status and neoadjuvant chemotherapy impact CD8 + cells and tumor HLA class I expression in liver metastatic colorectal cancer. **Journal for ImmunoTherapy of Cancer**. https://doi.org/10.1186/s40425-018-0438-3 📗 
+1. Ledys, F. et al. (2018). RAS status and neoadjuvant chemotherapy impact CD8 + cells and tumor HLA class I expression in liver metastatic colorectal cancer. **Journal for ImmunoTherapy of Cancer**. https://doi.org/10.1186/s40425-018-0438-3 📗
 
 1. Lee, S. C. W. et al. (2018). Synthetic Lethal and Convergent Biological Effects of Cancer-Associated Spliceosomal Gene Mutations. **Cancer Cell**. https://doi.org/10.1016/j.ccell.2018.07.003 😞
 
-1. Liu, B. et al. (2018). PD-1/PD-L1 expression in a series of intracranial germinoma and its association with Foxp3+ and CD8+ infiltrating lymphocytes. **PLOS ONE**. https://doi.org/10.1371/journal.pone.0194594 📗 
+1. Liu, B. et al. (2018). PD-1/PD-L1 expression in a series of intracranial germinoma and its association with Foxp3+ and CD8+ infiltrating lymphocytes. **PLOS ONE**. https://doi.org/10.1371/journal.pone.0194594 📗
 
-1. Loughrey, M. B. et al. (2018). Validation of the systematic scoring of immunohistochemically-stained tumour tissue microarrays using QuPath digital image analysis. **Histopathology**. https://doi.org/10.1111/his.13516 📗 
+1. Loughrey, M. B. et al. (2018). Validation of the systematic scoring of immunohistochemically-stained tumour tissue microarrays using QuPath digital image analysis. **Histopathology**. https://doi.org/10.1111/his.13516 📗
 
-1. Manresa-Arraut, A. et al. (2018). RhoA Drives T-Cell Activation and Encephalitogenic Potential in an Animal Model of Multiple Sclerosis. **Frontiers in Immunology**. https://doi.org/10.3389/fimmu.2018.01235 📗 
+1. Manresa-Arraut, A. et al. (2018). RhoA Drives T-Cell Activation and Encephalitogenic Potential in an Animal Model of Multiple Sclerosis. **Frontiers in Immunology**. https://doi.org/10.3389/fimmu.2018.01235 📗
 
 1. Medfai, H. et al. (2018). Human Peroxidasin 1 Promotes Angiogenesis through ERK1/2, Akt and FAK Pathways. **Cardiovascular Research** https://doi.org/10.1093/cvr/cvy179 😞
 
-1. Momcilovic, M. et al. (2018). The GSK3 Signaling Axis Regulates Adaptive Glutamine Metabolism in Lung Squamous Cell Carcinoma. **Cancer Cell**. https://doi.org/10.1016/j.ccell.2018.04.002 📗 
+1. Momcilovic, M. et al. (2018). The GSK3 Signaling Axis Regulates Adaptive Glutamine Metabolism in Lung Squamous Cell Carcinoma. **Cancer Cell**. https://doi.org/10.1016/j.ccell.2018.04.002 📗
 
-1. Näpänkangas, J. et al. (2018). Increased mesenchymal podoplanin expression is associated with calcification in aortic valves. **Cardiovascular Pathology**. https://doi.org/10.1016/j.carpath.2018.11.006 📙 
+1. Näpänkangas, J. et al. (2018). Increased mesenchymal podoplanin expression is associated with calcification in aortic valves. **Cardiovascular Pathology**. https://doi.org/10.1016/j.carpath.2018.11.006 📙
 
-1. Prall, F. & Hühns, M. (2018). Quantitative evaluation of TP53 immunohistochemistry to predict gene mutations: lessons learnt from a series of colorectal carcinomas. **Human Pathology**. https://doi.org/10.1016/j.humpath.2018.10.012 📗 
+1. Prall, F. & Hühns, M. (2018). Quantitative evaluation of TP53 immunohistochemistry to predict gene mutations: lessons learnt from a series of colorectal carcinomas. **Human Pathology**. https://doi.org/10.1016/j.humpath.2018.10.012 📗
 
 1. Seyed Jafari, S. M. et al. (2018). Correlation of Vascular Endothelial Growth Factor subtypes and their receptors with melanoma progression: A next-generation Tissue Microarray (ngTMA) automated analysis. **PLOS ONE**. https://doi.org/10.1371/journal.pone.0207019 😞
 
-1. Silva B. a. et al. (2018). A cFos activation map of remote fear memory attenuation. **Psychopharmacology**. https://doi.org/10.1007/s00213-018-5000-y 📗 
+1. Silva B. a. et al. (2018). A cFos activation map of remote fear memory attenuation. **Psychopharmacology**. https://doi.org/10.1007/s00213-018-5000-y 📗
 
 1. Tauriello, D. V. F. et al. (2018). TGFβ drives immune evasion in genetically reconstituted colon cancer metastasis. **Nature**. https://doi.org/10.1038/nature25492 😞
 
-1. Title, A. C. et al. (2018). Genetic dissection of the miR-200–Zeb1 axis reveals its importance in tumor differentiation and invasion. **Nature Communications**. https://doi.org/10.1038/s41467-018-07130-z 📗 
+1. Title, A. C. et al. (2018). Genetic dissection of the miR-200–Zeb1 axis reveals its importance in tumor differentiation and invasion. **Nature Communications**. https://doi.org/10.1038/s41467-018-07130-z 📗
 
-1. Tutturen, A. E. V et al. (2018). Characterization of the small intestinal lesion in celiac disease by label-free quantitative mass spectrometry. **The American Journal of Pathology**. https://doi.org/10.1016/j.ajpath.2018.03.017 📗 
+1. Tutturen, A. E. V et al. (2018). Characterization of the small intestinal lesion in celiac disease by label-free quantitative mass spectrometry. **The American Journal of Pathology**. https://doi.org/10.1016/j.ajpath.2018.03.017 📗
 
-1. Vesterinen, T. et al. (2018). Clinicopathological indicators of survival among patients with pulmonary carcinoid tumor. **Acta Oncologica**. https://doi.org/10.1080/0284186X.2018.1441543 📗 
+1. Vesterinen, T. et al. (2018). Clinicopathological indicators of survival among patients with pulmonary carcinoid tumor. **Acta Oncologica**. https://doi.org/10.1080/0284186X.2018.1441543 📗
 
 1. Wang, J. et al. (2018). Lysosomal acid lipase promotes cholesterol ester metabolism and drives clear cell renal cell carcinoma progression. **Cell Proliferation**. https://doi.org/10.1111/cpr.12452 😞
 
-1. Warren, S. C. et al. (2018). Removing physiological motion from intravital and clinical functional imaging data. **eLife**. https://doi.org/10.7554/eLife.35800 📗 
+1. Warren, S. C. et al. (2018). Removing physiological motion from intravital and clinical functional imaging data. **eLife**. https://doi.org/10.7554/eLife.35800 📗
 
-1. Zarella, M., & Feldscher, A. (2018). Laboratory computer performance in a digital pathology environment: Outcomes from a single institution. **Journal of Pathology Informatics**. https://doi.org/10.4103/jpi.jpi_47_18 📗 
+1. Zarella, M., & Feldscher, A. (2018). Laboratory computer performance in a digital pathology environment: Outcomes from a single institution. **Journal of Pathology Informatics**. https://doi.org/10.4103/jpi.jpi_47_18 📗
 
 1. Zhang, A. W. et al. (2018). Interfaces of Malignant and Immunologic Clonal Dynamics in Ovarian Cancer. **Cell**. https://doi.org/10.1016/j.cell.2018.03.073 😞
 
@@ -487,7 +545,7 @@ Support of Tumor Development. **Cell Reports**. https://doi.org/10.1016/j.celrep
 
 1. del Barco Barrantes, I. et al. (2017). Regulation of Mammary Luminal Cell Fate and Tumorigenesis by p38α. **Stem Cell Reports**. https://doi.org/10.1016/j.stemcr.2017.11.021 😞
 
-1. Gharun, K. et al. (2017). Mycobacteria exploit nitric oxide-induced transformation of macrophages into permissive giant cells. **EMBO Reports**. https://doi.org/10.15252/embr.201744121 📙 
+1. Gharun, K. et al. (2017). Mycobacteria exploit nitric oxide-induced transformation of macrophages into permissive giant cells. **EMBO Reports**. https://doi.org/10.15252/embr.201744121 📙
 
 1. Gray, R. T. et al. (2017). Evaluation of PTGS2 Expression, PIK3CA Mutation, Aspirin Use and Colon Cancer Survival in a Population-Based Cohort Study. **Clinical and Translational Gastroenterology**. https://doi.org/10.1038/ctg.2017.18
 
