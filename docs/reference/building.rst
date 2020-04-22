@@ -26,7 +26,7 @@ Step 1: Installing prerequisites
 Install a Java Development Kit (JDK)
 ====================================
 
-QuPath requires OpenJDK 11 (or later).
+QuPath requires OpenJDK 14 (or later).
 Typically, the latest stable JDK is used.
 There are a few places where you can find pre-built OpenJDK binaries - a popular source is AdoptOpenJDK_.
 
@@ -39,22 +39,6 @@ There are a few places where you can find pre-built OpenJDK binaries - a popular
   It usually makes things easier if you do.
 
   If you can't (e.g. because of some other Java software needing the PATH set to something else) I'm afraid I'll leave resolving that up to you.
-
-
-Download the latest JPackage
-============================
-
-.. sidebar:: JDK 14
-
-  If you're using JDK 14 (to be released March 2020) then you should already have *jpackage* - no need to install it separately.
-
-To create the QuPath installer, you'll need *jpackage*.
-
-For now, you need to download an early access build separately from jdk.java.net_.
-
-.. _jdk.java.net: https://jdk.java.net/jpackage
-
-Extract the contents (e.g. right-click and unzip) to a folder of your choosing *and remember where it is because you'll need the path to that folder later*.
 
 
 ==================================
@@ -87,69 +71,8 @@ If you're using either Mac or Windows, the following steps may help.
   Therefore you'll need another desktop client, or handle Git from the command line.
 
 
-====================================
-Step 3: Add a gradle.properties file
-====================================
-
-Go to GitHub Desktop, make sure that the :guilabel:`Current repository` is :guilabel:`qupath` and choose :menuselection:`Repository --> Open in Atom`
-
-.. figure:: images/building-github-desktop-project.png
-  :class: shadow-image
-  :align: center
-  :width: 50%
-
-
-Under the :guilabel:`Project` tab on the left within *Atom*, right-click on the top 'qupath' and choose :menuselection:`New File`.
-
-.. figure:: images/building-properties-create.png
-  :class: shadow-image
-  :align: center
-  :width: 50%
-
-When prompted to *Enter the path for the new file* type ``gradle.propertes``
-
-.. figure:: images/building-properties.png
-  :class: shadow-image
-  :align: center
-  :width: 75%
-
-
-Inside *gradle.properties*, enter the following text
-
-.. code-block:: bash
-
-  packager=/path/to/jpackage
-
-where you'll need to replace ``/path/to/jpackage`` with the actual path.
-
-.. note::
-
-  If you're using JDK 14 or later for everything, you probably don't need to set *jpackage* inside *gradle.properties* at all.
-
-  Otherwise, it should be found somewhere inside the folder you extracted earlier.
-  On Windows, the path you need should look something like this:
-
-  .. code-block:: bash
-
-    packager=C:/Users/myname/Documents/jpackage/jdk-14/bin/jpackage.exe
-
-
-.. tip::
-
-  If you *want*, you can add extra information to *gradle.properties* to customize how QuPath is built (or how quickly it is built), e.g.
-
-  .. code-block:: bash
-
-    // Essential if using a JDK < JDK 14!
-    packager=/path/to/jpackage
-
-    // Optional
-    org.gradle.parallel=true   // If you are impatient
-    org.gradle.java.home=/path/to/another/jdk   // If you want to use a different JDK to build QuPath from the system default
-    request-git-tag=true   // If you installed Git & want to know *exactly* what was the last commit prior to building the software
-
 ================================
-Step 4: Build QuPath with Gradle
+Step 3: Build QuPath with Gradle
 ================================
 
 Open the QuPath source directory in a command prompt
@@ -172,13 +95,13 @@ At the command prompt, type the following:
 
 .. code-block:: bash
 
-  gradlew createPackage
+  gradlew clean build createPackage
 
 for Windows, or
 
 .. code-block:: bash
 
-  ./gradlew createPackage
+  ./gradlew clean build createPackage
 
 for MacOS and Linux.
 
@@ -223,15 +146,7 @@ When this happens, it's worth running
 
   gradlew clean
 
-to clean up old files that could be causing trouble.
-
-You can also combine the options, e.g.
-
-.. code-block:: bash
-
-  gradlew clean createPackage -Ptype=installer
-
-will clean first, build QuPath & create an installer all in one go.
+once or twice extra to clean up old files that could be causing trouble.
 
 
 Getting the latest updates
@@ -309,3 +224,9 @@ To generate javadocs for the source code, use
   gradlew mergedJavadocs
 
 This will generate html javadocs in a ``./build/merged-docs`` subdirectory.
+
+If you'd like to include external links to other relevant javadocs (e.g. for the JDK, ImageJ, JTS) use
+
+.. code-block:: bash
+
+  gradlew mergedJavadocs -PlinkJavadoc=true

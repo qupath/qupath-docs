@@ -26,7 +26,7 @@ The following key indicates what, if anything, was cited in the main references 
 
 ### Contents
 
-* [2020](#2020) (55)
+* [2020](#2020) (59)
 * [2019](#2019) (144)
 * [2018](#2018) (48)
 * [2017](#2017) (5)
@@ -80,6 +80,8 @@ Myeloid and T Cell Responses. **Cell Reports**. https://doi.org/10.1016/j.celrep
 
 1. Goto, Y. et al. (2020). Muscarinic receptors promote castration-resistant growth of prostate cancer through a FAK–YAP signaling axis. **Oncogene**. https://doi.org/10.1038/s41388-020-1272-x 📗
 
+1. Gualandi, M. et al. (2020). Oncogenic ALK<sup>F1174L</sup> drives tumorigenesis in cutaneous squamous cell carcinoma. **Life Science Alliance**. https://dx.doi.org/10.26508/lsa.201900601 📗
+
 1. Gupta, S. et al. (2020). Digital quantitative assessment of PD-L1 using digital spatial profiling. **Laboratory Investigation**. https://doi.org/10.1038/s41374-020-0424-5 📗
 
 1. Herrspiegel, C. et al. (2020). Digital morphometry of tumor nuclei correlates to BAP-1 status, monosomy 3, gene expression class and survival in uveal melanoma. **Experimental Eye Research**. https://doi.org/10.1016/j.exer.2020.107987 📗
@@ -91,6 +93,8 @@ Myeloid and T Cell Responses. **Cell Reports**. https://doi.org/10.1016/j.celrep
 1. Kerby, A. et al. (2020). Placental Morphology and Cellular Characteristics in Stillbirths in Women With Diabetes and Unexplained Stillbirths. **Archives of Pathology & Laboratory Medicine**. https://doi.org/10.5858/arpa.2019-0524-OA 📗
 
 1. Kelly, L. et al. (2020). Increased Hypothalamic Projections to the Lateral Hypothalamus and Responses to Leptin in Rat Neonates From High Fat Fed Mothers. **Frontiers in Neuroscience**. https://doi.org/10.3389/fnins.2019.01454 📗
+
+1. Kim, J. H. et al. (2020). Multi-Spheroid-Loaded Human Acellular Dermal Matrix Carrier Preserves Its Spheroid Shape and Improves In Vivo Adipose-Derived Stem Cell Delivery and Engraftment. **Tissue Engineering and Regenerative Medicine**. https://doi.org/10.1007/s13770-020-00252-w 📗
 
 1. Kim, Y. et al. (2020). Identification and Validation of VEGFR2 Kinase as a Target of Voacangine by a Systematic Combination of DARTS and MSI. **Biomolecules**. https://doi.org/10.3390/biom10040508 📗
 
@@ -105,6 +109,8 @@ Myeloid and T Cell Responses. **Cell Reports**. https://doi.org/10.1016/j.celrep
 1. Liu, C-H. et al. (2020). Nodal β spectrins are required to maintain Na+ channel clustering and axon integrity. **eLife**. https://doi.org/10.7554/eLife.52378.sa1 📗
 
 1. Liu, J. Y. W. et al. (2020). Granule Cell Dispersion in Human Temporal Lobe Epilepsy: Proteomics Investigation of Neurodevelopmental Migratory Pathways. **Frontiers in Cellular Neuroscience**. https://doi.org/10.3389/fncel.2020.00053 📗
+
+1. Liu, Y. et al. (2020). TSP1‐CD47‐SIRPα signaling facilitates the development of endometriosis by mediating the survival of ectopic endometrium. **American Journal of Reproductive Immunology**. https://doi.org/10.1111/aji.13236 📗
 
 1. Mannix, R. et al. (2020). Internal jugular vein compression collar mitigates histopathological alterations after closed head rotational head impact in swine: A pilot study. **Neuroscience**. https://doi.org/10.1016/j.neuroscience.2020.04.009 😞
 
@@ -141,6 +147,8 @@ Myeloid and T Cell Responses. **Cell Reports**. https://doi.org/10.1016/j.celrep
 1. Talbot, J. et al. (2020). Feeding-dependent VIP neuron–ILC3 circuit regulates the intestinal barrier. **Nature**. https://doi.org/10.1038/s41586-020-2039-9 📗
 
 1. Tedeschi, A. et al. (2020). Cep55 promotes cytokinesis of neural progenitors but is dispensable for most mammalian cell divisions. **Nature Communications**. https://doi.org/10.1038/s41467-020-15359-w 📗
+
+1. Tiwari, L. et al. (2020). Clinico‐pathological correlation of optical fluorescence imaging in oral mucosal lesions. **Oral Diseases**. https://doi.org/10.1111/odi.13334 📗
 
 1. Xie, C. et al. (2020). Immune checkpoint blockade in combination with stereotactic body radiotherapy in patients with metastatic pancreatic ductal adenocarcinoma. **Clinical Cancer Research**. https://doi.org/10.1158/1078-0432.CCR-19-3624 😞
 
