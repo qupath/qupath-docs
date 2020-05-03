@@ -25,28 +25,39 @@ This section describes the main tools that are available.
   Annotations made using different drawing tools (left to right): |br|
   Rectangle, Ellipse, Line, Brush, Polygon, Wand.
 
+
+Annotation tools
+================
+
 |rectangle| Rectangle tool
 --------------------------
 
 The most basic drawing tool is the *Rectangle tool*.  Click on the starting point within the image and drag the mouse to the opposite corner of the desired rectangle, then release.  Holding :kbd:`Shift` down while drawing a rectangle will constrain the shape to be square.
+
+.. tip::
+  
+  If you'd like to draw a rectangle around the entire image, use :menuselection:`Objects --> Annotations... --> Create full image annotation`
+  
 
 |ellipse| Ellipse tool
 ----------------------
 
 The *Ellipse tool* works in much the same way as the *Rectangle tool*, except will end up providing an elliptical region instead.
 
-.. TIP::
-  Rather than drawing rectangles or ellipses, :menuselection:`Objects --> Specify annotation` can be used to set coordinates exactly - and thereby give more control over the exact size and/or location.
+.. tip::
+  
+  Rather than drawing rectangles or ellipses, :menuselection:`Objects --> Annotations... --> Specify annotation` can be used to set coordinates exactly - and thereby give more control over the exact size and/or location.
 
 
 |line| Line tool
-----------------------
+----------------
 
 Lines can be drawn using the *Line tool*, and clicking once for the starting point, and *double-clicking* for the end point.
 
 
 |polygon| Polygon tool
 ----------------------
+
 The *Polygon tool* is a good standard for drawing around regions.  It can be used in one of two ways:
 
 * Click where each vertex should be
@@ -86,11 +97,34 @@ This provides a very powerful way to annotate regions quickly and with a high le
 |points| Points tool
 --------------------
 
-This is something of a special case, covered in the next section...
+This is something of a special case, covered in :doc:`cell_counting`.
+
+
+Locking & unlocking
+===================
+
+Annotation can be a laborious process.
+For that reason, losing or accidentally editing annotations can be rather upsetting.
+
+To help reduce this risk, annotations can be *locked* or *unlocked*.
+You can access this by right-clicking on a selected annotation.
+
+
+Setting properties
+==================
+
+Annotations can also have properties set.
+For analysis purposes, the most important of these is usually the :doc:`classification <../tutorials/cell_classification>`.
+But for display, there are also *name* and *color* properties.
+
+You can set these quickly for a selected annotation by pressing the :kbd:`Enter` key.
+
+The name can be shown or hidden in the viewer using :menuselection:`View --> Show names`, or the shortcut :kbd:`N`.
 
 
 Other ways to annotate
-----------------------
+======================
 
 There are other, faster, fancier ways to create similar *Annotation objects*, i.e. by thresholding, pixel classification, or by temporarily dipping into another tool, such as ImageJ.
+
 These will be discussed elsewhere...

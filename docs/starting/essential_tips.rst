@@ -34,6 +34,8 @@ You can then run the command in one of two ways:
 1. Using the mouse, by double-clicking
 2. Use the keyboard, selecting the command with the arrow keys before pressing :kbd:`Enter`
 
+Starting with v0.2.0, the *Command List* also includes a brief help text description for most commands.
+
 .. tip::
   If you find yourself wanting to run the same command repeatedly, uncheck the :guilabel:`Auto close` box to keep the command list open.
 
