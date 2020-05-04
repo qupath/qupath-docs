@@ -2,7 +2,7 @@
 Welcome to QuPath!
 ******************
 
-This page hosts the new, still-developing docs for the new, still-developing QuPath v0.2.0.
+This page hosts the documentation for QuPath |version|.
 
 .. sidebar:: Using QuPath v0.1.2?
   

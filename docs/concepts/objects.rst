@@ -10,8 +10,13 @@ The object encapsulates not only the shape of the thing, but also some propertie
 The reason for extracting objects from images is that objects are easier to summarize, quantify and interpret than :doc:`billions of raw pixel values <images>`.
 
 Objects themselves are simple, but the idea is powerful as it enables us to generate and query a complex but intuitive representation of the image as lists or hierarchies of objects.
-This is the QuPath approach to :doc:`image analysis <processing_and_analysis>`.
+This is the QuPath approach to image analysis :doc:`introduced in the previous section <processing_and_analysis>`.
 
+.. figure:: images/qupath_approach.png
+  :width: 90%
+  :align: center
+
+  General workflow for analyzing images in QuPath.
 
 ===============
 Types of object
@@ -120,6 +125,11 @@ It is frequently left empty.
   
   To set the name of an annotation, select it in the viewer and press the :guilabel:`Enter`.
   
+  
+.. tip::
+  
+  To toggle the visualization of annotation names, use the shortcut key :kbd:`N`.
+  
 
 ROI
 ===
@@ -156,7 +166,9 @@ Knowing the classification makes it possible to do more interesting things, e.g.
 Measurement list
 ================
 
-The **measurement list** can be interesting in itself, but it can also be useful in terms of automatically figuring out what the classification of the object should be :doc:`by training a machine learning classifier <../tutorials/cell_classification>`.
+The **measurement list** encapsulates some (numeric) measurements of an object.
+
+These measurements may be interesting in themselves, but they can also be useful to :doc:`train a machine learning classifier <../tutorials/cell_classification>` to assign classifications automatically.
 
 .. figure:: images/objects_hierarchy.jpg
   :class: shadow-image
@@ -164,31 +176,6 @@ The **measurement list** can be interesting in itself, but it can also be useful
   :align: center
   
   Measurement list (bottom left) for a selected detection object.
-
-=============================
-Relationships between objects
-=============================
-
-In addition to the above, each object has two other important properties:
-
-* A **parent object**
-* A **collection of 'child' objects**
-
-These store the relationships between different objects, in a **hierarchical** (or 'family-tree-like') way.
-This is illustrated under the *Hierarchy* tab (see also the figure above).
-
-Representing parent/child relationships makes it possible to use simple objects as the building blocks for more complex structures within QuPath.
-For example, an entire tissue section could be considered as one (large) object, and inside it there might be tens of smaller child objects representing different structures (e.g. vessels, tumor and stromal regions), and inside each of these there may be hundreds of further child objects that are smaller still - the individual cells.
-There might even be additional, subcellular structures.
-
-All this is described in more detail in :doc:`object_hierarchy`.
-
-.. tip::
-  Not every analysis application needs this hierarchy information, and it can be computationally expensive to maintain all the relationships unnecessarily.
-  Sometimes it is better to treat objects in QuPath as simply existing in a single flat list.
-  
-  In QuPath v0.2.0, you can choose to what extent you rely on maintaining hierarchical relationships between objects.
-  But regardless of how much you use it, it's important to know the concept exists.
 
 
 =======
@@ -200,3 +187,5 @@ A conceptual overview of how many images can be analyzed in QuPath is:
 1. Extract objects from the image (e.g. with tissue or cell detection)
 2. Classify the objects, and establish relationships between them if necessary
 3. Explore and interrogate the classified objects and their relationships
+
+Now you know the basics about objects, :doc:`the next will examines how relationships between objects are represented <object_hierarchy>`.

@@ -53,6 +53,12 @@ Where QuPath fits in
 Although it *uses* image processing, this is generally wrapped up inside specific commands, e.g. for *Cell detection* or *TMA dearraying*.
 These commands can be used to generate objects, which can then be queried and summarized as described :doc:`in the next section <objects>`.
 
+.. figure:: images/qupath_approach.png
+  :width: 90%
+  :align: center
+
+  General workflow for analyzing images in QuPath.
+  
 This means that, for the most part, it is not necessary to have detailed knowledge of image processing to use the software (but it can help!).
 Rather, users of the software are often specialists in other areas, who, after learning the basics of how QuPath works, can focus on how they apply it and how to interpret the results.
 

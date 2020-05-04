@@ -181,6 +181,17 @@ How can I set the display range (brightness/contrast) exactly?
 Double-clicking on the *Min/Max display* labels should work, as discussed `here <https://github.com/qupath/qupath/issues/26>`__.
 
 
+Why are some commands marked as 'Deprecated'?
+=============================================
+
+The 'deprecated' flag acts as a warning that the days of that command are numbered... it is likely to be removed in a later version.
+
+The reason for this is usually that it a) isn't considered terribly useful, or b) has been replaced by a better alternative, c) *will* be replaced by a better alternative soon.
+Removing old commands helps make QuPath more maintainable, and creates space for new features to be added without the menus becoming excessively clogged up.
+
+If you find a command you particularly need has been marked as deprecated, feel free to ask on the forum why and discuss its future.
+
+
 Why can I not rotate my image more than 90 degrees?
 ===================================================
 
