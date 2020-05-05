@@ -8,3 +8,4 @@ Advanced
   imagej
   exporting_images
   exporting_annotations
+  stardist
