@@ -49,10 +49,10 @@ Many 'issues' are really better topics for forum discussions.
 .. admonition:: Questions and Issues
 
   **Please don't open a GitHub Issue to ask a question!**
-  Issues are intended only for bug reports and acts as a todo list for software changes - using them for general questions makes this harder to manage and harder to find answers in the future.
+  Issues are intended only for bug reports and act as a todo list for software changes - using them for general questions makes this harder to manage and harder to find answers in the future.
 
   If you aren't sure if you have a question or a bug, or you can't provide clear steps to reproduce the problem you see, use `the forum <http://forum.image.sc/tags/qupath/>`_.
-  
+
 
 
 How do I interpret a cryptic error?
@@ -134,7 +134,7 @@ Lots of subtle and thorny issues can happen when representing numbers in differe
 For example, ``1,001`` can either be a fairly large number or a small number depending upon where on the world it is read.
 
 In some cases, QuPath has to use the 'dot' representation for decimals (e.g. when scripting), since this is Java's preferred form, and trying to work around this proved too difficult.
-However, forcing everyone to use US English for everything (including exporting results) isn't a perfect solution, especially if other software (e.g. your preferred spreadsheet application) is uses something else.
+However, forcing everyone to use US English for everything (including exporting results) isn't a perfect solution, especially if other software (e.g. your preferred spreadsheet application) uses something else.
 
 Therefore QuPath does not (currently) insist on its preference for US English... but gives a warning to be **very** cautious about how numbers are represented and interpreted.
 
@@ -242,7 +242,7 @@ Currently, you can only `view the consecutive sections side-by-side <https://git
 Scripting & development
 =======================
 
-Where as the QuPath javadocs?
+Where are the QuPath javadocs?
 =============================
 
 At the time of writing, QuPath's javadocs aren't hosted anywhere - but it is planned to put them online at some point once they have been cleaned up accordingly. See `here <https://github.com/qupath/qupath/issues/230>`__ for the request.

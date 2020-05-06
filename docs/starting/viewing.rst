@@ -56,7 +56,7 @@ This can also enable rotation.
 
 
 .. tip::
-  It is possible to use the at least some of the gestures with a touch-sensitive mouse, e.g. the *Apple Magic Mouse*.
+  It is possible to use at least some of the gestures with a touch-sensitive mouse, e.g. the *Apple Magic Mouse*.
   For example, turning on the scroll gestures only provides an efficient alternative method to navigate images.
   Just don't forget to hold down the :kbd:`Shift` key when scrolling to zoom in and out.
 
@@ -79,7 +79,7 @@ The action depends on the object currently selected:
 
 * If an annotation is selected, a dialog box will be shown to set the annotation properties
 * If a TMA core is selected, a dialog box will appear to allow notes to be entered quickly
-* Otherwise, the viewer will be centered on the object (think: *'center on enter'*).
+* Otherwise, the viewer will be centered on the object (think: *'center on enter'*)
 
 :kbd:`Spacebar`
 ---------------

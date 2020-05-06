@@ -78,7 +78,7 @@ Step 3: Build QuPath with Gradle
 Open the QuPath source directory in a command prompt
 ====================================================
 
-One way to do this is to go back to GitHub Desktop and choose :menuselection:`Repository --> Open in Command Prompt`
+One way to do this is to go back to GitHub Desktop and choose :menuselection:`Repository --> Open in Command Prompt`.
 
 .. admonition::
   Installing Git or not?
