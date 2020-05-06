@@ -24,7 +24,7 @@ The `Command history` can be found by opening the :guilabel:`Workflow` tab of th
 
   The `Command history` within QuPath
 
-The **Command history** is an example of a workflow that reflects all (or most...) of what has been done to the currently-open image.
+The **Command history** is an example of a workflow that reflects all (or most...) of what has been done to the currently open image.
 
 Whenever a particular command is selected within this list, a table below updates to show any relevant parameters that are associated with the command, along with the values that were used.
 
@@ -51,7 +51,7 @@ This makes it possible to create a new workflow based on the `Command history`, 
   :width: 40%
   :align: center
 
-  A workflow created from the `Command history`
+  A workflow created from the `Command history`.
 
 The new workflow is shown in its own panel.
 Right-clicking on any entry within a `Workflow` allows some minor editing, e.g. to remove an entry or shift it up or down.
@@ -61,7 +61,7 @@ Right-clicking on any entry within a `Workflow` allows some minor editing, e.g. 
   :width: 40%
   :align: center
 
-  Editing a workflow
+  Editing a workflow.
 
 .. TIP::
   There currently isn't much benefit in editing workflows manually.
@@ -74,7 +74,7 @@ Working with workflows
 At this point, workflows may seem a bit underwhelming.
 The `Command history` is useful for reproducibility, but beyond that it is not actually possible to do very much with workflows directly, or even to save edited workflows for posterity.
 
-However, even now workflows are already extremely important within QuPath because of one important feature: workflows can be turned into `scripts <workflows_to_scripts`.
+However, even now workflows are already extremely important within QuPath because of one important feature: workflows can be turned into :doc:`scripts <workflows_to_scripts>`.
 
 
 .. NOTE::

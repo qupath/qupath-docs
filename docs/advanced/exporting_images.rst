@@ -114,7 +114,7 @@ Tile Exporter
 
 One way to use QuPath is as whole slide image viewing and annotation software, outsourcing analysis to other tools that do not otherwise support large, pyramidal images themselves.
 
-The ``TileExporter`` class in QuPath provides options to help export all or part of an image as distinct (possibly-overlapping) image tiles of a fixed size, at any resolution.
+The ``TileExporter`` class in QuPath provides options to help export all or part of an image as distinct (possibly overlapping) image tiles of a fixed size, at any resolution.
 
 To use it, you create an exporter for a specific ``ImageData``, customize it as required, then end by calling ``writeTiles("path/to/export")``.
 

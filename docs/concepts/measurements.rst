@@ -2,8 +2,8 @@
 Measurements
 ************
 
-In :doc:`object` it was stated that all objects have their own measurement lists.
-While true, this is not the whole store.
+In :doc:`Objects <objects>`, it was stated that all objects have their own measurement lists.
+While true, this is not the whole story.
 
 ==============================
 Different kinds of measurement
@@ -59,7 +59,7 @@ In this regard, it is strongly preferable that summary statistics are dynamic be
 .. figure:: images/measurement_types.jpg
   :width: 60%
   :align: center
-  
+
   Illustration of the different measurement types within QuPath. |br|
   The measurement list on the left relates to the individual selected cell shown in yellow (a **detection** object).
   The measurement table contains both summary and shape statistics for the polygonal **annotation** object.
@@ -82,6 +82,6 @@ This means that, if you want this measurement to be updated later whenever you m
 Therefore be careful with measurements, and try to always check that you have definitely measured what you think you have, e.g. by moving or deleting an object that you predict should have an effect on the measurement to see if the measurement in question updates (i.e. it is dynamic) or not.
 
 .. note::
-  
+
   Because this can be confusing, in the future QuPath may make it clearer when measurements are dynamic and when they are not.
   It is also planned to make it easier for developers to write their own dynamic measurements.

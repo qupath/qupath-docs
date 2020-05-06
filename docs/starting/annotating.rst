@@ -35,24 +35,24 @@ Annotation tools
 The most basic drawing tool is the *Rectangle tool*.  Click on the starting point within the image and drag the mouse to the opposite corner of the desired rectangle, then release.  Holding :kbd:`Shift` down while drawing a rectangle will constrain the shape to be square.
 
 .. tip::
-  
-  If you'd like to draw a rectangle around the entire image, use :menuselection:`Objects --> Annotations... --> Create full image annotation`
-  
+
+  If you'd like to draw a rectangle around the entire image, use :menuselection:`Objects --> Annotations... --> Create full image annotation`.
+
 
 |ellipse| Ellipse tool
 ----------------------
 
-The *Ellipse tool* works in much the same way as the *Rectangle tool*, except will end up providing an elliptical region instead.
+The *Ellipse tool* works in much the same way as the *Rectangle tool*, except that it will end up providing an elliptical region instead. Holding :kbd:`Shift` down while drawing an ellipse will constrain the shape to be circle.
 
 .. tip::
-  
+
   Rather than drawing rectangles or ellipses, :menuselection:`Objects --> Annotations... --> Specify annotation` can be used to set coordinates exactly - and thereby give more control over the exact size and/or location.
 
 
 |line| Line tool
 ----------------
 
-Lines can be drawn using the *Line tool*, and clicking once for the starting point, and *double-clicking* for the end point.
+Lines can be drawn using the *Line tool*, by clicking once for the starting point, and *double-clicking* for the end point.
 
 
 |polygon| Polygon tool
@@ -103,7 +103,7 @@ This is something of a special case, covered in :doc:`cell_counting`.
 Locking & unlocking
 ===================
 
-Annotation can be a laborious process.
+Annotating can be a laborious process.
 For that reason, losing or accidentally editing annotations can be rather upsetting.
 
 To help reduce this risk, annotations can be *locked* or *unlocked*.

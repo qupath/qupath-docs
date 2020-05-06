@@ -37,7 +37,7 @@ This works for most other file types that QuPath can handle - not only images.
   :width: 75%
   :align: center
 
-  A whole slide image (*CMU-1.svs*) opened within QuPath
+  A whole slide image (*CMU-1.svs*) opened within QuPath.
 
 
 Seeing the image properties
@@ -97,7 +97,7 @@ Alternatively, you can click on the **Overview image** in the top right to autom
   :width: 75%
   :align: center
 
-  The *Image overview (top right) can be used for navigation*
+  The *Image overview (top right) can be used for navigation*.
 
 
 .. note::
@@ -140,7 +140,7 @@ Double-click to set the final point.
 
 .. note::
   By default, QuPath will switch back to the **Move tool** |icon_move| after you've drawn an annotation with any tool except the **Brush**.
-  This is to help accidentally drawing new annotations when you really just wanted to move around in the image or do something with an existing annotation.
+  This is to avoid accidentally drawing new annotations when you really just wanted to move around in the image or do something with an existing annotation.
   The **Brush** is different, because it's commonly used to paint or edit multiple regions at a time, and it can be annoying to have to switch it back on regularly.
 
   If you don't like the default behavior, it can be changed with the *Return to Move Tool automatically* option in the **Preferences** |icon_cog|.
@@ -154,7 +154,7 @@ Double-click to set the final point.
   :width: 75%
   :class: shadow-image
 
-  Rectangle, ellipse and polygon annotation objects drawn on an image
+  Rectangle, ellipse and polygon annotation objects drawn on an image.
 
 
 Identifying selections
@@ -202,7 +202,7 @@ Alternatively, right-click on any listed annotation and choose **Set properties*
 Viewing measurements
 --------------------
 
-Still in the **Analysis panel**, below the annotation list you should see a table showing measurements for the currently-selected object.
+Still in the **Analysis panel**, below the annotation list you should see a table showing measurements for the currently selected object.
 This should update automatically if you click on another annotation.
 
 
@@ -210,7 +210,7 @@ Removing annotations
 --------------------
 
 If you draw an annotation you don't like, you can delete it from the annotation list.
-Alternatively, if you're currently working inside the viewer (moving around, drawing annotations) you can simply press the :kbd:`Backspace` or :kbd:`Delete` key to remove the currently-selected objects.
+Alternatively, if you're currently working inside the viewer (moving around, drawing annotations) you can simply press the :kbd:`Backspace` or :kbd:`Delete` key to remove the currently selected objects.
 
 .. note::
   Mostly, this should 'just work'.
@@ -250,7 +250,7 @@ These cells are your first **detection objects**.
   :align: center
   :width: 75%
 
-  First detected cells, using default detection parameters
+  First detected cells, using default detection parameters.
 
 .. note::
   Detection objects also have measurements, like annotation objects.
@@ -285,7 +285,7 @@ There are four useful toolbar buttons that can help customize how the objects ar
 * |icon_detections| **Show and hide detections** - shortcut :kbd:`D`
 * |icon_detections_fill| **Fill and unfill detections** - shortcut :kbd:`F`
 
-These allow you to quickly toggle on and off your markup to see switch between looking at analysis data and the underlying image.
+These allow you to quickly toggle on and off your markup to switch between looking at analysis data and the underlying image.
 
 You can also right-click on the image, and further modify how cells are displayed, i.e. with/without nuclei or boundaries shown.
 
@@ -294,7 +294,7 @@ You can also right-click on the image, and further modify how cells are displaye
   :align: center
   :width: 75%
 
-  Right-click on the image to change how cells are displayed
+  Right-click on the image to change how cells are displayed.
 
 
 Creating measurement tables
@@ -311,7 +311,7 @@ You can also generate histograms for any measurements, and save the table to a C
   :align: center
   :width: 75%
 
-  A 'detection' measurement table containing details of all the detected cells
+  A 'detection' measurement table containing details of all the detected cells.
 
 Finishing up
 ============

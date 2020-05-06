@@ -75,7 +75,7 @@ The following shortcuts are used to toggle on/off display elements in the viewer
 Command shortcuts
 =================
 
-The following shortcut trigger commands that can also be accessed within the QuPath menus.
+The following shortcuts trigger commands that can also be accessed within the QuPath menus.
 
 Because the shortcuts are shown in the menus as well, only a small number of the most important are shown here to draw attention to them - subjectively ordered according to usefulness.
 

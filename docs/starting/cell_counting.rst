@@ -32,7 +32,7 @@ The first task is to find a suitable region in which cells should be counted, us
   :width: 75%
   :align: center
 
-  Selected region for counting
+  Selected region for counting.
 
 Having done this, it is optional - but helpful - to overlay a grid on top of the image to assist with counting in a fixed area.
 This can be done simply by clicking the **Show grid** toolbar button |icon_grid|.
@@ -42,7 +42,7 @@ This can be done simply by clicking the **Show grid** toolbar button |icon_grid|
   :width: 75%
   :align: center
 
-  Applying a counting grid
+  Applying a counting grid.
 
 If necessary, the grid spacing can be adjusted under :menuselection:`Edit --> Preferences...` |icon_cog|.
 
@@ -50,7 +50,7 @@ If necessary, the grid spacing can be adjusted under :menuselection:`Edit --> Pr
   :class: shadow-image
   :align: center
 
-  Set counting grid spacing
+  Set counting grid spacing.
 
 
 Clicking cells
@@ -80,7 +80,7 @@ Whenever you click on the image, you will add points to whichever entry in the l
   :width: 75%
   :align: center
 
-  Continuing counting
+  Continuing counting.
 
 
 Saving & exporting
