@@ -36,7 +36,7 @@ In :doc:`cell_classification` we will look at improving on this by training QuPa
 
 
 Annotate a region of interest
------------------------------
+=============================
 
 Using some of the tools introduced in :doc:`../starting/annotating`, create an annotation around a region containing tumor cells that should be detected and counted.
 
@@ -49,7 +49,7 @@ Using some of the tools introduced in :doc:`../starting/annotating`, create an a
 
 
 Run *Positive cell detection*
------------------------------
+=============================
 
 Run the :menuselection:`Analyze --> Cell analysis --> Positive cell detection` command.
 This will bring up a dialog, where most of the options relate to how the cells are detected.
@@ -92,7 +92,7 @@ While the annotation is selected, you can also see from the panel on the left th
 
 
 View cell-by-cell results
--------------------------
+=========================
 
 It may be the case that 12.4% is already the final result that is required and the work is done.
 However, QuPath provides the opportunity to look in more detail.
@@ -123,7 +123,7 @@ A threshold of around 0.1 looks like it is likely to perform well (note, the thr
   However, it is important to note that when the stain estimates are improved then all cell detection should be repeated.
 
 Analyze additional annotations
-------------------------------
+==============================
 
 If necessary, it is possible to then proceed to draw further annotations around areas of interest.
 These can be processed one-by-one by running *Positive cell detection* on an annotation when it is selected, or else they can be processed all together (in parallel).
@@ -148,7 +148,7 @@ The final result should look something like that below.
 
 
 View results
-------------
+============
 
 Whenever you have multiple annotations, it can be helpful to generate a results table for these.
 This is similar to creating a results table for detections, but requires the :menuselection:`Measure --> Show annotation measurements`; command instead.

@@ -64,8 +64,14 @@ The options are:
   * **Auto-generate pyramids:** If selected, QuPath will dynamically generate a pyramid for large-but-not-too-large images (e.g. 10,000 x 10,000 pixels) that don't already have multiple stored resolutions. These images are small enough to fit in memory, but big enough to be unwieldy. For most whole slide images (which are already pyramidal) this has no effect.
   
 .. tip:: 
-  You can also use :menuselection:`File --> Project... --> Import images to project` to add multiple images to a project.
+  
+  You can also use :menuselection:`File --> Project... --> Add images` to add multiple images to a project.
   This option is especially useful if you have a text file containing project URIs for images strewn across a file system, since these can be pasted into the dialog in one go.
+  
+.. tip::
+  
+  You can also merge projects using the `Add images` dialog.
+  Simply add the *project.qpproj* file from another compatible QuPath project to bring all images into the current project.
   
   
 Remove images
@@ -120,7 +126,7 @@ You can also press the :guilabel:`Search...` button and choose a directory, afte
 If you choose :guilabel:`Apply changes` then your project will be updated with the new paths.
 If you choose :guilabel:`Ignore` then your project will not be overwritten, but some images will not open.
 
-.. TIP::
+.. tip::
   In the event that your images and project *both* changed location together, QuPath will try to resolve the paths relative to the project and suggest how you should update them automatically.
    
   

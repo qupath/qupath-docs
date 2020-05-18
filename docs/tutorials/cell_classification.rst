@@ -25,7 +25,7 @@ They can be applied for the *classification* of all *detections* within QuPath, 
 
 
 Create annotation around main region of interest
-------------------------------------------------
+================================================
 
 The first step is to draw a generous annotation that corresponds to a region of interest within which cells should be detected.
 This can be done very quickly, and should include a mixture of both tumor and non-tumor cells for the classification to be meaningful.
@@ -45,7 +45,7 @@ This can be done very quickly, and should include a mixture of both tumor and no
 
 
 Run *Cell detection* command
---------------------------------
+============================
 
 With the annotation selected, the :menuselection:`Analyze --> Cell analysis --> Cell detection` command can be used to detect cells.
 
@@ -81,7 +81,7 @@ The resulting cell detection is shown below.
 
 
 View cell measurements (if you want)
-------------------------------------
+====================================
 
 QuPath's ability to distinguish between different cell types depends upon which measurements have been made.
 
@@ -112,7 +112,7 @@ The *Nucleus/Cell area ratio* incorporates both of these characteristics in a si
 
 
 Calculate additional features
-------------------------------
+=============================
 
 Despite the usefulness of *Nucleus/Cell area ratio* for identifying tumor cells, on its own it is not enough.
 One reason is that dense populations of immune cells can also have high values for this measurement.
@@ -155,7 +155,7 @@ This will help QuPath to identify all the cells within tumor areas correctly.
 
 
 Annotate regions containing different cell types
-------------------------------------------------
+================================================
 
 The next step is to begin annotating regions according to how the cells contained within them should be classified.
 
@@ -188,7 +188,7 @@ Right-clicking on the image after drawing the annotation can offer an easier way
 
 
 Train a cell classifier based on annotations
---------------------------------------------
+============================================
 
 Once you have several annotations with different classes, it is time to create the classifier to see how well QuPath can distinguish the cells.
 
@@ -209,7 +209,7 @@ If you add extra measurements later (e.g. by running *Add smoothed features* aga
 
 
 Interactively improve classification performance
-------------------------------------------------
+================================================
 
 Continue to add annotations and set their classes in areas that QuPath gets 'wrong', until you are satisfied with the performance.
 
@@ -224,7 +224,7 @@ An extra tip: holding down shift while right-clicking on the image provides a th
 
 
 Apply intensity classification
-------------------------------
+==============================
 
 Once you are satisfied with QuPath's ability to identify tumor cells, it is now time to apply DAB staining intensity classification.
 Because the scoring of tumor cells is a common application, there is an option to do this directly within the classifier dialog box.
@@ -256,7 +256,7 @@ Also, make sure that *Use single threshold* is selected and then adjust *Thresho
 
 
 View the results
-----------------
+================
 
 That's it!  If you select the original, large annotation containing all the cells then the Ki67 labelling index show appear in the lower measurements section of the *Annotations* tab on the left of the screen as *Positive %*.
 You can also generate results tables if necessary.
