@@ -30,7 +30,7 @@ The commands described here are accessible from the *ImageJ toolbar button* in Q
   :align: center
   :width: 40%
 
-  ImageJ menu in the QuPath toolbar
+  ImageJ menu in the QuPath toolbar.
 
 .. NOTE:
   The toolbar button will only be available if you have the ImageJ extension installed.
@@ -53,7 +53,7 @@ Then by clicking on the *Send region to ImageJ* command |icon_extract_image|, Im
   :width: 75%
   :align: center
 
-  Sending an image region to ImageJ
+  Sending an image region to ImageJ.
 
 
 Downsampling and image calibration
@@ -104,9 +104,9 @@ When such a color transform has been applied, QuPath will pass the transformed p
   :width: 75%
   :align: center
 
-  Sending a color-transformed image region to ImageJ
+  Sending a color-transformed image region to ImageJ.
 
-In the screenshot above, the original image was sent first by running the *Send region to ImageJ* command, and then hematoxylin and DAB transformed images were also sent (separately) in the same way, after applying the appropriate transformed within QuPath.
+In the screenshot above, the original image was sent first by running the *Send region to ImageJ* command, and then hematoxylin and DAB transformed images were also sent (separately) in the same way, after applying the appropriate transform within QuPath.
 
 .. note::
   If you look closely at the screenshot, you should see that the color-transformed images were sent using a different downsample factor compared to the original (RGB) image.
@@ -129,7 +129,7 @@ Consequently, when sending an image region to ImageJ, QuPath uses them to make i
   :width: 75%
   :align: center
 
-  Sending an image region & objects to ImageJ
+  Sending an image region & objects to ImageJ.
 
 The screenshot above depicts how this works.
 The selected object within QuPath defines the region that will be sent, and - so long as it isn't a rectangle - this becomes converted into a selected ROI in ImageJ (shown in yellow in both applications).
@@ -157,9 +157,9 @@ The result will be similar to what is generated in QuPath with the :menuselectio
   :width: 75%
   :align: center
 
-  Sending a snapshot image to ImageJ
+  Sending a snapshot image to ImageJ.
 
-Note that the snapshot command is really **only** for creating screenshots - not **not** for transferring images for further analysis.
+Note that the snapshot command is really **only** for creating screenshots - **not** for transferring images for further analysis.
 The snapshot that is available within ImageJ will be RGB, and does not contain the pixel values or calibration information that is available when *Send region to ImageJ* is used instead.
 
 
@@ -190,7 +190,7 @@ Send ROI to QuPath
   :width: 75%
   :align: center
 
-  Sending a ROI from ImageJ to QuPath
+  Sending a ROI from ImageJ to QuPath.
 
 Running :menuselection:`Plugins --> Send ROI to QuPath` will take whichever ROI is currently active in ImageJ, and send it to QuPath as an annotation object.
 All rescaling etc. will happen automatically.
@@ -204,7 +204,7 @@ Send Overlay to QuPath
   :width: 75%
   :align: center
 
-  Sending an overlay from ImageJ to QuPath
+  Sending an overlay from ImageJ to QuPath.
 
 Running :menuselection:`Plugins --> Send Overlay to QuPath` will take **all** the ROIs on the current ImageJ overlay, and send them back to QuPath as either annotation or detection objects.
 Furthermore, the measurement list for each object can optionally be populated by ImageJ measurements, according to ImageJ's :menuselection:`Analyze --> Set Measurements` specifications - in the same ways as this command is used to specify measurements for the :menuselection:`Analyze --> Analyze Particles...` command.
@@ -233,7 +233,7 @@ Together, these integration features add up to both enabling ImageJ to operate w
 Macros and parallelization
 --------------------------
 
-In QuPath ``v0.1.2``, an 'experimental' ability to run macros in parallel was added (which can be turned on or off in the macro runner dialog).
+In QuPath v0.1.2, an 'experimental' ability to run macros in parallel was added (which can be turned on or off in the macro runner dialog).
 Parallelization can speed up processing, however it can also have unintended consequences - and therefore is turned off by default.
 
 In particular, if your macro creates additional images (e.g. by duplication, or by splitting color channels), then this can cause a parallelized macro to fail (since macros work with an 'active' image, which changes unpredictably under these circumstances).

@@ -15,7 +15,7 @@ Download QuPath for your platform (Windows, Linux, macOS) from `GitHub <https://
 * On **Linux**, download and extract the ``.tar.xz`` file
 
 .. tip::
-  
+
   Recent security changes in Windows and macOS are likely to complicate installation slightly. |br|
   See :ref:`Troubleshooting` for more information.
 
@@ -30,7 +30,7 @@ When running QuPath for the first time, you will be prompted to specify some set
   :width: 75%
   :align: center
 
-  Setup options shown on startup
+  Setup options shown on startup.
 
 The default is that QuPath will request 50% of the total memory available.
 This is generally a reasonable choice, but be aware that the amount of memory available to QuPath is one of the main factors influencing how well the software will perform - and how complex the analysis can be.
@@ -93,7 +93,7 @@ The QuPath installer does not start
 If the QuPath installer does not start at all, you may not have administrator privileges on your computer - and therefore cannot install it.  Try downloading the ``.zip`` file instead, which should not need such privileges.
 
 .. important::
-  
+
     Running QuPath on 32-bit Windows is not supported.
 
 
@@ -130,7 +130,7 @@ Recent macOS changes (first reported in February 2020) may give a different mess
 .. figure:: images/installing_macOS_damaged.png
   :align: center
   :width: 60%
-  
+
   Damaged message (macOS Catalina)
 
 This appears to occur because macOS Catalina flags downloads from 'unidentified developers' as quarantined, and will not permit them to be opened.
@@ -140,34 +140,34 @@ One way to work around this is to remove the flag by opening `/Applications/Util
 .. code-block:: bash
 
   xattr -d com.apple.quarantine /Users/yourname/path/to/QuPath.app
-  
+
 .. figure:: images/installing_macOS_damaged_terminal.png
   :align: center
   :width: 75%
-  
-  
+
+
 
 .. warning::
-  
+
   Since macOS (presumably) has your best interests at heart, circumventing its security settings routinely is probably not advisable.
-  
+
   However, the time and resources needed to distribute QuPath as a signed/notarized app to avoid these warnings are currently lacking.
 
 
 .. note::
-  
+
     These alternative methods to start QuPath should only be necessary the first time you run it - double-clicking as normal should work afterwards.
-  
+
 
 .. tip::
-  
+
   The quarantined flag does not always appear to be set, depending upon how the application is downloaded.
   For example, these problems may not arise if it is obtained using ``wget``, e.g.
-  
+
   .. code-block:: bash
-  
+
     wget https://github.com/qupath/qupath/releases/download/v0.2.0-m9/QuPath-0.2.0-m9-Mac.dmg
-    
+
 
 
 Linux

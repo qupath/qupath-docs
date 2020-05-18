@@ -20,7 +20,7 @@ If this is selected, QuPath will add the following line to the top of your scrip
   import static qupath.lib.gui.scripting.QPEx.*
 
 
-This means you've access to all the static methods in `QPEx <https://github.com/qupath/qupath/blob/master/qupath-gui-fx/src/main/java/qupath/lib/gui/scripting/QPEx.java>`_ and `QP <https://github.com/qupath/qupath/blob/master/qupath-core/src/main/java/qupath/lib/scripting/QP.java>`_ directly.
+This means you've access to all the static methods in `QPEx <https://github.com/qupath/qupath/blob/master/qupath-gui-fx/src/main/java/qupath/lib/gui/scripting/QPEx.java>`_ and `QP <https://github.com/qupath/qupath/blob/master/qupath-core-processing/src/main/java/qupath/lib/scripting/QP.java>`_ directly.
 These are used extensively by QuPath when converting workflows to scripts for batch processing.
 
 All the examples below assume that ``QPEx`` is imported one way or another.
@@ -678,7 +678,7 @@ This should (although I haven't tried...) make it possible to exchange regions w
   def mat = Mat.eye(3, 3, opencv*core.CV*32FC1).asMat()
   print gson.toJson(mat)
 
-Eventually this will make OpenCV classifiers JSON-serializable within QuPath and finally `avoid needing to retrain existing classifiers when reloading them <https://github.com/qupath/qupath/issues/3430>`_.
+Eventually this will make OpenCV classifiers JSON-serializable within QuPath and finally `avoid needing to retrain existing classifiers when reloading them <https://github.com/qupath/qupath/issues/343>`_.
 
 
 What next?

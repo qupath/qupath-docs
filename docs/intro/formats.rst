@@ -75,7 +75,7 @@ CZI (Zeiss)
 
 Since the release of `Bio-Formats v5.3.0 <https://www.openmicroscopy.org/site/support/bio-formats5.3/about/whats-new.html>`__ QuPath has been able to work with ``.czi`` files.
 
-To open CZI files that on that use JPEG-XR compression on **Windows**, you may also need to install the *Visual Studio 2015 C++ Redistributable* - see `here <https://www.openmicroscopy.org/site/support/bio-formats/formats/zeiss-czi.html>`__ for more information.
+To open CZI files that use JPEG-XR compression on **Windows**, you may also need to install the *Visual Studio 2015 C++ Redistributable* - see `here <https://www.openmicroscopy.org/site/support/bio-formats/formats/zeiss-czi.html>`__ for more information.
 
 
 iSyntax (Philips)
@@ -121,4 +121,4 @@ Internally, the data in a TIFF file can be represented quite differently in term
 Consequently, although OpenSlide and Bio-Formats support many TIFF files, it is quite possible to encounter variants that cannot be opened with QuPath.
 
 Perhaps the most common reason for this is that the file does not contain pyramidal layers, or these layers cannot be automatically recognized.
-This is one reason why well-supported, open formats should generally be preferred (e.g OME-TIFF).
+This is one reason why well-supported, open formats should generally be preferred (e.g. OME-TIFF).

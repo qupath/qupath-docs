@@ -20,7 +20,7 @@ Pressing this results in a script being generated like that shown below.
   :width: 75%
   :align: center
 
-  A script generated from a `Workflow`
+  A script generated from a `Workflow`.
 
 
 If the `Workflow` has been edited, then these edits will be reflected in the script.
@@ -121,7 +121,7 @@ The process could then be as follows:
 
 2. Perform all the manual steps on the first image (e.g. to draw annotations in regions of interest)
 
-3. Perform all the 'loggable' steps within the same image (e.g. to detect and score cells), and generate a script. At some point near the beginning of the script you will probably need a line reading ``selectAnnotations();``. This is where all the annotations are selected for processing.
+3. Perform all the 'loggable' steps within the same image (e.g. to detect and score cells), and generate a script. At some point near the beginning of the script you will probably need a line reading ``selectAnnotations()``. This is where all the annotations are selected for processing.
 
 4. Perform all the manual steps needed across the other images, i.e. drawing annotations as required to define the regions of interest. Save the ``.qpdata`` file for each image.
 
