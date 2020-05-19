@@ -67,6 +67,39 @@ In this regard, it is strongly preferable that summary statistics are dynamic be
 The summary statistics are based upon the detection objects descended from the annotation.
 More information is given in :doc:`object_hierarchy`.
 
+======================
+Exporting measurements
+======================
+
+The cleanest way to export different types of measurements in QuPath is with the **Measurement Exporter**.
+Provided that your images are stored in a :doc:`project <../tutorials/projects>`, you can access it through :menuselection:`Measure --> Export measurements`.
+
+.. figure:: images/measurement_exporter.png
+  :width: 70%
+  :align: center
+
+  The Measurement Exporter
+
+From there, you can decide from which image(s) the measurements will the be exported (similarly to the `Run for project <https://qupath.readthedocs.io/en/latest/docs/scripting/workflows_to_scripts.html#running-a-script-for-multiple-images>`_ command in the script editor).
+Below the image selection, a small amount of parameters will allow you to shape your output file as you desire:
+
+1. **Output file**: The desired `full path` location of your output file
+2. **Export type**: The measurement type to be exported (e.g. cells)
+3. **Separator**: The character that will be written to separate the measurement values (e.g. comma)
+4. **Columns to include** (optional): The list of measurements to include in the export (if left empty, all existing measurements are included)
+
+.. note::
+  If you wish to **only** export specific measurements, the **Populate** button is what you need. This will populate a list from which you can choose the exact columns to include in the export.
+  Therefore, you will need to have images selected (
+  This list is constructed after performing a scan of all the selected images to check which measurements exist, and should only take a couple of seconds.
+
+  Note that if an image is missing measurements for a specified column, empty values will be written to the output file.
+
+.. important::
+
+  If you have an open image in an active viewer, be sure to always save your data before running the measurement exporter.
+  A small red-colored warning will appear to notify you if this is the case.
+
 
 ==================================
 A warning about summary statistics
