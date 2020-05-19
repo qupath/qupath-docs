@@ -100,3 +100,31 @@ If its classification does not, the cell is considered to be *CD3 -ve*.
   :width: 60%
   :align: center
   :class: shadow-image
+
+
+========================
+Ignored* classifications
+========================
+
+There is one other classification concept, which is a relatively recent addition to QuPath: that of 'ignored' classes.
+
+These are like normal classifications, but under some particular circumstances they are... well, ignored.
+This includes when making measurements or converting classifications to objects.
+
+You can distinguish these classes by the asterisk at the end of their name, e.g. *Ignore** and *Region**.
+
+.. admonition:: Why have ignored classes?
+   
+  Ignored classes fill the gap between objects with meaningful classifications and those that are completely unclassified.
+  One reason this is necessary is because unclassified annotations cannot be used to train a classifier -- but we often still need to identify regions we *aren't* interested in so that we can distinguish them from the regions we *are* interested in.
+
+  They are basically a way to express 'I want you to find this, so that you can ignore it'.
+    
+  Ignored classes are also useful with :doc:`thresholding <../tutorials/thresholding>` for situations where you wish to identify regions but don't necessarily care what classification they might have.
+
+.. tip::
+  
+  I typically use *Ignore** for areas of whitespace or artifact.
+
+  I use the *Region** class to define areas where I don't care what the classification is -- but I do still want to distinguish it from anything that is unclassified.
+  

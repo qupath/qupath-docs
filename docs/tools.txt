@@ -6,6 +6,8 @@
 .. |wand| image:: ../images/icons/Wand.png
 .. |points| image:: ../images/icons/Points.png
 
+.. |icon_contrast| image:: ../images/icons/Contrast.png
+  :class: inline-icon
 
 .. |icon_rectangle| image:: ../images/icons/Rectangle.png
   :class: inline-icon

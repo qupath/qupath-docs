@@ -82,5 +82,5 @@ html_logo = 'docs/images/qupath_128.png'
 
 html_favicon = 'docs/images/QuPath.ico'
 
-release = '0.2.0-m11'
+release = '0.2.0-m12'
 version = release  # This really should be 0.2
