@@ -7,7 +7,7 @@ Cell classification
 .. warning::
   The original version of this tutorial was written for QuPath v0.1.2.
   
-  Detection classifiers in QuPath v0.2.0 are currently being updated, and this tutorial will soon be updated.
+  Object classifiers in QuPath v0.2.0 have been updated, and this tutorial will soon be replaced.
   In the meantime, there is some further information about the new classifiers in :doc:`Multiplexed analysis <multiplex_analysis>`.
 
 :doc:`cell_detection` looked at computing Ki67 labelling indices by counting positive and negative cells within user-defined regions of interest.

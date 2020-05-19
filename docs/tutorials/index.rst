@@ -11,3 +11,4 @@ Tutorials
   cell_detection
   cell_classification
   multiplex_analysis
+  pixel_classification
