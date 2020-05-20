@@ -54,6 +54,10 @@ This will help ensure behavior should match with what is shown in this documenta
 Troubleshooting
 ===============
 
+If QuPath installs but you can't set the memory limit, see :ref:`Set max memory`
+
+If you have trouble installing at all, please see below...
+
 
 Windows (.zip)
 ==============

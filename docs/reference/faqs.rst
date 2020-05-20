@@ -7,6 +7,10 @@ This page contains answers to common questions that arise when using QuPath.
 .. tip::
 
   See :doc:`../starting/help` for a full list of places to get help with QuPath.
+  
+.. admonition:: Even more questions & answers
+  
+  For a more extensive list of questions gathered during the NEUBIAS Academy webinar in April 2020, see `this thread on image.sc <https://forum.image.sc/t/neubias-academy-home-webinar-quantitative-pathology-bioimage-analysis-qupath-questions-answers/37387>`_.
 
 
 =======
@@ -90,6 +94,24 @@ Can I cite QuPath in a publication?
 Please do! See :doc:`../intro/citing`.
 
 
+How do we know we can trust the analysis results?
+=================================================
+
+Excellent question - stay skeptical!
+
+Image analysis lets you generate numbers, but these can be sensitive to how precisely you do the analysis (with or without machine learning).
+QuPath gives you the tools to make the measurements and to visualize them, but the meaning and validation is up to the user.
+
+This is why image analysis results (from any software) should be carefully validated and treated with caution.
+Doing this is challenging because the 'truth' can be hard to define.
+One way is to compare with expert evaluation.
+Another (in some cases) is to use clinical outcome.
+Both these have limitations; validation is almost always hard – but crucial.
+
+There is also the possibility of bugs in any software.
+If you find any discrepancies, please report them so they can be investigated and fixed if necessary.
+
+
 ==============
 Running QuPath
 ==============
@@ -109,19 +131,66 @@ Things that require a lot of memory include:
 * Working with large, non-pyramidal images
 * Working with z-stacks of whole slide images
 
+Does QuPath use my graphic card (GPU)?
+======================================
+
+Generally no... our current focus is the stability and functionality – and finding efficient ways to do things that don’t require any particular hardware.
+But we realise that will have limits and we are certainly also thinking about GPUs.
+
+However, note that many bottlenecks depend upon things that cannot be solved by the GPU alone (e.g. reading image tiles, the user interface thread).
+Therefore the real-world impact on performance may be quite modest for many applications.
+
+The interactive machine learning uses OpenCV as the processing library, which uses the CPU (but highly-optimzed).
+It is designed so that other machine learning libraries could potentially be used, if suitable extensions are written.
+
 
 Why do I see a warning when I try to install QuPath?
 ====================================================
 
-See :doc:`../intro/installation`.
+See :ref:`Installation`.
+
+
+.. _Set max memory:
+
+Why can I not set the maximum memory?
+=====================================
+
+QuPath offers a dialog to set the maximum memory on first startup, or through :menuselection:`Help --> Show setup options`.
+This *should* work, but sometimes does not -- possibly due to permissions issues meaning that the necessary config file cannot be overwritten successfully.
+
+To set the memory limit manually, find the `.cfg.` file within your QuPath installation (something like `QuPath-0.2.0.cfg`) and open it in a plain text editor (e.g. Notepad, Atom).
+
+The default is to use 50% of available memory, specified under `JavaOptions`:
+
+.. code-block:: bash
+
+  [JavaOptions]
+  -XX:MaxRAMPercentage=50
+
+
+You can change this to a fixed maximum size via the `-Xmx` Java option, e.g. to give 12 GB use:
+
+.. code-block:: bash
+
+  [JavaOptions]
+  -Xmx12G
+  
+
 
 
 Can QuPath be run in batch mode from the command line?
 ======================================================
 
-Kind of... but maybe let's say 'no' for now.
+Yes!
+The main priority remains the interactive application, but command line support was introduced in v0.2.0-m10.
+It will be further improved in the future.
 
-It is planned to provide a command line interface for QuPath eventually, but the current priority is to stabilize the main interactive application first.
+Accessing it on a Mac can be a little awkward; something like this should work (after adapting for version number):
+
+.. code-block:: bash
+
+  ./QuPath-0.2.0.app/Contents/MacOS/QuPath-0.2.0 --help
+  
 
 
 
@@ -144,6 +213,17 @@ There is a more detailed technical description about the issues involved `here <
   :class: shadow-image
   :width: 60%
   :align: center
+
+
+Is there a way to make projects self-contained, using the relative paths to images?
+===================================================================================
+
+QuPath projects currently use a kind of hybrid approach already: storing both the absolute and relative paths to the image files.
+
+When you open an image, it checks both.
+If you move a project, but maintain the relative locations, QuPath *will* still prompt you to update the paths - but it will prepopulate all the paths for you, so you just need to accept the changes by clicking one button.
+
+This is because QuPath politely doesn’t want to change the paths stored in the `.qpproj` file without permission.
 
 
 =============
@@ -170,6 +250,12 @@ Is it possible to view slide labels?
 
 Yes, see `this answer <https://github.com/qupath/qupath/issues/36#issuecomment-268772402>`__.
 
+
+Does QuPath edit the original image files?
+===========================================
+
+QuPath doesn’t edit the original image files.
+It also doesn’t save the image data in its own files; rather, QuPath stores its data along with a URI that links back to the original image.
 
 ============
 Using QuPath
@@ -243,11 +329,12 @@ Scripting & development
 =======================
 
 Where are the QuPath javadocs?
-=============================
+==============================
 
-At the time of writing, QuPath's javadocs aren't hosted anywhere - but it is planned to put them online at some point once they have been cleaned up accordingly. See `here <https://github.com/qupath/qupath/issues/230>`__ for the request.
+At the time of writing, QuPath's javadocs aren't hosted anywhere - but it is planned to put them online at some point once they have been cleaned up accordingly.
+See `here <https://github.com/qupath/qupath/issues/230>`__ for the request.
 
-In the meantime, check :doc:`building` for instructions how to build them yourself.
+In the meantime, check :ref:`Building javadocs` for instructions how to build them yourself.
 
 
 How do I read a *.qpdata* file in Python/C++/R?
