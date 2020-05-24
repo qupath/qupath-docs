@@ -127,9 +127,6 @@ Putting these together, we can have a QuPath script that exports annotations to 
 Binary & labeled images
 =======================
 
-Individual annotations
-----------------------
-
 Working with images in QuPath usually involves creating an ``ImageServer`` to handle pixels and metadata.
 Often these pixels and metadata are read from a file, but some special ``ImageServers`` are able to generate them on demand based on something else.
 
@@ -153,7 +150,11 @@ This can be created and customized in various ways, and then used to write out t
 
     An image in QuPath (left) with annotations exported as two binary image channels (center) or a single labeled image (right).
 
-The following script creates a ``LabeledImageServer``, and loops through all annotations in an image with the clasifications *Tumor*, *Stroma* and *Other* - exporting a labelled image for the bounding box of each annotation.
+
+Individual annotations
+----------------------
+
+The following script creates a ``LabeledImageServer``, and loops through all annotations in an image with the clasifications *Tumor*, *Stroma* and *Other* - exporting a labeled image for the bounding box of each annotation.
 Any other annotations occur within the same bounding box will also be included.
 
 ::
@@ -224,6 +225,46 @@ Finally, the builder makes it possible to assign distinct classifications within
     A coarse stroma annotation with finer tumor annotation (left), exported as a labeled image with stroma first (center) or tumor first (right).
 
 
+Full labeled image
+-------------------
+
+A modified form of the above script can be used to export a single labeled image corresponding to the entire image.
+
+::
+  
+  def imageData = getCurrentImageData()
+
+  // Define output path (relative to project)
+  def outputDir = buildFilePath(PROJECT_BASE_DIR, 'export')
+  mkdirs(outputDir)
+  def name = GeneralTools.getNameWithoutExtension(imageData.getServer().getMetadata().getName())
+  def path = buildFilePath(outputDir, name + "-labels.png")
+
+  // Define how much to downsample during export (may be required for large images)
+  double downsample = 8
+
+  // Create an ImageServer where the pixels are derived from annotations
+  def labelServer = new LabeledImageServer.Builder(imageData)
+    .backgroundLabel(0, ColorTools.WHITE) // Specify background label (usually 0 or 255)
+    .downsample(downsample)    // Choose server resolution; this should match the resolution at which tiles are exported
+    .addLabel('Tumor', 1)      // Choose output labels (the order matters!)
+    .addLabel('Stroma', 2)
+    .addLabel('Other', 3)
+    .multichannelOutput(false) // If true, each label refers to the channel of a multichannel binary image (required for multiclass probability)
+    .build()
+    
+  // Write the image
+  writeImage(labelServer, path)
+  
+
+.. warning::
+  
+  It is usually neither necessary nor desireable to export labels for an entire whole slide image at full resolution -- it is also not possible for some image formats (the images are just too big).
+  
+  You can adjust the ``downsample`` value to help deal with this, or choose ``.ome.tif`` as the extension to write an image pyramid.
+  
+
+
 Labeled tiles
 -------------
 
@@ -257,13 +298,13 @@ The following script applies this to export overlapping image tiles, and associa
       .multichannelOutput(true)  // If true, each label is a different channel (required for multiclass probability)
       .build()
 
-  // Create an exporter that requests corresponding tiles from the original & labelled image servers
+  // Create an exporter that requests corresponding tiles from the original & labeled image servers
   new TileExporter(imageData)
       .downsample(downsample)     // Define export resolution
       .imageExtension('.jpg')     // Define file extension for original pixels (often .tif, .jpg, '.png' or '.ome.tif')
       .tileSize(512)              // Define size of each tile, in pixels
-      .labeledServer(labelServer) // Define the labelled image server to use (i.e. the one we just built)
-      .annotatedTilesOnly(false)  // If true, only export tiles if there is a (labelled) annotation present
+      .labeledServer(labelServer) // Define the labeled image server to use (i.e. the one we just built)
+      .annotatedTilesOnly(false)  // If true, only export tiles if there is a (labeled) annotation present
       .overlap(64)                // Define overlap, in pixel units at the export resolution
       .writeTiles(pathOutput)     // Write tiles to the specified directory
 

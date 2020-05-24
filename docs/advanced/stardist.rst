@@ -287,7 +287,7 @@ These include:
 
 .. warning::
   
-  The cell expansion currently uses an elaborate, geometry-based method -- rather than the pixel-based approach in the build-in cell detection command.
+  The cell expansion currently uses an elaborate, geometry-based method -- rather than the pixel-based approach in the built-in cell detection command.
   
   This gives much smoother results independent of image resolution, but it can produce artifacts in some (hopefully rare) cases.
   
