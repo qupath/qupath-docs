@@ -8,6 +8,7 @@ Tutorials
   projects
   thresholding
   measuring_areas
+  exporting_measurements
   cell_detection
   cell_classification
   multiplex_analysis
