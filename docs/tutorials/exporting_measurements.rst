@@ -10,14 +10,14 @@ There are 3 different ways to export measurements within QuPath, via:
 2. **the measurement exporter**
 3. **scripting (MeasurementExporter class)**
 
-Which one to use is up to you and depends on what you want to do. We will cover all of them here.
+Which one to use is up to you and depends on what you want to do. Each of them will be covered here.
 
 .. note::
   As a rule of thumb, if you have:
 
-  * **A single image**: use the measurement table
-  * **Multiple images**: use the Measurement Exporter
-  * **A script**: use the MeasurementExporter class
+  * **a single image**: use the measurement table
+  * **multiple images**: use the Measurement Exporter
+  * **a script**: use the MeasurementExporter class
 
 =========================
 Via the measurement table
@@ -25,11 +25,11 @@ Via the measurement table
 
 The measurement table allows you to export measurements from a single image, currently opened in the viewer.
 It is therefore **not** recommended if you wish to export measurements for multiple images or across a whole project.
-Nevertheless, it is a good method to visualise directly the measurements before exporting.
+Nevertheless, it is a good method to get some direct visualisation of what will be exported, before actually exporting anything.
 
 
-As mentioned in :doc:`First steps <../starting/first_steps>`, you can create a measurement table by selecting the **Table** button in the toolbar |icon_table|.
-After choosing the objects you wish to export (i.e. Detections, Annotations), the relevant measurement table will be displayed.
+As mentioned in `Introducing objects <../starting/first_steps.html#introducing-objects>`_, you can create a measurement table by selecting the **Table** button in the toolbar |icon_table|.
+After choosing the objects you wish to export (e.g. detections, annotations), a similar measurement table to the one below will be shown on screen.
 
 .. figure:: images/measurement_table.png
   :width: 70%
@@ -37,7 +37,7 @@ After choosing the objects you wish to export (i.e. Detections, Annotations), th
 
   Saving cell detection measurements via the measurement table (TODO: fix image badly cropped).
 
-You can then save your measurement by pressing **Save** and choosing an appropriate name for your output TXT file.
+You can then save your measurement by pressing **Save** and choosing an appropriate name for your output ``.txt`` file.
 
 .. note::
   This method creates a table with different columns, which all depend on the objects (and measurements) present in your image.
@@ -49,7 +49,7 @@ Via the Measurement Exporter
 ============================
 
 The cleanest way to export different types of measurements in QuPath is with the **Measurement Exporter**.
-Provided that your images are stored in a :doc:`project <../tutorials/projects>`, you can access it through :menuselection:`Measure --> Export measurements`.
+Provided that your images are stored in a :doc:`project <../tutorials/projects>`, you can access it through :menuselection:`Measure --> Export measurements` (as well as |icon_table| --> Export measurements).
 
 .. figure:: images/measurement_exporter.png
   :width: 70%
@@ -83,7 +83,6 @@ Via scripting
 =============
 
 In cases where you would want to automate your analysis and exporting process, the Measurement Exporter can be easily used with scripting.
-
 To do so, you can create a ``MeasurementExporter``, customize it the way you want it, then call ``exportMeasurements(outputFile)`` to start the export process.
 
 The following script demonstrates a standard pipeline for exporting cell measurements from all the images in the current project to an output file ``measurements.tsv``.
@@ -119,9 +118,9 @@ The following script demonstrates a standard pipeline for exporting cell measure
   // Create the measurementExporter and start the export
   def exporter  = new MeasurementExporter()
                     .imageList(imagesToExport)            // Images from which measurements will be exported
-        .separator(separator)                 // Character that separates values
-        .includeOnlyColumns(columnsToInclude) // Columns are case-sensitive
-            .exportType(exportType)               // Type of objects to export
-            .exportMeasurements(outputFile)        // Start the export process
+                    .separator(separator)                 // Character that separates values
+                    .includeOnlyColumns(columnsToInclude) // Columns are case-sensitive
+                    .exportType(exportType)               // Type of objects to export
+                    .exportMeasurements(outputFile)        // Start the export process
 
   print "Done!"

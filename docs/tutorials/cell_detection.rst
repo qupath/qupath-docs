@@ -71,24 +71,24 @@ Therefore the *Single threshold* option should be ticked, and only the first thr
   Positive cell detection dialog
 
 After pressing the *Run* button on the dialog, the results should appear as below.
-In this case, the original single 'annotation object' has been added to with 1207 'detection objects' (the cells).
+In this case, the original single 'annotation object' has been added to with 1088 'detection objects' (the cells).
 While the annotation is selected, you can also see from the panel on the left that 12.4% of the detected cells are classed as positive.
 
 .. note::
-  For a quick recap on the difference between annotation and detection objects, see [Introducing objects](First-steps#introducing-objects)
+  For a quick recap on the difference between annotation and detection objects, see `Introducing objects <../starting/first_steps.html#introducing-objects>`_.
 
-  .. figure:: images/ki67_detecting_final_markup.jpg
-    :class: shadow-image
-    :width: 75%
-    :align: center
+.. figure:: images/ki67_detecting_final_markup.jpg
+  :class: shadow-image
+  :width: 75%
+  :align: center
 
-    Positive cell detection image results
+  Positive cell detection image results
 
-  If you find that the cells do not appear, check that you do not have detection objects hidden.
-  This is controlled with the *Show/hide detection objects* button on the toolbar |icon_detections|.
-  You can also control whether the detections are shown 'hollow' or 'filled' with the button beside |icon_detections_fill|.
+If you find that the cells do not appear, check that you do not have detection objects hidden.
+This is controlled with the *Show/hide detection objects* button on the toolbar |icon_detections|.
+You can also control whether the detections are shown 'hollow' or 'filled' with the button beside |icon_detections_fill|.
 
-  It is a good idea to use these buttons (or their shortcuts :kbd:`D` and :kbd:`F`) to help confirm that the cells have been correctly detected.
+It is a good idea to use these buttons (or their shortcuts :kbd:`D` and :kbd:`F`) to help confirm that the cells have been correctly detected.
 
 
 View cell-by-cell results
@@ -119,7 +119,7 @@ A threshold of around 0.1 looks like it is likely to perform well (note, the thr
 .. note::
   The fact that a considerable number of the cells appear to have *negative* DAB OD staining (i.e. values below zero) - which ought not to be possible - the histogram suggests that the stain separation has not been perfect.
 
-  A small proportion of negative values is generally tolerable because of the inherent limitations in trying to quantify DAB staining in imperfect images, however the situation can (and in this case probably should) be improved using the [[Estimate-stains]] command.
+  A small proportion of negative values is generally tolerable because of the inherent limitations in trying to quantify DAB staining in imperfect images, however the situation can (and in this case probably should) be improved using the *Estimate stains* command.
   However, it is important to note that when the stain estimates are improved then all cell detection should be repeated.
 
 Analyze additional annotations
@@ -151,7 +151,7 @@ View results
 ============
 
 Whenever you have multiple annotations, it can be helpful to generate a results table for these.
-This is similar to creating a results table for detections, but requires the :menuselection:`Measure --> Show annotation measurements`; command instead.
+This is similar to creating a results table for detections, but requires the :menuselection:`Measure --> Show annotation measurements` command instead.
 You can also access this command from the *Measurement table* icon in the toolbar |icon_table|.
 
 .. figure:: images/ki67_detecting_results_annotations.jpg
@@ -160,6 +160,8 @@ You can also access this command from the *Measurement table* icon in the toolba
   :align: center
 
   Annotation results table
+
+Note that the figure above was taken before adding a fourth annotation (and detecting its cells).
 
 
 .. tip::

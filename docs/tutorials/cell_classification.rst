@@ -5,10 +5,9 @@ Cell classification
 .. include:: ../tools.txt
 
 .. warning::
-  The original version of this tutorial was written for QuPath v0.1.2.
-  
-  Object classifiers in QuPath v0.2.0 have been updated, and this tutorial will soon be replaced.
-  In the meantime, there is some further information about the new classifiers in :doc:`Multiplexed analysis <multiplex_analysis>`.
+  This tutorial describes how to use the object classifier, which replaces the - now deprecated - detection classifier.
+
+  Though the detection classifier remains available in v0.2.0, it is recommended to limit its use as it will be removed in future versions.
 
 :doc:`cell_detection` looked at computing Ki67 labelling indices by counting positive and negative cells within user-defined regions of interest.
 These regions had to be drawn very carefully to try to ensure that they only included tumor cells, and excluded other cell types that should not contribute to conventional scoring of Ki67.
@@ -35,6 +34,7 @@ This can be done very quickly, and should include a mixture of both tumor and no
     It will lead to a lot of unnecessary processing and memory use within areas of the image that are not relevant.
 
     :menuselection:`Analyze --> Preprocessing --> Simple tissue detection` is another possible alternative, but is also likely to result in more processing being performed than necessary.
+    Furthermore, this command is now deprecated and will be removed in future versions.
 
 .. figure:: images/ki67_auto_original.jpg
   :class: shadow-image
@@ -47,17 +47,17 @@ This can be done very quickly, and should include a mixture of both tumor and no
 Run *Cell detection* command
 ============================
 
-With the annotation selected, the :menuselection:`Analyze --> Cell analysis --> Cell detection` command can be used to detect cells.
+With the annotation selected, the :menuselection:`Analyze --> Cell detection --> Cell detection` command can be used to detect cells.
 
 .. note::
-  In :doc:`cell_detection`, the :menuselection:`Analyze --> Cell analysis --> Positive cell detection` command was used instead.
+  In :doc:`cell_detection`, the :menuselection:`Analyze --> Cell detection --> Positive cell detection` command was used instead.
 
   It does not really matter which command is applied in this case.
   *Positive cell detection* does exactly the same thing as *Cell detection*, but has the extra step of classifying all cells as positive or negative immediately according to DAB staining intensity.
   This is most useful if all detected cells should be considered the same.
 
   Since in this case we need to classify cells as tumor or non-tumor first, we will postpone considering staining intensity until the end, whenever we know the cell types.
-  Therefore there is no need to look at consider staining intensity now, and therefore I have used the slightly-simpler *Cell detection* command.
+  Therefore there is no need to look at staining intensity now, and therefore I have used the slightly-simpler *Cell detection* command.
 
 If the annotation is large enough, QuPath will break it into smaller regions that it can process in parallel.
 This improves the speed and reduces the memory requirements.
@@ -141,7 +141,7 @@ This reduces the noisiness of the measurements more effectively, but also makes 
 
   Smooth features dialog
 
-After applying smoothing with the parameters shown above, clicking *Update map* within the *Measurement map* dialog causes the new measurements to appear.
+After applying smoothing with the parameters shown above, clicking :guilabel:`Update map` within the *Measurement map* dialog causes the new measurements to appear.
 The smoothed version of *Nucleus/Cell area ratio* is shown below.
 Again, more red is seen in areas of tumor - but now these are much more homogeneous.
 This will help QuPath to identify all the cells within tumor areas correctly.
@@ -162,9 +162,9 @@ The next step is to begin annotating regions according to how the cells containe
 This requires creating annotations as normal, using any of the tools (apart from the *Line*) described in :doc:`../starting/annotating`.
 It does not matter whether the cells are shown or hidden on the image at the time; it can be helpful to toggle the detections on and off with the *Show/hide detection objects* command |icon_detections| while annotating.
 
-After an annotation has been drawn, select the *Annotations* tab in the *Analysis pane* to the left, click on the appropriate classification from the list on the top right, and press the *Set class* button.
+After an annotation has been drawn, select the *Annotations* tab in the *Analysis pane* to the left, click on the appropriate classification from the list on the top right, and press the :guilabel:`Set class` button.
 You should see the number increase beside the class that you selected.
-This is the number of cells inside all the annotations that you have drawn and assigned to this class.
+This is the number of annotations that you have drawn and assigned to this class.
 
 .. note::
     Double-clicking on the list of classification allows you to change their colors, while right-clicking brings up more options (including to add new classifications).
@@ -177,7 +177,7 @@ This is the number of cells inside all the annotations that you have drawn and a
   Training cell classification
 
 Continue creating annotations and assigning their classes.
-Right-clicking on the image after drawing the annotation can offer an easier way to set the class, without needing to move the mouse to the other side of the screen and press the *Set class* button on the left.
+Right-clicking on the image after drawing the annotation can offer an easier way to set the class, without needing to move the mouse to the other side of the screen and press the :guilabel:`Set class` button on the left.
 
 .. figure:: images/ki67_auto_training_tumor.jpg
   :class: shadow-image
@@ -192,18 +192,27 @@ Train a cell classifier based on annotations
 
 Once you have several annotations with different classes, it is time to create the classifier to see how well QuPath can distinguish the cells.
 
-To do this, go to :menuselection:`Classify --> Create detection classifier`.
-Pressing *Build & Apply* will train up a classifier that QuPath will then apply to all cells within the image.
-If your computer is sufficiently fast, or your number of annotations sufficiently small, the *Auto-update* button can do the same - and will result in the classifier immediately updating as you draw more annotations and set their classes.
+To do this, go to :menuselection:`Classify --> Object classification --> Train object classifier`.
+Pressing :guilabel:`Live update` will train up a classifier that QuPath will then apply to all cells within the image. Make sure to toggle the detections on (*Show/hide detection objects* command |icon_detections|), otherwise you will not be seeing any of the cells nor the classification displayed.
+
+If your computer is sufficiently fast, or your number of annotations sufficiently small, the :guilabel:`Live update` button will constantly update the classifier as you draw more annotations and set their classes.
 
 .. TIP::
     The default *Random Forest* classifier tends to get a good combination of speed and accuracy - although you can choose others if you wish.
 
-Under *Advanced options*, you can also select exactly which measurements you want to be used for the classification, and adjust several other parameters.
 By default, all measurements that are available when the classifier is first built will be used.
-If you add extra measurements later (e.g. by running *Add smoothed features* again with different settings), then you will need to go into *Advanced options* and choose *Select...* to ensure that the new measurements are included.
+However, if you choose :guilabel:`Selected measurements` under *Feature*, you can press :guilabel:`Select` and select exactly which measurements you want to be used for the classification instead.
+You also have the :guilabel:`Filtered by output classes` option, which will come in handy for :doc:`multiplex_analysis`.
+If you add extra measurements later (e.g. by running *Add smoothed features* again with different settings), they should appear automatically in the feature list.
+
+:guilabel:`Load training` tells the classifier to use annotations from the selected images to train the classifier and :guilabel:`Advanced options` lets you select a feature normalization method of your choice.
+
+If you are happy with the classification, you can save the classifier by supplying a name and pressing :guilabel:`Save`. This will allow you to load it again later on, whenever you wish to classify other detections.
 
 .. figure:: images/ki67_auto_training_updated.jpg
+  :class: shadow-image
+  :width: 75%
+  :align: center
 
   Training cell classification with preview
 
@@ -213,7 +222,8 @@ Interactively improve classification performance
 
 Continue to add annotations and set their classes in areas that QuPath gets 'wrong', until you are satisfied with the performance.
 
-An extra tip: holding down shift while right-clicking on the image provides a third way to set the class of an annotation that is selected, by opening a small 'ring' menu.
+.. TIP::
+  Holding down shift while right-clicking on the image provides a third way to set the class of an annotation that is selected, by opening a small 'ring' menu.
 
 .. figure:: images/ki67_auto_training_ring.jpg
   :class: shadow-image
@@ -227,9 +237,9 @@ Apply intensity classification
 ==============================
 
 Once you are satisfied with QuPath's ability to identify tumor cells, it is now time to apply DAB staining intensity classification.
-Because the scoring of tumor cells is a common application, there is an option to do this directly within the classifier dialog box.
+To do so, you can run the :menuselection:`Classify --> Object classification --> Set cell intensity classifications`.
 Here, select *Nucleus: DAB OD mean* as the feature used for the intensity classification.
-Also, make sure that *Use single threshold* is selected and then adjust *Threshold 1+* until the resulting positive/negative sub-classification of tumor cells matches with the brown vs blue appearance of the nuclei within the image.
+Also, make sure that :guilabel:`Single threshold` is selected and then adjust *Threshold 1+* until the resulting positive/negative sub-classification of tumor cells matches with the brown vs blue appearance of the nuclei within the image.
 
 .. figure:: images/ki67_auto_training_intensity.jpg
   :class: shadow-image
@@ -240,17 +250,8 @@ Also, make sure that *Use single threshold* is selected and then adjust *Thresho
 
 .. note::
 
-  If you want to update the intensity classification threshold later, without needing to go through the whole detection classification thing, you can use this one-line script:
-
-  .. code-block:: groovy
-
-    setCellIntensityClassifications("Nucleus: DAB OD mean", 0.2)
-
-  This script also works if you are assigning up to 3 thresholds (e.g. to calculate an H-score), e.g.
-
-  .. code-block:: groovy
-
-    setCellIntensityClassifications("Nucleus: DAB OD mean", 0.2, 0.4, 0.6)
+  If you want to update the intensity classification threshold later, without needing to go through the whole detection classification thing, you can simply re-run the *Set cell intensity classifications* command.
+  This will overwrite the intensity classification threshold (positive/negative) without changing the main classification (tumour/stroma/..).
 
   For more thoughts and tips on assigning intensity-based classifications, see `this blog post <https://petebankhead.github.io/qupath/tips/2018/03/22/setting-positive.html>`_.
 
@@ -268,6 +269,5 @@ You can also generate results tables if necessary.
 
   Ki67 analysis results with cell classification
 
-If you are likely to want to apply the classifier again to different images, you can also save this by clicking the *Save classifier* button at the bottom of the classifier window.
-The next time you open a similar image, you can run the cell detection and feature calculations as before, and then apply your pre-trained classifier with :menuselection:`Classifier --> Load classifier`.
+Provided that you saved your classifier, you can apply it to a similar image in the future. To do so, you can run the cell detection and feature calculations as before, and then apply your pre-trained classifier with :menuselection:`Classifier --> Load object classifier`.
 See also the :doc:`../scripting/index` section for more information about how to batch process larger numbers of images in a reproducible way.
