@@ -26,7 +26,7 @@ The following key indicates what, if anything, was cited in the main references 
 
 ### Contents
 
-* [2020](#2020) (68)
+* [2020](#2020) (89)
 * [2019](#2019) (144)
 * [2018](#2018) (48)
 * [2017](#2017) (5)
@@ -39,7 +39,11 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Arafah, K. et al. (2020). Microproteomics and Immunohistochemistry Reveal Differences in Aldo‐Keto Reductase Family 1 Member C3 (AKR1C3) in Tissue Specimens of Ulcerative Colitis and Crohn's Disease. **Proteomics: Clinical Applications**. https://doi.org/10.1002/prca.201900110 📗
 
+1. Ardali, R. et al. (2020). Pathophysiological role of Atg5 in human ulcerative colitis. **Intestinal Research**. https://doi.org/10.5217/ir.2019.00120 😞
+
 1. Ataca, D. et al. (2020). The secreted protease Adamts18 links hormone action to activation of the mammary stem cell niche. **Nature Communications**. https://doi.org/10.1038/s41467-020-15357-y 😞
+
+1. Balancin, M. L. et al. (2020). An integrative histopathologic clustering model based on immuno‐matrix elements to predict the risk of death in malignant mesothelioma. **Cancer Medicine**. https://doi.org/10.1002/cam4.3111 📗
 
 1. Beck, O. et al. (2020). Safety and Activity of the Combination of Ceritinib and Dasatinib in Osteosarcoma. **Cancers**. https://doi.org/10.3390/cancers12040793 📗
 
@@ -70,6 +74,8 @@ Myeloid and T Cell Responses. **Cell Reports**. https://doi.org/10.1016/j.celrep
 
 1. Dheilly, E. et al. (2020). Cathepsin S Regulates Antigen Processing and T Cell Activity in Non-Hodgkin Lymphoma. **Cancer Cell**. https://doi.org/10.1016/j.ccell.2020.03.016 😞
 
+1. Dzaparidze, G. et al. (2020). The decline of FANCM immunohistochemical expression in prostate cancer stroma correlates with the grade group. **Pathology International**. https://doi.org/10.1111/pin.12953 📗
+
 1. Elsherbini D. M. et al. (2020). Effect of meloxicam (cyclooygenase-2 inhibitor) versus vitamin D3 (cholecalciferol) as ameliorating agents of progressive doxorubicin-induced nephrotoxicity in rats. **Anatomy & Cell Biology**. https://doi.org/10.5115/acb.19.231 📗
 
 1. Eshed-Eisenbach, Y. et al. (2020). Precise Spatiotemporal Control of Nodal Na+ Channel Clustering by Bone Morphogenetic Protein-1/Tolloid-like Proteinases. **Neuron**. https://doi.org/10.1016/j.neuron.2020.03.001 📗
@@ -90,13 +96,23 @@ Myeloid and T Cell Responses. **Cell Reports**. https://doi.org/10.1016/j.celrep
 
 1. Gupta, S. et al. (2020). Digital quantitative assessment of PD-L1 using digital spatial profiling. **Laboratory Investigation**. https://doi.org/10.1038/s41374-020-0424-5 📗
 
+1. He, Z. et al. (2020). Loss of the proprotein convertase _Furin_ in T cells represses mammary tumorigenesis in oncogene-driven triple negative breast cancer. **Cancer Letters**. 
+https://doi.org/10.1016/j.canlet.2020.05.001 😞
+
 1. Herrspiegel, C. et al. (2020). Digital morphometry of tumor nuclei correlates to BAP-1 status, monosomy 3, gene expression class and survival in uveal melanoma. **Experimental Eye Research**. https://doi.org/10.1016/j.exer.2020.107987 📗
 
 1. Huang, A. Y-S. et al. (2020). Region-Specific Transcriptional Control of Astrocyte Function Oversees Local Circuit Activities. **Neuron**. https://doi.org/10.1016/j.neuron.2020.03.025 📗
 
+1. Hudeček, J. et al. (2020). Application of a risk-management framework for integration of stromal tumor-infiltrating lymphocytes in clinical trials. **npj Breast Cancer**. https://doi.org/10.1038/s41523-020-0155-1 📗
+
+1. Humphries, M. et al. (2020). Improving the Diagnostic Accuracy of the PD-L1 Test with Image Analysis and Multiplex Hybridization. **Cancers**. https://doi.org/10.3390/cancers12051114 📗
+
 1. Jung, M. et al. (2020). CK14 Expression Identifies a Basal/Squamous-Like Type of Papillary Non-Muscle-Invasive Upper Tract Urothelial Carcinoma. **Frontiers in Oncology**. https://doi.org/10.3389/fonc.2020.00623 📗
 
 1. Jung, S. et al. (2020). Seizure-induced neuronal apoptosis is related to dysregulation of the RNA-edited GluR2 subunit in the developing mouse brain. **Brain Research**. https://doi.org/10.1016/j.brainres.2020.146760 😞
+
+1. Kalish, B. T. et al. (2020). Single-nucleus RNA sequencing of mouse auditory
+cortex reveals critical period triggers and brakes. **PNAS**. https://doi.org/10.1073/pnas.1920433117 📗
 
 1. Karn, T. et al. (2020). A small hypoxia signature predicted pCR response to bevacizumab in the neoadjuvant GeparQuinto breast cancer trial. **Clinical Cancer Research**. https://doi.org/10.1158/1078-0432.CCR-19-1954 📗
 
@@ -122,11 +138,19 @@ Myeloid and T Cell Responses. **Cell Reports**. https://doi.org/10.1016/j.celrep
 
 1. Liu, Y. et al. (2020). TSP1‐CD47‐SIRPα signaling facilitates the development of endometriosis by mediating the survival of ectopic endometrium. **American Journal of Reproductive Immunology**. https://doi.org/10.1111/aji.13236 📗
 
+1. Lucchesi, D. et al. (2020). Impaired IL‐27 Mediated Control of CD4+ T Cell Function Impacts on Ectopic Lymphoid Structure Formation in Patients with Sjögren's Syndrome. **Arthritis & Rheumatology**. https://doi.org/10.1002/art.41289 📗
 1. Marcelis, L. et al. (2020). In-depth characterization of the tumor microenvironment in central nervous system lymphoma reveals implications for immune-checkpoint therapy. **Cancer Immunology, Immunotherapy**. https://doi.org/10.1007/s00262-020-02575-y 📗
 
 1. Mannix, R. et al. (2020). Internal jugular vein compression collar mitigates histopathological alterations after closed head rotational head impact in swine: A pilot study. **Neuroscience**. https://doi.org/10.1016/j.neuroscience.2020.04.009 😞 
 
 1. Marotte, L. et al. (2020). Increased antitumor efficacy of PD-1-deficient melanoma-specific human lymphocytes. **Journal for ImmunoTherapy of Cancer**. http://dx.doi.org/10.1136/jitc-2019-000311 📗
+
+1. Merritt, C. R. et al. (2020). Multiplex digital spatial profiling of proteins and RNA in fixed tissue. **Nature Biotechnology**. https://doi.org/10.1038/s41587-020-0472-9 😞
+
+1. Milne, E. et al. (2020). Cytological and microbiological characteristics of middle ear
+effusions in brachycephalic dogs. **Journal of Veterinary Internal Medicine**. https://doi.org/10.1111/jvim.15792 📗
+
+1. Morral, C. et al. (2020). Zonation of Ribosomal DNA Transcription Defines a Stem Cell Hierarchy in Colorectal Cancer. **Cell Stem Cell**. https://doi.org/10.1016/j.stem.2020.04.012 😞
 
 1. Moyano‐Galceran, L. et al. (2020). Adaptive RSK‐EphA2‐GPRC5A signaling switch triggers chemotherapy resistance in ovarian cancer. **EMBO Molecular Medicine**. https://doi.org/10.15252/emmm.201911177 📗
 
@@ -140,11 +164,21 @@ Myeloid and T Cell Responses. **Cell Reports**. https://doi.org/10.1016/j.celrep
 
 1. Nair-Menon, J. et al. (2020). Predominant Distribution of the RNAi Machinery at Apical Adherens Junctions in Colonic Epithelia Is Disrupted in Cancer. **International Journal of Molecular Sciences**. https://doi.org/10.3390/ijms21072559 📗
 
+1. Norberg, K. J. et al. (2020). A novel pancreatic tumour and stellate cell 3D co-culture spheroid model. **BMC Cancer**. https://doi.org/10.1186/s12885-020-06867-5 📗
+
 1. Orgaz, J. L. et al. (2020). Myosin II Reactivation and Cytoskeletal Remodeling as a Hallmark and a Vulnerability in Melanoma Therapy Resistance. **Cancer Cell**. https://doi.org/10.1016/j.ccell.2019.12.003 📗
+
+1. Ottley, E. C. et al. (2020). Greater utility of molecular subtype rather than epithelial‐to‐mesenchymal transition (EMT) markers for prognosis in high‐risk non‐muscle‐invasive (HGT1) bladder cancer. **Journal of Pathology: Clinical Research**. https://doi.org/10.1002/cjp2.167 📗
 
 1. Peluso, M. O. et al. (2020). The Fully human anti-CD47 antibody SRF231 exerts dual-mechanism antitumor activity via engagement of the activating receptor CD32a. **Journal for Immunotherapy of Cancer**. https://doi.org/10.1136/jitc-2019-000413 📗
 
+1. Pilot, T. et al. (2020). Heat shock and HSP70 regulate 5-FU-mediated caspase-1 activation in myeloid-derived suppressor cells and tumor growth in mice. **Journal for ImmunoTherapy of Cancer**. http://dx.doi.org/10.1136/jitc-2019-000478 😞
+
 1. Prieto‐Garcia, C. et al. (2020). Maintaining protein stability of ∆Np63 via USP28 is required by squamous cancer cells. **EMBO Molecular Medicine**. https://doi.org/10.15252/emmm.201911101 📗
+
+1. Rasmussen, J. H. et al. (2020). Does multiparametric imaging with 18F-FDG-PET/MRI capture spatial variation in immunohistochemical cancer biomarkers in head and neck squamous cell carcinoma? **British Journal of Cancer**. https://doi.org/10.1038/s41416-020-0876-9 📗
+
+1. Roberti, M. P. et al. (2020). Chemotherapy-induced ileal crypt apoptosis and the ileal microbiome shape immunosurveillance and prognosis of proximal colon cancer. **Nature Medicine**. https://doi.org/10.1038/s41591-020-0882-8 📗
 
 1. Romero, J. M. et al. (2020). A four-chemokine signature is associated with a T cell-inflamed phenotype in primary and metastatic pancreatic cancer. **Clinical Cancer Research**. https://doi.org/10.1158/1078-0432.CCR-19-2803 📗
 
@@ -152,11 +186,17 @@ Myeloid and T Cell Responses. **Cell Reports**. https://doi.org/10.1016/j.celrep
 
 1. Rubey, M. et al. (2020). DLL1- and DLL4-Mediated Notch Signaling is Essential for Adult Pancreatic Islet Homeostasis. **Diabetes**. https://doi.org/10.2337/db19-0795 📗
 
+1. Safari, R. et al. (2020). Ablation of non-coding RNAs affects bovine leukemia virus B lymphocyte proliferation and abrogates oncogenesis. **PLoS Pathogens**. https://doi.org/10.1371/journal.ppat.1008502 😞
+
 1. Schottlaender, L. V. et al. (2020). Bi-allelic JAM2 Variants Lead to Early-Onset Recessive Primary Familial Brain Calcification. **AJHG**. https://doi.org/10.1016/j.ajhg.2020.02.007 😞
+
+1. Sharps, M. C. et al. (2020). Increased Placental Macrophages and a Pro‐inflammatory Profile in Placentas and Maternal Serum in Infants with a Decreased Growth Rate in the Third Trimester of Pregnancy. **American Journal of Reproductive Immunology**. https://doi.org/10.1111/aji.13267 😞
 
 1. Sirotkina, M. A. et al. (2020). In vivo assessment of functional and morphological alterations in tumors under treatment using OCT-angiography combined with OCT-elastography. **Biomedical Optics Express**. https://doi.org/10.1364/BOE.386419 😞
 
 1. Śledzińska, A. et al. (2020). Regulatory T Cells Restrain Interleukin-2- and Blimp-1-Dependent Acquisition of Cytotoxic Function by CD4+ T Cells.  **Immunity**. https://doi.org/10.1016/j.immuni.2019.12.007 😞
+
+1. Stranahan, L. W. et al. (2020). Evaluation of the Efficacy of the _Brucella canis_ RM6/66 ΔvjbR Vaccine Candidate for Protection against B. _canis_ Infection in Mice. **mSphere**. https://doi.org/10.1128/mSphere.00172-20 📗
 
 1. Talbot, J. et al. (2020). Feeding-dependent VIP neuron–ILC3 circuit regulates the intestinal barrier. **Nature**. https://doi.org/10.1038/s41586-020-2039-9 📗
 
@@ -165,6 +205,10 @@ Myeloid and T Cell Responses. **Cell Reports**. https://doi.org/10.1016/j.celrep
 1. Tiwari, L. et al. (2020). Clinico‐pathological correlation of optical fluorescence imaging in oral mucosal lesions. **Oral Diseases**. https://doi.org/10.1111/odi.13334 📗
 
 1. Tsunoda, Y. et al. (2020). Expression level of long noncoding RNA H19 of normotensive placentas in late pregnancy relates to the fetal growth restriction. **Journal of Obstetrics and Gynaecology Research**. https://doi.org/10.1111/jog.14260 📗
+
+1. Van Looveren, K. et al. (2020). Glucocorticoids limit lipopolysaccharide‐induced lethal inflammation by a double control system. **EMBO Reports**. https://doi.org/10.15252/embr.201949762 😞
+
+1. Väyrynen, J. P. et al. (2020). Prognostic significance of immune cell populations identified by machine learning in colorectal cancer using routine hematoxylin & eosin stained sections, **Clinical Cancer Research**. http://doi.org/10.1158/1078-0432.CCR-20-0071 📗
 
 1. Wood, A-C. et al. (2020). Deep Learning Predicts Molecular Subtype of Muscle-invasive Bladder Cancer from Conventional Histopathological Slides. **European Urology**. https://doi.org/10.1016/j.eururo.2020.04.023 📗
 

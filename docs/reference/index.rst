@@ -7,5 +7,6 @@ Reference
 
   faqs
   shortcuts
+  commands
   building
   projects_structure

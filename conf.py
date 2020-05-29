@@ -76,11 +76,12 @@ rst_prolog = """
 .. |copyright| unicode:: 0xA9
 """
 
+
 highlight_language = 'groovy'
 
 html_logo = 'docs/images/qupath_128.png'
 
 html_favicon = 'docs/images/QuPath.ico'
 
-release = '0.2.0-m12'
-version = release  # This really should be 0.2
+release = '0.2.0'
+version = '0.2'
