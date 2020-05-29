@@ -6,6 +6,7 @@ Tutorials
   :maxdepth: 2
 
   projects
+  separating_stains
   thresholding
   measuring_areas
   exporting_measurements
@@ -13,3 +14,4 @@ Tutorials
   cell_classification
   multiplex_analysis
   pixel_classification
+  superpixels
