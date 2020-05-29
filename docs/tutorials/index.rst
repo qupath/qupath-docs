@@ -9,9 +9,9 @@ Tutorials
   separating_stains
   thresholding
   measuring_areas
-  exporting_measurements
   cell_detection
   cell_classification
+  exporting_measurements
   multiplex_analysis
   pixel_classification
   superpixels

@@ -6,18 +6,18 @@ Exporting measurements
 
 There are 3 different ways to export measurements within QuPath, via:
 
-1. **the measurement table**
-2. **the measurement exporter**
-3. **scripting (MeasurementExporter class)**
+1. the *measurement table*
+2. the *measurement exporter*
+3. a *script*
 
-Which one to use is up to you and depends on what you want to do. Each of them will be covered here.
+Which one to use is up to you and depends on what you want to do.
 
 .. note::
+  
   As a rule of thumb, if you have:
 
   * **a single image**: use the measurement table
-  * **multiple images**: use the Measurement Exporter
-  * **a script**: use the MeasurementExporter class
+  * **multiple images**: use the *Measurement Exporter* or a script
 
 =========================
 Via the measurement table
@@ -35,11 +35,12 @@ After choosing the objects you wish to export (e.g. detections, annotations), a 
   :width: 70%
   :align: center
 
-  Saving cell detection measurements via the measurement table (TODO: fix image badly cropped).
+  Saving cell detection measurements via the measurement table.
 
 You can then save your measurement by pressing **Save** and choosing an appropriate name for your output ``.txt`` file.
 
 .. note::
+  
   This method creates a table with different columns, which all depend on the objects (and measurements) present in your image.
 
   If your analysis involves combining measurements from different images, it is recommended to use the Measurement Exporter, detailed in the next subsection.
@@ -48,17 +49,20 @@ You can then save your measurement by pressing **Save** and choosing an appropri
 Via the Measurement Exporter
 ============================
 
-The cleanest way to export different types of measurements in QuPath is with the **Measurement Exporter**.
+The cleanest way to export different types of measurements in QuPath across multiple images is with the **Measurement Exporter**.
+
 Provided that your images are stored in a :doc:`project <../tutorials/projects>`, you can access it through :menuselection:`Measure --> Export measurements` (as well as |icon_table| --> Export measurements).
 
 .. figure:: images/measurement_exporter.png
   :width: 70%
   :align: center
+  :class: shadow-image
 
   The Measurement Exporter
 
-From there, you can decide from which image(s) the measurements will the be exported (similarly to the :doc:`Run for project <../scripting/workflows_to_scripts>` command in the script editor).
-Below the image selection, a small amount of parameters will allow you to shape your output file as you desire:
+From there, you can decide from which image(s) the measurements will the be exported (similar to the :doc:`Run for project <../scripting/workflows_to_scripts>` command in the script editor).
+
+Below the image selection, a small number of parameters will allow you to shape your output file as needed:
 
 1. **Output file**: The desired `full path` location of your output file
 2. **Export type**: The measurement type to be exported (e.g. cells)
@@ -66,7 +70,8 @@ Below the image selection, a small amount of parameters will allow you to shape 
 4. **Columns to include** (optional): The list of measurements to include in the export (if left empty, all existing measurements are included)
 
 .. note::
-  If you wish to **only** export specific measurements, the **Populate** button is what you need. This will populate a list from which you can choose the exact columns to include in the export.
+  If you wish to **only** export specific measurements, the :guilabel:`Populate` button is what you need.
+  This will populate a list from which you can choose the exact columns to include in the export.
   This list is constructed after performing a scan of all the selected images to check which measurements exist, and should only take a couple of seconds.
   This means that you must have selected image(s) to do this.
 
@@ -75,7 +80,7 @@ Below the image selection, a small amount of parameters will allow you to shape 
 .. important::
 
   If you have an open image in an active viewer, be sure to always save your data before running the measurement exporter.
-  A small red-colored warning will appear to notify you if this is the case.
+  A small red-colored warning will appear to remind you.
 
 
 =============
