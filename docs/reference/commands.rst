@@ -62,31 +62,31 @@ The original images will need to be available, with the paths set correctly in t
 
 Open...
 -------
-*File → Open...*  - :kbd:`⌘O`
+*File → Open...*  - :kbd:`Ctrl+O`
 
 Open an image in the current viewer, using a file chooser. You can also just drag the file on top of the viewer.
 
 Open URI...
 -----------
-*File → Open URI...*  - :kbd:`⇧⌘O`
+*File → Open URI...*  - :kbd:`Ctrl+Shift+O`
 
 Open an image in the current viewer, by entering the path to the image. This can be used to add images that are not represented by local files (e.g. hosted by OMERO), but beware that a compatible image reader needs to be available to interpret them.
 
 Reload data
 -----------
-*File → Reload data*  - :kbd:`⌘R`
+*File → Reload data*  - :kbd:`Ctrl+R`
 
 Reload any previously-saved data for the current image. This provides a more dramatic form of 'undo' (albeit without any 'redo' option).
 
 Save As
 -------
-*File → Save As*  - :kbd:`⇧⌘S`
+*File → Save As*  - :kbd:`Ctrl+Shift+S`
 
 Save a .qpdata file for this image, specifying the file path. Warning! It is usually much better to use projects instead, and allow QuPath to decide where to store your data files.
 
 Save
 ----
-*File → Save*  - :kbd:`⌘S`
+*File → Save*  - :kbd:`Ctrl+S`
 
 Save a .qpdata file for this image. This command is best used within projects, where QuPath will choose the location to save the file.
 
@@ -167,19 +167,19 @@ Edit
 
 Undo
 ----
-*Edit → Undo*  - :kbd:`⌘Z`
+*Edit → Undo*  - :kbd:`Ctrl+Z`
 
 Undo the last action for the current viewer. Note QuPath's undo is limited, and turns itself off (for performance reasons) when many objects are present. The limit can be adjusted in the preferences.
 
 Redo
 ----
-*Edit → Redo*  - :kbd:`⇧⌘Z`
+*Edit → Redo*  - :kbd:`Ctrl+Shift+Z`
 
 Redo the last action for the current viewer.
 
 Current viewer
 --------------
-*Edit → Copy to clipboard... → Current viewer*  - :kbd:`⌘C`
+*Edit → Copy to clipboard... → Current viewer*  - :kbd:`Ctrl+C`
 
 Copy the contents of the current viewer to the clipboard. Note that this creates an RGB image, which does not necessarily contain the original pixel values.
 
@@ -203,7 +203,7 @@ Make a screenshot and copy it to the clipboard.
 
 Preferences...
 --------------
-*Edit → Preferences...*  - :kbd:`⌘,`
+*Edit → Preferences...*  - :kbd:`Ctrl+,`
 
 Set preferences to customize QuPath's appearance and behavior.
 
@@ -275,25 +275,25 @@ View
 
 Show analysis pane
 ------------------
-*View → Show analysis pane*  - :kbd:`⇧A`
+*View → Show analysis pane*  - :kbd:`Shift+A`
 
 Show/hide the analysis pane (the one on the left).
 
 Show command list
 -----------------
-*View → Show command list*  - :kbd:`⌘L`
+*View → Show command list*  - :kbd:`Ctrl+L`
 
 Show the command list (much easier than navigating menus...).
 
 Brightness/Contrast
 -------------------
-*View → Brightness/Contrast*  - :kbd:`⇧C`
+*View → Brightness/Contrast*  - :kbd:`Shift+C`
 
 Show the brightness/contrast dialog. This enables changing how the image is displayed, but not the image data itself.
 
 Synchronize viewers
 -------------------
-*View → Synchronize viewers*  - :kbd:`⌥⌘S`
+*View → Synchronize viewers*  - :kbd:`Ctrl+Alt+S`
 
 Synchronize panning and zooming when working with images open in multiple viewers.
 
@@ -395,7 +395,7 @@ Toggle showing all annotations in the viewer.
 
 Fill annotations
 ----------------
-*View → Fill annotations*  - :kbd:`⇧F`
+*View → Fill annotations*  - :kbd:`Shift+F`
 
 Toggle showing annotation ROIs as filled shapes in the viewer.
 
@@ -461,7 +461,7 @@ Toggle showing the scalebar in the viewer.
 
 Show grid
 ---------
-*View → Show grid*  - :kbd:`⇧G`
+*View → Show grid*  - :kbd:`Shift+G`
 
 Toggle showing the counting grid in the viewer.
 
@@ -497,7 +497,7 @@ Show a dialog to track memory usage within QuPath, and clear the cache if requir
 
 Show log
 --------
-*View → Show log*  - :kbd:`⇧⌘L`
+*View → Show log*  - :kbd:`Ctrl+Shift+L`
 
 Show the log. This is very helpful for identifying and debugging errors. 
 
@@ -562,31 +562,31 @@ Delete all detection objects for the current image.
 
 Reset selection
 ---------------
-*Objects → Select... → Reset selection*  - :kbd:`⌥⌘R`
+*Objects → Select... → Reset selection*  - :kbd:`Ctrl+Alt+R`
 
 Reset the selected objects for the current image.
 
 Select TMA cores
 ----------------
-*Objects → Select... → Select TMA cores*  - :kbd:`⌥⌘T`
+*Objects → Select... → Select TMA cores*  - :kbd:`Ctrl+Alt+T`
 
 Select all TMA cores for the current image.
 
 Select annotations
 ------------------
-*Objects → Select... → Select annotations*  - :kbd:`⌥⌘A`
+*Objects → Select... → Select annotations*  - :kbd:`Ctrl+Alt+A`
 
 Select all annotation objects for the current image.
 
 Select all detections
 ---------------------
-*Objects → Select... → Select detections... → Select all detections*  - :kbd:`⌥⌘D`
+*Objects → Select... → Select detections... → Select all detections*  - :kbd:`Ctrl+Alt+D`
 
 Select all detection objects for the current image (this includes cells and tiles).
 
 Select cells
 ------------
-*Objects → Select... → Select detections... → Select cells*  - :kbd:`⌥⌘C`
+*Objects → Select... → Select detections... → Select cells*  - :kbd:`Ctrl+Alt+C`
 
 Select all cell objects for the current image.
 
@@ -610,37 +610,37 @@ Create a rectangle or ellipse annotation with the specified properties.
 
 Create full image annotation
 ----------------------------
-*Objects → Annotations... → Create full image annotation*  - :kbd:`⇧⌘A`
+*Objects → Annotations... → Create full image annotation*  - :kbd:`Ctrl+Shift+A`
 
 Create an annotation representing the full width and height of the current image.
 
 Insert into hierarchy
 ---------------------
-*Objects → Annotations... → Insert into hierarchy*  - :kbd:`⇧⌘I`
+*Objects → Annotations... → Insert into hierarchy*  - :kbd:`Ctrl+Shift+I`
 
 Insert the selected objects in the object hierarchy. This involves resolving parent/child relationships based upon regions of interest.
 
 Resolve hierarchy
 -----------------
-*Objects → Annotations... → Resolve hierarchy*  - :kbd:`⇧⌘R`
+*Objects → Annotations... → Resolve hierarchy*  - :kbd:`Ctrl+Shift+R`
 
 Resolve the object hierarchy by setting parent/child relationships between objects based upon regions of interest.
 
 Rotate annotation
 -----------------
-*Objects → Annotations... → Rotate annotation*  - :kbd:`⌥⇧⌘R`
+*Objects → Annotations... → Rotate annotation*  - :kbd:`Ctrl+Alt+Shift+R`
 
 Interactively rotate the current selected annotation.
 
 Duplicate annotations
 ---------------------
-*Objects → Annotations... → Duplicate annotations*  - :kbd:`⇧D`
+*Objects → Annotations... → Duplicate annotations*  - :kbd:`Shift+D`
 
 Duplicate the selected annotations.
 
 Transfer last annotation
 ------------------------
-*Objects → Annotations... → Transfer last annotation*  - :kbd:`⇧E`
+*Objects → Annotations... → Transfer last annotation*  - :kbd:`Shift+E`
 
 Transfer the last annotation to the current image. This can be used to bring annotations from one viewer to another, or to recover an annotation that has just been deleted.
 
@@ -766,7 +766,7 @@ Measure
 
 Show measurement maps
 ---------------------
-*Measure → Show measurement maps*  - :kbd:`⇧⌘M`
+*Measure → Show measurement maps*  - :kbd:`Ctrl+Shift+M`
 
 View detection measurements in context using interactive, color-coded maps.
 
@@ -805,7 +805,7 @@ Automate
 
 Show script editor
 ------------------
-*Automate → Show script editor*  - :kbd:`⌘[`
+*Automate → Show script editor*  - :kbd:`Ctrl+[`
 
 Open the script editor.
 
@@ -817,7 +817,7 @@ Open a script interpreter. This makes it possible to run scripts interactively, 
 
 Show workflow command history
 -----------------------------
-*Automate → Show workflow command history*  - :kbd:`⇧⌘W`
+*Automate → Show workflow command history*  - :kbd:`Ctrl+Shift+W`
 
 Show a history of the commands applied to the current image. Note that this is not fully exhaustive, because not all commands can be recorded. However, the command history is useful to help automatically generate batch-processing scripts.
 
@@ -826,6 +826,12 @@ Create command history script
 *Automate → Create command history script*
 
 Create a script based upon the actions recorded in the command history.
+
+Set script directory...
+-----------------------
+*Automate → Shared scripts... → Set script directory...*
+
+Set the directory containing scripts that should be shown in this menu.
 
 Analyze
 =======
@@ -967,7 +973,7 @@ Load an existing object classifier. This can be used to apply the classifier to 
 
 Train object classifier
 -----------------------
-*Classify → Object classification → Train object classifier*  - :kbd:`⇧⌘D`
+*Classify → Object classification → Train object classifier*  - :kbd:`Ctrl+Shift+D`
 
 Interactively train an object classifier using machine learning. This is useful whenever objects cannot be classified based on one measurement alone.
 
@@ -1011,7 +1017,7 @@ Load an existing pixel classifier. This can be used to apply the classifier to n
 
 Train pixel classifier
 ----------------------
-*Classify → Pixel classification → Train pixel classifier*  - :kbd:`⇧⌘P`
+*Classify → Pixel classification → Train pixel classifier*  - :kbd:`Ctrl+Shift+P`
 
 Train a pixel classifier. This can be used to quantify areas, or to generate or classify objects.
 
