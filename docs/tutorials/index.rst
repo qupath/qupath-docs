@@ -12,3 +12,4 @@ Tutorials
   cell_classification
   multiplex_analysis
   pixel_classification
+  superpixels
