@@ -209,7 +209,7 @@ Therefore QuPath does not (currently) insist on its preference for US English...
 
 There is a more detailed technical description about the issues involved `here <https://github.com/qupath/qupath/issues/29>`__.
 
-.. figure:: ../intro/images/setup_memory.jpg
+.. figure:: ../intro/images/setup_memory.png
   :class: shadow-image
   :width: 60%
   :align: center
