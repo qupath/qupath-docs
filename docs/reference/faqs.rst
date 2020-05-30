@@ -175,7 +175,10 @@ You can change this to a fixed maximum size via the `-Xmx` Java option, e.g. to 
   [JavaOptions]
   -Xmx12G
   
-
+.. tip::
+  
+  On a Mac, you'll need to right-click on *QuPath.app* and choose :menuselection:`Show package contents`. |br|
+  The config file is inside the *Contents/app* directory.
 
 
 Can QuPath be run in batch mode from the command line?
