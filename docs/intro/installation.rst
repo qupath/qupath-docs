@@ -25,7 +25,7 @@ Setup options
 
 When running QuPath for the first time, you will be prompted to specify some setup options.
 
-.. figure:: images/setup_memory.jpg
+.. figure:: images/setup_memory.png
   :class: shadow-image
   :width: 75%
   :align: center
@@ -33,7 +33,15 @@ When running QuPath for the first time, you will be prompted to specify some set
   Setup options shown on startup.
 
 The default is that QuPath will request 50% of the total memory available.
-This is generally a reasonable choice, but be aware that the amount of memory available to QuPath is one of the main factors influencing how well the software will perform - and how complex the analysis can be.
+This is generally a reasonable choice, but be aware that the amount of memory available to QuPath is one of the main factors influencing how well the software will perform -- and how complex the analysis can be.
+
+.. warning::
+  
+  Sometimes, your computer may block QuPath from overwriting the configuration file needed to set the maximum memory.
+  If this happens, you wil need to edit this file manually.
+  
+  See :ref:`Set max memory` for instructions.
+
 
 .. sidebar:: Why does the 'Region' matter?
 
@@ -53,8 +61,6 @@ This will help ensure behavior should match with what is shown in this documenta
 ===============
 Troubleshooting
 ===============
-
-If QuPath installs but you can't set the memory limit, see :ref:`Set max memory`
 
 If you have trouble installing at all, please see below...
 
@@ -147,7 +153,7 @@ One way to work around this is to remove the flag by opening `/Applications/Util
 
 .. figure:: images/installing_macOS_damaged_terminal.png
   :align: center
-  :width: 75%
+  :width: 90%
 
 
 
