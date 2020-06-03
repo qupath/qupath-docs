@@ -19,6 +19,15 @@ Download QuPath for your platform (Windows, Linux, macOS) from `GitHub <https://
   Recent security changes in Windows and macOS are likely to complicate installation slightly. |br|
   See :ref:`Troubleshooting` for more information.
 
+.. admonition:: What is *QuPath (console).exe*?
+
+  On Windows, you will see two executable files: *QuPath.exe* and *QuPath (console).exe* -- perhaps with version numbers incorporated.
+  
+  You can use either.
+  The only difference between these is that the *console* version also shows a console that prints text as QuPath runs.
+  This is useful when using the :ref:`Command line`.
+    
+
 =============
 Setup options
 =============

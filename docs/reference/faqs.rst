@@ -184,17 +184,7 @@ You can change this to a fixed maximum size via the `-Xmx` Java option, e.g. to 
 Can QuPath be run in batch mode from the command line?
 ======================================================
 
-Yes!
-The main priority remains the interactive application, but command line support was introduced in v0.2.0-m10.
-It will be further improved in the future.
-
-Accessing it on a Mac can be a little awkward; something like this should work (after adapting for version number):
-
-.. code-block:: bash
-
-  ./QuPath-0.2.0.app/Contents/MacOS/QuPath-0.2.0 --help
-  
-
+Yes! See :ref:`Command line`.
 
 
 Why does QuPath recommend using US English settings on startup?
