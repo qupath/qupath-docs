@@ -63,9 +63,13 @@ The *Polygon tool* is a good standard for drawing around regions.  It can be use
 * Click where each vertex should be
 * Click and drag to draw a continuous line (which will be split into spaced vertices by QuPath)
 
-The former is better if you might want to edit the polygon later, but dragging vertices to different places.  The latter if better if you have a steady hand and want to draw a more detailed region.  It's possible to switch while drawing the same region.
+The former is better if you might want to edit the polygon later, but dragging vertices to different places.
+The latter if better if you have a steady hand and want to draw a more detailed region.
+It's possible to switch while drawing the same region.
 
-In both cases, the ROI is finished by *double-clicking* on the image at the location where the final point should be.
+If you *start* a polygon by clicking and dragging, then the polygon is complete when the mouse button is released.
+Otherwise, the ROI is finished by *double-clicking* on the image at the location where the final point should be.
+
 
 
 |brush| Brush tool
