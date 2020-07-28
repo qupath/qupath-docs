@@ -26,7 +26,7 @@ The following key indicates what, if anything, was cited in the main references 
 
 ### Contents
 
-* [2020](#2020) (115)
+* [2020](#2020) (128)
 * [2019](#2019) (144)
 * [2018](#2018) (48)
 * [2017](#2017) (5)
@@ -58,6 +58,8 @@ The following key indicates what, if anything, was cited in the main references 
 1. Blagih, J. et al. (2020). Cancer-Specific Loss of p53 Leads to a Modulation of
 Myeloid and T Cell Responses. **Cell Reports**. https://doi.org/10.1016/j.celrep.2019.12.028 📗
 
+1. Bolm, L. et al. (2020). Alignment of stroma fibers, microvessel density and immune cell populations determine overall survival in pancreatic cancer—An analysis of stromal morphology. **PLOS ONE**. https://doi.org/10.1371/journal.pone.0234568 📗
+
 1. Brial, F. et al. (2020). The Natural Metabolite 4-Cresol Improves Glucose Homeostasis and Enhances β-Cell Function. **Cell Reports**. https://doi.org/10.1016/j.celrep.2020.01.066 😞
 
 1. Bulle, A. et al. (2020). Gemcitabine Recruits M2-Type Tumor-Associated Macrophages into the Stroma of Pancreatic Cancer. **Translational Oncology**. https://doi.org/10.1016/j.tranon.2020.01.004 📗
@@ -72,9 +74,13 @@ Myeloid and T Cell Responses. **Cell Reports**. https://doi.org/10.1016/j.celrep
 
 1. Chaursiya, S. et al. (2020). Oncolytic poxvirus CF33-hNIS-ΔF14.5 favorably modulates tumor immune microenvironment and works synergistically with anti-PD-L1 antibody in a triple-negative breast cancer model. **OncoImmunology**. https://doi.org/10.1080/2162402X.2020.1729300 😞
 
+1. Chen, W-T. et al. (2020). Spatial Transcriptomics and In Situ Sequencing to Study Alzheimer’s Disease. **Cell**. https://doi.org/10.1016/j.cell.2020.06.038 📗
+
 1. Chung, K. M. et al. (2020). Endocrine-Exocrine Signaling Drives Obesity-Associated Pancreatic Ductal Adenocarcinoma. **Cell**. https://doi.org/10.1016/j.cell.2020.03.062 😞
 
 1. Clé, M. et al. (2020). Study of Usutu virus neuropathogenicity in mice and human cellular models. **PLOS Neglected Tropical Diseases**. https://doi.org/10.1371/journal.pntd.0008223 😞
+
+1. Coelho, R. et al. (2020). Regulation of invasion and peritoneal dissemination of ovarian cancer by mesothelin manipulation. **Oncogenesis**. https://doi.org/10.1038/s41389-020-00246-2 😞
 
 1. Concat, C. et al. (2020). Combined deletion of Glut1 and Glut3 impairs lung adenocarcinoma growth. **eLife**. https://doi.org/10.7554/eLife.53618 📗
 
@@ -158,6 +164,12 @@ cortex reveals critical period triggers and brakes. **PNAS**. https://doi.org/10
 
 1. Kurppa, K. J. et al. (2020). Treatment-Induced Tumor Dormancy through YAP-Mediated Transcriptional Reprogramming of the Apoptotic Pathway. **Cancer Cell**. https://doi.org/10.1016/j.ccell.2019.12.006 📗
 
+1. LaFave, L. M. et al. (2020). Epigenomic State Transitions Characterize Tumor Progression in Mouse Lung Adenocarcinoma. **Cancer Cell**. https://doi.org/10.1016/j.ccell.2020.06.006 📗
+
+1. Laville, D. et al. (2020). Immune Escape Is an Early Event in Pre-Invasive Lesions of Lung Squamous Cell Carcinoma. **Diagnostics**. https://doi.org/10.3390/diagnostics10070503 😞
+
+1. Lee, J.A. et al. (2020). Differential immune microenvironmental features of microsatellite-unstable colorectal cancers according to Fusobacterium nucleatum status. **Cancer Immunology, Immunotherapy**. https://doi.org/10.1007/s00262-020-02657-x 📗
+
 1. Liot, S. et al. (2020). Loss of Tenascin-X expression during tumor progression: A new pan-cancer marker. **Matrix Biology Plus**. https://doi.org/10.1016/j.mbplus.2020.100021 😞
 
 1. Liu, C-H. et al. (2020). Nodal β spectrins are required to maintain Na+ channel clustering and axon integrity. **eLife**. https://doi.org/10.7554/eLife.52378.sa1 📗
@@ -169,6 +181,8 @@ cortex reveals critical period triggers and brakes. **PNAS**. https://doi.org/10
 1. Lucchesi, D. et al. (2020). Impaired IL‐27 Mediated Control of CD4+ T Cell Function Impacts on Ectopic Lymphoid Structure Formation in Patients with Sjögren's Syndrome. **Arthritis & Rheumatology**. https://doi.org/10.1002/art.41289 📗
 1. Marcelis, L. et al. (2020). In-depth characterization of the tumor microenvironment in central nervous system lymphoma reveals implications for immune-checkpoint therapy. **Cancer Immunology, Immunotherapy**. https://doi.org/10.1007/s00262-020-02575-y 📗
 
+1. Mandal, R. K. et al. (2020). Temporospatial shifts within commercial laboratory mouse gut microbiota impact experimental reproducibility. **BMC Biology**. https://doi.org/10.1186/s12915-020-00810-7 📗
+
 1. Mannix, R. et al. (2020). Internal jugular vein compression collar mitigates histopathological alterations after closed head rotational head impact in swine: A pilot study. **Neuroscience**. https://doi.org/10.1016/j.neuroscience.2020.04.009 😞 
 
 1. Marotte, L. et al. (2020). Increased antitumor efficacy of PD-1-deficient melanoma-specific human lymphocytes. **Journal for ImmunoTherapy of Cancer**. http://dx.doi.org/10.1136/jitc-2019-000311 📗
@@ -176,6 +190,8 @@ cortex reveals critical period triggers and brakes. **PNAS**. https://doi.org/10
 1. Martino, F. et al. (2020). A Machine-learning Approach for the Assessment of the Proliferative Compartment of Solid Tumors on Hematoxylin-Eosin-Stained Sections. **Cancers**. https://doi.org/10.3390/cancers12051344 📗
 
 1. McBurney-Lin, J. et al. (2020). Bidirectional pharmacological perturbations of the noradrenergic system differentially affect tactile detection. **Neuropharmacology**. https://doi.org/10.1016/j.neuropharm.2020.108151 📗
+
+1. McLeod, R. et al. (2020). First-in-human study of AT13148, a dual ROCK-AKT inhibitor in patients with solid tumors. **Clinical Cancer Research**. https://doi.org/10.1158/1078-0432.CCR-20-0700 📗
 
 1. Merritt, C. R. et al. (2020). Multiplex digital spatial profiling of proteins and RNA in fixed tissue. **Nature Biotechnology**. https://doi.org/10.1038/s41587-020-0472-9 😞
 
@@ -198,6 +214,8 @@ effusions in brachycephalic dogs. **Journal of Veterinary Internal Medicine**. h
 
 1. Nejman, D. et al. (2020). The human tumor microbiome is composed of tumor type–specific intracellular bacteria. **Science**. https://doi.org/10.1126/science.aay9189 📗
 
+1. Nolan, M. et al. (2020). Quantitative patterns of motor cortex proteinopathy across ALS genotypes. **Acta Neuropathologica Communications**. https://doi.org/10.1186/s40478-020-00961-2 📗
+
 1. Norberg, K. J. et al. (2020). A novel pancreatic tumour and stellate cell 3D co-culture spheroid model. **BMC Cancer**. https://doi.org/10.1186/s12885-020-06867-5 📗
 
 1. Orgaz, J. L. et al. (2020). Myosin II Reactivation and Cytoskeletal Remodeling as a Hallmark and a Vulnerability in Melanoma Therapy Resistance. **Cancer Cell**. https://doi.org/10.1016/j.ccell.2019.12.003 📗
@@ -208,7 +226,11 @@ effusions in brachycephalic dogs. **Journal of Veterinary Internal Medicine**. h
 
 1. Pilot, T. et al. (2020). Heat shock and HSP70 regulate 5-FU-mediated caspase-1 activation in myeloid-derived suppressor cells and tumor growth in mice. **Journal for ImmunoTherapy of Cancer**. http://dx.doi.org/10.1136/jitc-2019-000478 😞
 
+1. Plekhanov, A. A. et al. (2020). Histological validation of in vivo assessment of cancer tissue inhomogeneity and automated morphological segmentation enabled by Optical Coherence Elastography. **Scientific Reports**. https://doi.org/10.1038/s41598-020-68631-w 📗
+
 1. Prieto‐Garcia, C. et al. (2020). Maintaining protein stability of ∆Np63 via USP28 is required by squamous cancer cells. **EMBO Molecular Medicine**. https://doi.org/10.15252/emmm.201911101 📗
+
+1. Pulsawatdi, A. V. et al. (2020). A robust multiplex immunofluorescence and digital pathology workflow for the characterisation of the tumour immune microenvironment. **Molecular Oncology**. https://doi.org/10.1002/1878-0261.12764 📗
 
 1. Raposo, T. P. et al. (2020). Tensin4 (TNS4) is upregulated by Wnt signalling in adenomas in
 multiple intestinal neoplasia (Min) mice. **International Journal of Experimental Pathology**. https://doi.org/10.1111/iep.12352 😞
@@ -239,6 +261,8 @@ multiple intestinal neoplasia (Min) mice. **International Journal of Experimenta
 
 1. Shochet, G. E. et al. (2020). Integrin alpha-5 silencing leads to myofibroblastic differentiation in IPF-derived human lung fibroblasts. **Therapeutic Advances in Chronic Disease**. https://doi.org/10.1177/2040622320936023 📗
 
+1. Siersbaek, R. et al. (2020). IL6/STAT3 Signaling Hijacks Estrogen Receptor α Enhancers to Drive Breast Cancer Metastasis. **Cancer Cell**. https://doi.org/10.1016/j.ccell.2020.06.007 📗
+
 1. Sirotkina, M. A. et al. (2020). In vivo assessment of functional and morphological alterations in tumors under treatment using OCT-angiography combined with OCT-elastography. **Biomedical Optics Express**. https://doi.org/10.1364/BOE.386419 😞
 
 1. Śledzińska, A. et al. (2020). Regulatory T Cells Restrain Interleukin-2- and Blimp-1-Dependent Acquisition of Cytotoxic Function by CD4+ T Cells.  **Immunity**. https://doi.org/10.1016/j.immuni.2019.12.007 😞
@@ -258,6 +282,8 @@ multiple intestinal neoplasia (Min) mice. **International Journal of Experimenta
 1. Van Looveren, K. et al. (2020). Glucocorticoids limit lipopolysaccharide‐induced lethal inflammation by a double control system. **EMBO Reports**. https://doi.org/10.15252/embr.201949762 😞
 
 1. Väyrynen, J. P. et al. (2020). Prognostic significance of immune cell populations identified by machine learning in colorectal cancer using routine hematoxylin & eosin stained sections, **Clinical Cancer Research**. http://doi.org/10.1158/1078-0432.CCR-20-0071 📗
+
+1. Wirta, E-V. et al. (2020). Prognostic Value of Immune Environment Analysis in Small Bowel Adenocarcinomas with Verified Mutational Landscape and Predisposing Conditions. **Cancers**. https://doi.org/10.3390/cancers12082018 📗
 
 1. Wood, A-C. et al. (2020). Deep Learning Predicts Molecular Subtype of Muscle-invasive Bladder Cancer from Conventional Histopathological Slides. **European Urology**. https://doi.org/10.1016/j.eururo.2020.04.023 📗
 
