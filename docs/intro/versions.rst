@@ -55,16 +55,17 @@ A commitment of sorts
 As developers, we try to keep these rules in mind when changing the software.
 
 We are continually working on new MAJOR/MINOR releases, updated to add features -- which are often inspired by our own needs and research projects we are working on.
-We're still learning what a plausible schedule is, but we expect a new release every few months.
+We're still learning what a plausible schedule is, but we expect two or three such releases per year.
 
-Between MAJOR/MINOR releases we will try to fix critical bugs, and include these in regular PATCH releases -- but we will resist the temptation to add new features in a PATCH, particularly if there is a risk these changes might modify the behavior of the software unexpectedly.
+Between MAJOR/MINOR releases we will try to fix critical bugs, and include these in regular PATCH releases -- approximately one per month, depending upon how much is fixed and how important it is.
+We will resist the temptation to add new features in a PATCH, particularly if there is a risk these changes might modify the behavior of the software unexpectedly.
 
 This means you can update PATCH versions and not expect huge differences.
 We will try to fix bugs promptly, but we can only fix the problems we know about.
 
 In return, **you can help** in a few ways:
 
-* Always check the changelog_ to see what is different in a version. That way you can avoid surprises when updating, and see if an earlier bug affected a feature you used.
+* Always check the changelog_ to see what is different in a version. That way you can reduce surprises when updating, and see if an earlier bug affected a feature you used.
 * Please report bugs and weirdness that you find on the forum_ -- *after* checking `GitHub Issues`_ to see if it has already been reported or fixed. If you find the issue already exists, but hasn't been resolved, feel free to join in the discussion.
 * Do keep in mind that QuPath is developed by researchers, and our time is very limited. If you want a grand new feature, we probably can't spend weeks developing it for you for free... even if we want to. But we're open to discussing ways to collaborate. Talk to us -- the earlier the better.
 
