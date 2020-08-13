@@ -2,7 +2,18 @@
 Custom scripts
 **************
 
-Here, we overview some of the main ideas needed to start writing custom scripts in QuPath.
+You can enter a custom script in QuPath via :menuselection:`Automate --> Show script editor`, and run it by choosing :menuselection:`Run --> Run` (or pressing :kbd:`Ctrl + R` with the script editor in focus).
+
+.. figure:: images/friendly_script.png
+  :class: shadow-image
+  :width: 75%
+  :align: center
+
+  A friendly script.
+
+The `user forum <http://forum.image.sc/tag/qupath>`_ is a good source for scripts; scripts are often posted there in response to questions that require a feature QuPath doesn't quite have yet.
+
+This section provides an overview of some of the main ideas needed to start writing custom scripts in QuPath yourself.
 
 It is based initially on `this blog post <https://petebankhead.github.io/qupath/2019/08/21/scripting-in-v020.html>`_ but should be kept updated as QuPath develops.
 It assumes you are familiar with the main :doc:`QuPath concepts <../concepts/index>`.

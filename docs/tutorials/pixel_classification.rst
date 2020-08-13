@@ -53,6 +53,13 @@ We will further look to identify everything else that is tissue, *and a third cl
   :width: 90%
 
   OS-1.ndpi
+  
+.. tip::
+  
+  **Remember:** You can toggle the overlay on and off by pressing the :guilabel:`C` button in the toolbar or :kbd:`C` shortcut key (for *classification*).
+  
+  You can adjust the overlay opacity using the slider at the top, or by scrolling with the :guilabel:`Ctrl` or :guilabel:`Cmd` key pressed.
+  
 
 Getting started
 ===============

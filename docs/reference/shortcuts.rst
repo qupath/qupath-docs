@@ -66,6 +66,7 @@ The following shortcuts are used to toggle on/off display elements in the viewer
   "Show/hide annotations", :kbd:`A`
   "Show/hide TMA grid", :kbd:`G`
   "Show/hide counting grid", :kbd:`Shift + G`
+  "Show/hide pixel classification", :kbd:`C`
   "Fill/unfill detections", :kbd:`F`
   "Fill/unfill annotations", :kbd:`Shift + F`
   "Show/hide color channel", :kbd:`Numeric keys`

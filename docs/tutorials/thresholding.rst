@@ -82,7 +82,7 @@ When you adjust these settings, you should see an overlay that color-codes pixel
 
 .. tip::
   
-  You can toggle the overlay on and off by pressing the :guilabel:`C` button in the toolbar (for *classification*... for reasons we shall see later).
+  You can toggle the overlay on and off by pressing the :guilabel:`C` button in the toolbar or :kbd:`C` shortcut key (for *classification*... for reasons we shall see later).
   
   You can adjust the overlay opacity using the slider at the top, or by scrolling with the :guilabel:`Ctrl` or :guilabel:`Cmd` key pressed.
   
