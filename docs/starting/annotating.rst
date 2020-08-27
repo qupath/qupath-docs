@@ -58,7 +58,8 @@ Lines can be drawn using the *Line tool*, by clicking once for the starting poin
 |polygon| Polygon tool
 ----------------------
 
-The *Polygon tool* is a good standard for drawing around regions.  It can be used in one of two ways:
+The *Polygon tool* is a good standard for drawing around regions.
+It can be used in one of two ways:
 
 * Click where each vertex should be
 * Click and drag to draw a continuous line (which will be split into spaced vertices by QuPath)
@@ -75,7 +76,8 @@ Otherwise, the ROI is finished by *double-clicking* on the image at the location
 |brush| Brush tool
 ------------------
 
-The *Brush tool* is probably the drawing tool I use the most for annotating regions.  The idea is simple: it each click of the brush selects a small circle, but by dragging the mouse across the image then a region is 'painted' that way.
+The *Brush tool* is probably the drawing tool I use the most for annotating regions.
+The idea is simple: it each click of the brush selects a small circle, but by dragging the mouse across the image then a region is 'painted' that way.
 
 This would have limited call for excitement, but the *Brush tool* within QuPath has a few particularly useful features:
 
@@ -89,14 +91,17 @@ You can change the absolute size of the brush in the settings, and also optional
 |wand| Wand tool
 ----------------
 
-The *Wand tool* is like a more enthusiastic brush tool.  Not content with painting only a small circular region, it will spread out into a much larger circle - but only for so long as the pixels have intensities similar to the one that was clicked on.
+The *Wand tool* is like a more enthusiastic brush tool.
+Not content with painting only a small circular region, it will spread out into a much larger circle - but only for so long as the pixels have intensities similar to the one that was clicked on.
 
-This provides a very powerful way to annotate regions quickly and with a high level of accuracy... provided they are substantially darker or lighter than the surroundings.  It can also work well in selecting dense areas of cells surrounding by more space.  But if the contrast is lower, the wand can appear to go out of control... and it's best to revert back to the 'standard' *Brush tool*.
+This provides a very powerful way to annotate regions quickly and with a high level of accuracy... provided they are substantially darker or lighter than the surroundings.
+It can also work well in selecting dense areas of cells surrounding by more space.
+But if the contrast is lower, the wand can appear to go out of control... and it's best to revert back to the 'standard' *Brush tool*.
 
 .. tip::
   Like the *Brush tool*, the *Wand tool* adapts according to magnification: zoom out to select large regions, zoom in to select smaller, more detailed regions.
 
-  Additionally, the *Wand tool* is influenced by any color transforms that have been applied - so these can be used to adjust the image so the areas of interest have higher contrast.  See [[Changing colors]] for more information.
+  Additionally, the *Wand tool* is influenced by any color transforms that have been applied -- so these can be used to adjust the image so the areas of interest have higher contrast.  See :doc:`../tutorials/separating_stains` for more information.
 
 |points| Points tool
 --------------------

@@ -7,7 +7,7 @@ Viewing images
 The *Viewer* is the main QuPath component in which images are shown.
 
 This section describes the controls and shortcuts that can enable you to use the viewer efficiently to move around images and draw annotations.
-If you would like to know more about changing how pixels are displayed (including adjusting the brightness and contrast), check out the [[Changing colors]] section.
+If you would like to know more about changing how pixels are displayed (including adjusting the brightness and contrast), check out the :doc:`../tutorials/separating_stains` section.
 
 Using a mouse (default mode)
 ============================

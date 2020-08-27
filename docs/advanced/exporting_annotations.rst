@@ -3,7 +3,7 @@ Exporting annotations
 *********************
 
 People often ask about exporting QuPath annotations, to which the response is invariably *'In which format exactly?'*
-Historically, the answer to this question has not always been fully satisfying - because it's hard to find standards that everyone can support.
+Historically, the answer to this question has not always been fully satisfying -- because it's hard to find standards that everyone can support.
 
 There are two main ways in which annotations might be exported:
 
@@ -30,7 +30,7 @@ GeoJSON
 
   Using GeoJSON does impose some limitations; notably, ellipses become polygons.
 
-`GeoJSON <https://en.wikipedia.org/wiki/GeoJSON>`_ is an open standard for representing geographical features - but also a handy way to represent shapes of various kinds.
+`GeoJSON <https://en.wikipedia.org/wiki/GeoJSON>`_ is an open standard for representing geographical features -- but also a handy way to represent shapes of various kinds.
 
 It is also the preferred method of annotation export in QuPath, because it preserves quite a lot of information.
 
@@ -140,7 +140,7 @@ This can be created and customized in various ways, and then used to write out t
   Such images are efficient (a lot of information can be squeezed into a single image channel), but limited (each pixel can only have *one* label).
 
   Binary images are images where each pixel can have one of two values: often 0 and 255 (but sometimes 0 or 1).
-  While a single binary image channel can contain less information than a corresponding labeled image, if we create a *multichannel* binary image (with each channel representing a class) it may actually contain more - because now each channel can independently provide information for the classification of each pixel.
+  While a single binary image channel can contain less information than a corresponding labeled image, if we create a *multichannel* binary image (with each channel representing a class) it may actually contain more -- because now each channel can independently provide information for the classification of each pixel.
 
   In practice, means that multichannel binary images allow overlaps to be represented: that is, pixels can be assigned to multiple classes.
 
@@ -154,7 +154,7 @@ This can be created and customized in various ways, and then used to write out t
 Individual annotations
 ----------------------
 
-The following script creates a ``LabeledImageServer``, and loops through all annotations in an image with the clasifications *Tumor*, *Stroma* and *Other* - exporting a labeled image for the bounding box of each annotation.
+The following script creates a ``LabeledImageServer``, and loops through all annotations in an image with the clasifications *Tumor*, *Stroma* and *Other* -- exporting a labeled image for the bounding box of each annotation.
 Any other annotations occur within the same bounding box will also be included.
 
 ::
@@ -202,7 +202,7 @@ Not all options need to be provided, in which case defaults will be used.
 
 Of note, the labels provided to the builder correspond to QuPath *classifications* and the integer value in the output image.
 
-The builder also makes if possible to define the background label for unannotated pixels (here, 0) and even specify that the boundaries of annotations are assigned a different class to the 'filled' areas - in addition to how thick those boundaries should be.
+The builder also makes if possible to define the background label for unannotated pixels (here, 0) and even specify that the boundaries of annotations are assigned a different class to the 'filled' areas -- in addition to how thick those boundaries should be.
 
 The ``multichannelOutput`` option controls whether the image will be binary (if true) or labeled (if false).
 
@@ -211,12 +211,12 @@ Finally, the builder makes it possible to assign distinct classifications within
 
 .. tip::
 
-  When using labeled images for output, labels will be drawn in the order they are provided to the builder - which can be important.
+  When using labeled images for output, labels will be drawn in the order they are provided to the builder -- which can be important.
 
   For example, in the above example *Tumor* is drawn first and *Stroma* second.
   If *Tumor* and *Stroma* annotations overlap for any pixel, *Stroma* will win.
 
-  Knowing this when annotating means that at interfaces you only really need to carefully annotate the classes that will be drawn *last* - because they will override any overlapping classes.
+  Knowing this when annotating means that at interfaces you only really need to carefully annotate the classes that will be drawn *last* -- because they will override any overlapping classes.
 
   .. figure:: images/labels_order.png
     :align: center

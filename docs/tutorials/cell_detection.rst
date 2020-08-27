@@ -6,7 +6,7 @@ Cell detection
 
 Previous sections described some of QuPath's tools for manually drawing regions and counting objects inside them.
 While this approach may be fine for some applications, the laborious manual counting step does not scale well to handling large numbers of objects.
-Here, we look at how QuPath's detection capabilities can be used to obtain results much more quickly and reproducibility - and often with higher accuracy, and less bias.
+Here, we look at how QuPath's detection capabilities can be used to obtain results much more quickly and reproducibility -- and often with higher accuracy, and less bias.
 
 While this section focusses on detecting cells, the concepts introduced here are more general, and can be applied in QuPath for other kinds of tasks were 'detecting objects' is required.
 
@@ -40,6 +40,9 @@ Annotate a region of interest
 
 Using some of the tools introduced in :doc:`../starting/annotating`, create an annotation around a region containing tumor cells that should be detected and counted.
 
+.. tip::
+  Avoid drawing a very large region! It is better to start small, especially when optimizing detection parameters, to avoid long delays while the detection is being applied.
+
 .. figure:: images/ki67_detecting_annotation.jpg
   :class: shadow-image
   :width: 75%
@@ -56,7 +59,7 @@ This will bring up a dialog, where most of the options relate to how the cells a
 The default values are often good enough to get started.
 
 The bottom of the dialog contains options that relate to how detected cells will be classified as either positive or negative.
-The *Score compartment* value of *Nucleus: DAB OD mean* indicates that the decision will be based on the average DAB (brown) staining within the nucleus - which is appropriate in this case.
+The *Score compartment* value of *Nucleus: DAB OD mean* indicates that the decision will be based on the average DAB (brown) staining within the nucleus -- which is appropriate in this case.
 Other options are useful in cases where the biomarker of interest isn't localized to the nucleus.
 
 Below this, up to three different thresholds can be set to categorize cells according to staining intensity, i.e. negative (blue), weakly positive, moderately positive and strongly positive.
@@ -90,6 +93,12 @@ You can also control whether the detections are shown 'hollow' or 'filled' with 
 
 It is a good idea to use these buttons (or their shortcuts :kbd:`D` and :kbd:`F`) to help confirm that the cells have been correctly detected.
 
+.. tip::
+  It is worth exploring the available parameters to see if the detection can be improved.
+  
+  In this specific case, using *Optical density sum* rather than *Hematoxylin OD* tends to get better results (i.e. fewer fragmented nuclei).
+  This is discussed in much more detail in the *IHC analysis* tutorial on YouTube, see :doc:`../starting/help` for links.
+
 
 View cell-by-cell results
 =========================
@@ -117,9 +126,9 @@ Because most cells in this example are negative, the image below shows a large p
 A threshold of around 0.1 looks like it is likely to perform well (note, the threshold that was actually used was 0.2... therefore we should expect few, false positives, but we may have missed a small number of some true positive cells and instead classified them as negative).
 
 .. note::
-  The fact that a considerable number of the cells appear to have *negative* DAB OD staining (i.e. values below zero) - which ought not to be possible - the histogram suggests that the stain separation has not been perfect.
+  The fact that a considerable number of the cells appear to have *negative* DAB OD staining (i.e. values below zero) -- which ought not to be possible -- in the histogram suggests that the stain separation has not been perfect.
 
-  A small proportion of negative values is generally tolerable because of the inherent limitations in trying to quantify DAB staining in imperfect images, however the situation can (and in this case probably should) be improved using the *Estimate stains* command.
+  A small proportion of negative values is generally tolerable because of the inherent limitations in trying to quantify DAB staining in imperfect images, however the situation can (and in this case probably should) be improved using the :doc:`Estimate stain vectors <separating_stains>` command.
   However, it is important to note that when the stain estimates are improved then all cell detection should be repeated.
 
 Analyze additional annotations

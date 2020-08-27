@@ -13,11 +13,11 @@ Part of ImageJ's success comes from its fantastic extensibility, as seen in the 
 In fact, QuPath started life as a collection of ImageJ plugins that aimed to extend it for digital pathology, but over time the situation flipped around... so that QuPath was rewritten from scratch as a completely new application, which uses ImageJ as an extension.
 
 .. NOTE::
-  Currently, QuPath only integrates directly with the 'original' `ImageJ <http://imagej.nih.gov>`_ - and not with `ImageJ2 <http://www.imagej.net>`_.
+  Currently, QuPath only integrates directly with the 'original' `ImageJ <http://imagej.nih.gov>`_ -- and not with `ImageJ2 <http://www.imagej.net>`_.
 
 There's a lot that QuPath can do that ImageJ can't, especially when it comes to working with whole slide images and object classification.
 But it works the other way too: there's also a lot that's possible with ImageJ, but which isn't possible with QuPath alone.
-Fortunately, since they are both open source, it's not necessary to choose one or the other - and they can be used together.
+Fortunately, since they are both open source, it's not necessary to choose one or the other -- and they can be used together.
 
 
 Finding ImageJ commands
@@ -40,10 +40,10 @@ The commands described here are accessible from the *ImageJ toolbar button* in Q
 Sending image regions to ImageJ
 ===============================
 
-In general, ImageJ can't open whole slide images directly - the images are just too big (often up to 40 GB when uncompressed), and ImageJ requires all that to be read into the computer's RAM.
+In general, ImageJ can't open whole slide images directly -- the images are just too big (often up to 40 GB when uncompressed), and ImageJ requires all that to be read into the computer's RAM.
 QuPath gets around this by quickly pulling out only the bits of the image that it needs at any one moment, and remembering what it has seen before for as long as its memory can cope with.
 
-Using the excellent `Bio-Formats plugin for ImageJ <https://www.openmicroscopy.org/site/support/bio-formats/users/imagej/>`_ it's possible to open some cropped regions of whole slide images within ImageJ, but this involves entering the coordinates for the desired region - which isn't always very easy to do.
+Using the excellent `Bio-Formats plugin for ImageJ <https://www.openmicroscopy.org/site/support/bio-formats/users/imagej/>`_ it's possible to open some cropped regions of whole slide images within ImageJ, but this involves entering the coordinates for the desired region -- which isn't always very easy to do.
 
 The alternative is to open the image within QuPath, and interactively draw an annotation around any region of interest.
 Then by clicking on the *Send region to ImageJ* command |icon_extract_image|, ImageJ can be launched and passed the pixels from within the selected region.
@@ -110,7 +110,7 @@ In the screenshot above, the original image was sent first by running the *Send 
 
 .. note::
   If you look closely at the screenshot, you should see that the color-transformed images were sent using a different downsample factor compared to the original (RGB) image.
-  This is evident not only from the sizes of the images as they are displayed, but also from the text at the top of each of the three image windows - where it can be confirmed that the transformed images are have different sizes in terms of pixels.\
+  This is evident not only from the sizes of the images as they are displayed, but also from the text at the top of each of the three image windows -- where it can be confirmed that the transformed images are have different sizes in terms of pixels.\
 
   However, because QuPath sets the image properties (i.e. pixel sizes) while taking the downsampling into consideration, the sizes of the fields of view in µm are almost identical.
 
@@ -118,7 +118,7 @@ In the screenshot above, the original image was sent first by running the *Send 
 QuPath objects and ImageJ ROIs
 ------------------------------
 
-The closest thing that ImageJ has to a :doc:`QuPath object <../concepts/objects>` is an ImageJ `ROI <https://imagej.nih.gov/ij/docs/guide/146-10.html#toc-Section-10>`_ (*Region Of Interest* - sometimes also called a *Selection*).
+The closest thing that ImageJ has to a :doc:`QuPath object <../concepts/objects>` is an ImageJ `ROI <https://imagej.nih.gov/ij/docs/guide/146-10.html#toc-Section-10>`_ (*Region Of Interest* -- sometimes also called a *Selection*).
 Similarly, where QuPath stores multiple objects relating to a single image in a :doc:`hierarchy <../concepts/object_hierarchy>`, ImageJ uses `overlays <https://imagej.nih.gov/ij/docs/guide/146-11.html>`_.
 
 ImageJ ROIs and overlays cannot represent all the same information that can be contained within QuPath objects and hierarchies, but they can contain some.
@@ -132,14 +132,14 @@ Consequently, when sending an image region to ImageJ, QuPath uses them to make i
   Sending an image region & objects to ImageJ.
 
 The screenshot above depicts how this works.
-The selected object within QuPath defines the region that will be sent, and - so long as it isn't a rectangle - this becomes converted into a selected ROI in ImageJ (shown in yellow in both applications).
+The selected object within QuPath defines the region that will be sent, and -- so long as it isn't a rectangle -- this becomes converted into a selected ROI in ImageJ (shown in yellow in both applications).
 All other QuPath objects within the region are converted into ROIs and added to the ImageJ overlay.
 
 The names of the ROIs are also set according to how they appear in QuPath, often based upon their :doc:`classification <../concepts/classifications>`.
 In the above screenshot, the ImageJ command :menuselection:`Image --> Overlay --> To ROI Manager` was run to create the list that is shown, where each ROI's name can be seen.
 
 .. note::
-  The selected object from QuPath is only set as an ImageJ ROI if it is not a rectangle, because a rectangle would be identical to the entire image region - so does not contain any additional, useful information.
+  The selected object from QuPath is only set as an ImageJ ROI if it is not a rectangle, because a rectangle would be identical to the entire image region -- so does not contain any additional, useful information.
 
   If such a 'whole image' rectangular ROI is required in ImageJ, it can easily be created on the ImageJ side with the :menuselection:`Edit --> Selection --> Select All` command.
 
@@ -159,7 +159,7 @@ The result will be similar to what is generated in QuPath with the :menuselectio
 
   Sending a snapshot image to ImageJ.
 
-Note that the snapshot command is really **only** for creating screenshots - **not** for transferring images for further analysis.
+Note that the snapshot command is really **only** for creating screenshots -- **not** for transferring images for further analysis.
 The snapshot that is available within ImageJ will be RGB, and does not contain the pixel values or calibration information that is available when *Send region to ImageJ* is used instead.
 
 
@@ -171,7 +171,7 @@ One application of passing image regions to ImageJ is simply to use ImageJ's com
 But it can also be helpful to apply some extra processing within ImageJ, including external plugins such as `ImmunoRatio <http://jvsmicroscope.uta.fi/sites/default/files/software/immunoratio-plugin/index.html>`_.
 
 Because QuPath keeps its own version of ImageJ internally, which does not match with any one you might have installed elsewhere on your computer, it won't necessarily have immediate access to the plugins you want.
-However, you can set QuPath's ImageJ to use whichever plugins directory you like - including the plugins directory for an existing ImageJ with :menuselection:`Extensions --> ImageJ --> Set ImageJ plugins directory`.
+However, you can set QuPath's ImageJ to use whichever plugins directory you like -- including the plugins directory for an existing ImageJ with :menuselection:`Extensions --> ImageJ --> Set ImageJ plugins directory`.
 
 
 
@@ -207,12 +207,12 @@ Send Overlay to QuPath
   Sending an overlay from ImageJ to QuPath.
 
 Running :menuselection:`Plugins --> Send Overlay to QuPath` will take **all** the ROIs on the current ImageJ overlay, and send them back to QuPath as either annotation or detection objects.
-Furthermore, the measurement list for each object can optionally be populated by ImageJ measurements, according to ImageJ's :menuselection:`Analyze --> Set Measurements` specifications - in the same ways as this command is used to specify measurements for the :menuselection:`Analyze --> Analyze Particles...` command.
+Furthermore, the measurement list for each object can optionally be populated by ImageJ measurements, according to ImageJ's :menuselection:`Analyze --> Set Measurements` specifications -- in the same ways as this command is used to specify measurements for the :menuselection:`Analyze --> Analyze Particles...` command.
 
 This provides a way to (for example) run some custom cell detection plugin written for ImageJ, which ends up putting the detected cells only an overlay, and then send back the results to QuPath.
 
 .. note::
-  The :menuselection:`Analyze Particles` command has the option of creating ROIs and adding them to an overlay - so this can be a good step along the way to creating an overlay in a QuPath-friendly format.
+  The :menuselection:`Analyze Particles` command has the option of creating ROIs and adding them to an overlay -- so this can be a good step along the way to creating an overlay in a QuPath-friendly format.
 
 
 Running macros
@@ -234,7 +234,7 @@ Macros and parallelization
 --------------------------
 
 In QuPath v0.1.2, an 'experimental' ability to run macros in parallel was added (which can be turned on or off in the macro runner dialog).
-Parallelization can speed up processing, however it can also have unintended consequences - and therefore is turned off by default.
+Parallelization can speed up processing, however it can also have unintended consequences -- and therefore is turned off by default.
 
 In particular, if your macro creates additional images (e.g. by duplication, or by splitting color channels), then this can cause a parallelized macro to fail (since macros work with an 'active' image, which changes unpredictably under these circumstances).
 The solution in this case is simply to turn off parallelization and run the processing sequentially.
@@ -254,5 +254,5 @@ The solution in this case is simply to turn off parallelization and run the proc
   The data exchange functions within QuPath try to take care of this using the ``Platform.runLater`` and ``EDT.invokeLater`` methods.
   Any developer looking to develop any further ImageJ plugins or QuPath extensions to share data will need to be cautious about this too.
 
-  Finally, JavaFX vs. AWT is the cause of an `irritating bug <https://github.com/qupath/qupath/issues/6>`_ within QuPath whereby the ImageJ menubar is appended to the end of the QuPath menubar whenever ImageJ is launched - and it doesn't go away easily.
+  Finally, JavaFX vs. AWT is the cause of an `irritating bug <https://github.com/qupath/qupath/issues/6>`_ within QuPath whereby the ImageJ menubar is appended to the end of the QuPath menubar whenever ImageJ is launched -- and it doesn't go away easily.
   Any fixes for this issue would be much appreciated...

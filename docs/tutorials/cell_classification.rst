@@ -117,7 +117,7 @@ The *Nucleus/Cell area ratio* incorporates both of these characteristics in a si
 Calculate additional features
 =============================
 
-Despite the usefulness of *Nucleus/Cell area ratio* for identifying tumor cells, on its own it is not enough.
+Despite the usefulness of the *Nucleus/Cell area ratio* for identifying tumor cells, on its own it is not enough.
 One reason is that dense populations of immune cells can also have high values for this measurement.
 Ultimately we will need to rely upon combinations of measurements.
 
@@ -189,6 +189,13 @@ Right-clicking on the image after drawing the annotation can offer an easier way
   :align: center
 
   Training cell classification with right-click
+  
+.. warning::
+  
+  It is important to annotate regions where cells have already been detected!
+  
+  Don't be misled by the fact you can't see them in the screenshots -- I have hidden the cells temporarily to make it easier to distinguish areas of tumor.
+
 
 
 Train a cell classifier based on annotations
@@ -214,7 +221,7 @@ If your computer is sufficiently fast, or your number of annotations sufficientl
 
 .. tip::
   
-  The default *Random Trees* classifier tends to get a good combination of speed and accuracy - although you can choose others if you wish.
+  The default *Random Trees* classifier tends to get a good combination of speed and accuracy -- although you can choose others if you wish.
 
 
 .. tip::
@@ -233,7 +240,7 @@ If your computer is sufficiently fast, or your number of annotations sufficientl
   The choice of annotations are important for classifier performance, but there are other customizations available if you need them.
 
   By default, all measurements that are available when the classifier is first built will be used.
-  However, if you choose :guilabel:`Selected measurements` under *Feature*, you can press :guilabel:`Select` and select exactly which measurements you want to be used for the classification instead.
+  However, if you choose :guilabel:`Selected measurements` under *Feature*, you can press :guilabel:`Select` and choose exactly which measurements you want to be used for the classification instead.
 
   You also have the :guilabel:`Filtered by output classes` option, which will come in handy for :doc:`multiplex_analysis`.
   If you add extra measurements later (e.g. by running *Add smoothed features* again with different settings), they should appear automatically in the feature list.

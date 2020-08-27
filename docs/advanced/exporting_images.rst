@@ -27,13 +27,13 @@ You can also specify the amount to downsample the image.
 If an annotation is selected, only the region of the image corresponding to that annotation will be written to the file.
 
 *OME TIFF* is the export command capable of writing image pyramids.
-In this way, it can support much larger images than *Original pixels* - but only in one format (i.e. OME-TIFF).
+In this way, it can support much larger images than *Original pixels* -- but only in one format (i.e. OME-TIFF).
 Nevertheless, you can still customize the compression within the TIFF and the number of pyramidal levels.
 
 .. warning::
 
   'Original pixel values' is occasionally an aspirational term.
-  Exporting an RGB image as a JPEG, for example, may introduce new compression artefacts that mean pixel values are not *identical* - but should be close to one another.
+  Exporting an RGB image as a JPEG, for example, may introduce new compression artefacts that mean pixel values are not *identical* -- but should be close to one another.
   The point is that no bit-depth or channel conversion is involved.
 
 
@@ -47,7 +47,7 @@ There are two main ways to export such rendered RGB images:
 * :menuselection:`File --> Export images... --> Rendered RGB (with overlays)`
 * :menuselection:`File --> Export snapshot... --> Current viewer content`
 
-*Rendered RGB (with overlays)* is similar to *Original pixels*, except that it depicts the image (or region) as it appears currently in the viewer - with the same colors and brightness/contrast *but not necessarily the same pixel values* (because of the conversion to RGB).
+*Rendered RGB (with overlays)* is similar to *Original pixels*, except that it depicts the image (or region) as it appears currently in the viewer -- with the same colors and brightness/contrast *but not necessarily the same pixel values* (because of the conversion to RGB).
 This is therefore useful for creating figures, but not for any later quantitative analysis.
 
 *Current viewer content* gives a snapshot of how the viewer currently looks.
@@ -72,7 +72,7 @@ This includes any surrounding background or additional features, such as the cur
 
 .. tip::
 
-  :doc:`Sending image regions to ImageJ <imagej>` provides another way to save images - either original pixels or rendered RGB.
+  :doc:`Sending image regions to ImageJ <imagej>` provides another way to save images -- either original pixels or rendered RGB.
   This opens up ImageJ's extra functionality, for example adding a custom scalebar.
 
 
@@ -153,6 +153,6 @@ To use it, you create an exporter for a specific ``ImageData``, customize it as 
 .. tip::
 
   When using ``imageExtension('.tif')``, an ImageJ TIFF will be written.
-  These are uncompressed (so rather large), but retain calibration information (pixel size, origin) - which makes it possible to relate anything later detected back to wherever it was within the whole slide image.
+  These are uncompressed (so rather large), but retain calibration information (pixel size, origin) -- which makes it possible to relate anything later detected back to wherever it was within the whole slide image.
 
   For other formats, the necessary scaling and translation values usually need to be calculated from the exported image file name.

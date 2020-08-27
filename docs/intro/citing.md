@@ -26,7 +26,7 @@ The following key indicates what, if anything, was cited in the main references 
 
 ### Contents
 
-* [2020](#2020) (149)
+* [2020](#2020) (150)
 * [2019](#2019) (144)
 * [2018](#2018) (48)
 * [2017](#2017) (5)
@@ -254,6 +254,8 @@ effusions in brachycephalic dogs. **Journal of Veterinary Internal Medicine**. h
 1. Norberg, K. J. et al. (2020). A novel pancreatic tumour and stellate cell 3D co-culture spheroid model. **BMC Cancer**. https://doi.org/10.1186/s12885-020-06867-5 📗
 
 1. Ohm, D. T. et al. (2020). Degeneration of the locus coeruleus is a common feature of tauopathies and distinct from TDP-43 proteinopathies in the frontotemporal lobar degeneration spectrum. **Acta Neuropathologica**. https://doi.org/10.1007/s00401-020-02210-1 😞
+
+1. Okudela, K. et al. (2020). A method to obtain reproducible Ki‐67 indexes in lung adenocarcinoma. **Histopathology**. https://doi.org/10.1111/his.14234 📗
 
 1. Orgaz, J. L. et al. (2020). Myosin II Reactivation and Cytoskeletal Remodeling as a Hallmark and a Vulnerability in Melanoma Therapy Resistance. **Cancer Cell**. https://doi.org/10.1016/j.ccell.2019.12.003 📗
 
