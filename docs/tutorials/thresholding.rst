@@ -99,6 +99,13 @@ Once you are happy with the look of the preview overlay, it's time to do somethi
 However, before you can, QuPath *strongly* encourages you to save your thresholder as a classifier.
 This is for your own good, so that the settings can be recorded and :doc:`available for scripting later <../scripting/workflows>`.
 
+.. warning::
+  
+  The save option may only be available if you are using a :doc:`project <../tutorials/projects>`!
+  
+  The classifier itself will be stored within the project, in a 'classifiers' subdirectory.
+  You can copy this directory to a new project if you need to transfer the classifier elsewhere.
+
 Keep QuPath happy by entering a classifier name and pressing :guilabel:`Save`.
 The buttons below should become magically activated.
 

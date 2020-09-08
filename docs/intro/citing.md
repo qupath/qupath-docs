@@ -26,7 +26,7 @@ The following key indicates what, if anything, was cited in the main references 
 
 ### Contents
 
-* [2020](#2020) (150)
+* [2020](#2020) (161)
 * [2019](#2019) (144)
 * [2018](#2018) (48)
 * [2017](#2017) (5)
@@ -137,6 +137,8 @@ https://doi.org/10.1016/j.ultrasmedbio.2020.07.004 📗
 
 1. Goto, Y. et al. (2020). Muscarinic receptors promote castration-resistant growth of prostate cancer through a FAK–YAP signaling axis. **Oncogene**. https://doi.org/10.1038/s41388-020-1272-x 📗
 
+1. Gruber, T. et al. (2020). IL-32γ potentiates tumor immunity in melanoma. **JCI Insight**. https://doi.org/10.1172/jci.insight.138772 📗
+
 1. Gualandi, M. et al. (2020). Oncogenic ALK<sup>F1174L</sup> drives tumorigenesis in cutaneous squamous cell carcinoma. **Life Science Alliance**. https://dx.doi.org/10.26508/lsa.201900601 📗
 
 1. Gullo, I. et al. (2020). The Dysfunctional Immune System in Common Variable Immunodeficiency Increases the Susceptibility to Gastric Cancer. **Cells**. https://doi.org/10.3390/cells9061498 📗
@@ -163,6 +165,8 @@ https://doi.org/10.1016/j.canlet.2020.05.001 😞
 1. Humphries, M. P. et al. (2020). Improving the Diagnostic Accuracy of the PD-L1 Test with Image Analysis and Multiplex Hybridization. **Cancers**. https://doi.org/10.3390/cancers12051114 📗
 
 1. Humphries, M. P. et al. (2020). The adaptive immune and immune checkpoint landscape of neoadjuvant treated esophageal adenocarcinoma using digital pathology quantitation. **BMC Cancer**. https://doi.org/10.1186/s12885-020-06987-y 📗
+
+1. Julià, A. et al. (2020). Lower peripheral helper T cell levels in the synovium are associated with a better response to anti-TNF therapy in rheumatoid arthritis. **Arthritis Research & Therapy**. https://doi.org/10.1186/s13075-020-02287-9 📗
 
 1. Jung, M. et al. (2020). CK14 Expression Identifies a Basal/Squamous-Like Type of Papillary Non-Muscle-Invasive Upper Tract Urothelial Carcinoma. **Frontiers in Oncology**. https://doi.org/10.3389/fonc.2020.00623 📗
 
@@ -210,6 +214,8 @@ https://doi.org/10.1016/j.tranon.2020.100844 📗
 
 1. Loughrey, M. et al. (2020). Identifying mismatch repair deficient colon cancer: near perfect concordance between immunohistochemistry and microsatellite instability testing in a large, population-based series. **Histopathology**. https://doi.org/10.1111/his.14233 📗
 
+1. Luszczak, S. et al. (2020). Co-targeting PIM and PI3K/mTOR using multikinase inhibitor AUM302 and a combination of AZD-1208 and BEZ235 in prostate cancer. **Scientific Reports**. https://doi.org/10.1038/s41598-020-71263-9 😞
+
 1. Lucchesi, D. et al. (2020). Impaired IL‐27 Mediated Control of CD4+ T Cell Function Impacts on Ectopic Lymphoid Structure Formation in Patients with Sjögren's Syndrome. **Arthritis & Rheumatology**. https://doi.org/10.1002/art.41289 📗
 
 1. Marcelis, L. et al. (2020). In-depth characterization of the tumor microenvironment in central nervous system lymphoma reveals implications for immune-checkpoint therapy. **Cancer Immunology, Immunotherapy**. https://doi.org/10.1007/s00262-020-02575-y 📗
@@ -225,6 +231,8 @@ https://doi.org/10.1016/j.tranon.2020.100844 📗
 1. McBurney-Lin, J. et al. (2020). Bidirectional pharmacological perturbations of the noradrenergic system differentially affect tactile detection. **Neuropharmacology**. https://doi.org/10.1016/j.neuropharm.2020.108151 📗
 
 1. McLeod, R. et al. (2020). First-in-human study of AT13148, a dual ROCK-AKT inhibitor in patients with solid tumors. **Clinical Cancer Research**. https://doi.org/10.1158/1078-0432.CCR-20-0700 📗
+
+1. Meran, L. et al. (2020). Engineering transplantable jejunal mucosal grafts using patient-derived organoids from children with intestinal failure. **Nature Medicine**. https://doi.org/10.1038/s41591-020-1024-z 📗
 
 1. Merritt, C. R. et al. (2020). Multiplex digital spatial profiling of proteins and RNA in fixed tissue. **Nature Biotechnology**. https://doi.org/10.1038/s41587-020-0472-9 😞
 
@@ -248,6 +256,8 @@ effusions in brachycephalic dogs. **Journal of Veterinary Internal Medicine**. h
 1. Nair-Menon, J. et al. (2020). Predominant Distribution of the RNAi Machinery at Apical Adherens Junctions in Colonic Epithelia Is Disrupted in Cancer. **International Journal of Molecular Sciences**. https://doi.org/10.3390/ijms21072559 📗
 
 1. Nejman, D. et al. (2020). The human tumor microbiome is composed of tumor type–specific intracellular bacteria. **Science**. https://doi.org/10.1126/science.aay9189 📗
+
+1. Ng, S. S. et al. (2020). The NK cell granule protein NKG7 regulates cytotoxic granule exocytosis and inflammation. **Nature Immunology**. https://doi.org/10.1038/s41590-020-0758-6 😞
 
 1. Nolan, M. et al. (2020). Quantitative patterns of motor cortex proteinopathy across ALS genotypes. **Acta Neuropathologica Communications**. https://doi.org/10.1186/s40478-020-00961-2 📗
 
@@ -280,6 +290,8 @@ multiple intestinal neoplasia (Min) mice. **International Journal of Experimenta
 
 1. Rasmussen, J. H. et al. (2020). Does multiparametric imaging with 18F-FDG-PET/MRI capture spatial variation in immunohistochemical cancer biomarkers in head and neck squamous cell carcinoma? **British Journal of Cancer**. https://doi.org/10.1038/s41416-020-0876-9 📗
 
+1. Remmerie, A. et al. (2020). Osteopontin Expression Identifies a Subset of Recruited Macrophages Distinct from Kupffer Cells in the Fatty Liver. **Immunity**. https://doi.org/10.1016/j.immuni.2020.08.004 📗
+
 1. Roberti, M. P. et al. (2020). Chemotherapy-induced ileal crypt apoptosis and the ileal microbiome shape immunosurveillance and prognosis of proximal colon cancer. **Nature Medicine**. https://doi.org/10.1038/s41591-020-0882-8 📗
 
 1. Robertson, S. et al. (2020). Prognostic potential of automated Ki67 evaluation in breast cancer: different hot spot definitions versus true global score. **Breast Cancer Research and Treatment**. https://doi.org/10.1007/s10549-020-05752-w 📗
@@ -296,9 +308,13 @@ multiple intestinal neoplasia (Min) mice. **International Journal of Experimenta
 
 1. Safari, R. et al. (2020). Ablation of non-coding RNAs affects bovine leukemia virus B lymphocyte proliferation and abrogates oncogenesis. **PLoS Pathogens**. https://doi.org/10.1371/journal.ppat.1008502 😞
 
+1. Samueli, B. et al. (2020). Remote pathology education during the COVID-19 era: Crisis converted to opportunity. **Annals of Diagnostic Pathology**. https://doi.org/10.1016/j.anndiagpath.2020.151612 😞
+
 1. Schottlaender, L. V. et al. (2020). Bi-allelic JAM2 Variants Lead to Early-Onset Recessive Primary Familial Brain Calcification. **AJHG**. https://doi.org/10.1016/j.ajhg.2020.02.007 😞
 
 1. Schmauch, B. et al. (2020). A deep learning model to predict RNA-Seq expression of tumours from whole slide images. **Nature Communications**. https://doi.org/10.1038/s41467-020-17678-4 📗
+
+1. Ščupáková, K. et al. (2020). Morphometric Cell Classification for Single‐Cell MALDI‐Mass Spectrometry Imaging. **Angewandte Chemie**. https://doi.org/10.1002/ange.202007315 📗
 
 1. Sharps, M. C. et al. (2020). Increased Placental Macrophages and a Pro‐inflammatory Profile in Placentas and Maternal Serum in Infants with a Decreased Growth Rate in the Third Trimester of Pregnancy. **American Journal of Reproductive Immunology**. https://doi.org/10.1111/aji.13267 😞
 
@@ -318,6 +334,8 @@ multiple intestinal neoplasia (Min) mice. **International Journal of Experimenta
 
 1. Stranahan, L. W. et al. (2020). Evaluation of the Efficacy of the _Brucella canis_ RM6/66 ΔvjbR Vaccine Candidate for Protection against B. _canis_ Infection in Mice. **mSphere**. https://doi.org/10.1128/mSphere.00172-20 📗
 
+1. Swiderska-Chadaj, Z. et al. (2020). Impact of rescanning and normalization on convolutional neural network performance in multi-center, whole-slide classification of prostate cancer. **Scientific Reports**. https://doi.org/10.1038/s41598-020-71420-0 📗
+
 1. Talbot, J. et al. (2020). Feeding-dependent VIP neuron–ILC3 circuit regulates the intestinal barrier. **Nature**. https://doi.org/10.1038/s41586-020-2039-9 📗
 
 1. Tedeschi, A. et al. (2020). Cep55 promotes cytokinesis of neural progenitors but is dispensable for most mammalian cell divisions. **Nature Communications**. https://doi.org/10.1038/s41467-020-15359-w 📗
@@ -330,11 +348,15 @@ multiple intestinal neoplasia (Min) mice. **International Journal of Experimenta
 
 1. Väyrynen, J. P. et al. (2020). Prognostic significance of immune cell populations identified by machine learning in colorectal cancer using routine hematoxylin & eosin stained sections, **Clinical Cancer Research**. http://doi.org/10.1158/1078-0432.CCR-20-0071 📗
 
+1. Wakashin, H. et al. (2020). APOL1 renal risk variants exacerbate podocyte injury by increasing inflammatory stress. **BMC Nephrology**. https://doi.org/10.1186/s12882-020-01995-3 😞
+
 1. Wirta, E-V. et al. (2020). Prognostic Value of Immune Environment Analysis in Small Bowel Adenocarcinomas with Verified Mutational Landscape and Predisposing Conditions. **Cancers**. https://doi.org/10.3390/cancers12082018 📗
 
 1. Wood, A-C. et al. (2020). Deep Learning Predicts Molecular Subtype of Muscle-invasive Bladder Cancer from Conventional Histopathological Slides. **European Urology**. https://doi.org/10.1016/j.eururo.2020.04.023 📗
 
 1. Xie, C. et al. (2020). Immune checkpoint blockade in combination with stereotactic body radiotherapy in patients with metastatic pancreatic ductal adenocarcinoma. **Clinical Cancer Research**. https://doi.org/10.1158/1078-0432.CCR-19-3624 😞
+
+1. Yang, T. et al. (2020). Small-molecule modulation of the p75 neurotrophin receptor inhibits a wide range of tau molecular pathologies and their sequelae in P301S tauopathy mice. **Acta Neuropathologica Communications**. https://doi.org/10.1186/s40478-020-01034-0 😞
 
 1. Zhang, G. et al. (2020). Based on Histogram Analysis: ADC<sub>aqp</sub> Derived from Ultra-high b-Value DWI could be a Non-invasive Specific Biomarker for Rectal Cancer Prognosis. **Scientific Reports**. https://doi.org/10.1038/s41598-020-67263-4 📗
 

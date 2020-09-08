@@ -39,6 +39,11 @@ There are a few places where you can find pre-built OpenJDK binaries - a popular
   It usually makes things easier if you do.
 
   If you can't (e.g. because of some other Java software needing the PATH set to something else) I'm afraid I'll leave resolving that up to you.
+  
+.. warning::
+  
+  Problems have been reported on Linux using some JDK distributions.
+  Switching to HotSpot (rather than OpenJ9) may help -- see `here <https://github.com/qupath/qupath/issues/484>`_ for more details.
 
 
 ==================================
