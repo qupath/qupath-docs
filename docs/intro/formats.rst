@@ -4,6 +4,10 @@ Supported image formats
 
 .. include:: ../tools.txt
 
+===========
+Image files
+===========
+
 QuPath can be used with a wide range of image formats, including many whole slide formats, thanks to two essential open source libraries:
 
 * **Bio-formats**: https://docs.openmicroscopy.org/bio-formats
@@ -84,7 +88,7 @@ iSyntax (Philips)
 iSyntax is a proprietary format, not compatible with QuPath.
 We are unaware of any open source library capable of reading iSyntax files.
 
-.. TIP::
+.. tip::
   See `here <https://www.glencoesoftware.com/blog/2019/12/09/converting-whole-slide-images-to-OME-TIFF.html>`__ for a blog post from Glencoe Software about converting iSyntax to OME-TIFF.
 
 
@@ -102,7 +106,7 @@ The reasons why Bio-Formats and OpenSlide do not offer better MRXS support may b
 * https://blog.openmicroscopy.org/file-formats/community/2016/01/06/format-support/
 * https://lists.andrew.cmu.edu/pipermail/openslide-users/2012-July/000377.html
 
-.. TIP::
+.. tip::
   See `here <https://www.glencoesoftware.com/blog/2019/12/09/converting-whole-slide-images-to-OME-TIFF.html>`__ for a blog post from Glencoe Software about converting .mrxs to OME-TIFF.
 
 NDPI (Hamamatsu)
@@ -122,3 +126,50 @@ Consequently, although OpenSlide and Bio-Formats support many TIFF files, it is 
 
 Perhaps the most common reason for this is that the file does not contain pyramidal layers, or these layers cannot be automatically recognized.
 This is one reason why well-supported, open formats should generally be preferred (e.g. OME-TIFF).
+
+
+========
+Open URI
+========
+
+QuPath is not limited to working with image files stored locally.
+
+:menuselection:`File --> Open URI...` provides a way to access some images stored elsewhere, *however* extensions are needed to support different kinds of image server.
+A few such extensions exist already, hopefully more will be created in the future by QuPath users.
+
+
+OMERO
+=====
+
+QuPath includes a built-in extension to work with whole slide images hosted through `OMERO <https://www.openmicroscopy.org/omero/>`_.
+
+To use it, simply find the image you want through the OMERO web viewer, copy the URI, and paste it into the :menuselection:`File --> Open URI...` dialog in QuPath.
+
+There is some additional documentation from the OMERO team in the `OMERO Guide <https://omero-guides.readthedocs.io/en/latest/qupath/docs/>`_. 
+
+.. warning::
+  
+  OMERO support is via the web API.
+  This results in several limitations:
+  
+  * Only RGB images are supported
+  * Image tiles are JPEG compressed
+  
+  Essentially, QuPath is requesting image tiles in the same way as the OMERO web viewer.
+  
+.. tip::
+  
+  QuPath's OMERO support will be improved in future releases.
+  It is already possible to add URLs in a variety of formats that OMERO can provide.
+  
+  This makes it possible to import multiple images -- even including some annotations -- to a QuPath :doc:`project <../tutorials/projects>` in one go.
+
+Community extensions
+====================
+
+Extensions have been developed to link QuPath with other image management systems, including:
+
+* **Google Cloud API:** https://github.com/GoogleCloudPlatform/qupath-chcapi-extension
+* **SlideScore:** https://github.com/SlideScore/qupath-extension-slidescore
+
+Note that these are external extensions that have not been tested and cannot be supported by the QuPath developers -- if you have any questions about their use, it is best to contact whoever maintains the relevant extension.

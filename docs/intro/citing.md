@@ -26,7 +26,7 @@ The following key indicates what, if anything, was cited in the main references 
 
 ### Contents
 
-* [2020](#2020) (161)
+* [2020](#2020) (164)
 * [2019](#2019) (144)
 * [2018](#2018) (48)
 * [2017](#2017) (5)
@@ -121,9 +121,7 @@ https://doi.org/10.1016/j.ultrasmedbio.2020.07.004 📗
 
 1. Frangež, Z. et al. (2020). BIF-1 inhibits both mitochondrial and glycolytic ATP production: its downregulation promotes melanoma growth. **Oncogene**. https://doi.org/10.1038/s41388-020-1339-8 📗
 
-1. Kaalund, S. S. et al. (2020). Locus coeruleus pathology in progressive supranuclear palsy, and its relation to disease severity. **Acta Neuropathologica Communications**. https://doi.org/10.1186/s40478-020-0886-0 😞
-
-1. Karn, T. et al. (2020). A Small Hypoxia Signature Predicted pCR Response to Bevacizumab in the Neoadjuvant GeparQuinto Breast Cancer Trial. **Clinical Cancer Research**. https://doi.org/10.1158/1078-0432.CCR-19-1954 📗
+1. Ghasemi, F. et al. (2020). High MHC-II expression in Epstein–Barr virus-associated gastric cancers suggests that tumor cells serve an important role in antigen presentation. **Scientific Reports**. https://doi.org/10.1038/s41598-020-71775-4 📗
 
 1. Gil, K. N. et al. (2020). Rorqual whale nasal plugs: protecting the respiratory tract against water entry and barotrauma. **Journal of Experimental Biology**. https://doi.org/10.1242/jeb.219691 📗
 
@@ -171,6 +169,8 @@ https://doi.org/10.1016/j.canlet.2020.05.001 😞
 1. Jung, M. et al. (2020). CK14 Expression Identifies a Basal/Squamous-Like Type of Papillary Non-Muscle-Invasive Upper Tract Urothelial Carcinoma. **Frontiers in Oncology**. https://doi.org/10.3389/fonc.2020.00623 📗
 
 1. Jung, S. et al. (2020). Seizure-induced neuronal apoptosis is related to dysregulation of the RNA-edited GluR2 subunit in the developing mouse brain. **Brain Research**. https://doi.org/10.1016/j.brainres.2020.146760 😞
+
+1. Kaalund, S. S. et al. (2020). Locus coeruleus pathology in progressive supranuclear palsy, and its relation to disease severity. **Acta Neuropathologica Communications**. https://doi.org/10.1186/s40478-020-0886-0 😞
 
 1. Kalish, B. T. et al. (2020). Single-nucleus RNA sequencing of mouse auditory
 cortex reveals critical period triggers and brakes. **PNAS**. https://doi.org/10.1073/pnas.1920433117 📗
@@ -271,6 +271,10 @@ effusions in brachycephalic dogs. **Journal of Veterinary Internal Medicine**. h
 
 1. Ottley, E. C. et al. (2020). Greater utility of molecular subtype rather than epithelial‐to‐mesenchymal transition (EMT) markers for prognosis in high‐risk non‐muscle‐invasive (HGT1) bladder cancer. **Journal of Pathology: Clinical Research**. https://doi.org/10.1002/cjp2.167 📗
 
+1. Owens, R. et al. (2020). Comparison of different anti‐Ki67 antibody clones and hot‐spot sizes for assessing proliferative index and grading in pancreatic neuroendocrine tumours using manual and image analysis. **Histopathology**. https://doi.org/10.1111/his.14200 📗
+
+1. Patel, K. S. et al. (2020). Decorin expression is associated with predictive diffusion MR phenotypes of anti-VEGF efficacy in glioblastoma. **Scientific Reports**. https://doi.org/10.1038/s41598-020-71799-w 📗
+
 1. Peluso, M. O. et al. (2020). The Fully human anti-CD47 antibody SRF231 exerts dual-mechanism antitumor activity via engagement of the activating receptor CD32a. **Journal for Immunotherapy of Cancer**. https://doi.org/10.1136/jitc-2019-000413 📗
 
 1. Pilot, T. et al. (2020). Heat shock and HSP70 regulate 5-FU-mediated caspase-1 activation in myeloid-derived suppressor cells and tumor growth in mice. **Journal for ImmunoTherapy of Cancer**. http://dx.doi.org/10.1136/jitc-2019-000478 😞
@@ -357,6 +361,8 @@ multiple intestinal neoplasia (Min) mice. **International Journal of Experimenta
 1. Xie, C. et al. (2020). Immune checkpoint blockade in combination with stereotactic body radiotherapy in patients with metastatic pancreatic ductal adenocarcinoma. **Clinical Cancer Research**. https://doi.org/10.1158/1078-0432.CCR-19-3624 😞
 
 1. Yang, T. et al. (2020). Small-molecule modulation of the p75 neurotrophin receptor inhibits a wide range of tau molecular pathologies and their sequelae in P301S tauopathy mice. **Acta Neuropathologica Communications**. https://doi.org/10.1186/s40478-020-01034-0 😞
+
+1. Yu, M. et al. (2020). Islet transplantation in the subcutaneous space achieves long-term euglycaemia in preclinical models of type 1 diabetes. **Nature Metabolism**. https://doi.org/10.1038/s42255-020-0269-7 📗
 
 1. Zhang, G. et al. (2020). Based on Histogram Analysis: ADC<sub>aqp</sub> Derived from Ultra-high b-Value DWI could be a Non-invasive Specific Biomarker for Rectal Cancer Prognosis. **Scientific Reports**. https://doi.org/10.1038/s41598-020-67263-4 📗
 

@@ -83,5 +83,5 @@ html_logo = 'docs/images/qupath_128.png'
 
 html_favicon = 'docs/images/QuPath.ico'
 
-release = '0.2.2'
+release = '0.2.3'
 version = '0.2'

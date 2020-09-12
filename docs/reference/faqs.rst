@@ -232,6 +232,13 @@ QuPath depends on other open source readers to support images of different types
 See :doc:`../intro/formats` for details about which formats are supported, and to what extent.
 
 
+:menuselection:`File --> Open URI...` doesn't work for me!
+==========================================================
+
+:menuselection:`File --> Open URI...` requires a compatible extension needs to read images hosted remotely.
+See :ref:`Open URI` for more details.
+
+
 Why does my image open but look weird?
 ======================================
 
