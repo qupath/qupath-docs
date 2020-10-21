@@ -14,8 +14,6 @@ Here are the main sources of help with QuPath questions:
 
 * `YouTube channel <http://youtube.com/c/qupath>`_ - includes **video tutorials** (still mostly for v0.1.2) and **webinars**
 
-* `Pete's blog <https://petebankhead.github.io/>`_ - especially useful for tracking the path from v0.1.2 to v0.2.0; no longer updated often
-
 * `Twitter <https://twitter.com/QuPath>`_ - most things will be **announced here first**
 
 .. tip::
@@ -32,3 +30,4 @@ They are no longer actively maintained, and some information may not apply to v0
 
 * `Original GitHub wiki <https://github.com/qupath/qupath/wiki>`_
 * `QuPath Users Google Group <https://groups.google.com/d/forum/qupath-users>`_
+* `Pete's blog <https://petebankhead.github.io/>`_ - especially useful for tracking the path from v0.1.2 to v0.2.0; no longer updated
