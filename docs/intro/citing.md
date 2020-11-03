@@ -26,7 +26,7 @@ The following key indicates what, if anything, was cited in the main references 
 
 ### Contents
 
-* [2020](#2020) (201)
+* [2020](#2020) (216)
 * [2019](#2019) (144)
 * [2018](#2018) (48)
 * [2017](#2017) (5)
@@ -34,6 +34,8 @@ The following key indicates what, if anything, was cited in the main references 
 ### 2020
 
 1. Abengozar-Muela, M. et al. (2020). Diverse immune environments in human lung tuberculosis granulomas assessed by quantitative multiplexed immunofluorescence. **Modern Pathology**. https://doi.org/10.1038/s41379-020-0600-6 📗
+
+1. Aguanno, D. et al. (2020). The intestinal quorum sensing 3-oxo-C12:2 Acyl homoserine lactone limits cytokine-induced tight junction disruption. **Tissue Barriers**. https://doi.org/10.1080/21688370.2020.1832877 📗
 
 1. Ansermet, C. et al. (2020). Renal tubular Arginase‐2 participates in the formation of the corticomedullary urea gradient and attenuates kidney damage in ischemia‐reperfusion injury in mice. **Acta Physiologica**. https://doi.org/10.1111/apha.13457 😞
 
@@ -133,9 +135,13 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Fahr, L. et al. (2020). Expression of the _EWSR1-FLI1_ fusion oncogene in pancreas cells drives pancreatic atrophy and lipomatosis. **Pancreatology**. https://doi.org/10.1016/j.pan.2020.10.033 😞
 
+1. Frangež, Ž. et al. (2020). Loss of Concurrent Regulation of the Expression of BIF-1, BAX, and Beclin-1 in Primary and Metastatic Melanoma. **Biochemistry (Moscow)**. https://doi.org/10.1134/S0006297920100107 📗
+
 1. Friedman, G. et al. (2020). Cancer-associated fibroblast compositions change with breast cancer progression linking the ratio of S100A4+ and PDPN+ CAFs to clinical outcome. **Nature Cancer**. https://doi.org/10.1038/s43018-020-0082-y 📗
 
 1. Frangež, Z. et al. (2020). BIF-1 inhibits both mitochondrial and glycolytic ATP production: its downregulation promotes melanoma growth. **Oncogene**. https://doi.org/10.1038/s41388-020-1339-8 📗
+
+1. Gao, W. et al. (2020). Targeting SKA3 suppresses the proliferation and chemoresistance of laryngeal squamous cell carcinoma via impairing PLK1–AKT axis-mediated glycolysis. **Cell Death & Disease**. https://doi.org/10.1038/s41419-020-03104-6 😞
 
 1. Ghasemi, F. et al. (2020). High MHC-II expression in Epstein–Barr virus-associated gastric cancers suggests that tumor cells serve an important role in antigen presentation. **Scientific Reports**. https://doi.org/10.1038/s41598-020-71775-4 📗
 
@@ -175,9 +181,13 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Herrspiegel, C. et al. (2020). Digital morphometry of tumor nuclei correlates to BAP-1 status, monosomy 3, gene expression class and survival in uveal melanoma. **Experimental Eye Research**. https://doi.org/10.1016/j.exer.2020.107987 📗
 
+1. Holczer, M. et al. (2020). Fine-tuning of AMPK–ULK1–mTORC1 regulatory triangle is crucial for autophagy oscillation. **Scientific Reports**. https://doi.org/10.1038/s41598-020-75030-8 😞
+
 1. Huang, A. Y-S. et al. (2020). Region-Specific Transcriptional Control of Astrocyte Function Oversees Local Circuit Activities. **Neuron**. https://doi.org/10.1016/j.neuron.2020.03.025 📗
 
 1. Hodgson, A. et al. (2020). Suppression of ovarian hormones in adolescent rats has no effect on anxiety‐like behaviour or c‐fos activation in the amygdala. **Journal of Endocrinology**. https://doi.org/10.1111/jne.12897 📗
+
+1. Hornsby, A. K. E. et al. (2020). Unacylated-Ghrelin Impairs Hippocampal Neurogenesis and Memory in Mice and Is Altered in Parkinson’s Dementia in Humans. **Cell Reports Medicine**. https://doi.org/10.1016/j.xcrm.2020.100120 📗
 
 1. Hudeček, J. et al. (2020). Application of a risk-management framework for integration of stromal tumor-infiltrating lymphocytes in clinical trials. **npj Breast Cancer**. https://doi.org/10.1038/s41523-020-0155-1 📗
 
@@ -193,6 +203,8 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Jung, M. et al. (2020). CK14 Expression Identifies a Basal/Squamous-Like Type of Papillary Non-Muscle-Invasive Upper Tract Urothelial Carcinoma. **Frontiers in Oncology**. https://doi.org/10.3389/fonc.2020.00623 📗
 
+1. Jung, M. et al. (2020). Non-Muscle-Invasive Bladder Carcinoma with Respect to Basal Versus Luminal Keratin Expression. **International Journal of Molecular Sciences**. https://doi.org/10.3390/ijms21207726 📗
+
 1. Jung, S. et al. (2020). Seizure-induced neuronal apoptosis is related to dysregulation of the RNA-edited GluR2 subunit in the developing mouse brain. **Brain Research**. https://doi.org/10.1016/j.brainres.2020.146760 😞
 
 1. Junttila, A. et al. (2020). Immunophenotype based on inflammatory cells, PD-1/PD-L1 signalling pathway and M2 macrophages predicts survival in gastric cancer. **British Journal of Cancer**. https://doi.org/10.1038/s41416-020-01053-7 😞
@@ -204,6 +216,8 @@ The following key indicates what, if anything, was cited in the main references 
 1. Karn, T. et al. (2020). A small hypoxia signature predicted pCR response to bevacizumab in the neoadjuvant GeparQuinto breast cancer trial. **Clinical Cancer Research**. https://doi.org/10.1158/1078-0432.CCR-19-1954 📗
 
 1. Kather, J. et al. (2020). Pan-cancer image-based detection of clinically actionable genetic alterations. **Nature Cancer**. https://doi.org/10.1038/s43018-020-0087-6 📗
+
+1. Kenney, H. M. et al. (2020). Lineage tracing reveals evidence of a popliteal lymphatic muscle progenitor cell that is distinct from skeletal and vascular muscle progenitors. **Scientific Reports**. https://doi.org/10.1038/s41598-020-75190-7 📗
 
 1. Kerby, A. et al. (2020). Placental Morphology and Cellular Characteristics in Stillbirths in Women With Diabetes and Unexplained Stillbirths. **Archives of Pathology & Laboratory Medicine**. https://doi.org/10.5858/arpa.2019-0524-OA 📗
 
@@ -237,6 +251,8 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Lee, J.A. et al. (2020). Differential immune microenvironmental features of microsatellite-unstable colorectal cancers according to Fusobacterium nucleatum status. **Cancer Immunology, Immunotherapy**. https://doi.org/10.1007/s00262-020-02657-x 📗
 
+1. Lee, K. et al. (2020). _Proline rich 11 (PRR11)_ overexpression amplifies PI3K signaling and promotes antiestrogen resistance in breast cancer. **Nature Communications**. https://doi.org/10.1038/s41467-020-19291-x 📗
+
 1. Liot, S. et al. (2020). Loss of Tenascin-X expression during tumor progression: A new pan-cancer marker. **Matrix Biology Plus**. https://doi.org/10.1016/j.mbplus.2020.100021 😞
 
 1. Liu, B. et al. (2020). Mutant SF3B1 promotes AKT and NF-kB driven mammary tumorigenesis. **Journal of Clinical Investigation**. https://doi.org/10.1172/JCI138315 📗
@@ -267,6 +283,8 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Martino, F. et al. (2020). A Machine-learning Approach for the Assessment of the Proliferative Compartment of Solid Tumors on Hematoxylin-Eosin-Stained Sections. **Cancers**. https://doi.org/10.3390/cancers12051344 📗
 
+1. Mast, N. et al. (2020). CYP46A1-dependent and independent effects of efavirenz treatment. **Brain Communications**. https://doi.org/10.1093/braincomms/fcaa180 📗
+
 1. McBurney-Lin, J. et al. (2020). Bidirectional pharmacological perturbations of the noradrenergic system differentially affect tactile detection. **Neuropharmacology**. https://doi.org/10.1016/j.neuropharm.2020.108151 📗
 
 1. McLeod, R. et al. (2020). First-in-human study of AT13148, a dual ROCK-AKT inhibitor in patients with solid tumors. **Clinical Cancer Research**. https://doi.org/10.1158/1078-0432.CCR-20-0700 📗
@@ -281,6 +299,8 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Mohanty, A. et al. (2020). A Non-genetic Mechanism Involving the Integrin β4/Paxillin Axis Contributes to Chemoresistance in Lung Cancer. **iScience**. https://doi.org/10.1016/j.isci.2020.101496 📗
 
+1. Molitor, D. C. A. et al. (2020). Macrophage frequency in the bone marrow correlates with morphologic subtype of myeloproliferative neoplasm. **Annals of Hematology**. https://doi.org/10.1007/s00277-020-04304-y 📗
+
 1. Morral, C. et al. (2020). Zonation of Ribosomal DNA Transcription Defines a Stem Cell Hierarchy in Colorectal Cancer. **Cell Stem Cell**. https://doi.org/10.1016/j.stem.2020.04.012 😞
 
 1. Morriss, N. J. et al. (2020). Automated quantification of immunohistochemical staining of large animal brain tissue using QuPath software. **Neuroscience**. https://doi.org/10.1016/j.neuroscience.2020.01.006 📗
@@ -288,6 +308,8 @@ The following key indicates what, if anything, was cited in the main references 
 1. Moyano‐Galceran, L. et al. (2020). Adaptive RSK‐EphA2‐GPRC5A signaling switch triggers chemotherapy resistance in ovarian cancer. **EMBO Molecular Medicine**. https://doi.org/10.15252/emmm.201911177 📗
 
 1. Mulvaney, E. et al. (2020). NTP42, a novel antagonist of the thromboxane receptor, attenuates experimentally induced pulmonary arterial hypertension. **BMC Pulmonary Medicine**. https://dx.doi.org/10.21203/rs.2.18445/v4 📗
+
+1. Mulvaney, E. P. et al. (2020). Efficacy of the thromboxane receptor antagonist _NTP42_ alone, or in combination with sildenafil, in the sugen/hypoxia-induced model of pulmonary arterial hypertension. **European Journal of Pharmacology**. https://doi.org/10.1016/j.ejphar.2020.173658 📗
 
 1. Muthalagu, N. et al. (2020). Repression of the Type I Interferon pathway underlies MYC & KRAS-dependent evasion of NK & B cells in Pancreatic Ductal Adenocarcinoma. **Cancer Discovery**. http://doi.org/10.1158/2159-8290.CD-19-0620 😞
 
@@ -316,6 +338,8 @@ The following key indicates what, if anything, was cited in the main references 
 1. Orgaz, J. L. et al. (2020). Myosin II Reactivation and Cytoskeletal Remodeling as a Hallmark and a Vulnerability in Melanoma Therapy Resistance. **Cancer Cell**. https://doi.org/10.1016/j.ccell.2019.12.003 📗
 
 1. Ottley, E. C. et al. (2020). Greater utility of molecular subtype rather than epithelial‐to‐mesenchymal transition (EMT) markers for prognosis in high‐risk non‐muscle‐invasive (HGT1) bladder cancer. **Journal of Pathology: Clinical Research**. https://doi.org/10.1002/cjp2.167 📗
+
+1. Oulès, B. et al. (2020). Contribution of GATA6 to homeostasis of the human upper pilosebaceous unit and acne pathogenesis. **Nature Communications**. https://doi.org/10.1038/s41467-020-18784-z 😞
 
 1. Owens, R. et al. (2020). Comparison of different anti‐Ki67 antibody clones and hot‐spot sizes for assessing proliferative index and grading in pancreatic neuroendocrine tumours using manual and image analysis. **Histopathology**. https://doi.org/10.1111/his.14200 📗
 
@@ -351,6 +375,8 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Robertson, S. et al. (2020). Prognostic potential of automated Ki67 evaluation in breast cancer: different hot spot definitions versus true global score. **Breast Cancer Research and Treatment**. https://doi.org/10.1007/s10549-020-05752-w 📗
 
+1. Rodriguez-Hernandez, I. et al. (2020). WNT11-FZD7-DAAM1 signalling supports tumour initiating abilities and melanoma amoeboid invasion. **Nature Communications**. https://doi.org/10.1038/s41467-020-18951-2 📗
+
 1. Roelofs, A. J. (2020). Identification of the skeletal progenitor cells forming osteophytes in osteoarthritis. **Osteoarthritis**. https://doi.org/10.1136/annrheumdis-2020-218350 📗
 
 1. Roider, T. et al. (2020). Dissecting intratumour heterogeneity of nodal B-cell lymphomas at the transcriptional, genetic and drug-response levels. **Nature Cell Biology**. https://doi.org/10.1038/s41556-020-0532-x 📗
@@ -367,6 +393,8 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Saleh, R. et al. (2020). Differential gene expression of tumor-infiltrating CD8+ T cells in advanced versus early-stage colorectal cancer and identification of a gene signature of poor prognosis. **Journal for ImmunoTherapy of Cancer**. http://dx.doi.org/10.1136/jitc-2020-001294 📗
 
+1. Saliakoura, M. et al. (2020). PLCγ1 suppression promotes the adaptation of KRAS-mutant lung adenocarcinomas to hypoxia. **Nature Cell Biology**. https://doi.org/10.1038/s41556-020-00592-8 😞
+
 1. Samueli, B. et al. (2020). Remote pathology education during the COVID-19 era: Crisis converted to opportunity. **Annals of Diagnostic Pathology**. https://doi.org/10.1016/j.anndiagpath.2020.151612 😞
 
 1. Schottlaender, L. V. et al. (2020). Bi-allelic JAM2 Variants Lead to Early-Onset Recessive Primary Familial Brain Calcification. **AJHG**. https://doi.org/10.1016/j.ajhg.2020.02.007 😞
@@ -374,6 +402,8 @@ The following key indicates what, if anything, was cited in the main references 
 1. Schmauch, B. et al. (2020). A deep learning model to predict RNA-Seq expression of tumours from whole slide images. **Nature Communications**. https://doi.org/10.1038/s41467-020-17678-4 📗
 
 1. Ščupáková, K. et al. (2020). Morphometric Cell Classification for Single‐Cell MALDI‐Mass Spectrometry Imaging. **Angewandte Chemie**. https://doi.org/10.1002/ange.202007315 📗
+
+1. Sebastiano, M. R. et al. (2020). ACSL3–PAI-1 signaling axis mediates tumor-stroma cross-talk promoting pancreatic cancer progression. **Science Advances**. https://doi.org/10.1126/sciadv.abb9200 😞
 
 1. Sharps, M. C. et al. (2020). Increased Placental Macrophages and a Pro‐inflammatory Profile in Placentas and Maternal Serum in Infants with a Decreased Growth Rate in the Third Trimester of Pregnancy. **American Journal of Reproductive Immunology**. https://doi.org/10.1111/aji.13267 😞
 

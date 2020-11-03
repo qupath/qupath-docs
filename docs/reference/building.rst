@@ -26,9 +26,8 @@ Step 1: Installing prerequisites
 Install a Java Development Kit (JDK)
 ====================================
 
-QuPath requires OpenJDK 14 (or later).
-Typically, the latest stable JDK is used.
-There are a few places where you can find pre-built OpenJDK binaries - a popular source is AdoptOpenJDK_.
+QuPath v0.2 requires OpenJDK 14.
+There are a few places where you can find pre-built OpenJDK binaries -- a popular source is AdoptOpenJDK_.
 
 
 .. _AdoptOpenJDK: https://adoptopenjdk.net/
@@ -39,6 +38,11 @@ There are a few places where you can find pre-built OpenJDK binaries - a popular
   It usually makes things easier if you do.
 
   If you can't (e.g. because of some other Java software needing the PATH set to something else) I'm afraid I'll leave resolving that up to you.
+
+.. warning::
+  
+  At the time of writing, OpenJDK 15 is the latest version -- this is not yet suitable for building QuPath (see `issue #615 <https://github.com/qupath/qupath/issues/615>`_).
+  
   
 .. warning::
   
