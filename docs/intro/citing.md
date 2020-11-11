@@ -26,7 +26,7 @@ The following key indicates what, if anything, was cited in the main references 
 
 ### Contents
 
-* [2020](#2020) (216)
+* [2020](#2020) (222)
 * [2019](#2019) (144)
 * [2018](#2018) (48)
 * [2017](#2017) (5)
@@ -73,6 +73,8 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Boustani, J. et al. (2020). Radiotherapy Scheme Effect on PD-L1 Expression for Locally Advanced Rectal Cancer. **Cells**. https://doi.org/10.3390/cells9092071 📗
 
+1. Bouteldja, N. et al. (2020). Deep Learning–Based Segmentation and Quantification in Experimental Kidney Histopathology. **Journal of the American Society of Nephrology**. https://doi.org/10.1681/ASN.2020050597 📗
+
 1. Brial, F. et al. (2020). The Natural Metabolite 4-Cresol Improves Glucose Homeostasis and Enhances β-Cell Function. **Cell Reports**. https://doi.org/10.1016/j.celrep.2020.01.066 😞
 
 1. Bruyere, D. et al. (2020). Treatment algorithm and prognostic factors for patients with stage I–III carcinoma of the anal canal: a 20-year multicenter study. **Modern Pathology**. https://doi.org/10.1038/s41379-020-0637-6 📗
@@ -105,6 +107,8 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Concat, C. et al. (2020). Combined deletion of Glut1 and Glut3 impairs lung adenocarcinoma growth. **eLife**. https://doi.org/10.7554/eLife.53618 📗
 
+1. Coope, R. J. N. et al. (2020). Whole‐slide laser microdissection for tumour enrichment. **Journal of Pathology**. https://doi.org/10.1002/path.5575 📗
+
 1. Crawford, L. J. et al. (2020). The E3 ligase HUWE1 inhibition as a therapeutic strategy to target MYC in multiple myeloma. **Oncogene**. https://doi.org/10.1038/s41388-020-1345-x 📗
 
 1. Cummings, M. et al. (2020). Decreasing formalin concentration improves quality of DNA extracted from formalin-fixed paraffin-embedded tissue specimens without compromising tissue morphology or immunohistochemical staining. **Journal of Clinical Pathology**. https://dx.doi.org/10.1136/jclinpath-2019-206368 📗
@@ -112,6 +116,8 @@ The following key indicates what, if anything, was cited in the main references 
 1. D'Anna, F. et al. (2020). DNA methylation repels binding of hypoxia-inducible transcription factors to maintain tumor immunotolerance. **Genome Biology**. https://doi.org/10.1186/s13059-020-02087-z 😞
 
 1. de Jong, I. E. M. et al. (2020). Evidence for Recipient-Derived Cells in Peribiliary Glands and Biliary Epithelium of the Large Donor Bile Ducts After Liver Transplantation. **Frontiers in Cell and Developmental Biology**. https://doi.org/10.3389/fcell.2020.00693 📗
+
+1. de Vries, G. et al. (2020). Establishment and characterisation of testicular cancer patient-derived xenograft models for preclinical evaluation of novel therapeutic strategies. **Scientific Reports**. https://doi.org/10.1038/s41598-020-75518-3 📗
 
 1. Decker, J. T. et al. (2020). Cyclin E overexpression confers resistance to trastuzumab through noncanonical phosphorylation of SMAD3 in HER2+ breast cancer. **Cancer Biology & Therapy**. https://doi.org/10.1080/15384047.2020.1818518 📗
 
@@ -299,6 +305,8 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Mohanty, A. et al. (2020). A Non-genetic Mechanism Involving the Integrin β4/Paxillin Axis Contributes to Chemoresistance in Lung Cancer. **iScience**. https://doi.org/10.1016/j.isci.2020.101496 📗
 
+1. Moreira-Teixeira, L. et al. (2020). Type I IFN exacerbates disease in tuberculosis-susceptible mice by inducing neutrophil-mediated lung inflammation and NETosis. **Nature Communications**. https://doi.org/10.1038/s41467-020-19412-6 📗
+
 1. Molitor, D. C. A. et al. (2020). Macrophage frequency in the bone marrow correlates with morphologic subtype of myeloproliferative neoplasm. **Annals of Hematology**. https://doi.org/10.1007/s00277-020-04304-y 📗
 
 1. Morral, C. et al. (2020). Zonation of Ribosomal DNA Transcription Defines a Stem Cell Hierarchy in Colorectal Cancer. **Cell Stem Cell**. https://doi.org/10.1016/j.stem.2020.04.012 😞
@@ -389,6 +397,8 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Rubey, M. et al. (2020). DLL1- and DLL4-Mediated Notch Signaling is Essential for Adult Pancreatic Islet Homeostasis. **Diabetes**. https://doi.org/10.2337/db19-0795 📗
 
+1. Russo, D. et al. (2020). Expression of P16INK4a in Uveal Melanoma: New Perspectives. **Frontiers in Oncology**. https://doi.org/10.3389/fonc.2020.562074 📗
+
 1. Safari, R. et al. (2020). Ablation of non-coding RNAs affects bovine leukemia virus B lymphocyte proliferation and abrogates oncogenesis. **PLoS Pathogens**. https://doi.org/10.1371/journal.ppat.1008502 😞
 
 1. Saleh, R. et al. (2020). Differential gene expression of tumor-infiltrating CD8+ T cells in advanced versus early-stage colorectal cancer and identification of a gene signature of poor prognosis. **Journal for ImmunoTherapy of Cancer**. http://dx.doi.org/10.1136/jitc-2020-001294 📗
@@ -440,6 +450,9 @@ The following key indicates what, if anything, was cited in the main references 
 1. Tsunoda, Y. et al. (2020). Expression level of long noncoding RNA H19 of normotensive placentas in late pregnancy relates to the fetal growth restriction. **Journal of Obstetrics and Gynaecology Research**. https://doi.org/10.1111/jog.14260 📗
 
 1. Van Looveren, K. et al. (2020). Glucocorticoids limit lipopolysaccharide‐induced lethal inflammation by a double control system. **EMBO Reports**. https://doi.org/10.15252/embr.201949762 😞
+
+1. Varea, O. et al. (2020). Suppression of glycogen synthesis as a treatment for Lafora disease: Establishing the window of opportunity. **Neurobiology of Disease**. 
+https://doi.org/10.1016/j.nbd.2020.105173 📗
 
 1. Väyrynen, J. P. et al. (2020). Prognostic significance of immune cell populations identified by machine learning in colorectal cancer using routine hematoxylin & eosin stained sections, **Clinical Cancer Research**. http://doi.org/10.1158/1078-0432.CCR-20-0071 📗
 
