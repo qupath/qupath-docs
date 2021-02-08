@@ -109,7 +109,7 @@ The following script applies the *he_heavy_augment* StarDist model to a brightfi
   if (pathObjects.isEmpty()) {
       Dialogs.showErrorMessage("StarDist", "Please select a parent object!")
       return
-  }s
+  }
   stardist.detectObjects(imageData, pathObjects)
   println 'Done!'
 
