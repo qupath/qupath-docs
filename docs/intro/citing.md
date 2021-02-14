@@ -26,17 +26,25 @@ The following key indicates what, if anything, was cited in the main references 
 
 ### Contents
 
-* [2021](#2021) (20)
+* [2021](#2021) (38)
 * [2020](#2020) (265)
-* [2019](#2019) (144)
+* [2019](#2019) (145)
 * [2018](#2018) (48)
 * [2017](#2017) (5)
 
 ### 2021
 
+1. Aung, T. N. et al. (2021). A new tool for technical standardization of the Ki67 immunohistochemical assay. **Modern Pathology**. https://doi.org/10.1038/s41379-021-00745-6 📗
+
 1. Barber-Axthelm, I. M. et al. (2021). Stem cell–derived CAR T cells traffic to HIV reservoirs in macaques. **JCI Insight**. https://doi.org/10.1172/jci.insight.141502 📗
 
+1. Bhagavatula, S. et al. (2021). A Miniaturized Platform for Multiplexed Drug Response Imaging in Live Tumors. **Cancers**. https://doi.org/10.3390/cancers13040653 📗
+
 1. Burgess, S. J. et al. (2021). The Role of Csmd1 during Mammary Gland Development. **Genes**. https://doi.org/10.3390/genes12020162 📗
+
+1. Ciregia, F. et al. (2021). Modulation of αVβ6 integrin in osteoarthritis-related synovitis and the interaction with VTN<sub>(381–397 a.a.)</sub> competing for TGF-β1 activation. **Experimental & Molecular Medicine**. https://doi.org/10.1038/s12276-021-00558-2 📗
+
+1. Chen, K-T. et al. (2021). Neuronavigation-guided focused ultrasound for transcranial blood-brain barrier opening and immunostimulation in brain tumors. **Science Advances**. https://doi.org/10.1126/sciadv.abd0772 😞
 
 1. Dabagian, H. et al. (2021). PARP Targeted Alpha-Particle Therapy Enhances Response to PD-1 Immune-Checkpoint Blockade in a Syngeneic Mouse Model of Glioblastoma. **ACS Pharmacology & Translational Science**. https://doi.org/10.1021/acsptsci.0c00206 😞
 
@@ -44,21 +52,43 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Grisaru-Tal, S. et al. (2021). Primary tumors from mucosal barrier organs drive unique eosinophil infiltration patterns and clinical associations. **OncoImmunology**. https://doi.org/10.1080/2162402X.2020.1859732 📗
 
+1. Han, Y. N. et al. (2021). Nitric Oxide Produced by the Antioxidant Activity of Verapamil Improves the Acute Wound Healing Process. **Tissue Engineering and Regenerative Medicine**. https://doi.org/10.1007/s13770-020-00308-x 😞
+
+1. Harms, K. et al. (2021). Virus-positive Merkel cell carcinoma is an independent prognostic group with distinct predictive biomarkers. **Clinical Cancer Research**. https://doi.org/10.1158/1078-0432.CCR-20-0864 😞
+
+1. Heij, L. R. et al. (2021). Nerve Fibers in the Tumor Microenvironment Are Co-Localized with Lymphoid Aggregates in Pancreatic Cancer. **Journal of Clinical Medicine**. https://doi.org/10.3390/jcm10030490 😞
+
 1. Hu, Z. et al. (2021). The Oxford Classic Links Epithelial-to-Mesenchymal Transition to Immunosuppression in Poor Prognosis Ovarian Cancers. **Clinical Cancer Research**. https://doi.org/10.1158/1078-0432.CCR-20-2782 📗
 
 1. Hwang, J-H. et al. (2021). Ex Vivo Live Full-Thickness Porcine Skin Model as a Versatile In Vitro Testing Method for Skin Barrier Research. **International Journal of Molecular Sciences**. https://doi.org/10.3390/ijms22020657 📗
+
+1. Jacobs, S. M. et al. (2021). CXCR4 expression in glioblastoma tissue and the potential for PET imaging and treatment with [68Ga]Ga-Pentixafor /[177Lu]Lu-Pentixather. **European Journal of Nuclear Medicine and Molecular Imaging**. https://doi.org/10.1007/s00259-021-05196-4 📗
 
 1. Janic, B. et al. (2021). Therapeutic enhancement of radiation and immunomodulation by gold nanoparticles in triple negative breast cancer. **Cancer Biology & Therapy**. https://doi.org/10.1080/15384047.2020.1861923 📗
 
 1. Junttila, A. et al. (2021). Immune cell score, PD-L1 expression and prognosis in esophageal cancer. **Acta Oncologica**. https://doi.org/10.1080/0284186X.2020.1868571 📗
 
+1. Kotlov, N. et al. (2021). Clinical and biological subtypes of B-cell lymphoma revealed by microenvironmental signatures. **Cancer Discovery**. https://doi.org/10.1158/2159-8290.CD-20-0839 📗
+
+1. Lindquist, K. E. et al. (2021). Difficulties in diagnostics of lung tumours in biopsies: an interpathologist concordance study evaluating the international diagnostic guidelines. **Journal of Clinical Pathology**. http://dx.doi.org/10.1136/jclinpath-2020-207257 😞
+
 1. Luchicchi, A. et al. (2021). Axon‐myelin unit blistering as early event in MS normal appearing white matter. **Annals of Neurology**. https://doi.org/10.1002/ana.26014 😞
 
 1. Moon, C. S. et al. (2021). _FYN–TRAF3IP2_ induces NF-κB signaling-driven peripheral T-cell lymphoma. **Nature Cancer**. https://doi.org/10.1038/s43018-020-00161-w 😞
 
+1. Moore, M. R. et al. (2021). Automated digital TIL analysis (ADTA) adds prognostic value to standard assessment of depth and ulceration in primary melanoma. **Scientific Reports**. https://doi.org/10.1038/s41598-021-82305-1 📗
+
 1. Oh, K. S. et al. (2021). Cellular senescence evaluated by P16INK4a immunohistochemistry is a prevalent phenomenon in advanced calcific aortic valve disease. **Cardiovascular Pathology**. https://doi.org/10.1016/j.carpath.2021.107318 📗
 
+1. Paradis, J. S. et al. (2021). Synthetic Lethal Screens Reveal Co-Targeting FAK and MEK as a Multimodal Precision Therapy for GNAQ-Driven Uveal Melanoma. **Clinical Cancer Research**. https://doi.org/10.1158/1078-0432.CCR-20-3363 📗
+
+1. Peixoto-Santos, J. E. et al. (2021). Neuropathology of the 21th century for the Latin American epilepsy community. **Seizure**. https://doi.org/10.1016/j.seizure.2021.02.003 📗
+
 1. Pennanen, P. et al. (2021). Signaling pathways in human osteoclasts differentiation: ERK1/2 as a key player. **Molecular Biology Reports**. https://doi.org/10.1007/s11033-020-06128-5 📗
+
+1. Picon, C. et al. (2021).Neuron-specific activation of necroptosis signaling in multiple sclerosis cortical grey matter. **Acta Neuropathologica**. https://doi.org/10.1007/s00401-021-02274-7 😞
+
+1. Reischl, S. et al. (2021). Ac2-26-Nanoparticles Induce Resolution of Intestinal Inflammation and Anastomotic Healing via Inhibition of NF-κB Signaling in a Model of Perioperative Colitis. **Inflammatory Bowel Diseases**. https://doi.org/10.1093/ibd/izab008 📗
 
 1. Sajiki, Y. et al. (2021). Tick saliva-induced programmed death-1 and PD-ligand 1 and its related host immunosuppression. **Scientific Reports**. https://doi.org/10.1038/s41598-020-80251-y 😞
 
@@ -68,9 +98,15 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Simon-Soro, A. et al. (2021). Impact of the repurposed drug thonzonium bromide on host oral-gut microbiomes. **npj Biofilms and Microbiomes**. https://doi.org/10.1038/s41522-020-00181-5 📗
 
+1. Stępniewski, J. et al. (2021). Human Induced Pluripotent Stem Cell-Derived Cardiomyocytes, in Contrast to Adipose Tissue-Derived Stromal Cells, Efficiently Improve Heart Function in Murine Model of Myocardial Infarction. **Biomedicines**. https://doi.org/10.3390/biomedicines8120578 📗
+
 1. Vishnyakova, P. et al. (2021). Preeclampsia: inflammatory signature of decidual cells in early manifestation of disease. **Placenta**. https://doi.org/10.1016/j.placenta.2021.01.011 📗
 
 1. Wang, X. et al. (2021). White button mushroom (Agaricus bisporus) disrupts androgen receptor signaling in human prostate cancer cells and patient-derived xenograft. **The Journal of Nutritional Biochemistry**. https://doi.org/10.1016/j.jnutbio.2020.108580 😞
+
+1. Weiner, A. B. et al. (2021). Plasma cells are enriched in localized prostate cancer in Black men and are associated with improved outcomes. **Nature Communications**. https://doi.org/10.1038/s41467-021-21245-w 📗
+
+1. Wingerter, A. et al. (2021). Exploiting Gangliosides for the Therapy of Ewing’s Sarcoma and H3K27M-Mutant Diffuse Midline Glioma. **Cancers**. https://doi.org/10.3390/cancers13030520 📗
 
 1. Zoupi, L. et al. (2021). Selective vulnerability of inhibitory networks in multiple sclerosis. **Acta Neuropathologica**. https://doi.org/10.1007/s00401-020-02258-z 📗
 
@@ -824,6 +860,8 @@ https://doi.org/10.1016/j.nbd.2020.105173 📗
 1. Restrepo, P. et al. (2019). Tumoral and immune heterogeneity in an anti-PD-1 responsive glioblastoma: a case study. **Cold Spring Harbor Molecular Case Studies**. https://doi.org/10.1101/mcs.a004762 📗
 
 1. Riva, M. et al. (2019). CT-2A neurospheres-derived high-grade glioma in mice: a new model to address tumor stem cells and immunosuppression. **Biology Open**. https://doi.org/10.1242/bio.044552 📗
+
+1. Riolobos, L. et al. (2019). The Effect of Mouse Strain, Sex, and Carcinogen Dose on Toxicity and the Development of Lung Dysplasia and Squamous Cell Carcinomas in Mice. **Cancer Prevention Research**. https://doi.org/10.1158/1940-6207.CAPR-18-0442 📗
 
 1. Rowe, C. W. et al. (2019). The Precursor for Nerve Growth Factor (proNGF) in Thyroid Cancer Lymph Node Metastases: Correlation with Primary Tumour and Pathological Variables. **International Journal of Molecular Sciences**. https://doi.org/10.3390/ijms20235924 📗
 
