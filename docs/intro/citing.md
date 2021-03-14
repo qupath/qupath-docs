@@ -26,7 +26,7 @@ The following key indicates what, if anything, was cited in the main references 
 
 ### Contents
 
-* [2021](#2021) (38)
+* [2021](#2021) (63)
 * [2020](#2020) (265)
 * [2019](#2019) (145)
 * [2018](#2018) (48)
@@ -34,15 +34,33 @@ The following key indicates what, if anything, was cited in the main references 
 
 ### 2021
 
+1. Al-Sahaf, S. et al. (2021). Increased Abundance of Tumour-Associated Neutrophils in HPV-Negative Compared to HPV-Positive Oropharyngeal Squamous Cell Carcinoma Is Mediated by IL-1R Signalling. **Frontiers in Oral Health**. https://doi.org/10.3389/froh.2021.604565 📗
+
+1. Alame, M. et al. (2021). The immune contexture of primary central nervous system diffuse large B cell lymphoma associates with patient survival and specific cell signaling. **Theranostics**. https://dx.doi.org/10.7150%2Fthno.54343 📗
+
+1. Apaolaza, P. S. et al. (2021). Islet expression of type I interferon response sensors is associated with immune infiltration and viral infection in type 1 diabetes. **Science Advances**. https://doi.org/10.1126/sciadv.abd6527 📗
+
 1. Aung, T. N. et al. (2021). A new tool for technical standardization of the Ki67 immunohistochemical assay. **Modern Pathology**. https://doi.org/10.1038/s41379-021-00745-6 📗
+
+1. Baldavira, C. M. et al. (2021). The expression patterns and prognostic significance of pleckstrin homology-like domain family A (PHLDA) in lung cancer and malignant mesothelioma. **Journal of Thoracic Disease**. https://dx.doi.org/10.21037/jtd-20-2909 😞
+
+1. Balkrishna, A. et al. (2021). Supercritical Fluid Extract of _Putranjiva roxburghii_ Wall. Seeds Mitigates Fertility Impairment in a Zebrafish Model. https://doi.org/10.3390/molecules26041020 📗
 
 1. Barber-Axthelm, I. M. et al. (2021). Stem cell–derived CAR T cells traffic to HIV reservoirs in macaques. **JCI Insight**. https://doi.org/10.1172/jci.insight.141502 📗
 
+1. Belnoue, E. et al. (2021). Novel Protein-Based Vaccine against Self-Antigen Reduces the Formation of Sporadic Colon Adenomas in Mice. **Cancers**. https://doi.org/10.3390/cancers13040845 📗
+
 1. Bhagavatula, S. et al. (2021). A Miniaturized Platform for Multiplexed Drug Response Imaging in Live Tumors. **Cancers**. https://doi.org/10.3390/cancers13040653 📗
+
+1. Bleeser, T. et al. (2021). Effects of Maternal Abdominal Surgery on Fetal Brain Development in the Rabbit Model. **Fetal Diganosis and Therapy**. https://doi.org/10.1159/000512489 📗
 
 1. Burgess, S. J. et al. (2021). The Role of Csmd1 during Mammary Gland Development. **Genes**. https://doi.org/10.3390/genes12020162 📗
 
+1. Cieśla, M. et al. (2021). Oncogenic translation directs spliceosome dynamics revealing an integral role for SF3A3 in breast cancer. **Molecular Cell**. https://doi.org/10.1016/j.molcel.2021.01.034 📗
+
 1. Ciregia, F. et al. (2021). Modulation of αVβ6 integrin in osteoarthritis-related synovitis and the interaction with VTN<sub>(381–397 a.a.)</sub> competing for TGF-β1 activation. **Experimental & Molecular Medicine**. https://doi.org/10.1038/s12276-021-00558-2 📗
+
+1. Cizkova, K. et al. (2021). Comparative Analysis of Immunohistochemical Staining Intensity Determined by Light Microscopy, ImageJ and QuPath in Placental Hofbauer Cells. **Acta Histochemica et Cytochemica**. https://doi.org/10.1267/ahc.20-00032 📗
 
 1. Chen, K-T. et al. (2021). Neuronavigation-guided focused ultrasound for transcranial blood-brain barrier opening and immunostimulation in brain tumors. **Science Advances**. https://doi.org/10.1126/sciadv.abd0772 😞
 
@@ -56,7 +74,11 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Harms, K. et al. (2021). Virus-positive Merkel cell carcinoma is an independent prognostic group with distinct predictive biomarkers. **Clinical Cancer Research**. https://doi.org/10.1158/1078-0432.CCR-20-0864 😞
 
+1. Hasan, N. et al. (2021). Brown adipocyte-specific knockout of Bmal1 causes mild but significant impairment of thermogenesis in mice. **Molecular Metabolism**. https://doi.org/10.1016/j.molmet.2021.101202 📗
+
 1. Heij, L. R. et al. (2021). Nerve Fibers in the Tumor Microenvironment Are Co-Localized with Lymphoid Aggregates in Pancreatic Cancer. **Journal of Clinical Medicine**. https://doi.org/10.3390/jcm10030490 😞
+
+1. Hiss, S. et al. (2021). Tumour-Infiltrating Lymphocytes (TILs) and PD-L1 Expression Correlate with Lymph Node Metastasis, High-Grade Transformation and Shorter Metastasis-Free Survival in Patients with Acinic Cell Carcinoma (AciCC) of the Salivary Glands. **Cancers**. https://doi.org/10.3390/cancers13050965 😞
 
 1. Hu, Z. et al. (2021). The Oxford Classic Links Epithelial-to-Mesenchymal Transition to Immunosuppression in Poor Prognosis Ovarian Cancers. **Clinical Cancer Research**. https://doi.org/10.1158/1078-0432.CCR-20-2782 📗
 
@@ -70,15 +92,31 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Kotlov, N. et al. (2021). Clinical and biological subtypes of B-cell lymphoma revealed by microenvironmental signatures. **Cancer Discovery**. https://doi.org/10.1158/2159-8290.CD-20-0839 📗
 
+1. Kurnit, K. C. et al. (2021). Loss of CD73 shifts transforming growth factor-β1 (TGF-β1) from tumor suppressor to promoter in endometrial cancer. **Cancer Letters**. https://doi.org/10.1016/j.canlet.2021.01.030 📗
+
+1. Labadie, K. P. et al. (2021). Glypican-3 targeted delivery of <sup>89</sup>Zr and <sup>90</sup>Y as a theranostic radionuclide platform for hepatocellular carcinoma. **Scientific Reports**. https://doi.org/10.1038/s41598-021-82172-w 😞
+
+1. Levitin, F. et al. (2021). Oxygen-independent disulfide bond formation in VEGF-A and CA9. **Journal of Biological Chemistry**. https://doi.org/10.1016/j.jbc.2021.100505 📗
+
 1. Lindquist, K. E. et al. (2021). Difficulties in diagnostics of lung tumours in biopsies: an interpathologist concordance study evaluating the international diagnostic guidelines. **Journal of Clinical Pathology**. http://dx.doi.org/10.1136/jclinpath-2020-207257 😞
 
+1. López-Martínez, S. et al. (2021). A Natural Xenogeneic Endometrial Extracellular Matrix Hydrogel Toward Improving Current Human _in vitro_ Models and Future _in vivo_ Applications. https://doi.org/10.3389/fbioe.2021.639688 📗
+
 1. Luchicchi, A. et al. (2021). Axon‐myelin unit blistering as early event in MS normal appearing white matter. **Annals of Neurology**. https://doi.org/10.1002/ana.26014 😞
+
+1. Martin, S. K. et al. (2021). Disruption of DNA polymerase ζ engages an innate immune response. **Cell Reports**. https://doi.org/10.1016/j.celrep.2021.108775 😞
 
 1. Moon, C. S. et al. (2021). _FYN–TRAF3IP2_ induces NF-κB signaling-driven peripheral T-cell lymphoma. **Nature Cancer**. https://doi.org/10.1038/s43018-020-00161-w 😞
 
 1. Moore, M. R. et al. (2021). Automated digital TIL analysis (ADTA) adds prognostic value to standard assessment of depth and ulceration in primary melanoma. **Scientific Reports**. https://doi.org/10.1038/s41598-021-82305-1 📗
 
+1. Mori, H. et al. (2021). Characterizing the Tumor Immune Microenvironment with Tyramide-Based Multiplex Immunofluorescence. **Journal of Mammary Gland Biology and Neoplasia**. https://doi.org/10.1007/s10911-021-09479-2 📗
+
+1. Muñoz, N. M. et al. (2021). Influence of injection technique, drug formulation and tumor microenvironment on intratumoral immunotherapy delivery and efficacy. **Journal for ImmunoTherapy of Cancer**. http://dx.doi.org/10.1136/jitc-2020-001800 📗
+
 1. Oh, K. S. et al. (2021). Cellular senescence evaluated by P16INK4a immunohistochemistry is a prevalent phenomenon in advanced calcific aortic valve disease. **Cardiovascular Pathology**. https://doi.org/10.1016/j.carpath.2021.107318 📗
+
+1. Paik, S. et al. (2021). Systematic evaluation of scoring methods for Ki67 as a surrogate for 21-gene recurrence score. **npj Breast Cancer**. https://doi.org/10.1038/s41523-021-00221-z 📗
 
 1. Paradis, J. S. et al. (2021). Synthetic Lethal Screens Reveal Co-Targeting FAK and MEK as a Multimodal Precision Therapy for GNAQ-Driven Uveal Melanoma. **Clinical Cancer Research**. https://doi.org/10.1158/1078-0432.CCR-20-3363 📗
 
@@ -86,7 +124,7 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Pennanen, P. et al. (2021). Signaling pathways in human osteoclasts differentiation: ERK1/2 as a key player. **Molecular Biology Reports**. https://doi.org/10.1007/s11033-020-06128-5 📗
 
-1. Picon, C. et al. (2021).Neuron-specific activation of necroptosis signaling in multiple sclerosis cortical grey matter. **Acta Neuropathologica**. https://doi.org/10.1007/s00401-021-02274-7 😞
+1. Picon, C. et al. (2021). Neuron-specific activation of necroptosis signaling in multiple sclerosis cortical grey matter. **Acta Neuropathologica**. https://doi.org/10.1007/s00401-021-02274-7 😞
 
 1. Reischl, S. et al. (2021). Ac2-26-Nanoparticles Induce Resolution of Intestinal Inflammation and Anastomotic Healing via Inhibition of NF-κB Signaling in a Model of Perioperative Colitis. **Inflammatory Bowel Diseases**. https://doi.org/10.1093/ibd/izab008 📗
 
@@ -94,11 +132,19 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Samain, R. et al. (2021). Pharmacological normalization of pancreatic cancer-associated fibroblast secretome impairs pro-metastatic cross-talk with macrophages. **Cellular and Molecular Gastroenterology and Hepatology**. https://doi.org/10.1016/j.jcmgh.2021.01.008 😞
 
-1. Schupp, J. et al. (2021). In-Depth Immune-Oncology Studies of the Tumor Microenvironment in a Humanized Melanoma Mouse Model. https://doi.org/10.3390/ijms22031011 📗
+1. Schupp, J. et al. (2021). In-Depth Immune-Oncology Studies of the Tumor Microenvironment in a Humanized Melanoma Mouse Model. **International Journal of Molecular Sciences**. https://doi.org/10.3390/ijms22031011 📗
+
+1. Seok, J. Y. et al. (2021). Diagnostic Utility of INSM1 in Medullary Thyroid Carcinoma. **International Journal of Surgical Pathology**. https://doi.org/10.1177/1066896921995935 📗
+
+1. Shinizu, Y. et al. (2021). Exposure to Maternal Immune Activation Causes Congenital Unfolded Protein Response Defects and Increases the Susceptibility to Postnatal Inflammatory Stimulation in Offspring. **Journal of Inflammation Research**. https://doi.org/10.2147/JIR.S294238 📗
 
 1. Simon-Soro, A. et al. (2021). Impact of the repurposed drug thonzonium bromide on host oral-gut microbiomes. **npj Biofilms and Microbiomes**. https://doi.org/10.1038/s41522-020-00181-5 📗
 
 1. Stępniewski, J. et al. (2021). Human Induced Pluripotent Stem Cell-Derived Cardiomyocytes, in Contrast to Adipose Tissue-Derived Stromal Cells, Efficiently Improve Heart Function in Murine Model of Myocardial Infarction. **Biomedicines**. https://doi.org/10.3390/biomedicines8120578 📗
+
+1. Su, A. L. et al. (2021). _N_-Acetyl-L-cysteine and aminooxyacetic acid differentially modulate trichloroethylene reproductive toxicity via metabolism in Wistar rats. **Achives of Toxicology**. https://doi.org/10.1007/s00204-021-02991-8 📗
+
+1. Sun, Z. et al. (2021). Developing an enhanced 7-color multiplex IHC protocol to dissect immune infiltration in human cancers. **PLOS ONE** https://doi.org/10.1371/journal.pone.0247238 📗
 
 1. Vishnyakova, P. et al. (2021). Preeclampsia: inflammatory signature of decidual cells in early manifestation of disease. **Placenta**. https://doi.org/10.1016/j.placenta.2021.01.011 📗
 
@@ -107,6 +153,10 @@ The following key indicates what, if anything, was cited in the main references 
 1. Weiner, A. B. et al. (2021). Plasma cells are enriched in localized prostate cancer in Black men and are associated with improved outcomes. **Nature Communications**. https://doi.org/10.1038/s41467-021-21245-w 📗
 
 1. Wingerter, A. et al. (2021). Exploiting Gangliosides for the Therapy of Ewing’s Sarcoma and H3K27M-Mutant Diffuse Midline Glioma. **Cancers**. https://doi.org/10.3390/cancers13030520 📗
+
+1. Zacarías-Fluck, M. F. et al. (2021). The Wnt signaling receptor Fzd9 is essential for Myc-driven tumorigenesis in pancreatic islets. **Life Science Alliance**. https://doi.org/10.26508/lsa.201900490 📗
+
+1. Zhou, G. et al. (2021). Silica nanoparticles inducing the apoptosis via microRNA-450b-3p targeting MTCH2 in mice and spermatocyte cell. **Environmental Pollution**. https://doi.org/10.1016/j.envpol.2021.116771 😞
 
 1. Zoupi, L. et al. (2021). Selective vulnerability of inhibitory networks in multiple sclerosis. **Acta Neuropathologica**. https://doi.org/10.1007/s00401-020-02258-z 📗
 
