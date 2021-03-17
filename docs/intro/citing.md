@@ -26,7 +26,7 @@ The following key indicates what, if anything, was cited in the main references 
 
 ### Contents
 
-* [2021](#2021) (63)
+* [2021](#2021) (74)
 * [2020](#2020) (265)
 * [2019](#2019) (145)
 * [2018](#2018) (48)
@@ -68,6 +68,8 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Fujii, T. et al. (2021). MEF2C regulates osteoclastogenesis and pathologic bone resorption via c-FOS. **Bone Research**. https://doi.org/10.1038/s41413-020-00120-2 😞
 
+1. Garcia-Mesa, Y. et al. (2021). Dimethyl Fumarate, an Approved Multiple Sclerosis Treatment, Reduces Brain Oxidative Stress in SIV-Infected Rhesus Macaques: Potential Therapeutic Repurposing for HIV Neuroprotection. **Antioxidants**. https://doi.org/10.3390/antiox10030416 😞
+
 1. Grisaru-Tal, S. et al. (2021). Primary tumors from mucosal barrier organs drive unique eosinophil infiltration patterns and clinical associations. **OncoImmunology**. https://doi.org/10.1080/2162402X.2020.1859732 📗
 
 1. Han, Y. N. et al. (2021). Nitric Oxide Produced by the Antioxidant Activity of Verapamil Improves the Acute Wound Healing Process. **Tissue Engineering and Regenerative Medicine**. https://doi.org/10.1007/s13770-020-00308-x 😞
@@ -81,6 +83,8 @@ The following key indicates what, if anything, was cited in the main references 
 1. Hiss, S. et al. (2021). Tumour-Infiltrating Lymphocytes (TILs) and PD-L1 Expression Correlate with Lymph Node Metastasis, High-Grade Transformation and Shorter Metastasis-Free Survival in Patients with Acinic Cell Carcinoma (AciCC) of the Salivary Glands. **Cancers**. https://doi.org/10.3390/cancers13050965 😞
 
 1. Hu, Z. et al. (2021). The Oxford Classic Links Epithelial-to-Mesenchymal Transition to Immunosuppression in Poor Prognosis Ovarian Cancers. **Clinical Cancer Research**. https://doi.org/10.1158/1078-0432.CCR-20-2782 📗
+
+1. Hubert, P. et al. (2021). Extracellular HMGB1 blockade inhibits tumor growth through profoundly remodeling immune microenvironment and enhances checkpoint inhibitor-based immunotherapy. **Journal for ImmunoTherapy of Cancer**. http://dx.doi.org/10.1136/jitc-2020-001966 📗
 
 1. Hwang, J-H. et al. (2021). Ex Vivo Live Full-Thickness Porcine Skin Model as a Versatile In Vitro Testing Method for Skin Barrier Research. **International Journal of Molecular Sciences**. https://doi.org/10.3390/ijms22020657 📗
 
@@ -104,7 +108,13 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Luchicchi, A. et al. (2021). Axon‐myelin unit blistering as early event in MS normal appearing white matter. **Annals of Neurology**. https://doi.org/10.1002/ana.26014 😞
 
+1. Martin, L. et al. (2021). Induction of contralateral hepatic hypertrophy by unilobar 90Y transarterial radioembolization vs. portal vein embolization: an animal study. **Journal of Vascular and Interventional Radiology**. https://doi.org/10.1016/j.jvir.2021.01.281 😞
+
 1. Martin, S. K. et al. (2021). Disruption of DNA polymerase ζ engages an innate immune response. **Cell Reports**. https://doi.org/10.1016/j.celrep.2021.108775 😞
+
+1. Matikas, A. et al. (2021). Prognostic role of serum thymidine kinase 1 kinetics during neoadjuvant chemotherapy for early breast cancer. **ESMO Open**. https://doi.org/10.1016/j.esmoop.2021.100076 📗
+
+1. Mirra, S. et al. (2021). ARMCX3 Mediates Susceptibility to Hepatic Tumorigenesis Promoted by Dietary Lipotoxicity. **Cancers**. https://doi.org/10.3390/cancers13051110 😞
 
 1. Moon, C. S. et al. (2021). _FYN–TRAF3IP2_ induces NF-κB signaling-driven peripheral T-cell lymphoma. **Nature Cancer**. https://doi.org/10.1038/s43018-020-00161-w 😞
 
@@ -113,6 +123,8 @@ The following key indicates what, if anything, was cited in the main references 
 1. Mori, H. et al. (2021). Characterizing the Tumor Immune Microenvironment with Tyramide-Based Multiplex Immunofluorescence. **Journal of Mammary Gland Biology and Neoplasia**. https://doi.org/10.1007/s10911-021-09479-2 📗
 
 1. Muñoz, N. M. et al. (2021). Influence of injection technique, drug formulation and tumor microenvironment on intratumoral immunotherapy delivery and efficacy. **Journal for ImmunoTherapy of Cancer**. http://dx.doi.org/10.1136/jitc-2020-001800 📗
+
+1. Nortunen, M. et al. (2021). Pathophysiology of reflux oesophagitis: role of Toll-like receptors 2 and 4 and Farnesoid X receptor. **Virchows Archiv**. https://doi.org/10.1007/s00428-021-03066-w 📗
 
 1. Oh, K. S. et al. (2021). Cellular senescence evaluated by P16INK4a immunohistochemistry is a prevalent phenomenon in advanced calcific aortic valve disease. **Cardiovascular Pathology**. https://doi.org/10.1016/j.carpath.2021.107318 📗
 
@@ -130,6 +142,8 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Sajiki, Y. et al. (2021). Tick saliva-induced programmed death-1 and PD-ligand 1 and its related host immunosuppression. **Scientific Reports**. https://doi.org/10.1038/s41598-020-80251-y 😞
 
+1. Salmi, L. et al. (2021). Growth Arrest-Specific Gene 6 Administration Ameliorates Sepsis-Induced Organ Damage in Mice and Reduces ROS Formation In Vitro. **Cells**. https://doi.org/10.3390/cells10030602 😞
+
 1. Samain, R. et al. (2021). Pharmacological normalization of pancreatic cancer-associated fibroblast secretome impairs pro-metastatic cross-talk with macrophages. **Cellular and Molecular Gastroenterology and Hepatology**. https://doi.org/10.1016/j.jcmgh.2021.01.008 😞
 
 1. Schupp, J. et al. (2021). In-Depth Immune-Oncology Studies of the Tumor Microenvironment in a Humanized Melanoma Mouse Model. **International Journal of Molecular Sciences**. https://doi.org/10.3390/ijms22031011 📗
@@ -138,11 +152,17 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Shinizu, Y. et al. (2021). Exposure to Maternal Immune Activation Causes Congenital Unfolded Protein Response Defects and Increases the Susceptibility to Postnatal Inflammatory Stimulation in Offspring. **Journal of Inflammation Research**. https://doi.org/10.2147/JIR.S294238 📗
 
+1. Siddiqui, Z. et al. (2021). Angiogenic Hydrogels for Dental Pulp Revascularization. **Acta Biomaterialia**. https://doi.org/10.1016/j.actbio.2021.03.001 📗
+
 1. Simon-Soro, A. et al. (2021). Impact of the repurposed drug thonzonium bromide on host oral-gut microbiomes. **npj Biofilms and Microbiomes**. https://doi.org/10.1038/s41522-020-00181-5 📗
+
+1. Stålhammar, G. et al. (2021). Intratumor Heterogeneity in Uveal Melanoma BAP-1 Expression. **Cancers**. https://doi.org/10.3390/cancers13051143 📗
 
 1. Stępniewski, J. et al. (2021). Human Induced Pluripotent Stem Cell-Derived Cardiomyocytes, in Contrast to Adipose Tissue-Derived Stromal Cells, Efficiently Improve Heart Function in Murine Model of Myocardial Infarction. **Biomedicines**. https://doi.org/10.3390/biomedicines8120578 📗
 
 1. Su, A. L. et al. (2021). _N_-Acetyl-L-cysteine and aminooxyacetic acid differentially modulate trichloroethylene reproductive toxicity via metabolism in Wistar rats. **Achives of Toxicology**. https://doi.org/10.1007/s00204-021-02991-8 📗
+
+1. Su, Y. et al. (2021). CD11c-CD8 Spatial Cross Presentation: A Novel Approach to Link Immune Surveillance and Patient Survival in Soft Tissue Sarcoma. **Cancers**. https://doi.org/10.3390/cancers13051175 📗
 
 1. Sun, Z. et al. (2021). Developing an enhanced 7-color multiplex IHC protocol to dissect immune infiltration in human cancers. **PLOS ONE** https://doi.org/10.1371/journal.pone.0247238 📗
 
@@ -153,6 +173,8 @@ The following key indicates what, if anything, was cited in the main references 
 1. Weiner, A. B. et al. (2021). Plasma cells are enriched in localized prostate cancer in Black men and are associated with improved outcomes. **Nature Communications**. https://doi.org/10.1038/s41467-021-21245-w 📗
 
 1. Wingerter, A. et al. (2021). Exploiting Gangliosides for the Therapy of Ewing’s Sarcoma and H3K27M-Mutant Diffuse Midline Glioma. **Cancers**. https://doi.org/10.3390/cancers13030520 📗
+
+1. Won, J-S. et al. (2021). Optimal Preclinical Conditions for Using Adult Human Multipotent Neural Cells in the Treatment of Spinal Cord Injury. **International Journal of Molecular Sciences**. https://doi.org/10.3390/ijms22052579 📗
 
 1. Zacarías-Fluck, M. F. et al. (2021). The Wnt signaling receptor Fzd9 is essential for Myc-driven tumorigenesis in pancreatic islets. **Life Science Alliance**. https://doi.org/10.26508/lsa.201900490 📗
 
