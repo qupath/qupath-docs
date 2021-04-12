@@ -26,7 +26,7 @@ The following key indicates what, if anything, was cited in the main references 
 
 ### Contents
 
-* [2021](#2021) (100)
+* [2021](#2021) (110)
 * [2020](#2020) (265)
 * [2019](#2019) (145)
 * [2018](#2018) (48)
@@ -45,6 +45,8 @@ The following key indicates what, if anything, was cited in the main references 
 1. Aung, T. N. et al. (2021). A new tool for technical standardization of the Ki67 immunohistochemical assay. **Modern Pathology**. https://doi.org/10.1038/s41379-021-00745-6 📗
 
 1. Babak, M. V. et al. (2021). Interfering with metabolic profile of triple-negative breast cancers using rationally-designed metformin prodrugs. **Angewandte Chemie**. https://doi.org/10.1002/anie.202102266 😞
+
+1. Bahmani, B. et al. (2021). Intratumoral immunotherapy using platelet-cloaked nanoparticles enhances antitumor immunity in solid tumors. **Nature Communications**. https://doi.org/10.1038/s41467-021-22311-z 😞
 
 1. Baldavira, C. M. et al. (2021). The expression patterns and prognostic significance of pleckstrin homology-like domain family A (PHLDA) in lung cancer and malignant mesothelioma. **Journal of Thoracic Disease**. https://dx.doi.org/10.21037/jtd-20-2909 😞
 
@@ -74,9 +76,13 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Dabagian, H. et al. (2021). PARP Targeted Alpha-Particle Therapy Enhances Response to PD-1 Immune-Checkpoint Blockade in a Syngeneic Mouse Model of Glioblastoma. **ACS Pharmacology & Translational Science**. https://doi.org/10.1021/acsptsci.0c00206 😞
 
+1. Duran, J. et al. (2021). Astrocytic glycogen accumulation drives the pathophysiology of neurodegeneration in Lafora disease. **Brain**. https://doi.org/10.1093/brain/awab110 📗
+
 1. Fujii, T. et al. (2021). MEF2C regulates osteoclastogenesis and pathologic bone resorption via c-FOS. **Bone Research**. https://doi.org/10.1038/s41413-020-00120-2 😞
 
 1. Ganig, N. et al. (2021). Proteomic Analyses of Fibroblast- and Serum-Derived Exosomes Identify QSOX1 as a Marker for Non-invasive Detection of Colorectal Cancer. **Cancers**. https://doi.org/10.3390/cancers13061351 📗
+
+1. Garcia, D. I. et al. (2021). High-Fat Diet Drives an Aggressive Pancreatic Cancer Phenotype. **Journal of Surgical Research**. https://doi.org/10.1016/j.jss.2020.10.007 😞
 
 1. Garcia-Mesa, Y. et al. (2021). Dimethyl Fumarate, an Approved Multiple Sclerosis Treatment, Reduces Brain Oxidative Stress in SIV-Infected Rhesus Macaques: Potential Therapeutic Repurposing for HIV Neuroprotection. **Antioxidants**. https://doi.org/10.3390/antiox10030416 😞
 
@@ -96,6 +102,8 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Hiss, S. et al. (2021). Tumour-Infiltrating Lymphocytes (TILs) and PD-L1 Expression Correlate with Lymph Node Metastasis, High-Grade Transformation and Shorter Metastasis-Free Survival in Patients with Acinic Cell Carcinoma (AciCC) of the Salivary Glands. **Cancers**. https://doi.org/10.3390/cancers13050965 😞
 
+1. Holanek, M. et al. (2021). Neoadjuvant Chemotherapy of Triple-Negative Breast Cancer: Evaluation of Early Clinical Response, Pathological Complete Response Rates, and Addition of Platinum Salts Benefit Based on Real-World Evidence. **Cancers**. https://doi.org/10.3390/cancers13071586 📗
+
 1. Hu, Z. et al. (2021). The Oxford Classic Links Epithelial-to-Mesenchymal Transition to Immunosuppression in Poor Prognosis Ovarian Cancers. **Clinical Cancer Research**. https://doi.org/10.1158/1078-0432.CCR-20-2782 📗
 
 1. Hubert, P. et al. (2021). Extracellular HMGB1 blockade inhibits tumor growth through profoundly remodeling immune microenvironment and enhances checkpoint inhibitor-based immunotherapy. **Journal for ImmunoTherapy of Cancer**. http://dx.doi.org/10.1136/jitc-2020-001966 📗
@@ -113,6 +121,8 @@ The following key indicates what, if anything, was cited in the main references 
 1. Kotlov, N. et al. (2021). Clinical and biological subtypes of B-cell lymphoma revealed by microenvironmental signatures. **Cancer Discovery**. https://doi.org/10.1158/2159-8290.CD-20-0839 📗
 
 1. Kurnit, K. C. et al. (2021). Loss of CD73 shifts transforming growth factor-β1 (TGF-β1) from tumor suppressor to promoter in endometrial cancer. **Cancer Letters**. https://doi.org/10.1016/j.canlet.2021.01.030 📗
+
+1. Kwon, J-T. et al. (2021). An amygdala circuit that suppresses social engagement. **Nature**. https://doi.org/10.1038/s41586-021-03413-6 📗
 
 1. Labadie, K. P. et al. (2021). Glypican-3 targeted delivery of <sup>89</sup>Zr and <sup>90</sup>Y as a theranostic radionuclide platform for hepatocellular carcinoma. **Scientific Reports**. https://doi.org/10.1038/s41598-021-82172-w 😞
 
@@ -141,6 +151,8 @@ The following key indicates what, if anything, was cited in the main references 
 1. Martin, S. K. et al. (2021). Disruption of DNA polymerase ζ engages an innate immune response. **Cell Reports**. https://doi.org/10.1016/j.celrep.2021.108775 😞
 
 1. Matikas, A. et al. (2021). Prognostic role of serum thymidine kinase 1 kinetics during neoadjuvant chemotherapy for early breast cancer. **ESMO Open**. https://doi.org/10.1016/j.esmoop.2021.100076 📗
+
+1. McElvain, L. E. et al. (2021). Specific populations of basal ganglia output neurons target distinct brain stem areas while collateralizing throughout the diencephalon. **Neurone**. https://doi.org/10.1016/j.neuron.2021.03.017 📗
 
 1. Mirra, S. et al. (2021). ARMCX3 Mediates Susceptibility to Hepatic Tumorigenesis Promoted by Dietary Lipotoxicity. **Cancers**. https://doi.org/10.3390/cancers13051110 😞
 
@@ -180,11 +192,15 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Reischl, S. et al. (2021). Ac2-26-Nanoparticles Induce Resolution of Intestinal Inflammation and Anastomotic Healing via Inhibition of NF-κB Signaling in a Model of Perioperative Colitis. **Inflammatory Bowel Diseases**. https://doi.org/10.1093/ibd/izab008 📗
 
+1. Riese, J. et al. (2021). Sphingosine-1-Phosphate Receptor Type 4 (S1P4) Is Differentially Regulated in Peritoneal B1 B Cells upon TLR4 Stimulation and Facilitates the Egress of Peritoneal B1a B Cells and Subsequent Accumulation of Splenic IRA B Cells under Inflammatory Conditions. **International Journal of Molecular Sciences**. https://doi.org/10.3390/ijms22073465 📗
+
 1. Sajiki, Y. et al. (2021). Tick saliva-induced programmed death-1 and PD-ligand 1 and its related host immunosuppression. **Scientific Reports**. https://doi.org/10.1038/s41598-020-80251-y 😞
 
 1. Salmi, L. et al. (2021). Growth Arrest-Specific Gene 6 Administration Ameliorates Sepsis-Induced Organ Damage in Mice and Reduces ROS Formation In Vitro. **Cells**. https://doi.org/10.3390/cells10030602 😞
 
 1. Samain, R. et al. (2021). Pharmacological normalization of pancreatic cancer-associated fibroblast secretome impairs pro-metastatic cross-talk with macrophages. **Cellular and Molecular Gastroenterology and Hepatology**. https://doi.org/10.1016/j.jcmgh.2021.01.008 😞
+
+1. Shi, L. et al. (2021). A KRAS-responsive long non-coding RNA controls microRNA processing. **Nature Communications**. https://doi.org/10.1038/s41467-021-22337-3 😞
 
 1. Shochet, G. E. et al. (2021). Hypoxia Inducible Factor 1A Supports a Pro-Fibrotic Phenotype Loop in Idiopathic Pulmonary Fibrosis. **International Journal of Molecular Sciences**. https://doi.org/10.3390/ijms22073331 📗
 
@@ -208,6 +224,8 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Sun, Z. et al. (2021). Developing an enhanced 7-color multiplex IHC protocol to dissect immune infiltration in human cancers. **PLOS ONE** https://doi.org/10.1371/journal.pone.0247238 📗
 
+1. Van Hove, L. et al. (2021). Fibrotic enzymes modulate wound‐induced skin tumorigenesis. **EMBO Reports**. https://doi.org/10.15252/embr.202051573 😞
+
 1. Vankerckhoven, A. et al. (2021). Type of chemotherapy has substantial effects on the immune system in ovarian cancer. **Translational Oncology**. https://doi.org/10.1016/j.tranon.2021.101076 📗
 
 1. Vishnyakova, P. et al. (2021). Preeclampsia: inflammatory signature of decidual cells in early manifestation of disease. **Placenta**. https://doi.org/10.1016/j.placenta.2021.01.011 📗
@@ -223,6 +241,8 @@ The following key indicates what, if anything, was cited in the main references 
 1. Wingerter, A. et al. (2021). Exploiting Gangliosides for the Therapy of Ewing’s Sarcoma and H3K27M-Mutant Diffuse Midline Glioma. **Cancers**. https://doi.org/10.3390/cancers13030520 📗
 
 1. Won, J-S. et al. (2021). Optimal Preclinical Conditions for Using Adult Human Multipotent Neural Cells in the Treatment of Spinal Cord Injury. **International Journal of Molecular Sciences**. https://doi.org/10.3390/ijms22052579 📗
+
+1. We, J. et al. (2021). Validation of multiplex immunofluorescence and digital image analysis for programmed death-ligand 1 expression and immune cell assessment in non-small cell lung cancer: comparison with conventional immunohistochemistry. **Journal of Clinical Pathology**. http://dx.doi.org/10.1136/jclinpath-2021-207448 📗
 
 1. Yoon, S-H. et al. (2021). Preoperative immune landscape predisposes adverse outcomes in hepatocellular carcinoma patients with liver transplantation. **npj Precision Oncology**. https://doi.org/10.1038/s41698-021-00167-2 📗
 
