@@ -26,7 +26,7 @@ The following key indicates what, if anything, was cited in the main references 
 
 ### Contents
 
-* [2021](#2021) (110)
+* [2021](#2021) (115)
 * [2020](#2020) (265)
 * [2019](#2019) (145)
 * [2018](#2018) (48)
@@ -50,7 +50,7 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Baldavira, C. M. et al. (2021). The expression patterns and prognostic significance of pleckstrin homology-like domain family A (PHLDA) in lung cancer and malignant mesothelioma. **Journal of Thoracic Disease**. https://dx.doi.org/10.21037/jtd-20-2909 😞
 
-1. Balkrishna, A. et al. (2021). Supercritical Fluid Extract of _Putranjiva roxburghii_ Wall. Seeds Mitigates Fertility Impairment in a Zebrafish Model. https://doi.org/10.3390/molecules26041020 📗
+1. Balkrishna, A. et al. (2021). Supercritical Fluid Extract of _Putranjiva roxburghii_ Wall. Seeds Mitigates Fertility Impairment in a Zebrafish Model. **Molecules**. https://doi.org/10.3390/molecules26041020 📗
 
 1. Barber-Axthelm, I. M. et al. (2021). Stem cell–derived CAR T cells traffic to HIV reservoirs in macaques. **JCI Insight**. https://doi.org/10.1172/jci.insight.141502 📗
 
@@ -66,6 +66,8 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Capitao, M. et al. (2021). Anti-Tumor Efficacy of PD-L1 Targeted Alpha-Particle Therapy in a Human Melanoma Xenograft Model. **Cancers**. https://doi.org/10.3390/cancers13061256 📗
 
+1. Carstens, J. L. et al. (2021). Stabilized epithelial phenotype of cancer cells in primary tumors leads to increased colonization of liver metastasis in pancreatic cancer. **Cell Reports**. https://doi.org/10.1016/j.celrep.2021.108990 📗
+
 1. Cieśla, M. et al. (2021). Oncogenic translation directs spliceosome dynamics revealing an integral role for SF3A3 in breast cancer. **Molecular Cell**. https://doi.org/10.1016/j.molcel.2021.01.034 📗
 
 1. Ciregia, F. et al. (2021). Modulation of αVβ6 integrin in osteoarthritis-related synovitis and the interaction with VTN<sub>(381–397 a.a.)</sub> competing for TGF-β1 activation. **Experimental & Molecular Medicine**. https://doi.org/10.1038/s12276-021-00558-2 📗
@@ -75,6 +77,8 @@ The following key indicates what, if anything, was cited in the main references 
 1. Chen, K-T. et al. (2021). Neuronavigation-guided focused ultrasound for transcranial blood-brain barrier opening and immunostimulation in brain tumors. **Science Advances**. https://doi.org/10.1126/sciadv.abd0772 😞
 
 1. Dabagian, H. et al. (2021). PARP Targeted Alpha-Particle Therapy Enhances Response to PD-1 Immune-Checkpoint Blockade in a Syngeneic Mouse Model of Glioblastoma. **ACS Pharmacology & Translational Science**. https://doi.org/10.1021/acsptsci.0c00206 😞
+
+1. Ding, J. J. et al. (2021). Vagus nerve stimulation does not alter brainstem nuclei morphology in patients with refractory epilepsy. **Epilepsy & Behavior**. https://doi.org/10.1016/j.yebeh.2021.107940 📗
 
 1. Duran, J. et al. (2021). Astrocytic glycogen accumulation drives the pathophysiology of neurodegeneration in Lafora disease. **Brain**. https://doi.org/10.1093/brain/awab110 📗
 
@@ -102,6 +106,8 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Hiss, S. et al. (2021). Tumour-Infiltrating Lymphocytes (TILs) and PD-L1 Expression Correlate with Lymph Node Metastasis, High-Grade Transformation and Shorter Metastasis-Free Survival in Patients with Acinic Cell Carcinoma (AciCC) of the Salivary Glands. **Cancers**. https://doi.org/10.3390/cancers13050965 😞
 
+1. Höhn, J. et al. (2021). Combining CNN-based histologic whole slide image analysis and patient data to improve skin cancer classification. **European Journal of Cancer**. https://doi.org/10.1016/j.ejca.2021.02.032 📗
+
 1. Holanek, M. et al. (2021). Neoadjuvant Chemotherapy of Triple-Negative Breast Cancer: Evaluation of Early Clinical Response, Pathological Complete Response Rates, and Addition of Platinum Salts Benefit Based on Real-World Evidence. **Cancers**. https://doi.org/10.3390/cancers13071586 📗
 
 1. Hu, Z. et al. (2021). The Oxford Classic Links Epithelial-to-Mesenchymal Transition to Immunosuppression in Poor Prognosis Ovarian Cancers. **Clinical Cancer Research**. https://doi.org/10.1158/1078-0432.CCR-20-2782 📗
@@ -128,6 +134,8 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Lamont, L. et al. (2021). Quantitative mass spectrometry imaging of drugs and metabolites: a multiplatform comparison. **Analytical and Bioanalytical Chemistry**. https://doi.org/10.1007/s00216-021-03210-0 😞
 
+1. Lee, J. E. et al. (2021). Olig2 regulates p53-mediated apoptosis, migration and invasion of melanoma cells. **Scientific Reports**. https://doi.org/10.1038/s41598-021-87438-x 😞
+
 1. Lee, M. Y. et al. (2021). Chimeric antigen receptor engineered NK cellular immunotherapy overcomes the selection of T-cell escape variant cancer cells. **Journal for ImmunoTherapy of Cancer**. http://dx.doi.org/10.1136/jitc-2020-002128 📗
 
 1. Levitin, F. et al. (2021). Oxygen-independent disulfide bond formation in VEGF-A and CA9. **Journal of Biological Chemistry**. https://doi.org/10.1016/j.jbc.2021.100505 📗
@@ -138,7 +146,7 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Liu, X. et al. (2021). Modelling human blastocysts by reprogramming fibroblasts into iBlastoids. **Nature**. https://doi.org/10.1038/s41586-021-03372-y 📗
 
-1. López-Martínez, S. et al. (2021). A Natural Xenogeneic Endometrial Extracellular Matrix Hydrogel Toward Improving Current Human _in vitro_ Models and Future _in vivo_ Applications. https://doi.org/10.3389/fbioe.2021.639688 📗
+1. López-Martínez, S. et al. (2021). A Natural Xenogeneic Endometrial Extracellular Matrix Hydrogel Toward Improving Current Human _in vitro_ Models and Future _in vivo_ Applications. **Frontiers in Bioengineering and Biotechnology**. https://doi.org/10.3389/fbioe.2021.639688 📗
 
 1. Luchicchi, A. et al. (2021). Axon‐myelin unit blistering as early event in MS normal appearing white matter. **Annals of Neurology**. https://doi.org/10.1002/ana.26014 😞
 
@@ -155,6 +163,8 @@ The following key indicates what, if anything, was cited in the main references 
 1. McElvain, L. E. et al. (2021). Specific populations of basal ganglia output neurons target distinct brain stem areas while collateralizing throughout the diencephalon. **Neurone**. https://doi.org/10.1016/j.neuron.2021.03.017 📗
 
 1. Mirra, S. et al. (2021). ARMCX3 Mediates Susceptibility to Hepatic Tumorigenesis Promoted by Dietary Lipotoxicity. **Cancers**. https://doi.org/10.3390/cancers13051110 😞
+
+1. Monserrat, J. et al. (2021). Disruption of the MSL complex inhibits tumour maintenance by exacerbating chromosomal instability. **Nature Cell Biology**. https://doi.org/10.1038/s41556-021-00657-2 😞
 
 1. Moon, C. S. et al. (2021). _FYN–TRAF3IP2_ induces NF-κB signaling-driven peripheral T-cell lymphoma. **Nature Cancer**. https://doi.org/10.1038/s43018-020-00161-w 😞
 
@@ -222,7 +232,7 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Su, Y. et al. (2021). CD11c-CD8 Spatial Cross Presentation: A Novel Approach to Link Immune Surveillance and Patient Survival in Soft Tissue Sarcoma. **Cancers**. https://doi.org/10.3390/cancers13051175 📗
 
-1. Sun, Z. et al. (2021). Developing an enhanced 7-color multiplex IHC protocol to dissect immune infiltration in human cancers. **PLOS ONE** https://doi.org/10.1371/journal.pone.0247238 📗
+1. Sun, Z. et al. (2021). Developing an enhanced 7-color multiplex IHC protocol to dissect immune infiltration in human cancers. **PLOS ONE**. https://doi.org/10.1371/journal.pone.0247238 📗
 
 1. Van Hove, L. et al. (2021). Fibrotic enzymes modulate wound‐induced skin tumorigenesis. **EMBO Reports**. https://doi.org/10.15252/embr.202051573 😞
 
