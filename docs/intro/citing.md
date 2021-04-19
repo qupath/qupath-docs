@@ -26,7 +26,7 @@ The following key indicates what, if anything, was cited in the main references 
 
 ### Contents
 
-* [2021](#2021) (115)
+* [2021](#2021) (126)
 * [2020](#2020) (265)
 * [2019](#2019) (145)
 * [2018](#2018) (48)
@@ -39,6 +39,8 @@ The following key indicates what, if anything, was cited in the main references 
 1. Alame, M. et al. (2021). The immune contexture of primary central nervous system diffuse large B cell lymphoma associates with patient survival and specific cell signaling. **Theranostics**. https://dx.doi.org/10.7150%2Fthno.54343 📗
 
 1. Almeida, C. F. et al. (2021). Satellite cells deficiency and defective regeneration in dynamin 2‐related centronuclear myopathy. **The FASEB Journal**. https://doi.org/10.1096/fj.202001313RRR 📗
+
+1. Angelini, R. et al. (2021). Visualizing Cholesterol in the Brain by On-Tissue Derivatization and Quantitative Mass Spectrometry Imaging. **Analytical Chemistry**. https://dx.doi.org/10.1021/acs.analchem.0c05399 📗
 
 1. Apaolaza, P. S. et al. (2021). Islet expression of type I interferon response sensors is associated with immune infiltration and viral infection in type 1 diabetes. **Science Advances**. https://doi.org/10.1126/sciadv.abd6527 📗
 
@@ -62,11 +64,15 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Boby, N. et al. (2021). Protective Effect of Pyrus ussuriensis Maxim. Extract against Ethanol-Induced Gastritis in Rats. **Antioxidants**. https://doi.org/10.3390/antiox10030439 😞
 
+1. Buedts, L. et al. (2021). The landscape of copy number variations in classical Hodgkin lymphoma: a joint KU Leuven and LYSA study on cell-free DNA. **Blood Advances**. https://doi.org/10.1182/bloodadvances.2020003039 😞
+
 1. Burgess, S. J. et al. (2021). The Role of Csmd1 during Mammary Gland Development. **Genes**. https://doi.org/10.3390/genes12020162 📗
 
 1. Capitao, M. et al. (2021). Anti-Tumor Efficacy of PD-L1 Targeted Alpha-Particle Therapy in a Human Melanoma Xenograft Model. **Cancers**. https://doi.org/10.3390/cancers13061256 📗
 
 1. Carstens, J. L. et al. (2021). Stabilized epithelial phenotype of cancer cells in primary tumors leads to increased colonization of liver metastasis in pancreatic cancer. **Cell Reports**. https://doi.org/10.1016/j.celrep.2021.108990 📗
+
+1. Chodankar, R. R. et al. (2021). The endometrial response to modulation of ligand-progesterone receptor pathways is reversible. **Fertility and Sterility**. https://doi.org/10.1016/j.fertnstert.2021.02.008 📗
 
 1. Cieśla, M. et al. (2021). Oncogenic translation directs spliceosome dynamics revealing an integral role for SF3A3 in breast cancer. **Molecular Cell**. https://doi.org/10.1016/j.molcel.2021.01.034 📗
 
@@ -81,6 +87,8 @@ The following key indicates what, if anything, was cited in the main references 
 1. Ding, J. J. et al. (2021). Vagus nerve stimulation does not alter brainstem nuclei morphology in patients with refractory epilepsy. **Epilepsy & Behavior**. https://doi.org/10.1016/j.yebeh.2021.107940 📗
 
 1. Duran, J. et al. (2021). Astrocytic glycogen accumulation drives the pathophysiology of neurodegeneration in Lafora disease. **Brain**. https://doi.org/10.1093/brain/awab110 📗
+
+1. Fischietti, M. et al. (2021). Schlafen 5 as a novel therapeutic target in pancreatic ductal adenocarcinoma. **Oncogene**. https://doi.org/10.1038/s41388-021-01761-1 😞
 
 1. Fujii, T. et al. (2021). MEF2C regulates osteoclastogenesis and pathologic bone resorption via c-FOS. **Bone Research**. https://doi.org/10.1038/s41413-020-00120-2 😞
 
@@ -110,6 +118,8 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Holanek, M. et al. (2021). Neoadjuvant Chemotherapy of Triple-Negative Breast Cancer: Evaluation of Early Clinical Response, Pathological Complete Response Rates, and Addition of Platinum Salts Benefit Based on Real-World Evidence. **Cancers**. https://doi.org/10.3390/cancers13071586 📗
 
+1. Holzgreve, A. et al. (2021). PSMA Expression in Glioblastoma as a Basis for Theranostic Approaches: A Retrospective, Correlational Panel Study Including Immunohistochemistry, Clinical Parameters and PET Imaging. **Frontiers in Oncology**. https://doi.org/10.3389/fonc.2021.646387 📗
+
 1. Hu, Z. et al. (2021). The Oxford Classic Links Epithelial-to-Mesenchymal Transition to Immunosuppression in Poor Prognosis Ovarian Cancers. **Clinical Cancer Research**. https://doi.org/10.1158/1078-0432.CCR-20-2782 📗
 
 1. Hubert, P. et al. (2021). Extracellular HMGB1 blockade inhibits tumor growth through profoundly remodeling immune microenvironment and enhances checkpoint inhibitor-based immunotherapy. **Journal for ImmunoTherapy of Cancer**. http://dx.doi.org/10.1136/jitc-2020-001966 📗
@@ -121,6 +131,8 @@ The following key indicates what, if anything, was cited in the main references 
 1. Janic, B. et al. (2021). Therapeutic enhancement of radiation and immunomodulation by gold nanoparticles in triple negative breast cancer. **Cancer Biology & Therapy**. https://doi.org/10.1080/15384047.2020.1861923 📗
 
 1. Junttila, A. et al. (2021). Immune cell score, PD-L1 expression and prognosis in esophageal cancer. **Acta Oncologica**. https://doi.org/10.1080/0284186X.2020.1868571 📗
+
+1. Kaufmann, J. et al. (2021). Using the R Package Spatstat to Assess Inhibitory Effects of Microregional Hypoxia on the Infiltration of Cancers of the Head and Neck Region by Cytotoxic T Lymphocytes. **Cancers**. https://doi.org/10.3390/cancers13081924 📗
 
 1. Kay, J. E. et al. (2021). Excision of mutagenic replication-blocking lesions suppresses cancer but promotes cytotoxicity and lethality in nitrosamine-exposed mice. **Cell Reports**. https://doi.org/10.1016/j.celrep.2021.108864 📗
 
@@ -222,6 +234,8 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Siddiqui, Z. et al. (2021). Angiogenic Hydrogels for Dental Pulp Revascularization. **Acta Biomaterialia**. https://doi.org/10.1016/j.actbio.2021.03.001 📗
 
+1. Siegert, E. et al. (2021). Systemic sclerosis-associated myositis features minimal inflammation and characteristic capillary pathology. **Acta Neuropathologica**. https://doi.org/10.1007/s00401-021-02305-3 📗
+
 1. Simon-Soro, A. et al. (2021). Impact of the repurposed drug thonzonium bromide on host oral-gut microbiomes. **npj Biofilms and Microbiomes**. https://doi.org/10.1038/s41522-020-00181-5 📗
 
 1. Stålhammar, G. et al. (2021). Intratumor Heterogeneity in Uveal Melanoma BAP-1 Expression. **Cancers**. https://doi.org/10.3390/cancers13051143 📗
@@ -234,7 +248,11 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Sun, Z. et al. (2021). Developing an enhanced 7-color multiplex IHC protocol to dissect immune infiltration in human cancers. **PLOS ONE**. https://doi.org/10.1371/journal.pone.0247238 📗
 
+1. Trinh, A. et al. (2021). Genomic Alterations during the _In Situ_ to Invasive Ductal Breast Carcinoma Transition Shaped by the Immune System. **Molecular Cancer Research**. https://doi.org/10.1158/1541-7786.MCR-20-0949 📗
+
 1. Van Hove, L. et al. (2021). Fibrotic enzymes modulate wound‐induced skin tumorigenesis. **EMBO Reports**. https://doi.org/10.15252/embr.202051573 😞
+
+1. Van Olst, L. et al. (2021). Meningeal inflammation in multiple sclerosis induces phenotypic changes in cortical microglia that differentially associate with neurodegeneration. **Acta Neuropathologica**. https://doi.org/10.1007/s00401-021-02293-4 📗
 
 1. Vankerckhoven, A. et al. (2021). Type of chemotherapy has substantial effects on the immune system in ovarian cancer. **Translational Oncology**. https://doi.org/10.1016/j.tranon.2021.101076 📗
 
@@ -254,11 +272,15 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. We, J. et al. (2021). Validation of multiplex immunofluorescence and digital image analysis for programmed death-ligand 1 expression and immune cell assessment in non-small cell lung cancer: comparison with conventional immunohistochemistry. **Journal of Clinical Pathology**. http://dx.doi.org/10.1136/jclinpath-2021-207448 📗
 
+1. Xu, D. et al. (2021). Malignant pleural mesothelioma co-opts BCL-X<sub>L</sub> and autophagy to escape apoptosis. **Cell Death & Disease**. https://doi.org/10.1038/s41419-021-03668-x 📗
+
 1. Yoon, S-H. et al. (2021). Preoperative immune landscape predisposes adverse outcomes in hepatocellular carcinoma patients with liver transplantation. **npj Precision Oncology**. https://doi.org/10.1038/s41698-021-00167-2 📗
 
 1. Zacarías-Fluck, M. F. et al. (2021). The Wnt signaling receptor Fzd9 is essential for Myc-driven tumorigenesis in pancreatic islets. **Life Science Alliance**. https://doi.org/10.26508/lsa.201900490 📗
 
 1. Zhao, P. et al. (2021). Efficacy of AAV9-mediated SGPL1 gene transfer in a mouse model of S1P lyase insufficiency syndrome. **JCI Insight**. https://doi.org/10.1172/jci.insight.145936 😞
+
+1. Zhou, J. et al. (2021). Orphan nuclear receptor TLX promotes immunosuppression via its transcriptional activation of PD-L1 in glioma. **Journal for ImmunoTherapy of Cancer**. http://dx.doi.org/10.1136/jitc-2020-001937 😞
 
 1. Zhou, G. et al. (2021). Silica nanoparticles inducing the apoptosis via microRNA-450b-3p targeting MTCH2 in mice and spermatocyte cell. **Environmental Pollution**. https://doi.org/10.1016/j.envpol.2021.116771 😞
 
