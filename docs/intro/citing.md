@@ -26,7 +26,7 @@ The following key indicates what, if anything, was cited in the main references 
 
 ### Contents
 
-* [2021](#2021) (154)
+* [2021](#2021) (157)
 * [2020](#2020) (265)
 * [2019](#2019) (145)
 * [2018](#2018) (48)
@@ -76,9 +76,13 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Burgess, S. J. et al. (2021). The Role of Csmd1 during Mammary Gland Development. **Genes**. https://doi.org/10.3390/genes12020162 📗
 
+1. Caldwell, C. et al. (2021). Validation of a DKK1 RNAscope chromogenic in situ hybridization assay for gastric and gastroesophageal junction adenocarcinoma tumors. **Scientific Reports**. https://doi.org/10.1038/s41598-021-89060-3 📗
+
 1. Capitao, M. et al. (2021). Anti-Tumor Efficacy of PD-L1 Targeted Alpha-Particle Therapy in a Human Melanoma Xenograft Model. **Cancers**. https://doi.org/10.3390/cancers13061256 📗
 
 1. Carstens, J. L. et al. (2021). Stabilized epithelial phenotype of cancer cells in primary tumors leads to increased colonization of liver metastasis in pancreatic cancer. **Cell Reports**. https://doi.org/10.1016/j.celrep.2021.108990 📗
+
+1. Chen, C. et al. (2021). Imaging mass cytometry reveals generalised deficiency in OXPHOS complexes in Parkinson’s disease. **npj Parkinson's Disease**. https://doi.org/10.1038/s41531-021-00182-x 📗
 
 1. Chodankar, R. R. et al. (2021). The endometrial response to modulation of ligand-progesterone receptor pathways is reversible. **Fertility and Sterility**. https://doi.org/10.1016/j.fertnstert.2021.02.008 📗
 
@@ -113,6 +117,8 @@ The following key indicates what, if anything, was cited in the main references 
 1. Garcia-Mesa, Y. et al. (2021). Dimethyl Fumarate, an Approved Multiple Sclerosis Treatment, Reduces Brain Oxidative Stress in SIV-Infected Rhesus Macaques: Potential Therapeutic Repurposing for HIV Neuroprotection. **Antioxidants**. https://doi.org/10.3390/antiox10030416 😞
 
 1. Go, D.-M. et al. (2021). Regulation of Helicobacter-induced gastritis by programmed death ligand 1- expressing classical dendritic cells. **Cellular and Molecular Gastroenterology and Hepatology**. https://doi.org/10.1016/j.jcmgh.2021.04.007 😞
+
+1. Goubet, A.-G. et al. (2021). Multifaceted modes of action of the anticancer probiotic _Enterococcus hirae_. **Cell Death & Differentiation**. https://doi.org/10.1038/s41418-021-00753-8 📗
 
 1. Grisaru-Tal, S. et al. (2021). Primary tumors from mucosal barrier organs drive unique eosinophil infiltration patterns and clinical associations. **OncoImmunology**. https://doi.org/10.1080/2162402X.2020.1859732 📗
 
