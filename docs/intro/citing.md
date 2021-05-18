@@ -26,7 +26,7 @@ The following key indicates what, if anything, was cited in the main references 
 
 ### Contents
 
-* [2021](#2021) (157)
+* [2021](#2021) (161)
 * [2020](#2020) (265)
 * [2019](#2019) (145)
 * [2018](#2018) (48)
@@ -72,6 +72,8 @@ The following key indicates what, if anything, was cited in the main references 
 
 1. Boby, N. et al. (2021). Protective Effect of Pyrus ussuriensis Maxim. Extract against Ethanol-Induced Gastritis in Rats. **Antioxidants**. https://doi.org/10.3390/antiox10030439 😞
 
+1. Brait, V. H. et al. (2021). Longitudinal hippocampal volumetric changes in mice following brain infarction. **Scientific Reports**. https://doi.org/10.1038/s41598-021-88284-7 📗
+
 1. Buedts, L. et al. (2021). The landscape of copy number variations in classical Hodgkin lymphoma: a joint KU Leuven and LYSA study on cell-free DNA. **Blood Advances**. https://doi.org/10.1182/bloodadvances.2020003039 😞
 
 1. Burgess, S. J. et al. (2021). The Role of Csmd1 during Mammary Gland Development. **Genes**. https://doi.org/10.3390/genes12020162 📗
@@ -105,6 +107,10 @@ The following key indicates what, if anything, was cited in the main references 
 1. Ember, K. J. I. et al. (2021). Non‐invasive detection of ischemic vascular damage in a pig model of liver donation after circulatory death. **Hepatology**. https://doi.org/10.1002/hep.31701 📗
 
 1. Ercolano, G. et al. (2021). PPARɣ drives IL-33-dependent ILC2 pro-tumoral functions. **Nature Communications**. https://doi.org/10.1038/s41467-021-22764-2 📗
+
+1. Esmail, S. et al. (2021). Rapid and accurate agglutination-based testing for SARS-CoV-2 antibodies. **Cell Reports Methods**. https://doi.org/10.1016/j.crmeth.2021.100011 😞
+
+1. Eustace, A. J. et al. (2021). The role of infiltrating lymphocytes in the neo-adjuvant treatment of women with HER2-positive breast cancer. **Breast Cancer Research and Treatment**. https://doi.org/10.1007/s10549-021-06244-1 📗
 
 1. Fischietti, M. et al. (2021). Schlafen 5 as a novel therapeutic target in pancreatic ductal adenocarcinoma. **Oncogene**. https://doi.org/10.1038/s41388-021-01761-1 😞
 
@@ -281,6 +287,8 @@ The following key indicates what, if anything, was cited in the main references 
 1. Seok, J. Y. et al. (2021). Diagnostic Utility of INSM1 in Medullary Thyroid Carcinoma. **International Journal of Surgical Pathology**. https://doi.org/10.1177/1066896921995935 📗
 
 1. Shi, L. et al. (2021). A KRAS-responsive long non-coding RNA controls microRNA processing. **Nature Communications**. https://doi.org/10.1038/s41467-021-22337-3 😞
+
+1. Shinde-Jadhav, S. et al. (2021). Role of neutrophil extracellular traps in radiation resistance of invasive bladder cancer. **Nature Communications**. https://doi.org/10.1038/s41467-021-23086-z 📗
 
 1. Shinizu, Y. et al. (2021). Exposure to Maternal Immune Activation Causes Congenital Unfolded Protein Response Defects and Increases the Susceptibility to Postnatal Inflammatory Stimulation in Offspring. **Journal of Inflammation Research**. https://doi.org/10.2147/JIR.S294238 📗
 
