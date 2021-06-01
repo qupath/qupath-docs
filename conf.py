@@ -30,7 +30,8 @@ author = 'QuPath docs authors'
 extensions = [
     'recommonmark',
     'sphinx_rtd_theme',
-    'sphinx.ext.autosectionlabel'
+    'sphinx.ext.autosectionlabel',
+    'sphinx_search.extension'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
