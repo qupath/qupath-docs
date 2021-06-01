@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'QuPath'
-copyright = '2019-2020, QuPath docs authors'
+copyright = '2019-2021, QuPath docs authors'
 author = 'QuPath docs authors'
 
 
