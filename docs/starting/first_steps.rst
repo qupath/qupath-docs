@@ -73,6 +73,8 @@ If not, you can set the pixel size manually by double-clicking on either row and
   You can also set the pixel size based on a specific region of your image.
   To do so, create an annotation around the region then double-click on either 'Pixel width' or 'Pixel height' under the **Image** tab to type its size in micron squared.
 
+  You can also draw a line annotation (if you want to make it perfectly horizontal or vertical, hold down the :kbd:`Shift` key) and do the same steps, typing the length in micron instead of the area.
+
 
 Looking around
 ==============
