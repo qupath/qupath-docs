@@ -61,6 +61,20 @@ You can also double-click the entry in the table to set it from a drop-down menu
   QuPath can automatically estimate the image type for you, if you choose this option for *Set image type* in under :menuselection:`Edit --> Preferences...` |icon_cog|.
   However, in case the estimate is wrong you should be aware the option exists - and should always be checked.
 
+Setting the pixel size
+----------------------
+
+The pixel size is used extensively by QuPath. This is why it is good practice to make sure it's correct.
+
+If stored in the image file, QuPath should automatically fetch the pixel size and display it under the **Image** tab ('Pixel width' & 'Pixel height').
+If not, you can set the pixel size manually by double-clicking on either row and type the correct values.
+
+.. Tip::
+  You can also set the pixel size based on a specific region of your image.
+  To do so, create an annotation around the region then double-click on either 'Pixel width' or 'Pixel height' under the **Image** tab to type its size in micron squared.
+
+  You can also draw a line annotation (if you want to make it perfectly horizontal or vertical, hold down the :kbd:`Shift` key) and do the same steps, typing the length in micron instead of the area.
+
 
 Looking around
 ==============
