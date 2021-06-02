@@ -284,6 +284,23 @@ If you have a selected object with a ``ROI`` in the image, you can also use that
   `server.getPath()`  may be renamed to `server.getID()` or similar in the future to reflect this.
 
 
+Setting pixel size
+==================
+
+The following script sets the pixel size of the currently opened image:
+
+.. code-block:: groovy
+
+  // Set pixel width and height to 0.5 microns
+  setPixelSizeMicrons(0.5, 0.5)
+
+Z-spacing, alongside width and height, can also be set with the following script:
+
+.. code-block:: groovy
+
+  // Set pixel width & height to 0.5 microns and Z-spacing to 1.0 micron
+  setPixelSizeMicrons(0.5, 0.5, 1.0)
+
 Creating ROIs
 =============
 
