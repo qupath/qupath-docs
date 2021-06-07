@@ -10,3 +10,4 @@ Advanced
   exporting_annotations
   stardist
   command_line
+  omero
