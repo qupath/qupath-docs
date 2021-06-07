@@ -34,14 +34,20 @@ GeoJSON
 
 It is also the preferred method of annotation export in QuPath, because it preserves quite a lot of information.
 
-The following script prints a GeoJSON representation of all the annotations in an image:
+You can export your objects via the :menuselection:`File --> Object data... --> Export as GeoJSON` command.
+
+Alternatively, the GeoJSON export can be done through scripting. The following script exports a GeoJSON representation of all the annotations in an image to a specific path:
 
 .. code-block:: groovy
 
   def annotations = getAnnotationObjects()
-  boolean prettyPrint = true
-  def gson = GsonTools.getInstance(prettyPrint)
-  println gson.toJson(annotations)
+  def path = "path/to/file.geojson"
+
+  // 'FEATURE_COLLECTION' is standard GeoJSON format for multiple objects
+  exportObjectsToGeoJson(annotations, path, "FEATURE_COLLECTION")
+
+  // The same method without the 'FEATURE_COLLECTION' parameter outputs a simple JSON object/array
+  // exportObjectsToGeoJson(annotations, path)
 
 It is worth reading a bit around the GeoJSON specification and comparing with QuPath's output to see how QuPath attempts to map its objects to valid GeoJSON.
 In particular, QuPath provides a `FeatureCollection` so that additional properties can be included (e.g. classifications).
@@ -231,7 +237,7 @@ Full labeled image
 A modified form of the above script can be used to export a single labeled image corresponding to the entire image.
 
 ::
-  
+
   def imageData = getCurrentImageData()
 
   // Define output path (relative to project)
@@ -252,17 +258,17 @@ A modified form of the above script can be used to export a single labeled image
     .addLabel('Other', 3)
     .multichannelOutput(false) // If true, each label refers to the channel of a multichannel binary image (required for multiclass probability)
     .build()
-    
+
   // Write the image
   writeImage(labelServer, path)
-  
+
 
 .. warning::
-  
+
   It is usually neither necessary nor desireable to export labels for an entire whole slide image at full resolution -- it is also not possible for some image formats (the images are just too big).
-  
+
   You can adjust the ``downsample`` value to help deal with this, or choose ``.ome.tif`` as the extension to write an image pyramid.
-  
+
 
 
 Labeled tiles
