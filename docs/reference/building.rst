@@ -40,12 +40,12 @@ There are a few places where you can find pre-built OpenJDK binaries -- a popula
   If you can't (e.g. because of some other Java software needing the PATH set to something else) I'm afraid I'll leave resolving that up to you.
 
 .. warning::
-  
+
   At the time of writing, OpenJDK 15 is the latest version -- this is not yet suitable for building QuPath (see `issue #615 <https://github.com/qupath/qupath/issues/615>`_).
-  
-  
+
+
 .. warning::
-  
+
   Problems have been reported on Linux using some JDK distributions.
   Switching to HotSpot (rather than OpenJ9) may help -- see `here <https://github.com/qupath/qupath/issues/484>`_ for more details.
 
@@ -61,6 +61,13 @@ If you're using either Mac or Windows, the following steps may help.
 * Install Atom_ (a text editor)
 * Install `GitHub Desktop`_
 * Navigate to `https://github.com/qupath/qupath <https://github.com/qupath/qupath>`__ in a browser
+* Make sure you are on the right QuPath version: click on :guilabel:`main`, :guilabel:`Tags`, then |release|
+
+.. figure:: images/building-tags.jpg
+  :class: shadow-image
+  :align: center
+  :width: 50%
+
 * Press :guilabel:`Clone or download` and choose :guilabel:`Open in Desktop`
 
 .. _QuPath's GitHub repository: https://github.com/qupath/qupath
