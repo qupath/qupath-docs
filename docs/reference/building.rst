@@ -26,7 +26,7 @@ Step 1: Installing prerequisites
 Install a Java Development Kit (JDK)
 ====================================
 
-QuPath v0.2 requires OpenJDK 14.
+QuPath v\ |version| requires OpenJDK 14.
 There are a few places where you can find pre-built OpenJDK binaries -- a popular source is AdoptOpenJDK_.
 
 
@@ -60,31 +60,35 @@ If you're using either Mac or Windows, the following steps may help.
 
 * Install Atom_ (a text editor)
 * Install `GitHub Desktop`_
-* Navigate to `https://github.com/qupath/qupath <https://github.com/qupath/qupath>`__ in a browser
-* Make sure you are on the right QuPath version: click on :guilabel:`main`, :guilabel:`Tags`, then |release|
-
-.. figure:: images/building-tags.jpg
-  :class: shadow-image
-  :align: center
-  :width: 50%
-
-* Press :guilabel:`Clone or download` and choose :guilabel:`Open in Desktop`
+* Navigate to `https://github.com/qupath/qupath <https://github.com/qupath/qupath/releases>`__ in a browser
+* Find v\ |release|
+* Download the source code (either ``zip`` or ``tar.gz``), available under 'Assets'
 
 .. _QuPath's GitHub repository: https://github.com/qupath/qupath
 .. _Atom: https://atom.io/
 .. _GitHub Desktop: https://desktop.github.com/
 
 
-.. figure:: images/building-clone.png
+.. figure:: images/building-source-code.png
   :class: shadow-image
   :align: center
-  :width: 50%
+  :width: 100%
 
+  Where to find the source code of QuPath
 
-.. admonition:: Note for Linux-users
+* Extract the QuPath source code folder to the location of your choice
 
-  At the time of writing *GitHub Desktop* is not available through the above link for Linux.
-  Therefore you'll need another desktop client, or handle Git from the command line.
+.. note::
+
+  Alternatively, you can reproduce step 2 using only the terminal with Git:
+
+  .. code-block:: bash
+
+    git clone https://github.com/qupath/qupath
+    cd qupath
+    git checkout tags/[release] -b [release]
+
+  Where [release] is replaced by 'v\ |release|'.
 
 
 ================================
@@ -94,12 +98,16 @@ Step 3: Build QuPath with Gradle
 Open the QuPath source directory in a command prompt
 ====================================================
 
-One way to do this is to go back to GitHub Desktop and choose :menuselection:`Repository --> Open in Command Prompt`.
+One way to do this is to use the terminal from inside the QuPath source code directory.
+
+If you've completed step 2 using Git, you should already be inside QuPath's source code directory from the terminal.
+
+If not, you can open a terminal/conda window and navigate to the right directory (using the ``cd`` command).
 
 .. admonition::
   Installing Git or not?
 
-  At this point you may be asked if you want to install Git.
+  You may wonder whether you should install Git.
 
   You don't have to (I think...), but if you do then you'll be ask a lot of questions during the installation.
   One of them is to choose a text editor, where you can select *Atom*.
