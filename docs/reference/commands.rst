@@ -624,7 +624,7 @@ Resolve hierarchy
 -----------------
 *Objects → Annotations... → Resolve hierarchy*  - :kbd:`Ctrl+Shift+R`
 
-Resolve the object hierarchy by setting parent/child relationships between objects based upon regions of interest.
+Resolve the object hierarchy of annotation objects by setting parent/child relationships based upon their relative areas.
 
 Rotate annotation
 -----------------
