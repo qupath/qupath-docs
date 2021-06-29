@@ -114,7 +114,7 @@ GitHub Desktop
 If you're using either Mac or Windows, `GitHub Desktop`_ provides a friendly way to get the QuPath code.
 The main steps are
 
-* Install Atom_ (a text editor - not essential, but helpful)
+* Install Atom_ (a text editor -- not essential, but helpful)
 * Install `GitHub Desktop`_
 * Navigate to `https://github.com/qupath/qupath <https://github.com/qupath/qupath>`__ in a browser
 * Press :guilabel:`Clone or download` and choose :guilabel:`Open in Desktop`
@@ -185,7 +185,7 @@ You can then build it from a command prompt as described above.
 Running from an IDE
 ===================
 
-You should be able to import QuPath into any IDE (e.g. *eclipse*, *IntelliJ*) that supports Gradle.
+You should be able to import QuPath into any IDE (e.g. *Eclipse*, *IntelliJ*) that supports Gradle.
 
 Eclipse
 -------
@@ -209,7 +209,7 @@ After selecting the QuPath directory and importing (usually accepting the defaul
   :align: center
   :width: 50%
 
-Now choose :menuselection:`Debug As --> Java Application` from the context menu
+Now choose :menuselection:`Debug As --> Java Application` from the context menu.
 
 This should launch QuPath, but it will fail to find the native libraries it needs to use OpenSlide.
 To fix that, use :menuselection:`Run --> Debug configurations...` to adjust the arguments for your configuration as shown below, changing ``-Xmx`` if needed to customize the memory available.
@@ -220,7 +220,8 @@ To fix that, use :menuselection:`Run --> Debug configurations...` to adjust the 
   :width: 90%
   
 Finally, press the :guilabel:`Debug` button in the bottom right, and QuPath should launch with OpenSlide intact.
-This works because it starts inside the ``${workspace_loc:qupath/build/natives}`` directory, which should contain the OpenSlide native libraries assuming you have build QuPath at least once before.
+
+This works because it starts inside the ``${workspace_loc:qupath/build/natives}`` directory, which should contain the OpenSlide native libraries -- assuming you have build QuPath at least once before.
 
 You can now use :menuselection:`Run --> Debug History --> QuPath` to launch QuPath with the same configuration in the future.
 
