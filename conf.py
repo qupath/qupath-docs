@@ -30,6 +30,7 @@ author = 'QuPath docs authors'
 extensions = [
     'myst_parser',
     'sphinx_rtd_theme',
+    'sphinx_panels',
     'sphinx.ext.autosectionlabel',
     'sphinx_search.extension'
 ]
