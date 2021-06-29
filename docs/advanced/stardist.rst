@@ -18,35 +18,19 @@ This page describes how to start using StarDist 2D directly within QuPath as an 
 
 .. warning:: 
   
-  This is a provisional feature, hastily created for the NEUBIAS webinar on QuPath in April 2020, and released under mild duress from attendees.
+  This is a provisional feature, based upon work hastily created for the NEUBIAS webinar on QuPath in April 2020, and released under mild duress from attendees.
   You can find both the StarDist and QuPath webinars on the `NEUBIAS YouTube channel <https://www.youtube.com/c/neubias>`_.
   
   If it already works for you, great!
   If not, please be patient -- and be aware that it may change substantially as QuPath is developed further.
 
 
-Building QuPath with TensorFlow
-===============================
+Getting the StarDist/TensorFlow extension
+=========================================
 
-StarDist requires TensorFlow, which is not currently included in the main QuPath distributions.
+StarDist requires TensorFlow + an extra QuPath extension, neither of which are currently included in the main QuPath distribution.
 
-To get this, you will need to build QuPath and enable the optional TensorFlow module.
-See :doc:`../reference/building` for details.
-
-You will need to add either ``-Ptensorflow-cpu=true`` or ``-Ptensorflow-gpu=true`` parameters, depending upon whether TensorFlow should use a graphics card or not.
-For example:
-
-.. code-block:: bash
-  
-  gradlew clean build createPackage -Ptensorflow-cpu=true
-  
-
-.. tip::
-  
-  It is highly recommended to use ``-Ptensorflow-cpu=true`` unless you are happy to independently resolve the inevitable GPU troubles (e.g. installing the right versions of CUDA, CuDNN).
-  
-  Because TensorFlow is being used only for inference (not training), and because the deep learning prediction forms only one part of the full cell detection algorithm, the differences in speed from switching between CPU and GPU can be quite modest.
-  
+To get them, you need to follow the instructions in the ReadMe at http://github.com/qupath/qupath-extension-tensorflow
 
 
 Getting pretrained models
