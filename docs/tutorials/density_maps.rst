@@ -16,6 +16,20 @@ In some cases, density maps can even be a replacement for :doc:`pixel_classifica
     Like most commands in QuPath, Density Maps are currently calculated only in 2D.
     And, like many other commands, you should create Density Maps within a :ref:`project <Projects>` if you want to reuse them later.
 
+==============
+Video tutorial
+==============
+
+.. raw:: html
+
+    <div style="text-align: center; margin-bottom: 2em;">
+    <iframe width="100%" height="350" src="https://www.youtube-nocookie.com/embed/lGtYOlv8XFU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    
+
+============
+Step-by-step
+============
     
 
 Getting started with density maps

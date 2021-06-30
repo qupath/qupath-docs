@@ -3,7 +3,7 @@ Superpixels
 ***********
 
 Object classification has been around (in some form) since the first version of QuPath.
-Pixel classification is new in v0.2.0.
+Pixel classification was new in v0.2.0.
 
 Before pixel classification was developed, there was an intermediate step that allowed you to apply object classifiers to pixels... kind of.
 
@@ -28,8 +28,12 @@ These superpixels may then be classified, and merged together to form annotation
   If you can solve your analysis problem without superpixels, then you probably should.
   
 
+============
+Step-by-step
+============
+  
 Generating superpixels
-**********************
+======================
 
 QuPath has two superpixel-generating commands:
 
@@ -70,7 +74,7 @@ Try any/all of these and explore different parameters.
 
 
 Adding features
-***************
+===============
 
 At first, your superpixels are 'empty': they have none of the features a classifier needs to do its job.
 
@@ -94,7 +98,7 @@ Add some using :menuselection:`Analyze --> Calculate features --> Add intensity 
   Visualizing measurements added to superpixels using *Add intensity features*.
 
 Training a classifier
-*********************
+=====================
 
 Having created superpixels and given them measurements as features, you can train an object classifier using :doc:`exactly the same process as for cells <cell_classification>`.
 
@@ -107,7 +111,7 @@ Having created superpixels and given them measurements as features, you can trai
 
 
 Merging tiles
-*************
+=============
 
 You can generate some measurements from superpixels just as they are -- but be aware that automatically-generated object measurements like *Positive %* will be based upon *counts*, not their areas.
 This is one reason why the pixel classifier is usually preferable.

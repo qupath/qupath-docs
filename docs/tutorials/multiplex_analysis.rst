@@ -25,12 +25,15 @@ There are three main steps involved:
 
 But first we have a few routine things we need to take care of so that things can run smoothly.
 
-==================
+============
+Step-by-step
+============
+
 Before we begin...
 ==================
 
 Create a project containing your images
-=======================================
+---------------------------------------
 
 Many things in QuPath work best if you create a :doc:`Project <projects>`.
 Here, it is really necessary so that classifiers generated along the way are saved in the right place to become available later.
@@ -42,7 +45,7 @@ Here, it is really necessary so that classifiers generated along the way are sav
 
 
 Set the image type
-==================
+------------------
 
 As usual when working with an image in QuPath, it is important to ensure the :doc:`Image type <../starting/first_steps>` is appropriate.
 In this case, the best choice is *Fluorescence*.
@@ -64,7 +67,7 @@ In this case, the best choice is *Fluorescence*.
 
 
 Set up the channel names
-========================
+------------------------
 
 The *channel names* are particularly important for multiplexed analysis, since these typically correspond to the markers of interest.
 They will also be reused within the names for the cell classifications.
@@ -113,7 +116,7 @@ Here, I would remove any '(Opal)' parts.
   
 
 Setting up the classifications
-==============================
+------------------------------
 
 We now want to make the channel names available as *classifications*.
 
@@ -125,7 +128,7 @@ You can either right-click this list or select the |vertical_ellipsis| button an
       :align: center
       :class: shadow-image
 
-======================
+
 Detect & measure cells
 ======================
   
@@ -148,7 +151,6 @@ Because these measurements are based on the channel names, it is important to ha
       :class: shadow-image
 
 
-===================================
 Create a classifier for each marker
 ===================================
 
@@ -164,7 +166,7 @@ You do not have to choose the same method for every marker, but can switch betwe
     
 
 Option #1. Simple thresholding
-==============================
+------------------------------
 
 QuPath v0.2.0 introduces a new command, :menuselection:`Classify --> Object classification --> Create single measurement classifier`.
 This gives us a quick way to classify based on the value of one measurement.
@@ -202,14 +204,14 @@ Now you can return to the **Channel filter** and work through the steps for the 
 
 
 Option #2. Machine learning
-===========================
+---------------------------
 
 If you are entirely happy with the process above, you can skip this section.
 But sometimes thresholding a single measurement isn't sufficient to generate a usable classification - and taking a machine learning approach can help.
 This process is a bit more involved, but the effort is often worth it.
 
 Create training images
-----------------------
+^^^^^^^^^^^^^^^^^^^^^^
 
 It is very difficult and confusing to try to train multiple classifiers by annotating the same image.
 
@@ -227,7 +229,7 @@ To do this, choose :menuselection:`Classify --> Extras --> Duplicate channel tra
 
 
 Train & save classifiers
-------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 Now you should have multiple duplicate images in your project, with names derived from the original channel names.
 Because you ran this after cell detection (right?!), these duplicate images will bring across all the original cells.
@@ -296,7 +298,6 @@ Then save the image data and open the image associated with the next marker of i
   You can then proceed to annotate cells, largely free of the distraction of what QuPath had actually previously detected.
 
 
-=======================
 Combine the classifiers
 =======================
 
@@ -325,7 +326,6 @@ Then, choose *any combination* of classifiers and press :guilabel:`Apply classif
 
 
 
-======================
 Making sense of it all
 =======================
 

@@ -28,10 +28,24 @@ Typically the type will be either *Brightfield* or *Fluorescence*.
 The main distinction is that *Fluorescence* indicates that the structures of interest have higher values than the background, *Brightfield* indicates that they have lower values (and are generally RGB).
 
 The choice of image type also has an impact on how stains may be separated.
+
+==============
+Video tutorial
+==============
+
+.. raw:: html
+
+    <div style="text-align: center; margin-bottom: 2em;">
+    <iframe width="100%" height="350" src="https://www.youtube-nocookie.com/embed/Oe0rfzLtTO0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
   
+============
+Step-by-step
+============
+
 
 Fluorescence images
-*******************
+===================
 
 In the easier case of fluorescence images, QuPath assumes that each channel of the image corresponds to a different stain or marker of some kind.
 
@@ -63,7 +77,7 @@ The **Brightness/Contrast** |icon_contrast| command provides an easy way to visu
 
 
 Brightfield images
-******************
+==================
 
 Stain separation for brightfield is more difficult. |br|
 QuPath uses the *color deconvolution* method introduced by Ruifrok and Johnston:
@@ -113,7 +127,7 @@ If only two stains are present, a third 'residual' stain is generated.
 
 
 Setting stain vectors
-=====================
+---------------------
 
 The stain vectors are key to color deconvolution.
 They ought to give a normalized representation of the color of each 'pure' stain in the image, without regard for staining intensity.
@@ -143,7 +157,7 @@ Repeat this for other stains if needed.
 
 
 Estimating stain vectors
-========================
+------------------------
 
 When setting stain vectors manually, each drawn rectangle should be as 'pure' as possible -- any mixture of other stains will reduce the accuracy.
 This can be difficult (or impossible) to achieve exactly.
@@ -155,7 +169,7 @@ In cases where there are *precisely two* stains involved, :menuselection:`Analyz
 
 
 Find a representative region
-----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Before running *Estimate stain vectors*, you should first find a representative region containing relatively clear examples of the stains that you want - *along with an area of background, if possible*.
 Then draw a rectangle annotation around this region.
@@ -177,7 +191,7 @@ Then draw a rectangle annotation around this region.
 
 
 Run *Estimate stain vectors*
-----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Now you are ready to actually run the :menuselection:`Analyze --> Preprocessing --> Estimate stain vectors` command.
 
@@ -192,7 +206,7 @@ If not, click :guilabel:`No`.
   :width: 60%
 
 Check scatterplots
-------------------
+^^^^^^^^^^^^^^^^^^6
 
 QuPath now builds scatterplots to help view the regionships between the red, green and blue values for each pixel.
 
@@ -246,7 +260,7 @@ The resulting vector estimates look more reasonable.
 
 
 Set a name for the updated stains
----------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you are happy with the results, press :guilabel:`OK` and then enter a name to identify your new stain vectors when prompted.
 
@@ -255,7 +269,7 @@ For this reason, is **strongly** recommended to add an informative (and unique) 
 
 
 View the results
-----------------
+^^^^^^^^^^^^^^^^
 
 Now, the dialog window will disappear and you will be returned to the original image.
 Typically this does not look different at all, however the stain vectors in the *Image* panel will be updated to reflect the changes.
@@ -308,7 +322,7 @@ This can be visualized using the *Brightness/Contrast* method described above.
 
 
 Setting stains for a project
-============================
+----------------------------
 
 Whenever the image type and stain vectors are set, this is recorded in the :doc:`command history <../scripting/workflows>`.
 Using this, you can quickly generate a script that should contain two lines, e.g.

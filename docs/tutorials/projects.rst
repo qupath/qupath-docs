@@ -21,13 +21,28 @@ However, if you will be saving and reloading data associated with multiple image
   Some commands and scripts *only* work within projects.
 
 
-================
+==============
+Video tutorial
+==============
+
+.. raw:: html
+
+    <div style="text-align: center; margin-bottom: 2em;">
+    <iframe width="100%" height="350" src="https://www.youtube-nocookie.com/embed/kCEp89ypmAY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+
+============
+Step-by-step
+============
+
+
 Create a project
 ================
 
 
 Choose a folder
-===============
+---------------
 
 The first step of creating a project is to create an empty folder somewhere on your computer.
 You can then set this to be the project directory in one of two ways:
@@ -43,7 +58,7 @@ You can then set this to be the project directory in one of two ways:
 
 
 Add images
-==========
+----------
 
 The easiest way to add images to a project is usually to drag them on top of QuPath.
 
@@ -75,7 +90,7 @@ The options are:
   
   
 Remove images
-=============
+-------------
 
 You can remove images by right-clicking one or more entries under the *Project* tab and choosing :menuselection:`Delete image(s)`.
 
@@ -86,13 +101,11 @@ If you choose not to, these files will linger around - you won't be able to acce
   On platforms that support it, QuPath will try to remove data by sending it to the recycle bin rather than permanently deleting it immediately.
 
 
-
-=====================
 Working with projects
 =====================
 
 Reopen a project
-================
+----------------
 
 There are four ways to reopen an existing project:
 
@@ -103,7 +116,7 @@ There are four ways to reopen an existing project:
 
 
 Fix paths
-=========
+---------
 
 It is important to recognize that your project folder does **not** (usually) contain your images.
 Rather, it contains QuPath's associated data files only - and the paths to where your images are located.
@@ -128,12 +141,3 @@ If you choose :guilabel:`Ignore` then your project will not be overwritten, but 
 
 .. tip::
   In the event that your images and project *both* changed location together, QuPath will try to resolve the paths relative to the project and suggest how you should update them automatically.
-
-
-.. Set metadata
-.. ============
-..
-..
-..
-.. .. attention::
-..   For more detail on working with projects

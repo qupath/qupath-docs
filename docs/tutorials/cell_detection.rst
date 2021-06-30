@@ -27,12 +27,29 @@ This is sometimes referred to as the 'Ki67 labelling index'.
 In this case, tumor cells are identified by manually drawing around them to create annotations, after which QuPath is able to very quickly detect the cells and calculate the positive percentage inside each annotation.
 In :doc:`cell_classification` we will look at improving on this by training QuPath to identify tumor cells itself.
 
-.. figure:: images/ki67_detecting_origin.jpg
-  :class: shadow-image
-  :width: 75%
-  :align: center
 
-  Ki67 image
+==============
+Video tutorial
+==============
+
+.. raw:: html
+
+    <div style="text-align: center; margin-bottom: 2em;">
+    <iframe width="100%" height="350" src="https://www.youtube-nocookie.com/embed/14ZQCSmICCA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    
+    
+.. .. figure:: images/ki67_detecting_origin.jpg
+..   :class: shadow-image
+..   :width: 75%
+..   :align: center
+.. 
+..   Ki67 image
+
+
+============
+Step-by-step
+============
 
 
 Annotate a region of interest
