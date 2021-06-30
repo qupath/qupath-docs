@@ -73,13 +73,13 @@ If you need to create an installer for QuPath, you can use
 
    .. code-block:: bash
    
-     gradlew clean jpackage -Pqupath.package=installer
+     gradlew clean jpackage -P package=installer
      
 .. tabbed:: macOS/Linux
 
   .. code-block:: bash
   
-    ./gradlew clean jpackage -Pqupath.package=installer
+    ./gradlew clean jpackage -P package=installer
     
 
 Note that for this to work on Windows you'll need to install `WIX Toolset`_.
