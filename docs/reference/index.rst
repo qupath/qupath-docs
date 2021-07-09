@@ -8,5 +8,6 @@ Reference
   faqs
   shortcuts
   commands
+  config
   building
   projects_structure
