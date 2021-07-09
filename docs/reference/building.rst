@@ -6,59 +6,115 @@ Building software can be tricky, but hopefully this won't be - thanks to Gradle_
 
 .. _Gradle: http://gradle.org
 
-The following instructions assume:
-
-* You're starting from scratch
-* You're not an expert in building software
-
-If you *are* an expert, you'll know which steps you can skip or amend.
-
 .. admonition:: Do you need this?!
 
   Most people using QuPath won't need to build QuPath from source!
   Just download an existing installer from `qupath.github.io <https://qupath.github.io>`__ and use that instead.
 
+============
+Command line
+============
 
-================================
-Step 1: Installing prerequisites
-================================
+If you're moderately comfortable working from a command line, there's not much required to build QuPath:
 
-Install a Java Development Kit (JDK)
-====================================
+1. Install git, e.g. from https://git-scm.com
 
-QuPath v0.2 requires OpenJDK 14.
-There are a few places where you can find pre-built OpenJDK binaries -- a popular source is AdoptOpenJDK_.
+2. Install OpenJDK 16, e.g. from https://adoptopenjdk.net
 
+3. Open a command prompt in an empty directory and run the following:
 
-.. _AdoptOpenJDK: https://adoptopenjdk.net/
+.. tabbed:: Windows
 
-.. tip::
+   .. code-block:: bash
+   
+     git clone https://github.com/qupath/qupath
+     cd qupath
+     gradlew clean jpackage
+     
+.. tabbed:: macOS/Linux
 
-  During installation you may be asked if you want to add the JDK to your PATH.
-  It usually makes things easier if you do.
-
-  If you can't (e.g. because of some other Java software needing the PATH set to something else) I'm afraid I'll leave resolving that up to you.
-
-.. warning::
+  .. code-block:: bash
   
-  At the time of writing, OpenJDK 15 is the latest version -- this is not yet suitable for building QuPath (see `issue #615 <https://github.com/qupath/qupath/issues/615>`_).
+    git clone https://github.com/qupath/qupath
+    cd qupath
+    ./gradlew clean jpackage
+          
+It will take a few minutes to download everything required and build the software.
+If all goes well, you should see a triumphant message that the build was successful.
+
+.. figure:: images/building-success.png
+  :class: shadow-image
+  :align: center
+  :width: 50%
+
+**That's it!**
+You can find QuPath inside the ``./build/dist/`` subdirectory.
+
+.. admonition:: Which Java version do I need?
+  :class: tip
   
+  If you already have Java installed, you might be able to skip Step 2.
+  Most Java versions >= 8 should work to launch Gradle, which will then automatically download the version it needs.
+  However, since QuPath currently requires OpenJDK 16, we recommend just installing that and saving Gradle the extra effort.
   
-.. warning::
+  Note that some problems have been reported using a version of OpenJDK based on OpenJ9, such as may be provided by some package managers.
+  Switching to an OpenJDK distribution based on HotSpot may help -- see `here <https://github.com/qupath/qupath/issues/484>`_ for details.
+
+
+Customizing the build
+=====================
+
+Creating installers
+-------------------
+
+If you need to create an installer for QuPath, you can use
+
+.. tabbed:: Windows
+
+   .. code-block:: bash
+   
+     gradlew clean jpackage -P package=installer
+     
+.. tabbed:: macOS/Linux
+
+  .. code-block:: bash
   
-  Problems have been reported on Linux using some JDK distributions.
-  Switching to HotSpot (rather than OpenJ9) may help -- see `here <https://github.com/qupath/qupath/issues/484>`_ for more details.
+    ./gradlew clean jpackage -P package=installer
+    
+
+Note that for this to work on Windows you'll need to install `WIX Toolset`_.
+
+.. _WIX Toolset: https://wixtoolset.org/
 
 
-==================================
-Step 2: Get the QuPath source code
-==================================
+Building a specific version
+---------------------------
 
-You can get the QuPath source code from `QuPath's GitHub repository`_.
+QuPath releases are associated with different git tags.
+You can get the code associated with QuPath |release| by using the command
 
-If you're using either Mac or Windows, the following steps may help.
+.. parsed-literal::
+   git checkout tags/v\ |release|\  -b\  v\ |release|
 
-* Install Atom_ (a text editor)
+You can then try building it as above, however *note that some different versions may require different build commands* (e.g. the steps for v0.2.3 are slightly different from v0.3.0).
+Check out the docs associated with the specific version if this is the case.
+
+
+=============
+Other options
+=============
+
+A few other ways to obtain and/or build QuPath's code are described below.
+These might be better if you a) don't like the command line much, or b) want to make changes to the software.
+
+
+GitHub Desktop
+==============
+
+If you're using either Mac or Windows, `GitHub Desktop`_ provides a friendly way to get the QuPath code.
+The main steps are
+
+* Install Atom_ (a text editor -- not essential, but helpful)
 * Install `GitHub Desktop`_
 * Navigate to `https://github.com/qupath/qupath <https://github.com/qupath/qupath>`__ in a browser
 * Press :guilabel:`Clone or download` and choose :guilabel:`Open in Desktop`
@@ -67,27 +123,12 @@ If you're using either Mac or Windows, the following steps may help.
 .. _Atom: https://atom.io/
 .. _GitHub Desktop: https://desktop.github.com/
 
-
 .. figure:: images/building-clone.png
   :class: shadow-image
   :align: center
   :width: 50%
 
-
-.. admonition:: Note for Linux-users
-
-  At the time of writing *GitHub Desktop* is not available through the above link for Linux.
-  Therefore you'll need another desktop client, or handle Git from the command line.
-
-
-================================
-Step 3: Build QuPath with Gradle
-================================
-
-Open the QuPath source directory in a command prompt
-====================================================
-
-One way to do this is to go back to GitHub Desktop and choose :menuselection:`Repository --> Open in Command Prompt`.
+You can now open a command prompt in the correct directory directly from GitHub Desktop by choosing :menuselection:`Repository --> Open in Command Prompt`.
 
 .. admonition::
   Installing Git or not?
@@ -97,145 +138,91 @@ One way to do this is to go back to GitHub Desktop and choose :menuselection:`Re
   You don't have to (I think...), but if you do then you'll be ask a lot of questions during the installation.
   One of them is to choose a text editor, where you can select *Atom*.
 
-Run gradlew
-===========
+Finally, the command needed to build QuPath is then the same as above:
 
-At the command prompt, type the following:
+.. tabbed:: Windows
 
-.. code-block:: bash
+   .. code-block:: bash
+   
+     gradlew clean jpackage
+     
+.. tabbed:: macOS/Linux
 
-  gradlew clean build createPackage
+  .. code-block:: bash
+  
+    ./gradlew clean jpackage
 
-for Windows, or
+.. admonition:: Updating the code
 
-.. code-block:: bash
+  Once you've built QuPath once, updating it to use the latest source code in *GitHub Desktop* should be easier.
+  The right-most button on the main toolbar serves two purposes: to :guilabel:`Fetch` information about the latest changes (from GitHub) and to :guilabel:`Pull` the changes down to your computer.
 
-  ./gradlew clean build createPackage
+  .. figure:: images/building-branches.png
+    :class: shadow-image
+    :align: center
+    :width: 90%
 
-for MacOS and Linux.
+  If the option is :guilabel:`Fetch origin`, when you press the button the text will switch to :guilabel:`Pull origin` if any changes are available, with info about the number of changes.
 
-This will download Gradle and all its dependencies, so may take a bit of time (and an internet connection) the first time you run it.
+  You can press it again to pull those changes, and then rebuild QuPath using ``gradlew``.
 
-If all goes well, you should see a triumphant message that the build was successful.
-
-.. figure:: images/building-success.png
-  :class: shadow-image
-  :align: center
-  :width: 50%
-
-Afterwards, you should find QuPath inside the ``./build/dist`` subdirectory.  You may then drag it to a more convenient location.
-
-**Congratulations!** You've now built QuPath, and can run it as normal from now on... at least until there is another update, when you can repeat the (hopefully painless) process.
-
-----
-
-======
-Extras
-======
-
-Variations & troubleshooting
-============================
-
-The code above should create everything you need to run QuPath.
-
-If you want an installer instead, you can use
-
-.. code-block:: bash
-
-  gradlew createPackage -Ptype=installer
-
-Note that for this to work you'll need to install `WIX Toolset`_.
-
-.. _WIX Toolset: https://wixtoolset.org/
-
-Inevitably, things will go wrong at some point.
-When this happens, it's worth running
-
-.. code-block:: bash
-
-  gradlew clean
-
-once or twice extra to clean up old files that could be causing trouble.
+  .. figure:: images/building-pull.png
+    :class: shadow-image
+    :align: center
+    :width: 50%
+  
 
 
-Getting the latest updates
-==========================
+Download release
+================
 
-Once you've built QuPath once, updating it to use the latest source code should be much easier.
+You can circumvent the need to use git entirely by downloading the QuPath code associated with a specific release from http://github.com/qupath/qupath/releases
 
-In *GitHub Desktop*, see the right-most button on the main toolbar.
-This serves two purposes: to :guilabel:`Fetch` information about the latest changes (from GitHub) and to :guilabel:`Pull` the changes down to your computer.
-
-.. figure:: images/building-branches.png
-  :class: shadow-image
-  :align: center
-  :width: 90%
-
-
-If the option is :guilabel:`Fetch origin`, and you press the button then if there are any changes to pull the text on the button will switch to :guilabel:`Pull origin` with info about the number of changes available.
-
-You can press it again to pull those changes, and then rebuild QuPath using ``gradlew`` if necessary.
-
-.. figure:: images/building-pull.png
-  :class: shadow-image
-  :align: center
-  :width: 50%
-
-
-You can also use the middle button in *GitHub Desktop* to switch 'branches'.
-Branches basically make it possible to have different versions of the code in development in parallel.
-
-The following screenshot shows QuPath where I have checked out a branch called 'pete-m5'.
-
-.. figure:: images/building-branches-m5.png
-  :class: shadow-image
-  :align: center
-  :width: 90%
-
-
-If the changes prove worthwhile, the changes in 'pete-m5' will be merged into the 'master' branch.
+Simply choose the *Source code (zip)* or *Source code (tar.gz)* option.
+You can then build it from a command prompt as described above.
 
 
 Running from an IDE
 ===================
 
-You should be able to import QuPath into any IDE (e.g. *eclipse*, *IntelliJ*) that supports Gradle.
+You should be able to import QuPath into any IDE (e.g. *Eclipse*, *IntelliJ*) that supports Gradle.
 
-I personally use *eclipse* for QuPath development, which allows me to run the software in debug mode - and even change the code while it is running.
+Eclipse
+-------
 
-To do this, I use :menuselection:`Run --> Debug As --> QuPath`.
+I personally use `Eclipse`_ for QuPath development, which allows me to run the software in debug mode -- and even change the code while it is running.
 
-To make this option available, you'll first need to create a debug configuration with :menuselection:`Run --> Debug Configurations...`.
+.. _Eclipse: https://www.eclipse.org
 
-Within this dialog, I use the following options to control the available memory and set the working directory/Java library path.
+To do this, first download and build QuPath once as describe above.
+Then use :menuselection:`File --> Import...` from within Eclipse and select *Existing Gradle project*.
 
-.. figure:: images/building-eclipse-1.png
+.. figure:: images/building-eclipse-import.png
+  :class: shadow-image
+  :align: center
+  :width: 50%
+
+After selecting the QuPath directory and importing (usually accepting the default import options is fine), right-click on *QuPath.java* (the main launch class) as shown below:
+
+.. figure:: images/building-eclipse-launch.png
+  :class: shadow-image
+  :align: center
+  :width: 50%
+
+Now choose :menuselection:`Debug As --> Java Application` from the context menu.
+
+This should launch QuPath, but it will fail to find the native libraries it needs to use OpenSlide.
+To fix that, use :menuselection:`Run --> Debug configurations...` to adjust the arguments for your configuration as shown below, changing ``-Xmx`` if needed to customize the memory available.
+
+.. figure:: images/building-eclipse-config.png
   :class: shadow-image
   :align: center
   :width: 90%
+  
+Finally, press the :guilabel:`Debug` button in the bottom right, and QuPath should launch with OpenSlide intact.
 
-.. figure:: images/building-eclipse-2.png
-  :class: shadow-image
-  :align: center
-  :width: 90%
+This works because it starts inside the ``${workspace_loc:qupath/build/natives}`` directory, which should contain the OpenSlide native libraries -- assuming you have build QuPath at least once before.
 
-The purpose of setting the *Working directory* is to pick up the native libraries (e.g. for OpenSlide) when running from the IDE.
-This requires that the code has been built using ``gradlew`` at least once to move the files into position.
+You can now use :menuselection:`Run --> Debug History --> QuPath` to launch QuPath with the same configuration in the future.
 
-
-Building javadocs
-=================
-
-To generate javadocs for the source code, use
-
-.. code-block:: bash
-
-  gradlew mergedJavadocs
-
-This will generate html javadocs in a ``./build/merged-docs`` subdirectory.
-
-If you'd like to include external links to other relevant javadocs (e.g. for the JDK, ImageJ, JTS) use
-
-.. code-block:: bash
-
-  gradlew mergedJavadocs -PlinkJavadoc=true
+The useful thing about using debug mode is that you can make changes to the QuPath code *while QuPath is running* and, providing they aren't *too* extreme, they will be incorporated into the software without needing to relaunch it.

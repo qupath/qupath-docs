@@ -6,14 +6,22 @@ Perhaps one of the earliest and most familiar applications of image analysis in 
 
 We can apply this to :doc:`OS-3.ndpi <../intro/acknowledgements>` to answer the question: what is the area of the brown region, and what proportion of the tissue does it occupy?
 
-.. figure:: images/areas_image.jpg
-  :class: shadow-image
-  :align: center
-  :width: 90%
+==============
+Video tutorial
+==============
 
-  OS-3.ndpi
+.. raw:: html
 
-
+    <div style="text-align: center; margin-bottom: 2em;">
+    <iframe width="100%" height="350" src="https://www.youtube-nocookie.com/embed/KGE7v4VIQ_0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    
+      
+============
+Step-by-step
+============
+    
+      
 Define the region of interest
 =============================
 

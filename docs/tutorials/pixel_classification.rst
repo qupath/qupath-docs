@@ -15,8 +15,12 @@ But pixel classifiers can also do much more sophisticated things.
   Please read :doc:`thresholding` and :doc:`measuring_areas` first!
 
 
+============
+Step-by-step
+============
+  
 Stained areas (again)
-*********************
+=====================
 
 Returning to the example in :doc:`measuring_areas`, we could replace either of the thresholding steps with :menuselection:`Classify --> Pixel classification --> Train pixel classifier`.
 
@@ -38,7 +42,7 @@ When you are done, you can enter the classifier name, save it, and create measur
 
 
 More complex classifications
-****************************
+============================
 
 Training a pixel classifier makes it possible to incorporate a lot more information than is possible with a simple threshold, and to determine the output in a much more sophisticated way.
 

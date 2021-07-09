@@ -203,6 +203,10 @@ Clicking on this list gives another way to select an object.
 But you can also set the properties of your annotations here if you like.
 One way is to select from a predefined list of classifications on the right, and choose **Set class**.
 Alternatively, right-click on any listed annotation and choose **Set properties** to choose any arbitrary name or color.
+You can toggle on and off the visibility of annotation names with :kbd:`N`.
+
+.. Tip::
+  You can also set an annotation's properties by selecting it and hitting *Enter*.
 
 .. figure:: images/steps_annotation_panel.jpg
   :class: shadow-image

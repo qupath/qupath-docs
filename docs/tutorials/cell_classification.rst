@@ -24,6 +24,22 @@ They can be applied for the *classification* of all *detections* within QuPath, 
     It is a good idea to read through the :doc:`cell_detection` section before this one.
 
 
+==============
+Video tutorial
+==============
+
+.. raw:: html
+
+    <div style="text-align: center; margin-bottom: 2em;">
+    <iframe width="100%" height="350" src="https://www.youtube-nocookie.com/embed/-4JZ73ZEicY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    
+
+============
+Step-by-step
+============
+
+
 Annotate the main region of interest
 ====================================
 

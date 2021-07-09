@@ -13,6 +13,21 @@ Setting a *threshold* is usually a better way.
   It provides a way to define regions of interest without needing to manually annotate everything.
 
 
+==============
+Video tutorial
+==============
+
+.. raw:: html
+
+    <div style="text-align: center; margin-bottom: 2em;">
+    <iframe width="100%" height="350" src="https://www.youtube-nocookie.com/embed/B03-TlH-yVU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+============
+Step-by-step
+============
+      
+      
 Thresholders in QuPath
 ======================
 

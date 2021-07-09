@@ -28,8 +28,9 @@ author = 'QuPath docs authors'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'recommonmark',
+    'myst_parser',
     'sphinx_rtd_theme',
+    'sphinx_panels',
     'sphinx.ext.autosectionlabel',
     'sphinx_search.extension'
 ]
@@ -84,5 +85,5 @@ html_logo = 'docs/images/qupath_128.png'
 
 html_favicon = 'docs/images/QuPath.ico'
 
-release = '0.2.3'
-version = '0.2'
+release = '0.3.0'
+version = '0.3'

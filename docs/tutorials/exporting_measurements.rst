@@ -19,7 +19,10 @@ Which one to use is up to you and depends on what you want to do.
   * **a single image**: use the measurement table
   * **multiple images**: use the *Measurement Exporter* or a script
 
-=========================
+============
+Step-by-step
+============
+  
 Via the measurement table
 =========================
 
@@ -45,7 +48,6 @@ You can then save your measurement by pressing **Save** and choosing an appropri
 
   If your analysis involves combining measurements from different images, it is recommended to use the Measurement Exporter, detailed in the next subsection.
 
-============================
 Via the Measurement Exporter
 ============================
 
@@ -83,7 +85,6 @@ Below the image selection, a small number of parameters will allow you to shape 
   A small red-colored warning will appear to remind you.
 
 
-=============
 Via scripting
 =============
 
