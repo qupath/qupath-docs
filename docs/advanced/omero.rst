@@ -2,7 +2,7 @@
 OMERO
 *****
 
-This page describes how to use the built-in OMERO extension in QuPath to access and interact with images hosted on OMERO servers. The installation instructions for this extension can bse found `here <https://github.com/qupath/qupath-extension-omero>`_.
+This page describes how to use the built-in OMERO extension in QuPath to access and interact with images hosted on OMERO servers. The installation instructions for this extension can be found `here <https://github.com/qupath/qupath-extension-omero>`_.
 
 
 .. warning::
@@ -45,7 +45,7 @@ You can browse OMERO servers via the :menuselection:`Extensions --> OMERO --> Br
 
 The menu will list all the servers that were opened in the current QuPath session, from which you can choose the one to browse.
 
-.. figure:: images/omero_browse_new_servers.JPG
+.. figure:: images/omero_browse_new_servers.jpg
   :class: shadow-image
   :align: center
   :width: 87%
@@ -59,7 +59,7 @@ The menu will list all the servers that were opened in the current QuPath sessio
 Alternatively, you can provide a new OMERO server (with which no connection was previously established) to browse by clicking on 'New server...'.
 The URL to provide should not contain any `URL query <https://en.wikipedia.org/wiki/Query_string>`_ or unnecessary characters.
 
-.. figure:: images/omero_browse_new_server_link.JPG
+.. figure:: images/omero_browse_new_server_link.jpg
   :class: shadow-image
   :align: center
   :width: 87%
@@ -69,7 +69,7 @@ The URL to provide should not contain any `URL query <https://en.wikipedia.org/w
 
 The browser will display all the projects, datasets and images filtered by OMERO group and owner. The design is very similar to OMERO's webclient.
 
-.. figure:: images/omero_browser.JPG
+.. figure:: images/omero_browser.jpg
   :class: shadow-image
   :align: center
   :width: 87%
