@@ -2,7 +2,7 @@
 OMERO
 *****
 
-This page describes how to use the built-in OMERO extension in QuPath to access and interact with images hosted on OMERO servers.
+This page describes how to use the built-in OMERO extension in QuPath to access and interact with images hosted on OMERO servers. The installation instructions for this extension can bse found `here <https://github.com/qupath/qupath-extension-omero>`_.
 
 
 .. warning::
