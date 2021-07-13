@@ -1,4 +1,4 @@
-2021 (226)
+2021 (228)
 ==========
 
 #. Affo, S. et al. (2021). Promotion of cholangiocarcinoma growth by diverse cancer-associated fibroblast subpopulations. **Cancer Cell**. https://doi.org/10.1016/j.ccell.2021.03.012 📗
@@ -112,6 +112,8 @@
 #. Fischietti, M. et al. (2021). Schlafen 5 as a novel therapeutic target in pancreatic ductal adenocarcinoma. **Oncogene**. https://doi.org/10.1038/s41388-021-01761-1 😞
 
 #. Foersch, S. et al. (2021). Deep learning for diagnosis and survival prediction in soft tissue sarcoma. **Annals of Oncology**. https://doi.org/10.1016/j.annonc.2021.06.007 📗
+
+#. Friedrich, M. et al. (2021). Intrathecal activation of CD8\ :sup:`+` memory T cells in IgG4-related disease of the brain parenchyma. **EMBO Molecular Medicine**. https://doi.org/10.15252/emmm.202113953 😞
 
 #. Fujii, T. et al. (2021). MEF2C regulates osteoclastogenesis and pathologic bone resorption via c-FOS. **Bone Research**. https://doi.org/10.1038/s41413-020-00120-2 😞
 
@@ -380,6 +382,8 @@
 #. Su, A. L. et al. (2021). _N_-Acetyl-L-cysteine and aminooxyacetic acid differentially modulate trichloroethylene reproductive toxicity via metabolism in Wistar rats. **Achives of Toxicology**. https://doi.org/10.1007/s00204-021-02991-8 📗
 
 #. Su, Y. et al. (2021). CD11c-CD8 Spatial Cross Presentation: A Novel Approach to Link Immune Surveillance and Patient Survival in Soft Tissue Sarcoma. **Cancers**. https://doi.org/10.3390/cancers13051175 📗
+
+#. Sun, Y. et al. (2021). Sensitive and Specific Immunohistochemistry Protocol for Nucleocapsid Protein from All Common SARS-CoV-2 Virus Strains in Formalin-Fixed, Paraffin Embedded Tissues. **Methods and Protocols**. https://doi.org/10.3390/mps4030047 😞
 
 #. Sun, Z. et al. (2021). Developing an enhanced 7-color multiplex IHC protocol to dissect immune infiltration in human cancers. **PLOS ONE**. https://doi.org/10.1371/journal.pone.0247238 📗
 
