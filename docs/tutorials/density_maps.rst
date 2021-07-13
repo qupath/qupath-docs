@@ -60,7 +60,7 @@ This can be used to find areas containing a high density of those objects, eithe
 
 The display of the map is toggled in the same way as a threshold/pixel classification: using the :kbd:`C` shortcut key or :guilabel:`C` button in QuPath's toolbar.
 
-.. top:: 
+.. tip:: 
   
   You will probably need to toggle off the detections to see the density map more clearly.
   You can do this by pressing the :kbd:`D` shortcut or |icon_detections| toolbar button.
