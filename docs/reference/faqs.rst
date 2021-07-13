@@ -334,7 +334,7 @@ Where are the QuPath javadocs?
 At the time of writing, QuPath's javadocs aren't hosted anywhere - but it is planned to put them online at some point once they have been cleaned up accordingly.
 See `here <https://github.com/qupath/qupath/issues/230>`__ for the request.
 
-In the meantime, check :ref:`Building javadocs` for instructions how to build them yourself.
+In the meantime, check out :doc:`building` for instructions how to build QuPath, which includes javadocs.
 
 
 How do I read a *.qpdata* file in Python/C++/R?
