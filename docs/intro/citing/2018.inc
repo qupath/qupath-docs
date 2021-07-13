@@ -47,9 +47,9 @@
 
 #. Isambert, N, et al. (2018). Fluorouracil and Bevacizumab plus Anakinra for Patients with Metastatic Colorectal Cancer Refractory to Standard Therapies (IRAFU): A Single-Arm Phase 2 Study. **OncoImmunology**. https://doi.org/10.1080/2162402X.2018.1474319 😞
 
-#. Kather, J. N. et al. (2018). Topography of cancer-associated immune cells in human solid tumors. **eLife**. https://doi.org/10.7554/eLife.36967 📗
-
 #. Kather, J. N. et al. (2018). High-throughput screening of combinatorial immunotherapies with patient-specific in silico models of metastatic colorectal cancer. **Cancer Research**. https://doi.org/10.1158/0008-5472.CAN-18-1126 📗
+
+#. Kather, J. N. et al. (2018). Topography of cancer-associated immune cells in human solid tumors. **eLife**. https://doi.org/10.7554/eLife.36967 📗
 
 #. Keller, A. et al. (2018). Prion pathogenesis is unaltered in a mouse strain with a permeable blood-brain barrier. **PLOS Pathogens**. https://doi.org/10.1371/journal.ppat.1007424 📗
 

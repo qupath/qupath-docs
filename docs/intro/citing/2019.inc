@@ -5,9 +5,9 @@
 
 #. Ahtiainen, M. et al. (2019). Combined prognostic value of CD274 (PD-L1)/PDCDI (PD-1) expression and immune cell infiltration in colorectal cancer as per mismatch repair status. **Modern Pathology**. https://doi.org/10.1038/s41379-019-0219-7 📗
 
-#. Alvim, R. G. et al. (2019). The potential risk of tumor progression after use of dehydrated human amnion/chorion membrane allograft in a positive margin resection model. **Therapeutic Advances in Urology**. https://doi.org/10.1177/1756287219837771 📗
-
 #. Alvim, R. G. et al. (2019). Positron Emission Tomography/Computed Tomography with Gallium-68–labeled Prostate-specific Membrane Antigen Detects Relapse After Vascular-targeted Photodynamic Therapy in a Prostate Cancer Model. **European Urology Focus**. https://doi.org/10.1016/j.euf.2019.06.008 📗
+
+#. Alvim, R. G. et al. (2019). The potential risk of tumor progression after use of dehydrated human amnion/chorion membrane allograft in a positive margin resection model. **Therapeutic Advances in Urology**. https://doi.org/10.1177/1756287219837771 📗
 
 #. Amaddeo, G. et al. (2019). Intra-hepatic immune changes after hepatitis c virus eradication by direct-acting antiviral therapy. **Liver International**. https://doi.org/10.1111/liv.14226 😞
 
@@ -155,11 +155,11 @@
 
 #. Moore, P. C. et al. (2019). Parallel Signaling through IRE1α and PERK Regulates Pancreatic Neuroendocrine Tumor Growth and Survival. **Cancer Research**. https://doi.org/10.1158/0008-5472.CAN-19-1116 😞
 
-#. Morra, F. et al. (2019). CCDC6 and USP7 expression levels suggest novel treatment options in high-grade urothelial bladder cancer.  **Journal of Experimental & Clinical Cancer Research**. https://doi.org/10.1186/s13046-019-1087-1 😞
-
 #. Morra, F. et al. (2019). Analysis of CCDC6 as a novel biomarker for the clinical use of PARP1 inhibitors in malignant pleural mesothelioma. **Lung Cancer**. https://doi.org/10.1016/j.lungcan.2019.07.011 📗
 
 #. Morra, F. et al. (2019). CAF-1 Subunits Levels Suggest Combined Treatments with PARP-Inhibitors and Ionizing Radiation in Advanced HNSCC. **Cancers**. https://doi.org/10.3390/cancers11101582 📗
+
+#. Morra, F. et al. (2019). CCDC6 and USP7 expression levels suggest novel treatment options in high-grade urothelial bladder cancer.  **Journal of Experimental & Clinical Cancer Research**. https://doi.org/10.1186/s13046-019-1087-1 😞
 
 #. Murakawa, T. et al. (2019). A Mammalian Mitophagy Receptor, Bcl2-L-13, Recruits the ULK1 Complex to Induce Mitophagy.  **Cell Reports**. https://doi.org/10.1016/j.celrep.2018.12.050 😞
 
@@ -229,9 +229,9 @@
 
 #. Steinmann, S. et al. (2019). DAPK1 loss triggers tumor invasion in colorectal tumor cells. **Cell Death & Disease**. https://doi.org/10.1038/s41419-019-2122-z 😞
 
-#. Stålhammar, G. et al. (2019). Expression of immune checkpoint receptors Indoleamine 2,3‐dioxygenase and T cell Ig and ITIM domain in metastatic versus nonmetastatic choroidal melanoma. **Cancer Medicine**. https://doi.org/10.1002/cam4.2167 📗
-
 #. Stålhammar, G. et al. (2019). Digital Image Analysis of BAP-1 Accurately Predicts Uveal Melanoma Metastasis. **Translational Vision Science & Technology**. https://doi.org/10.1167/tvst.8.3.11 📗
+
+#. Stålhammar, G. et al. (2019). Expression of immune checkpoint receptors Indoleamine 2,3‐dioxygenase and T cell Ig and ITIM domain in metastatic versus nonmetastatic choroidal melanoma. **Cancer Medicine**. https://doi.org/10.1002/cam4.2167 📗
 
 #. Suarez-Carmona, M. et al. (2019). CCR5 status and metastatic progression in colorectal cancer. **OncoImmunology**. https://doi.org/10.1080/2162402X.2019.1626193 📗
 
@@ -287,6 +287,6 @@
 
 #. Zúñiga, W. C. et al. (2019). Raman Spectroscopy for Rapid Evaluation of Surgical Margins during Breast Cancer Lumpectomy. **Scientific Reports**. https://doi.org/10.1038/s41598-019-51112-0 😞
 
-#. del-Pozo, J. et al. (2019). Role of ectodysplasin signalling in middle ear and nasal pathology in rat and mouse models of hypohidrotic ectodermal dysplasia. **Disease Models & Mechanisms**. https://doi.org/10.1242/dmm.037804 📗
-
 #. del-Pozo, J. et al. (2019). Chronic otitis media is initiated by a bulla cavitation defect in the FBXO11 mouse model.  **Disease Models & Mechanisms**. https://doi.org/10.1242/dmm.038315 📗
+
+#. del-Pozo, J. et al. (2019). Role of ectodysplasin signalling in middle ear and nasal pathology in rat and mouse models of hypohidrotic ectodermal dysplasia. **Disease Models & Mechanisms**. https://doi.org/10.1242/dmm.037804 📗

@@ -231,9 +231,9 @@
 
 #. Kim, J. H. et al. (2020). Multi-Spheroid-Loaded Human Acellular Dermal Matrix Carrier Preserves Its Spheroid Shape and Improves In Vivo Adipose-Derived Stem Cell Delivery and Engraftment. **Tissue Engineering and Regenerative Medicine**. https://doi.org/10.1007/s13770-020-00252-w 📗
 
-#. Kim, Y. et al. (2020). Protein Expression in Metastatic Melanoma and the Link to Disease Presentation in a Range of Tumor Phenotypes. **Cancers**. https://doi.org/10.3390/cancers12030767 📗
-
 #. Kim, Y. et al. (2020). Identification and Validation of VEGFR2 Kinase as a Target of Voacangine by a Systematic Combination of DARTS and MSI. **Biomolecules**. https://doi.org/10.3390/biom10040508 📗
+
+#. Kim, Y. et al. (2020). Protein Expression in Metastatic Melanoma and the Link to Disease Presentation in a Range of Tumor Phenotypes. **Cancers**. https://doi.org/10.3390/cancers12030767 📗
 
 #. Klümper, N. et al. (2020). Downstream neighbor of SON (DONSON) is associated with unfavorable survival across diverse cancers with oncogenic properties in clear cell renal cell carcinoma. **Translational Oncology**. https://doi.org/10.1016/j.tranon.2020.100844 📗
 
