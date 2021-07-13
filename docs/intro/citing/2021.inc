@@ -1,4 +1,4 @@
-2021 (203)
+2021 (219)
 ==========
 
 #. Affo, S. et al. (2021). Promotion of cholangiocarcinoma growth by diverse cancer-associated fibroblast subpopulations. **Cancer Cell**. https://doi.org/10.1016/j.ccell.2021.03.012 📗
@@ -47,6 +47,8 @@
 
 #. Bortolotti, D. et al. (2021). Late-onset intrauterine growth restriction and HHV-6 infection: A pilot study. **Journal of Medical Virology**. https://doi.org/10.1002/jmv.27138 😞
 
+#. Boucher, Y. et al. (2021). Bevacizumab improves tumor infiltration of mature dendritic cells and effector T-cells in triple-negative breast cancer patients. **npj Precision Oncology**. https://doi.org/10.1038/s41698-021-00197-w 📗
+
 #. Brait, V. H. et al. (2021). Longitudinal hippocampal volumetric changes in mice following brain infarction. **Scientific Reports**. https://doi.org/10.1038/s41598-021-88284-7 📗
 
 #. Budczies, J. et al. (2021). Deciphering the immunosuppressive tumor microenvironment in ALK- and EGFR-positive lung adenocarcinoma. **Cancer Immunology, Immunotherapy** https://doi.org/10.1007/s00262-021-02981-w 😞
@@ -93,6 +95,8 @@
 
 #. Eustace, A. J. et al. (2021). The role of infiltrating lymphocytes in the neo-adjuvant treatment of women with HER2-positive breast cancer. **Breast Cancer Research and Treatment**. https://doi.org/10.1007/s10549-021-06244-1 📗
 
+#. Favre, L. et al. (2021). Idylla MSI test as a new tool for microsatellite instability detection in sebaceous tumours and keratoacanthomas. **Journal of Clinical Pathology**. http://dx.doi.org/10.1136/jclinpath-2021-207606 😞
+
 #. Fetz, A. et al. (2021). Spray coagulation with snare-tip versus argon plasma coagulation: An ex vivo study evaluating tissue effects. **Endoscopy International Open**. https://doi.org/10.1055/a-1373-4162 😞
 
 #. Fischietti, M. et al. (2021). Schlafen 5 as a novel therapeutic target in pancreatic ductal adenocarcinoma. **Oncogene**. https://doi.org/10.1038/s41388-021-01761-1 😞
@@ -114,6 +118,8 @@
 #. Gong, Y. et al. (2021). Age-Associated Proteomic Signatures and Potential Clinically Actionable Targets of Colorectal Cancer. **Molecular & Cellular Proteomics**.  https://doi.org/10.1016/j.mcpro.2021.100115 😞
 
 #. Goubet, A.-G. et al. (2021). Multifaceted modes of action of the anticancer probiotic *Enterococcus hirae*. **Cell Death & Differentiation**. https://doi.org/10.1038/s41418-021-00753-8 📗
+
+#. Govaerts, I. et al. (2021). PSEN1-selective gamma-secretase inhibition in combination with kinase or XPO-1 inhibitors effectively targets T cell acute lymphoblastic leukemia. **Journal of Hematology & Oncology**. https://doi.org/10.1186/s13045-021-01114-1 😞
 
 #. Grisaru-Tal, S. et al. (2021). Primary tumors from mucosal barrier organs drive unique eosinophil infiltration patterns and clinical associations. **OncoImmunology**. https://doi.org/10.1080/2162402X.2020.1859732 📗
 
@@ -161,6 +167,8 @@
 
 #. Junttila, A. et al. (2021). Immune cell score, PD-L1 expression and prognosis in esophageal cancer. **Acta Oncologica**. https://doi.org/10.1080/0284186X.2020.1868571 📗
 
+#. Kallionpää, R. A. et al. (2021). Mast Cells in Human Cutaneous Neurofibromas: Density, Subtypes, and Association with Clinical Features in Neurofibromatosis 1. **Dermatology**. https://doi.org/10.1159/000517011 📗
+
 #. Karnell, J. L. et al. (2021). Depleting plasmacytoid dendritic cells reduces local type I interferon responses and disease activity in patients with cutaneous lupus. **Science Translational Medicine**. https://doi.org/10.1126/scitranslmed.abf8442 😞
 
 #. Kaufmann, J. et al. (2021). Using the R Package Spatstat to Assess Inhibitory Effects of Microregional Hypoxia on the Infiltration of Cancers of the Head and Neck Region by Cytotoxic T Lymphocytes. **Cancers**. https://doi.org/10.3390/cancers13081924 📗
@@ -178,6 +186,8 @@
 #. Kurnit, K. C. et al. (2021). Loss of CD73 shifts transforming growth factor-β1 (TGF-β1) from tumor suppressor to promoter in endometrial cancer. **Cancer Letters**. https://doi.org/10.1016/j.canlet.2021.01.030 📗
 
 #. Kvietkauskas, M. et al. (2021). Dietary Melatonin and Glycine Decrease Tumor Growth through Antiangiogenic Activity in Experimental Colorectal Liver Metastasis. **Nutrients**. https://doi.org/10.3390/nu13062035 📗
+
+#. Kwon, H.-H. et al. (2021). Dual therapeutic targeting of intra-articular inflammation and intracellular bacteria enhances chondroprotection in septic arthritis. **Science Advances**. https://doi.org/10.1126/sciadv.abf2665 📗
 
 #. Kwon, J-T. et al. (2021). An amygdala circuit that suppresses social engagement. **Nature**. https://doi.org/10.1038/s41586-021-03413-6 📗
 
@@ -205,6 +215,8 @@
 
 #. Low, J.-L. et al. (2021). Molecular docking-aided identification of small molecule inhibitors targeting b-catenin-TCF4 interaction. **iScience**. https://doi.org/10.1016/j.isci.2021.102544 📗
 
+#. Lu, Y.-A. et al. (2021). Single-Nucleus RNA Sequencing Identifies New Classes of Proximal Tubular Epithelial Cells in Kidney Fibrosis. **Journal of the American Society of Nephrology**. https://doi-org.ezproxy.is.ed.ac.uk/10.1681/ASN.2020081143 📗
+
 #. Luchicchi, A. et al. (2021). Axon‐myelin unit blistering as early event in MS normal appearing white matter. **Annals of Neurology**. https://doi.org/10.1002/ana.26014 😞
 
 #. López-Martínez, S. et al. (2021). A Natural Xenogeneic Endometrial Extracellular Matrix Hydrogel Toward Improving Current Human *in vitro* Models and Future *in vivo* Applications. **Frontiers in Bioengineering and Biotechnology**. https://doi.org/10.3389/fbioe.2021.639688 📗
@@ -221,6 +233,8 @@
 
 #. McElvain, L. E. et al. (2021). Specific populations of basal ganglia output neurons target distinct brain stem areas while collateralizing throughout the diencephalon. **Neurone**. https://doi.org/10.1016/j.neuron.2021.03.017 📗
 
+#. Meeusen, B. et al. (2021). *PPP2R4* dysfunction promotes *KRAS*-mutant lung adenocarcinoma development and mediates opposite responses to MEK and mTOR inhibition. **Cancer Letters**. https://doi.org/10.1016/j.canlet.2021.06.022 📗
+
 #. Mihola, O. et al. (2021). Rat PRDM9 shapes recombination landscapes, duration of meiosis, gametogenesis, and age of fertility. **BMC Biology**. https://doi.org/10.1186/s12915-021-01017-0 📗
 
 #. Mirra, S. et al. (2021). ARMCX3 Mediates Susceptibility to Hepatic Tumorigenesis Promoted by Dietary Lipotoxicity. **Cancers**. https://doi.org/10.3390/cancers13051110 😞
@@ -234,6 +248,8 @@
 #. Moon, C. S. et al. (2021). *FYN–TRAF3IP2* induces NF-κB signaling-driven peripheral T-cell lymphoma. **Nature Cancer**. https://doi.org/10.1038/s43018-020-00161-w 😞
 
 #. Moore, M. R. et al. (2021). Automated digital TIL analysis (ADTA) adds prognostic value to standard assessment of depth and ulceration in primary melanoma. **Scientific Reports**. https://doi.org/10.1038/s41598-021-82305-1 📗
+
+#. Morabito, S. et al. (2021). Single-nucleus chromatin accessibility and transcriptomic characterization of Alzheimer’s disease. **Nature Genetics**. https://doi.org/10.1038/s41588-021-00894-z 😞
 
 #. Mori, H. et al. (2021). Characterizing the Tumor Immune Microenvironment with Tyramide-Based Multiplex Immunofluorescence. **Journal of Mammary Gland Biology and Neoplasia**. https://doi.org/10.1007/s10911-021-09479-2 📗
 
@@ -259,6 +275,8 @@
 
 #. Niogret, J. et al. (2021). Follicular helper-T cells restore CD8+-dependent antitumor immunity and anti-PD-L1/PD-1 efficacy. **Journal for ImmunoTherapy of Cancer**. http://dx.doi.org/10.1136/jitc-2020-002157 📗
 
+#. Nolan, G. S. et al. (2021). Histological analysis of fat grafting with platelet-rich plasma for diabetic foot ulcers—A randomised controlled trial. **International Wound Journal**. https://doi.org/10.1111/iwj.13640 📗
+
 #. Nortunen, M. et al. (2021). Pathophysiology of reflux oesophagitis: role of Toll-like receptors 2 and 4 and Farnesoid X receptor. **Virchows Archiv**. https://doi.org/10.1007/s00428-021-03066-w 📗
 
 #. Novelli, G. et al. (2021). Inhibition of HECT E3 ligases as potential therapy for COVID-19. **Cell Death & Disease**. https://doi.org/10.1038/s41419-021-03513-1 😞
@@ -272,6 +290,8 @@
 #. Paik, S. et al. (2021). Systematic evaluation of scoring methods for Ki67 as a surrogate for 21-gene recurrence score. **npj Breast Cancer**. https://doi.org/10.1038/s41523-021-00221-z 📗
 
 #. Paradis, J. S. et al. (2021). Synthetic Lethal Screens Reveal Co-Targeting FAK and MEK as a Multimodal Precision Therapy for GNAQ-Driven Uveal Melanoma. **Clinical Cancer Research**. https://doi.org/10.1158/1078-0432.CCR-20-3363 📗
+
+#. Parkes, E. E. et al. (2021). The clinical and molecular significance associated with STING signaling in breast cancer. **npj Breast Cancer**. https://doi.org/10.1038/s41523-021-00283-z 📗
 
 #. Pei, J. et al. (2021). Multi-omics integration identifies key upstream regulators of pathomechanisms in hypertrophic cardiomyopathy due to truncating MYBPC3 mutations. **Clinical Epigenetics**. https://doi.org/10.1186/s13148-021-01043-3 😞
 
@@ -296,6 +316,8 @@
 #. Rogers, R. G. et al. (2021). Cardiosphere-derived cells, with and without a biological scaffold, stimulate myogenesis and recovery of muscle function in mice with volumetric muscle loss. **Biomaterials**. https://doi.org/10.1016/j.biomaterials.2021.120852 😞
 
 #. Rubio, T. et al. (2021). The phosphatase PRL-3 affects intestinal homeostasis by altering the crypt cell composition. **Journal of Molecular Medicine**. https://doi.org/10.1007/s00109-021-02097-9 😞
+
+#. Ruiz, E. J. et al. (2021). JunD, not c-Jun, is the AP-1 transcription factor required for Ras-induced lung cancer. **JCI Insight**. https://doi.org/10.1172/jci.insight.124985 📗
 
 #. Sadras, T. et al. (2021). Developmental partitioning of SYK and ZAP70 prevents autoimmunity and cancer. **Molecular Cell**. https://doi.org/10.1016/j.molcel.2021.03.043 📗
 
@@ -351,6 +373,8 @@
 
 #. Tahkola, K. et al. (2021). Stromal hyaluronan accumulation is associated with low immune response and poor prognosis in pancreatic cancer. **Scientific Reports**. https://doi.org/10.1038/s41598-021-91796-x 📗
 
+#. Tang, Y. et al. (2021). GANDA: A deep generative adversarial network conditionally generates intratumoral nanoparticles distribution pixels-to-pixels. **Journal of Controlled Release**. https://doi.org/10.1016/j.jconrel.2021.06.039 📗
+
 #. Tavernari, D. et al. (2021). Nongenetic Evolution Drives Lung Adenocarcinoma Spatial Heterogeneity and Progression. **Cancer Discovery**. https://doi.org/10.1158/2159-8290.CD-20-1274 📗
 
 #. Trinh, A. et al. (2021). Genomic Alterations during the *In Situ* to Invasive Ductal Breast Carcinoma Transition Shaped by the Immune System. **Molecular Cancer Research**. https://doi.org/10.1158/1541-7786.MCR-20-0949 📗
@@ -364,6 +388,8 @@
 #. Vankerckhoven, A. et al. (2021). Type of chemotherapy has substantial effects on the immune system in ovarian cancer. **Translational Oncology**. https://doi.org/10.1016/j.tranon.2021.101076 📗
 
 #. Varese, A. et al. (2021). Extracellular acidosis enhances Zika virus infection both in human cells and ex vivo tissue cultures from female reproductive tract. **Emerging Microbes & Infections**. https://doi.org/10.1080/22221751.2021.1932606 😞
+
+#. Victoor, J. et al. (2021). Comprehensive immunomolecular profiling of endometrial carcinoma: A tertiary retrospective study. **Gynecologic Oncology**. https://doi.org/10.1016/j.ygyno.2021.06.030 📗
 
 #. Vishnyakova, P. et al. (2021). Preeclampsia: inflammatory signature of decidual cells in early manifestation of disease. **Placenta**. https://doi.org/10.1016/j.placenta.2021.01.011 📗
 
@@ -382,6 +408,10 @@
 #. Wei, S. C. et al. (2021). A Genetic Mouse Model Recapitulates Immune Checkpoint Inhibitor-Associated Myocarditis and Supports a Mechanism-Based Therapeutic Intervention. **Cancer Discovery**. https://doi.org/10.1158/2159-8290.cd-20-0856 📗
 
 #. Weiner, A. B. et al. (2021). Plasma cells are enriched in localized prostate cancer in Black men and are associated with improved outcomes. **Nature Communications**. https://doi.org/10.1038/s41467-021-21245-w 📗
+
+#. Werner, F. et al. (2021). A Standardized Analysis of Tertiary Lymphoid Structures in Human Melanoma: Disease Progression- and Tumor Site-Associated Changes With Germinal Center Alteration. **Frontiers in Immunology**. https://doi.org/10.3389/fimmu.2021.675146 📗
+
+#. Williams, A. et al. (2021). Higher Number of EBI3 Cells in Mucosal Chronic Hyperplastic Candidiasis May Serve to Regulate IL-17-Producing Cells. **Journal of Fungi**. https://doi.org/10.3390/jof7070533 📗
 
 #. Wingerter, A. et al. (2021). Exploiting Gangliosides for the Therapy of Ewing’s Sarcoma and H3K27M-Mutant Diffuse Midline Glioma. **Cancers**. https://doi.org/10.3390/cancers13030520 📗
 
@@ -402,6 +432,8 @@
 #. Zhou, J. et al. (2021). Orphan nuclear receptor TLX promotes immunosuppression via its transcriptional activation of PD-L1 in glioma. **Journal for ImmunoTherapy of Cancer**. http://dx.doi.org/10.1136/jitc-2020-001937 😞
 
 #. Zoupi, L. et al. (2021). Selective vulnerability of inhibitory networks in multiple sclerosis. **Acta Neuropathologica**. https://doi.org/10.1007/s00401-020-02258-z 📗
+
+#. de Andrea, C. E. et al. (2021). Heterogenous presence of Neutrophil Extracellular Traps in human solid tumours is partially dependent on Interleukin-8. **Journal of Pathology**. https://doi.org/10.1002/path.5753 😞
 
 #. van Neeren, S. M. et al. (2021). _Apc_-mutant cells act as supercompetitors in intestinal tumour initiation. **Nature**. https://doi.org/10.1038/s41586-021-03558-4 📗
 
