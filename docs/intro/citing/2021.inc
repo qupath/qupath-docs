@@ -1,4 +1,4 @@
-2021 (238)
+2021 (243)
 ==========
 
 #. Affo, S. et al. (2021). Promotion of cholangiocarcinoma growth by diverse cancer-associated fibroblast subpopulations. **Cancer Cell**. https://doi.org/10.1016/j.ccell.2021.03.012 📗
@@ -55,6 +55,8 @@
 
 #. Brait, V. H. et al. (2021). Longitudinal hippocampal volumetric changes in mice following brain infarction. **Scientific Reports**. https://doi.org/10.1038/s41598-021-88284-7 📗
 
+#. Brinker, T. J. et al. (2021). Deep learning approach to predict sentinel lymph node status directly from routine histology of primary melanoma tumours. **European Journal of Cancer**. https://doi.org/10.1016/j.ejca.2021.05.026 📗
+
 #. Brück, O. et al. (2021). Spatial immunoprofiling of the intratumoral and peritumoral tissue of renal cell carcinoma patients. **Modern Pathology**. https://doi.org/10.1038/s41379-021-00864-0 📗
 
 #. Budczies, J. et al. (2021). Deciphering the immunosuppressive tumor microenvironment in ALK- and EGFR-positive lung adenocarcinoma. **Cancer Immunology, Immunotherapy** https://doi.org/10.1007/s00262-021-02981-w 😞
@@ -98,6 +100,8 @@
 #. Ding, J. J. et al. (2021). Vagus nerve stimulation does not alter brainstem nuclei morphology in patients with refractory epilepsy. **Epilepsy & Behavior**. https://doi.org/10.1016/j.yebeh.2021.107940 📗
 
 #. Dittmayer, C. et al. (2021). Preparation of Samples for Large-Scale Automated Electron Microscopy of Tissue and Cell Ultrastructure. **Microscopy and Microanalysis**. https://doi.org/10.1017/S1431927621011958 📗
+
+#. Duan, K. et al. (2021). The value of GATA6 immunohistochemistry and computer-assisted diagnosis to predict clinical outcome in advanced pancreatic cancer. **Scientific Reports**. https://doi.org/10.1038/s41598-021-94544-3 📗
 
 #. Duran, J. et al. (2021). Astrocytic glycogen accumulation drives the pathophysiology of neurodegeneration in Lafora disease. **Brain**. https://doi.org/10.1093/brain/awab110 📗
 
@@ -166,6 +170,8 @@
 #. Holzgreve, A. et al. (2021). PSMA Expression in Glioblastoma as a Basis for Theranostic Approaches: A Retrospective, Correlational Panel Study Including Immunohistochemistry, Clinical Parameters and PET Imaging. **Frontiers in Oncology**. https://doi.org/10.3389/fonc.2021.646387 📗
 
 #. Hong, L. et al. (2021). Multi-omics reveals a relationship between endometrial amino acid metabolism and autophagy in women with recurrent miscarriage. **Biology of Reproduction**. https://doi.org/10.1093/biolre/ioab101 😞
+
+#. Howard, F. M. et al. (2021). The impact of site-specific digital histology signatures on deep learning model accuracy and bias. **Nature Communications**. https://doi.org/10.1038/s41467-021-24698-1 😞
 
 #. Hu, Z. et al. (2021). The Oxford Classic Links Epithelial-to-Mesenchymal Transition to Immunosuppression in Poor Prognosis Ovarian Cancers. **Clinical Cancer Research**. https://doi.org/10.1158/1078-0432.CCR-20-2782 📗
 
@@ -240,6 +246,8 @@
 #. Lu, Y.-A. et al. (2021). Single-Nucleus RNA Sequencing Identifies New Classes of Proximal Tubular Epithelial Cells in Kidney Fibrosis. **Journal of the American Society of Nephrology**. https://doi-org.ezproxy.is.ed.ac.uk/10.1681/ASN.2020081143 📗
 
 #. Luchicchi, A. et al. (2021). Axon‐myelin unit blistering as early event in MS normal appearing white matter. **Annals of Neurology**. https://doi.org/10.1002/ana.26014 😞
+
+#. Luo, X. et al. (2021). IL-23/IL-17A/TRPV1 axis produces mechanical pain via macrophage-sensory neuron crosstalk in female mice. **Neuron**. https://doi.org/10.1016/j.neuron.2021.06.015 😞
 
 #. López-Martínez, S. et al. (2021). A Natural Xenogeneic Endometrial Extracellular Matrix Hydrogel Toward Improving Current Human *in vitro* Models and Future *in vivo* Applications. **Frontiers in Bioengineering and Biotechnology**. https://doi.org/10.3389/fbioe.2021.639688 📗
 
@@ -408,6 +416,8 @@
 #. Tran, V.-L. et al. (2021). Quantitative Tissue Pharmacokinetics and EPR Effect of AGuIX Nanoparticles: A Multimodal Imaging Study in an Orthotopic Glioblastoma Rat Model and Healthy Macaque. **Advanced Healthcare Materials**. https://doi.org/10.1002/adhm.202100656 😞
 
 #. Trinh, A. et al. (2021). Genomic Alterations during the *In Situ* to Invasive Ductal Breast Carcinoma Transition Shaped by the Immune System. **Molecular Cancer Research**. https://doi.org/10.1158/1541-7786.MCR-20-0949 📗
+
+#. Tulotta, C. et al. (2021). IL-1B drives opposing responses in primary tumours and bone metastases; harnessing combination therapies to improve outcome in breast cancer. **npj Breast Cancer**. https://doi.org/10.1038/s41523-021-00305-w 📗
 
 #. Van Hove, L. et al. (2021). Fibrotic enzymes modulate wound‐induced skin tumorigenesis. **EMBO Reports**. https://doi.org/10.15252/embr.202051573 😞
 
