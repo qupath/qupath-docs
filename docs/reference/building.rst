@@ -87,6 +87,37 @@ Note that for this to work on Windows you'll need to install `WIX Toolset`_.
 .. _WIX Toolset: https://wixtoolset.org/
 
 
+.. _building-gpu:
+
+Adding GPU support
+------------------
+
+A common question is whether QuPath uses a GPU to accelerate processing.
+The answer, currently, is 'no'.
+
+However, it is possible to build QuPath with support for CUDA via OpenCV and JavaCPP by using the `-Pcuda` or `-Pcuda-redist` options.
+
+.. tabbed:: Windows
+
+   .. code-block:: bash
+   
+     gradlew clean jpackage -Pcuda-redist
+     
+.. tabbed:: Linux
+
+  .. code-block:: bash
+  
+    ./gradlew clean jpackage -Pcuda-redist
+
+You should use `-Pcuda` if you want to use your own CUDA installation (which needs to be the correct version to match JavaCPP's OpenCV distribution), and `-Pcuda-redist` if you want to download the necessary files automatically.
+Before doing so you should check out the licensing terms for CUDA at https://github.com/bytedeco/javacpp-presets/tree/master/cuda
+
+Two important things to note are:
+
+- This only works on Windows or Linux with recent NVIDIA GPUs and drivers
+- Currently, only :ref:`StarDist` is likely to see any benefit
+
+
 Building a specific version
 ---------------------------
 
