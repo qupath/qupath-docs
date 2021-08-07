@@ -76,13 +76,13 @@ Detecting nuclei
 QuPath's current early StarDist support is **only available by scripting** and is rather limited in terms of reporting progress.
 You can run it and... wait.
 
-The following script applies the *he_heavy_augment* StarDist model to a brightfield H&E image:
+The following script applies the *he_heavy_augment.pb* StarDist model to a brightfield H&E image:
 
 .. code-block:: groovy
   
   import qupath.ext.stardist.StarDist2D
 
-  // Specify the model directory (you will need to change this!)
+  // Specify the model file (you will need to change this!)
   var pathModel = '/path/to/he_heavy_augment.pb'
   
   var stardist = StarDist2D.builder(pathModel)
@@ -113,16 +113,16 @@ The following script applies the *he_heavy_augment* StarDist model to a brightfi
   You can copy the model directory outside QuPath (e.g. in Windows Explorer, Mac Finder) and then paste it in the script editor.
   QuPath will paste in the path to the directory.
   
-  Be sure to keep the quotation marks around the path!
+  If you do this, make sure to add quotation marks around the path!
 
 
-The following script applies the *dsb2018_heavy_augment* model to the DAPI channel of a fluorescence image:
+The following script applies the *dsb2018_heavy_augment.pb* model to the DAPI channel of a fluorescence image:
 
 .. code-block:: groovy
   
   import qupath.ext.stardist.StarDist2D
 
-  // Specify the model directory (you will need to change this!)
+  // Specify the model file (you will need to change this!)
   var pathModel = '/path/to/dsb2018_heavy_augment.pb'
 
   var stardist = StarDist2D.builder(pathModel)
@@ -165,7 +165,7 @@ One of the most important options is the ``pixelSize``, which is defined in term
 QuPath will automatically rescale the image as required before input to the model.
 
 The 'best' value will depend upon the resolution of the images used to train the StarDist model.
-You can experiment with different values.
+You may need to experiment with different values.
 
 .. tip::
   
@@ -181,7 +181,7 @@ Another customization is to include the probability estimates as measurements fo
   
   import qupath.ext.stardist.StarDist2D
 
-  // Specify the model directory (you will need to change this!)
+  // Specify the model file (you will need to change this!)
   var pathModel = '/path/to/he_heavy_augment.pb'
 
   var stardist = StarDist2D.builder(pathModel)
@@ -230,7 +230,7 @@ A similar distance-based expansion can also be used with StarDist, with optional
 
   import qupath.ext.stardist.StarDist2D
 
-  // Specify the model directory (you will need to change this!)
+  // Specify the model file (you will need to change this!)
   var pathModel = '/path/to/dsb2018_heavy_augment.pb'
 
   var stardist = StarDist2D.builder(pathModel)
@@ -263,7 +263,7 @@ A similar distance-based expansion can also be used with StarDist, with optional
 
   StarDist + QuPath cell detection and measurement
 
-StarDist stops after nuclei have been detected; everything after that is 'pure QuPath'.
+StarDist stops after nuclei have been detected; everything after that is specific to QuPath.
 
 Nevertheless, the script above provides access to some additional features not (currently) available in QuPath's default cell detection.
 These include:
