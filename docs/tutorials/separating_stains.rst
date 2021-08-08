@@ -206,11 +206,11 @@ If not, click :guilabel:`No`.
   :width: 60%
 
 Check scatterplots
-^^^^^^^^^^^^^^^^^^6
+^^^^^^^^^^^^^^^^^^
 
-QuPath now builds scatterplots to help view the regionships between the red, green and blue values for each pixel.
+QuPath now builds scatterplots to help view the relationships between the red, green and blue values for each pixel.
 
-Because it's quite hard to work with a 3D scatterplot, QuPath shows this in the form of three separate 2D scatterplots, systematically showing each color plotted against one of the others.
+Because it's quite hard to work with a 3D scatterplot, QuPath shows this information in the form of three separate 2D scatterplots, systematically showing each color plotted against one of the others.
 
 Additionally, QuPath draws colored lines to indicate the existing stain vectors.
 
