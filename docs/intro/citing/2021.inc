@@ -1,4 +1,4 @@
-2021 (283)
+2021 (289)
 ==========
 
 #. Affo, S. et al. (2021). Promotion of cholangiocarcinoma growth by diverse cancer-associated fibroblast subpopulations. **Cancer Cell**. https://doi.org/10.1016/j.ccell.2021.03.012 📗
@@ -28,6 +28,8 @@
 #. Aung, T. N. et al. (2021). A new tool for technical standardization of the Ki67 immunohistochemical assay. **Modern Pathology**. https://doi.org/10.1038/s41379-021-00745-6 📗
 
 #. Avgustinova, A. et al. (2021). Repression of endogenous retroviruses prevents antiviral immune response and is required for mammary gland development. **Cell Stem Cell**. https://doi.org/10.1016/j.stem.2021.04.030 📗
+
+#. Aziz, D. et al. (2021). Synergistic targeting of BRCA1 mutated breast cancers with PARP and CDK2 inhibition. **npj Breast Cancer**. https://doi.org/10.1038/s41523-021-00312-x 📗
 
 #. Babak, M. V. et al. (2021). Interfering with metabolic profile of triple-negative breast cancers using rationally-designed metformin prodrugs. **Angewandte Chemie**. https://doi.org/10.1002/anie.202102266 😞
 
@@ -114,6 +116,8 @@
 #. Duan, K. et al. (2021). The value of GATA6 immunohistochemistry and computer-assisted diagnosis to predict clinical outcome in advanced pancreatic cancer. **Scientific Reports**. https://doi.org/10.1038/s41598-021-94544-3 📗
 
 #. Duran, J. et al. (2021). Astrocytic glycogen accumulation drives the pathophysiology of neurodegeneration in Lafora disease. **Brain**. https://doi.org/10.1093/brain/awab110 📗
+
+#. Ebrahim, H. A. et al. (2021). Renovation of Intestinal Barrier by Polydatin in Experimentally Induced Ulcerative Colitis: Comparative Ultrastructural Study with L-Carnosine. **Cells Tissues Organs**. https://doi.org/10.1159/000516191 📗
 
 #. Ember, K. J. I. et al. (2021). Non‐invasive detection of ischemic vascular damage in a pig model of liver donation after circulatory death. **Hepatology**. https://doi.org/10.1002/hep.31701 📗
 
@@ -279,9 +283,9 @@
 
 #. Lu, Y.-A. et al. (2021). Single-Nucleus RNA Sequencing Identifies New Classes of Proximal Tubular Epithelial Cells in Kidney Fibrosis. **Journal of the American Society of Nephrology**. https://doi-org.ezproxy.is.ed.ac.uk/10.1681/ASN.2020081143 📗
 
-#. Luo, X. et al. (2021). IL-23/IL-17A/TRPV1 axis produces mechanical pain via macrophage-sensory neuron crosstalk in female mice. **Neuron**. https://doi.org/10.1016/j.neuron.2021.06.015 😞
-
 #. Luchicchi, A. et al. (2021). Axon‐myelin unit blistering as early event in MS normal appearing white matter. **Annals of Neurology**. https://doi.org/10.1002/ana.26014 😞
+
+#. Luo, X. et al. (2021). IL-23/IL-17A/TRPV1 axis produces mechanical pain via macrophage-sensory neuron crosstalk in female mice. **Neuron**. https://doi.org/10.1016/j.neuron.2021.06.015 😞
 
 #. López-Martínez, S. et al. (2021). A Natural Xenogeneic Endometrial Extracellular Matrix Hydrogel Toward Improving Current Human *in vitro* Models and Future *in vivo* Applications. **Frontiers in Bioengineering and Biotechnology**. https://doi.org/10.3389/fbioe.2021.639688 📗
 
@@ -290,6 +294,8 @@
 #. Ma, L. et al. (2021). Epithelial-to-mesenchymal transition contributes to the downregulation of progesterone receptor expression in endometriosis lesions. **The Journal of Steroid Biochemistry and Molecular Biology**. https://doi.org/10.1016/j.jsbmb.2021.105943 😞
 
 #. Mahbod, A. et al. (2021). CryoNuSeg: A dataset for nuclei instance segmentation of cryosectioned H&E-stained histological images. **Computers in Biology and Medicine**. https://doi.org/10.1016/j.compbiomed.2021.104349 😞
+
+#. Marti, J. L. G. et al. (2021). Atorvastatin facilitates chemotherapy effects in metastatic triple-negative breast cancer. **British Journal of Cancer**. https://doi.org/10.1038/s41416-021-01529-0 😞
 
 #. Martin, L. et al. (2021). Induction of contralateral hepatic hypertrophy by unilobar 90Y transarterial radioembolization vs. portal vein embolization: an animal study. **Journal of Vascular and Interventional Radiology**. https://doi.org/10.1016/j.jvir.2021.01.281 😞
 
@@ -386,6 +392,8 @@
 #. Peixoto-Santos, J. E. et al. (2021). Neuropathology of the 21th century for the Latin American epilepsy community. **Seizure**. https://doi.org/10.1016/j.seizure.2021.02.003 📗
 
 #. Pennanen, P. et al. (2021). Signaling pathways in human osteoclasts differentiation: ERK1/2 as a key player. **Molecular Biology Reports**. https://doi.org/10.1007/s11033-020-06128-5 📗
+
+#. Perez, S. M. et al. (2021). A Novel Monoclonal Antibody Targeting Cancer-Specific Plectin Has Potent Antitumor Activity in Ovarian Cancer. **Cells*. https://doi.org/10.3390/ cells10092218 📗
 
 #. Peterson, C. et al. (2021). Induction of the integrated stress response in the rat cornea. **Experimental Eye Research**. https://doi.org/10.1016/j.exer.2021.108722 📗
 
@@ -493,6 +501,8 @@
 
 #. Tulotta, C. et al. (2021). IL-1B drives opposing responses in primary tumours and bone metastases; harnessing combination therapies to improve outcome in breast cancer. **npj Breast Cancer**. https://doi.org/10.1038/s41523-021-00305-w 📗
 
+#. Ung, K. et al. (2021). Olfactory bulb astrocytes mediate sensory circuit processing through Sox9 in the mouse brain. **Nature Communications**. https://doi.org/10.1038/s41467-021-25444-3 📗
+
 #. Van Hove, L. et al. (2021). Fibrotic enzymes modulate wound‐induced skin tumorigenesis. **EMBO Reports**. https://doi.org/10.15252/embr.202051573 😞
 
 #. Van Neerven, S. M. et al. (2021). _Apc_-mutant cells act as supercompetitors in intestinal tumour initiation. **Nature**. https://doi.org/10.1038/s41586-021-03558-4 📗
@@ -540,6 +550,8 @@
 #. Witkowski, M. et al. (2021). Vascular endothelial tissue factor contributes to trimethylamine N-oxide-enhanced arterial thrombosis. **Cardiovascular Research**. https://doi.org/10.1093/cvr/cvab263 📗
 
 #. Won, J-S. et al. (2021). Optimal Preclinical Conditions for Using Adult Human Multipotent Neural Cells in the Treatment of Spinal Cord Injury. **International Journal of Molecular Sciences**. https://doi.org/10.3390/ijms22052579 📗
+
+#. Wu, D. et al. (2021). Superpixel image segmentation of VISTA expression in colorectal cancer and its relationship to the tumoral microenvironment. **Scientific Reports**. https://doi.org/10.1038/s41598-021-96417-1 📗
 
 #. Xia, Y. et al. (2021). Immune and repair responses in joint tissues and lymphnodes after knee arthroplasty surgery in mice. **Journal of Bone and Mineral Research**. https://doi.org/10.1002/jbmr.4381 📗
 
