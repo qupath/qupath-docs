@@ -7,9 +7,9 @@ This page contains answers to common questions that arise when using QuPath.
 .. tip::
 
   See :doc:`../starting/help` for a full list of places to get help with QuPath.
-  
+
 .. admonition:: Even more questions & answers
-  
+
   For a more extensive list of questions gathered during the NEUBIAS Academy webinar in April 2020, see `this thread on image.sc <https://forum.image.sc/t/neubias-academy-home-webinar-quantitative-pathology-bioimage-analysis-qupath-questions-answers/37387>`_.
 
 
@@ -131,11 +131,19 @@ Things that require a lot of memory include:
 * Working with large, non-pyramidal images
 * Working with z-stacks of whole slide images
 
+What specification of computer should I buy to use QuPath?
+==========================================================
+
+We don't have any particular recommendation, but if you want to get into the details then `this forum discussion <https://forum.image.sc/t/designing-a-qupath-workstation/54849>`_ could be of interest to you.
+
+
 Does QuPath use my graphic card (GPU)?
 ======================================
 
 Generally no... our current focus is the stability and functionality – and finding efficient ways to do things that don’t require any particular hardware.
+
 But we realise that will have limits and we are certainly also thinking about GPUs.
+There is some info about adding GPU support for specific cases in :ref:`building-gpu`.
 
 However, note that many bottlenecks depend upon things that cannot be solved by the GPU alone (e.g. reading image tiles, the user interface thread).
 Therefore the real-world impact on performance may be quite modest for many applications.
@@ -165,7 +173,7 @@ The default is to use 50% of available memory, specified under `JavaOptions`:
 .. code-block:: bash
 
   [JavaOptions]
-  -XX:MaxRAMPercentage=50
+  java-options=-XX:MaxRAMPercentage=50
 
 
 You can change this to a fixed maximum size via the `-Xmx` Java option, e.g. to give 12 GB use:
@@ -173,10 +181,10 @@ You can change this to a fixed maximum size via the `-Xmx` Java option, e.g. to 
 .. code-block:: bash
 
   [JavaOptions]
-  -Xmx12G
-  
+  java-options=-Xmx12G
+
 .. tip::
-  
+
   On a Mac, you'll need to right-click on *QuPath.app* and choose :menuselection:`Show package contents`. |br|
   The config file is inside the *Contents/app* directory.
 
@@ -276,17 +284,6 @@ The reason for this is usually that it a) isn't considered terribly useful, or b
 Removing old commands helps make QuPath more maintainable, and creates space for new features to be added without the menus becoming excessively clogged up.
 
 If you find a command you particularly need has been marked as deprecated, feel free to ask on the forum why and discuss its future.
-
-
-Why can I not rotate my image more than 90 degrees?
-===================================================
-
-:menuselection:`View --> Rotate image` allows you to rotate an image but *only for display*. This means that all coordinates assume the image origin is still at the top left at the original orientation.
-
-A common reason for wanting to change the rotation by more than 90 degrees is because a slide may have been scanned at the 'wrong' orientation.
-:menuselection:`View --> Rotate image` should *not* be used in this case - what is really required is for QuPath to treat the image entirely as if it has been rotated, with coordinates adjusted accordingly.
-
-There is another trick available for this...
 👇
 
 My image has the wrong orientation. How can I fix it?
@@ -328,13 +325,10 @@ Currently, you can only `view the consecutive sections side-by-side <https://git
 Scripting & development
 =======================
 
-Where are the QuPath javadocs?
-==============================
+Where are the QuPath's API docs?
+================================
 
-At the time of writing, QuPath's javadocs aren't hosted anywhere - but it is planned to put them online at some point once they have been cleaned up accordingly.
-See `here <https://github.com/qupath/qupath/issues/230>`__ for the request.
-
-In the meantime, check out :doc:`building` for instructions how to build QuPath, which includes javadocs.
+You can find them at http://qupath.github.io/javadoc/docs/
 
 
 How do I read a *.qpdata* file in Python/C++/R?
