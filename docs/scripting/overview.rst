@@ -18,6 +18,11 @@ This section provides an overview of some of the main ideas needed to start writ
 It is based initially on `this blog post <https://petebankhead.github.io/qupath/2019/08/21/scripting-in-v020.html>`_ but should be kept updated as QuPath develops.
 It assumes you are familiar with the main :doc:`QuPath concepts <../concepts/index>`.
 
+.. admonition:: API docs
+  :class: tip
+
+  You can find QuPath's API docs at http://qupath.github.io/javadoc/docs/
+
 
 Default imports
 ===============
