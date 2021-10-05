@@ -121,7 +121,7 @@ If only two stains are present, a third 'residual' stain is generated.
 
 .. tip::
   
-  Gabriel Landini has also provided a very useful ImageJ plugin to implement color deconvolution, and has written a description of the uses (and abuses) of the technique at https://blog.bham.ac.uk/intellimic/g-landini-software/colour-deconvolution/
+  Gabriel Landini has also provided a very useful ImageJ plugin to implement color deconvolution, and has written a description of the uses (and abuses) of the technique at https://blog.bham.ac.uk/intellimic/g-landini-software/colour-deconvolution-2/
   
   This is **highly** recommended reading, particularly as a warning against over-interpreting measurements made from DAB staining.  
 
