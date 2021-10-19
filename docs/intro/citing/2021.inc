@@ -1,4 +1,4 @@
-2021 (342)
+2021 (345)
 ==========
 
 #. Aboulgheit, A. et al. (2021). Lactobacillus plantarum Probiotic Induces Nrf2-mediated Antioxidant Signaling and eNOS Expression Resulting in Improvement of Myocardial Diastolic Function. **American Journal of Physiology-Heart and Circulatory Physiology**. https://doi.org/10.1152/ajpheart.00278.2021 📗
@@ -105,6 +105,8 @@
 
 #. Coleman, D. M. et al. (2021). Molecular genetic evaluation of Pediatric Renovascular hypertension due to renal artery stenosis and abdominal aortic Coarctation in Neurofibromatosis type 1. **Human Molecular Genetics**. https://doi.org/10.1093/hmg/ddab241 😞
 
+#. Collin, A. M. et al. (2021). Loss of ciliated cells and altered airway epithelial integrity in cystic fibrosis. **Journal of Cystic Fibrosis**. https://doi.org/10.1016/j.jcf.2021.09.019 😞
+
 #. Conforti, A. et al. (2021). COVID-eVax, an electroporated DNA vaccine candidate encoding the SARS-CoV-2 RBD, elicits protective responses in animal models. **Molecular Therapy**. https://doi.org/10.1016/j.ymthe.2021.09.011 😞 
 
 #. Consonni, F. M. et al. (2021). Heme catabolism by tumor-associated macrophages controls metastasis formation. **Nature Immunology**. https://doi.org/10.1038/s41590-021-00921-5 😞
@@ -140,6 +142,8 @@
 #. Duan, K. et al. (2021). The value of GATA6 immunohistochemistry and computer-assisted diagnosis to predict clinical outcome in advanced pancreatic cancer. **Scientific Reports**. https://doi.org/10.1038/s41598-021-94544-3 📗
 
 #. Duran, J. et al. (2021). Astrocytic glycogen accumulation drives the pathophysiology of neurodegeneration in Lafora disease. **Brain**. https://doi.org/10.1093/brain/awab110 📗
+
+#. Dénes, L. et al. (2021). In Situ Hybridization of PRRSV-1 Combined with Digital Image Analysis in Lung Tissues of Pigs Challenged with PRRSV-1. **Veterinary Sciences**. https://doi.org/10.3390/vetsci8100235 📗
 
 #. Ebrahim, H. A. et al. (2021). Renovation of Intestinal Barrier by Polydatin in Experimentally Induced Ulcerative Colitis: Comparative Ultrastructural Study with L-Carnosine. **Cells Tissues Organs**. https://doi.org/10.1159/000516191 📗
 
@@ -288,6 +292,8 @@
 #. Kay, J. E. et al. (2021). Excision of mutagenic replication-blocking lesions suppresses cancer but promotes cytotoxicity and lethality in nitrosamine-exposed mice. **Cell Reports**. https://doi.org/10.1016/j.celrep.2021.108864 📗
 
 #. Kazdal, D. et al. (2021). Conventional and semi-automatic histopathological analysis of tumor cell content for multigene sequencing of lung adenocarcinoma. **Translational Lung Cancer Research**. https://doi.org/10.21037/tlcr-20-1168 📗
+
+#. Kemmerer, C. L. et al. (2021). Cerebrospinal fluid cytokine levels are associated with macrophage infiltration into tumor tissues of glioma patients. **BMC Cancer**. https://doi.org/10.1186/s12885-021-08825-1 😞
 
 #. Kerselidou, D. et al. (2021). Alternative glycosylation controls endoplasmic reticulum dynamics and tubular extension in mammalian cells. **Science Advances**. https://doi.org/10.1126/sciadv.abe8349 😞
 
