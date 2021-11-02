@@ -94,7 +94,7 @@ To query a file on the OMERO server, one can also access the 'Advanced...' featu
 Send objects back to your OMERO server
 ======================================
 
-When working on an image from a remote OMERO server, QuPath can send annotations and detections back to the OMERO server. To do so, select the objects that you want to send back on your image, then click :menuselection:`OMERO --> Send selection to OMERO server` and confirm the operation.
+When working on an image from a remote OMERO server, QuPath can send annotations back to the OMERO server. To do so, select the annotations on your image that you want to send back, then click :menuselection:`OMERO --> Send annotations to OMERO` and confirm the operation.
 
 As the object classes between OMERO and QuPath are different, some information might be ignored/lost. For instance, all QuPath objects (**annotation** and **detection** objects) will be represented as OMERO **ROIs** when sent back.
 
@@ -115,6 +115,13 @@ As the object classes between OMERO and QuPath are different, some information m
    :width: 100%
    :class: shadow-image
 
+.. TIP::
+  You can also send objects (**annotations** and/or **detections**) to OMERO via scripting with the following commands:
+
+  .. code-block:: groovy
+
+    import qupath.lib.images.servers.omero.OmeroTools
+    OmeroTools.writePathObjects(getSelectedObjects(), getCurrentServer())
 
 
 Managing OMERO clients
