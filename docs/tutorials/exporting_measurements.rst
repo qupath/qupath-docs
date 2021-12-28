@@ -13,7 +13,7 @@ There are 3 different ways to export measurements within QuPath, via:
 Which one to use is up to you and depends on what you want to do.
 
 .. note::
-
+  
   As a rule of thumb, if you have:
 
   * **a single image**: use the measurement table
@@ -22,7 +22,7 @@ Which one to use is up to you and depends on what you want to do.
 ============
 Step-by-step
 ============
-
+  
 Via the measurement table
 =========================
 
@@ -43,7 +43,7 @@ After choosing the objects you wish to export (e.g. detections, annotations), a 
 You can then save your measurement by pressing **Save** and choosing an appropriate name for your output ``.txt`` file.
 
 .. note::
-
+  
   This method creates a table with different columns, which all depend on the objects (and measurements) present in your image.
 
   If your analysis involves combining measurements from different images, it is recommended to use the Measurement Exporter, detailed in the next subsection.
@@ -127,7 +127,6 @@ The following script demonstrates a standard pipeline for exporting cell measure
                     .separator(separator)                 // Character that separates values
                     .includeOnlyColumns(columnsToInclude) // Columns are case-sensitive
                     .exportType(exportType)               // Type of objects to export
-                    .filter(obj -> obj.getPathClass() == getPathClass("Tumor"))    // Keep only objects with class 'Tumor'
                     .exportMeasurements(outputFile)        // Start the export process
 
   print "Done!"
