@@ -65,3 +65,9 @@
 
 .. |icon_extract_image| image:: ../images/icons/Extract_image.png
   :class: inline-icon
+
+.. |icon_view_record_start| image:: ../images/icons/Start_view_recording.png
+  :class: inline-icon
+
+.. |icon_view_record_stop| image:: ../images/icons/Stop_view_recording.png
+  :class: inline-icon
