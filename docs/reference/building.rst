@@ -19,7 +19,7 @@ If you're moderately comfortable working from a command line, there's not much r
 
 1. Install git, e.g. from https://git-scm.com
 
-2. Install OpenJDK 16, e.g. from https://adoptopenjdk.net
+2. Install OpenJDK 16, e.g. from https://adoptium.net/temurin/releases
 
 3. Open a command prompt in an empty directory and run the following:
 
