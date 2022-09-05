@@ -254,7 +254,7 @@ You can then user the classifier to make fine-grained measurements within these 
 
 
 Handling variation
-******************
+==================
 
 Variation represents probably the biggest challenge to applying image analysis and machine learning in practice.
 
