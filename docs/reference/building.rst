@@ -19,25 +19,27 @@ If you're moderately comfortable working from a command line, there's not much r
 
 1. Install git, e.g. from https://git-scm.com
 
-2. Install OpenJDK 16, e.g. from https://adoptopenjdk.net
+2. Install OpenJDK 17, e.g. from `adoptium.net <https://adoptium.net/en-GB/temurin/releases/?version=17>`__
 
 3. Open a command prompt in an empty directory and run the following:
 
-.. tabbed:: Windows
+.. tab-set::
 
-   .. code-block:: bash
-   
-     git clone https://github.com/qupath/qupath
-     cd qupath
-     gradlew clean jpackage
+  .. tab-item:: Windows
+
+     .. code-block:: bash
      
-.. tabbed:: macOS/Linux
+       git clone https://github.com/qupath/qupath
+       cd qupath
+       gradlew clean jpackage
+       
+  .. tab-item:: macOS/Linux
 
-  .. code-block:: bash
-  
-    git clone https://github.com/qupath/qupath
-    cd qupath
-    ./gradlew clean jpackage
+    .. code-block:: bash
+    
+      git clone https://github.com/qupath/qupath
+      cd qupath
+      ./gradlew clean jpackage
           
 It will take a few minutes to download everything required and build the software.
 If all goes well, you should see a triumphant message that the build was successful.
@@ -69,17 +71,19 @@ Creating installers
 
 If you need to create an installer for QuPath, you can use
 
-.. tabbed:: Windows
+.. tab-set::
 
-   .. code-block:: bash
-   
-     gradlew clean jpackage -P package=installer
+  .. tab-item:: Windows
+
+     .. code-block:: bash
      
-.. tabbed:: macOS/Linux
+       gradlew clean jpackage -P package=installer
+       
+  .. tab-item:: macOS/Linux
 
-  .. code-block:: bash
-  
-    ./gradlew clean jpackage -P package=installer
+    .. code-block:: bash
+    
+      ./gradlew clean jpackage -P package=installer
     
 
 Note that for this to work on Windows you'll need to install `WIX Toolset`_.
@@ -97,17 +101,19 @@ The answer, currently, is 'no'.
 
 However, it is possible to build QuPath with support for CUDA via OpenCV and JavaCPP by using the `-Pcuda` or `-Pcuda-redist` options.
 
-.. tabbed:: Windows
+.. tab-set::
 
-   .. code-block:: bash
-   
-     gradlew clean jpackage -Pcuda-redist
+  .. tab-item:: Windows
+
+     .. code-block:: bash
      
-.. tabbed:: Linux
+       gradlew clean jpackage -Pcuda-redist
+       
+  .. tab-item:: Linux
 
-  .. code-block:: bash
-  
-    ./gradlew clean jpackage -Pcuda-redist
+    .. code-block:: bash
+    
+      ./gradlew clean jpackage -Pcuda-redist
 
 You should use `-Pcuda` if you want to use your own CUDA installation (which needs to be the correct version to match JavaCPP's OpenCV distribution), and `-Pcuda-redist` if you want to download the necessary files automatically.
 Before doing so you should check out the licensing terms for CUDA at https://github.com/bytedeco/javacpp-presets/tree/master/cuda
@@ -171,17 +177,19 @@ You can now open a command prompt in the correct directory directly from GitHub 
 
 Finally, the command needed to build QuPath is then the same as above:
 
-.. tabbed:: Windows
+.. tab-set::
 
-   .. code-block:: bash
-   
-     gradlew clean jpackage
+  .. tab-item:: Windows
+
+     .. code-block:: bash
      
-.. tabbed:: macOS/Linux
+       gradlew clean jpackage
+       
+  .. tab-item:: macOS/Linux
 
-  .. code-block:: bash
-  
-    ./gradlew clean jpackage
+    .. code-block:: bash
+    
+      ./gradlew clean jpackage
 
 .. admonition:: Updating the code
 

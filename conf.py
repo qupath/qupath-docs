@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'QuPath'
-copyright = '2019-2021, QuPath docs authors'
+copyright = '2019-2022, QuPath docs authors'
 author = 'QuPath docs authors'
 
 
@@ -30,7 +30,7 @@ author = 'QuPath docs authors'
 extensions = [
     'myst_parser',
     'sphinx_rtd_theme',
-    'sphinx_panels',
+    'sphinx_design',
     'sphinx.ext.autosectionlabel',
     'sphinx_search.extension'
 ]
@@ -85,5 +85,5 @@ html_logo = 'docs/images/qupath_128.png'
 
 html_favicon = 'docs/images/QuPath.ico'
 
-release = '0.3.0'
-version = '0.3'
+release = '0.4.0'
+version = '0.4'
