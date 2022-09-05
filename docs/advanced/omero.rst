@@ -116,12 +116,15 @@ As the object classes between OMERO and QuPath are different, some information m
    :class: shadow-image
 
 .. TIP::
-  You can also send objects (**annotations** and/or **detections**) to OMERO via scripting with the following commands:
+  You can also send objects to OMERO via scripting with the following command:
 
   .. code-block:: groovy
 
     import qupath.lib.images.servers.omero.OmeroTools
-    OmeroTools.writePathObjects(getSelectedObjects(), getCurrentServer())
+    OmeroTools.writePathObjects(getAnnotationObjects(), getCurrentServer())
+
+  You'll notice that it is indeed possible to send detection objects as well (e.g. with `getDetectionObjects()`). However, detection objects such as cells are not fully supported.
+  Additionally, the `writePathObjects(..)` method was not designed for processing too many objects. So beware not to send a huge amount of objects at once!
 
 
 Managing OMERO clients
