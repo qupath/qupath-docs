@@ -10,4 +10,5 @@ Reference
   commands
   config
   building
+  styling
   projects_structure

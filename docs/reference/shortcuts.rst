@@ -125,9 +125,9 @@ The *Script editor* has its own menubar, which supports the followings shortcuts
 Autocompletion
 ==============
 
-There is an additional shortcut that can be very helpful when typing code in the *Script editor* window: for any built-in function, start typing the name and then press :kbd:`Ctrl + space`.
+There is an additional shortcut that can be very helpful when typing code in the *Script editor* window: for any built-in function, start typing the name and then press :kbd:`Ctrl + Spacebar`.
 
-If the script editor can find the function you are aiming at, it should then auto-complete the name.  If there are multiple options, press :kbd:`Ctrl + space` repeatedly to cycle through them.
+If the script editor can find the function you are aiming at, it should then auto-complete the name.  If there are multiple options, press :kbd:`Ctrl + Spacebar` repeatedly to cycle through them.
 
 For example, starting to type
 
@@ -135,13 +135,13 @@ For example, starting to type
 
   cells = getC
 
-and pressing :kbd:`Ctrl + space` should automatically produce
+and pressing :kbd:`Ctrl + Spacebar` should automatically produce
 
 .. code-block:: groovy
 
   cells = getCellObjects
 
-Pressing :kbd:`Ctrl + space` again immediately would produce
+Pressing :kbd:`Ctrl + Spacebar` again immediately would produce
 
 .. code-block:: groovy
 
