@@ -25,14 +25,14 @@ Therefore if you really want to get into the details, check out
 
 To see this in action, create a file `Unpleasant blue.css` and add the contents below:
 
-```css
+:::css
 .root {
     -fx-base: rgb(30, 28, 75);
     -fx-light-text-color: rgb(200, 200, 255);
     -fx-background: derive(-fx-base, -10%);
     -fx-control-inner-background: derive(-fx-base, 10%);
 }
-```
+:::
 
 Then drag the .css file onto QuPath, and selected it in the preferences.
 You should see something like the screenshow below.
