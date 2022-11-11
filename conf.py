@@ -19,7 +19,7 @@
 
 project = 'QuPath'
 copyright = '2019-2022, QuPath docs authors'
-author = 'QuPath docs authors'
+author = 'QuPath authors'
 
 
 # -- General configuration ---------------------------------------------------
@@ -72,7 +72,7 @@ rst_prolog = """
 .. |br| raw:: html
 
   <br/>
-  
+
 .. |vertical_ellipsis| unicode:: 0x22EE
 
 .. |copyright| unicode:: 0xA9
