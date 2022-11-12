@@ -163,6 +163,9 @@ myst_substitutions = {
   "extract_image": '<img src="../images/icons/Extract_image.png" />',
   "icon_extract_image": '<img src="../images/icons/Extract_image.png" class="inline-icon" />',
 
+  "contrast": '<img src="../images/icons/Contrast.png" />',
+  "icon_contrast": '<img src="../images/icons/Contrast.png" class="inline-icon" />',
+
   # "polyline": '<img src="../images/icons/Polyline.png" />',
   # "icon_polyline": '<img src="../images/icons/Polyline.png" class="inline-icon" />',
 }

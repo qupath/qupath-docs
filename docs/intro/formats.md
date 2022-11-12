@@ -1,9 +1,5 @@
 # Supported image formats
 
-```{eval-rst}
-.. include:: ../tools.txt
-```
-
 ## Image files
 
 QuPath can be used with a wide range of image formats, including many whole slide formats, thanks to two essential open source libraries:
