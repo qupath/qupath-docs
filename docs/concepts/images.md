@@ -303,7 +303,7 @@ It is especially useful when combined with thresholding to distinguish broad cat
 :::
 
 :::{tip}
-Gabriel Landini has written a popular color deconvolution plugin for ImageJ, and describes some important considerations and caveats to keep in mind when using the technique [on his website](https://blog.bham.ac.uk/intellimic/g-landini-software/colour-deconvolution/).
+Gabriel Landini has written a popular color deconvolution plugin for ImageJ, and describes some important considerations and caveats to keep in mind when using the technique [on his website](https://blog.bham.ac.uk/intellimic/g-landini-software/colour-deconvolution-2/).
 :::
 
 ## Multidimensional images

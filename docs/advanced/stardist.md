@@ -39,6 +39,8 @@ This requires that the models are in a slightly different format (*.pb* files),
 but because OpenCV is *already* included within QuPath it makes installation
 much easier.
 
+Alternatively, you could check out the [Intel OpenVINO](https://github.com/dkurt/qupath-extension-openvino) community extension.
+
 If you still want to use TensorFlow instead, see {ref}`stardist-advanced`.
 :::
 
@@ -417,6 +419,23 @@ This is possible with both OpenCV and TensorFlow -- although I have found it eas
 
 To do this, build QuPath from source as described in {ref}`building-gpu`.
 If your GPU-friendly build of QuPath is able to detect CUDA support through OpenCV, it will be used automatically.
+
+### Use OpenVINO
+
+OpenVINO is a library with highly optimized primitives for Intel CPUs.
+To optimize StarDist using OpenVINO, download [QuPath OpenVINO Extension](https://github.com/dkurt/qupath-extension-openvino) and change your processing code to work with converted model:
+
+```groovy
+// Specify the model directory (you will need to change this!)
+def pathModel = '/path/to/converted_model.xml'
+var dnn = qupath.ext.openvino.OpenVINOTools.createDnnModel('/path/to/model.xml')
+def stardist = StarDist2D.builder(dnn)
+  ...
+  .build()
+```
+
+Note that this uses a community extension, which means that it isn't maintained by the QuPath developers.
+
 
 ## Differences from StarDist Fiji
 
