@@ -215,13 +215,13 @@ int height = 2000
 
 def request = RegionRequest.createInstance(path, downsample, x, y, width, height)
 
-def img = server.readBufferedImage(request)
+def img = server.readRegion(request)
 print img
 ```
 
 There are two reasons why QuPath uses `RegionRequest` objects:
 
-- You'd otherwise need to pass a lot of parameters to the `readBufferedImage` method
+- You'd otherwise need to pass a lot of parameters to the `readRegion` method
 - `RegionRequests` can be (and are) used as keys for an image cache
 
 In any case, the above script assumes a single-plane image.
@@ -243,7 +243,7 @@ int t = 0
 
 def request = RegionRequest.createInstance(path, downsample, x, y, width, height, z, t)
 
-def img = server.readBufferedImage(request)
+def img = server.readRegion(request)
 print img
 ```
 
@@ -256,7 +256,7 @@ def server = getCurrentServer()
 def roi = getSelectedROI()
 double downsample = 4.0
 def request = RegionRequest.createInstance(server.getPath(), downsample, roi)
-def img = server.readBufferedImage(request)
+def img = server.readRegion(request)
 print img
 ```
 
@@ -377,7 +377,7 @@ def server = getCurrentServer()
 def roi = getSelectedROI()
 double downsample = 4.0
 def request = RegionRequest.createInstance(server.getPath(), downsample, roi)
-def img = server.readBufferedImage(request)
+def img = server.readRegion(request)
 new ImagePlus("Image", img).show()
 
 // Create a binary mask & show in ImageJ
@@ -461,7 +461,7 @@ def server = getCurrentServer()
 def roi = getSelectedROI()
 double downsample = 4.0
 def request = RegionRequest.createInstance(server.getPath(), downsample, roi)
-def img = server.readBufferedImage(request)
+def img = server.readRegion(request)
 
 // Convert to an OpenCV Mat, then apply a difference of Gaussians filter
 def mat = OpenCVTools.imageToMat(img)
