@@ -1,3 +1,4 @@
+(first-steps)=
 # First steps
 
 The following tutorial will guide you through your first steps with QuPath, and introduce you to the main features, buttons and concepts you need to get started.

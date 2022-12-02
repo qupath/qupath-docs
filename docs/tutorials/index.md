@@ -1,3 +1,4 @@
+(tutorials)=
 # Tutorials
 
 ```{toctree}
