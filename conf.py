@@ -104,6 +104,8 @@ html_favicon = 'docs/images/QuPath.ico'
 release = '0.4.0'
 version = '0.4a1'
 
+myst_heading_anchors = 2
+
 myst_substitutions = {
 
   "rectangle": '<img src="../images/icons/Rectangle.png" />',

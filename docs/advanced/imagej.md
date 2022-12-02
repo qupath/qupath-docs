@@ -1,5 +1,11 @@
 # ImageJ
 
+```{raw} html
+<div style="text-align: center; margin-bottom: 2em;">
+<iframe width="100%" height="350" src="https://www.youtube-nocookie.com/embed/xW2Ya205nvo?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+```
+
 QuPath was created by someone who was (and is) a big fan of ImageJ.
 
 Because of this, there is a considerable amount of ImageJ inspiration that has gone into QuPath's design, and a conscious decision made to try to make QuPath more immediately accessible to someone with ImageJ experience.
@@ -131,10 +137,9 @@ All other QuPath objects within the region are converted into ROIs and added to 
 The names of the ROIs are also set according to how they appear in QuPath, often based upon their {doc}`classification <../concepts/classifications>`.
 In the above screenshot, the ImageJ command {menuselection}`Image --> Overlay --> To ROI Manager` was run to create the list that is shown, where each ROI's name can be seen.
 
-:::{note}
-The selected object from QuPath is only set as an ImageJ ROI if it is not a rectangle, because a rectangle would be identical to the entire image region -- so does not contain any additional, useful information.
-
-If such a 'whole image' rectangular ROI is required in ImageJ, it can easily be created on the ImageJ side with the {menuselection}`Edit --> Selection --> Select All` command.
+:::{tip}
+Since v0.4.0, you can import saved ImageJ ROIs using {menuselection}`Extensions --> ImageJ --> Import ImageJ ROIs` - or, even handier, by drag & drop onto a QuPath viewer.
+This includes both `.roi` and `RoiSet.zip` files saved through ImageJ's ROI Manager.
 :::
 
 ### Sending snapshots

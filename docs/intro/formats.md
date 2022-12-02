@@ -1,3 +1,4 @@
+(supported-image-formats)=
 # Supported image formats
 
 ## Image files
@@ -23,6 +24,13 @@ Both libraries have their own distinct advantages:
 - Bio-Formats can support a much wider range of image types, including multidimensional data (e.g. z-stacks, time series and multiplexed images).
 
 Bio-Formats supports most images that can be read by OpenSlide, but not all - and therefore QuPath continues to include both libraries.
+
+:::{important}
+If you're using a QuPath build for **Apple silicon** (i.e. a recent Mac with M1/M2 processor), then you might not have OpenSlide available by default.
+Check out <https://github.com/petebankhead/homebrew-qupath> for instructions how to install this.
+
+The same link can also help if you're using another Mac or Linux computer and want to update the version of OpenSlide that QuPath uses.
+:::
 
 ### Reporting problems
 
@@ -67,6 +75,13 @@ There have previously been problems with misaligned tiles (see [here](https://gi
 Since the release of [Bio-Formats v5.3.0](https://www.openmicroscopy.org/site/support/bio-formats5.3/about/whats-new.html) QuPath has been able to work with `.czi` files.
 
 To open CZI files that use JPEG-XR compression on **Windows**, you may also need to install the *Visual Studio 2015 C++ Redistributable* - see [here](https://www.openmicroscopy.org/site/support/bio-formats/formats/zeiss-czi.html) for more information.
+
+
+#### DICOM
+
+Bio-Formats 6.8.0 introduced support for DICOM whole slide images.
+This is available in QuPath from v0.4.0.
+
 
 #### iSyntax (Philips)
 
