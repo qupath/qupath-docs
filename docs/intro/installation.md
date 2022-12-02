@@ -2,19 +2,18 @@
 
 ## Download & install
 
-Download QuPath for your platform (Windows, Linux, macOS) from [GitHub](https://github.com/qupath/qupath/releases/latest) and install 'as normal':
+QuPath isn't currently a signed application.
+This means that, after you download it for your platform (Windows, Linux, macOS) from [GitHub](https://github.com/qupath/qupath/releases/latest), you may need to take a few extra steps to get it to run:
 
 - On **Windows**, if you downloaded an `.msi` file then double-click on it to launch the installer
+  - If you see a warning, choosing {guilabel}`More info` and {guilabel}`Run anyway` should let you proceed
 - On **Windows**, if you downloaded a `.zip` then extract its contents and run the `QuPath.exe` file
-- On **macOS**, if you download a `.pkg` file then double-click on it to launch the installer
-- On **macOS**, double-click on the `.dmg` file and drag `QuPath.app` to wherever you want to keep it
+- On **macOS**, right-click the `.pkg` file, then choose 'Open' (you might need to do this twice)
+  - If you're using an M1/M2 Mac, please check out the [notes on Apple silicon](apple-silicon)
 - On **Linux**, download and extract the `.tar.xz` file
+  - You'll probably have to use `chmod u+x /path/to/QuPath/bin/QuPath` to make the launcher executable
 
-:::{tip}
-Recent security changes in Windows and macOS are likely to complicate installation slightly.
-<br />
 See {ref}`Troubleshooting` for more information.
-:::
 
 :::{admonition} What is *QuPath (console).exe*?
 On Windows, you will see two executable files: *QuPath.exe* and *QuPath (console).exe* -- perhaps with version numbers incorporated.
@@ -24,43 +23,6 @@ The only difference between these is that the *console* version also shows a con
 This is useful when using the {ref}`Command line`.
 :::
 
-## Setup options
-
-When running QuPath for the first time, you will be prompted to specify some setup options.
-
-:::{figure} images/setup_memory.png
-:align: center
-:class: shadow-image
-:width: 75%
-
-Setup options shown on startup.
-:::
-
-The default is that QuPath will request 50% of the total memory available.
-This is generally a reasonable choice, but be aware that the amount of memory available to QuPath is one of the main factors influencing how well the software will perform -- and how complex the analysis can be.
-
-:::{warning}
-Sometimes, your computer may block QuPath from overwriting the configuration file needed to set the maximum memory.
-If this happens, you wil need to edit this file manually.
-
-See {ref}`Set max memory` for instructions.
-:::
-
-:::{sidebar} Why does the 'Region' matter?
-See [here](https://github.com/qupath/qupath/issues/18) for a note explaining why the *Region* setting exists.
-:::
-
-You can also specify the *Region*, where it is recommended to leave the default of *English (United States)* for consistency.
-
-This will help ensure behavior should match with what is shown in this documentation, and seen by other users on the forum.
-
-:::{tip}
-You can revisit the setup options later under {menuselection}`Help --> Show setup options`
-:::
-
-:::{tip}
-If you encounter trouble, {menuselection}`Edit --> Reset preferences` can be more effective than reinstalling.
-:::
 
 ## Troubleshooting
 
@@ -111,45 +73,24 @@ Mac users may see one of two similar security message to that experienced by Win
 
 If you see the message that QuPath cannot be opened because the developer cannot be verified, you can try right-clicking on the QuPath icon and select *Open* from the popup menu that appears.
 
-:::{figure} images/installing_macOS_open.png
+:::{figure} images/mac-warning-04.png
 :align: center
-:width: 60%
+:width: 40%
 
 Gatekeeper on macOS on double-click.
 :::
 
 You should then see an option to open QuPath that should work.
 
-:::{figure} images/installing_macOS_open_right_click.png
+:::{figure} images/mac-warning-04-override.png
 :align: center
-:width: 60%
+:width: 40%
 
 Gatekeeper on macOS after right-clicking and selecting 'Open'.
 :::
 
-#### QuPath is damaged and can't be opened
-
-Recent macOS changes (first reported in February 2020) may give a different message that QuPath.app is damaged.
-
-:::{figure} images/installing_macOS_damaged.png
-:align: center
-:width: 60%
-
-Damaged message (macOS Catalina)
-:::
-
-This appears to occur because macOS Catalina flags downloads from 'unidentified developers' as quarantined, and will not permit them to be opened.
-
-One way to work around this is to remove the flag by opening `/Applications/Utilities/Terminal.app` and typing
-
-```bash
-xattr -d com.apple.quarantine /Users/yourname/path/to/QuPath.app
-```
-
-:::{figure} images/installing_macOS_damaged_terminal.png
-:align: center
-:width: 90%
-:::
+You may need to right-click and choose open the first time you run it the QuPath app after installation.
+Double-clicking should work as normal once it has been run once.
 
 :::{warning}
 Since macOS (presumably) has your best interests at heart, circumventing its security settings routinely is probably not advisable.
@@ -157,18 +98,18 @@ Since macOS (presumably) has your best interests at heart, circumventing its sec
 However, the time and resources needed to distribute QuPath as a signed/notarized app to avoid these warnings are currently lacking.
 :::
 
-:::{note}
-These alternative methods to start QuPath should only be necessary the first time you run it - double-clicking as normal should work afterwards.
-:::
 
-:::{tip}
-The quarantined flag does not always appear to be set, depending upon how the application is downloaded.
-For example, these problems may not arise if it is obtained using `wget`, e.g.
+(apple-silicon)=
+#### Apple Silicon
 
-```bash
-wget https://github.com/qupath/qupath/releases/download/v0.2.0-m9/QuPath-0.2.0-m9-Mac.dmg
-```
-:::
+v0.4.0 introduces a new (experimental) QuPath build specifically for Apple Silicon.
+
+If you have a new Mac with an M1/M2 processor, this is likely to run much faster than the alternative Intel build.
+
+However, there are a few disadvantages:
+* OpenSlide is missing. You can add it separately with the help of [Homebrew](https://brew.sh) - see <https://github.com/petebankhead/homebrew-qupath> for details
+* Images opened with Bio-Format may not work if they require a native library. For example, the OS-1/OS-2/OS-3.ndpi sample images only open at a low resolution but can't be read properly when zooming in.
+* TensorFlow for Java doesn't work. But it doesn't work on Apple Silicon even if you use the Intel build.
 
 ### Linux
 
@@ -177,5 +118,5 @@ You may need to install OpenSlide separately through your package manager.
 
 Known issues are:
 
-- Black/white tiles can appear in some images reading using OpenSlide; updating libpixman can resolve this (see [Issue #355](https://github.com/qupath/qupath/issues/355))
+- Black/white tiles can appear in some images reading using OpenSlide; updating libpixman can resolve this (see [Issue #355](https://github.com/qupath/qupath/issues/355)), or alternatively you can try the alternative bash script `/path/to/QuPath/bin/QuPath.sh` to launch the software.
 - QuPath (like other Java applications) cannot be started if its installation path contains a directory named `bin`; moving to another directory resolves this (see [Issue #614](https://github.com/qupath/qupath/issues/614))

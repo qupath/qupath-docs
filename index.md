@@ -3,6 +3,10 @@
 :width: 75%
 :::
 
+:::{sidebar} Please be patient!
+These docs are currently being revised for the new v0.4.0 release.
+:::
+
 # Welcome to QuPath!
 
 This page hosts the documentation for QuPath {{ env.config.version }}.
@@ -21,9 +25,6 @@ Not sure where to begin?
 Got more questions?
 : The [Scientific Community Image Forum](https://forum.image.sc/tag/qupath) is the best place to discuss QuPath with users & developers
 
-<!-- :::{sidebar} Got more questions?
-[The Scientific Community Image Forum](https://forum.image.sc/tag/qupath) is the best place to discuss QuPath with users & developers
-::: -->
 
 ```{toctree}
 :caption: 'Main contents:'
