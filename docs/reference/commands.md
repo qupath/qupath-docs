@@ -166,6 +166,11 @@ Redo the last action for the current viewer.
 
 Copy the selected objects to the system clipboard as GeoJSON.
 
+### Annotation objects
+{menuselection}`Edit --> Copy to clipboard... --> Annotation objects`
+
+Copy all annotation objects to the system clipboard as GeoJSON.
+
 ### Current viewer
 {menuselection}`Edit --> Copy to clipboard... --> Current viewer`
 
@@ -187,10 +192,16 @@ Copy the area of the screen corresponding to the main QuPath window to the clipb
 Make a screenshot and copy it to the clipboard.
 
 ### Paste
-{menuselection}`Edit --> Paste`  - {kbd}`Ctrl+V`
+{menuselection}`Edit --> Paste`
 
 Paste the contents of the system clipboard, if possible.
 If the clipboard contents are GeoJSON objects, the objects will be pasted to the current image. Otherwise, any text found will be shown in a the script editor.
+
+### Paste objects to current plane
+{menuselection}`Edit --> Paste objects to current plane`
+
+Paste GeoJSON objects from the system clipboard to the current z-slice and timepoint, if possible.
+New object IDs will be generated if needed to avoid duplicates.
 
 ### Preferences...
 {menuselection}`Edit --> Preferences...`  - {kbd}`Ctrl+','`
@@ -264,30 +275,65 @@ Show/hide the analysis pane (the one on the left).
 
 Show the command list (much easier than navigating menus...).
 
+### Show recent commands
+{menuselection}`View --> Show recent commands`  - {kbd}`Ctrl+P`
+
+Show a list containing recently-used commands.
+
 ### Brightness/Contrast
 {menuselection}`View --> Brightness/Contrast`  - {kbd}`Shift+C`
 
 Show the brightness/contrast dialog. This enables changing how the image is displayed, but not the image data itself.
 
 ### Synchronize viewers
-{menuselection}`View --> Synchronize viewers`  - {kbd}`Alt+Ctrl+S`
+{menuselection}`View --> Multi-view... --> Synchronize viewers`  - {kbd}`Alt+Ctrl+S`
 
 Synchronize panning and zooming when working with images open in multiple viewers.
 
 ### Match viewer resolutions
-{menuselection}`View --> Match viewer resolutions`
+{menuselection}`View --> Multi-view... --> Match viewer resolutions`
 
 Adjust zoom factors to match the resolutions of images open in multiple viewers.
 
-### Show channel viewer
-{menuselection}`View --> Mini viewers... --> Show channel viewer`
+### Add row
+{menuselection}`View --> Multi-view... --> Add row`
 
-Open a viewer window that shows individual channels of an image size by side.
+Add a new row of viewers to the multi-view grid. This makes it possible to view two or more images side-by-side (vertically).
+
+### Add column
+{menuselection}`View --> Multi-view... --> Add column`
+
+Add a new column of viewers to the multi-view grid. This makes it possible to view two or more images side-by-side (horizontally).
+
+### Remove row
+{menuselection}`View --> Multi-view... --> Remove row`
+
+Remove the row containing the current viewer from the multi-view grid, if possible. The last row cannot be removed.
+
+### Remove column
+{menuselection}`View --> Multi-view... --> Remove column`
+
+Remove the column containing the current viewer from the multi-view grid, if possible. The last column cannot be removed.
+
+### Reset grid size
+{menuselection}`View --> Multi-view... --> Reset grid size`
+
+Reset the multi-view grid so that all viewers have the same size
+
+### Close viewer
+{menuselection}`View --> Multi-view... --> Close viewer`
+
+Close the image in the current viewer. This is needed before it's possible to remove a viewer from the multi-view grid.
+
+### Show channel viewer
+{menuselection}`View --> Show channel viewer`
+
+Open a viewer window that shows individual channels of an image size by side. This is useful when working with multiplexed/multichannel fluorescence images.
 
 ### Show mini viewer
-{menuselection}`View --> Mini viewers... --> Show mini viewer`
+{menuselection}`View --> Show mini viewer`
 
-Open a viewer window that shows a view of the pixel under the cursor.
+Open a viewer window that shows a view of the pixel under the cursor. This is useful for viewing the image booth zoomed in and zoomed out at the same time.
 
 ### 400%
 {menuselection}`View --> Zoom... --> 400%`
@@ -527,6 +573,11 @@ Select all tile objects for the current image.
 
 Select objects based upon their classification.
 
+### Select objects on current plane
+{menuselection}`Objects --> Select... --> Select objects on current plane`
+
+Select all objects on the current plane visiible in the viewer.
+
 ### Lock selected objects
 {menuselection}`Objects --> Lock... --> Lock selected objects`  - {kbd}`Shift+Ctrl+K`
 
@@ -567,15 +618,21 @@ Insert the selected objects in the object hierarchy. This involves resolving par
 
 Resolve the object hierarchy by setting parent/child relationships between objects based upon regions of interest.
 
-### Transform annotation
-{menuselection}`Objects --> Annotations... --> Transform annotation`  - {kbd}`Shift+Alt+Ctrl+R`
+### Transform annotations
+{menuselection}`Objects --> Annotations... --> Transform annotations`  - {kbd}`Shift+Ctrl+T`
 
 Interactively translate and/or rotate the current selected annotation.
 
-### Duplicate annotations
-{menuselection}`Objects --> Annotations... --> Duplicate annotations`  - {kbd}`Shift+D`
+### Duplicate selected annotations
+{menuselection}`Objects --> Annotations... --> Duplicate selected annotations`  - {kbd}`Shift+D`
 
 Duplicate the selected annotations.
+
+### Copy annotations to current plane
+{menuselection}`Objects --> Annotations... --> Copy annotations to current plane`  - {kbd}`Shift+Ctrl+V`
+
+Duplicate the selected objects and paste them on the current plane (z-slice and timepoint visible in the viewer).
+This avoids using the system clipboard. It is intended to help transfer annotations quickly across multidimensional images.
 
 ### Transfer last annotation
 {menuselection}`Objects --> Annotations... --> Transfer last annotation`  - {kbd}`Shift+E`
@@ -616,6 +673,16 @@ Merge the selected annotations to become one, single annotation.
 {menuselection}`Objects --> Annotations... --> Simplify shape`
 
 Simplify the shapes of the current selected annotations. This removes vertices that are considered unnecessary, using a specified amplitude tolerance.
+
+### Refresh object IDs
+{menuselection}`Objects --> Refresh object IDs`
+
+Update all object IDs to ensure they are unique.
+
+### Refresh duplicate object IDs
+{menuselection}`Objects --> Refresh duplicate object IDs`
+
+Update all duplicate object IDs to ensure they are unique.
 
 ## TMA
 ### TMA dearrayer
@@ -740,10 +807,13 @@ Show a history of the commands applied to the current image. Note that this is n
 
 Create a script based upon the actions recorded in the command history.
 
-### Set script directory...
-{menuselection}`Automate --> Shared scripts... --> Set script directory...`
+### No scripts found
+{menuselection}`Automate --> Shared scripts... --> No scripts found`
 
-Set the directory containing scripts that should be shown in this menu.
+
+### No scripts found
+{menuselection}`Automate --> User scripts... --> No scripts found`
+
 
 ## Analyze
 ### Estimate stain vectors
@@ -959,10 +1029,10 @@ This can be set to the plugins directory of an existing ImageJ installation, to 
 Run ImageJ macros within QuPath.
 
 ## Help
-### Show setup options
-{menuselection}`Help --> Show setup options`
+### Show welcome message
+{menuselection}`Help --> Show welcome message`
 
-Show the setup options that appear when QuPath is first started, to set the maximum memory and locale.
+Show the welcome message that appears when QuPath is first launched
 
 ### Documentation (web)
 {menuselection}`Help --> Documentation (web)`
