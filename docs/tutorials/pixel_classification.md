@@ -1,3 +1,4 @@
+(pixel-classification-tutorial)=
 # Pixel classification
 
 The thresholds we applied both in {doc}`thresholding` and {doc}`measuring_areas` introduce a bigger theme: *Pixel classification*.

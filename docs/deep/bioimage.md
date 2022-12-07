@@ -65,7 +65,49 @@ This is usually called `rdf.yaml`, although might be `model.yaml` for some older
 If all goes well, QuPath will check the model is compatible and show a dialog:
 
 
+```{figure} images/bioimage_dialog.png
+:class: shadow-image
+:width: 50%
+:align: center
 
+Dialog showing pixel classifier options for a model zoo model.<br />
+Figures here were generated using the [*unet2d_nuclei_broad* model spec](https://github.com/bioimage-io/spec-bioimage-io/tree/v0.4.8/example_specs/models/unet2d_nuclei_broad).
+```
+
+This provides an opportunity to customize a few QuPath-specific aspects:
+* the input channels (for a multi-channel image)
+* the input resolution
+* the input tile size, if this is customizable
+* how to interpret the output classifications
+* how the output should be interpreted (generally leaving it at {guilabel}`Probability`) will be best
+
+There should also be a button to {guilabel}`Show test images in ImageJ`.
+This applies the prediction using QuPath to some small sample images included with the model, and compares them with the intended output.
+
+After pressing this button, QuPath will open ImageJ and show the input test image, the target prediction, the actual prediction, and the difference between them.
+
+```{image} images/bioimage_broad_image.png
+:class: shadow-image
+:width: 24%
+```
+```{image} images/bioimage_broad_target.png
+:class: shadow-image
+:width: 24%
+```
+```{image} images/bioimage_broad_prediction.png
+:class: shadow-image
+:width: 24%
+```
+```{image} images/bioimage_broad_difference.png
+:class: shadow-image
+:width: 24%
+```
+
+The target and actual predictions *should* ideally be identical, but can differ - either because of different deep learning libraries, or (more likely) because QuPath is handling tiling and padding in a different way.
+I hope that any differences will be reduced/eliminated in future releases.
+
+Finally, choosing {guilabel}`Apply` should give a dialog prompting for a pixel classifier name.
+Entering this should give a pixel classifier that acts just [like any other pixel classifier in QuPath](pixel-classification-tutorial) - and so can be used to generate objects, make measurements, or apply classifications.
 
 
 :::{admonition} Which models are compatible?
@@ -77,7 +119,7 @@ QuPath currently aims to support:
 
 * Models that take a single 2D input image and give a single 2D output image (+ channels)
 * Models without custom pre/post-processing
-  * StarDist uses custom post-processing - so you should checkout [StarDist](stardist-extension) instead
+  * StarDist uses custom post-processing - so you should check out [StarDist](stardist-extension) instead
   * Preprocessing with a fixed scale factor and offset is generally fine; preprocessing that requires global statistics (e.g. percentile normalization) may 'work', but give different results because these values are calculated per image tile and not across the full image
 * Models with compatible weights
   * Assuming you've DJL installed, this means:
