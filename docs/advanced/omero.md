@@ -1,3 +1,4 @@
+(omero-extension)=
 # OMERO
 
 :::{caution}

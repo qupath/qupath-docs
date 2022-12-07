@@ -50,6 +50,8 @@ The *QuPath Deep Java Library extension* is at an early stage and under active d
 Keeping it as a separate extension allows us to make updates ithout needing to make an entirely new QuPath release.
 
 In the future, it might well become included in QuPath by default.
+
+See [Extensions](qupath-extensions) for more info.
 :::
 
 
