@@ -34,8 +34,9 @@ docs/intro/index
 docs/starting/index
 docs/tutorials/index
 docs/concepts/index
-docs/advanced/index
 docs/scripting/index
+docs/deep/index
+docs/advanced/index
 docs/reference/index
 ```
 

@@ -90,7 +90,7 @@ In this case, the original single 'annotation object' has been added to with 108
 While the annotation is selected, you can also see from the panel on the left that 12.4% of the detected cells are classed as positive.
 
 :::{note}
-For a quick recap on the difference between annotation and detection objects, see [Introducing objects](../starting/first_steps.html#introducing-objects).
+For a quick recap on the difference between annotation and detection objects, see [Introducing objects](introducing-objects).
 :::
 
 :::{figure} images/ki67_detecting_final_markup.jpg

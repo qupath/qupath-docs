@@ -6,7 +6,6 @@
 imagej
 exporting_images
 exporting_annotations
-stardist
 command_line
 omero
 ```

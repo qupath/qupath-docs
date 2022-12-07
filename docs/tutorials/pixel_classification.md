@@ -1,3 +1,4 @@
+(pixel-classification-tutorial)=
 # Pixel classification
 
 The thresholds we applied both in {doc}`thresholding` and {doc}`measuring_areas` introduce a bigger theme: *Pixel classification*.
@@ -240,7 +241,7 @@ Measuring within a defined region (excluding where the classifier is unreliable)
 The *Ignore\** classification is important here, because *it does not contribute to the area measurements*.
 This means that the above classification computes the *Tumor %* as the proportion of *classified tissue* that is tumor -- not the proportion of the entire annotated area.
 
-See {ref}`Ignored* classifications` for more information.
+See [Ignored* classifications`](ignored-classifications) for more information.
 :::
 
 ### Handling variation

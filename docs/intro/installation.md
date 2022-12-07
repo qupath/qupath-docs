@@ -108,7 +108,9 @@ If you have a new Mac with an M1/M2 processor, this is likely to run much faster
 
 However, there are a few disadvantages:
 * OpenSlide is missing. You can add it separately with the help of [Homebrew](https://brew.sh) - see <https://github.com/petebankhead/homebrew-qupath> for details
-* Images opened with Bio-Format may not work if they require a native library. For example, the OS-1/OS-2/OS-3.ndpi sample images only open at a low resolution but can't be read properly when zooming in.
+* Images opened with Bio-Format may not work if they require a native library, e.g.
+  * some .ndpi files (e.g. the OS-1/OS-2/OS-3.ndpi sample images)
+  * some .czi files (with JPEG-XR compression)
 * TensorFlow for Java doesn't work. But it doesn't work on Apple Silicon even if you use the Intel build.
 
 ### Linux

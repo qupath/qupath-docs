@@ -106,6 +106,7 @@ The *Image overview (top right) can be used for navigation*.
 For other methods to navigate large images - including multitouch support for touchpads, touch-sensitive screens and 3D mice - see {doc}`viewing`.
 :::
 
+(introducing-objects)=
 ## Introducing objects
 
 Understanding **objects** is key to making sense of QuPath's features.

@@ -91,6 +91,7 @@ If its classification does not, the cell is considered to be *CD3 -ve*.
 :width: 60%
 :::
 
+(ignored-classifications)=
 ## Ignored\* classifications
 
 There is one other classification concept, which is a relatively recent addition to QuPath: that of 'ignored' classes.

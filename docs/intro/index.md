@@ -8,5 +8,6 @@ installation
 formats
 acknowledgements
 citing
+extensions
 versions
 ```

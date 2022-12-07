@@ -154,7 +154,7 @@ After this, there is just one final set of options to navigate, which offers mor
 :::
 
 :::{tip}
-To decipher {guilabel}`Create objects for ignored classes`, see {ref}`Ignored* classifications`.
+To decipher {guilabel}`Create objects for ignored classes`, see [Ignored* classifications`](ignored-classifications).
 
 (Summary: if you want to create objects for a class that ends with an asterisk, select this option.)
 :::
