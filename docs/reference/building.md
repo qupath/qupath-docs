@@ -1,3 +1,4 @@
+(building-from-source)=
 # Building from source
 
 Building software can be tricky, but hopefully this won't be - thanks to [Gradle].
@@ -62,6 +63,22 @@ Note that some problems have been reported using a version of OpenJDK based on O
 Switching to an OpenJDK distribution based on HotSpot may help -- see [here](https://github.com/qupath/qupath/issues/484) for details.
 :::
 
+:::{admonition} Notes for Apple silicon
+:class: warning
+
+If you're working on a recent Mac with Apple silicon, the easiest thing to do is use a Java JDK for Intel.
+Everything will run a bit slower through Rosetta2 -- but the difference might not be noticeable.
+
+If you use a JDK for Apple silicon, most things should work - but note the caveats [described on the installation page](apple-silicon);
+
+You can add OpenSlide support from the start by:
+* Installing [OpenSlide Java using Homebrew](https://github.com/petebankhead/homebrew-qupath)
+* Building QuPath with the command `./gradlew clean jpackage -P openslide=/opt/homebrew/opt/openslide-java/lib/openslide-java/openslide.jar`
+
+This should then use your local OpenSlide installation.
+The disadvantage is that it won't be found if you transfer QuPath to another computer.
+:::
+
 ### Customizing the build
 
 #### Creating installers
@@ -124,6 +141,30 @@ Two important things to note are:
 
 - This only works on Windows or Linux with recent NVIDIA GPUs and drivers
 - Currently, only {ref}`StarDist` is likely to see any benefit (no other QuPath code explicitly uses the GPU)
+
+:::{admonition} Simplifying builds with gradle.properties
+:class: tip
+
+If you often add `-P` flags when building QuPath, you can store these in the base QuPath directory in a file called `gradle.properties`.
+This also gives a place to add more custom flags that can change the build.
+
+For example, on my Apple silicon Mac I might put the following into `gradle.properties`:
+```
+org.gradle.parallel=true
+org.gradle.java.home=/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+openslide=/opt/homebrew/Cellar/openslide-java/0.12.2/lib/openslide-java/openslide.jar
+djl.engines=pytorch,mxnet,onnxruntime
+djl.zoos=all
+```
+
+This tries to speed up the build process by parallelization, specifies which JDK to use, provides a path to OpenSlide, and specifies some [Deep Java Library](djl) engines that I would like to include.
+
+Then I only need to call
+```
+./gradlew jpackage
+```
+rather than some elaborate command.
+:::
 
 #### Building a specific version
 
