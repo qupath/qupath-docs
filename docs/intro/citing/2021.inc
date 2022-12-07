@@ -599,7 +599,7 @@
 
 #. Pennanen, P. et al. (2021). Signaling pathways in human osteoclasts differentiation: ERK1/2 as a key player. **Molecular Biology Reports**. https://doi.org/10.1007/s11033-020-06128-5 📗
 
-#. Perez, S. M. et al. (2021). A Novel Monoclonal Antibody Targeting Cancer-Specific Plectin Has Potent Antitumor Activity in Ovarian Cancer. **Cells*. https://doi.org/10.3390/ cells10092218 📗
+#. Perez, S. M. et al. (2021). A Novel Monoclonal Antibody Targeting Cancer-Specific Plectin Has Potent Antitumor Activity in Ovarian Cancer. **Cells**. https://doi.org/10.3390/ cells10092218 📗
 
 #. Peterson, C. et al. (2021). Induction of the integrated stress response in the rat cornea. **Experimental Eye Research**. https://doi.org/10.1016/j.exer.2021.108722 📗
 

@@ -1,4 +1,4 @@
-(djl)=
+(deep-java-library)=
 (deep-learning)=
 # Deep Java Library
 

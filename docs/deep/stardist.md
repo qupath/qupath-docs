@@ -1,3 +1,4 @@
+(stardist-extension)=
 # StarDist
 
 StarDist is a fantastic, deep-learning-based method of 2D and 3D nucleus detection from Martin Weigert and Uwe Schmidt.
@@ -10,7 +11,7 @@ If you use StarDist in a publication, be sure to cite it:
 
 > - Uwe Schmidt, Martin Weigert, Coleman Broaddus, and Gene Myers. [Cell Detection with Star-convex Polygons](https://arxiv.org/abs/1806.03535). *International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)*, Granada, Spain, September 2018.
 
-(And if you use it in combination with QuPath, be sure to {doc}`cite the QuPath paper too <../intro/citing>`!)
+(And if you use it in combination with QuPath, be sure to [cite the QuPath paper too!](citing))
 :::
 
 ## Getting the StarDist extension
@@ -30,18 +31,14 @@ The two we will consider here are:
 - *dsb2018_heavy_augment.pb* - for fluorescence images (one detection channel)
 - *he_heavy_augment.pb* - for brightfield H&E (three detection channels, RGB)
 
-:::{admonition} No TensorFlow?
-StarDist usually requires a powerful machine learning library called [TensorFlow](https://www.tensorflow.org).
-This is the main reason running StarDist in QuPath v0.2 was rather complicated.
+:::{admonition} Other model formats
+The models in the link above should work without installing anything extra in QuPath.
+They run using OpenCV, which is already available in QuPath.
 
-As an alternative, it's now possible to run StarDist using [OpenCV](http://opencv.org) instead.
-This requires that the models are in a slightly different format (*.pb* files),
-but because OpenCV is *already* included within QuPath it makes installation
-much easier.
+StarDist models from other sources (including the [Bioimage model zoo](bioimage)) typically require TensorFlow to run.
+You can add this to QuPath with the help of the [QuPath Deep Java Library extension](djl) - see [Using TensorFlow](stardist-tensorflow) for more info.
 
-Alternatively, you could check out the [Intel OpenVINO](https://github.com/dkurt/qupath-extension-openvino) community extension.
-
-If you still want to use TensorFlow instead, see {ref}`stardist-advanced`.
+Alternatively, you could check out the [Intel OpenVINO](https://github.com/dkurt/qupath-extension-openvino) community extension for alternative model format.
 :::
 
 :::{tip}
@@ -64,6 +61,15 @@ StarDist applied to region of OS-3.ndpi
 
 QuPath's current early StarDist support is **only available by scripting** and is rather limited in terms of reporting progress.
 You can run it and... wait.
+
+:::{admonition} Script templates
+:class: tip
+
+Although scripts are needed, you don't need to be a confident scripter to use them.
+You will generally use a template either from here, or found under {menuselection}`Extensions --> StarDist`.
+
+The only essential modification is usually specify the path to the StarDist model file -- but please do read on to see which other options you can change.
+:::
 
 The following script applies the *he_heavy_augment.pb* StarDist model to a brightfield H&E image:
 
@@ -156,6 +162,92 @@ You may need to experiment with different values.
 :::{tip}
 I find that the pretrained models work best at around 0.5 µm/pixel.
 :::
+
+
+### Using the Bioimage Model Zoo
+
+You can find some pretrained StarDist models in the [Bioimage model zoo](https://bioimage.io/).
+
+These can be used in QuPath by providing the path to the (unzipped) model zoo spec file, rather than the StarDist model directly.
+You may also need to unzip the model weights, which are usually in a file with a name such as
+* `tensorflow_saved_model_bundle.zip`
+* `TF_SavedModel.zip`
+* `tf-weights.zip`
+
+If you do this, a StarDist2D builder will be initialized using the information from the model spec.
+
+
+### Improving input normalization
+
+One of the most important changes to the StarDist extension in v0.4.0 is adding support to calculate preprocessing normalization based upon the *entire* image -- rather than just for each tile separately.
+This addressed a problem whereby [cells could be detected in areas that *only* contain background](https://forum.image.sc/t/stardist-in-qupath-normalization-issue/38912).
+
+For example, the following script normalizes each image tile separately, and has problems in the background:
+
+```groovy
+import qupath.ext.stardist.StarDist2D
+def modelPath = "/path/to/he_heavy_augment.pb"
+
+// Customize how the StarDist detection should be applied.
+def stardist = StarDist2D
+    .builder(modelPath)
+    .normalizePercentiles(0.2, 99.8)
+    .pixelSize(0.5)              // Resolution for detection
+    .build()
+	
+// Run detection for the selected objects
+def imageData = getCurrentImageData()
+def pathObjects = getSelectedObjects()
+stardist.detectObjects(imageData, pathObjects)
+stardist.close() // This can help clean up & regain memory
+println('Done!')
+```
+
+:::{figure} images/stardist_normalize_local_bug.jpg
+:align: center
+:class: shadow-image
+:width: 75%
+
+Local percentile normalization can sometimes hallucinate nuclei in the image background
+:::
+
+In practice that might be ok if the detection is constrained to the tissue region anyway, but it shows a potential variation that is unwelcome.
+
+By contrast, thie script computes the normalization percentiles across *a downsampled version of* the whole image, and performs reasonably everywhere in the image:
+
+```groovy
+import qupath.ext.stardist.StarDist2D
+def modelPath = "/path/to/he_heavy_augment.pb"
+
+// Customize how the StarDist detection should be applied.
+def stardist = StarDist2D
+    .builder(modelPath)
+    .preprocess(                 // Apply normalization, calculating values across the whole image
+        StarDist2D.imageNormalizationBuilder()
+            .maxDimension(4096)    // Figure out how much to downsample large images to make sure the width & height are <= this value
+            .percentiles(0.2, 99.8)  // Calculate image percentiles to use for normalization
+            .build()
+	)
+    .pixelSize(0.5)              // Resolution for detection
+    .build()
+	
+// Run detection for the selected objects
+def imageData = getCurrentImageData()
+def pathObjects = getSelectedObjects()
+stardist.detectObjects(imageData, pathObjects)
+stardist.close() // This can help clean up & regain memory
+println('Done!')
+```
+
+
+:::{figure} images/stardist_normalize_global_fix.jpg
+:align: center
+:class: shadow-image
+:width: 75%
+
+Global percentile normalization can remove false positive detections in the background
+:::
+
 
 ### Viewing probabilities
 
@@ -268,6 +360,7 @@ These artifacts are not present if StarDist is used without cell expansion.
 Artifacts to look out when using geometry-based cell expansion.
 :::
 ::::
+
 
 ### More detection options
 
@@ -398,12 +491,12 @@ QuPath will attempt to untangle where the classifications are in the outputs of 
 For this to work, the number of rays predicted by StarDist should be greater than the number of distinct classifications.
 :::
 
+(stardist-tensorflow)=
 ### Use TensorFlow
 
-It is still possible to use StarDist with TensorFlow rather than OpenCV.
-See the [QuPath TensorFlow Extension](http://github.com/qupath/qupath-extension-tensorflow) for details and installation instructions.
+If you want to use TensorFlow, you can install the [QuPath Deep Java Library extension](djl).
 
-You will need alternative pretrained models in TensorFlow's *SavedModel* format.
+Your pretrained models will then need to be in TensorFlow's *SavedModel* format.
 Unzipped examples from the [stardist-imagej repository](https://github.com/stardist/stardist-imagej/tree/master/src/main/resources/models/2D) should work.
 
 You will also need to give QuPath the path to the *folder* containing the model files in this case, e.g.
@@ -411,6 +504,22 @@ You will also need to give QuPath the path to the *folder* containing the model 
 ```groovy
 var pathModel = '/path/to/dsb2018_heavy_augment' // A folder, not a file
 ```
+
+:::{admonition} Troubleshooting
+One error you might see when trying to do this is:
+```
+ai.djl.engine.EngineException: Failed to load TensorFlow native library
+```
+If so, check out the [Deep Java Library](djl) instructions, and make sure that you have downloaded the TensorFlow framework via {menuselection}`Extensions --> Deep Java Library --> Manage DJL engines`.
+:::
+
+:::{admonition} What about the TensorFlow extension?
+:class: caution
+
+In QuPath v0.3, you could add TensorFlow support via the [QuPath TensorFlow Extension](http://github.com/qupath/qupath-extension-tensorflow).
+This has been replaced by the Deep Java Library extension.
+:::
+
 
 ### Use CUDA
 

@@ -1,3 +1,4 @@
+(building)=
 (building-from-source)=
 # Building from source
 
@@ -157,7 +158,7 @@ djl.engines=pytorch,mxnet,onnxruntime
 djl.zoos=all
 ```
 
-This tries to speed up the build process by parallelization, specifies which JDK to use, provides a path to OpenSlide, and specifies some [Deep Java Library](djl) engines that I would like to include.
+This tries to speed up the build process by parallelization, specifies which JDK to use, provides a path to OpenSlide, and specifies some [Deep Java Library](deep-java-library) engines that I would like to include.
 
 Then I only need to call
 ```

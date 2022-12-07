@@ -23,7 +23,7 @@ The measurement table allows you to export measurements from a single image, cur
 It is therefore **not** recommended if you wish to export measurements for multiple images or across a whole project.
 Nevertheless, it is a good method to get some direct visualisation of what will be exported, before actually exporting anything.
 
-As mentioned in [Introducing objects](../starting/first_steps.html#introducing-objects), you can create a measurement table by selecting the **Table** button in the toolbar {{ icon_table }}.
+As mentioned in [Introducing objects](introducing-objects), you can create a measurement table by selecting the **Table** button in the toolbar {{ icon_table }}.
 After choosing the objects you wish to export (e.g. detections, annotations), a similar measurement table to the one below will be shown on screen.
 
 :::{figure} images/measurement_table.png

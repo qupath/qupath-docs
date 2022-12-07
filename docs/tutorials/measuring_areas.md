@@ -82,7 +82,7 @@ A lower threshold results in a higher stained percentage measurement.
 :::
 
 :::{tip}
-Classifications with names ending in an asterisk\* are special -- see {ref}`Ignored* classifications`.
+Classifications with names ending in an asterisk\* are special -- see [Ignored* classifications`](ignored-classifications).
 :::
 
 :::{admonition} Why are the areas of my live measurements different from the areas of my annotations?
