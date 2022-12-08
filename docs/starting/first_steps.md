@@ -148,6 +148,8 @@ If you don't like the default behavior, it can be changed with the *Return to Mo
 
 Either way, you can quickly activate the tool you want using a shortcut key, e.g. just type {kbd}`M` for **Move**, {kbd}`B` for **Brush**, {kbd}`P` for **Polygon** etc.
 You can see all the shortcut keys for drawing tools under the **Tools** menu.
+
+Since QuPath version 0.4, you can also click the middle button (or scroll wheel) on your mouse to quickly toggle between **Move** and the last drawing tool you were using.
 :::
 
 :::{figure} images/steps_annotations.jpg
