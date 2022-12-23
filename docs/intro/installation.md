@@ -67,7 +67,7 @@ Running QuPath on 32-bit Windows is not supported.
 
 ### macOS
 
-Mac users may see one of two similar security message to that experienced by Windows users running the QuPath pkg installer or dmg image.
+Mac users may also see security messages when running the QuPath pkg installer.
 
 #### QuPath cannot be opened
 
@@ -75,6 +75,7 @@ If you see the message that QuPath cannot be opened because the developer cannot
 
 :::{figure} images/mac-warning-04.png
 :align: center
+:class: shadow-image
 :width: 40%
 
 Gatekeeper on macOS on double-click.
@@ -84,18 +85,19 @@ You should then see an option to open QuPath that should work.
 
 :::{figure} images/mac-warning-04-override.png
 :align: center
+:class: shadow-image
 :width: 40%
 
 Gatekeeper on macOS after right-clicking and selecting 'Open'.
 :::
 
-You may need to right-click and choose open the first time you run it the QuPath app after installation.
+You may also need to right-click and choose open the first time you run the QuPath app after installation.
 Double-clicking should work as normal once it has been run once.
 
 :::{warning}
 Since macOS (presumably) has your best interests at heart, circumventing its security settings routinely is probably not advisable.
 
-However, the time and resources needed to distribute QuPath as a signed/notarized app to avoid these warnings are currently lacking.
+However, as an open source project, we don't currently have the time and resources needed to distribute QuPath as a signed/notarized app and avoid these warnings.
 :::
 
 
@@ -106,12 +108,12 @@ v0.4.0 introduces a new (experimental) QuPath build specifically for Apple Silic
 
 If you have a new Mac with an M1/M2 processor, this is likely to run much faster than the alternative Intel build.
 
-However, there are a few disadvantages:
+*However*, there are a few significant isadvantages:
 * OpenSlide is missing. You can add it separately with the help of [Homebrew](https://brew.sh) - see <https://github.com/petebankhead/homebrew-qupath> for details
 * Images opened with Bio-Format may not work if they require a native library, e.g.
   * some .ndpi files (e.g. the OS-1/OS-2/OS-3.ndpi sample images)
   * some .czi files (with JPEG-XR compression)
-* TensorFlow for Java doesn't work. But it doesn't work on Apple Silicon even if you use the Intel build.
+* TensorFlow for Java doesn't work. But it doesn't work on Apple Silicon even if you use the Intel build (this will hopefully be fixed by the TensorFlow Java maintainers in the future).
 
 ### Linux
 
@@ -120,5 +122,8 @@ You may need to install OpenSlide separately through your package manager.
 
 Known issues are:
 
-- Black/white tiles can appear in some images reading using OpenSlide; updating libpixman can resolve this (see [Issue #355](https://github.com/qupath/qupath/issues/355)), or alternatively you can try the alternative bash script `/path/to/QuPath/bin/QuPath.sh` to launch the software.
-- QuPath (like other Java applications) cannot be started if its installation path contains a directory named `bin`; moving to another directory resolves this (see [Issue #614](https://github.com/qupath/qupath/issues/614))
+* Black/white tiles can appear in some images reading using OpenSlide; updating libpixman can resolve this (see [Issue #355](https://github.com/qupath/qupath/issues/355)), or alternatively you can try the alternative bash script `/path/to/QuPath/bin/QuPath.sh` to launch the software.
+* QuPath (like other Java applications) cannot be started if its installation path contains a directory named `bin`; moving to another directory resolves this (see [Issue #614](https://github.com/qupath/qupath/issues/614))
+* Some sub-dependencies might not be found (reported [on the forum](https://forum.image.sc/t/qupath-v0-4-0-now-available/74887/7))
+
+If you still have trouble getting OpenSlide to work, you could also try [installing OpenSlide Java using Homebrew](https://github.com/petebankhead/homebrew-qupath).
