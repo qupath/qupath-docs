@@ -3,13 +3,19 @@
 :width: 75%
 :::
 
-:::{sidebar} Please be patient!
-These docs are currently being revised for the new v0.4.0 release.
+:::{sidebar} New release online!
+**QuPath {{ env.config.release }}** is available at [https://qupath.github.io](https://qupath.github.io).
+
+This fixes several bugs in v0.4.0 -- including one that prevents the user being told when there's an update.
+
+Note that these docs are still being revised for the latest release.
 :::
 
 # Welcome to QuPath!
 
-This page hosts the documentation for QuPath {{ env.config.version }}.
+This page hosts the documentation for **QuPath {{ env.config.version }}.x**.
+
+The latest release is [**QuPath {{ env.config.release }}**](https://github.com/qupath/qupath/releases).
 
 ## Quick links
 
@@ -27,7 +33,7 @@ Got more questions?
 
 
 ```{toctree}
-:caption: 'Main contents:'
+:caption: 'Full contents:'
 :maxdepth: 2
 
 docs/intro/index
