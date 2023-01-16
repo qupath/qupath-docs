@@ -81,6 +81,14 @@ If not, click the **Analysis panel** button on the toolbar to open it {{ icon_me
 There are a few tabs here that you will meet later.
 For now, click the **Image** tab to get a table of properties related to your image.
 
+:::{figure} images/steps_image_tab.jpg
+:align: center
+:class: shadow-image
+:width: 75%
+
+Image tab showing the image properties in QuPath.
+:::
+
 ### Setting the pixel size
 
 The pixel size is used extensively by QuPath. This is why it is good practice to make sure it's correct.
