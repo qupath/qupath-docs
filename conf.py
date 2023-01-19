@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'QuPath'
-copyright = '2019-2022, QuPath docs authors'
+copyright = '2019-2023, QuPath docs authors'
 author = 'QuPath authors'
 
 
@@ -101,7 +101,7 @@ html_logo = 'docs/images/qupath_128.png'
 
 html_favicon = 'docs/images/QuPath.ico'
 
-release = '0.4.1'
+release = '0.4.2'
 version = '0.4'
 
 # myst_heading_anchors = 2
