@@ -23,7 +23,7 @@ Both libraries have their own distinct advantages:
 - OpenSlide is typically fast, lightweight and programmer-friendly (especially through Python), but is restricted to *only* 2D, 8-bit, RGB images.
 - Bio-Formats can support a much wider range of image types, including multidimensional data (e.g. z-stacks, time series and multiplexed images).
 
-Bio-Formats supports most images that can be read by OpenSlide, but not all - and therefore QuPath continues to include both libraries.
+Bio-Formats supports most images that can be read by OpenSlide, but not all - and therefore QuPath continues to include both libraries. However, some formats that are supported by Bio-formats or OpenSlide are unfortunately not usable in QuPath due to various caveats.
 
 :::{important}
 If you're using a QuPath build for **Apple silicon** (i.e. a recent Mac with M1/M2 processor), then you might not have OpenSlide available by default.

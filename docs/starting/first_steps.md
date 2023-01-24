@@ -176,9 +176,9 @@ Most of QuPath's drawing tools work similarly (i.e. select the tool, click on th
 Double-click to set the final point.
 
 :::{note}
-By default, QuPath will switch back to the **Move tool** {{ icon_move }} after you've drawn an annotation with any tool except the **Brush**.
+By default, QuPath will switch back to the **Move tool** {{ icon_move }} after you've drawn an annotation with any tool except the **Brush**.  
 This is to avoid accidentally drawing new annotations when you really just wanted to move around in the image or do something with an existing annotation.
-The **Brush** is different, because it's commonly used to paint or edit multiple regions at a time, and it can be annoying to have to switch it back on regularly.
+The **Brush** is different, because it's commonly used to paint or edit multiple regions at a time, and it can be annoying to have to switch it back on regularly. 
 
 If you don't like the default behavior, it can be changed with the *Return to Move Tool automatically* option in the **Preferences** {{ icon_cog }}.
 
