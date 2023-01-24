@@ -202,12 +202,16 @@ This process is a bit more involved, but the effort is often worth it.
 It is very difficult and confusing to try to train multiple classifiers by annotating the same image.
 
 The process is made easier by creating duplicate images within the project for each channel that needs a classifier.
-To do this, choose {menuselection}`Classify --> Extras --> Duplicate channel training images`.
+To do this, choose {menuselection}`Classify --> Training Images --> Create duplicate channel training images`.
 
 :::{figure} images/multiplex_duplicating.jpg
 :align: center
 :class: shadow-image
 :width: 90%
+:::
+
+:::{Note}
+It's useful to run cell detection **before** duplicating the images so the detections match!
 :::
 
 :::{tip}
@@ -323,7 +327,7 @@ Amidst a blaze of color, it can rapidly become difficult to interpret images.
 A few things can help:
 
 - The box in the bottom right corner of the viewer now shows not only the mouse location, but also the classification of the object under the cursor.
-- {menuselection}`View --> Mini viewers --> Show channel viewer` makes it possible to see all channels side-by-side. Right-click on the channel viewer to customize its display.
+- {menuselection}`View --> Show channel viewer` makes it possible to see all channels side-by-side. Right-click on the channel viewer to customize its display.
 - Right-clicking on the *Classifications* list under the *Annotations* tab, you can now use {menuselection}`Populate from existing objects --> All classes` to create a list of all classifications present within the image. The filter box below this list enables quickly finding classifications including specific text. You can then select these, and toggle their visibility by right-clicking or pressing the {kbd}`spacebar`.
 - Right-click on the image and choose {menuselection}`Cells --> Centroids only` to have another view of the classified cells. Now, the shape drawn for each cell relates to the 'number of components' of its classification, while its color continues to depict the specific class. This makes similar-but-not-the-same classifications to be spotted more easily than using (often subtle) color differences alone.
 
