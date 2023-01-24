@@ -20,10 +20,10 @@ You will see how to:
 If you do not have a whole slide image handy, see {doc}`here <../intro/acknowledgements>` for examples.
 :::
 
-### Opening QuPath
+### Running QuPath
 Running QuPath for the first time will present you with the welcome window. This contains useful links should you have an issue or want to learn more. 
 
-For those that like working on software in dark mode or want to use their own creative themes it's possible to change that here. Additionally updates to the software can also be checked ensuring you have access to the latest features. 
+For those that like working on software in dark mode (or want to use their own creative themes) it's possible to change that here. Additionally updates to QuPath or extensions can be checked for ensuring you have access to the latest features. 
 
 :::{figure} images/steps_welcome.jpg
 :align: center
@@ -34,7 +34,7 @@ QuPath welcome window.
 :::
 
 :::{Tip}
-Should you no longer want to see this pop-up, it can be deselected at the bottom right corner and will remain hidden until reactivated in settings under {menuselection}`Edit --> Preferences -> general -> Show welcome message when QuPath starts`.
+Should you no longer want to see this pop-up, it can be de-selected at the lower right corner and will remain hidden until reactivated in settings under {menuselection}`Edit --> Preferences -> general -> Show welcome message when QuPath starts`.
 :::
 
 ### Opening an image
@@ -112,13 +112,13 @@ To **zoom in and out** of an image within QuPath, use the **scroll wheel** of yo
 You can also jump to a specific magnification if you:
 
 - *Right-click* on the image, and choose one of the zoom options e.g. {menuselection}`Display --> 100%`, or
-- *Double-click* on the little magnification box on the toolbar, and enter a value there.
+- *Double-click* on the little magnification value on the toolbar, and enter a value there.
 
 :::{figure} images/steps_mag.jpg
 :align: center
 :class: shadow-image
 
-The *Magnification box*
+The *Magnification box*.
 :::
 
 Double-clicking on the magnification value in the toolbar (here, the bit that shows 10.0x) opens an input dialog to enter a specific magnification.
