@@ -1,10 +1,5 @@
 # Cell classification
 
-:::{warning}
-This replaces the -- now deprecated -- detection classifier that was previously available in QuPath, and described [here](https://github.com/qupath/qupath/wiki/Classifying-objects).
-It is recommended to limit the use of the old detection classifier because it will be removed in future versions.
-:::
-
 {doc}`cell_detection` looked at computing Ki67 labelling indices by counting positive and negative cells within user-defined regions of interest.
 These regions had to be drawn very carefully to try to ensure that they only included tumor cells, and excluded other cell types that should not contribute to conventional scoring of Ki67.
 

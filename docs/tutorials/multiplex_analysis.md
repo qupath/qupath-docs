@@ -1,11 +1,6 @@
 # Multiplexed analysis
 
-:::{warning}
-This tutorial describes an entirely new approach for multiplexed analysis within QuPath, added in v0.2.0-m9.
-It remains a work-in-progress, subject to change.
-:::
-
-This tutorial outlines the basics of how multiplexed images can be analyzed in QuPath v0.2.0, using the sample {doc}`LuCa-7color_[13860,52919]_1x1component_data <../intro/acknowledgements>`.
+This tutorial outlines the basics of how multiplexed images can be analyzed in QuPath using the sample {doc}`LuCa-7color_[13860,52919]_1x1component_data <../intro/acknowledgements>`.
 
 :::{figure} ../intro/images/LuCa-7color_[13860,52919]_1x1component_data.jpg
 :align: center
@@ -145,7 +140,7 @@ Because these measurements are based on the channel names, it is important to ha
 
 The next step involves finding a way to identify whether cells are positive or negative *for each marker independently* based upon the detections and measurements made during the previous step.
 
-QuPath v0.2.0 supports two different ways to do this:
+Since QuPath v0.2.0 there are two different ways to do this:
 
 1. Threshold a single measurement (e.g. mean nucleus intensity)
 2. Train a machine learning classifier to decide based upon multiple measurements
@@ -155,7 +150,7 @@ You do not have to choose the same method for every marker, but can switch betwe
 
 #### Option #1. Simple thresholding
 
-QuPath v0.2.0 introduces a new command, {menuselection}`Classify --> Object classification --> Create single measurement classifier`.
+QuPath v0.2.0 introduced a new command, {menuselection}`Classify --> Object classification --> Create single measurement classifier`.
 This gives us a quick way to classify based on the value of one measurement.
 
 As usual, you can consider the options in the dialog box in order from top to bottom, and hover the cursor over each for a short description of what it means.
