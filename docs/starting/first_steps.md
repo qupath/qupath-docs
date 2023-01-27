@@ -34,7 +34,7 @@ QuPath welcome window.
 :::
 
 :::{Tip}
-Should you no longer want to see this pop-up, it can be de-selected at the lower right corner and will remain hidden until reactivated in settings under {menuselection}`Edit --> Preferences -> general -> Show welcome message when QuPath starts`.
+Should you no longer want to see this pop-up, it can be de-selected at the lower right corner and will remain hidden until reactivated in settings under {menuselection}`Edit --> Preferences --> general --> Show welcome message when QuPath starts`.
 :::
 
 ### Opening an image
@@ -54,7 +54,8 @@ A whole slide image (*CMU-1.svs*) opened within QuPath.
 
 ### Setting the image type
 
-One of the most important properties is the **Image type**, which can impact the behavior of some QuPath commands. When opening an image in QuPath you will be presented with a window allowing you to choose the image type. You should choose the closest match for the image, e.g. *Brightfield*, *Fluorescence*.
+One of the most important properties is the **Image type**, which can impact the behavior of some QuPath commands. When opening an image in QuPath you will be presented with a window allowing you to choose the image type. To find out more about what this means, check out the {guilabel}`Show details` section. 
+You should choose the closest match for the image, e.g. *Brightfield*, *Fluorescence*.
 
 :::{figure} images/steps_image_type.jpg
 :align: center
@@ -65,12 +66,12 @@ Option window for setting the image type in QuPath.
 :::
 
 :::{important}
-QuPath can automatically estimate the image type for you, if you choose this option for *Set image type* in under {menuselection}`Edit --> Preferences...` {{ icon_cog }}.
-However, in case the estimate is wrong you should be aware the option exists - and should always be checked.
+QuPath can automatically estimate the image type for you, if you choose this option for *Set image type* under {menuselection}`Edit --> Preferences...` {{ icon_cog }}.
+However, sometimes the automatic estimate is wrong - so it's important to be aware of this, and to know how you can fix the estimate if needed.
 :::
 
 :::{tip}
-Should you need to change the image type retrospectively, it's possible to do so in the **Image** tab within the **Analysis panel** mentioned below.
+Should you need to change the image type later, it's possible to do so in the **Image** tab within the **Analysis panel** mentioned below by double clicking on the image type that is currently set.
 :::
 
 ### Seeing the image properties

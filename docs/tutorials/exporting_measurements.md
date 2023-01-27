@@ -47,7 +47,7 @@ The cleanest way to export different types of measurements in QuPath across mult
 
 Provided that your images are stored in a {doc}`project <../tutorials/projects>`, you can access it through {menuselection}`Measure --> Export measurements`.
 
-:::{figure} images/measurement_exporter.png
+:::{figure} images/exporting_measurements.png
 :align: center
 :class: shadow-image
 :width: 70%
