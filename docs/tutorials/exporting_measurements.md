@@ -45,14 +45,14 @@ If your analysis involves combining measurements from different images, it is re
 
 The cleanest way to export different types of measurements in QuPath across multiple images is with the **Measurement Exporter**.
 
-Provided that your images are stored in a {doc}`project <../tutorials/projects>`, you can access it through {menuselection}`Measure --> Export measurements` (as well as {{ icon_table }} --> Export measurements).
+Provided that your images are stored in a {doc}`project <../tutorials/projects>`, you can access it through {menuselection}`Measure --> Export measurements`.
 
-:::{figure} images/measurement_exporter.png
+:::{figure} images/exporting_measurements.png
 :align: center
 :class: shadow-image
 :width: 70%
 
-The Measurement Exporter
+The Measurement Exporter.
 :::
 
 From there, you can decide from which image(s) the measurements will the be exported (similar to the {doc}`Run for project <../scripting/workflows_to_scripts>` command in the script editor).

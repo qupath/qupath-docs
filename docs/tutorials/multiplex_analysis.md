@@ -1,11 +1,6 @@
 # Multiplexed analysis
 
-:::{warning}
-This tutorial describes an entirely new approach for multiplexed analysis within QuPath, added in v0.2.0-m9.
-It remains a work-in-progress, subject to change.
-:::
-
-This tutorial outlines the basics of how multiplexed images can be analyzed in QuPath v0.2.0, using the sample {doc}`LuCa-7color_[13860,52919]_1x1component_data <../intro/acknowledgements>`.
+This tutorial outlines the basics of how multiplexed images can be analyzed in QuPath using the sample {doc}`LuCa-7color_[13860,52919]_1x1component_data <../intro/acknowledgements>`.
 
 :::{figure} ../intro/images/LuCa-7color_[13860,52919]_1x1component_data.jpg
 :align: center
@@ -145,7 +140,7 @@ Because these measurements are based on the channel names, it is important to ha
 
 The next step involves finding a way to identify whether cells are positive or negative *for each marker independently* based upon the detections and measurements made during the previous step.
 
-QuPath v0.2.0 supports two different ways to do this:
+Since QuPath v0.2.0 there are two different ways to do this:
 
 1. Threshold a single measurement (e.g. mean nucleus intensity)
 2. Train a machine learning classifier to decide based upon multiple measurements
@@ -155,7 +150,7 @@ You do not have to choose the same method for every marker, but can switch betwe
 
 #### Option #1. Simple thresholding
 
-QuPath v0.2.0 introduces a new command, {menuselection}`Classify --> Object classification --> Create single measurement classifier`.
+QuPath v0.2.0 introduced a new command, {menuselection}`Classify --> Object classification --> Create single measurement classifier`.
 This gives us a quick way to classify based on the value of one measurement.
 
 As usual, you can consider the options in the dialog box in order from top to bottom, and hover the cursor over each for a short description of what it means.
@@ -202,12 +197,16 @@ This process is a bit more involved, but the effort is often worth it.
 It is very difficult and confusing to try to train multiple classifiers by annotating the same image.
 
 The process is made easier by creating duplicate images within the project for each channel that needs a classifier.
-To do this, choose {menuselection}`Classify --> Extras --> Duplicate channel training images`.
+To do this, choose {menuselection}`Classify --> Training Images --> Create duplicate channel training images`.
 
 :::{figure} images/multiplex_duplicating.jpg
 :align: center
 :class: shadow-image
 :width: 90%
+:::
+
+:::{Note}
+It's useful to run cell detection **before** duplicating the images so the detections match!
 :::
 
 :::{tip}
@@ -323,7 +322,7 @@ Amidst a blaze of color, it can rapidly become difficult to interpret images.
 A few things can help:
 
 - The box in the bottom right corner of the viewer now shows not only the mouse location, but also the classification of the object under the cursor.
-- {menuselection}`View --> Mini viewers --> Show channel viewer` makes it possible to see all channels side-by-side. Right-click on the channel viewer to customize its display.
+- {menuselection}`View --> Show channel viewer` makes it possible to see all channels side-by-side. Right-click on the channel viewer to customize its display.
 - Right-clicking on the *Classifications* list under the *Annotations* tab, you can now use {menuselection}`Populate from existing objects --> All classes` to create a list of all classifications present within the image. The filter box below this list enables quickly finding classifications including specific text. You can then select these, and toggle their visibility by right-clicking or pressing the {kbd}`spacebar`.
 - Right-click on the image and choose {menuselection}`Cells --> Centroids only` to have another view of the classified cells. Now, the shape drawn for each cell relates to the 'number of components' of its classification, while its color continues to depict the specific class. This makes similar-but-not-the-same classifications to be spotted more easily than using (often subtle) color differences alone.
 

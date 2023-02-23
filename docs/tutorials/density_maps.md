@@ -1,8 +1,6 @@
 # Density maps
 
-**Density maps** are a new concept introduced in QuPath v0.3.0.
-
-They were originally created to help find 'hotspots' for specific applications in pathology (e.g. tumor budding, Ki67 scoring).
+Density maps were introduced in QuPath v0.3.0. They were originally created to help find 'hotspots' for specific applications in pathology (e.g. tumor budding, Ki67 scoring).
 However, their implementation in QuPath is designed to be much more flexible than that.
 
 In some cases, density maps can even be a replacement for {doc}`pixel_classification` or {doc}`superpixels`.

@@ -4,6 +4,7 @@
 The following tutorial will guide you through your first steps with QuPath, and introduce you to the main features, buttons and concepts you need to get started.
 You will see how to:
 
+- QuPath Welcome window
 - Open a whole slide image
 - View image properties
 - Navigate around images
@@ -17,6 +18,23 @@ You will see how to:
 
 :::{note}
 If you do not have a whole slide image handy, see {doc}`here <../intro/acknowledgements>` for examples.
+:::
+
+### Running QuPath
+Running QuPath for the first time will present you with the welcome window. This contains useful links should you have an issue or want to learn more. 
+
+For those that like working on software in dark mode (or want to use their own creative themes) it's possible to change that here. Additionally updates to QuPath or extensions can be checked for ensuring you have access to the latest features. 
+
+:::{figure} images/steps_welcome.jpg
+:align: center
+:class: shadow-image
+:width: 75%
+
+QuPath welcome window.
+:::
+
+:::{Tip}
+Should you no longer want to see this pop-up, it can be de-selected at the lower right corner and will remain hidden until reactivated in settings under {menuselection}`Edit --> Preferences --> general --> Show welcome message when QuPath starts`.
 :::
 
 ### Opening an image
@@ -34,6 +52,28 @@ This works for most other file types that QuPath can handle - not only images.
 A whole slide image (*CMU-1.svs*) opened within QuPath.
 :::
 
+### Setting the image type
+
+One of the most important properties is the **Image type**, which can impact the behavior of some QuPath commands. When opening an image in QuPath you will be presented with a window allowing you to choose the image type. To find out more about what this means, check out the {guilabel}`Show details` section. 
+You should choose the closest match for the image, e.g. *Brightfield*, *Fluorescence*.
+
+:::{figure} images/steps_image_type.jpg
+:align: center
+:class: shadow-image
+:width: 75%
+
+Option window for setting the image type in QuPath.
+:::
+
+:::{important}
+QuPath can automatically estimate the image type for you, if you choose this option for *Set image type* under {menuselection}`Edit --> Preferences...` {{ icon_cog }}.
+However, sometimes the automatic estimate is wrong - so it's important to be aware of this, and to know how you can fix the estimate if needed.
+:::
+
+:::{tip}
+Should you need to change the image type later, it's possible to do so in the **Image** tab within the **Analysis panel** mentioned below by double clicking on the image type that is currently set.
+:::
+
 ### Seeing the image properties
 
 Usually, there's a panel on the left of the QuPath window: the **Analysis panel**.
@@ -42,15 +82,12 @@ If not, click the **Analysis panel** button on the toolbar to open it {{ icon_me
 There are a few tabs here that you will meet later.
 For now, click the **Image** tab to get a table of properties related to your image.
 
-### Setting the image type
+:::{figure} images/steps_image_tab.jpg
+:align: center
+:class: shadow-image
+:width: 75%
 
-One of the most important properties is the **Image type**, which can impact the behavior of some QuPath commands.
-You should choose the closest match for the image, e.g. *Brightfield*, *Fluorescence*.
-You can also double-click the entry in the table to set it from a drop-down menu.
-
-:::{important}
-QuPath can automatically estimate the image type for you, if you choose this option for *Set image type* in under {menuselection}`Edit --> Preferences...` {{ icon_cog }}.
-However, in case the estimate is wrong you should be aware the option exists - and should always be checked.
+Image tab showing the image properties in QuPath.
 :::
 
 ### Setting the pixel size
@@ -76,16 +113,16 @@ To **zoom in and out** of an image within QuPath, use the **scroll wheel** of yo
 You can also jump to a specific magnification if you:
 
 - *Right-click* on the image, and choose one of the zoom options e.g. {menuselection}`Display --> 100%`, or
-- *Double-click* on the little magnification box on the toolbar, and enter a value there.
+- *Double-click* on the little magnification value on the toolbar, and enter a value there.
 
 :::{figure} images/steps_mag.jpg
 :align: center
 :class: shadow-image
 
-The *Magnification box*
+The *Magnification box*.
 :::
 
-Double-clicking on the magnification box on the toolbar (here, the bit that shows 10.0x) opens an input dialog to enter a specific magnification.
+Double-clicking on the magnification value in the toolbar (here, the bit that shows 10.0x) opens an input dialog to enter a specific magnification.
 
 ### Panning
 
@@ -140,9 +177,9 @@ Most of QuPath's drawing tools work similarly (i.e. select the tool, click on th
 Double-click to set the final point.
 
 :::{note}
-By default, QuPath will switch back to the **Move tool** {{ icon_move }} after you've drawn an annotation with any tool except the **Brush**.
+By default, QuPath will switch back to the **Move tool** {{ icon_move }} after you've drawn an annotation with any tool except the **Brush**.  
 This is to avoid accidentally drawing new annotations when you really just wanted to move around in the image or do something with an existing annotation.
-The **Brush** is different, because it's commonly used to paint or edit multiple regions at a time, and it can be annoying to have to switch it back on regularly.
+The **Brush** is different, because it's commonly used to paint or edit multiple regions at a time, and it can be annoying to have to switch it back on regularly. 
 
 If you don't like the default behavior, it can be changed with the *Return to Move Tool automatically* option in the **Preferences** {{ icon_cog }}.
 

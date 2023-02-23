@@ -60,21 +60,6 @@ In return, **you can help** in a few ways:
 - Please report bugs and weirdness that you find on the [forum] -- *after* checking [GitHub Issues] to see if it has already been reported or fixed. If you find the issue already exists, but hasn't been resolved, feel free to join in the discussion.
 - Do keep in mind that QuPath is developed by researchers, and our time is very limited. If you want a grand new feature, we probably can't spend weeks developing it for you for free... even if we want to. But we're open to discussing ways to collaborate. Talk to us -- the earlier the better.
 
-:::{admonition} What was with all the milestone versions?
-A lot happened between v0.1.2 and v0.2.0.
-This included a year without any QuPath development at all, while the creator of the software moved jobs twice and country once.
-
-As QuPath's open source development restarted, big chunks of it were entirely rewritten.
-*Milestone* releases were made along the way to enable enthusiastic (brave) users to try things out and give feedback.
-These can be thought of as work-in-progress preview versions, which are identifiable with names like v0.2.0-m2.
-In the end, there were 12 milestones... considerably more than had been originally anticipated.
-
-One memorable characteristic of those times is that *so much* was being rewritten that things tended to break between milestones.
-It was all rather disruptive, although the user feedback was invaluable in shaping the software and giving a more solid basis for the future.
-
-Having got through that period, the release schedule outlined above is intended to avoid a return to the dark days of many milestones -- making things more structured and predictable for users and developers alike.
-:::
-
 [changelog]: https://github.com/qupath/qupath/blob/master/CHANGELOG.md
 [forum]: http://forum.image.sc/tag/qupath
 [github issues]: http://forum.image.sc/tag/qupath

@@ -34,7 +34,7 @@ These shortcuts only work whenever the viewer is 'in focus', i.e. it is the last
 ```
 
 :::{sidebar} Note for Linux users
-Replace {kbd}`Alt` with {kbd}`Alt + Super` (thanks to [Philipp Tschandl for this](https://groups.google.com/d/msg/qupath-users/QB03tHjRrZs/od-nL_9SBQAJ)).
+You may need to replace {kbd}Alt with {kbd}Alt + Super.
 :::
 
 ### The {kbd}`Alt` key
