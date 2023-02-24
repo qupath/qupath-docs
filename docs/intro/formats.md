@@ -25,6 +25,8 @@ Both libraries have their own distinct advantages:
 
 Bio-Formats supports most images that can be read by OpenSlide, but not all - and therefore QuPath continues to include both libraries.
 
+However, file formats are tricky and tend to have lots of variants. Just because a format is listed as being supported by Bio-Formats or OpenSlide doesn't mean files in that format will always open (properly) in QuPath. The following sections contain some extra details and caveats, partly based on user feedback about what does and doesn't work.
+
 :::{important}
 If you're using a QuPath build for **Apple silicon** (i.e. a recent Mac with M1/M2 processor), then you might not have OpenSlide available by default.
 Check out <https://github.com/petebankhead/homebrew-qupath> for instructions how to install this.

@@ -101,7 +101,7 @@ html_logo = 'docs/images/qupath_128.png'
 
 html_favicon = 'docs/images/QuPath.ico'
 
-release = '0.4.2'
+release = '0.4.3'
 version = '0.4'
 
 # myst_heading_anchors = 2

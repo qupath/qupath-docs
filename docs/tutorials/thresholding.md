@@ -34,7 +34,7 @@ A *thresholder* in QuPath is something that can apply a threshold to an image wh
 
 ### Thresholds in action
 
-You can create a thresholder using the *Create thresholder* command.
+You can create a thresholder using the {menuselection}`Classify --> Pixel classification --> Create thresholder` command.
 
 There are three main purposes for this: to create objects (usually annotations), to add measurements to objects (can be anything), and to classify objects (only detections).
 
