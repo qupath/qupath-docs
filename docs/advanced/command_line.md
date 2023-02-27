@@ -72,8 +72,8 @@ It is necessary to use *"QuPath (console).exe"* here to be able to view the outp
 Also, when using the *PowerShell* command line interface instead of *Command Prompt*, the QuPath executable name must be preceded with an ampersand otherwise parser errors such as `ParentContainsErrorRecordException` may occur.
 See [this forum post](https://forum.image.sc/t/running-qupath-using-command-line-interface/72518/6).
 
-```powershell
-& 'QuPath-0.3.0-SNAPSHOT (console).exe' --help
+```bash
+& 'QuPath-0.4.3 (console).exe' --help
 ```
 
 ### Mac
