@@ -138,7 +138,7 @@ See {ref}`Installation`.
 You can update the maximum memory QuPath has access to via {menuselection}`Edit --> Preferences --> General --> Set maximum memory for QuPath`.
 This *should* work, but sometimes does not -- possibly due to permissions issues meaning that the necessary config file cannot be overwritten successfully.
 
-To set the memory limit manually, find the `.cfg.` file within your QuPath installation (something like `QuPath-0.2.0.cfg`) and open it in a plain text editor (e.g. Notepad, Atom).
+To set the memory limit manually, find the `.cfg.` file within your QuPath installation (something like `QuPath-0.4.3.cfg`) and open it in a plain text editor (e.g. Notepad, Atom).
 
 The default is to use 50% of available memory, specified under `JavaOptions`:
 

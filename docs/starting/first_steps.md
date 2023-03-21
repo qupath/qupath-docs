@@ -127,7 +127,7 @@ Double-clicking on the magnification value in the toolbar (here, the bit that sh
 As you zoom in and out, the scalebar in the lower left cover will conveniently update so you always know your scale.
 
 :::{tip}
-You can customise the scalebar thickness, font size and weight from preferences panel ({menuselection}`Edit --> Preferences --> Viewer`).
+You can customize the scalebar thickness, font size and weight from preferences panel ({menuselection}`Edit --> Preferences --> Viewer`).
 :::
 
 ### Panning

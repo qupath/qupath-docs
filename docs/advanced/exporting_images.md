@@ -63,7 +63,7 @@ Snapshot exports of the *Main window screenshot* (left) and *Main window content
 ::::
 
 :::{tip}
-You can customise the scalebar thickness, font size and weight from preferences panel ({menuselection}`Edit --> Preferences --> Viewer`).
+You can customize the scalebar thickness, font size and weight from preferences panel ({menuselection}`Edit --> Preferences --> Viewer`).
 :::
 
 :::{tip}
