@@ -11,7 +11,11 @@ This tutorial outlines the basics of how multiplexed images can be analyzed in Q
 We will focus on the main task of identifying each cell, and classifying the cells according to whether they are positive or not for different markers.
 Once this has been done, 'standard' QuPath commands and scripts can be used to interrogate the data.
 
-There are three main steps involved:
+:::{Note}
+If you are looking to quantify stained areas rather than cells or needing to create an annotation **before** running cell detection then {doc}`Measuring areas<../tutorials/measuring_areas>` or {doc}`Pixel classification<../tutorials/pixel_classification>` tutorials may be of interest. Although the examples used in these tutorials are brightfield stains, the methods are the same for fluorescence. When required to enter the "channel" just use the one of interest in your image instead.
+:::
+
+This tutorial has three main steps:
 
 1. Detect & measure cells
 2. Create classifiers for each marker
