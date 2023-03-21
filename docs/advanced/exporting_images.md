@@ -63,8 +63,11 @@ Snapshot exports of the *Main window screenshot* (left) and *Main window content
 ::::
 
 :::{tip}
-{doc}`Sending image regions to ImageJ <imagej>` provides another way to save images -- either original pixels or rendered RGB.
-This opens up ImageJ's extra functionality, for example adding a custom scalebar.
+You can customise the scalebar thickness, font size and weight from preferences panel ({menuselection}`Edit --> Preferences --> Viewer`).
+:::
+
+:::{tip}
+{doc}`Sending image regions to ImageJ <imagej>` provides another way to save images -- either original pixels or rendered RGB. This opens up ImageJ's extra functionality, for example further customizing the scalebar.
 :::
 
 ## Export by scripting
