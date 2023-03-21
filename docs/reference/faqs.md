@@ -163,26 +163,6 @@ The config file is inside the *Contents/app* directory.
 
 Yes! See {ref}`Command line`.
 
-### Why does QuPath recommend using US English settings on startup?
-
-For consistency.
-Lots of subtle and thorny issues can happen when representing numbers in different ways, in particular when switching between using dots or commas as the decimal separator.
-
-For example, `1,001` can either be a fairly large number or a small number depending upon where on the world it is read.
-
-In some cases, QuPath has to use the 'dot' representation for decimals (e.g. when scripting), since this is Java's preferred form, and trying to work around this proved too difficult.
-However, forcing everyone to use US English for everything (including exporting results) isn't a perfect solution, especially if other software (e.g. your preferred spreadsheet application) uses something else.
-
-Therefore QuPath does not (currently) insist on its preference for US English... but gives a warning to be **very** cautious about how numbers are represented and interpreted.
-
-There is a more detailed technical description about the issues involved [here](https://github.com/qupath/qupath/issues/29).
-
-:::{figure} ../intro/images/setup_memory.png
-:align: center
-:class: shadow-image
-:width: 60%
-:::
-
 ### Is there a way to make projects self-contained, using the relative paths to images?
 
 QuPath projects currently use a kind of hybrid approach already: storing both the absolute and relative paths to the image files.
