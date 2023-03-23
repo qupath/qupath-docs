@@ -135,10 +135,10 @@ See {ref}`Installation`.
 
 ### Why can I not set the maximum memory?
 
-QuPath offers a dialog to set the maximum memory on first startup, or through {menuselection}`Help --> Show setup options`.
+You can update the maximum memory QuPath has access to via {menuselection}`Edit --> Preferences --> General --> Set maximum memory for QuPath`.
 This *should* work, but sometimes does not -- possibly due to permissions issues meaning that the necessary config file cannot be overwritten successfully.
 
-To set the memory limit manually, find the `.cfg.` file within your QuPath installation (something like `QuPath-0.2.0.cfg`) and open it in a plain text editor (e.g. Notepad, Atom).
+To set the memory limit manually, find the `.cfg.` file within your QuPath installation (something like `QuPath-0.4.3.cfg`) and open it in a plain text editor (e.g. Notepad, Atom).
 
 The default is to use 50% of available memory, specified under `JavaOptions`:
 
@@ -162,26 +162,6 @@ The config file is inside the *Contents/app* directory.
 ### Can QuPath be run in batch mode from the command line?
 
 Yes! See {ref}`Command line`.
-
-### Why does QuPath recommend using US English settings on startup?
-
-For consistency.
-Lots of subtle and thorny issues can happen when representing numbers in different ways, in particular when switching between using dots or commas as the decimal separator.
-
-For example, `1,001` can either be a fairly large number or a small number depending upon where on the world it is read.
-
-In some cases, QuPath has to use the 'dot' representation for decimals (e.g. when scripting), since this is Java's preferred form, and trying to work around this proved too difficult.
-However, forcing everyone to use US English for everything (including exporting results) isn't a perfect solution, especially if other software (e.g. your preferred spreadsheet application) uses something else.
-
-Therefore QuPath does not (currently) insist on its preference for US English... but gives a warning to be **very** cautious about how numbers are represented and interpreted.
-
-There is a more detailed technical description about the issues involved [here](https://github.com/qupath/qupath/issues/29).
-
-:::{figure} ../intro/images/setup_memory.png
-:align: center
-:class: shadow-image
-:width: 60%
-:::
 
 ### Is there a way to make projects self-contained, using the relative paths to images?
 
