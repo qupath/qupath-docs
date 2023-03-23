@@ -108,7 +108,7 @@ v0.4.0 introduces a new (experimental) QuPath build specifically for Apple Silic
 
 If you have a new Mac with an M1/M2 processor, this is likely to run much faster than the alternative Intel build.
 
-*However*, there are a few significant isadvantages:
+*However*, there are a few significant disadvantages:
 * OpenSlide is missing. You can add it separately with the help of [Homebrew](https://brew.sh) - see <https://github.com/petebankhead/homebrew-qupath> for details
 * Images opened with Bio-Format may not work if they require a native library, e.g.
   * some .ndpi files (e.g. the OS-1/OS-2/OS-3.ndpi sample images)
