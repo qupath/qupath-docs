@@ -20,8 +20,9 @@ See [this forum post](https://forum.image.sc/t/unexpected-command-line-usage-in-
 
 The general way to view the command line options is with:
 
-```bash
-QuPath-0.4.3 --help
+```{eval-rst}
+.. parsed-literal::
+    QuPath-|release| --help
 ```
 
 And as of QuPath {{ env.config.release }}, the following information is returned:
@@ -58,8 +59,9 @@ However, there are some platform-specific details on Windows and Mac.
 On Windows, there are two executable files for QuPath.
 It is necessary to use *"QuPath (console).exe"* here to be able to view the output, e.g.
 
-```bash
-"QuPath-0.4.3 (console).exe" --help
+```{eval-rst}
+.. parsed-literal::
+    "QuPath-|release| (console).exe" --help
 ```
 
 :::{figure} images/command_line_win.png
@@ -72,16 +74,18 @@ It is necessary to use *"QuPath (console).exe"* here to be able to view the outp
 Also, when using the *PowerShell* command line interface instead of *Command Prompt*, the QuPath executable name must be preceded with an ampersand otherwise parser errors such as `ParentContainsErrorRecordException` may occur.
 See [this forum post](https://forum.image.sc/t/running-qupath-using-command-line-interface/72518/6).
 
-```bash
-& 'QuPath-0.4.3 (console).exe' --help
+```{eval-rst}
+.. parsed-literal::
+    & 'QuPath-|release| (console).exe' --help
 ```
 
 ### Mac
 
 On macOS, the executable is buried inside the `.app` file and therefore you need something like:
 
-```bash
-./QuPath-0.4.3.app/Contents/MacOS/QuPath-0.4.3 --help
+```{eval-rst}
+.. parsed-literal::
+    ./QuPath-|release|.app/Contents/MacOS/QuPath --help
 ```
 
 :::{figure} images/command_line_mac.png
@@ -94,8 +98,9 @@ On macOS, the executable is buried inside the `.app` file and therefore you need
 Some of the command line functionality is available via *subcommands*, such as `script`.
 Help is available for these separately.
 
-```bash
-QuPath-0.4.3 script --help
+```{eval-rst}
+.. parsed-literal::
+    QuPath-|release| script --help
 ```
 
 ```text
@@ -134,12 +139,14 @@ QuPath v0.3.0 introduced support for passing arguments to scripts using the `--a
 
 Examples of use are:
 
-```bash
-QuPath-0.4.3 script -c "print 'hello ' + args" --args something --args here 
+```{eval-rst}
+.. parsed-literal::
+    QuPath-|release| script -c "print 'hello ' + args" --args something --args here 
 ```
 
-```bash
-QuPath-0.4.3 script -c "print 'hello ' + args" --args "[something,else,here]" 
+```{eval-rst}
+.. parsed-literal::
+    QuPath-|release| script -c "print 'hello ' + args" --args "[something,else,here]" 
 ```
 
 `--server` can also be used to pass arguments when constructing the ImageServer with the `--image` option.
@@ -148,8 +155,9 @@ For example, `--server "[--classname,qupath.lib.images.servers.bioformats.BioFor
 :::{tip}
 In a script, the size of the `args` variable can be queried and returns 0 if no arguments were passed via the command line. For example, the output shown by the following command:
 
-```bash
-QuPath-0.4.3 script -c "if (args.size()==0) print 'No arguments' else print 'hello ' + args"
+```{eval-rst}
+.. parsed-literal::
+    QuPath-|release| script -c "if (args.size()==0) print 'No arguments' else print 'hello ' + args"
 ```
 
 :::
