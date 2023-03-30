@@ -51,5 +51,5 @@ You *could* remove them and QuPath should still work... but it's best not to if 
 
 ## Updating extensions
 
-QuPath doesn't yet have a nice way to manage extentions, and is (unfortunately) not yet smart enough to know when duplicate extensions are present.
+QuPath doesn't yet have a nice way to manage extensions, and is (unfortunately) not yet smart enough to know when duplicate extensions are present.
 Therefore if you want to update any extensions, you should manually remove the old version (as described above) and then install the new one.
