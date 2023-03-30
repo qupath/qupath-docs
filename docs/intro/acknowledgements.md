@@ -1,9 +1,23 @@
-# Acknowledgements
+# License & Acknowledgements
 
-This documentation makes use of whole slide images from different sources to illustrate the concepts.
-Where possible, freely-available images are used.
+QuPath is open-source software, available under the [GNU General Public License v3.0](https://github.com/qupath/qupath/blob/main/LICENSE).
+For more info, check out [QuPath's GitHub repo](https://github.com/qupath/qupath).
 
-Sources and terms of reuse are summarized in the table below.
+All original content in the QuPath documentation you're reading now is shared under a Creative Commons attribution license.
+You're free to reuse it, but we'd ask that you attribute the source -- and preferably include a link to this website, so that people know where to find the latest version.
+
+Here's the formal bit:
+
+---
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Except where otherwise noted, this website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
+---
+
+Please note that there is some derived content where other licenses could apply.
+Specifically, many of the screenshots were created using public images from other sources.
+
+The sources and terms of reuse for these images are summarized in the table below:
 
 ::::{list-table}
 :header-rows: 1
