@@ -225,12 +225,21 @@ Density map hotspots
 The name of the hotspot annotation reflects its ranking in descending order: if more than one hotspot is generated, the one name *Hotspot 1* is the 'hottest' (i.e. corresponds to the highest density).
 
 :::{tip}
-Unless the image is very small, the density map is calculated at a lower resolution than the full image.
-This imposes some limit on the accuracy; for that reason, the number of objects counted in the hotspot
+Because the dialog blocks the rest of QuPath, the {guilabel}`Overlay` pane makes it possible to adjust the overlay display -- in case it wasn't set nicely before pressing the {guilabel}`Find hotspots` button.
 :::
 
-:::{tip}
-Because the dialog blocks the rest of QuPath, the {guilabel}`Overlay` pane makes it possible to adjust the overlay display -- in case it wasn't set nicely before pressing the {guilabel}`Find hotspots` button.
+:::{admonition} Density map resolution
+:class: warning
+
+Unless the image is very small, the density map is calculated at a lower resolution than the full image.
+The hotspot calculations are 'rasterized', meaning they work on pixels in the lower resolution density map.
+This imposes a limit on the accuracy.
+
+Once the hotspot is created, the object counts QuPath makes inside the annotation are no longer limited by the density map resolution.
+This means that the number of objects counted in the hotspot may not be identical to the value in the density map.
+
+It also means that slightly shifting the hotspot (by a distance lower than the density map resolution) can sometimes give a slightly higher value.
+In this way, the command really provides an efficient estimate of hotspots, rather than precise locations from an exhaustive search -- but any differences can be expected to be small.
 :::
 
 #### Threshold
