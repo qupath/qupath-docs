@@ -124,7 +124,7 @@ There is some info about adding GPU support for specific cases in {ref}`building
 However, note that many bottlenecks depend upon things that cannot be solved by the GPU alone (e.g. reading image tiles, the user interface thread).
 Therefore the real-world impact on performance may be quite modest for many applications.
 
-The interactive machine learning uses OpenCV as the processing library, which uses the CPU (but highly-optimzed).
+The interactive machine learning uses OpenCV as the processing library, which uses the CPU (but highly-optimized).
 It is designed so that other machine learning libraries could potentially be used, if suitable extensions are written.
 
 ### Why do I see a warning when I try to install QuPath?
