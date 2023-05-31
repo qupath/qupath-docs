@@ -187,7 +187,7 @@ See {ref}`Open URI` for more details.
 
 ### Why does my image open but look weird?
 
-See [Why can't QuPath open my image?]
+See {ref}`Why can't QuPath open my image?`
 
 ### Is it possible to view slide labels?
 
