@@ -25,7 +25,7 @@ You can find QuPath's API docs at <http://qupath.github.io/javadoc/docs/>
 
 ## Default imports
 
-In the *Script Editor*, there is an option {menuselection}`Run --> Include default bindings`.
+In the *Script Editor*, there is an option {menuselection}`Run --> Include default imports`.
 
 If this is selected, QuPath will add the following line to the top of your script:
 

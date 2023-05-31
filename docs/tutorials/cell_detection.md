@@ -65,7 +65,7 @@ Ki67 image with annotation
 
 ### Run *Positive cell detection*
 
-Run the {menuselection}`Analyze --> Cell analysis --> Positive cell detection` command.
+Run the {menuselection}`Analyze --> Cell detection --> Positive cell detection` command.
 This will bring up a dialog, where most of the options relate to how the cells are detected.
 The default values are often good enough to get started.
 
