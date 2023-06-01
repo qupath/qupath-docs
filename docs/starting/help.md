@@ -10,7 +10,7 @@ Here are the main sources of help with QuPath questions:
 - [Twitter](https://twitter.com/QuPath) - most things will be **announced here first**
 
 :::{tip}
-There's also a fantastic forum post introducing QuPath from a user's perspective [here](https://forum.image.sc/t/qupath-intro-choose-your-own-analysis-adventure/27906). Please note this post refers to verison 0.2.0 and there has been a few updates since then!
+There's also a fantastic forum post introducing QuPath from a user's perspective [here](https://forum.image.sc/t/qupath-intro-choose-your-own-analysis-adventure/27906). Please note this post refers to version 0.2.0 and there has been a few updates since then!
 :::
 
 If your needs for instruction are more modest, it's always worthwhile to try hovering your mouse over nearby buttons or input controls - there's a good chance that an explanation will pop up to explain what the control does.
