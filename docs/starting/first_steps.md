@@ -326,7 +326,7 @@ As your collections of objects grow on the image, it may start to become clutter
 There are four useful toolbar buttons that can help customize how the objects are displayed. These are:
 
 - {{ icon_annotations }} **Show and hide annotations** - shortcut {kbd}`A`
-- {{ icon_tma_grid }} **Show and hide a TMA grid** (only relevant for \[\[Tissue microarrays\]\]) - shortcut {kbd}`G`
+- {{ icon_tma_grid }} **Show and hide a TMA grid** (only relevant for tissue microarrays) - shortcut {kbd}`G`
 - {{ icon_detections }} **Show and hide detections** - shortcut {kbd}`D`
 - {{ icon_detections_fill }} **Fill and unfill detections** - shortcut {kbd}`F`
 

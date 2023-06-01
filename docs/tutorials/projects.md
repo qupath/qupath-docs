@@ -76,7 +76,7 @@ Simply add the *project.qpproj* file from another compatible QuPath project to b
 
 #### Remove images
 
-You can remove images by right-clicking one or more entries under the *Project* tab and choosing {menuselection}`Delete image(s)`.
+You can remove images by right-clicking one or more entries under the *Project* tab and choosing {menuselection}`Remove image(s)`.
 
 You can choose whether to also delete all associated data from within the project (e.g. annotations).
 If you choose not to, these files will linger around - you won't be able to access them easily (because the image isn't in the project), but they may be retrievable in an emergency.
