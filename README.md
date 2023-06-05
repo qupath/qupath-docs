@@ -2,6 +2,16 @@
 
 This contains the source for QuPath's documentation, hosted at https://qupath.readthedocs.io
 
+## Building locally
+
+To build this locally, you should first install (possibly in a [venv](https://docs.python.org/3/library/venv.html):
+- `sphinx-build`
+- `sphinx_rtd_theme`
+- `myst_parser`
+- `readthedocs-sphinx-search`
+
+As well as the command line tool `Make` (e.g., [GNU Make](https://www.gnu.org/software/make/)).
+
 ## License
 
 All original content here is shared under a Creative Commons license ([CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)).
