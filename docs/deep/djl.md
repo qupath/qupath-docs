@@ -233,7 +233,7 @@ artifacts = artifacts.findAll(a -> a.properties.getOrDefault('artist', null))
 // Note: this shouldn't be too big! Define a maximum dimension
 double maxDim = 1024
 def server = getCurrentServer()
-double downsample = Math.max(server.getWidth(), server.getHeight()) / maxDim
+double downsample = Math.max(server.getWidth(), server.getHeight()) * (maxDim**-1)
 
 def request = RegionRequest.createInstance(server, Math.max(1.0, downsample))
 def img = server.readRegion(request)
@@ -299,7 +299,7 @@ def artifact = artifacts.find(a -> a.properties['artist'] == 'vangogh')
 double maxDim = 1024
 def server = getCurrentServer()
 def roi = getSelectedROI()
-double downsample = Math.max(roi.getBoundsWidth(), roi.getBoundsHeight()) / maxDim;
+double downsample = Math.max(roi.getBoundsWidth(), roi.getBoundsHeight()) * (maxDim**-1)
 def request = RegionRequest.createInstance(server.getPath(), downsample, roi)
 def img = server.readRegion(request)
 
