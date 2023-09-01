@@ -104,11 +104,12 @@ However, as an open source project, we don't currently have the time and resourc
 (apple-silicon)=
 #### Apple Silicon
 
-v0.4.0 introduces a new (experimental) QuPath build specifically for Apple Silicon.
+To use the 'default' (Intel) build of QuPath on a recent Mac with an Apple Silicon processor, you'll need to have Rosetta 2 installed.
+There is a good chance you already have it (e.g. if you're using any other software written for Intel processors), but if not there are [more details on Apple's website](https://support.apple.com/en-gb/HT211861).
 
-If you have a new Mac with an M1/M2 processor, this is likely to run much faster than the alternative Intel build.
+QuPath v0.4.0 *also* introduces a new (experimental) QuPath build specifically for Apple Silicon, which doesn't require Rosetta 2.
+If you have a new Mac with an M1/M2 processor, this is likely to run much faster than the alternative Intel build - but unfortunately has some significant disadvantages:
 
-*However*, there are a few significant disadvantages:
 * OpenSlide is missing. You can add it separately with the help of [Homebrew](https://brew.sh) - see <https://github.com/petebankhead/homebrew-qupath> for details
 * Images opened with Bio-Format may not work if they require a native library, e.g.
   * some .ndpi files (e.g. the OS-1/OS-2/OS-3.ndpi sample images)

@@ -24,7 +24,7 @@ It also provides test inputs and outputs, so it's possible to check the results 
 QuPath aims to support the zoo via the [QuPath Bioimage Model Zoo extension](https://github.com/qupath/qupath-extension-bioimageio).
 
 The overall aim is to enable models kept in the Zoo to be imported into some QuPath-friendly form.
-Currently, the zoo contains a lot of models devoted to image segementation - so the extension focusses on converting these models to QuPath pixel classifiers.
+Currently, the zoo contains a lot of models devoted to image segmentation - so the extension focusses on converting these models to QuPath pixel classifiers.
 
 
 :::{admonition} Adding Deep Java Library

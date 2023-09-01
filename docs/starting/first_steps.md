@@ -273,7 +273,7 @@ For more information on the strange use of the word *descendant*, see {doc}`../c
 Next, try creating detection objects inside an annotation.
 First, draw an annotation in an area of the image containing cells - ideally quite small, to contain perhaps 100 cells.
 
-Run the {menuselection}`Analyze --> Cell analysis --> Cell detection` command.
+Run the {menuselection}`Analyze --> Cell detection --> Cell detection` command.
 This should bring up an intimidating list of parameters to adapt the detection to different images.
 If you like you can explore these, and hover the mouse over each parameter for a description - but for now, you can also just ignore them and use the defaults (which tend to behave sensibly across a range of images).
 
@@ -326,7 +326,7 @@ As your collections of objects grow on the image, it may start to become clutter
 There are four useful toolbar buttons that can help customize how the objects are displayed. These are:
 
 - {{ icon_annotations }} **Show and hide annotations** - shortcut {kbd}`A`
-- {{ icon_tma_grid }} **Show and hide a TMA grid** (only relevant for \[\[Tissue microarrays\]\]) - shortcut {kbd}`G`
+- {{ icon_tma_grid }} **Show and hide a TMA grid** (only relevant for tissue microarrays) - shortcut {kbd}`G`
 - {{ icon_detections }} **Show and hide detections** - shortcut {kbd}`D`
 - {{ icon_detections_fill }} **Fill and unfill detections** - shortcut {kbd}`F`
 

@@ -53,7 +53,7 @@ Brightness/Contrast tool and channel viewer with a multiplexed image.
 :::
 
 :::{tip}
-{menuselection}`View --> Mini viewers --> Channel viewer` can be used to visualize all separated channels simultaneously.
+{menuselection}`View --> Show channel viewer` can be used to visualize all separated channels simultaneously.
 :::
 
 :::{tip}
@@ -280,7 +280,7 @@ In this case, {kbd}`1` will show the original image, {kbd}`2` hematoxylin, {kbd}
 :::{admonition} Questions & Answers
 **Why does \*Estimate stain vectors\* matter?**
 
-If the stain vectors are sufficiently wrong, then commands that make use of cell detection (e.g. cell detection) may perform badly, because information from different stains is being mixed up.
+If the stain vectors are sufficiently wrong, then commands that make use of color deconvolution (e.g. cell detection) may perform badly, because information from different stains is being mixed up.
 
 The can also lead to strange or impossible results, such as cells being measured as having 'negative' amounts of particular stains.
 
