@@ -107,7 +107,7 @@ Some of the options available to customize the classifier during training are th
 
 The options include:
 
-- **Classifier**: The type of the classifier. *Artifical neural networks* are *Random trees* are generally good choices. *K nearest neighbor* can be appropriate if you will train from point annotations only (it can become *very* slow with large training regions). Press {guilabel}`Edit` to have more options for each.
+- **Classifier**: The type of the classifier. *Artificial neural networks* and *Random trees* are generally good choices. *K nearest neighbor* can be appropriate if you will train from point annotations only (it can become *very* slow with large training regions). Press {guilabel}`Edit` to have more options for each.
 - **Resolution**: Same as with the thresholder: controls the level of detail for the classification (and, relatedly, processing time and memory use).
 - **Features**: Customize what information goes into the classifier (more information below).
 - **Output**: All available classifiers can output a single classification per pixel. Some can also provide an estimated (pseudo)probability value for *each* available classification. This isn't a true probability, will be rescaled to the range 0-255, and requires more memory -- but can be useful in some cases to assess the confidence of the predictions.
