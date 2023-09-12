@@ -74,11 +74,13 @@ Some of these performance issues have been addressed in v0.2.0, and it is now fe
 Nevertheless, working with annotations remains rather more computationally expensive compared to working with detections.
 :::
 
+(concepts-tiles)=
 :::{admonition} Special examples of detections
 In addition to the types defined above, there are two more specialized detection subtypes:
 
 > **Cell objects** <br />
 > This has two ROIs - the main one represents the cell boundary, while a second (optional) ROI represents the nucleus.
+>
 >
 > **Tile objects** <br />
 > Differs from a standard detection in that a tile has less intrinsic 'meaning' in itself - i.e. it does not directly correspond to a recognizable structure within the image.

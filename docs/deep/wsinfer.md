@@ -1,5 +1,5 @@
 (wsinfer-extension)=
-# WSinfer
+# WSInfer
 
 The [WSInfer QuPath extension](https://github.com/qupath/qupath-extension-wsinfer/) makes it possible to do patch-based deep learning inference for digital pathology, without any need for scripting.
 
@@ -48,7 +48,7 @@ It's recommended that if this is the first time running WSInfer to keep the anno
 This might take some time, depending on your computers processing speed.
 
 :::{admonition} Select tiles or annotations?
-WSInfer assign classifications to [tile objects](**PLEASE ADD THE LINK HERE**).
+WSInfer assign classifications to [tile objects](concepts-tiles).
 
 Most of the time, you should draw/select annotations on the image before running WSInfer.
 The WSInfer extension will then create the tiles that it needs.
