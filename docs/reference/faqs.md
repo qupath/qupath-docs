@@ -161,7 +161,7 @@ The config file is inside the *Contents/app* directory.
 
 ### Can QuPath be run in batch mode from the command line?
 
-Yes! See {ref}`Command line`.
+Yes! See {doc}`../advanced/command_line`.
 
 ### Is there a way to make projects self-contained, using the relative paths to images?
 

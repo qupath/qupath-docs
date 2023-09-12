@@ -9,7 +9,7 @@ Most people using QuPath won't need to build QuPath from source!
 Just download an existing installer from [qupath.github.io](https://qupath.github.io) and use that instead.
 :::
 
-## Command line
+## Building from the command line
 
 If you're moderately comfortable working from a command line, there's not much required to build QuPath:
 

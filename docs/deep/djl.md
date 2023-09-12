@@ -79,22 +79,22 @@ You can alternatively use `import qupath.ext.djl.*`, which imports other classes
 For DJL, the information about each model is stored as an `Artifact`. 
 Here, we access all the artifacts available for object detection, and select the first one.
 
-```groovy
+```java
 import qupath.ext.djl.*
 
-def artifacts = DjlZoo.listObjectDetectionModels()
-def firstArtifact = artifacts[0]
+var artifacts = DjlZoo.listObjectDetectionModels()
+var firstArtifact = artifacts[0]
 println(firstArtifact)
 ```
 
 We can see a bit more by converting the artifact to JSON:
 
-```groovy
+```java
 import qupath.ext.djl.*
 
-def artifacts = DjlZoo.listObjectDetectionModels()
-def firstArtifact = artifacts[0]
-def json = GsonTools.getInstance(true).toJson(firstArtifact)
+var artifacts = DjlZoo.listObjectDetectionModels()
+var firstArtifact = artifacts[0]
+var json = GsonTools.getInstance(true).toJson(firstArtifact)
 println(json)
 ```
 
@@ -128,22 +128,22 @@ The `GsonTools.getInstance(true)` means that the JSON will use pretty-printing (
 The built-in zoo models are generally intended for 'regular' photos, not microscopy or biomedical images.
 The following script takes a model intended for object detection and applies it to an image of a particularly attractive guinea pig contemplating his pellets.
 
-```groovy
+```java
 import qupath.ext.djl.*
 
 // Allow model to be downloaded if it's not already
 boolean allowDownsamples = true
 
 // Get an object detection model from the zoo
-def artifacts = DjlZoo.listObjectDetectionModels()
-def artifact = artifacts[0]
+var artifacts = DjlZoo.listObjectDetectionModels()
+var artifact = artifacts[0]
 
 // Load the model
-def criteria = DjlZoo.loadModel(artifact, allowDownsamples)
+var criteria = DjlZoo.loadModel(artifact, allowDownsamples)
 
 // Apply the detection to the current image
-def imageData = getCurrentImageData()
-def detected = DjlZoo.detect(criteria, imageData)
+var imageData = getCurrentImageData()
+var detected = DjlZoo.detect(criteria, imageData)
 println "Detected objects: ${detected.orElse([])}"
 ```
 
@@ -184,19 +184,19 @@ These don't generate bounding boxes, but rather classify each pixel.
 
 The following Groovy script applies a semantic segmentation model, and converts the output to QuPath annotations.
 
-```groovy
+```java
 import qupath.ext.djl.*
 
 // Get a semantic segmentation model
 boolean allowDownloads = true
-def artifacts = DjlZoo.listSemanticSegmentationModels()
-def artifact = artifacts[0]
+var artifacts = DjlZoo.listSemanticSegmentationModels()
+var artifact = artifacts[0]
 println artifact
 
 // Apply the model
-def imageData = getCurrentImageData()
-def model = DjlZoo.loadModel(artifact, allowDownloads)
-def segmented = DjlZoo.segmentAnnotations(
+var imageData = getCurrentImageData()
+var model = DjlZoo.loadModel(artifact, allowDownloads)
+var segmented = DjlZoo.segmentAnnotations(
     model,
    imageData)
 println(segmented.orElse([]))
@@ -220,32 +220,32 @@ This might be useful for applications such as stain normalization.
 However here we'll use the DJL model zoo to instead see our guinea pig depicted in the styles of various artists.
 We convert the output into an ImageJ-friendly form.
 
-```groovy
+```java
 import qupath.ext.djl.*
 import ai.djl.Application.CV
 
 // Get all the image generation models with an 'artist' property
 // Note that other image generation models may not work (since they expect different inputs)
-def artifacts = DjlZoo.listModels(CV.IMAGE_GENERATION)
-artifacts = artifacts.findAll(a -> a.properties.getOrDefault('artist', null))
+var artifacts = DjlZoo.listModels(CV.IMAGE_GENERATION)
+artifacts = artifacts.findAll(a -> a.properties.getOrDefault("artist", null))
 
 // Get an image
 // Note: this shouldn't be too big! Define a maximum dimension
 double maxDim = 1024
-def server = getCurrentServer()
+var server = getCurrentServer()
 double downsample = Math.max(server.getWidth(), server.getHeight()) / maxDim
 
-def request = RegionRequest.createInstance(server, Math.max(1.0, downsample))
-def img = server.readRegion(request)
+var request = RegionRequest.createInstance(server, Math.max(1.0, downsample))
+var img = server.readRegion(request)
 
 // Show all the predictions
-for (def artifact : artifacts) {
-    def artist = artifact.properties['artist']
+for (var artifact : artifacts) {
+    var artist = artifact.properties["artist"]
     println("$artist is painting...")
-    try (def model = DjlZoo.loadModel(artifact, true)) {
-        try (def predictor = model.newPredictor()) {
+    try (var model = DjlZoo.loadModel(artifact, true)) {
+        try (var predictor = model.newPredictor()) {
             // Show using ImageJ
-            def output = DjlZoo.imageToImage(predictor, img)
+            var output = DjlZoo.imageToImage(predictor, img)
             new ij.ImagePlus(artist, output).show()
         }
     }
@@ -283,35 +283,35 @@ width: 45%
 
 Alternatively, the output image can be displayed in QuPath as an overlay.
 In this case, it is automatically rescaled to cover the full image.
-The opacity can be controled using the slider in the toolbar.
+The opacity can be controlled using the slider in the toolbar.
 
 
-```groovy
+```java
 import qupath.ext.djl.*
 import ai.djl.Application.CV
 import qupath.lib.gui.viewer.overlays.*
 
 // Get all the image generation models with an 'artist' property
-def artifacts = DjlZoo.listModels(CV.IMAGE_GENERATION)
-def artifact = artifacts.find(a -> a.properties['artist'] == 'vangogh')
+var artifacts = DjlZoo.listModels(CV.IMAGE_GENERATION)
+var artifact = artifacts.find(a -> a.properties["artist"] == "vangogh")
 
 // Get an image
 double maxDim = 1024
-def server = getCurrentServer()
-def roi = getSelectedROI()
-double downsample = Math.max(roi.getBoundsWidth(), roi.getBoundsHeight()) / maxDim;
-def request = RegionRequest.createInstance(server.getPath(), downsample, roi)
-def img = server.readRegion(request)
+var server = getCurrentServer()
+var roi = getSelectedROI()
+double downsample = Math.max(roi.getBoundsWidth(), roi.getBoundsHeight()) / maxDim
+var request = RegionRequest.createInstance(server.getPath(), downsample, roi)
+var img = server.readRegion(request)
 
 // Show all the predictions
-def artist = artifact.properties['artist']
+var artist = artifact.properties["artist"]
 println("$artist is painting...")
-try (def model = DjlZoo.loadModel(artifact, true)) {
-    try (def predictor = model.newPredictor()) {
+try (var model = DjlZoo.loadModel(artifact, true)) {
+    try (var predictor = model.newPredictor()) {
         // Show as an overlay
-        def output = DjlZoo.imageToImage(predictor, img)
-        def viewer = getCurrentViewer()
-        def overlay = new BufferedImageOverlay(viewer.getOverlayOptions(), request, output)
+        var output = DjlZoo.imageToImage(predictor, img)
+        var viewer = getCurrentViewer()
+        var overlay = new BufferedImageOverlay(viewer.getOverlayOptions(), request, output)
         Platform.runLater {viewer.getCustomOverlayLayers().setAll(overlay)}
     }
 }
