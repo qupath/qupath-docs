@@ -53,7 +53,7 @@ Brightness/Contrast tool and channel viewer with a multiplexed image.
 :::
 
 :::{tip}
-{menuselection}`View --> Mini viewers --> Channel viewer` can be used to visualize all separated channels simultaneously.
+{menuselection}`View --> Show channel viewer` can be used to visualize all separated channels simultaneously.
 :::
 
 :::{tip}

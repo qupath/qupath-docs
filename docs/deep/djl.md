@@ -47,7 +47,7 @@ If the download is successful, the indicator beside the engine should switch to 
 
 :::{admonition} Why an extension?
 The *QuPath Deep Java Library extension* is at an early stage and under active development.
-Keeping it as a separate extension allows us to make updates ithout needing to make an entirely new QuPath release.
+Keeping it as a separate extension allows us to make updates without needing to make an entirely new QuPath release.
 
 In the future, it might well become included in QuPath by default.
 

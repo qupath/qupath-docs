@@ -273,7 +273,7 @@ For more information on the strange use of the word *descendant*, see {doc}`../c
 Next, try creating detection objects inside an annotation.
 First, draw an annotation in an area of the image containing cells - ideally quite small, to contain perhaps 100 cells.
 
-Run the {menuselection}`Analyze --> Cell analysis --> Cell detection` command.
+Run the {menuselection}`Analyze --> Cell detection --> Cell detection` command.
 This should bring up an intimidating list of parameters to adapt the detection to different images.
 If you like you can explore these, and hover the mouse over each parameter for a description - but for now, you can also just ignore them and use the defaults (which tend to behave sensibly across a range of images).
 
