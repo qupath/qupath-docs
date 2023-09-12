@@ -1,23 +1,26 @@
 (wsinfer-extension)=
 # WSinfer
 
-The [WSInfer QuPath extension](https://github.com/qupath/qupath-extension-wsinfer/) enables easy and interactive model inference without the need for scripting. It is a collaboration between the QuPath group and Stony Brook University.
+The [WSInfer QuPath extension](https://github.com/qupath/qupath-extension-wsinfer/) makes it possible to do patch-based deep learning inference for digital pathology, without any need for scripting.
+
+It's a collaboration between the QuPath group (the extension) and Stony Brook University ([WSInfer](https://wsinfer.readthedocs.io/en/latest/)).
 
 :::{admonition} Cite the paper!
-If you use WSInfer in a publication, be sure to cite the original WSInfer paper found [here](https://arxiv.org/abs/2309.04631).
+If you use WSInfer and/or this extension in a publication, please make sure to cite our preprint at https://arxiv.org/abs/2309.04631
 :::
 
 ## Requirements
 
 - QuPath [version 0.4](https://qupath.github.io/) (installation instructions [here](https://qupath.readthedocs.io/en/0.4/docs/intro/installation.html)).
-- At least one whole slide image (see acknowledgements )
+- At least one whole slide image
 - [WSInfer QuPath Extension](https://github.com/qupath/qupath-extension-wsinfer/releases)
-- PyTorch (this can be downloaded while using the extension should you not already have it installed)
+- PyTorch (this can be downloaded while using the extension, if you don't already have it installed)
 
 ## Set-up
 
 With QuPath installed and running, drag and drop the WSInfer extension into the application and restart QuPath.
-Once installed, open up an image and run the extension via {menuselection}`Extensions --> WSInfer` and you should see the window below
+Once installed, open up an image and run the extension via {menuselection}`Extensions --> WSInfer`.
+You should see the window below:
 
 :::{figure} images/wsinfer.png
 :align: center
@@ -28,37 +31,58 @@ The WSInfer user interface
 :::
 
 :::{note}
-Please note that internet access will be needed for starting the extension and downloading the models.
+Please note that you'll need internet access to start the extension and download the models.
 :::
 
 ## Whole Slide Inference
 
 ### 1. Select a model
 
-Select the a model from the dropdown menu and click the download icon button to start the download and wait to be notified the download is complete.
+Select the a model from the dropdown menu and click the download icon button to start the download.
+You should see a notification when the download is complete.
 
 ### 2. Create or select an annotation
 
-Create an annotation or select a pre-existing annotations/tiles you wish to run the model on. It's recommended that if this is the first time running WSInfer to keep the annotation smaller to test the processing speed before running it on a larger region (it can take some time depending on your computers processing speed).
+Create an annotation or select a pre-existing annotations/tiles you wish to run the model on.
+It's recommended that if this is the first time running WSInfer to keep the annotation smaller to test the processing speed before running it on a larger region.
+This might take some time, depending on your computers processing speed.
 
-:::{note}
-The WSInfer models are created with certain tile sizes so when running on pre-made detections or tiles please proceed with caution.
+:::{admonition} Select tiles or annotations?
+WSInfer assign classifications to [tile objects](**PLEASE ADD THE LINK HERE**).
+
+Most of the time, you should draw/select annotations on the image before running WSInfer.
+The WSInfer extension will then create the tiles that it needs.
+
+The size of the tiles created automatically will match the size of the patch WSInfer is using to for inference.
+That's why the tile sizes generated for different models can be different: it depends what size of patch was used to train the model.
+
+*Sometimes* you might want to reuse existing tiles, and append the measurements made by WSInfer to them.
+This is especially useful if you want to run WSInfer multiple times using different models.
+This is why there is also an option to select tiles, as an alternative to selecting annotations.
+
+When you do that, WSInfer won't create new tiles - *but it will still use patches based on the resolution and patch size used to train the model*.
+These patches don't necessarily have to correspond exactly to the tiles shown in QuPath - they might be bigger or smaller - but they should still be centered on the same pixels.
 :::
 
 ### 3. Run
 
-Check you have an annotation selected and click run and if all the requirements are present then the processing will begin. If you don't have PyTorch yet then you will be prompted to download it which due to its size will take some time.
+Check you have an annotation selected and click run and if all the requirements are present then the processing will begin.
+If you don't have PyTorch yet, you will be prompted to download it (this will probably be > 1GB, so may take a while).
+
 
 ### 4. View Results
 
-Once the progress bar is complete the results can be visualized using the tools in the {guilabel}`View Results` section. {guilabel}`Measurement Maps` tool presents the score of each tile by color and can be interacted with using the 3 toggle buttons to either show, hide or fill the annotations and detections. The slider can be used to increase or decrease the fill opacity so the tissue features can be seen under the WSInfer scores.
+Once the progress bar is complete the results can be visualized using the tools in the {guilabel}`View Results` section.
+
+The {guilabel}`Measurement Maps` tool presents the score of each tile by color and can be interacted with using the 3 toggle buttons to either show, hide or fill the annotations and detections.
+
+The slider can be used to increase or decrease the fill opacity so the tissue features can be seen under the WSInfer scores.
 
 The {guilabel}`Results Table` provides details for each tile and the option to export for further analysis.
 
 ## Additional Options
 
-For those looking to make the processing faster, WSInfer can be run using either CPU, GPU or MPS. By default the CPU is selected since the GPU, CUDA and MPS versions are yet to be fully explored.
-From this section the model directory and number of parallel workers can also be found and edited as seen in the image below.
+You can also use the additional options to specify where models should be stored, and also the number of parallel threads used to read patches from the image (usually 1 or 2).
 
 :::{figure} images/wsinfer_options.png
 :align: center
@@ -66,4 +90,24 @@ From this section the model directory and number of parallel workers can also be
 :width: 40%
 
 WSInfer's additional options
+:::
+
+However the most (potentially) exciting additional option is the {guilabel}`Preferred device`: the one that promises to (maybe) make things run much faster.
+
+The options available will depend upon your computer's capabilities (at least as far as they could be discerned by Deep Java Library):
+
+* **CPU**: This is generally the safest - and slowest - option, because it should be supported on all computers.
+* **MPS**: This stands for *Metal Performance Shaders*, and should be available on recent Apple Silicon - it is the Mac version of GPU acceleration
+* **GPU**: This should appear if you have an NVIDIA GPU, CUDA... and some luck.
+
+If either MPS or GPU work for you, they should reduce the time required for inference by a *lot*.
+However configuration for GPU can be tricky, as it will depend upon other hardware and software on your computer.
+
+
+:::{admonition} PyTorch & CUDA versions
+The WSInfer extension is using Deep Java Library to manage its PyTorch installation.
+It won't automatically find any existing PyTorch you might have installed: Deep Java Library will download its own.
+
+If you have a compatible GPU, and want CUDA support, you'll need to ensure you have an appropriate CUDA installed *before* PyTorch is downloaded.
+QuPath v0.4.x uses PyTorch 1.13.x by default, which is expected to work with CUDA 11.6 or 11.7.
 :::
