@@ -227,7 +227,7 @@ import ai.djl.Application.CV
 // Get all the image generation models with an 'artist' property
 // Note that other image generation models may not work (since they expect different inputs)
 var artifacts = DjlZoo.listModels(CV.IMAGE_GENERATION)
-artifacts = artifacts.findAll(a -> a.properties.getOrDefault('artist', null))
+artifacts = artifacts.findAll(a -> a.properties.getOrDefault("artist", null))
 
 // Get an image
 // Note: this shouldn't be too big! Define a maximum dimension
