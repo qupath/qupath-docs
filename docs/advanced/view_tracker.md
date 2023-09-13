@@ -1,59 +1,39 @@
 # View tracker
 
-## What is the view tracker?
+The view tracker tool records the viewer as the user navigates over an image, similar to a screen recorder.
 
-View tracking in QuPath is the feature that allows you to
-record the actions done in the main viewer. In other words, a view recording
-can be seen as a chronological table retracing what part of your image
-was being viewed at a certain time (and possibly more):
+:::{note}
+The view tracker currently requires the image being recorded to be within a [project](tutorials-projects) as the recordings are saved in the projects folder. When sharing, be sure to share the whole project folder.
+:::
 
-| Timestamp | X   | Y   | Width | Height | Canvas Width | Canvas Height | Downsample | Rotation |
-| --------- | --- | --- | ----- | ------ | ------------ | ------------- | ---------- | -------- |
-| 0         | 0   | 50  | 150   | 150    | 150          | 150           | 1          | 0        |
-| 33        | 50  | 50  | 150   | 150    | 150          | 150           | 1          | 0        |
-| ...       | ... | ... | ...   | ...    | ...          | ...           | ...        | ...      |
+## How to use
 
-Where:
-* **Timestamp** is the time at which the frame was recorded
-* **X**, **Y**, **Width** and **Height** are the image bounds
-* **Canvas width** and **Canvas height** are the size of the viewer\'s window
-* **Downsample** is the downsample at which the frame was viewed (useful for pyramidal images)
-* **Rotation** is the rotation in gradian at which the image was viewed
-
-## How to use view tracker?
-
-### The view tracker
-
-View tracking is accessible through {menuselection}`View --> Show view tracker`. A
-small window, such as the one below, will show:
+It can be accessed via {menuselection}`View --> Show view tracker` and looks like this:
 
 :::{figure} images/tracker_viewer_recording_example.png
 :align: center
 :class: shadow-image
 :width: 40%
 
-View tracker window including an example record
+View tracker user interface including an example view record
 :::
 
-All the recordings of the currently opened image are listed there, as
-well as in the project folder (in the current image\'s folder, under
-\'recordings\').
+All the recordings of the currently opened image are listed here.
 
 ### Create a recording
 
-To start a new recording of the viewer, simply click the button. To stop
-the recording, click the button. After stopping a recording, QuPath will
-automatically save it as a TSV file in the project folder.
+To start a new recording of the viewer, simply click [***Insert record icon***]. To stop
+the recording, click [***INsert stop icon***]. After stopping a recording, QuPath will
+automatically save it as a TSV file within in the project folder.
 
 :::{tip}
-You can also add mouse tracking and active tool tracking to the
-recording by clicking on the more button ().
+You can also add mouse and active tool tracking to the
+recording by clicking [***insert the more 3 dots icon***].
 :::
 
-### Play a recording back
+### Playback
 
-You can replay any selected recording by clicking the button and stop
-the replay by clicking on the button.
+You can replay any selected recording by selecting it and using the [***play button***] button.
 
 ::: {warning}
 A recording can only be made for one viewer at a time. I.e. You cannot
@@ -61,35 +41,29 @@ jump from one viewer to another during a recording, even in multi-view.
 Doing so will simply stop the current recording.
 :::
 
-## How to analyze a recording?
+## Analyze
 
-### Analysis pane
+The Analysis pane gives the user an overview of the recording by showing where the viewer is looking at each time point and how long that area been looked at. To analyze a recording, select it and click {guilabel}`Analyze` or double-click on the recording. This will run the analysis pane, as shown:
 
-To analyze a recording, select it and click `Analyze`{.interpreted-text
-role="guilabel"} (or alternatively, double-click on the recording). This
-will bring up the analysis pane, as shown below.
-
-:::{figure} images/tracker_viewer_recording_example.png
+:::{figure} images/tracker_viewer_analysis.png
 :align: center
 :class: shadow-image
 :width: 40%
 
-View tracker window including an example record
+View tracker analysis pane
 :::
-
-There you will be presented with a slide overview of the current image.
-You can then play the recording back or move the slider along to jump to
-a specific frame.
 
 ### Data overlay
 
-On ticking `Enable data overlay`,
+This uses a heatmap overlay which the colors can be changed via the {guilabel}`colormap` option. It provides an insight into areas of focus on the image during the recording and is determined by time spent there. To activate this option, select `Enable data overlay`.
+
 QuPath will display on top of the opened image (and the slide overview
 in the same pane) an overlay representing the time (in milliseconds)
 spent on each region of the image. In other words, each pixel of the
 overlay represents the amount of milliseconds spent on the corresponding
 pixel of the original image.
 
+### Time range
 You can dynamically crop the recording to display only the data from a
 certain period of the recording by sliding the `Time range` slider
 (e.g. only the frames between 5 minutes and before 10 minutes).
