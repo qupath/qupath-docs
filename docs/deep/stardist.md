@@ -7,6 +7,7 @@ It exists as a [Python library](https://github.com/mpicbg-csbd/stardist) and [Fi
 This page describes how to start using StarDist 2D directly within QuPath as an alternative method of cell detection.
 
 :::{admonition} Cite the paper!
+:class: warning
 If you use StarDist in a publication, be sure to cite it:
 
 > - Uwe Schmidt, Martin Weigert, Coleman Broaddus, and Gene Myers. [Cell Detection with Star-convex Polygons](https://arxiv.org/abs/1806.03535). *International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)*, Granada, Spain, September 2018.
@@ -77,17 +78,17 @@ The following script applies the *he_heavy_augment.pb* StarDist model to a brigh
 import qupath.ext.stardist.StarDist2D
 
 // Specify the model file (you will need to change this!)
-var pathModel = '/path/to/he_heavy_augment.pb'
+def pathModel = '/path/to/he_heavy_augment.pb'
 
-var stardist = StarDist2D.builder(pathModel)
+def stardist = StarDist2D.builder(pathModel)
       .threshold(0.5)              // Prediction threshold
       .normalizePercentiles(1, 99) // Percentile normalization
       .pixelSize(0.5)              // Resolution for detection
       .build()
 
 // Run detection for the selected objects
-var imageData = getCurrentImageData()
-var pathObjects = getSelectedObjects()
+def imageData = getCurrentImageData()
+def pathObjects = getSelectedObjects()
 if (pathObjects.isEmpty()) {
     Dialogs.showErrorMessage("StarDist", "Please select a parent object!")
     return
@@ -117,9 +118,9 @@ The following script applies the *dsb2018_heavy_augment.pb* model to the DAPI ch
 import qupath.ext.stardist.StarDist2D
 
 // Specify the model file (you will need to change this!)
-var pathModel = '/path/to/dsb2018_heavy_augment.pb'
+def pathModel = '/path/to/dsb2018_heavy_augment.pb'
 
-var stardist = StarDist2D.builder(pathModel)
+def stardist = StarDist2D.builder(pathModel)
         .threshold(0.5)              // Probability (detection) threshold
         .channels('DAPI')            // Specify detection channel
         .normalizePercentiles(1, 99) // Percentile normalization
@@ -127,8 +128,8 @@ var stardist = StarDist2D.builder(pathModel)
         .build()
 
 // Run detection for the selected objects
-var imageData = getCurrentImageData()
-var pathObjects = getSelectedObjects()
+def imageData = getCurrentImageData()
+def pathObjects = getSelectedObjects()
 if (pathObjects.isEmpty()) {
     Dialogs.showErrorMessage("StarDist", "Please select a parent object!")
     return
@@ -257,9 +258,9 @@ Another customization is to include the probability estimates as measurements fo
 import qupath.ext.stardist.StarDist2D
 
 // Specify the model file (you will need to change this!)
-var pathModel = '/path/to/he_heavy_augment.pb'
+def pathModel = '/path/to/he_heavy_augment.pb'
 
-var stardist = StarDist2D.builder(pathModel)
+def stardist = StarDist2D.builder(pathModel)
         .threshold(0.1)              // Prediction threshold
         .normalizePercentiles(1, 99) // Percentile normalization
         .pixelSize(0.5)              // Resolution for detection
@@ -267,8 +268,8 @@ var stardist = StarDist2D.builder(pathModel)
         .build()
 
 // Run detection for the selected objects
-var imageData = getCurrentImageData()
-var pathObjects = getSelectedObjects()
+def imageData = getCurrentImageData()
+def pathObjects = getSelectedObjects()
 if (pathObjects.isEmpty()) {
     Dialogs.showErrorMessage("StarDist", "Please select a parent object!")
     return
@@ -303,9 +304,9 @@ A similar distance-based expansion can also be used with StarDist, with optional
 import qupath.ext.stardist.StarDist2D
 
 // Specify the model file (you will need to change this!)
-var pathModel = '/path/to/dsb2018_heavy_augment.pb'
+def pathModel = '/path/to/dsb2018_heavy_augment.pb'
 
-var stardist = StarDist2D.builder(pathModel)
+def stardist = StarDist2D.builder(pathModel)
         .threshold(0.5)              // Probability (detection) threshold
         .channels('DAPI')            // Select detection channel
         .normalizePercentiles(1, 99) // Percentile normalization
@@ -318,8 +319,8 @@ var stardist = StarDist2D.builder(pathModel)
         .build()
 
 // Run detection for the selected objects
-var imageData = getCurrentImageData()
-var pathObjects = getSelectedObjects()
+def imageData = getCurrentImageData()
+def pathObjects = getSelectedObjects()
 if (pathObjects.isEmpty()) {
     Dialogs.showErrorMessage("StarDist", "Please select a parent object!")
     return
@@ -368,7 +369,7 @@ There are even more options available than those described above.
 Here is an example showing most of them:
 
 ```groovy
-var stardist = StarDist2D.builder(pathModel)
+def stardist = StarDist2D.builder(pathModel)
         .threshold(0.5)              // Probability (detection) threshold
         .channels('DAPI')            // Select detection channel
         .normalizePercentiles(1, 99) // Percentile normalization
@@ -404,7 +405,7 @@ One of the most useful extra options to the builder is `preprocessing`, which ma
 For example, rather than normalizing each image tile individually (as `normalizePercentiles` will do), we can normalize pixels using fixed values, for example with
 
 ```groovy
-var stardist = StarDist2D.builder(pathModel)
+def stardist = StarDist2D.builder(pathModel)
       .threshold(0.5)     // Prediction threshold
       .preprocess(        // Extra preprocessing steps, applied sequentially
               ImageOps.Core.subtract(100),
@@ -423,13 +424,13 @@ If needed, we can add extra things like filters to reduce noise as well.
 
 ```groovy
 // Get current image - assumed to have color deconvolution stains set
-var imageData = getCurrentImageData()
-var stains = imageData.getColorDeconvolutionStains()
+def imageData = getCurrentImageData()
+def stains = imageData.getColorDeconvolutionStains()
 
 // Set everything up with single-channel fluorescence model
-var pathModel = '/path/to/dsb2018_heavy_augment.pb'
+def pathModel = '/path/to/dsb2018_heavy_augment.pb'
 
-var stardist = StarDist2D.builder(pathModel)
+def stardist = StarDist2D.builder(pathModel)
         .preprocess( // Extra preprocessing steps, applied sequentially
             ImageOps.Channels.deconvolve(stains),
             ImageOps.Channels.extract(0),
@@ -456,17 +457,17 @@ It only requires a change to input a map linking StarDist prediction labels to Q
 
 ```
 // Define model and resolution
-var pathModel = "/path/to/classification/model.pb"
+def pathModel = "/path/to/classification/model.pb"
 double pixelSize = 0.5
 
 // Define a classification map, connecting prediction labels and classification names
-var classifications = [
+def classifications = [
     0: 'Background',
     1: 'Stroma',
     2: 'Tumor'
 ]
 
-var stardist = StarDist2D.builder(pathModel)
+def stardist = StarDist2D.builder(pathModel)
         .threshold(0.5)
         .simplify(0)
         .classificationNames(classifications) // Include names so that classifications can be applied
@@ -476,8 +477,8 @@ var stardist = StarDist2D.builder(pathModel)
         .build()
 
 // Run detection for the selected objects
-var imageData = getCurrentImageData()
-var pathObjects = getSelectedObjects()
+def imageData = getCurrentImageData()
+def pathObjects = getSelectedObjects()
 if (pathObjects.isEmpty()) {
     Dialogs.showErrorMessage("StarDist", "Please select a parent object!")
     return
@@ -502,7 +503,7 @@ Unzipped examples from the [stardist-imagej repository](https://github.com/stard
 You will also need to give QuPath the path to the *folder* containing the model files in this case, e.g.
 
 ```groovy
-var pathModel = '/path/to/dsb2018_heavy_augment' // A folder, not a file
+def pathModel = '/path/to/dsb2018_heavy_augment' // A folder, not a file
 ```
 
 :::{admonition} Troubleshooting
@@ -537,7 +538,7 @@ To optimize StarDist using OpenVINO, download [QuPath OpenVINO Extension](https:
 ```groovy
 // Specify the model directory (you will need to change this!)
 def pathModel = '/path/to/converted_model.xml'
-var dnn = qupath.ext.openvino.OpenVINOTools.createDnnModel('/path/to/model.xml')
+def dnn = qupath.ext.openvino.OpenVINOTools.createDnnModel('/path/to/model.xml')
 def stardist = StarDist2D.builder(dnn)
   ...
   .build()
