@@ -4,7 +4,7 @@ QuPath is software for **image analysis**.
 This section gives a brief overview of digital images, and the techniques and concepts needed to analyze them using QuPath.
 
 :::{tip}
-For a more extensive introduction to images and bioimage analysis concepts, see [Analyzing fluorescence microscopy images with ImageJ].
+For a more extensive introduction to images and bioimage analysis concepts, see [Introduction to Bioimage Analysis].
 
 ```{image} images/analyzing_book.png
 :align: center
@@ -318,8 +318,8 @@ Objects (e.g. annotations, cells) also should remember which plane they belong t
 For more sophisticated multidimensional image analysis you might want to turn to other software, such as [Fiji].
 
 [a pixel is not a little square]: http://alvyray.com/Memos/CG/Microsoft/6_pixel.pdf
-[analyzing fluorescence microscopy images with imagej]: https://petebankhead.gitbooks.io/imagej-intro/content/
-[blur and the psf]: https://petebankhead.gitbooks.io/imagej-intro/content/chapters/formation_spatial/formation_spatial.html
+[analyzing fluorescence microscopy images with imagej]: https://bioimagebook.github.io/
+[blur and the psf]: https://bioimagebook.github.io/chapters/3-fluorescence/2-formation_spatial/formation_spatial.html
 [fiji]: http://fiji.sc
 [ruifrok and johnston]: https://www.ncbi.nlm.nih.gov/pubmed/11531144
-[types and bit-depths]: https://petebankhead.gitbooks.io/imagej-intro/content/chapters/bit_depths/bit_depths.html
+[types and bit-depths]: https://bioimagebook.github.io/chapters/1-concepts/3-bit_depths/bit_depths.html
