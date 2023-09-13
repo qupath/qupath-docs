@@ -6,7 +6,7 @@ The [WSInfer QuPath extension](https://github.com/qupath/qupath-extension-wsinfe
 It's a collaboration between the QuPath group (the extension) and Stony Brook University ([WSInfer](https://wsinfer.readthedocs.io/en/latest/)).
 
 :::{admonition} Cite the paper!
-If you use WSInfer and/or this extension in a publication, please make sure to cite our preprint at https://arxiv.org/abs/2309.04631
+If you use WSInfer and/or this extension in a publication, please make sure to cite our preprint at <https://arxiv.org/abs/2309.04631>
 :::
 
 ## Requirements
@@ -14,7 +14,7 @@ If you use WSInfer and/or this extension in a publication, please make sure to c
 - QuPath [version 0.4](https://qupath.github.io/) (installation instructions [here](https://qupath.readthedocs.io/en/0.4/docs/intro/installation.html)).
 - At least one whole slide image
 - [WSInfer QuPath Extension](https://github.com/qupath/qupath-extension-wsinfer/releases)
-- PyTorch (this can be downloaded while using the extension, if you don't already have it installed)
+- PyTorch (this can be downloaded while using the extension)
 
 ## Set-up
 
