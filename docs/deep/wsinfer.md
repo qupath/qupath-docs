@@ -6,6 +6,7 @@ The [WSInfer QuPath extension](https://github.com/qupath/qupath-extension-wsinfe
 It's a collaboration between the QuPath group (the extension) and Stony Brook University ([WSInfer](https://wsinfer.readthedocs.io/en/latest/)).
 
 :::{admonition} Cite the paper!
+:class: warning
 If you use WSInfer and/or this extension in a publication, please make sure to cite our preprint at <https://arxiv.org/abs/2309.04631>
 :::
 
@@ -67,8 +68,7 @@ These patches don't necessarily have to correspond exactly to the tiles shown in
 ### 3. Run
 
 Check you have an annotation selected and click run and if all the requirements are present then the processing will begin.
-If you don't have PyTorch yet, you will be prompted to download it (this will probably be > 1GB, so may take a while).
-
+If you don't have PyTorch yet, you will be prompted to download it (this may well be > 100 MB, so may take a while).
 
 ### 4. View Results
 
