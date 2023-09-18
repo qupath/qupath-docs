@@ -22,18 +22,19 @@ All the recordings of the currently opened image are listed here.
 
 ### Create a recording
 
-To start a new recording of the viewer, simply click [***Insert record icon***]. To stop
-the recording, click [***INsert stop icon***]. After stopping a recording, QuPath will
+To start a new recording of the viewer, simply click ![record](images/view_tracker_record.png width="20"
+  height="20"). To stop
+the recording, click ![stop](images/view_tracker_stop.png). After stopping a recording, QuPath will
 automatically save it as a TSV file within in the project folder.
 
 :::{tip}
 You can also add mouse and active tool tracking to the
-recording by clicking [***insert the more 3 dots icon***].
+recording by clicking the three dots icon.
 :::
 
 ### Playback
 
-You can replay any selected recording by selecting it and using the [***play button***] button.
+You can replay any selected recording by selecting it and using the ![play](images/view_tracker_play.png) button.
 
 ::: {warning}
 A recording can only be made for one viewer at a time. I.e. You cannot
