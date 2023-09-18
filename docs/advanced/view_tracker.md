@@ -53,38 +53,24 @@ The Analysis pane gives the user an overview of the recording by showing where t
 View tracker analysis pane
 :::
 
+Playbacks can be replayed by clicking the [***play button***] button with a few additional options discussed below.
+
 ### Data overlay
 
-This uses a heatmap overlay which the colors can be changed via the {guilabel}`colormap` option. It provides an insight into areas of focus on the image during the recording and is determined by time spent there. To activate this option, select `Enable data overlay`.
+This uses a heatmap overlay which the colors can be changed via the {guilabel}`colormap` option. It provides an insight into areas of focus during the recording and is determined by time spent looking at that region. To activate this option, select `Enable data overlay`. Each colored pixel of the overlay represents the amount of milliseconds spent on the corresponding pixel of the original image.
 
-QuPath will display on top of the opened image (and the slide overview
-in the same pane) an overlay representing the time (in milliseconds)
-spent on each region of the image. In other words, each pixel of the
-overlay represents the amount of milliseconds spent on the corresponding
-pixel of the original image.
-
-### Time range
-You can dynamically crop the recording to display only the data from a
-certain period of the recording by sliding the `Time range` slider
-(e.g. only the frames between 5 minutes and before 10 minutes).
-Similarly, you can dynamically crop the recording to only display the
-data from the frames which were captured in a specified downsample range
-(e.g. only the frames where the image was viewed as full resolution).
+### Time range and downsample range
+You can dynamically crop the recording to display only the data from a certain period of the recording by sliding the `Time range` slider (e.g. only the frames between 5 minutes and before 10 minutes).
+Similarly, you can dynamically crop the recording to only display the data from the frames which were captured in a specified downsample range (e.g. only the frames where the image was viewed as full resolution).
 
 ::: {tip}
-You can export the overlay to a `tif` file by right-clicking
-on the slide overview (after making sure that
-`Enable data overlay` is ticked),
-then `Export data as TIF`.
+You can export the overlay to a `tif` file by right-clicking on the slide overview (after making sure that `Enable data overlay` is ticked), then `Export data as TIF`.
 :::
 
 ### Recording table
 
-As mentioned above, all recordings are automatically saved as a TSV file
-in the project folder. You can preview this table by clicking
-`Show frames` (and `Hide frames` to collapse them).
+As mentioned above, all recordings are automatically saved as a TSV file in the project folder. You can preview this table by clicking `Show frames` (and `Hide frames` to collapse them).
 
 ::: {note}
-Selecting a recording from the previewed table will automatically change
-the position of the current viewer to match the frame selected.
+Selecting a recording from the previewed table will automatically change the position of the current viewer to match the frame selected.
 :::
