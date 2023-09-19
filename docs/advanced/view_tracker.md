@@ -57,19 +57,19 @@ Playbacks can be replayed by clicking the {{ icon_play }} button with a few addi
 
 ### Data overlay
 
-This uses a heatmap overlay which the colors can be changed via the {guilabel}`colormap` option. It provides an insight into areas of focus during the recording and is determined by time spent looking at that region. To activate this option, select `Enable data overlay`. Each colored pixel of the overlay represents the amount of milliseconds spent on the corresponding pixel of the original image.
+This uses a heatmap overlay which the colors can be changed via the {guilabel}`colormap` option. It provides an insight into areas of focus during the recording and is determined by time spent looking at that region. To activate this option, select {guilabel}`Enable data overlay`. Each colored pixel of the overlay represents the amount of milliseconds spent on the corresponding pixel of the original image.
 
 ### Time range and downsample range
-You can dynamically crop the recording to display only the data from a certain period of the recording by sliding the `Time range` slider (e.g. only the frames between 5 minutes and before 10 minutes).
+You can dynamically crop the recording to display only the data from a certain period of the recording by sliding the {guilabel}`Time range` slider (e.g. only the frames between 5 minutes and before 10 minutes).
 Similarly, you can dynamically crop the recording to only display the data from the frames which were captured in a specified downsample range (e.g. only the frames where the image was viewed as full resolution).
 
 ::: {tip}
-You can export the overlay to a `tif` file by right-clicking on the slide overview (after making sure that `Enable data overlay` is ticked), then `Export data as TIF`.
+You can export the overlay to a `tif` file by right-clicking on the slide overview (after making sure that {guilabel}`Enable data overlay` is ticked), then {guilabel}`Export data as TIF`.
 :::
 
 ### Recording table
 
-As mentioned above, all recordings are automatically saved as a TSV file in the project folder. You can preview this table by clicking `Show frames` (and `Hide frames` to collapse them).
+As mentioned above, all recordings are automatically saved as a TSV file in the project folder. You can preview this table by clicking {guilabel}`Show frames` (and {guilabel}`Hide frames` to collapse them).
 
 ::: {note}
 Selecting a recording from the previewed table will automatically change the position of the current viewer to match the frame selected.
