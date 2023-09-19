@@ -22,9 +22,8 @@ All the recordings of the currently opened image are listed here.
 
 ### Create a recording
 
-To start a new recording of the viewer, simply click ![record](images/view_tracker_record.png width="20"
-  height="20"). To stop
-the recording, click ![stop](images/view_tracker_stop.png). After stopping a recording, QuPath will
+To start a new recording of the viewer, simply click {{ icon_record }}. To stop
+the recording, click {{ icon_stop }}. After stopping a recording, QuPath will
 automatically save it as a TSV file within in the project folder.
 
 :::{tip}
@@ -34,7 +33,7 @@ recording by clicking the three dots icon.
 
 ### Playback
 
-You can replay any selected recording by selecting it and using the ![play](images/view_tracker_play.png) button.
+You can replay any selected recording by selecting it and using the {{ icon_play }} button.
 
 ::: {warning}
 A recording can only be made for one viewer at a time. I.e. You cannot
@@ -54,7 +53,7 @@ The Analysis pane gives the user an overview of the recording by showing where t
 View tracker analysis pane
 :::
 
-Playbacks can be replayed by clicking the [***play button***] button with a few additional options discussed below.
+Playbacks can be replayed by clicking the {{ icon_play }} button with a few additional options discussed below.
 
 ### Data overlay
 

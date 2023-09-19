@@ -167,6 +167,15 @@ myst_substitutions = {
     "contrast": '<img src="../images/icons/Contrast.png" />',
     "icon_contrast": '<img src="../images/icons/Contrast.png" class="inline-icon" />',
 
+    "play": '<img src="../images/icons/Play.png" />',
+    "icon_play": '<img src="../images/icons/Play.png" class="inline-icon" />',
+
+    "stop": '<img src="../images/icons/Stop.png" />',
+    "icon_stop": '<img src="../images/icons/Stop.png" class="inline-icon" />',
+
+    "record": '<img src="../images/icons/Record.png" />',
+    "icon_record": '<img src="../images/icons/Record.png" class="inline-icon" />',
+
     # "polyline": '<img src="../images/icons/Polyline.png" />',
     # "icon_polyline": '<img src="../images/icons/Polyline.png" class="inline-icon" />',
 
