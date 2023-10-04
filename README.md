@@ -4,13 +4,17 @@ This contains the source for QuPath's documentation, hosted at https://qupath.re
 
 ## Building locally
 
-To build this locally, you should first install (possibly in a [venv](https://docs.python.org/3/library/venv.html):
+To build this locally, you should first install (possibly in a [venv](https://docs.python.org/3/library/venv.html)):
 - `sphinx-build`
 - `sphinx_rtd_theme`
 - `myst_parser`
 - `readthedocs-sphinx-search`
 
 As well as the command line tool `Make` (e.g., [GNU Make](https://www.gnu.org/software/make/)).
+
+Then, you can run `make` to see available build options.
+`make html` will make the HTML version of the website, which is probably the
+most useful option.
 
 ## License
 

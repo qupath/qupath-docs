@@ -269,31 +269,39 @@ You should be able to import QuPath into any IDE (e.g. *IntelliJ*, *Eclipse*) th
 I personally use [IntelliJ IDEA] for QuPath development, which allows me to run
 the software in debug mode -- and even change the code while it is running.
 
-To do this, you can either download and build QuPath once as describe above,
-and use {menuselection}`Open` from within IntelliJ, and
-navigate to the directory containing the QuPath code.
+To do this, you can either:
 
-Alternatively, you can use {menuselection}`Get from VCS` to download the code
-directly from GitHub, using the URL
-`https://github.com/qupath/qupath.git` (or the URL to your own git repository
-housing the QuPath code).
-If you download the code using this method, you should make sure you have
-installed a Java JDK before proceeding any further (see instructions above).
+* download and build QuPath once as describe above,
+  and use {menuselection}`Open` from within IntelliJ, and
+  navigate to the directory containing the QuPath code, or
+* use {menuselection}`Get from VCS` in IntelliJ to download the code
+  directly from GitHub using git. To do this, you should use the URL
+  `https://github.com/qupath/qupath.git` (or the URL to your own git repository
+  housing the QuPath code).  
+  If you download the code using this method, you should make sure you have
+  installed a Java JDK before proceeding any further (see instructions above).
 
+:::{figure} images/building-intellij-import.png
+:align: center
+:class: shadow-image
+:width: 75%
+:::
 
-After selecting the QuPath directory and importing (usually accepting the
-default import options is fine),  {menuselection}`Run --> Debug (Alt + Shift + F9)`,
-and select "Edit Configurations..." from the drop-down menu.
+After opening the QuPath project (usually accepting any
+default import options is fine), {menuselection}`Run --> Debug (Alt + Shift + F9)`,
+and select "Edit Configurations..." from the drop-down menu, and 
+{menuselection}`Add new configuration --> Gradle`. Then, enter `run` as the task,
+as in the image below.
 
 :::{figure} images/building-intellij-launch.png
 :align: center
 :class: shadow-image
-:width: 50%
+:width: 100%
 :::
 
 Now press {menuselection}`Apply` and then {menuselection}`Debug` in this window.
 
-You can now use {menuselection}`Debug --> QuPath (Alt + Shift + F10)` to launch
+You can now use {menuselection}`Debug --> QuPath (Alt + Shift + F9)` to launch
 QuPath with the same configuration in the future.
 
 The useful thing about using debug mode is that you can make changes to the
