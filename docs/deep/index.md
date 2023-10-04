@@ -6,4 +6,5 @@
 djl
 bioimage
 stardist
+wsinfer
 ```
