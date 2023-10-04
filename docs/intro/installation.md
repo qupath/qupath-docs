@@ -3,15 +3,27 @@
 ## Download & install
 
 QuPath isn't currently a signed application.
-This means that, after you download it for your platform (Windows, Linux, macOS) from [GitHub](https://github.com/qupath/qupath/releases/latest), you may need to take a few extra steps to get it to run:
+This means that, after you download it for your platform (Windows, Linux, macOS)
+from [GitHub](https://github.com/qupath/qupath/releases/latest), you may need to
+take a few extra steps to get it to run:
 
 - On **Windows**, if you downloaded an `.msi` file then double-click on it to launch the installer
   - If you see a warning, choosing {guilabel}`More info` and {guilabel}`Run anyway` should let you proceed
 - On **Windows**, if you downloaded a `.zip` then extract its contents and run the `QuPath.exe` file
 - On **macOS**, right-click the `.pkg` file, then choose 'Open' (you might need to do this twice)
   - If you're using an M1/M2 Mac, please check out the [notes on Apple silicon](apple-silicon)
-- On **Linux**, download and extract the `.tar.xz` file
-  - You'll probably have to use `chmod u+x /path/to/QuPath/bin/QuPath` to make the launcher executable
+- On **Linux**, download the `.deb` or `.rpm` file, depending on your distribution,
+  and install it using your package manager. For example, on Debian-based distributions:
+
+  ```bash
+  sudo dpkg -i qupath_0.5.0.deb
+  ```
+
+  Or on RPM-based distributions:
+
+  ```bash
+  sudo rpm --install qupath_0.5.0.rpm
+  ```
 
 See {ref}`Troubleshooting` for more information.
 
@@ -22,7 +34,6 @@ You can use either.
 The only difference between these is that the *console* version also shows a console that prints text as QuPath runs.
 This is useful when using the {ref}`Command line`.
 :::
-
 
 ## Troubleshooting
 
@@ -100,7 +111,6 @@ Since macOS (presumably) has your best interests at heart, circumventing its sec
 However, as an open source project, we don't currently have the time and resources needed to distribute QuPath as a signed/notarized app and avoid these warnings.
 :::
 
-
 (apple-silicon)=
 #### Apple Silicon
 
@@ -110,21 +120,28 @@ There is a good chance you already have it (e.g. if you're using any other softw
 QuPath v0.4.0 *also* introduces a new (experimental) QuPath build specifically for Apple Silicon, which doesn't require Rosetta 2.
 If you have a new Mac with an M1/M2 processor, this is likely to run much faster than the alternative Intel build - but unfortunately has some significant disadvantages:
 
-* OpenSlide is missing. You can add it separately with the help of [Homebrew](https://brew.sh) - see <https://github.com/petebankhead/homebrew-qupath> for details
-* Images opened with Bio-Format may not work if they require a native library, e.g.
-  * some .ndpi files (e.g. the OS-1/OS-2/OS-3.ndpi sample images)
-  * some .czi files (with JPEG-XR compression)
-* TensorFlow for Java doesn't work. But it doesn't work on Apple Silicon even if you use the Intel build (this will hopefully be fixed by the TensorFlow Java maintainers in the future).
+- OpenSlide is missing. You can add it separately with the help of [Homebrew](https://brew.sh) - see <https://github.com/petebankhead/homebrew-qupath> for details
+- Images opened with Bio-Format may not work if they require a native library, e.g.
+  - some .ndpi files (e.g. the OS-1/OS-2/OS-3.ndpi sample images)
+  - some .czi files (with JPEG-XR compression)
+- TensorFlow for Java doesn't work. But it doesn't work on Apple Silicon even if you use the Intel build (this will hopefully be fixed by the TensorFlow Java maintainers in the future).
 
 ### Linux
 
-QuPath for Linux was compiled on Ubuntu, with best efforts made to include all dependencies, although in the case of OpenSlide this wasn't entirely successful.
-You may need to install OpenSlide separately through your package manager.
+QuPath for Linux was compiled on Ubuntu and Fedora, with best efforts made to
+include all dependencies. However, we have had some issues with
+OpenSlide. If you have trouble getting OpenSlide to work, you could try
+installing OpenSlide using your package manager and setting
+{menuselection}`Preferences --> OpenSlide --> Path to OpenSlide installation` to
+to point to the directory where OpenSlide is installed.
 
 Known issues are:
 
-* Black/white tiles can appear in some images reading using OpenSlide; updating libpixman can resolve this (see [Issue #355](https://github.com/qupath/qupath/issues/355)), or alternatively you can try the alternative bash script `/path/to/QuPath/bin/QuPath.sh` to launch the software.
-* QuPath (like other Java applications) cannot be started if its installation path contains a directory named `bin`; moving to another directory resolves this (see [Issue #614](https://github.com/qupath/qupath/issues/614))
-* Some sub-dependencies might not be found (reported [on the forum](https://forum.image.sc/t/qupath-v0-4-0-now-available/74887/7))
-
-If you still have trouble getting OpenSlide to work, you could also try [installing OpenSlide Java using Homebrew](https://github.com/petebankhead/homebrew-qupath).
+- Black/white tiles can appear in some images reading using OpenSlide;
+  updating libpixman can resolve this (see
+  [Issue #355](https://github.com/qupath/qupath/issues/355)),
+  or alternatively you can try the alternative bash script
+  `/path/to/QuPath/bin/QuPath.sh` to launch the software.
+  By default, this is in `/opt/QuPath/bin/QuPath.sh`.
+- QuPath (like other Java applications) cannot be started if its installation path contains a directory named `bin`; moving to another directory resolves this (see [Issue #614](https://github.com/qupath/qupath/issues/614))
+- Some sub-dependencies might not be found (reported [on the forum](https://forum.image.sc/t/qupath-v0-4-0-now-available/74887/7))
