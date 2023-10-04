@@ -262,50 +262,50 @@ You can then build it from a command prompt as described above.
 
 ### Running from an IDE
 
-You should be able to import QuPath into any IDE (e.g. *Eclipse*, *IntelliJ*) that supports Gradle.
+You should be able to import QuPath into any IDE (e.g. *IntelliJ*, *Eclipse*) that supports Gradle.
 
-#### Eclipse
+#### IntelliJ IDEA
 
-I personally use [Eclipse] for QuPath development, which allows me to run the software in debug mode -- and even change the code while it is running.
+I personally use [IntelliJ IDEA] for QuPath development, which allows me to run
+the software in debug mode -- and even change the code while it is running.
 
-To do this, first download and build QuPath once as describe above.
-Then use {menuselection}`File --> Import...` from within Eclipse and select *Existing Gradle project*.
+To do this, you can either download and build QuPath once as describe above,
+and use {menuselection}`Open` from within IntelliJ, and
+navigate to the directory containing the QuPath code.
 
-:::{figure} images/building-eclipse-import.png
+Alternatively, you can use {menuselection}`Get from VCS` to download the code
+directly from GitHub, using the URL
+`https://github.com/qupath/qupath.git` (or the URL to your own git repository
+housing the QuPath code).
+If you download the code using this method, you should make sure you have
+installed a Java JDK before proceeding any further (see instructions above).
+
+
+After selecting the QuPath directory and importing (usually accepting the
+default import options is fine),  {menuselection}`Run --> Debug (Alt + Shift + F9)`,
+and select "Edit Configurations..." from the drop-down menu.
+
+:::{figure} images/building-intellij-launch.png
 :align: center
 :class: shadow-image
 :width: 50%
 :::
 
-After selecting the QuPath directory and importing (usually accepting the default import options is fine), right-click on *QuPath.java* (the main launch class) as shown below:
+Now press {menuselection}`Apply` and then {menuselection}`Debug` in this window.
 
-:::{figure} images/building-eclipse-launch.png
-:align: center
-:class: shadow-image
-:width: 50%
-:::
+You can now use {menuselection}`Debug --> QuPath (Alt + Shift + F10)` to launch
+QuPath with the same configuration in the future.
 
-Now choose {menuselection}`Debug As --> Java Application` from the context menu.
-
-This should launch QuPath, but it will fail to find the native libraries it needs to use OpenSlide.
-To fix that, use {menuselection}`Run --> Debug configurations...` to adjust the arguments for your configuration as shown below, changing `-Xmx` if needed to customize the memory available.
-
-:::{figure} images/building-eclipse-config.png
-:align: center
-:class: shadow-image
-:width: 90%
-:::
-
-Finally, press the {guilabel}`Debug` button in the bottom right, and QuPath should launch with OpenSlide intact.
-
-This works because it starts inside the `${workspace_loc:qupath/build/natives}` directory, which should contain the OpenSlide native libraries -- assuming you have build QuPath at least once before.
-
-You can now use {menuselection}`Run --> Debug History --> QuPath` to launch QuPath with the same configuration in the future.
-
-The useful thing about using debug mode is that you can make changes to the QuPath code *while QuPath is running* and, providing they aren't *too* extreme, they will be incorporated into the software without needing to relaunch it.
+The useful thing about using debug mode is that you can make changes to the
+QuPath code, and use
+{menuselection}`Run --> Debugging Actions --> Reload Changed Classes`
+to reload the changes *while QuPath is running* and, providing they aren't *too*
+extreme, they will be incorporated into the software without needing to relaunch it.
+For example, any changes that alter method signatures (e.g. adding or removing
+arguments, or changing return types) will require a restart.
 
 [atom]: https://atom.io/
-[eclipse]: https://www.eclipse.org
+[IntelliJ IDEA]: https://www.jetbrains.com/idea/
 [github desktop]: https://desktop.github.com/
 [gradle]: http://gradle.org
 [qupath's github repository]: https://github.com/qupath/qupath
