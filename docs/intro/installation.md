@@ -104,17 +104,21 @@ However, as an open source project, we don't currently have the time and resourc
 (apple-silicon)=
 #### Apple Silicon
 
-To use the 'default' (Intel) build of QuPath on a recent Mac with an Apple Silicon processor, you'll need to have Rosetta 2 installed.
+QuPath v0.5 for Mac is available as both Intel (x64) and Apple Silicon (aarch64) builds.
+
+Users of recent Macs with M1/M2 processors are likely to find QuPath runs faster with the Apple Silicon builds (~30%).
+
+One important caveat is that Bio-Formats - the open-source library QuPath uses to read many image types - does not yet *fully* support Apple Silicon, which affects a small number of formats.
+This is most relevant for users hoping to work with .czi images (from Zeiss microscopes/scanners) that use JPEG-XR compression.
+It also affects .ndpi files (from Hamamatsu scanners), but less crucially because QuPath will use OpenSlide to read these by default anyway.
+
+If the limitation causes you trouble, you can also run the Intel build on Apple Silicon - with full Bio-Formats support.
+To do this, you'll need to have Rosetta 2 installed.
 There is a good chance you already have it (e.g. if you're using any other software written for Intel processors), but if not there are [more details on Apple's website](https://support.apple.com/en-gb/HT211861).
 
-QuPath v0.4.0 *also* introduces a new (experimental) QuPath build specifically for Apple Silicon, which doesn't require Rosetta 2.
-If you have a new Mac with an M1/M2 processor, this is likely to run much faster than the alternative Intel build - but unfortunately has some significant disadvantages:
+The type of build is included in the .app file name (either x64 or aarch64).
+This makes it easier for Mac users to install both Intel and Apple Silicon builds side-by-side.
 
-* OpenSlide is missing. You can add it separately with the help of [Homebrew](https://brew.sh) - see <https://github.com/petebankhead/homebrew-qupath> for details
-* Images opened with Bio-Format may not work if they require a native library, e.g.
-  * some .ndpi files (e.g. the OS-1/OS-2/OS-3.ndpi sample images)
-  * some .czi files (with JPEG-XR compression)
-* TensorFlow for Java doesn't work. But it doesn't work on Apple Silicon even if you use the Intel build (this will hopefully be fixed by the TensorFlow Java maintainers in the future).
 
 ### Linux
 
