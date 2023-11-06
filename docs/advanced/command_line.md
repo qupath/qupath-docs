@@ -115,7 +115,7 @@ By default, this will not save changes to any data files.
                             comma,separated,list]".
   -c, --cmd=command       Groovy script passed as a string
   -e, --server=server-arguments
-                          Arguments to pass when building an ImageSever (only
+                          Arguments to pass when building an ImageServer (only
                             relevant when using --image). For example, --server
                             "[--classname,BioFormatsServerBuilder,--series,2]"
                             may be used to read the image with Bio-Formats and

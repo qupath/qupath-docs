@@ -8,4 +8,5 @@ exporting_images
 exporting_annotations
 command_line
 omero
+view_tracker
 ```
