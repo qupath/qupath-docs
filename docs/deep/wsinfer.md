@@ -17,6 +17,8 @@ If you use WSInfer and/or this extension in a publication, please make sure to c
 - [WSInfer QuPath Extension](https://github.com/qupath/qupath-extension-wsinfer/releases)
 - PyTorch (this can be downloaded while using the extension)
 
+A GPU is not required but will dramatically speed up processing. WSInfer uses Deep Java Library, so if you have a GPU and need guidance configuring support, please see [the Deep Java Library page](deep-java-library-gpu).
+
 ## Set-up
 
 With QuPath installed and running, drag and drop the WSInfer extension into the application and restart QuPath.
@@ -138,3 +140,71 @@ To process in batch, I would need to
 * Open the above script in QuPath's script editor
 * Choose {menuselection}`Run --> Run for project`, and select the images I want to process
 
+
+### Identifying TILs (overlaying predictions of two models)
+
+The script below applies a lymphocyte patch classification model and then a breast tumor classification model on the same patches. This may assist in identifying tumor-infiltrating lymphocytes (TILs).
+
+```groovy
+/**
+ * Script showing an end-to-end workflow using the WSInfer extension.
+ *
+ * Before starting, you should create an annotation for the main area of interest
+ * (either by manually drawing or with a thresholder, e.g.
+ * https://qupath.readthedocs.io/en/stable/docs/tutorials/thresholding.html)
+ *
+ * You should then update the variables in the first part of the script.
+ *
+ * Running the script will then:
+ * - Apply two models sequentially, creating tiles and adding predictions as 'measurements'
+ * - Use one measurement to assign a 'base' classification to each tile
+ * - Use a second measurement to assign a 'positive/negative' classification to each tile
+ *
+ * The outcome is that tiles are produced and classified in 4 ways, e.g. as
+ * 'Tumor: Positive', 'Tumor: Negative', 'Other: Positive', 'Other: Negative'
+ *
+ * QuPath will then automatically create summary measurements within all annotations,
+ * giving the positive percentages for each base class.
+ */
+
+//--------
+
+// The first model determines the tile size (resolution)
+String firstModel = "kaczmarj/pancancer-lymphocytes-inceptionv4.tcga"
+
+// The second model appends predictions to the tiles created by the first model
+String secondModel = "kaczmarj/breast-tumor-resnet34.tcga-brca"
+
+// The 'base' measurement is thresholded to classify tiles of interest
+baseMeasurementName = "Tumor"
+baseThreshold = 0.5
+aboveBaseThresholdClass = "Tumor"
+belowBaseThresholdClass = "Other"
+
+// The 'positive' measurement is used to subclassify as positive or negative
+String positiveMeasurementName = "Lymphocytes"
+double positiveThreshold = 0.5
+
+// Run the first model across all annotations, generating tiles
+selectAnnotations()
+qupath.ext.wsinfer.WSInfer.runInference(firstModel)
+
+// Run the second model across all tiles that were created
+selectTiles()
+qupath.ext.wsinfer.WSInfer.runInference(secondModel)
+
+// Apply the base classification
+def tiles = getTileObjects()
+tiles.each { t ->
+    if (t.measurements[baseMeasurementName] > baseThreshold)
+        t.classifications = [aboveBaseThresholdClass]
+    else
+        t.classifications = [belowBaseThresholdClass]
+}
+
+// Apply the intensity classification
+setIntensityClassifications(tiles, positiveMeasurementName, positiveThreshold)
+
+// Reset select so that we can see object colors
+resetSelection()
+```
