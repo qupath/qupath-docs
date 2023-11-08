@@ -114,3 +114,27 @@ It won't automatically find any existing PyTorch you might have installed: Deep 
 
 If you have a compatible GPU, and want CUDA support, you'll need to ensure you have an appropriate CUDA installed *before* PyTorch is downloaded.
 :::
+
+
+## Scripting
+
+The QuPath WSInfer extension is scriptable, which makes it much easier to apply across multiple images.
+
+When a model is run, the command parameters are stored in the [workflow](workflows) so that a [script can be generated automatically](workflows-to-scripts).
+
+An example script would be
+
+```groovy
+selectAnnotations()
+qupath.ext.wsinfer.WSInfer.runInference("kaczmarj/pancancer-lymphocytes-inceptionv4.tcga")
+```
+
+where the `selectAnnotation()` line was added when I pressed the {guilabel}`Annotations` button in the WSInfer dialog, and the following line runs the specified models (creating tiles automatically).
+
+To process in batch, I would need to
+
+* Add my images to a QuPath project
+* Annotate the regions of interest in the images (and save the data)
+* Open the above script in QuPath's script editor
+* Choose {menuselection}`Run --> Run for project`, and select the images I want to process
+
