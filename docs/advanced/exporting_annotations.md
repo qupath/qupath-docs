@@ -1,3 +1,4 @@
+(exporting-annotations)=
 # Exporting annotations
 
 People often ask about exporting QuPath annotations, to which the response is invariably *'In which format exactly?'*
