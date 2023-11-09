@@ -1,5 +1,29 @@
 # Installation
 
+## Which QuPath download do I need?
+
+### QuPath for Windows
+
+On **Windows**, you have two options when downloading QuPath:
+
+* **Windows installer (msi)** use this if you want to install QuPath, so that it appears in the {guilabel}`Start` menu like most apps
+* **Windows portable (exe)** use this if you want to just unzip a folder containing QuPath, and run it from there - with no further installation needed
+
+(qupath-versions-for-mac)=
+### QuPath for Mac
+
+On **macOS** you also have two options when downloading QuPath:
+
+* **macOS Intel (pkg)** this should work on all recent Macs - both with Intel processors or Apple Silicon. If you aren't sure, this is the default option to choose.
+  * To run the Intel version on Apple silicon, you'll need to have Rosetta 2 installed. There is a good chance you already have it (e.g. if you're using any other software written for Intel processors), but if not there are [more details on Apple's website](https://support.apple.com/en-gb/HT211861).
+* **macOS Apple silicon (pkg)** this *only* runs on recent Macs using Apple Silicon (e.g. M1, M2 or M3 processors).
+  * The big *advantage* is that it runs substantially faster than the Intel version on supported computers.
+  * The big *disadvantage* is that Bio-Formats doesn't yet support Apple silicon - which means that a small number of file formats won't work. The most relevant of these are .czi images from Zeiss Axioscans using JPEG-XR compression.
+
+If you have a Mac with Apple silicon, it's possible to install both the Intel and Apple silicon versions of QuPath and run them both.
+The type of build is included in the .app file name (either x64 for Intel, or aarch64 for Apple silicon) to help you distinguish between them.
+
+
 ## Download & install
 
 QuPath isn't currently a signed application.
@@ -9,7 +33,7 @@ This means that, after you download it for your platform (Windows, Linux, macOS)
   - If you see a warning, choosing {guilabel}`More info` and {guilabel}`Run anyway` should let you proceed
 - On **Windows**, if you downloaded a `.zip` then extract its contents and run the `QuPath.exe` file
 - On **macOS**, right-click the `.pkg` file, then choose 'Open' (you might need to do this twice)
-  - If you're using an M1/M2 Mac, please check out the [notes on Apple silicon](apple-silicon)
+  - If you're using an M1/M2/M3 Mac, please check out the [notes on Apple silicon](apple-silicon)
 - On **Linux**, download and extract the `.tar.xz` file
   - You'll probably have to use `chmod u+x /path/to/QuPath/bin/QuPath` to make the launcher executable
 
@@ -99,25 +123,6 @@ Since macOS (presumably) has your best interests at heart, circumventing its sec
 
 However, as an open source project, we don't currently have the time and resources needed to distribute QuPath as a signed/notarized app and avoid these warnings.
 :::
-
-
-(apple-silicon)=
-#### Apple Silicon
-
-QuPath v0.5 for Mac is available as both Intel (x64) and Apple Silicon (aarch64) builds.
-
-Users of recent Macs with M1/M2 processors are likely to find QuPath runs faster with the Apple Silicon builds (~30%).
-
-One important caveat is that Bio-Formats - the open-source library QuPath uses to read many image types - does not yet *fully* support Apple Silicon, which affects a small number of formats.
-This is most relevant for users hoping to work with .czi images (from Zeiss microscopes/scanners) that use JPEG-XR compression.
-It also affects .ndpi files (from Hamamatsu scanners), but less crucially because QuPath will use OpenSlide to read these by default anyway.
-
-If the limitation causes you trouble, you can also run the Intel build on Apple Silicon - with full Bio-Formats support.
-To do this, you'll need to have Rosetta 2 installed.
-There is a good chance you already have it (e.g. if you're using any other software written for Intel processors), but if not there are [more details on Apple's website](https://support.apple.com/en-gb/HT211861).
-
-The type of build is included in the .app file name (either x64 or aarch64).
-This makes it easier for Mac users to install both Intel and Apple Silicon builds side-by-side.
 
 
 ### Linux

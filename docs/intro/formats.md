@@ -78,11 +78,16 @@ Since the release of [Bio-Formats v5.3.0](https://www.openmicroscopy.org/site/su
 
 To open CZI files that use JPEG-XR compression on **Windows**, you may also need to install the *Visual Studio 2015 C++ Redistributable* - see [here](https://www.openmicroscopy.org/site/support/bio-formats/formats/zeiss-czi.html) for more information.
 
+If you're using the [Apple silicon build](qupath-versions-for-mac), Bio-Formats can't read .czi files that use JPEG-XR compression. You'll either need to convert the images outside of QuPath, or switch to using the Intel build of QuPath for macOS.
+
 
 #### DICOM
 
 Bio-Formats 6.8.0 introduced support for DICOM whole slide images.
 This is available in QuPath from v0.4.0.
+
+OpenSlide 4.0 also added support for DICOM whole slide images.
+This is available in QuPath from v0.5.0.
 
 
 #### iSyntax (Philips)
@@ -115,6 +120,9 @@ See [here](https://www.glencoesoftware.com/blog/2019/12/09/converting-whole-slid
 
 NDPI is generally quite well supported by both Bio-Formats and OpenSlide.
 Note that z-stacks are only supported by Bio-Formats; with OpenSlide, only one plane will be opened.
+
+If you're using the [Apple silicon build](qupath-versions-for-mac), Bio-Formats can't read most .ndpi (or .ndpis) files. 
+Fortunately, OpenSlide can handle .ndpi so this usually isn't a problem.
 
 #### TIFF
 

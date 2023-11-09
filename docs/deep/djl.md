@@ -51,9 +51,9 @@ To use an NVIDIA GPU with either TensorFlow or Pytorch, you will need to have a 
 
 'Compatible' here depends upon some other versions.
 
-QuPath v0.4.4 uses Deep Java Library 0.20.0, which by default uses
-* [PyTorch 1.13.0](https://docs.djl.ai/engines/pytorch/pytorch-engine/index.html#supported-pytorch-versions), which requires [CUDA 11.6 or 11.7](https://pytorch.org/get-started/previous-versions/#v1130)
-* [TensorFlow 2.7.4](https://github.com/deepjavalibrary/djl/releases/tag/v0.20.0), which requires [CUDA 11.2](https://www.tensorflow.org/install/source#gpu).
+QuPath v0.5.0 uses Deep Java Library 0.24.0, which by default uses
+* [PyTorch 2.0.1](https://docs.djl.ai/engines/pytorch/pytorch-engine/index.html#supported-pytorch-versions), which requires [CUDA 11.7 or 11.8](https://pytorch.org/get-started/previous-versions/#v201)
+* [TensorFlow 2.10.1](https://github.com/deepjavalibrary/djl/releases/tag/v0.22.1), which requires [CUDA 11.2](https://www.tensorflow.org/install/source#gpu).
 
 The fact that PyTorch and TensorFlow require different CUDA versions is... not helpful. So you may be able to get GPU support for only one.
 :::
