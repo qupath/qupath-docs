@@ -3,7 +3,7 @@
 
 The [WSInfer QuPath extension](https://github.com/qupath/qupath-extension-wsinfer/) makes it possible to do patch-based deep learning inference for digital pathology, without any need for scripting.
 
-It's a collaboration between the QuPath group (the extension) and Stony Brook University ([WSInfer](https://wsinfer.readthedocs.io/en/latest/)).
+It's a collaboration between Stony Brook University ([WSInfer](https://wsinfer.readthedocs.io/en/latest/)) and the QuPath group (the [extension](https://github.com/qupath/qupath-extension-wsinfer/) that brings WSInfer models to QuPath).
 
 :::{admonition} Cite the paper!
 :class: warning
@@ -16,6 +16,12 @@ If you use WSInfer and/or this extension in a publication, please make sure to c
 - At least one whole slide image
 - [WSInfer QuPath Extension](https://github.com/qupath/qupath-extension-wsinfer/releases)
 - PyTorch (this can be downloaded while using the extension)
+
+:::{tip}
+A GPU is not required but can dramatically speed up processing.
+If you have an NVIDIA GPU and want to use it with WSInfer, you will need to install a version of CUDA compatible with PyTorch - please see [the Deep Java Library page](deep-java-library-gpu).
+:::
+
 
 ## Set-up
 
@@ -129,7 +135,7 @@ selectAnnotations()
 qupath.ext.wsinfer.WSInfer.runInference("kaczmarj/pancancer-lymphocytes-inceptionv4.tcga")
 ```
 
-where the `selectAnnotation()` line was added when I pressed the {guilabel}`Annotations` button in the WSInfer dialog, and the following line runs the specified models (creating tiles automatically).
+where the `selectAnnotation()` line was added when I pressed the {guilabel}`Annotations` button in the WSInfer dialog, and the following line runs the specified model (creating tiles automatically).
 
 To process in batch, I would need to
 
@@ -138,3 +144,15 @@ To process in batch, I would need to
 * Open the above script in QuPath's script editor
 * Choose {menuselection}`Run --> Run for project`, and select the images I want to process
 
+
+## Identifying TILs (overlaying predictions of two models)
+
+By combining multiple WSInfer models, it's possible to develop more complex end-to-end workflows in QuPath.
+This is easiest to achieve using scripting.
+
+The script below aims to identify regions containing **tumor-infiltrating lymphocytes (TILs)**.
+It does this by applying a lymphocyte patch classification model and then a breast tumor classification model on the same patches.
+
+After running the script, you can [export results](exporting-measurements) or [markup images](exporting-rendered-images).
+
+<script src="https://gist.github.com/petebankhead/aebd135d3f5a080f6216fb05d8029c42.js"></script>

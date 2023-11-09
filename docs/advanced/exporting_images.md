@@ -31,6 +31,7 @@ Exporting an RGB image as a JPEG, for example, may introduce new compression art
 The point is that no bit-depth or channel conversion is involved.
 :::
 
+(exporting-rendered-images)=
 ### Rendered images
 
 Images within QuPath can have different numbers of channels and various bit-depths, but when they are displayed they generally need to be *rendered* as [3-channel, 8-bit RGB](https://petebankhead.gitbooks.io/imagej-intro/content/chapters/colors/colors.html#rgb-images).
