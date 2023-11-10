@@ -107,9 +107,7 @@ The options available will depend upon your computer's capabilities (at least as
 * **GPU**: This should appear if you have an NVIDIA GPU, CUDA... and a little bit of luck.
 
 If either MPS or GPU work for you, they should reduce the time required for inference by a *lot*.
-However configuration for GPU can be tricky, as it will depend upon other hardware and software on your computer.
-
-QuPath v0.4.x uses PyTorch 1.13.x by default, which is expected to work with CUDA 11.6 or 11.7.
+However configuration for GPU can be tricky, as it will depend upon other hardware and software on your computer - CUDA in particular.
 For more info, see [the Deep Java Library page](deep-java-library-gpu).
 
 :::{admonition} PyTorch & CUDA versions

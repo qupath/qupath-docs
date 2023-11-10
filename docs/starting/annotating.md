@@ -25,7 +25,7 @@ Rectangle, Ellipse, Line, Brush, Polygon, Wand.
 
 ## Annotation tools
 
-### {{ rectangle }} Rectangle tool
+### {{ tool_rectangle }} Rectangle tool
 
 The most basic drawing tool is the *Rectangle tool*.  Click on the starting point within the image and drag the mouse to the opposite corner of the desired rectangle, then release.  Holding {kbd}`Shift` down while drawing a rectangle will constrain the shape to be square.
 
@@ -33,7 +33,7 @@ The most basic drawing tool is the *Rectangle tool*.  Click on the starting poin
 If you'd like to draw a rectangle around the entire image, use {menuselection}`Objects --> Annotations... --> Create full image annotation`.
 :::
 
-### {{ ellipse }} Ellipse tool
+### {{ tool_ellipse }} Ellipse tool
 
 The *Ellipse tool* works in much the same way as the *Rectangle tool*, except that it will end up providing an elliptical region instead. Holding {kbd}`Shift` down while drawing an ellipse will constrain the shape to be circle.
 
@@ -41,11 +41,11 @@ The *Ellipse tool* works in much the same way as the *Rectangle tool*, except th
 Rather than drawing rectangles or ellipses, {menuselection}`Objects --> Annotations... --> Specify annotation` can be used to set coordinates exactly - and thereby give more control over the exact size and/or location.
 :::
 
-### {{ line }} Line tool
+### {{ tool_line }} Line tool
 
 Lines can be drawn using the *Line tool*, by clicking once for the starting point, and *double-clicking* for the end point.
 
-### {{ polygon }} Polygon tool
+### {{ tool_polygon }} Polygon tool
 
 The *Polygon tool* is a good standard for drawing around regions.
 It can be used in one of two ways:
@@ -60,7 +60,12 @@ It's possible to switch while drawing the same region.
 If you *start* a polygon by clicking and dragging, then the polygon is complete when the mouse button is released.
 Otherwise, the ROI is finished by *double-clicking* on the image at the location where the final point should be.
 
-### {{ brush }} Brush tool
+### {{ tool_polyline }} Polyline tool
+
+The *Polyline tool* is similar to the *Polygon tool* except that it is not closed; it has a length (like a line), but not an area.
+
+
+### {{ tool_brush }} Brush tool
 
 The *Brush tool* is probably the drawing tool I use the most for annotating regions.
 The idea is simple: it each click of the brush selects a small circle, but by dragging the mouse across the image then a region is 'painted' that way.
@@ -73,7 +78,7 @@ This would have limited call for excitement, but the *Brush tool* within QuPath 
 
 You can change the absolute size of the brush in the settings, and also optionally turn off the size adaption according to zoom.
 
-### {{ wand }} Wand tool
+### {{ tool_wand }} Wand tool
 
 The *Wand tool* is like a more enthusiastic brush tool.
 Not content with painting only a small circular region, it will spread out into a much larger circle - but only for so long as the pixels have intensities similar to the one that was clicked on.
@@ -88,9 +93,10 @@ Like the *Brush tool*, the *Wand tool* adapts according to magnification: zoom o
 Additionally, the *Wand tool* is influenced by any color transforms that have been applied -- so these can be used to adjust the image so the areas of interest have higher contrast.  See {doc}`../tutorials/separating_stains` for more information.
 :::
 
-### {{ points }} Points tool
+### {{ tool_points }} Points tool
 
 This is something of a special case, covered in {doc}`cell_counting`.
+
 
 ## Locking & unlocking
 
@@ -109,6 +115,15 @@ But for display, there are also *name* and *color* properties.
 You can set these quickly for a selected annotation by pressing the {kbd}`Enter` key.
 
 The name can be shown or hidden in the viewer using {menuselection}`View --> Show names`, or the shortcut {kbd}`N`.
+
+## {{ tool_selection_mode }} Selection mode
+
+One toolbar button that lives *beside* the annotation tools is not actually used to draw new annotations -- but it is closely related.
+
+The {guilabel}`Selection mode` button is used to temporarily repurpose the annotation tools so that they can be used to *select* objects (e.g. other annotations) by drawing around them.
+
+If selection mode is turned on, using an annotation tool draws a shape with a dashed line to indicate that it isn't a regular annotation.
+Instead, it's defining a region, and objects inside that region will be selected when the drawing is finished.
 
 ## Other ways to annotate
 
