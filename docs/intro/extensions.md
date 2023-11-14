@@ -36,7 +36,7 @@ updating, or removing extensions.
 :::{figure} images/extension_manager_empty.png
 :align: center
 :class: shadow-image
-:width: 90%
+:width: 100%
 The extension manager window.
 :::
 
@@ -54,23 +54,25 @@ Alternatively, if you know the owner and name of the GitHub repository housing
 an extension, you can enter these in the extension manager and click the
 download button --- again, QuPath will ask if you wish to download and install
 the extension.
+If you don't have a user directory, QuPath will prompt you to select a folder
+on your computer to use. You can change it later under
+{menuselection}`Edit --> Preferences...` if you want to.
 
 :::{figure} images/extension_manager_installing.png
 :align: center
 :class: shadow-image
-:width: 90%
+:width: 100%
 Installing the Deep Java Library extension using the extension manager.
 :::
 
 If neither of these options work, you can try downloading the extension manually.
 The extension itself is a (usually small) file with that ends with `.jar`,
 often available from the `Releases` section of the GitHub repository.
+If you drag this onto QuPath's main window, QuPath should copy it to your QuPath
+user directory.
 
-If you drag this onto QuPath's main window, QuPath should copy it to your QuPath user directory.
-If you don't have a user directory, QuPath will prompt you to select a folder on your computer to use.
-You can change it later under {menuselection}`Edit --> Preferences...` if you want to.
-
-Often the extension will be ready to use immediately, but it's generally a good idea to restart QuPath in case it needs to do any extra work at startup.
+Often the extension will be ready to use immediately, but it's generally a good
+idea to restart QuPath in case it needs to do any extra work at startup.
 
 ## Removing extensions
 
@@ -84,7 +86,7 @@ may linger otherwise.
 :::{figure} images/extension_manager_installed.png
 :align: center
 :class: shadow-image
-:width: 90%
+:width: 100%
 Viewing installed extensions in the extension manager, with the option to remove or update them, or to visit the extension's GitHub repository.
 :::
 
