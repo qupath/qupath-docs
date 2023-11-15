@@ -1,3 +1,4 @@
+(tutorials-projects)=
 # Projects
 
 QuPaths allows you to view and work with single images.

@@ -43,7 +43,22 @@ Instead, DJL can download them when they are needed and store them locally on yo
 This *can* happen automatically, but QuPath tells DJL not to do that since downloading large files unexpectedly could be troublesome for some users.
 Instead, you should use the {menuselection}`Manage DJL Engines` to explicitly request the download.
 
-If the download is successful, the indicator beside the engine should switch to green.
+(deep-java-library-gpu)=
+:::{admonition} GPU support
+:class: tip
+
+To use an NVIDIA GPU with either TensorFlow or Pytorch, you will need to have a *compatible* version of CUDA installed *before* downloading the engine.
+
+'Compatible' here depends upon some other versions.
+
+QuPath v0.5.0 uses Deep Java Library 0.24.0, which by default uses
+* [PyTorch 2.0.1](https://docs.djl.ai/engines/pytorch/pytorch-engine/index.html#supported-pytorch-versions), which requires [CUDA 11.7 or 11.8](https://pytorch.org/get-started/previous-versions/#v201)
+* [TensorFlow 2.10.1](https://github.com/deepjavalibrary/djl/releases/tag/v0.22.1), which requires [CUDA 11.2](https://www.tensorflow.org/install/source#gpu).
+
+The fact that PyTorch and TensorFlow require different CUDA versions is... not helpful. So you may be able to get GPU support for only one.
+:::
+
+If downloading the engine is successful, the indicator beside the engine should switch to green.
 
 :::{admonition} Why an extension?
 The *QuPath Deep Java Library extension* is at an early stage and under active development.

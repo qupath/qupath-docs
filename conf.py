@@ -86,7 +86,7 @@ myst_enable_extensions = [
     "fieldlist",
     "html_admonition",
     "html_image",
-#    "linkify",
+    # "linkify",
     "replacements",
     "smartquotes",
     "strikethrough",
@@ -101,73 +101,104 @@ html_logo = 'docs/images/qupath_128.png'
 
 html_favicon = 'docs/images/QuPath.ico'
 
-release = '0.4.4'
-version = '0.4'
+release = '0.5.0'
+version = '0.5'
 
 # myst_heading_anchors = 2
 
 myst_substitutions = {
 
-  "rectangle": '<img src="../images/icons/Rectangle.png" />',
-  "icon_rectangle": '<img src="../images/icons/Rectangle.png" class="inline-icon" />',
+    "rectangle": '<img src="../images/icons/RECTANGLE_TOOL.png" />',
+    "icon_rectangle": '<img src="../images/icons/RECTANGLE_TOOL.png" class="inline-icon" />',
+    "tool_rectangle": '<img src="../images/icons/RECTANGLE_TOOL.png" class="tool-icon" />',
 
-  "ellipse": '<img src="../images/icons/Ellipse.png" />',
-  "icon_ellipse": '<img src="../images/icons/Ellipse.png" class="inline-icon" />',
+    "ellipse": '<img src="../images/icons/ELLIPSE_TOOL.png" />',
+    "icon_ellipse": '<img src="../images/icons/ELLIPSE_TOOL.png" class="inline-icon" />',
+    "tool_ellipse": '<img src="../images/icons/ELLIPSE_TOOL.png" class="tool-icon" />',
 
-  "line": '<img src="../images/icons/Line.png" />',
-  "icon_line": '<img src="../images/icons/Line.png" class="inline-icon" />',
+    "line": '<img src="../images/icons/LINE_TOOL.png" />',
+    "icon_line": '<img src="../images/icons/LINE_TOOL.png" class="inline-icon" />',
+    "tool_line": '<img src="../images/icons/LINE_TOOL.png" class="tool-icon" />',
 
-  "polygon": '<img src="../images/icons/Polygon.png" />',
-  "icon_polygon": '<img src="../images/icons/Polygon.png" class="inline-icon" />',
+    "polygon": '<img src="../images/icons/POLYGON_TOOL.png" />',
+    "icon_polygon": '<img src="../images/icons/POLYGON_TOOL.png" class="inline-icon" />',
+    "tool_polygon": '<img src="../images/icons/POLYGON_TOOL.png" class="tool-icon" />',
 
-  "brush": '<img src="../images/icons/Brush.png" />',
-  "icon_brush": '<img src="../images/icons/Brush.png" class="inline-icon" />',
+    "polyline": '<img src="../images/icons/POLYLINE_TOOL.png" />',
+    "icon_polyline": '<img src="../images/icons/POLYLINE_TOOL.png" class="inline-icon" />',
+    "tool_polyline": '<img src="../images/icons/POLYLINE_TOOL.png" class="tool-icon" />',
 
-  "wand": '<img src="../images/icons/Wand.png" />',
-  "icon_wand": '<img src="../images/icons/Wand.png" class="inline-icon" />',
+    "brush": '<img src="../images/icons/BRUSH_TOOL.png" />',
+    "icon_brush": '<img src="../images/icons/BRUSH_TOOL.png" class="inline-icon" />',
+    "tool_brush": '<img src="../images/icons/BRUSH_TOOL.png" class="tool-icon" />',
 
-  "points": '<img src="../images/icons/Points.png" />',
-  "icon_points": '<img src="../images/icons/Points.png" class="inline-icon" />',
+    "wand": '<img src="../images/icons/WAND_TOOL.png" />',
+    "icon_wand": '<img src="../images/icons/WAND_TOOL.png" class="inline-icon" />',
+    "tool_wand": '<img src="../images/icons/WAND_TOOL.png" class="tool-icon" />',
 
-  "move": '<img src="../images/icons/Move.png" />',
-  "icon_move": '<img src="../images/icons/Move.png" class="inline-icon" />',
+    "points": '<img src="../images/icons/POINTS_TOOL.png" />',
+    "icon_points": '<img src="../images/icons/POINTS_TOOL.png" class="inline-icon" />',
+    "tool_points": '<img src="../images/icons/POINTS_TOOL.png" class="tool-icon" />',
 
-  "grid": '<img src="../images/icons/Grid.png" />',
-  "icon_grid": '<img src="../images/icons/Grid.png" class="inline-icon" />',
+    "move": '<img src="../images/icons/MOVE_TOOL.png" />',
+    "icon_move": '<img src="../images/icons/MOVE_TOOL.png" class="inline-icon" />',
+    "tool_move": '<img src="../images/icons/MOVE_TOOL.png" class="tool-icon" />',
 
-  "measure": '<img src="../images/icons/Measure.png" />',
-  "icon_measure": '<img src="../images/icons/Measure.png" class="inline-icon" />',
+    "selection_mode": '<img src="../images/icons/SELECTION_MODE.png" />',
+    "icon_selection_mode": '<img src="../images/icons/SELECTION_MODE.png" class="inline-icon" />',
+    "tool_selection_mode": '<img src="../images/icons/SELECTION_MODE.png" class="tool-icon" />',
 
-  "table": '<img src="../images/icons/Table.png" />',
-  "icon_table": '<img src="../images/icons/Table.png" class="inline-icon" />',
+    "help": '<img src="../images/icons/HELP.png" />',
+    "icon_help": '<img src="../images/icons/HELP.png" class="inline-icon" />',
+    "tool_help": '<img src="../images/icons/HELP.png" class="tool-icon" />',
 
-  "cog": '<img src="../images/icons/Cog.png" />',
-  "icon_cog": '<img src="../images/icons/Cog.png" class="inline-icon" />',
+    "log": '<img src="../images/icons/LOG_VIEWER.png" />',
+    "icon_log": '<img src="../images/icons/LOG_VIEWER.png" class="inline-icon" />',
+    "tool_log": '<img src="../images/icons/LOG_VIEWER.png" class="tool-icon" />',
 
-  "annotations": '<img src="../images/icons/Annotations.png" />',
-  "icon_annotations": '<img src="../images/icons/Annotations.png" class="inline-icon" />',
+    "grid": '<img src="../images/icons/GRID.png" />',
+    "icon_grid": '<img src="../images/icons/GRID.png" class="inline-icon" />',
 
-  "detections": '<img src="../images/icons/Detections.png" />',
-  "icon_detections": '<img src="../images/icons/Detections.png" class="inline-icon" />',
+    "measure": '<img src="../images/icons/MEASURE.png" />',
+    "icon_measure": '<img src="../images/icons/MEASURE.png" class="inline-icon" />',
 
-  "annotations_fill": '<img src="../images/icons/Annotations_fill.png" />',
-  "icon_annotations_fill": '<img src="../images/icons/Annotations_fill.png" class="inline-icon" />',
+    "table": '<img src="../images/icons/TABLE.png" />',
+    "icon_table": '<img src="../images/icons/TABLE.png" class="inline-icon" />',
 
-  "detections_fill": '<img src="../images/icons/Detections_fill.png" />',
-  "icon_detections_fill": '<img src="../images/icons/Detections_fill.png" class="inline-icon" />',
+    "cog": '<img src="../images/icons/COG.png" />',
+    "icon_cog": '<img src="../images/icons/COG.png" class="inline-icon" />',
 
-  "tma_grid": '<img src="../images/icons/TMA_grid.png" />',
-  "icon_tma_grid": '<img src="../images/icons/TMA_grid.png" class="inline-icon" />',
+    "annotations": '<img src="../images/icons/ANNOTATIONS.png" />',
+    "icon_annotations": '<img src="../images/icons/ANNOTATIONS.png" class="inline-icon" />',
 
-  "screenshot": '<img src="../images/icons/Screenshot.png" />',
-  "icon_screenshot": '<img src="../images/icons/Screenshot.png" class="inline-icon" />',
+    "detections": '<img src="../images/icons/DETECTIONS.png" />',
+    "icon_detections": '<img src="../images/icons/DETECTIONS.png" class="inline-icon" />',
 
-  "extract_image": '<img src="../images/icons/Extract_image.png" />',
-  "icon_extract_image": '<img src="../images/icons/Extract_image.png" class="inline-icon" />',
+    "annotations_fill": '<img src="../images/icons/ANNOTATIONS_FILL.png" />',
+    "icon_annotations_fill": '<img src="../images/icons/ANNOTATIONS_FILL.png" class="inline-icon" />',
 
-  "contrast": '<img src="../images/icons/Contrast.png" />',
-  "icon_contrast": '<img src="../images/icons/Contrast.png" class="inline-icon" />',
+    "detections_fill": '<img src="../images/icons/DETECTIONS_FILL.png" />',
+    "icon_detections_fill": '<img src="../images/icons/Detections_fill.png" class="inline-icon" />',
 
-  # "polyline": '<img src="../images/icons/Polyline.png" />',
-  # "icon_polyline": '<img src="../images/icons/Polyline.png" class="inline-icon" />',
+    "tma_grid": '<img src="../images/icons/TMA_GRID.png" />',
+    "icon_tma_grid": '<img src="../images/icons/TMA_GRID.png" class="inline-icon" />',
+
+    "screenshot": '<img src="../images/icons/SCREENSHOT.png" />',
+    "icon_screenshot": '<img src="../images/icons/SCREENSHOT.png" class="inline-icon" />',
+
+    "extract_image": '<img src="../images/icons/EXTRACT_REGION.png" />',
+    "icon_extract_image": '<img src="../images/icons/EXTRACT_REGION.png" class="inline-icon" />',
+
+    "contrast": '<img src="../images/icons/CONTRAST.png" />',
+    "icon_contrast": '<img src="../images/icons/CONTRAST.png" class="inline-icon" />',
+
+    "play": '<img src="../images/icons/PLAYBACK_PLAY.png" />',
+    "icon_play": '<img src="../images/icons/PLAYBACK_PLAY.png" class="inline-icon" />',
+
+    "stop": '<img src="../images/icons/TRACKING_STOP.png" />',
+    "icon_stop": '<img src="../images/icons/TRACKING_STOP.png" class="inline-icon" />',
+
+    "record": '<img src="../images/icons/TRACKING_RECORD.png" />',
+    "icon_record": '<img src="../images/icons/TRACKING_RECORD.png" class="inline-icon" />',
+
 }

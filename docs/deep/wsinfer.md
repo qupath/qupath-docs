@@ -3,7 +3,7 @@
 
 The [WSInfer QuPath extension](https://github.com/qupath/qupath-extension-wsinfer/) makes it possible to do patch-based deep learning inference for digital pathology, without any need for scripting.
 
-It's a collaboration between the QuPath group (the extension) and Stony Brook University ([WSInfer](https://wsinfer.readthedocs.io/en/latest/)).
+It's a collaboration between Stony Brook University ([WSInfer](https://wsinfer.readthedocs.io/en/latest/)) and the QuPath group (the [extension](https://github.com/qupath/qupath-extension-wsinfer/) that brings WSInfer models to QuPath).
 
 :::{admonition} Cite the paper!
 :class: warning
@@ -16,6 +16,12 @@ If you use WSInfer and/or this extension in a publication, please make sure to c
 - At least one whole slide image
 - [WSInfer QuPath Extension](https://github.com/qupath/qupath-extension-wsinfer/releases)
 - PyTorch (this can be downloaded while using the extension)
+
+:::{tip}
+A GPU is not required but can dramatically speed up processing.
+If you have an NVIDIA GPU and want to use it with WSInfer, you will need to install a version of CUDA compatible with PyTorch - please see [the Deep Java Library page](deep-java-library-gpu).
+:::
+
 
 ## Set-up
 
@@ -98,16 +104,53 @@ The options available will depend upon your computer's capabilities (at least as
 
 * **CPU**: This is generally the safest - and slowest - option, because it should be supported on all computers.
 * **MPS**: This stands for *Metal Performance Shaders*, and should be available on recent Apple Silicon - it is the Mac version of GPU acceleration
-* **GPU**: This should appear if you have an NVIDIA GPU, CUDA... and some luck.
+* **GPU**: This should appear if you have an NVIDIA GPU, CUDA... and a little bit of luck.
 
 If either MPS or GPU work for you, they should reduce the time required for inference by a *lot*.
-However configuration for GPU can be tricky, as it will depend upon other hardware and software on your computer.
-
+However configuration for GPU can be tricky, as it will depend upon other hardware and software on your computer - CUDA in particular.
+For more info, see [the Deep Java Library page](deep-java-library-gpu).
 
 :::{admonition} PyTorch & CUDA versions
+:class: tip
+
 The WSInfer extension is using Deep Java Library to manage its PyTorch installation.
 It won't automatically find any existing PyTorch you might have installed: Deep Java Library will download its own.
 
 If you have a compatible GPU, and want CUDA support, you'll need to ensure you have an appropriate CUDA installed *before* PyTorch is downloaded.
-QuPath v0.4.x uses PyTorch 1.13.x by default, which is expected to work with CUDA 11.6 or 11.7.
 :::
+
+
+## Scripting
+
+The QuPath WSInfer extension is scriptable, which makes it much easier to apply across multiple images.
+
+When a model is run, the command parameters are stored in the [workflow](workflows) so that a [script can be generated automatically](workflows-to-scripts).
+
+An example script would be
+
+```groovy
+selectAnnotations()
+qupath.ext.wsinfer.WSInfer.runInference("kaczmarj/pancancer-lymphocytes-inceptionv4.tcga")
+```
+
+where the `selectAnnotation()` line was added when I pressed the {guilabel}`Annotations` button in the WSInfer dialog, and the following line runs the specified model (creating tiles automatically).
+
+To process in batch, I would need to
+
+* Add my images to a QuPath project
+* Annotate the regions of interest in the images (and save the data)
+* Open the above script in QuPath's script editor
+* Choose {menuselection}`Run --> Run for project`, and select the images I want to process
+
+
+## Identifying TILs (overlaying predictions of two models)
+
+By combining multiple WSInfer models, it's possible to develop more complex end-to-end workflows in QuPath.
+This is easiest to achieve using scripting.
+
+The script below aims to identify regions containing **tumor-infiltrating lymphocytes (TILs)**.
+It does this by applying a lymphocyte patch classification model and then a breast tumor classification model on the same patches.
+
+After running the script, you can [export results](exporting-measurements) or [markup images](exporting-rendered-images).
+
+<script src="https://gist.github.com/petebankhead/aebd135d3f5a080f6216fb05d8029c42.js"></script>
