@@ -178,7 +178,7 @@ myst_substitutions = {
     "icon_annotations_fill": '<img src="../images/icons/ANNOTATIONS_FILL.png" class="inline-icon" />',
 
     "detections_fill": '<img src="../images/icons/DETECTIONS_FILL.png" />',
-    "icon_detections_fill": '<img src="../images/icons/Detections_fill.png" class="inline-icon" />',
+    "icon_detections_fill": '<img src="../images/icons/DETECTIONS_FILL.png" class="inline-icon" />',
 
     "tma_grid": '<img src="../images/icons/TMA_GRID.png" />',
     "icon_tma_grid": '<img src="../images/icons/TMA_GRID.png" class="inline-icon" />',
