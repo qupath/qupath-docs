@@ -14,9 +14,9 @@ This is **only** relevant if you're using Windows or Linux with an NVIDA GPU.
 
 :::{admonition} What about Macs?
 NVIDIA GPUs are extremely uncommon in Macs (I had one in a 2013 iMac... but no more).
-More recent Macs with Apple Silicon *do* have GPU acceleration, but it is quite different.
+More recent Macs with Apple silicon *do* have GPU acceleration, but it is quite different.
 
-Currently, Apple Silicon GPU acceleration *can* work with PyTorch via Deep Java Library.
+Currently, Apple silicon GPU acceleration *can* work with PyTorch via Deep Java Library.
 Not all models work, but I have used it very successfully with [wsinfer.md](wsinfer-extension) and seen a substantial improvement in performance.
 
 The good news is that it requires *none of the awkward configuration here*.
@@ -95,7 +95,7 @@ The following sections attempt to outline the versions (as best I can figure the
 | v0.5.x | 0.24.0  | 2.10.1     | 11.3 |
 | v0.4.x | 0.20.0  | 2.7.4      | 11.2 |
 
-> Note: DJL + TensorFlow will currently not work **at all** on Apple Silicon (no matter whether you have the Intel or Apple Silicon build of QuPath... unless you build TensorFlow from source).
+> Note: DJL + TensorFlow will currently not work **at all** on Apple silicon (no matter whether you have the Intel or Apple silicon build of QuPath... unless you build TensorFlow from source).
 
 
 ## Conda environments

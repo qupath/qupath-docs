@@ -28,10 +28,9 @@ Bio-Formats supports most images that can be read by OpenSlide, but not all - an
 However, file formats are tricky and tend to have lots of variants. Just because a format is listed as being supported by Bio-Formats or OpenSlide doesn't mean files in that format will always open (properly) in QuPath. The following sections contain some extra details and caveats, partly based on user feedback about what does and doesn't work.
 
 :::{important}
-If you're using a QuPath build for **Apple silicon** (i.e. a recent Mac with M1/M2 processor), then you might not have OpenSlide available by default.
-Check out <https://github.com/petebankhead/homebrew-qupath> for instructions how to install this.
+If you're using a QuPath build for **Apple silicon** (i.e. a recent Mac with M1/M2/M3 processor), then you might find that *.ndpi* and *.czi* images don't work with Bio-Formats.
 
-The same link can also help if you're using another Mac or Linux computer and want to update the version of OpenSlide that QuPath uses.
+See [here](qupath-versions-for-mac) for more details and workarounds.
 :::
 
 ### Reporting problems
