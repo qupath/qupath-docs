@@ -14,9 +14,9 @@ This is **only** relevant if you're using Windows or Linux with an NVIDA GPU.
 
 :::{admonition} What about Macs?
 NVIDIA GPUs are extremely uncommon in Macs (I had one in a 2013 iMac... but no more).
-More recent Macs with Apple Silicon *do* have GPU acceleration, but in quite a different way.
+More recent Macs with Apple Silicon *do* have GPU acceleration, but it is quite different.
 
-Currently, this *can* work with PyTorch via Deep Java Library.
+Currently, Apple Silicon GPU acceleration *can* work with PyTorch via Deep Java Library.
 Not all models work, but I have used it very successfully with [wsinfer.md](wsinfer-extension) and seen a substantial improvement in performance.
 
 The good news is that it requires *none of the awkward configuration here*.
@@ -38,7 +38,7 @@ So why is this hard?
 
 1. The versions can be *really* important.
    * The driver generally just needs to be 'recent'; but if things fail, updating the driver can sometimes fix them.
-   * The required CUDA version changes according to which deep learning framework you'll use (e.g. * PyTorch, TensorFlow)... and which version of that framework. It is a strict requirement.
+   * The required CUDA version changes according to which deep learning framework you'll use (e.g. PyTorch, TensorFlow)... and which version of that framework. It is a strict requirement.
    * The required cuDNN version is generally whichever one matches CUDA.
 2. Installing the full CUDA toolkit and cuDNN is not exactly straightforward, requiring an NVIDIA developer account.
 
@@ -64,7 +64,7 @@ If some part of the puzzle doesn't fit, you may get a broken download that doesn
 Or a version that lacks GPU support.
 
 The resulting errors can be obscure, confusing, and hard to debug.
-
+These docs try to spare you a lot of pain and guesswork.
 
 ## Which versions do I need?
 
@@ -73,7 +73,8 @@ When you download cuDNN, you should generally be able to pick a version that mat
 To decipher this, you should know:
 
 * Each QuPath release uses a specific version of DJL.
-* Each DJL has a specific default version for each deep learning framework.
+* Each DJL has a specific *default* version for each deep learning framework.
+  * For PyTorch, DJL typically supports a few versions
 * Each framework has specific requirements regarding CUDA (and therefore cuDNN).
 
 The following sections attempt to outline the versions (as best I can figure them out):
@@ -94,7 +95,7 @@ The following sections attempt to outline the versions (as best I can figure the
 | v0.5.x | 0.24.0  | 2.10.1     | 11.3 |
 | v0.4.x | 0.20.0  | 2.7.4      | 11.2 |
 
-> Note: DJL + TensorFlow will currently not work **at all** on Apple Silicon (no matter whether you have the Intel or Apple Silicon build of QuPath).
+> Note: DJL + TensorFlow will currently not work **at all** on Apple Silicon (no matter whether you have the Intel or Apple Silicon build of QuPath... unless you build TensorFlow from source).
 
 
 ## Conda environments
@@ -109,7 +110,7 @@ Installing one version of CUDA on your computer, and trying to make sure it's th
 2. Install the CUDA/cuDNN versions that you need inside the environment
 3. Create a QuPath launcher using that environment
 
-The great thing is that you can have multiple conda environments, each with different CUDA versions, and each with corresponding QuPath launchers.
+The good news is that you can have multiple conda environments, each with different CUDA versions, and each with corresponding QuPath launchers.
 
 This allows you to have GPU support for different QuPath versions and deep learning frameworks on the same computer.
 
@@ -144,6 +145,12 @@ This increases the chances we end up with a working combination
 
 To do this, check the [PyTorch + CUDA combination required for QuPath](gpu-versions-pytorch) and then the [PyTorch installation instructions](https://pytorch.org/get-started/previous-versions/) -- replacing `conda` with `mamba` if you like.
 
+If you want PyTorch 1.13.1 (recommended for Windows/Linux, but *not* Apple Silicon):
+```
+conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 -c pytorch
+```
+
+If you want PyTorch 2.0.1 (needs a bit more work on Windows/Linux, [see below](djl-gpu-pytorch-201)):
 ```
 mamba install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.8 -c pytorch -c nvidia
 ```
@@ -153,27 +160,29 @@ You can now [verify your PyTorch installation](https://pytorch.org/get-started/l
 
 ### Creating a launcher for QuPath + PyTorch
 
-To create a Windows launcher for QuPath using CUDA from the conda environment we just created, you need to:
+To create a launcher for QuPath using CUDA from the conda environment we just created, you need to:
 
 1. Run QuPath
-2. Run the script below (after updating the variables at the top!)
+2. Install the [QuPath Deep Java Library extension](deep-java-library)
+3. Run {menuselection}`Extensions --> Deep Java Library --> Create launch script`
+4. Select the path to your conda environment, and specify the PyTorch version
 
-<script src="https://gist.github.com/petebankhead/3bca9f2a87ea061a50822bcaa4e7e203.js"></script>
+After clicking 'ok', you can choose a location to store the launch script.
 
-The result should be a `.bat` file that you can double-click to start QuPath.
+On Windows, this should be a `.bat` file that can be launched with a double-click; on Linux it will be a `.sh` file that can be run (for example) from a terminal with `bash /path/to/script.sh`.
+
 
 :::{admonition} Extra options
 :class: tip
 
-The script above is longer than it needs to be because it includes some extra options.
-It's actually possible to tell DJL to use an existing PyTorch installation, rather than downloading its own.
-You can also request a (slightly) different version.
-
+There are some extra PyTorch options with DJL.
 There are more details in the [DJL docs](https://docs.djl.ai/engines/pytorch/pytorch-engine/index.html).
-I find that specifying a different version works well, but requesting to use an existing PyTorch installation isn't always successful.
+
+*In theory* you should be able to point to a PyTorch installation, to use it rather than have DJL download PyTorch entirely.
+*In practice* I have found that often fails for me, and it is more reliable to have DJL download PyTorch itself.
 :::
 
-### Creating an environment for TensorFlow
+### Creating a conda environment for TensorFlow
 
 If needed, we can follow a similar process to create an environment for TensorFlow.
 
@@ -189,6 +198,13 @@ mamba install cudatoolkit=11.3 cudnn
 
 You can then create a launch script just as with PyTorch above, ignoring all the optional PyTorch parts.
 
+:::{admonition} TensorFlow & CUDA incompatibilities
+:class: warning
+
+Unfortunately, DJL currently doesn't like to load TensorFlow *at all* if it detects an *incompatible* version of CUDA.
+
+Because PyTorch and TensorFlow require different CUDA versions, this means you may not be able to run both side-by-side - rather, you will need two separate launchers.
+:::
 
 ### Checking everything works
 
@@ -224,6 +240,7 @@ If not, the troubleshooting below may help.
 Conda environments can help solve *most* of the problems... but not all.
 This section contains assorted fixes for other issues as they arise.
 
+(djl-gpu-pytorch-201)=
 ### Fix for UnsatisfiedLinkError (PyTorch 2.0.1, Windows)
 
 You may find that PyTorch 2.0.1 + CUDA 11.8 doesn't work on Windows.
