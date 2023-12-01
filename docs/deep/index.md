@@ -7,4 +7,5 @@ djl
 bioimage
 stardist
 wsinfer
+gpu
 ```

@@ -49,13 +49,7 @@ Instead, you should use the {menuselection}`Manage DJL Engines` to explicitly re
 
 To use an NVIDIA GPU with either TensorFlow or Pytorch, you will need to have a *compatible* version of CUDA installed *before* downloading the engine.
 
-'Compatible' here depends upon some other versions.
-
-QuPath v0.5.0 uses Deep Java Library 0.24.0, which by default uses
-* [PyTorch 2.0.1](https://docs.djl.ai/engines/pytorch/pytorch-engine/index.html#supported-pytorch-versions), which requires [CUDA 11.7 or 11.8](https://pytorch.org/get-started/previous-versions/#v201)
-* [TensorFlow 2.10.1](https://github.com/deepjavalibrary/djl/releases/tag/v0.22.1), which requires [CUDA 11.2](https://www.tensorflow.org/install/source#gpu).
-
-The fact that PyTorch and TensorFlow require different CUDA versions is... not helpful. So you may be able to get GPU support for only one.
+See {ref}`gpu-support` for more details.
 :::
 
 If downloading the engine is successful, the indicator beside the engine should switch to green.
@@ -353,3 +347,22 @@ Because Groovy gives access to all of QuPath and all of DJL, a lot more can alre
 Check out the DJL documentation for more details.
 
 Over time, the QuPath extension and docs will be updated as we make deep learning easier to use without needing to grapple with DJL directly.
+
+
+
+## Appendix: CUDA via Conda
+
+Getting CUDA installed and then having it play nicely with PyTorch can be quite painful.
+
+If you have an NVIDA GPU but are struggling to get it to work with Deep Java Library, it may help to try using a local version of PyTorch installed via `conda` - or, preferably, `mamba`, which is like `conda` except faster.
+
+1. Install `miniforge` as described [here](https://github.com/conda-forge/miniforge)
+2. Open a command prompt (Linux) or *Miniforge Prompt* (Windows, installed at step 1)
+3. Create and activate a new environment
+   * `mamba create -n pytorch`
+   * `mamba activate pytorch`
+4. Check which versions of PyTorch are compatible with Deep Java Library [here](https://docs.djl.ai/engines/pytorch/pytorch-engine/index.html#supported-pytorch-versions)
+   * For QuPath v0.5, PyTorch 2.0.1 is compatible
+5. Install a compatible Pytorch as described [here](https://pytorch.org/get-started/previous-versions/)
+   * `conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.8 -c pytorch -c nvidia`
+6. 
