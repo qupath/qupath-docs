@@ -19,7 +19,7 @@ If you use WSInfer and/or this extension in a publication, please make sure to c
 
 :::{tip}
 A GPU is not required but can dramatically speed up processing.
-If you have an NVIDIA GPU and want to use it with WSInfer, you will need to install a version of CUDA compatible with PyTorch - please see [the Deep Java Library page](deep-java-library-gpu).
+If you have an NVIDIA GPU and want to use it with WSInfer, you will need to install a version of CUDA compatible with PyTorch - please see {doc}`gpu`.
 :::
 
 
@@ -103,12 +103,12 @@ However the most (potentially) exciting additional option is the {guilabel}`Pref
 The options available will depend upon your computer's capabilities (at least as far as they could be discerned by Deep Java Library):
 
 * **CPU**: This is generally the safest - and slowest - option, because it should be supported on all computers.
-* **MPS**: This stands for *Metal Performance Shaders*, and should be available on recent Apple Silicon - it is the Mac version of GPU acceleration
+* **MPS**: This stands for *Metal Performance Shaders*, and should be available on recent Apple silicon - it is the Mac version of GPU acceleration
 * **GPU**: This should appear if you have an NVIDIA GPU, CUDA... and a little bit of luck.
 
 If either MPS or GPU work for you, they should reduce the time required for inference by a *lot*.
 However configuration for GPU can be tricky, as it will depend upon other hardware and software on your computer - CUDA in particular.
-For more info, see [the Deep Java Library page](deep-java-library-gpu).
+For more info, see {doc}`gpu`.
 
 :::{admonition} PyTorch & CUDA versions
 :class: tip
