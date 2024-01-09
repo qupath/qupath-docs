@@ -125,7 +125,7 @@ It has the advantage of generally being a lot faster than conda when trying to f
 
 In this example, I'll use `mamba` installed on Windows using [the installation instructions here](https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html).
 These specify installing the *Miniforge* distribution... but it's not really necessary to remember all the different terms and distributions.
-For our purposes, `conda` and `mamba` ar interchangeable and the distribution shouldn't matter.
+For our purposes, `conda` and `mamba` are interchangeable and the distribution shouldn't matter.
 
 ### Creating an environment for PyTorch
 
@@ -147,7 +147,7 @@ To do this, check the [PyTorch + CUDA combination required for QuPath](gpu-versi
 
 If you want PyTorch 1.13.1 (recommended for Windows/Linux, but *not* Apple Silicon):
 ```
-conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 -c pytorch
+mamba install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 -c pytorch
 ```
 
 If you want PyTorch 2.0.1 (needs a bit more work on Windows/Linux, [see below](djl-gpu-pytorch-201)):
