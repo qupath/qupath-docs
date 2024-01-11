@@ -7,9 +7,9 @@ It's a collaboration between Stony Brook University ([WSInfer](https://wsinfer.r
 
 :::{admonition} Cite the paper!
 :class: warning
-If you use WSInfer and/or this extension in a publication, please make sure to cite our paper at <https://doi.org/10.1038/s41698-024-00499-9>.
+If you use WSInfer and/or this extension in a publication, please make sure to cite our paper.
 
-Kaczmarzyk, J.R., O’Callaghan, A., Inglis, F. et al. Open and reusable deep learning for pathology with WSInfer and QuPath. *npj Precis. Onc.* **8**, 9 (2024). https://doi.org/10.1038/s41698-024-00499-9
+Kaczmarzyk, J.R., O’Callaghan, A., Inglis, F. et al. Open and reusable deep learning for pathology with WSInfer and QuPath. *npj Precis. Onc.* **8**, 9 (2024). <https://doi.org/10.1038/s41698-024-00499-9>
 
 (And if you use it in combination with QuPath, be sure to [cite the QuPath paper too!](citing))
 :::
