@@ -255,7 +255,7 @@ QuPath supports these images too.
 Furthermore, {menuselection}`View --> Mini viewers --> Show channel viewer` makes it possible to see multiple channels simultaneously, side-by-side.
 
 :::{tip}
-Press and hold {guilabel}`Shift` to pause the viewer or right click on the channel viewer to customize its display.
+Press and hold {guilabel}`Shift` to pause the viewer, or right click on the channel viewer to customize its display.
 :::
 
 :::{figure} images/multichannel_viewer.jpg
