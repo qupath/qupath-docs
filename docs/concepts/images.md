@@ -24,6 +24,8 @@ When zooming in a lot, each pixel is typically visualized as a small square of a
 :::{figure} images/pixels_zoom.png
 :align: center
 :width: 75%
+
+Illustration of a pixel viewed at low magnification *(left)* and zoomed-in to make individual pixels identifiable *(right)*.
 :::
 
 % Image viewed at low magification *(left)* and zoomed-in to make individual pixels identifiable *(right)*.
@@ -51,6 +53,8 @@ For each pixel in both images, the pixel value is used to index the LUT and find
 :::{figure} images/luts_orig.png
 :align: center
 :width: 75%
+
+Example of how the LUT corresponds to the pixel values in an image
 :::
 
 By separating the display color from the pixel value using LUTs, it becomes possible to change the brightness/contrast of an image *without* changing the underlying pixel values - simply by changing the LUT.
@@ -58,6 +62,8 @@ By separating the display color from the pixel value using LUTs, it becomes poss
 :::{figure} images/luts_brighter.png
 :align: center
 :width: 75%
+
+Changing the LUT changes the brightness/contrast without changing the underlying values
 :::
 
 % Brightness enhanced by modifying the LUT *but keeping the pixel values unchanged*.
@@ -71,6 +77,8 @@ Other LUTs can be used to add other colors.
 > :::{figure} images/luts_fire.png
 > :align: center
 > :width: 75%
+>
+> LUTS are not limited to greyscale - here the *Fire* LUT is used
 > :::
 
 % Image displayed using the *Fire* LUT from ImageJ.
@@ -118,6 +126,8 @@ We can then infer that the 'pixel width' is approximately 10/1618 = 0.0061 cm, o
 :::{figure} images/ruler.jpg
 :align: center
 :width: 100%
+
+Photograph of a ruler with a red line spanning 1618 pixels.
 :::
 
 :::{tip}
@@ -148,6 +158,8 @@ As a rule of thumb, a smaller pixel size means more detail is available.
 :::{figure} images/pixel_sizes.png
 :align: center
 :width: 100%
+
+Images with very different pixel sizes
 :::
 
 Another way this is often expressed is using the **magnification** of the objective lens used during image acquisition.
@@ -250,6 +262,8 @@ QuPath supports these images too.
 :align: center
 :class: shadow-image
 :width: 80%
+
+Adjusting channel brightness/contrast in the LUCA 7 channel multiplex image
 :::
 
 Furthermore, {menuselection}`View --> Mini viewers --> Show channel viewer` makes it possible to see multiple channels simultaneously, side-by-side.
@@ -262,6 +276,8 @@ Press and hold {kbd}`Shift` to pause the viewer, or right click on the channel v
 :align: center
 :class: shadow-image
 :width: 80%
+
+Viewing multiple channels simultaneously in the channel viewer
 :::
 
 *Cell detection* in QuPath enables you to select which channel contains nuclear staining (for detection), and will then subsequently measure intensity values within different cell compartments for all channels.
@@ -270,6 +286,8 @@ Press and hold {kbd}`Shift` to pause the viewer, or right click on the channel v
 :align: center
 :class: shadow-image
 :width: 80%
+
+Viewing detection results from cell detection using DAPI as the nuclear channel
 :::
 
 ### Color deconvolution
@@ -321,6 +339,7 @@ Objects (e.g. annotations, cells) also should remember which plane they belong t
 
 For more sophisticated multidimensional image analysis you might want to turn to other software, such as [Fiji].
 
+[Introduction to Bioimage Analysis]: https://petebankhead.gitbooks.io/imagej-intro/content/
 [a pixel is not a little square]: http://alvyray.com/Memos/CG/Microsoft/6_pixel.pdf
 [analyzing fluorescence microscopy images with imagej]: https://bioimagebook.github.io/
 [blur and the psf]: https://bioimagebook.github.io/chapters/3-fluorescence/2-formation_spatial/formation_spatial.html

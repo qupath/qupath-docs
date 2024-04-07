@@ -151,6 +151,8 @@ After this, there is just one final set of options to navigate, which offers mor
 :align: center
 :class: shadow-image
 :width: 75%
+
+Additional options for filtering the objects created by thresholding.
 :::
 
 :::{tip}

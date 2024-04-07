@@ -82,6 +82,8 @@ The same command can be used to add measurements to other kinds of object (e.g. 
 :align: center
 :class: shadow-image
 :width: 75%
+
+Adding intensity features to superpixel detections
 :::
 ::::
 

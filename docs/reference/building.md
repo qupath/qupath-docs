@@ -48,6 +48,8 @@ If all goes well, you should see a triumphant message that the build was success
 :align: center
 :class: shadow-image
 :width: 50%
+
+Example of command line build success
 :::
 
 **That's it!**
@@ -199,6 +201,8 @@ The main steps are
 :align: center
 :class: shadow-image
 :width: 50%
+
+Cloning QuPath using GitHub 
 :::
 
 You can now open a command prompt in the correct directory directly from GitHub Desktop by choosing {menuselection}`Repository --> Open in Command Prompt`.
@@ -240,6 +244,8 @@ The right-most button on the main toolbar serves two purposes: to {guilabel}`Fet
 :align: center
 :class: shadow-image
 :width: 90%
+
+The GitHub Desktop interface
 :::
 
 If the option is {guilabel}`Fetch origin`, when you press the button the text will switch to {guilabel}`Pull origin` if any changes are available, with info about the number of changes.
@@ -250,6 +256,8 @@ You can press it again to pull those changes, and then rebuild QuPath using `gra
 :align: center
 :class: shadow-image
 :width: 50%
+
+Pulling changes from GitHub
 :::
 ::::
 
@@ -285,6 +293,8 @@ To do this, you can either:
 :align: center
 :class: shadow-image
 :width: 75%
+
+IntelliJ start up window
 :::
 
 After opening the QuPath project (usually accepting any
@@ -297,6 +307,8 @@ as in the image below.
 :align: center
 :class: shadow-image
 :width: 100%
+
+Configuring QuPath to run in debug mode
 :::
 
 Now press {menuselection}`Apply` and then {menuselection}`Debug` in this window.

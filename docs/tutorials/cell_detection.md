@@ -193,8 +193,10 @@ This provides a 'semi-automated' alternative to manually clicking on every cell 
 
 See {doc}`../starting/cell_counting` for more info on manual counting.
 
-```{image} images/convert_detections.jpg
+```{figure} images/convert_detections.jpg
 :align: center
 :width: 40%
+
+Points tool window
 ```
 :::

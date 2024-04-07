@@ -6,6 +6,8 @@ This tutorial outlines the basics of how multiplexed images can be analyzed in Q
 :align: center
 :class: shadow-image
 :width: 60%
+
+The LuCa-7color image
 :::
 
 We will focus on the main task of identifying each cell, and classifying the cells according to whether they are positive or not for different markers.
@@ -36,6 +38,8 @@ Here, it is really necessary so that classifiers generated along the way are sav
 :align: center
 :class: shadow-image
 :width: 90%
+
+Example of a project with the luca-7color image
 :::
 
 #### Set the image type
@@ -70,6 +74,8 @@ Here, I would remove any '(Opal)' parts.
 :align: center
 :class: shadow-image
 :width: 90%
+
+Adjusting the channel names in the Brightness & Contrast dialog
 :::
 
 ::::{tip}
@@ -83,6 +89,8 @@ Copy this list to the clipboard, and then select the corresponding channels in t
 :align: center
 :class: shadow-image
 :width: 60%
+
+Example of a list of channel names, each on a separate line
 :::
 
 2. Run a script like the following:
@@ -116,6 +124,8 @@ You can either right-click this list or select the {guilabel}`⋮` button and ch
 :align: center
 :class: shadow-image
 :width: 90%
+
+Populating the classifications from the image channels
 :::
 
 ### Detect & measure cells
@@ -129,6 +139,8 @@ If so, select that channel and explore different parameters and thresholds until
 :align: center
 :class: shadow-image
 :width: 90%
+
+Example of cell detection in the luca-7color image
 :::
 
 Along with the cell detection, QuPath automatically measures all channels in different cell compartments.
@@ -138,6 +150,8 @@ Because these measurements are based on the channel names, it is important to ha
 :align: center
 :class: shadow-image
 :width: 90%
+
+Exploring the detection results using measurement maps
 :::
 
 ### Create a classifier for each marker
@@ -163,6 +177,8 @@ As usual, you can consider the options in the dialog box in order from top to bo
 :align: center
 :class: shadow-image
 :width: 90%
+
+Creating a single measurement classifier for PDL1
 :::
 
 In this case, we can ignore the **Object filter** (all our detections are cells, so no need to distinguish between them).
@@ -183,6 +199,8 @@ To see the effects of any adjustments we make, we can use the **Live preview** o
 :align: center
 :class: shadow-image
 :width: 90%
+
+Looking at the live view of the CK single measurement classifier 
 :::
 
 Once you are reasonably content with the results, check (and amend if necessary) the **Classifier name** and click {guilabel}`Save`.
@@ -207,6 +225,8 @@ To do this, choose {menuselection}`Classify --> Training Images --> Create dupli
 :align: center
 :class: shadow-image
 :width: 90%
+
+Creating duplicate training images for each channel
 :::
 
 :::{Note}
@@ -228,6 +248,8 @@ We can then proceed with {menuselection}`Classify --> Object classification --> 
 :align: center
 :class: shadow-image
 :width: 60%
+
+The dialog box for training an object classifier
 :::
 
 The concepts are similar to those in {doc}`Cell classification <cell_classification>`: we annotate the image with points or areas where we know what the classification should be, and assign that classification to our annotations.
@@ -266,6 +288,8 @@ We shouldn't use any other classes in the training annotations.
 :align: center
 :class: shadow-image
 :width: 90%
+
+Training an object classifier for FoxP3 by selecting individual cells
 :::
 
 Once you are done with one marker, choose {menuselection}`Save & Apply` and enter a name to identify your classifier.
@@ -275,6 +299,8 @@ Then save the image data and open the image associated with the next marker of i
 :align: center
 :class: shadow-image
 :width: 90%
+
+Training an object classifier for CK using the brush tool to annotate many cells at once
 :::
 
 :::{tip}
@@ -297,6 +323,8 @@ You can return to your original image that you want to classify and choose {menu
 :align: center
 :class: shadow-image
 :width: 90%
+
+Loading a trained classifier
 :::
 
 This should display all the classifiers available within the project.
@@ -308,6 +336,8 @@ Then, choose *any combination* of classifiers and press {guilabel}`Apply classif
 :align: center
 :class: shadow-image
 :width: 90%
+
+Loading and combining multiple classifiers
 :::
 
 :::{tip}
@@ -320,6 +350,8 @@ To avoid needing to repeatedly select more than one classifier under {menuselect
 :align: center
 :class: shadow-image
 :width: 90%
+
+The image with multiple classifiers applied
 :::
 
 Amidst a blaze of color, it can rapidly become difficult to interpret images.
@@ -334,6 +366,8 @@ A few things can help:
 :align: center
 :class: shadow-image
 :width: 90%
+
+Using the channel viewer to see the varying centroid shapes and colors
 :::
 
 :::{admonition} One class or many?

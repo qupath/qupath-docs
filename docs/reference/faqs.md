@@ -223,6 +223,8 @@ This can be used to rotate the image as it is being imported, so that QuPath wil
 :align: center
 :class: shadow-image
 :width: 60%
+
+Screenshot of the import dialog window showing the *Rotate image* option.
 :::
 
 ### How do I create a new annotation inside an existing one using the *Brush* or *Wand*?

@@ -159,18 +159,24 @@ You can do that by choosing a few (not too many at a time, to avoid upsetting yo
 :align: center
 :class: shadow-image
 :width: 75%
+
+Pixel classifier using weighted deviation of Hematoxylin channel
 :::
 
 :::{figure} images/pixel_feature_hessian_det.jpg
 :align: center
 :class: shadow-image
 :width: 75%
+
+Pixel classifier using Hessian determinant of Hematoxylin channel
 :::
 
 :::{figure} images/pixel_feature_hessian_max.jpg
 :align: center
 :class: shadow-image
 :width: 75%
+
+Pixel classifier using Hessian maximum eigenvalue of Hematoxylin channel
 :::
 
 You will soon find that some features have a particular characteristic appearance, which makes them especially suited to some applications.
@@ -291,6 +297,8 @@ Make sure that you save the data when you have made your annotations (i.e. {menu
 :align: center
 :class: shadow-image
 :width: 90%
+
+Creating regions for a training image
 :::
 
 Then you can run {menuselection}`Classify --> Training images --> Create training image` and select the classification you used when annotating.
@@ -299,6 +307,8 @@ Then you can run {menuselection}`Classify --> Training images --> Create trainin
 :align: center
 :class: shadow-image
 :width: 80%
+
+Creating a training image dialog
 :::
 
 This will go through the images in your project, and extract annotations that have a specific classification -- and merge these together to form a single image, adding this image to your project.

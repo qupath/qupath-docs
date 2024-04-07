@@ -39,6 +39,8 @@ One can think of classifications and subclassifications like a hierarchy, with '
 :::{figure} images/classification_hierarchy.png
 :align: center
 :width: 60%
+
+Visual example of the hierarchies of classifications and subclassifications
 :::
 
 This is reminiscent of the {doc}`object hierarchy <object_hierarchy>`, but in practice they are quite distinct.
@@ -89,6 +91,8 @@ If its classification does not, the cell is considered to be *CD3 -ve*.
 :align: center
 :class: shadow-image
 :width: 60%
+
+Multiplex analysis showing centroids of cells that are positive for various classifiers
 :::
 
 (ignored-classifications)=

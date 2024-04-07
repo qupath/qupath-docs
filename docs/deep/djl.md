@@ -20,7 +20,6 @@ There are a few important technical limitations to know about:
 * **TensorFlow** models *must* be stored as Saved Model Bundles (rather than Keras); additionally, TensorFlow doesn't yet work on recent Macs using Apple silicon - even using the Intel build
 :::
 
-
 ## Getting started with QuPath + DJL
 
 To start using DJL from within QuPath, download the [QuPath Deep Java Library extension](https://github.com/qupath/qupath-extension-djl).
@@ -30,13 +29,13 @@ This should be a .jar file, which you can drag onto QuPath's main window to inst
 This adds a command {menuselection}`Extensions --> Deep Java Library --> Manage DJL Engines`.
 Running this will show you a list of the available engines - usually either PyTorch and TensorFlow, or just PyTorch.
 
-```{image} images/djl_engines.png
----
-class: shadow-image
-width: 50%
-align: center
----
-```
+:::{figure} ../deep/images/djl_engines.png
+:class: shadow-image
+:width: 50%
+:align: center
+
+The DJL library manager in QuPath
+:::
 
 By default, QuPath doesn't actually include the PyTorch and TensorFlow frameworks themselves (which are rather big).
 Instead, DJL can download them when they are needed and store them locally on your computer.
@@ -218,8 +217,6 @@ println(segmented.orElse([]))
 
 Semantic segmentation of holidaying cows using DJL model zoo (PyTorch DeepLabv3)
 :::
-
-
 
 ### Style transfer
 

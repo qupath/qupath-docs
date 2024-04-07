@@ -17,7 +17,7 @@ It is a good idea to read through the {doc}`cell_detection` section before this 
 ## Video tutorial
 
 ```{raw} html
-<div style="text-align: center; margin-bottom: 2em;">
+<div class="iframe-wrapper">
 <iframe width="100%" height="350" src="https://www.youtube-nocookie.com/embed/-4JZ73ZEicY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 ```
