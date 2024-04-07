@@ -13,8 +13,8 @@ And, like many other commands, you should create Density Maps within a {ref}`pro
 ## Video tutorial
 
 ```{raw} html
-<div style="text-align: center; margin-bottom: 2em;">
-<iframe width="100%" height="350" src="https://www.youtube-nocookie.com/embed/lGtYOlv8XFU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div class="iframe-wrapper">
+<iframe src="https://www.youtube-nocookie.com/embed/lGtYOlv8XFU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 ```
 
