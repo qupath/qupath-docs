@@ -58,7 +58,7 @@ You can find QuPath inside the `./build/dist/` subdirectory.
 
 If you already have Java installed, you might be able to skip Step 2.
 Most Java versions >= 8 should work to launch Gradle, which will then automatically download the version it needs.
-However, since QuPath currently requires OpenJDK 16, we recommend just installing that and saving Gradle the extra effort.
+However, since QuPath currently requires OpenJDK 17, we recommend just installing that and saving Gradle the extra effort.
 
 Note that some problems have been reported using a version of OpenJDK based on OpenJ9, such as may be provided by some package managers.
 Switching to an OpenJDK distribution based on HotSpot may help -- see [here](https://github.com/qupath/qupath/issues/484) for details.
