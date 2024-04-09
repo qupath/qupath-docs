@@ -17,10 +17,9 @@ The distinction between processing and analysis is helpful to understand how QuP
 Often these operations are very simple (e.g. averaging neighboring pixels), but because images can be huge - perhaps consisting of *billions* of pixels - even simple operations can be extremely powerful when applied across the whole image.
 
 :::{figure} images/image_processing.png
-:align: center
-:width: 90%
+:class: full-image
 
-Example of processed images, using local averages, differences and gradient magnitude.
+Example of processed images, using local averages, differences and gradient magnitude
 :::
 
 :::{tip}
@@ -33,10 +32,9 @@ See [Processing fundamentals] for an overview of image processing principles and
 This knowledge isn't represented in terms of pixels, and might rather be a table.
 
 :::{figure} images/image_analysis.png
-:align: center
-:width: 90%
+:class: full-image
 
-Example of image analysis, where image processing helps along the way.
+Example of image analysis, where image processing helps along the way
 :::
 
 ## Where QuPath fits in
@@ -47,10 +45,9 @@ Although it *uses* image processing, this is generally wrapped up inside specifi
 These commands can be used to generate objects, which can then be queried and summarized as described {doc}`in the next section <objects>`.
 
 :::{figure} images/qupath_approach.png
-:align: center
-:width: 90%
+:class: full-image
 
-General workflow for analyzing images in QuPath.
+General workflow for analyzing images in QuPath
 :::
 
 This means that, for the most part, it is not necessary to have detailed knowledge of image processing to use the software (but it can help!).

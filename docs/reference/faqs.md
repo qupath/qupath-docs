@@ -220,9 +220,7 @@ When importing an image into an project, there is a {guilabel}`Rotate image` opt
 This can be used to rotate the image as it is being imported, so that QuPath will treat it from the beginning as if the actual image stored within the file had a different orientation.
 
 :::{figure} images/importing-option-rotate.png
-:align: center
-:class: shadow-image
-:width: 60%
+:class: shadow-image mid-image
 
 Screenshot of the import dialog window showing the *Rotate image* option.
 :::

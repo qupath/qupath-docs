@@ -37,8 +37,7 @@ Consequently, QuPath is able to automatically give not only the numbers of cells
 One can think of classifications and subclassifications like a hierarchy, with 'base' classifications and then other classifications derived from them.
 
 :::{figure} images/classification_hierarchy.png
-:align: center
-:width: 60%
+:class: mid-image
 
 Visual example of the hierarchies of classifications and subclassifications
 :::
@@ -88,9 +87,7 @@ We no longer need *Positive* and *Negative* subclassifications; rather, if a cel
 If its classification does not, the cell is considered to be *CD3 -ve*.
 
 :::{figure} ../tutorials/images/multiplex_centroids.jpg
-:align: center
-:class: shadow-image
-:width: 60%
+:class: shadow-image full-image
 
 Multiplex analysis showing centroids of cells that are positive for various classifiers
 :::

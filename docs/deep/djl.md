@@ -30,9 +30,7 @@ This adds a command {menuselection}`Extensions --> Deep Java Library --> Manage 
 Running this will show you a list of the available engines - usually either PyTorch and TensorFlow, or just PyTorch.
 
 :::{figure} ../deep/images/djl_engines.png
-:class: shadow-image
-:width: 50%
-:align: center
+:class: shadow-image small-image
 
 The DJL library manager in QuPath
 :::
@@ -156,9 +154,7 @@ println "Detected objects: ${detected.orElse([])}"
 ```
 
 :::{figure} images/djl_stein_object_detection.jpg
-:class: shadow-image
-:align: center
-:width: 90%
+:class: shadow-image full-image
 
 Object detection using DJL model zoo (PyTorch SSD)
 :::
@@ -171,9 +167,7 @@ These are shown as QuPath annotations with the classifications 'dog' and 'cup'..
 Results are better when applied to this recent photo from a trip to the Northern Irish coast:
 
 :::{figure} images/djl_holiday_cows_object_detection.jpg
-:class: shadow-image
-:align: center
-:width: 90%
+:class: shadow-image full-image
 
 Object detection of holidaying cows using DJL model zoo (PyTorch SSD)
 :::
@@ -211,9 +205,7 @@ println(segmented.orElse([]))
 ```
 
 :::{figure} images/djl_holiday_cows_semantic.jpg
-:class: shadow-image
-:align: center
-:width: 90%
+:class: shadow-image full-image
 
 Semantic segmentation of holidaying cows using DJL model zoo (PyTorch DeepLabv3)
 :::

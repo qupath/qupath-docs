@@ -26,9 +26,7 @@ The starting point for creating a density map is usually to generate and classif
 Here, we use do this by following the steps in {doc}`cell_detection` and {doc}`cell_classification`.
 
 :::{figure} images/density_cells.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
 Ki67 image with classified cells
 :::
@@ -36,9 +34,7 @@ Ki67 image with classified cells
 Then launch the density map command with {menuselection}`Analyze --> Density maps --> Create density map`.
 
 :::{figure} images/density_map_orig.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
 Original density map
 :::
@@ -67,9 +63,7 @@ Left to the defaults, the density map will make use of all detection objects (wh
 If I choose the {guilabel}`Main class` to be **Tumor**, then the density map will *only* include detections that are classified as **Tumor**.
 
 :::{figure} images/density_map_tumor.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
 Density map showing tumor cells
 :::
@@ -92,9 +86,7 @@ This is optional -- it can be left at *Any* if it isn't needed.
 A useful application of this here would be to look specifically at tumor cells classified as *positive*.
 
 :::{figure} images/density_map_tumor_positive.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
 Density map showing positive tumor cells
 :::
@@ -103,9 +95,7 @@ This then works in combination with the {guilabel}`Main class`.
 If I switch that, I can look at the cells classified as both stromal and positive.
 
 :::{figure} images/density_map_stroma_positive.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
 Density map showing positive non-tumor cells
 :::
@@ -124,9 +114,7 @@ In the last type, *Objects %*, the densities are normalized by objects.
 We can use *Objects %* to calculate a *local* Ki67 labeling index: the percentage of tumor cells classified as positive.
 
 :::{figure} images/density_map_tumor_positive_percent.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
 Density map showing positive % tumor cells
 :::
@@ -144,9 +132,7 @@ Expanding the {guilabel}`Customize appearance` panel provides various options to
 These are purely for visualization, and don't influence the behavior of the map for thresholding or hotspot detection.
 
 :::{figure} images/density_map_tumor_positive_percent_adjusted.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
 Density map showing positive % tumor cells with contrast adjusted
 :::
@@ -165,9 +151,7 @@ The {guilabel}`Gamma` slider makes it possible to adjust this opacity weighting.
 If you want to remove it altogether, set the gamma to 0.
 
 :::{figure} images/density_map_tumor_positive_percent_opaque.jpg
-:align: center
-:class: shadow-image
-:width: 80%
+:class: shadow-image full-image
 
 Density map showing positive % tumor cells with gamma = 0
 :::
@@ -199,9 +183,7 @@ Having customized your map using the options above, the {guilabel}`Find hotspots
 Each hotspot is a circular annotation with a radius that matches the radius option set when creating the map.
 
 :::{figure} images/density_map_hotspot_threshold.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
 Density map hotspot thresholding
 :::
@@ -215,9 +197,7 @@ Some parameters are intuitive, but there are some important-but-not-obvious subt
 - **Delete existing hotspots** -- This is handy when running the command multiple times, such as when tweaking parameters. It removes only hotspots with the same classification as the new hotspots being created.
 
 :::{figure} images/density_map_hotspots.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
 Density map hotspots
 :::
@@ -247,9 +227,7 @@ In this way, the command really provides an efficient estimate of hotspots, rath
 Another use of a density map is to convert detections to annotations.
 
 :::{figure} images/density_map_threshold.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
 Density map thresholding
 :::

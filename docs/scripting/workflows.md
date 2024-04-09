@@ -14,9 +14,7 @@ This is because QuPath automatically logs many of the commands that are run in a
 The `Command history` can be found by opening the {guilabel}`Workflow` tab of the `Analysis panel` on the left.
 
 :::{figure} images/command_history.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
 The `Command history` within QuPath
 :::
@@ -42,9 +40,7 @@ In QuPath, as in life, it is neither easy nor wise to rewrite history... because
 :::
 
 :::{figure} images/workflow_orig.png
-:align: center
-:class: shadow-image
-:width: 40%
+:class: shadow-image small-image
 
 A workflow created from the `Command history`.
 :::
@@ -53,11 +49,9 @@ The new workflow is shown in its own panel.
 Right-clicking on any entry within a `Workflow` allows some minor editing, e.g. to remove an entry or shift it up or down.
 
 :::{figure} images/workflow_editing.png
-:align: center
-:class: shadow-image
-:width: 40%
+:class: shadow-image small-image
 
-Editing a workflow.
+Editing a workflow
 :::
 
 :::{TIP}

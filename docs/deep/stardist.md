@@ -50,9 +50,7 @@ See the original StarDist papers and GitHub repos for information about training
 The *he_heavy_augment* model is capable of more than one might legitimately expect.
 
 :::{figure} images/stardist_madness_small.gif
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image mid-image
 
 StarDist applied to region of OS-3.ndpi
 :::
@@ -98,9 +96,7 @@ println 'Done!'
 ```
 
 :::{figure} images/stardist_nuclei_os1.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image mid-image
 
 StarDist applied to region of OS-1.ndpi
 :::
@@ -139,9 +135,7 @@ println 'Done!'
 ```
 
 :::{figure} images/stardist_nuclei_luca.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image mid-image
 
 StarDist applied to region of *LuCa-7color\_\[13860,52919\]\_1x1*
 :::
@@ -205,9 +199,7 @@ println('Done!')
 ```
 
 :::{figure} images/stardist_normalize_local_bug.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image mid-image
 
 Local percentile normalization can sometimes hallucinate nuclei in the image background
 :::
@@ -242,9 +234,7 @@ println('Done!')
 
 
 :::{figure} images/stardist_normalize_global_fix.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image mid-image
 
 Global percentile normalization can remove false positive detections in the background
 :::
@@ -282,9 +272,7 @@ These probabilities can then be visualized in QuPath through measurement tables 
 This can be useful to help choose appropriate threshold values; you could set a much lower detection threshold to 'over-detect' (as in the above script) and use the output probabilities to determine an appropriate cutoff threshold for the future.
 
 :::{figure} images/stardist_nuclei_os1_prob.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image mid-image
 
 StarDist with probability estimates applied to region of OS-1.ndpi
 :::
@@ -330,9 +318,7 @@ println 'Done!'
 ```
 
 :::{figure} images/stardist_cells_luca.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image mid-image
 
 StarDist + QuPath cell detection and measurement
 :::
@@ -354,9 +340,7 @@ This gives much smoother results independent of image resolution, but it can pro
 These artifacts are not present if StarDist is used without cell expansion.
 
 :::{figure} images/stardist_expansion_artifacts.jpg
-:align: center
-:class: shadow-image
-:width: 60%
+:class: shadow-image small-image
 
 Artifacts to look out when using geometry-based cell expansion.
 :::

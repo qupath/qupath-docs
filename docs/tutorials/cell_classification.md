@@ -30,9 +30,7 @@ The first step is to draw a generous annotation that corresponds to a region of 
 This can be done very quickly, and should include a mixture of both tumor and non-tumor cells for the classification to be meaningful.
 
 :::{figure} images/ki67_auto_original.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
 Ki67 image
 :::
@@ -64,9 +62,7 @@ This improves the speed and reduces the memory requirements.
 In this case, QuPath will overlap the regions and then try to resolve cells detected on region boundaries to avoid weird artefacts in these areas (e.g. cells being cut in half, or detected twice).
 
 :::{figure} images/ki67_auto_parallel.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
 Ki67 parallel cell detection
 :::
@@ -74,9 +70,7 @@ Ki67 parallel cell detection
 The resulting cell detection is shown below.
 
 :::{figure} images/ki67_auto_cells_detected.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
 Detected cells
 :::
@@ -88,9 +82,7 @@ QuPath's ability to distinguish between different cell types depends upon which 
 One way to view the measurements is by generating a results table, as described in {doc}`cell_detection`.
 
 :::{figure} images/ki67_auto_results_detections.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
 Results table showing cell features
 :::
@@ -105,9 +97,7 @@ This tends to be higher for tumor cells, because tumor nuclei tend to be larger 
 The *Nucleus/Cell area ratio* incorporates both of these characteristics in a single measurement.
 
 :::{figure} images/ki67_auto_map_raw.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
 Measurement map for Nucleus/Cell area ratio
 :::
@@ -136,8 +126,7 @@ Less technically, putting higher numbers into the dialog box results in more smo
 This reduces the noisiness of the measurements more effectively, but also makes it more difficult to distinguish smaller areas containing particular cell types.
 
 :::{figure} images/ki67_auto_smooth_features.jpg
-:align: center
-:class: shadow-image
+:class: shadow-image mid-image
 
 Smooth features dialog
 :::
@@ -148,9 +137,7 @@ Again, higher values are seen in areas of tumor -- but now these are much more h
 This will help QuPath to identify all the cells within tumor areas correctly.
 
 :::{figure} images/ki67_auto_map_smoothed.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
 Measurement map for smoothed Nucleus/Cell area ratio
 :::
@@ -171,9 +158,7 @@ Double-clicking on the list of classification allows you to change their colors,
 :::
 
 :::{figure} images/ki67_auto_training_first.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
 Training cell classification
 :::
@@ -182,9 +167,7 @@ Continue creating annotations and assigning their classes.
 Right-clicking on the image after drawing the annotation can offer an easier way to set the class, without needing to move the mouse to the other side of the screen and press the {guilabel}`Set class` button on the left.
 
 :::{figure} images/ki67_auto_training_tumor.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
 Training cell classification with right-click
 :::
@@ -203,9 +186,7 @@ To do this, go to {menuselection}`Classify --> Object classification --> Train o
 Pressing {guilabel}`Live update` will train up a classifier that QuPath will then apply to all cells within the image.
 
 :::{figure} images/ki67_auto_training_updated.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
 Training cell classification with live update
 :::
@@ -224,9 +205,7 @@ The default *Random Trees* classifier tends to get a good combination of speed a
 Holding down shift while right-clicking on the image provides a third way to set the class of an annotation that is selected, by opening a small 'ring' menu.
 
 :::{figure} images/ki67_auto_training_ring.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
 Training cell classification with shift + right-click
 :::
@@ -260,9 +239,7 @@ Here, select *Nucleus: DAB OD mean* as the feature used for the intensity classi
 Make sure that {guilabel}`Single threshold` is selected and then adjust *Threshold 1+* until the resulting positive/negative sub-classification of tumor cells matches with the brown vs blue appearance of the nuclei within the image.
 
 :::{figure} images/ki67_auto_training_intensity.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
 Intensity classification
 :::
@@ -285,9 +262,7 @@ That's it!  If you select the original, large annotation containing all the cell
 You can also generate results tables if necessary.
 
 :::{figure} images/ki67_auto_final_markup.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
 Ki67 analysis results with cell classification
 :::

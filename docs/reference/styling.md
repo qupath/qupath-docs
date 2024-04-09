@@ -38,9 +38,7 @@ Then drag the .css file onto QuPath, and selected it in the preferences.
 You should see something like the screenshow below.
 
 :::{figure} images/building-blue-theme.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
 A rather unpleasant blue theme
 :::
@@ -60,9 +58,7 @@ To switch to red with white text, you can use the following .css:
 ```
 
 :::{figure} images/building-red-theme.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
 Also an unpleasant red theme
 :::
@@ -105,9 +101,7 @@ The .css below depicts a quick attempt to apply the [colors defined in the dracu
 ```
 
 :::{figure} images/building-dracula-theme.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
 A dracula-inspired theme for QuPath
 :::

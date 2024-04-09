@@ -46,12 +46,9 @@ The other measurements need to be calculated dynamically.
 In this regard, it is strongly preferable that summary statistics are dynamic because it's usually the case that the numbers and classifications of descendant objects could change at any moment... and it's essential to ensure that when a parent object is asked for summary measurements, they are always up-to-date.
 
 :::{figure} images/measurement_types.jpg
-:align: center
-:width: 60%
+:class: mid-image
 
-Illustration of the different measurement types within QuPath. <br />
-The measurement list on the left relates to the individual selected cell shown in yellow (a **detection** object).
-The measurement table contains both summary and shape statistics for the polygonal **annotation** object.
+Illustration of the different measurement types within QuPath. The measurement list on the left relates to the individual selected cell shown in yellow (a **detection** object). The measurement table contains both summary and shape statistics for the polygonal **annotation** object.
 :::
 
 The summary statistics are based upon the detection objects descended from the annotation.

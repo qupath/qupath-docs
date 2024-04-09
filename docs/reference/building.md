@@ -45,9 +45,7 @@ It will take a few minutes to download everything required and build the softwar
 If all goes well, you should see a triumphant message that the build was successful.
 
 :::{figure} images/building-success.png
-:align: center
-:class: shadow-image
-:width: 50%
+:class: shadow-image mid-image
 
 Example of command line build success
 :::
@@ -198,11 +196,9 @@ The main steps are
 - Press {guilabel}`Clone or download` and choose {guilabel}`Open in Desktop`
 
 :::{figure} images/building-clone.png
-:align: center
-:class: shadow-image
-:width: 50%
+:class: shadow-image mid-image
 
-Cloning QuPath using GitHub 
+Cloning QuPath using GitHub
 :::
 
 You can now open a command prompt in the correct directory directly from GitHub Desktop by choosing {menuselection}`Repository --> Open in Command Prompt`.
@@ -241,9 +237,7 @@ Once you've built QuPath once, updating it to use the latest source code in *Git
 The right-most button on the main toolbar serves two purposes: to {guilabel}`Fetch` information about the latest changes (from GitHub) and to {guilabel}`Pull` the changes down to your computer.
 
 :::{figure} images/building-branches.png
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
 The GitHub Desktop interface
 :::
@@ -253,9 +247,7 @@ If the option is {guilabel}`Fetch origin`, when you press the button the text wi
 You can press it again to pull those changes, and then rebuild QuPath using `gradlew`.
 
 :::{figure} images/building-pull.png
-:align: center
-:class: shadow-image
-:width: 50%
+:class: shadow-image mid-image
 
 Pulling changes from GitHub
 :::
@@ -290,9 +282,7 @@ To do this, you can either:
   installed a Java JDK before proceeding any further (see instructions above).
 
 :::{figure} images/building-intellij-import.png
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image mid-image
 
 IntelliJ start up window
 :::
@@ -304,9 +294,7 @@ and select "Edit Configurations..." from the drop-down menu, and
 as in the image below.
 
 :::{figure} images/building-intellij-launch.png
-:align: center
-:class: shadow-image
-:width: 100%
+:class: shadow-image mid-image
 
 Configuring QuPath to run in debug mode
 :::

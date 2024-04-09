@@ -1,28 +1,43 @@
-.shadow-image {
-  box-shadow: 4px 4px 8px rgba(1, 1, 1, 0.2);
-}
-
-div.figure {
-  align: center;
-}
-
-p.caption {
-  margin: 5px;
-}
-
-.inline-icon {
-  width: 1.5em;
-}
-
-.tool-icon {
-  width: 3em;
-}
-
+/* General styles */
 .wy-nav-content {
   max-width: 1100px;
   align-self: center;
 }
 
+/* Figure related styles */
+figure {
+  text-align: center;
+}
+
+figcaption {
+  margin-top: 10px;
+}
+
+.caption-text {
+  font-size: 12pt;
+}
+
+.shadow-image {
+  box-shadow: 4px 4px 8px rgba(1, 1, 1, 0.2);
+}
+
+.full-image {
+  width: 80%;
+}
+
+.mid-image {
+  width: 60%;
+}
+
+.small-image {
+  width: 40%;
+}
+
+.mini-image {
+  width: 20%;
+}
+
+/* Video styles */
 .iframe-wrapper {
   text-align: center;
   width: 100%;
@@ -35,4 +50,13 @@ iframe {
   min-width: 321px;
   max-width: 800px;
   height: 100%;
+}
+
+/* Other styles */
+.tool-icon {
+  width: 3em;
+}
+
+.inline-icon {
+  width: 1.5em;
 }

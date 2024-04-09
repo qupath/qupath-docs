@@ -21,11 +21,9 @@ Absolute measurements of stained area are generally not very meaningful: they ne
 We can define the 'full' area of interest by drawing an annotation, or create one automatically around the entire tissue using the techniques described in {doc}`thresholding`.
 
 :::{figure} images/areas_tissue.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
-Tissue detected by thresholding.
+Tissue detected by thresholding
 :::
 
 ### Threshold stained areas
@@ -37,11 +35,9 @@ In this case, set the {guilabel}`Channel` to {guilabel}`DAB` and *decrease the t
 The range of 'optical densities' after color deconvolution is typically (but not strictly!) around 0 -- 2, and an appropriate threshold might be around 0.25.
 
 :::{figure} images/areas_preview.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
-Preview of stained area detection.
+Preview of stained area detection
 :::
 
 ### Viewing measurements
@@ -52,9 +48,7 @@ These are computed automatically while you adjust thresholding parameters.
 These are important, because they allow you to see how your results will be impacted by changing thresholds and other parameters.
 
 :::{figure} images/areas_threshold_25.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
 A higher threshold results in a lower stained percentage measurement.
 :::
@@ -74,11 +68,9 @@ If I would like to automatically generate measurements for the relative proporti
 For this reason, I have chosen to assign both *Positive* and *Negative* classifications.
 
 :::{figure} images/areas_threshold_15.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
-A lower threshold results in a higher stained percentage measurement.
+A lower threshold results in a higher stained percentage measurement
 :::
 
 :::{tip}
@@ -100,32 +92,25 @@ At this point you *could* generate annotations from your thresholded brown regio
 Rather, you can save your thresholder and click {guilabel}`Measure`.
 
 :::{figure} images/areas_dialog.png
-:align: center
-:class: shadow-image
-:width: 50%
+:class: shadow-image small-image
 
-Saving the thresholder.
+Saving the thresholder
 :::
 
 You can then select what kinds of object you want to measure (e.g. annotations, or the full image again) and add some extra text to help you identify the measurements later.
 
 :::{figure} images/areas_name.png
-:align: center
-:class: shadow-image
-:width: 50%
+:class: shadow-image small-image
 
-Add a name to distinguish your measurements.
+Add a name to distinguish your measurements
 :::
 
 The various measurement tables accessed through the {menuselection}`Measure` menu allow you to view and export the measurements at the end.
 
 :::{figure} images/areas_result.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
-Results of calculating the stained area percentage.
-The overlay is not displayed after the dialog is closed, but you can reload the threshold settings with {menuselection}`Load pixel classifier`.
+Results of calculating the stained area percentage. The overlay is not displayed after the dialog is closed, but you can reload the threshold settings with {menuselection}`Load pixel classifier`.
 :::
 
 :::{admonition} Image analysis & objectivity
