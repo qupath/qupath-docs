@@ -24,7 +24,7 @@ When zooming in a lot, each pixel is typically visualized as a small square of a
 :::{figure} images/pixels_zoom.png
 :class: mid-image
 
-Illustration of a pixel viewed at low magnification *(left)* and zoomed-in to make individual pixels identifiable *(right)*.
+Illustration of a pixel viewed at low magnification *(left)* and zoomed-in to make individual pixels identifiable *(right)*
 :::
 
 % Image viewed at low magification *(left)* and zoomed-in to make individual pixels identifiable *(right)*

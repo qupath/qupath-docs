@@ -42,7 +42,7 @@ In QuPath, as in life, it is neither easy nor wise to rewrite history... because
 :::{figure} images/workflow_orig.png
 :class: shadow-image small-image
 
-A workflow created from the `Command history`.
+A workflow created from the `Command history`
 :::
 
 The new workflow is shown in its own panel.

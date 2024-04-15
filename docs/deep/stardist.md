@@ -342,7 +342,7 @@ These artifacts are not present if StarDist is used without cell expansion.
 :::{figure} images/stardist_expansion_artifacts.jpg
 :class: shadow-image small-image
 
-Artifacts to look out when using geometry-based cell expansion.
+Artifacts to look out when using geometry-based cell expansion
 :::
 ::::
 

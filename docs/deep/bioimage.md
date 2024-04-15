@@ -68,7 +68,7 @@ If all goes well, QuPath will check the model is compatible and show a dialog:
 ```{figure} images/bioimage_dialog.png
 :class: shadow-image small-image
 
-Dialog showing pixel classifier options for a model zoo model.Figures here were generated using the [*unet2d_nuclei_broad* model spec](https://github.com/bioimage-io/spec-bioimage-io/tree/v0.4.8/example_specs/models/unet2d_nuclei_broad).
+Dialog showing pixel classifier options for a model zoo model. Figures here were generated using the [*unet2d_nuclei_broad* model spec](https://github.com/bioimage-io/spec-bioimage-io/tree/v0.4.8/example_specs/models/unet2d_nuclei_broad).
 ```
 
 This provides an opportunity to customize a few QuPath-specific aspects:

@@ -189,7 +189,7 @@ Additionally, QuPath draws colored lines to indicate the existing stain vectors.
 :::{figure} images/stains_estimate_scatter.jpg
 :class: shadow-image mid-image
 
-Initial scatterplot for stain estimation.
+Initial scatterplot for stain estimation
 :::
 
 The scatterplots for the original stain vectors in the example image are shown above.
@@ -206,7 +206,7 @@ They will automatically adjust, and the changes shown in the scatterplots.
 :::{figure} images/stains_estimate_scatter_bad.jpg
 :class: shadow-image mid-image
 
-Auto-estimate stains.
+Auto-estimate stains
 :::
 
 In this case, we can see that there appear to be some unexpected colors (e.g. greenish pixels) -- which have played havoc with the estimate, and potentially made it even worse.
@@ -217,7 +217,7 @@ A natural choice in this case is to select {guilabel}`Exclude unrecognised color
 :::{figure} images/stains_estimate_auto.jpg
 :class: shadow-image mid-image
 
-Auto-estimate stains with unrecognized colors removed.
+Auto-estimate stains with unrecognized colors removed
 :::
 
 The resulting vector estimates look more reasonable.

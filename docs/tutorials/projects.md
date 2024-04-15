@@ -53,7 +53,7 @@ This opens a dialog box, which shows a list of images to import and provides som
 :::{figure} images/project_import.png
 :class: shadow-image mid-image
 
-Dragging images on top of QuPath for project import.
+Dragging images on top of QuPath for project import
 :::
 
 The options are:

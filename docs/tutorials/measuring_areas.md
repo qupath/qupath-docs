@@ -50,7 +50,7 @@ These are important, because they allow you to see how your results will be impa
 :::{figure} images/areas_threshold_25.jpg
 :class: shadow-image full-image
 
-A higher threshold results in a lower stained percentage measurement.
+A higher threshold results in a lower stained percentage measurement
 :::
 
 :::{admonition} Why don't I see live measurements?

@@ -13,7 +13,7 @@ It can be accessed via {menuselection}`View --> Show view tracker` and looks lik
 :::{figure} images/tracker_viewer_recording_example.png
 :class: shadow-image mini-image
 
-View tracker user interface including an example view record
+Tracker interface including an example view recording
 :::
 
 All the recordings of the currently opened image are listed here.
