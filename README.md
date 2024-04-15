@@ -28,7 +28,8 @@ You'll also need the command line tool `Make` (e.g., [GNU Make](https://www.gnu.
 
 Then, you can run `make` to see available build options.
 `make html` will make the HTML version of the website, which is probably the
-most useful option.
+most useful option. The built HTML files will be in `_build/html`, and can
+be opened in a web browser without running a local HTTP server.
 
 Alternatively, you can install `sphinx-autobuild` and `watchfiles`
 into your virtual environment to run a HTTP server and have the HTML files
