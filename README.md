@@ -14,7 +14,7 @@ python -m venv ./venv
 or using conda/mamba:
 
 ```bash
-conda env create -n qupath-docs
+conda env create -n qupath-docs python=3.12
 conda activate qupath-docs
 ```
 
