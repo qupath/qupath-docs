@@ -30,6 +30,13 @@ Then, you can run `make` to see available build options.
 `make html` will make the HTML version of the website, which is probably the
 most useful option.
 
+Alternatively, you can run `sphinx-autobuild` to run a HTTP server 
+and have the HTML files automatically rebuilt when any changes are made:
+
+```bash
+sphinx-autobuild . _build/html
+```
+
 ## License
 
 All original content here is shared under a Creative Commons license ([CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)).
