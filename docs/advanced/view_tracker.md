@@ -11,11 +11,9 @@ The view tracker currently requires the image being recorded to be within a [pro
 It can be accessed via {menuselection}`View --> Show view tracker` and looks like this:
 
 :::{figure} images/tracker_viewer_recording_example.png
-:align: center
-:class: shadow-image
-:width: 40%
+:class: shadow-image mini-image
 
-View tracker user interface including an example view record
+Tracker interface including an example view recording
 :::
 
 All the recordings of the currently opened image are listed here.
@@ -46,9 +44,7 @@ Doing so will simply stop the current recording.
 The Analysis pane gives the user an overview of the recording by showing where the viewer is looking at each time point and how long that area been looked at. To analyze a recording, select it and click {guilabel}`Analyze` or double-click on the recording. This will run the analysis pane, as shown:
 
 :::{figure} images/tracker_viewer_analysis.png
-:align: center
-:class: shadow-image
-:width: 40%
+:class: shadow-image small-image
 
 View tracker analysis pane
 :::

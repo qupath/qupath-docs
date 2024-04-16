@@ -135,10 +135,9 @@ While a single binary image channel can contain less information than a correspo
 In practice, means that multichannel binary images allow overlaps to be represented: that is, pixels can be assigned to multiple classes.
 
 :::{figure} images/binary_labeled_comparison.png
-:align: center
-:width: 90%
+:class: full-image
 
-An image in QuPath (left) with annotations exported as two binary image channels (center) or a single labeled image (right).
+An image in QuPath (left) with annotations exported as two binary image channels (center) or a single labeled image (right)
 :::
 ::::
 
@@ -207,10 +206,9 @@ If *Tumor* and *Stroma* annotations overlap for any pixel, *Stroma* will win.
 Knowing this when annotating means that at interfaces you only really need to carefully annotate the classes that will be drawn *last* -- because they will override any overlapping classes.
 
 :::{figure} images/labels_order.png
-:align: center
-:width: 80%
+:class: full-image
 
-A coarse stroma annotation with finer tumor annotation (left), exported as a labeled image with stroma first (center) or tumor first (right).
+A coarse stroma annotation with finer tumor annotation (left), exported as a labeled image with stroma first (center) or tumor first (right)
 :::
 ::::
 

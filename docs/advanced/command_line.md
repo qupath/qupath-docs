@@ -65,9 +65,9 @@ It is necessary to use *"QuPath (console).exe"* here to be able to view the outp
 ```
 
 :::{figure} images/command_line_win.png
-:align: center
-:class: shadow-image
-:width: 80%
+:class: shadow-image full-image
+
+QuPath command line options on Windows
 :::
 &NewLine;
 
@@ -89,8 +89,9 @@ On macOS, the executable is buried inside the `.app` file and therefore you need
 ```
 
 :::{figure} images/command_line_mac.png
-:align: center
-:width: 95%
+:class: full-image
+
+QuPath command line options on macOS
 :::
 
 ## Subcommands

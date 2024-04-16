@@ -8,11 +8,9 @@ This information can be provided by {ref}`setting the image type <Setting the im
 Typically the type will be either *Brightfield* or *Fluorescence*.
 
 :::{figure} images/stains_type.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
-Setting the image type.
+Setting the image type
 :::
 
 :::{tip}
@@ -29,8 +27,8 @@ The choice of image type also has an impact on how stains may be separated.
 ## Video tutorial
 
 ```{raw} html
-<div style="text-align: center; margin-bottom: 2em;">
-<iframe width="100%" height="350" src="https://www.youtube-nocookie.com/embed/Oe0rfzLtTO0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div class="iframe-wrapper">
+<iframe src="https://www.youtube-nocookie.com/embed/Oe0rfzLtTO0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 ```
 
@@ -45,11 +43,9 @@ Separating these simply involves splitting the channels.
 The **Brightness/Contrast** {{ icon_contrast }} command provides an easy way to visualize this separation, in addition to viewing different combinations of channels merged together.
 
 :::{figure} images/stains_multiplexed.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
-Brightness/Contrast tool and channel viewer with a multiplexed image.
+Brightness/Contrast tool and channel viewer with a multiplexed image
 :::
 
 :::{tip}
@@ -130,11 +126,9 @@ This requires two steps:
 Repeat this for other stains if needed.
 
 :::{figure} images/stains_manual.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
-Manually selecting a region to set a stain vector.
+Manually selecting a region to set a stain vector
 :::
 
 :::{tip}
@@ -157,11 +151,9 @@ Before running *Estimate stain vectors*, you should first find a representative 
 Then draw a rectangle annotation around this region.
 
 :::{figure} images/stains_estimate_region.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
-Manually selecting a region to for automated stain estimation.
+Manually selecting a region to for automated stain estimation
 :::
 
 :::{tip}
@@ -181,9 +173,9 @@ Assuming that the region you have drawn *does* contain a representative area of 
 If not, click {guilabel}`No`.
 
 :::{figure} images/stains_estimate_bg.jpg
-:align: center
-:class: shadow-image
-:width: 60%
+:class: shadow-image small-image
+
+Stain estimation background prompt
 :::
 
 ##### Check scatterplots
@@ -195,11 +187,9 @@ Because it's quite hard to work with a 3D scatterplot, QuPath shows this informa
 Additionally, QuPath draws colored lines to indicate the existing stain vectors.
 
 :::{figure} images/stains_estimate_scatter.jpg
-:align: center
-:class: shadow-image
-:width: 60%
+:class: shadow-image mid-image
 
-Initial scatterplot for stain estimation.
+Initial scatterplot for stain estimation
 :::
 
 The scatterplots for the original stain vectors in the example image are shown above.
@@ -214,11 +204,9 @@ Pressing the {guilabel}`Auto` button tells QuPath to try to make a better choice
 They will automatically adjust, and the changes shown in the scatterplots.
 
 :::{figure} images/stains_estimate_scatter_bad.jpg
-:align: center
-:class: shadow-image
-:width: 60%
+:class: shadow-image mid-image
 
-Auto-estimate stains.
+Auto-estimate stains
 :::
 
 In this case, we can see that there appear to be some unexpected colors (e.g. greenish pixels) -- which have played havoc with the estimate, and potentially made it even worse.
@@ -227,11 +215,9 @@ We can try to address this by adjusting parameters.
 A natural choice in this case is to select {guilabel}`Exclude unrecognised colors (H&E only)`, which eliminates anything that is not reddish/pinkish/blueish.
 
 :::{figure} images/stains_estimate_auto.jpg
-:align: center
-:class: shadow-image
-:width: 60%
+:class: shadow-image mid-image
 
-Auto-estimate stains with unrecognized colors removed.
+Auto-estimate stains with unrecognized colors removed
 :::
 
 The resulting vector estimates look more reasonable.

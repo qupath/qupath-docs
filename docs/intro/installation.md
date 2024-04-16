@@ -64,9 +64,7 @@ It is important to first *extract* the files into their own 'QuPath' folder, and
 It is expected that Windows will give a scary-looking warning whenever the QuPath installer is first run, as it tries to protect you from software it does not know.
 
 :::{figure} images/installing_windows_warning.png
-:align: center
-:class: shadow-image
-:width: 60%
+:class: shadow-image mid-width
 
 Windows warning
 :::
@@ -74,9 +72,7 @@ Windows warning
 If you would like to get past this screen, press *'More info'* and the option to *'Run anyway'* appears.
 
 :::{figure} images/installing_windows_warning_run_anyway.png
-:align: center
-:class: shadow-image
-:width: 60%
+:class: shadow-image mid-width
 
 Windows warning run anyway
 :::
@@ -98,21 +94,17 @@ Mac users may also see security messages when running the QuPath pkg installer.
 If you see the message that QuPath cannot be opened because the developer cannot be verified, you can try right-clicking on the QuPath icon and select *Open* from the popup menu that appears.
 
 :::{figure} images/mac-warning-04.png
-:align: center
-:class: shadow-image
-:width: 40%
+:class: shadow-image mini-image
 
-Gatekeeper on macOS on double-click.
+Gatekeeper on macOS on double-click
 :::
 
 You should then see an option to open QuPath that should work.
 
 :::{figure} images/mac-warning-04-override.png
-:align: center
-:class: shadow-image
-:width: 40%
+:class: shadow-image mini-image
 
-Gatekeeper on macOS after right-clicking and selecting 'Open'.
+Gatekeeper on macOS after right-clicking and selecting 'Open'
 :::
 
 You may also need to right-click and choose open the first time you run the QuPath app after installation.

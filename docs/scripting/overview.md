@@ -3,11 +3,9 @@
 You can enter a custom script in QuPath via {menuselection}`Automate --> Show script editor`, and run it by choosing {menuselection}`Run --> Run` (or pressing {kbd}`Ctrl + R` with the script editor in focus).
 
 :::{figure} images/friendly_script.png
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image mid-image
 
-A friendly script.
+A friendly script
 :::
 
 The [user forum](http://forum.image.sc/tag/qupath) is a good source for scripts; scripts are often posted there in response to questions that require a feature QuPath doesn't quite have yet.

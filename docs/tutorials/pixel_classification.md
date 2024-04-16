@@ -25,11 +25,9 @@ You can get started quickly with {menuselection}`Train pixel classifier` by draw
 Press {guilabel}`Live prediction` and QuPath should already start showing its predicted classifications.
 
 :::{figure} images/pixel_os3.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
-Pixel classification to find positive pixels.
+Pixel classification to find positive pixels
 :::
 
 You can proceed to add more annotations to refine these predictions.
@@ -45,9 +43,7 @@ We will explore this using the example image {doc}`OS-1.ndpi <../intro/acknowled
 We will further look to identify everything else that is tissue, *and a third class* for the whitespace in the background.
 
 :::{figure} images/pixel_os1.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
 OS-1.ndpi
 :::
@@ -63,19 +59,15 @@ You can adjust the overlay opacity using the slider at the top, or by scrolling 
 As before, we begin by annotating **small** regions that correspond to the different classes we are interested in, and use {guilabel}`Live prediction` to get a first impression.
 
 :::{figure} images/pixel_os1_starting.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
-Annotating regions for three classes (*Tumor*, *Stroma* and *Ignore\**).
+Annotating regions for three classes (*Tumor*, *Stroma* and *Ignore\**)
 :::
 
 :::{figure} images/pixel_os1_preview.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
-Live prediction based on one annotation per class.
+Live prediction based on one annotation per class
 :::
 
 You should find it quickly get some parts right... but quite a lot wrong.
@@ -114,11 +106,9 @@ The options include:
 - **Region**: As with the thresholder, this controls where the overlay previews the classification. It does not impact the results.
 
 :::{figure} images/pixel_dialog.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
-Pixel classification dialog.
+Pixel classification dialog
 :::
 
 :::{tip}
@@ -140,11 +130,9 @@ The {guilabel}`Edit` button opens a dialog to select features.
 These are essentially transformed versions of the image that will contribute to the final output of the classifier.
 
 :::{figure} images/pixel_features.png
-:align: center
-:class: shadow-image
-:width: 60%
+:class: shadow-image small-image
 
-Selecting features.
+Selecting features
 :::
 
 - **Channels**: Choose the channels that are relevant for what you want to detect. For example, if you are looking to identify brown staining, use **DAB**. The options that are available will depend upon the image type.
@@ -156,21 +144,21 @@ The best way to understand the specific features it to visualize them.
 You can do that by choosing a few (not too many at a time, to avoid upsetting your computer) and using the drop-down menu below the preview image.
 
 :::{figure} images/pixel_feature_weighted.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
+
+Pixel classifier using weighted deviation of Hematoxylin channel
 :::
 
 :::{figure} images/pixel_feature_hessian_det.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
+
+Pixel classifier using Hessian determinant of Hematoxylin channel
 :::
 
 :::{figure} images/pixel_feature_hessian_max.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
+
+Pixel classifier using Hessian maximum eigenvalue of Hematoxylin channel
 :::
 
 You will soon find that some features have a particular characteristic appearance, which makes them especially suited to some applications.
@@ -230,11 +218,9 @@ With that in mind, you may often need to apply your superior knowledge to annota
 You can then user the classifier to make fine-grained measurements within these regions -- but not depend upon it to make decisions that take years of training and experience.
 
 :::{figure} images/pixel_limited.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
-Measuring within a defined region (excluding where the classifier is unreliable).
+Measuring within a defined region (excluding where the classifier is unreliable)
 :::
 
 :::{tip}
@@ -288,27 +274,25 @@ Make sure that you save the data when you have made your annotations (i.e. {menu
 % :width: 35%
 
 :::{figure} images/pixel_create_regions.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
+
+Creating regions for a training image
 :::
 
 Then you can run {menuselection}`Classify --> Training images --> Create training image` and select the classification you used when annotating.
 
 :::{figure} images/pixel_create_training_dialog.png
-:align: center
-:class: shadow-image
-:width: 80%
+:class: shadow-image mid-image
+
+Creating a training image dialog
 :::
 
 This will go through the images in your project, and extract annotations that have a specific classification -- and merge these together to form a single image, adding this image to your project.
 
 :::{figure} images/pixel_training_image.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
-A training image, created by stitching annotated regions together.
+A training image, created by stitching annotated regions together
 :::
 
 :::{tip}

@@ -28,10 +28,9 @@ As mentioned in [Introducing objects](introducing-objects), you can create a mea
 After choosing the objects you wish to export (e.g. detections, annotations), a similar measurement table to the one below will be shown on screen.
 
 :::{figure} images/measurement_table.png
-:align: center
-:width: 70%
+:class: shadow-image mid-image
 
-Saving cell detection measurements via the measurement table.
+Saving cell detection measurements via the measurement table
 :::
 
 You can then save your measurement by pressing **Save** and choosing an appropriate name for your output `.txt` file.
@@ -49,11 +48,9 @@ The cleanest way to export different types of measurements in QuPath across mult
 Provided that your images are stored in a {doc}`project <../tutorials/projects>`, you can access it through {menuselection}`Measure --> Export measurements`.
 
 :::{figure} images/exporting_measurements.png
-:align: center
-:class: shadow-image
-:width: 70%
+:class: shadow-image mid-image
 
-The Measurement Exporter.
+The Measurement Exporter
 :::
 
 From there, you can decide from which image(s) the measurements will the be exported (similar to the {doc}`Run for project <../scripting/workflows_to_scripts>` command in the script editor).
