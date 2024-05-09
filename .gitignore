@@ -7,3 +7,4 @@ _build/**
 venv
 /lib
 /bin
+docs/_build/
