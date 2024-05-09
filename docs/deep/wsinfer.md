@@ -34,9 +34,7 @@ Once installed, open up an image and run the extension via {menuselection}`Exten
 You should see the window below:
 
 :::{figure} images/wsinfer.png
-:align: center
-:class: shadow-image
-:width: 40%
+:class: shadow-image small-image
 
 The WSInfer user interface
 :::
@@ -95,9 +93,7 @@ The {guilabel}`Results Table` provides details for each tile and the option to e
 You can also use the additional options to specify where models should be stored, and also the number of parallel threads used to read patches from the image (usually 1 or 2).
 
 :::{figure} images/wsinfer_options.png
-:align: center
-:class: shadow-image
-:width: 40%
+:class: shadow-image small-image
 
 WSInfer's additional options
 :::

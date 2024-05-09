@@ -28,11 +28,9 @@ Fortunately, since they are both open source, it's not necessary to choose one o
 The commands described here are accessible from the *ImageJ toolbar button* in QuPath, and also in the {menuselection}`Extensions --> ImageJ` submenu.
 
 :::{figure} images/imagej_toolbar.jpg
-:align: center
-:class: shadow-image
-:width: 40%
+:class: shadow-image small-image
 
-ImageJ menu in the QuPath toolbar.
+ImageJ menu in the QuPath toolbar
 :::
 
 % NOTE:
@@ -50,11 +48,9 @@ The alternative is to open the image within QuPath, and interactively draw an an
 Then by clicking on the *Send region to ImageJ* command {{ icon_extract_image }}, ImageJ can be launched and passed the pixels from within the selected region.
 
 :::{figure} images/imagej_send_region.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
-Sending an image region to ImageJ.
+Sending an image region to ImageJ
 :::
 
 ### Downsampling and image calibration
@@ -64,9 +60,7 @@ When running {menuselection}`Send region to ImageJ`, you are requested to choose
 ### ImageJ menu in the QuPath toolbar
 
 :::{figure} images/imagej_downsample.jpg
-:align: center
-:class: shadow-image
-:width: 50%
+:class: shadow-image small-image
 
 ImageJ downsample value
 :::
@@ -99,11 +93,9 @@ These include techniques such as *color deconvolution* to digitally separate sta
 When such a color transform has been applied, QuPath will pass the transformed pixels, not the raw values.
 
 :::{figure} images/imagej_send_transformed_region.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
-Sending a color-transformed image region to ImageJ.
+Sending a color-transformed image region to ImageJ
 :::
 
 In the screenshot above, the original image was sent first by running the *Send region to ImageJ* command, and then hematoxylin and DAB transformed images were also sent (separately) in the same way, after applying the appropriate transform within QuPath.
@@ -124,11 +116,9 @@ ImageJ ROIs and overlays cannot represent all the same information that can be c
 Consequently, when sending an image region to ImageJ, QuPath uses them to make its best effort to convert its objects into the most ImageJ-friendly form that it can.
 
 :::{figure} images/imagej_objects.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
-Sending an image region & objects to ImageJ.
+Sending an image region & objects to ImageJ
 :::
 
 The screenshot above depicts how this works.
@@ -151,11 +141,9 @@ This will also launch ImageJ, this time giving it a screenshot from the current 
 The result will be similar to what is generated in QuPath with the {menuselection}`Edit --> Copy view to clipboard` command.
 
 :::{figure} images/imagej_snapshot.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
-Sending a snapshot image to ImageJ.
+Sending a snapshot image to ImageJ
 :::
 
 Note that the snapshot command is really **only** for creating screenshots -- **not** for transferring images for further analysis.
@@ -178,11 +166,9 @@ These are found inside ImageJ's *Plugins* menu (probably at the bottom).
 ### Send ROI to QuPath
 
 :::{figure} images/imagej_return_roi.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
-Sending a ROI from ImageJ to QuPath.
+Sending a ROI from ImageJ to QuPath
 :::
 
 Running {menuselection}`Plugins --> Send ROI to QuPath` will take whichever ROI is currently active in ImageJ, and send it to QuPath as an annotation object.
@@ -191,11 +177,9 @@ All rescaling etc. will happen automatically.
 ### Send Overlay to QuPath
 
 :::{figure} images/imagej_return_overlay.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
-Sending an overlay from ImageJ to QuPath.
+Sending an overlay from ImageJ to QuPath
 :::
 
 Running {menuselection}`Plugins --> Send Overlay to QuPath` will take **all** the ROIs on the current ImageJ overlay, and send them back to QuPath as either annotation or detection objects.

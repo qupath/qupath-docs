@@ -28,8 +28,8 @@ In {doc}`cell_classification` we will look at improving on this by training QuPa
 ## Video tutorial
 
 ```{raw} html
-<div style="text-align: center; margin-bottom: 2em;">
-<iframe width="100%" height="350" src="https://www.youtube-nocookie.com/embed/14ZQCSmICCA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div class="iframe-wrapper">
+<iframe src="https://www.youtube-nocookie.com/embed/14ZQCSmICCA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 ```
 
@@ -56,9 +56,7 @@ Avoid drawing a very large region! It is better to start small, especially when 
 :::
 
 :::{figure} images/ki67_detecting_annotation.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
 Ki67 image with annotation
 :::
@@ -78,9 +76,7 @@ However, in this case we are not interested in multiple intensity classification
 Therefore the *Single threshold* option should be ticked, and only the first threshold will actually be used.
 
 :::{figure} images/ki67_detecting_positive_dialog.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
 Positive cell detection dialog
 :::
@@ -94,9 +90,7 @@ For a quick recap on the difference between annotation and detection objects, se
 :::
 
 :::{figure} images/ki67_detecting_final_markup.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
 Positive cell detection image results
 :::
@@ -127,9 +121,7 @@ This should open up a results table with the measurements of all cells.
 From this, it is possible to generate histograms, sort columns, select individual cells (which will then be selected on the image) and to export the measurements to a CSV file for use elsewhere.
 
 :::{figure} images/ki67_detecting_results_detections.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
 Cell detection results table
 :::
@@ -154,9 +146,7 @@ The easiest way to do the latter is to ensure that no annotations are selected (
 QuPath will then prompt you to confirm if you want to run the detection for all *Annotations*.
 
 :::{figure} images/ki67_detecting_multiple_parallel_annotations.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
 Positive cell detection in parallel for multiple annotations
 :::
@@ -164,9 +154,7 @@ Positive cell detection in parallel for multiple annotations
 The final result should look something like that below.
 
 :::{figure} images/ki67_detecting_multiple_rois.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
 Multiple annotations for Ki67 image
 :::
@@ -178,9 +166,7 @@ This is similar to creating a results table for detections, but requires the {me
 You can also access this command from the *Measurement table* icon in the toolbar {{ icon_table }}.
 
 :::{figure} images/ki67_detecting_results_annotations.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
 Annotation results table
 :::
@@ -193,8 +179,9 @@ This provides a 'semi-automated' alternative to manually clicking on every cell 
 
 See {doc}`../starting/cell_counting` for more info on manual counting.
 
-```{image} images/convert_detections.jpg
-:align: center
-:width: 40%
+```{figure} images/convert_detections.jpg
+:class: shadow-image small-image
+
+Points tool window
 ```
 :::

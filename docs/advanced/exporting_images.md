@@ -56,10 +56,9 @@ There are two additional options under *Export snapshot* , which enable exportin
 All of the *Export snapshot...* options have counterparts under {menuselection}`Edit --> Copy to clipboard...`
 
 :::{figure} images/export_window_snapshots.png
-:align: center
-:width: 90%
+:class: full-image
 
-Snapshot exports of the *Main window screenshot* (left) and *Main window content* (right).
+Snapshot exports of the *Main window screenshot* (left) and *Main window content* (right)
 :::
 ::::
 

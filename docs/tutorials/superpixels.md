@@ -79,18 +79,16 @@ Be sure to select your tiles/superpixels/detections before adding measurements.
 The same command can be used to add measurements to other kinds of object (e.g. annotations) depending upon what is selected -- but that won't help us here.
 
 :::{figure} images/superpixels_features.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
+
+Adding intensity features to superpixel detections
 :::
 ::::
 
 :::{figure} images/superpixels_heatmap.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
-Visualizing measurements added to superpixels using *Add intensity features*.
+Visualizing measurements added to superpixels using *Add intensity features*
 :::
 
 ### Training a classifier
@@ -98,11 +96,9 @@ Visualizing measurements added to superpixels using *Add intensity features*.
 Having created superpixels and given them measurements as features, you can train an object classifier using {doc}`exactly the same process as for cells <cell_classification>`.
 
 :::{figure} images/superpixels_classification.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
-Classified superpixels.
+Classified superpixels
 :::
 
 ### Merging tiles

@@ -51,9 +51,7 @@ You can browse OMERO servers via the {menuselection}`Extensions --> OMERO --> Br
 The menu will list all the servers that were opened in the current QuPath session, from which you can choose the one to browse.
 
 :::{figure} images/omero_browse_new_servers.jpg
-:align: center
-:class: shadow-image
-:width: 87%
+:class: shadow-image small-image
 
 How to browse an OMERO server
 :::
@@ -66,9 +64,7 @@ Alternatively, you can provide a new OMERO server (with which no connection was 
 The URL to provide should not contain any [URL query](https://en.wikipedia.org/wiki/Query_string) or unnecessary characters.
 
 :::{figure} images/omero_browse_new_server_link.jpg
-:align: center
-:class: shadow-image
-:width: 87%
+:class: shadow-image small-image
 
 E.g. `https://<server>.com`, **not** `https://<server>.com/webclient/?show=image-001)`
 :::
@@ -76,9 +72,7 @@ E.g. `https://<server>.com`, **not** `https://<server>.com/webclient/?show=image
 The browser will display all the projects, datasets and images filtered by OMERO group and owner. The design is very similar to OMERO's webclient.
 
 :::{figure} images/omero_browser.jpg
-:align: center
-:class: shadow-image
-:width: 87%
+:class: shadow-image mid-image
 
 The OMERO browser (<http://idr.openmicroscopy.org>)
 :::
@@ -94,9 +88,7 @@ To query a file on the OMERO server, one can also access the {guilabel}`Advanced
 Again, the results can be opened by either double-clicking on them or by selecting them and clicking {guilabel}`Import project/dataset/image/OMERO objects`.
 
 :::{figure} images/omero_advanced_search.png
-:align: center
-:class: shadow-image
-:width: 87%
+:class: shadow-image mid-image
 
 Advanced search
 :::
@@ -152,9 +144,7 @@ If an account with authentication is currently connected to the server, its user
 The green circle next to a server indicates whether the account is logged in to it (which will always be green if the server is public). The green circle next to the images’ URI indicates whether the image can be accessed with the current account.
 
 :::{figure} images/omero_manage_clients.png
-:align: center
-:class: shadow-image
-:width: 87%
+:class: shadow-image small-image
 
 Manage OMERO server connections
 :::
@@ -168,9 +158,7 @@ You can still attempt a login to a public server, which is sensible if you have 
 If clicking 'Log out' next to the first server, the following will happen:
 
 :::{figure} images/omero_manage_clients_not_logged_in.png
-:align: center
-:class: shadow-image
-:width: 87%
+:class: shadow-image small-image
 
 Logging out of an OMERO server
 :::

@@ -15,9 +15,7 @@ You may ignore this distinction without trouble, but if you care to know more wh
 :::
 
 :::{figure} images/drawings.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image mid-image
 
 Annotations made using different drawing tools (left to right): <br />
 Rectangle, Ellipse, Line, Brush, Polygon, Wand.
@@ -30,7 +28,7 @@ Rectangle, Ellipse, Line, Brush, Polygon, Wand.
 The most basic drawing tool is the *Rectangle tool*.  Click on the starting point within the image and drag the mouse to the opposite corner of the desired rectangle, then release.  Holding {kbd}`Shift` down while drawing a rectangle will constrain the shape to be square.
 
 :::{tip}
-If you'd like to draw a rectangle around the entire image, use {menuselection}`Objects --> Annotations... --> Create full image annotation`.
+If you'd like to draw a rectangle around the entire image, use {menuselection}`Objects --> Annotations... --> Create full image annotation`
 :::
 
 ### {{ tool_ellipse }} Ellipse tool

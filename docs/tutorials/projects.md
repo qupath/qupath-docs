@@ -20,8 +20,8 @@ Some commands and scripts *only* work within projects.
 ## Video tutorial
 
 ```{raw} html
-<div style="text-align: center; margin-bottom: 2em;">
-<iframe width="100%" height="350" src="https://www.youtube-nocookie.com/embed/kCEp89ypmAY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div class="iframe-wrapper">
+<iframe src="https://www.youtube-nocookie.com/embed/kCEp89ypmAY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 ```
 
@@ -51,11 +51,9 @@ The easiest way to add images to a project is usually to drag them on top of QuP
 This opens a dialog box, which shows a list of images to import and provides some options to customize how it will happen.
 
 :::{figure} images/project_import.png
-:align: center
-:class: shadow-image
-:width: 60%
+:class: shadow-image mid-image
 
-Dragging images on top of QuPath for project import.
+Dragging images on top of QuPath for project import
 :::
 
 The options are:
@@ -108,9 +106,7 @@ QuPath previously left you on your own to somehow fix that.
 Now, it tries to be more helpful by providing a dialog box to fix the paths when needed, highlighting those that are missing in red.
 
 :::{figure} images/project_fixing.png
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image mid-image
 
 Finding missing images when opening a project
 :::

@@ -32,10 +32,9 @@ found using {menuselection}`Extensions --> Manage extensions`.
 This will open the extension manager window, which will show you a list of installed extensions, and provide options for installing, updating, or removing extensions.
 
 :::{figure} images/extension_manager_empty.png
-:align: center
-:class: shadow-image
-:width: 100%
-The extension manager window.
+:class: shadow-image mid-image
+
+The extension manager window
 :::
 
 ## Installing extensions
@@ -53,10 +52,9 @@ If you don't have a user directory, QuPath will prompt you to select a folder on
 You can change it later under {menuselection}`Edit --> Preferences...` if you want to.
 
 :::{figure} images/extension_manager_installing.png
-:align: center
-:class: shadow-image
-:width: 100%
-Installing the Deep Java Library extension using the extension manager.
+:class: shadow-image mid-image
+
+Installing the Deep Java Library extension using the extension manager
 :::
 
 If neither of these options work, you can try downloading the extension manually.
@@ -76,10 +74,9 @@ You should then close and restart QuPath.
 Some effects of the extension's code may linger otherwise.
 
 :::{figure} images/extension_manager_installed.png
-:align: center
-:class: shadow-image
-:width: 100%
-Viewing installed extensions in the extension manager, with the option to remove or update them, or to visit the extension's GitHub repository.
+:class: shadow-image mid-image
+
+Viewing installed extensions in the extension manager, with the option to remove or update them, or to visit the extension's GitHub repository
 :::
 
 If this doesn't work, you just need to find the `.jar` file in the user directory and delete it. You can find the user directory using {menuselection}`Extensions --> Manage extensions --> Open extension directory`.
