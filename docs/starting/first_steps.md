@@ -26,11 +26,9 @@ Running QuPath for the first time will present you with the welcome window. This
 For those that like working on software in dark mode (or want to use their own creative themes) it's possible to change that here. Additionally updates to QuPath or extensions can be checked for ensuring you have access to the latest features. 
 
 :::{figure} images/steps_welcome.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
-QuPath welcome window.
+QuPath welcome window
 :::
 
 :::{Tip}
@@ -45,11 +43,9 @@ A better plan is to simply drag the file you want to open onto QuPath's main win
 This works for most other file types that QuPath can handle - not only images.
 
 :::{figure} images/steps_image.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
-A whole slide image (*CMU-1.svs*) opened within QuPath.
+A whole slide image (*CMU-1.svs*) opened within QuPath
 :::
 
 ### Setting the image type
@@ -58,11 +54,9 @@ One of the most important properties is the **Image type**, which can impact the
 You should choose the closest match for the image, e.g. *Brightfield*, *Fluorescence*.
 
 :::{figure} images/steps_image_type.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
-Option window for setting the image type in QuPath.
+Option window for setting the image type in QuPath
 :::
 
 :::{important}
@@ -83,11 +77,9 @@ There are a few tabs here that you will meet later.
 For now, click the **Image** tab to get a table of properties related to your image.
 
 :::{figure} images/steps_image_tab.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
-Image tab showing the image properties in QuPath.
+Image tab showing the image properties in QuPath
 :::
 
 ### Setting the pixel size
@@ -116,10 +108,9 @@ You can also jump to a specific magnification if you:
 - *Double-click* on the little magnification value on the toolbar, and enter a value there.
 
 :::{figure} images/steps_mag.jpg
-:align: center
-:class: shadow-image
+:class: shadow-image small-image
 
-The *Magnification box*.
+The *Magnification box*
 :::
 
 Double-clicking on the magnification value in the toolbar (here, the bit that shows 10.0x) opens an input dialog to enter a specific magnification.
@@ -138,11 +129,9 @@ Then click anywhere on the image, and drag the mouse with the button held down t
 Alternatively, you can click on the **Overview image** in the top right to automatically jump to a specific region.
 
 :::{figure} images/steps_overview.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
-The *Image overview (top right) can be used for navigation*.
+The *Image overview (top right) can be used for navigation*
 :::
 
 :::{note}
@@ -196,11 +185,9 @@ Since QuPath version 0.4, you can also click the middle button (or scroll wheel)
 :::
 
 :::{figure} images/steps_annotations.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
-Rectangle, ellipse and polygon annotation objects drawn on an image.
+Rectangle, ellipse and polygon annotation objects drawn on an image
 :::
 
 ### Identifying selections
@@ -240,9 +227,7 @@ You can also set an annotation's properties by selecting it and hitting *Enter*.
 :::
 
 :::{figure} images/steps_annotation_panel.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
 The *Annotations tab*
 :::
@@ -278,9 +263,7 @@ This should bring up an intimidating list of parameters to adapt the detection t
 If you like you can explore these, and hover the mouse over each parameter for a description - but for now, you can also just ignore them and use the defaults (which tend to behave sensibly across a range of images).
 
 :::{figure} images/steps_cell_detection.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image small-image
 
 Adjustable parameters for cell detection
 :::
@@ -291,11 +274,9 @@ After a few seconds, cells should appear in the area you have selected.
 These cells are your first **detection objects**.
 
 :::{figure} images/steps_cells_detected.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
-First detected cells, using default detection parameters.
+First detected cells, using default detection parameters
 :::
 
 :::{note}
@@ -335,11 +316,9 @@ These allow you to quickly toggle on and off your markup to switch between looki
 You can also right-click on the image, and further modify how cells are displayed, i.e. with/without nuclei or boundaries shown.
 
 :::{figure} images/steps_cells_display.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
-Right-click on the image to change how cells are displayed.
+Right-click on the image to change how cells are displayed
 :::
 
 ### Creating measurement tables
@@ -351,11 +330,9 @@ Note that this table remains connected to the image, and allows you to select in
 You can also generate histograms for any measurements, and save the table to a CSV file or copy its contents for pasting into another application, e.g. Excel.
 
 :::{figure} images/steps_table.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
-A 'detection' measurement table containing details of all the detected cells.
+A 'detection' measurement table containing details of all the detected cells
 :::
 
 ## Finishing up

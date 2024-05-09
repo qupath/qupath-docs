@@ -37,7 +37,11 @@ To see this in action, create a file `Unpleasant blue.css` and add the contents 
 Then drag the .css file onto QuPath, and selected it in the preferences.
 You should see something like the screenshow below.
 
-![Unpleasant blue theme](https://user-images.githubusercontent.com/4690904/192768467-440d75fc-2611-415d-b1ba-7009d7399c13.png)
+:::{figure} images/building-blue-theme.jpg
+:class: shadow-image full-image
+
+A rather unpleasant blue theme
+:::
 
 This essentially defines a base color, and the color for text to show on top.
 Then everything else is derived from these.
@@ -53,9 +57,11 @@ To switch to red with white text, you can use the following .css:
 }
 ```
 
-![Unpleasant red theme](https://user-images.githubusercontent.com/4690904/192768409-c2d38a7b-c1b0-49bd-9324-38b971833707.png)
+:::{figure} images/building-red-theme.jpg
+:class: shadow-image full-image
 
-
+Also an unpleasant red theme
+:::
 
 ## A more complex example
 
@@ -94,9 +100,11 @@ The .css below depicts a quick attempt to apply the [colors defined in the dracu
 }
 ```
 
-![QuPath Dracula](images/qupath-theme-dracula.jpg)
+:::{figure} images/building-dracula-theme.jpg
+:class: shadow-image full-image
 
-
+A dracula-inspired theme for QuPath
+:::
 
 ## Updating a theme
 

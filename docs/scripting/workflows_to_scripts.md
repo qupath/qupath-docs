@@ -13,15 +13,12 @@ The `Command history` and any `Workflow panels` all have a {guilabel}`Create scr
 Pressing this results in a script being generated like that shown below.
 
 :::{figure} images/workflow_script.png
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
-A script generated from a `Workflow`.
+A script generated from a `Workflow`
 :::
 
-If the `Workflow` has been edited, then these edits will be reflected in the script.
-If not, everything will be shown.
+If the `Workflow` has been edited, then these edits will be reflected in the script. If not, everything will be shown.
 
 ### Running a script for a single image
 

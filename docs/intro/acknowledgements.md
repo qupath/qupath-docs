@@ -28,7 +28,6 @@ The sources and terms of reuse for these images are summarized in the table belo
   - Reuse
 * - :::{figure} images/CMU-1.jpg
     :height: 100px
-    :align: center
     :class: shadow-image
 
     CMU-1.svs
@@ -38,7 +37,6 @@ The sources and terms of reuse for these images are summarized in the table belo
   - CC0 1.0
 * - :::{figure} images/CMU-2.jpg
     :height: 100px
-    :align: center
     :class: shadow-image
 
     CMU-2.svs
@@ -48,7 +46,6 @@ The sources and terms of reuse for these images are summarized in the table belo
   - CC0 1.0
 * - :::{figure} images/CMU-3.jpg
     :height: 100px
-    :align: center
     :class: shadow-image
 
     CMU-3.svs
@@ -58,7 +55,6 @@ The sources and terms of reuse for these images are summarized in the table belo
   - CC0 1.0
 * - :::{figure} images/OS-1.jpg
     :height: 100px
-    :align: center
     :class: shadow-image
 
     OS-1.ndpi
@@ -68,7 +64,6 @@ The sources and terms of reuse for these images are summarized in the table belo
   - Freely-distributable
 * - :::{figure} images/OS-2.jpg
     :height: 100px
-    :align: center
     :class: shadow-image
 
     OS-2.ndpi
@@ -78,7 +73,6 @@ The sources and terms of reuse for these images are summarized in the table belo
   - Freely-distributable
 * - :::{figure} images/OS-3.jpg
     :height: 100px
-    :align: center
     :class: shadow-image
 
     OS-3.ndpi
@@ -88,7 +82,6 @@ The sources and terms of reuse for these images are summarized in the table belo
   - Freely-distributable
 * - :::{figure} images/LuCa-7color_[13860,52919]_1x1component_data.jpg
     :height: 100px
-    :align: center
     :class: shadow-image
 
     LuCa-7color_[13860,52919]_1x1
@@ -98,7 +91,6 @@ The sources and terms of reuse for these images are summarized in the table belo
   - CC-BY 4.0
 * - :::{figure} images/LuCa-7color_[17572,60173]_3x3component_data.jpg
     :height: 100px
-    :align: center
     :class: shadow-image
 
     LuCa-7color_[17572,60173]_3x3
@@ -108,7 +100,6 @@ The sources and terms of reuse for these images are summarized in the table belo
   - CC-BY 4.0
 * - :::{figure} images/LuCa-7color_Scan1.jpg
     :height: 100px
-    :align: center
     :class: shadow-image
 
     LuCa-7color_Scan1.qptiff

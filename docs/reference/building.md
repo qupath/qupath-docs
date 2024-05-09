@@ -45,9 +45,9 @@ It will take a few minutes to download everything required and build the softwar
 If all goes well, you should see a triumphant message that the build was successful.
 
 :::{figure} images/building-success.png
-:align: center
-:class: shadow-image
-:width: 50%
+:class: shadow-image mid-image
+
+Example of command line build success
 :::
 
 **That's it!**
@@ -58,7 +58,7 @@ You can find QuPath inside the `./build/dist/` subdirectory.
 
 If you already have Java installed, you might be able to skip Step 2.
 Most Java versions >= 8 should work to launch Gradle, which will then automatically download the version it needs.
-However, since QuPath currently requires OpenJDK 16, we recommend just installing that and saving Gradle the extra effort.
+However, since QuPath currently requires OpenJDK 17, we recommend just installing that and saving Gradle the extra effort.
 
 Note that some problems have been reported using a version of OpenJDK based on OpenJ9, such as may be provided by some package managers.
 Switching to an OpenJDK distribution based on HotSpot may help -- see [here](https://github.com/qupath/qupath/issues/484) for details.
@@ -196,9 +196,9 @@ The main steps are
 - Press {guilabel}`Clone or download` and choose {guilabel}`Open in Desktop`
 
 :::{figure} images/building-clone.png
-:align: center
-:class: shadow-image
-:width: 50%
+:class: shadow-image mid-image
+
+Cloning QuPath using GitHub
 :::
 
 You can now open a command prompt in the correct directory directly from GitHub Desktop by choosing {menuselection}`Repository --> Open in Command Prompt`.
@@ -237,9 +237,9 @@ Once you've built QuPath once, updating it to use the latest source code in *Git
 The right-most button on the main toolbar serves two purposes: to {guilabel}`Fetch` information about the latest changes (from GitHub) and to {guilabel}`Pull` the changes down to your computer.
 
 :::{figure} images/building-branches.png
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
+
+The GitHub Desktop interface
 :::
 
 If the option is {guilabel}`Fetch origin`, when you press the button the text will switch to {guilabel}`Pull origin` if any changes are available, with info about the number of changes.
@@ -247,9 +247,9 @@ If the option is {guilabel}`Fetch origin`, when you press the button the text wi
 You can press it again to pull those changes, and then rebuild QuPath using `gradlew`.
 
 :::{figure} images/building-pull.png
-:align: center
-:class: shadow-image
-:width: 50%
+:class: shadow-image mid-image
+
+Pulling changes from GitHub
 :::
 ::::
 
@@ -282,9 +282,9 @@ To do this, you can either:
   installed a Java JDK before proceeding any further (see instructions above).
 
 :::{figure} images/building-intellij-import.png
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image mid-image
+
+IntelliJ start up window
 :::
 
 After opening the QuPath project (usually accepting any
@@ -294,9 +294,9 @@ and select "Edit Configurations..." from the drop-down menu, and
 as in the image below.
 
 :::{figure} images/building-intellij-launch.png
-:align: center
-:class: shadow-image
-:width: 100%
+:class: shadow-image mid-image
+
+Configuring QuPath to run in debug mode
 :::
 
 Now press {menuselection}`Apply` and then {menuselection}`Debug` in this window.
