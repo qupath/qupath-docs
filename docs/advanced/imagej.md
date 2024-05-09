@@ -2,27 +2,10 @@
 
 ```{raw} html
 <div class="video-divert">
-<a href="https://youtu.be/xW2Ya205nvo?si=5hCfmsxUb859lb2E" target="blank"><img class="shadow-image" src="https://i.ytimg.com/vi/xW2Ya205nvo/hqdefault.jpg"><div class="overlay">Click here to learn more on youtube</div></a>
-<p>Something about this section has a relevant yotube video that may be of interest</p>
+<a href="https://youtu.be/xW2Ya205nvo?si=5hCfmsxUb859lb2E" target="blank"><img class="shadow-image" src="https://i.ytimg.com/vi/xW2Ya205nvo/hqdefault.jpg"><div class="overlay"><p>Click here to learn more on youtube</p></div></a>
+<p>Something about this section has a relevant youtube video that may be of interest. Click the image to go there</p>
 </div>
 ```
-
-<!-- ```{raw} html
-<div class="iframe-wrapper">
-<iframe src="https://www.youtube-nocookie.com/embed/xW2Ya205nvo?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
-``` -->
-
-<!-- ```{raw} html
-<div class="video-divert"><p>Something about this section has a relevant yotube video that may be of interest</p></div>
-<div class="video-divert"><a href="https://youtu.be/xW2Ya205nvo?si=5hCfmsxUb859lb2E" target="blank"><img src="https://i.ytimg.com/vi/xW2Ya205nvo/hqdefault.jpg"</a></image></div>
-``` -->
-
-<!-- :::{figure} https://www.youtube-nocookie.com/embed/xW2Ya205nvo?rel=0
-:class: shadow-image small-image
-
-ImageJ menu in the QuPath toolbar
-:::  -->
 
 QuPath was created by someone who was (and is) a big fan of ImageJ.
 
