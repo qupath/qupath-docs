@@ -51,6 +51,7 @@ figcaption {
   font-style: italic;
   min-width: 50%;
   text-align: center;
+  margin-bottom: -14px;
 }
 
 .video-divert a {
@@ -88,11 +89,14 @@ figcaption {
   font-size: 20px;
   text-align: center;
   height: 100%;
+  padding-top: 35%;
+  padding-bottom: 30%;
+}
+
+.video-divert .overlay p{
   text-align: center;
   align-self: center;
   vertical-align: middle;
-  padding-top: 35%;
-  padding-bottom: 30%;
 }
 
 a:hover .overlay {
