@@ -6,7 +6,7 @@
   align-self: center;
 }
 
-/* Prompt nav bar collapse at medium screen sizes (https://stackoverflow.com/a/60217315/4539999) */
+/* Prompt nav bar collapse at medium screen sizes to increase readability (https://stackoverflow.com/a/60217315/4539999) */
 @media screen and (max-width: 950px){
 	.wy-body-for-nav{background:#fcfcfc}
 	.wy-nav-top{display:block}
@@ -18,7 +18,7 @@
 	.wy-nav-content-wrap{margin-left:0}
 	.wy-nav-content-wrap
 	.wy-nav-content{padding:1.618em}
-	.wy-nav-content-wrap.shift{position:fixed;min-width:100%;left:85%;top:0;height:100%;overflow:hidden}
+	.wy-nav-content-wrap.shift{position:fixed;min-width:100%;left:300px;top:0;height:100%;overflow:hidden}
 }
 
 /* FIGURES */
