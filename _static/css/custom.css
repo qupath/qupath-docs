@@ -85,6 +85,7 @@ p.caption {
   text-align: center;
   align-content: center;
   align-self: center;
+  box-shadow: 4px 4px 8px rgba(1, 1, 1, 0.2);
 }
 
 .video-divert .overlay {

@@ -4,8 +4,9 @@
 ```{raw} html
 <div class="video-divert">
 <a href="https://youtu.be/xW2Ya205nvo?si=5hCfmsxUb859lb2E" target="blank">
-<img class="shadow-image" src="https://i.ytimg.com/vi/xW2Ya205nvo/hqdefault.jpg">
-<div class="overlay"><p>To Youtube &#128640;</p></div></a>
+    <img src="https://i.ytimg.com/vi/xW2Ya205nvo/hqdefault.jpg">
+    <div class="overlay"><p>To Youtube &#128640;</p></div>
+</a>
 <p>Click to visit YouTube</p>
 </div>
 ```
