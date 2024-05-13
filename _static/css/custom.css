@@ -1,16 +1,36 @@
-/* General styles */
+/* GENERAL */
+/* Override default main window sizes*/
 .wy-nav-content {
   max-width: 1100px;
+  min-width: 330px;
   align-self: center;
 }
 
-/* Figure related styles */
+/* Prompt nav bar collapse at medium screen sizes (https://stackoverflow.com/a/60217315/4539999) */
+@media screen and (max-width: 950px){
+	.wy-body-for-nav{background:#fcfcfc}
+	.wy-nav-top{display:block}
+	.wy-nav-side{left:-300px}
+	.wy-nav-side.shift{width:300px;left:0}
+	.wy-side-scroll{width:auto}
+	.wy-side-nav-search{width:auto}
+	.wy-menu.wy-menu-vertical{width:auto}
+	.wy-nav-content-wrap{margin-left:0}
+	.wy-nav-content-wrap
+	.wy-nav-content{padding:1.618em}
+	.wy-nav-content-wrap.shift{position:fixed;min-width:100%;left:85%;top:0;height:100%;overflow:hidden}
+}
+
+/* FIGURES */
 figure {
   text-align: center;
 }
 
 figcaption {
   margin-top: 10px;
+}
+p.caption {
+  margin: 5px;
 }
 
 .caption-text {
@@ -27,7 +47,6 @@ figcaption {
 
 .mid-image {
   width: 60%;
-
 }
 
 .small-image {
@@ -38,12 +57,9 @@ figcaption {
   width: 20%;
 }
 
-/* Video styles */
+/* VIDEOS */
 .video-divert {
   display: block;
-  text-align: center;
-  align-content: center;
-  align-self: center;
 }
 
 .video-divert p {
@@ -56,15 +72,11 @@ figcaption {
 
 .video-divert a {
   display: block;
-  white-space: pre-line;
   position: relative;
-  text-align: center;
-  align-content: center;
-  align-self: center;
   width: 80%;
-  min-width: 150px;
   max-width: 400px;
   height: auto;
+  max-height: 235px;
   margin: auto;
 }
 
@@ -80,7 +92,6 @@ figcaption {
   bottom: 0;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.5);
-  /* Black see-through */
   color: #f1f1f1;
   width: 100%;
   transition: .5s ease;
@@ -103,32 +114,9 @@ a:hover .overlay {
   opacity: 1;
 }
 
-/* Removable once the iframes are replaced */
-.iframe-wrapper {
-  text-align: center;
-  width: 100%;
-  height: 450px;
-  margin-bottom: 2em;
-}
-
-iframe {
-  width: 100%;
-  min-width: 321px;
-  max-width: 800px;
-  height: 100%;
-}
-
-/* Other styles */
+/* ICONS */
 .tool-icon {
   width: 3em;
-}
-
-div.figure {
-  align: center;
-}
-
-p.caption {
-  margin: 5px;
 }
 
 .inline-icon {
