@@ -4,8 +4,6 @@ Perhaps one of the earliest and most familiar applications of image analysis in 
 
 We can apply this to {doc}`OS-3.ndpi <../intro/acknowledgements>` to answer the question: what is the area of the brown region, and what proportion of the tissue does it occupy?
 
-## Video tutorial
-
 :::{sidebar} Youtube content
 ```{raw} html
 <div class="video-divert">

@@ -10,8 +10,6 @@ Thresholding may become one of the QuPath commands you use most often.
 It provides a way to define regions of interest without needing to manually annotate everything.
 :::
 
-## Video tutorial
-
 :::{sidebar} Youtube content
 ```{raw} html
 <div class="video-divert">

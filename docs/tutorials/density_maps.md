@@ -10,8 +10,6 @@ Like most commands in QuPath, Density Maps are currently calculated only in 2D.
 And, like many other commands, you should create Density Maps within a {ref}`project <Projects>` if you want to reuse them later.
 :::
 
-## Video tutorial
-
 :::{sidebar} Youtube content
 ```{raw} html
 <div class="video-divert">

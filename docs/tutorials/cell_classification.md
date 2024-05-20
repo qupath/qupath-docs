@@ -14,8 +14,6 @@ They can be applied for the *classification* of all *detections* within QuPath, 
 It is a good idea to read through the {doc}`cell_detection` section before this one.
 :::
 
-## Video tutorial
-
 :::{sidebar} Youtube content
 ```{raw} html
 <div class="video-divert">
