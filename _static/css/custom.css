@@ -67,7 +67,8 @@ p.caption {
   font-style: italic;
   min-width: 50%;
   text-align: center;
-  margin-bottom: -14px;
+  padding-top: 10px;
+  margin-bottom: -8px;
 }
 
 .video-divert a {
