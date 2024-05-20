@@ -6,11 +6,18 @@ We can apply this to {doc}`OS-3.ndpi <../intro/acknowledgements>` to answer the 
 
 ## Video tutorial
 
+:::{sidebar} Youtube content
 ```{raw} html
-<div class="iframe-wrapper">
-<iframe src="https://www.youtube-nocookie.com/embed/KGE7v4VIQ_0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div class="video-divert">
+<a href="https://www.youtube.com/watch?v=KGE7v4VIQ_0" target="blank"
+    aria-label="follow this link to learn more about measuring areas in QuPath">
+    <img src="https://i.ytimg.com/vi/KGE7v4VIQ_0/maxresdefault.jpg">
+    <div class="overlay"><p>To Youtube &#128640;</p></div>
+</a>
+<a class="caption-link" href="https://www.youtube.com/watch?v=KGE7v4VIQ_0" target="blank">Measuring areas in QuPath</a>
 </div>
 ```
+:::
 
 ## Step-by-step
 

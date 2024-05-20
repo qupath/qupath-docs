@@ -27,11 +27,18 @@ In {doc}`cell_classification` we will look at improving on this by training QuPa
 
 ## Video tutorial
 
+:::{sidebar} Youtube content
 ```{raw} html
-<div class="iframe-wrapper">
-<iframe src="https://www.youtube-nocookie.com/embed/14ZQCSmICCA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div class="video-divert">
+<a href="https://www.youtube.com/watch?v=14ZQCSmICCA" target="blank"
+    aria-label="follow this link to learn more about cell detection in QuPath">
+    <img src="https://i.ytimg.com/vi/14ZQCSmICCA/maxresdefault.jpg">
+    <div class="overlay"><p>To Youtube &#128640;</p></div>
+</a>
+<a class="caption-link" href="https://www.youtube.com/watch?v=14ZQCSmICCA" target="blank">Cell detection in QuPath</a>
 </div>
 ```
+:::
 
 % .. figure:: images/ki67_detecting_origin.jpg
 
