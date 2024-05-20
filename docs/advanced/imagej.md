@@ -3,11 +3,12 @@
 :::{sidebar} Youtube content
 ```{raw} html
 <div class="video-divert">
-<a href="https://youtu.be/xW2Ya205nvo?si=5hCfmsxUb859lb2E" target="blank">
+<a href="https://youtu.be/xW2Ya205nvo?si=5hCfmsxUb859lb2E" target="blank"
+    aria-label="follow this link to learn more about QuPath for ImageJ users">
     <img src="https://i.ytimg.com/vi/xW2Ya205nvo/hqdefault.jpg">
     <div class="overlay"><p>To Youtube &#128640;</p></div>
 </a>
-<p>Click to visit YouTube</p>
+<a class="caption-link" href="https://youtu.be/xW2Ya205nvo?si=5hCfmsxUb859lb2E">QuPath for ImageJ users</a>
 </div>
 ```
 :::

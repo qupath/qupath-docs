@@ -16,11 +16,19 @@ It is a good idea to read through the {doc}`cell_detection` section before this 
 
 ## Video tutorial
 
+:::{sidebar} Youtube content
 ```{raw} html
-<div class="iframe-wrapper">
-<iframe width="100%" height="350" src="https://www.youtube-nocookie.com/embed/-4JZ73ZEicY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div class="video-divert">
+<a href="https://www.youtube.com/watch?v=-4JZ73ZEicY" target="blank"
+    aria-label="follow this link to learn more about cell classification in QuPath">
+    <img src="https://i.ytimg.com/vi/-4JZ73ZEicY/maxresdefault.jpg">
+    <div class="overlay"><p>To Youtube &#128640;</p></div>
+</a>
+<a class="caption-link" href="https://www.youtube.com/watch?v=-4JZ73ZEicY">Cell classification in QuPath</a>
 </div>
 ```
+:::
+
 
 ## Step-by-step
 

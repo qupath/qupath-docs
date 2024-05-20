@@ -62,7 +62,7 @@ p.caption {
   display: block;
 }
 
-.video-divert p {
+.video-divert .caption-link {
   display: block;
   font-style: italic;
   min-width: 50%;
@@ -73,18 +73,16 @@ p.caption {
 .video-divert a {
   display: block;
   position: relative;
-  width: 80%;
+  width: 100%;
   max-width: 400px;
   height: auto;
-  max-height: 235px;
+  max-height: 400px;
   margin: auto;
 }
 
 .video-divert img {
   display: block;
-  text-align: center;
-  align-content: center;
-  align-self: center;
+  max-height: 350px;
   box-shadow: 4px 4px 8px rgba(1, 1, 1, 0.2);
 }
 
@@ -101,14 +99,12 @@ p.caption {
   font-size: 20px;
   text-align: center;
   height: 100%;
-  padding-top: 35%;
-  padding-bottom: 30%;
+  align-content: center;
+  padding-top: 5%;
 }
 
 .video-divert .overlay p{
   text-align: center;
-  align-self: center;
-  vertical-align: middle;
 }
 
 a:hover .overlay {
