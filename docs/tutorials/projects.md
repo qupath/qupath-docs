@@ -17,7 +17,7 @@ Using QuPath without creating a project should be the exception rather than the 
 Some commands and scripts *only* work within projects.
 :::
 
-:::{sidebar} Youtube content
+:::{sidebar} YouTube content
 ```{raw} html
 <div class="video-divert">
 <a href="https://www.youtube.com/watch?v=kCEp89ypmAY" target="blank"

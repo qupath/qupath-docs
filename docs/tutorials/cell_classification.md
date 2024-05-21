@@ -14,7 +14,7 @@ They can be applied for the *classification* of all *detections* within QuPath, 
 It is a good idea to read through the {doc}`cell_detection` section before this one.
 :::
 
-:::{sidebar} Youtube content
+:::{sidebar} YouTube content
 ```{raw} html
 <div class="video-divert">
 <a href="https://www.youtube.com/watch?v=-4JZ73ZEicY" target="blank"

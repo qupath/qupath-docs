@@ -24,7 +24,7 @@ The main distinction is that *Fluorescence* indicates that the structures of int
 
 The choice of image type also has an impact on how stains may be separated.
 
-:::{sidebar} Youtube content
+:::{sidebar} YouTube content
 ```{raw} html
 <div class="video-divert">
 <a href="https://www.youtube.com/watch?v=Oe0rfzLtTO0" target="blank"

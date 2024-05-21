@@ -1,6 +1,6 @@
 # ImageJ
 
-:::{sidebar} Youtube content
+:::{sidebar} YouTube content
 ```{raw} html
 <div class="video-divert">
 <a href="https://youtu.be/xW2Ya205nvo?si=5hCfmsxUb859lb2E" target="blank"

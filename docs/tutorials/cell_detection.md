@@ -25,7 +25,7 @@ For more information on Ki67 in breast cancer, see for example
 In this case, tumor cells are identified by manually drawing around them to create annotations, after which QuPath is able to very quickly detect the cells and calculate the positive percentage inside each annotation.
 In {doc}`cell_classification` we will look at improving on this by training QuPath to identify tumor cells itself.
 
-:::{sidebar} Youtube content
+:::{sidebar} YouTube content
 ```{raw} html
 <div class="video-divert">
 <a href="https://www.youtube.com/watch?v=14ZQCSmICCA" target="blank"

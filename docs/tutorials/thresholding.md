@@ -10,7 +10,7 @@ Thresholding may become one of the QuPath commands you use most often.
 It provides a way to define regions of interest without needing to manually annotate everything.
 :::
 
-:::{sidebar} Youtube content
+:::{sidebar} YouTube content
 ```{raw} html
 <div class="video-divert">
 <a href="https://www.youtube.com/watch?v=B03-TlH-yVU" target="blank"
