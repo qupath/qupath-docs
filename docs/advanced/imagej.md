@@ -6,7 +6,7 @@
 <a href="https://youtu.be/xW2Ya205nvo?si=5hCfmsxUb859lb2E" target="blank"
     aria-label="follow this link to learn more about QuPath for ImageJ users">
     <img src="https://i.ytimg.com/vi/xW2Ya205nvo/hqdefault.jpg">
-    <div class="overlay"><p>To Youtube &#128640;</p></div>
+    <div class="overlay"><p>View on YouTube</p></div>
 </a>
 <a class="caption-link" href="https://youtu.be/xW2Ya205nvo?si=5hCfmsxUb859lb2E" target="blank">QuPath for ImageJ users</a>
 </div>

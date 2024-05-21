@@ -10,7 +10,7 @@ We can apply this to {doc}`OS-3.ndpi <../intro/acknowledgements>` to answer the 
 <a href="https://www.youtube.com/watch?v=KGE7v4VIQ_0" target="blank"
     aria-label="follow this link to learn more about measuring areas in QuPath">
     <img src="https://i.ytimg.com/vi/KGE7v4VIQ_0/maxresdefault.jpg">
-    <div class="overlay"><p>To Youtube &#128640;</p></div>
+    <div class="overlay"><p>View on YouTube</p></div>
 </a>
 <a class="caption-link" href="https://www.youtube.com/watch?v=KGE7v4VIQ_0" target="blank">Measuring areas in QuPath</a>
 </div>

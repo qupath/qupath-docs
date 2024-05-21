@@ -16,7 +16,7 @@ It provides a way to define regions of interest without needing to manually anno
 <a href="https://www.youtube.com/watch?v=B03-TlH-yVU" target="blank"
     aria-label="follow this link to learn more about thresholding in QuPath">
     <img src="https://i.ytimg.com/vi/B03-TlH-yVU/maxresdefault.jpg">
-    <div class="overlay"><p>To Youtube &#128640;</p></div>
+    <div class="overlay"><p>View on YouTube</p></div>
 </a>
 <a class="caption-link" href="https://www.youtube.com/watch?v=B03-TlH-yVU" target="blank">Thresholding in QuPath</a>
 </div>

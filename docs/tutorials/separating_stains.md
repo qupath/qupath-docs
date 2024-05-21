@@ -30,7 +30,7 @@ The choice of image type also has an impact on how stains may be separated.
 <a href="https://www.youtube.com/watch?v=Oe0rfzLtTO0" target="blank"
     aria-label="follow this link to learn more about separating stains in QuPath">
     <img src="https://i.ytimg.com/vi/Oe0rfzLtTO0/maxresdefault.jpg">
-    <div class="overlay"><p>To Youtube &#128640;</p></div>
+    <div class="overlay"><p>View on YouTube</p></div>
 </a>
 <a class="caption-link" href="https://www.youtube.com/watch?v=Oe0rfzLtTO0" target="blank">Separating stains in QuPath</a>
 </div>

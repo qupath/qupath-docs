@@ -20,7 +20,7 @@ It is a good idea to read through the {doc}`cell_detection` section before this 
 <a href="https://www.youtube.com/watch?v=-4JZ73ZEicY" target="blank"
     aria-label="follow this link to learn more about cell classification in QuPath">
     <img src="https://i.ytimg.com/vi/-4JZ73ZEicY/maxresdefault.jpg">
-    <div class="overlay"><p>To Youtube &#128640;</p></div>
+    <div class="overlay"><p>View on YouTube</p></div>
 </a>
 <a class="caption-link" href="https://www.youtube.com/watch?v=-4JZ73ZEicY" target="blank">Cell classification in QuPath</a>
 </div>

@@ -23,7 +23,7 @@ Some commands and scripts *only* work within projects.
 <a href="https://www.youtube.com/watch?v=kCEp89ypmAY" target="blank"
     aria-label="follow this link to learn more about projects in QuPath">
     <img src="https://i.ytimg.com/vi/kCEp89ypmAY/maxresdefault.jpg">
-    <div class="overlay"><p>To Youtube &#128640;</p></div>
+    <div class="overlay"><p>View on YouTube</p></div>
 </a>
 <a class="caption-link" href="https://www.youtube.com/watch?v=kCEp89ypmAY" target="blank">Projects in QuPath</a>
 </div>

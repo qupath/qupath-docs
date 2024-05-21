@@ -31,7 +31,7 @@ In {doc}`cell_classification` we will look at improving on this by training QuPa
 <a href="https://www.youtube.com/watch?v=14ZQCSmICCA" target="blank"
     aria-label="follow this link to learn more about cell detection in QuPath">
     <img src="https://i.ytimg.com/vi/14ZQCSmICCA/maxresdefault.jpg">
-    <div class="overlay"><p>To Youtube &#128640;</p></div>
+    <div class="overlay"><p>View on YouTube</p></div>
 </a>
 <a class="caption-link" href="https://www.youtube.com/watch?v=14ZQCSmICCA" target="blank">Cell detection in QuPath</a>
 </div>

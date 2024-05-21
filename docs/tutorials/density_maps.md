@@ -16,7 +16,7 @@ And, like many other commands, you should create Density Maps within a {ref}`pro
 <a href="https://www.youtube.com/watch?v=lGtYOlv8XFU" target="blank"
     aria-label="follow this link to learn more about density maps in QuPath">
     <img src="https://i.ytimg.com/vi/lGtYOlv8XFU/maxresdefault.jpg">
-    <div class="overlay"><p>To Youtube &#128640;</p></div>
+    <div class="overlay"><p>View on YouTube</p></div>
 </a>
 <a class="caption-link" href="https://www.youtube.com/watch?v=lGtYOlv8XFU" target="blank">Density maps in QuPath</a>
 </div>
