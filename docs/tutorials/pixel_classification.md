@@ -13,9 +13,7 @@ But pixel classifiers can also do much more sophisticated things.
 Please read {doc}`thresholding` and {doc}`measuring_areas` first!
 :::
 
-## Step-by-step
-
-### Stained areas (again)
+## Stained areas (again)
 
 Returning to the example in {doc}`measuring_areas`, we could replace either of the thresholding steps with {menuselection}`Classify --> Pixel classification --> Train pixel classifier`.
 
@@ -33,7 +31,7 @@ Pixel classification to find positive pixels
 You can proceed to add more annotations to refine these predictions.
 When you are done, you can enter the classifier name, save it, and create measurements or objects -- {doc}`in exactly the same way as for thresholding <measuring_areas>`.
 
-### More complex classifications
+## More complex classifications
 
 Training a pixel classifier makes it possible to incorporate a lot more information than is possible with a simple threshold, and to determine the output in a much more sophisticated way.
 
@@ -54,7 +52,7 @@ OS-1.ndpi
 You can adjust the overlay opacity using the slider at the top, or by scrolling with the {guilabel}`Ctrl` or {guilabel}`Cmd` key pressed.
 :::
 
-### Getting started
+## Getting started
 
 As before, we begin by annotating **small** regions that correspond to the different classes we are interested in, and use {guilabel}`Live prediction` to get a first impression.
 
@@ -73,7 +71,7 @@ Live prediction based on one annotation per class
 You should find it quickly get some parts right... but quite a lot wrong.
 We can resolve some errors by adding more annotations, but this alone won't be enough.
 
-### Improving the classifier
+## Improving the classifier
 
 To use the pixel classifier effectively, we need to know:
 
@@ -81,7 +79,7 @@ To use the pixel classifier effectively, we need to know:
 2. How to control the *other* options we have at our disposal to improve the classifier
 3. When we've stretched the pixel classifier to its limit... and might need to supplement it with something else
 
-#### Annotating effectively
+### Annotating effectively
 
 The pie charts in the screenshots show the relative proportion of training samples for each class.
 This depends upon the number of annotations with each classification, and the size of those annotations.
@@ -93,7 +91,7 @@ You should usually aim to annotate your image so that you have:
 
 If you give the classifier lots of examples of pixels that look nearly the same, it will be harder to train it to identify anything else.
 
-#### Adjusting other options
+### Adjusting other options
 
 Some of the options available to customize the classifier during training are the same as those we met while {doc}`thresholding <thresholding>` (since a thresholder is just a simple pixel classifier), while others are not.
 
@@ -124,7 +122,7 @@ There are relatively few options for the classifier choice and resolution -- you
 
 Selecting features takes a bit more thought.
 
-#### Selecting features
+### Selecting features
 
 The {guilabel}`Edit` button opens a dialog to select features.
 These are essentially transformed versions of the image that will contribute to the final output of the classifier.
@@ -203,7 +201,7 @@ It can help to approach features with the expectation: *"less is more"*.
 In other words, it can be *much* more effective to use a smaller number of well-chosen features rather than throwing them all in to see what comes out the other end.
 :::
 
-### Knowing when to quit
+## Knowing when to quit
 
 Applying the above knowledge, you should be able to generate an effective pixel classifier for many circumstances.
 
@@ -230,7 +228,7 @@ This means that the above classification computes the *Tumor %* as the proportio
 See [Ignored* classifications`](ignored-classifications) for more information.
 :::
 
-### Handling variation
+## Handling variation
 
 Variation represents probably the biggest challenge to applying image analysis and machine learning in practice.
 
@@ -245,7 +243,7 @@ There are two main ways you can train pixel classifiers across images in QuPath:
 You can also use both approaches: create a classifier trained from annotations made on multiple images composed of pieces extracted from other images...
 :::
 
-### Train from multiple images
+## Train from multiple images
 
 When training a classifier, simply press the {guilabel}`Load training` button, and select the images (within the same project) that you want to use for training.
 
@@ -257,7 +255,7 @@ Be aware that training using multiple images can require much more computational
 This makes it *even more important* to create small and diverse annotations.
 :::
 
-### Create a training image
+## Create a training image
 
 You can create a training image composed of pieces from other images within a project first by selecting the pieces you want.
 You do this by annotating rectangles, and assigning them a classification so they can be identified later.

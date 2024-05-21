@@ -1,16 +1,36 @@
-/* General styles */
+/* GENERAL */
+/* Override default main window sizes*/
 .wy-nav-content {
   max-width: 1100px;
+  min-width: 330px;
   align-self: center;
 }
 
-/* Figure related styles */
+/* Prompt nav bar collapse at medium screen sizes to increase readability (https://stackoverflow.com/a/60217315/4539999) */
+@media screen and (max-width: 950px){
+	.wy-body-for-nav{background:#fcfcfc}
+	.wy-nav-top{display:block}
+	.wy-nav-side{left:-300px}
+	.wy-nav-side.shift{width:300px;left:0}
+	.wy-side-scroll{width:auto}
+	.wy-side-nav-search{width:auto}
+	.wy-menu.wy-menu-vertical{width:auto}
+	.wy-nav-content-wrap{margin-left:0}
+	.wy-nav-content-wrap
+	.wy-nav-content{padding:1.618em}
+	.wy-nav-content-wrap.shift{position:fixed;min-width:100%;left:300px;top:0;height:100%;overflow:hidden}
+}
+
+/* FIGURES */
 figure {
   text-align: center;
 }
 
 figcaption {
   margin-top: 10px;
+}
+p.caption {
+  margin: 5px;
 }
 
 .caption-text {
@@ -37,26 +57,70 @@ figcaption {
   width: 20%;
 }
 
-/* Video styles */
-.iframe-wrapper {
+/* VIDEOS */
+.video-divert {
+  display: block;
+}
+
+.video-divert .caption-link {
+  display: block;
+  font-style: italic;
+  min-width: 50%;
   text-align: center;
-  width: 100%;
-  height: 450px;
-  margin-bottom: 2em;
+  padding-top: 10px;
+  margin-bottom: -8px;
 }
 
-iframe {
+.video-divert a {
+  display: block;
+  position: relative;
   width: 100%;
-  min-width: 321px;
-  max-width: 800px;
+  max-width: 400px;
+  height: auto;
+  max-height: 400px;
+  margin: auto;
+}
+
+.video-divert img {
+  display: block;
+  max-height: 350px;
+  box-shadow: 4px 4px 8px rgba(1, 1, 1, 0.2);
+}
+
+.video-divert .overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  text-align: center;
   height: 100%;
+  align-content: center;
+  padding-top: 5%;
 }
 
-/* Other styles */
+.video-divert .overlay p{
+  text-align: center;
+}
+
+a:hover .overlay {
+  opacity: 1;
+}
+
+/* ICONS */
 .tool-icon {
   width: 3em;
 }
 
 .inline-icon {
   width: 1.5em;
+}
+
+.tool-icon {
+  width: 3em;
 }

@@ -1,5 +1,18 @@
 # Detecting tissue
 
+:::{sidebar} YouTube content
+```{raw} html
+<div class="video-divert">
+<a href="https://www.youtube.com/watch?v=B03-TlH-yVU" target="blank"
+    aria-label="follow this link to learn more about thresholding in QuPath">
+    <img src="https://i.ytimg.com/vi/B03-TlH-yVU/maxresdefault.jpg">
+    <div class="overlay"><p>View on YouTube</p></div>
+</a>
+<a class="caption-link" href="https://www.youtube.com/watch?v=B03-TlH-yVU" target="blank">Thresholding in QuPath</a>
+</div>
+```
+:::
+
 Often, we want to create annotations around regions that are *clearly* different from their surroundings: either brighter or darker.
 
 The *Wand* tool helps, but still involves manually drawing.
@@ -10,17 +23,7 @@ Thresholding may become one of the QuPath commands you use most often.
 It provides a way to define regions of interest without needing to manually annotate everything.
 :::
 
-## Video tutorial
-
-```{raw} html
-<div class="iframe-wrapper">
-<iframe src="https://www.youtube-nocookie.com/embed/B03-TlH-yVU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
-```
-
-## Step-by-step
-
-### Thresholders in QuPath
+## Thresholders in QuPath
 
 At its most basic level, thresholding distinguishes between two classes of pixels: those with values above the specified threshold, and those with values below.
 
@@ -32,7 +35,7 @@ However, there are a few things that complicate matters:
 
 A *thresholder* in QuPath is something that can apply a threshold to an image while addressing all of these problems.
 
-### Thresholds in action
+## Thresholds in action
 
 You can create a thresholder using the {menuselection}`Classify --> Pixel classification --> Create thresholder` command.
 
@@ -50,7 +53,7 @@ Tissue detected by thresholding
 A *thresholder* in QuPath is a special example of a *pixel classifier*... which is why you'll see both terms appearing.
 :::
 
-### Adjusting parameters
+## Adjusting parameters
 
 When running the command, you'll be confronted by the following dialog.
 
@@ -88,7 +91,7 @@ You can adjust the overlay opacity using the slider at the top, or by scrolling 
 The settings shown in the screenshot are a reasonable starting point for any brightfield whole slide image -- then adjust the smoothing and threshold if you need to.
 :::
 
-### Saving your thresholder
+## Saving your thresholder
 
 Once you are happy with the look of the preview overlay, it's time to do something with it.
 
@@ -120,7 +123,7 @@ Beware that doing this can thwart attempts to generate scripts using the thresho
 You can reload a saved thresholder with {menuselection}`Classify --> Pixel classification --> Load pixel classifier`.
 :::
 
-### Creating objects
+## Creating objects
 
 Now you can finally click on {guilabel}`Create objects`.
 But your choices are not over.
