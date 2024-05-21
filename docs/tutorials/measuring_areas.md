@@ -1,9 +1,5 @@
 # Measuring areas
 
-Perhaps one of the earliest and most familiar applications of image analysis in pathology is to quantify stained areas, sometimes referred to as *positive pixel counting*.
-
-We can apply this to {doc}`OS-3.ndpi <../intro/acknowledgements>` to answer the question: what is the area of the brown region, and what proportion of the tissue does it occupy?
-
 :::{sidebar} YouTube content
 ```{raw} html
 <div class="video-divert">
@@ -16,6 +12,10 @@ We can apply this to {doc}`OS-3.ndpi <../intro/acknowledgements>` to answer the 
 </div>
 ```
 :::
+
+Perhaps one of the earliest and most familiar applications of image analysis in pathology is to quantify stained areas, sometimes referred to as *positive pixel counting*.
+
+We can apply this to {doc}`OS-3.ndpi <../intro/acknowledgements>` to answer the question: what is the area of the brown region, and what proportion of the tissue does it occupy?
 
 ## Step-by-step
 

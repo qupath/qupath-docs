@@ -1,15 +1,5 @@
 # Detecting tissue
 
-Often, we want to create annotations around regions that are *clearly* different from their surroundings: either brighter or darker.
-
-The *Wand* tool helps, but still involves manually drawing.
-Setting a *threshold* is usually a better way.
-
-:::{admonition} Why do I need to know this?
-Thresholding may become one of the QuPath commands you use most often.
-It provides a way to define regions of interest without needing to manually annotate everything.
-:::
-
 :::{sidebar} YouTube content
 ```{raw} html
 <div class="video-divert">
@@ -21,6 +11,16 @@ It provides a way to define regions of interest without needing to manually anno
 <a class="caption-link" href="https://www.youtube.com/watch?v=B03-TlH-yVU" target="blank">Thresholding in QuPath</a>
 </div>
 ```
+:::
+
+Often, we want to create annotations around regions that are *clearly* different from their surroundings: either brighter or darker.
+
+The *Wand* tool helps, but still involves manually drawing.
+Setting a *threshold* is usually a better way.
+
+:::{admonition} Why do I need to know this?
+Thresholding may become one of the QuPath commands you use most often.
+It provides a way to define regions of interest without needing to manually annotate everything.
 :::
 
 ## Step-by-step

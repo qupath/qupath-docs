@@ -1,5 +1,18 @@
 # Cell classification
 
+:::{sidebar} YouTube content
+```{raw} html
+<div class="video-divert">
+<a href="https://www.youtube.com/watch?v=-4JZ73ZEicY" target="blank"
+    aria-label="follow this link to learn more about cell classification in QuPath">
+    <img src="https://i.ytimg.com/vi/-4JZ73ZEicY/maxresdefault.jpg">
+    <div class="overlay"><p>View on YouTube</p></div>
+</a>
+<a class="caption-link" href="https://www.youtube.com/watch?v=-4JZ73ZEicY" target="blank">Cell classification in QuPath</a>
+</div>
+```
+:::
+
 {doc}`cell_detection` looked at computing Ki67 labelling indices by counting positive and negative cells within user-defined regions of interest.
 These regions had to be drawn very carefully to try to ensure that they only included tumor cells, and excluded other cell types that should not contribute to conventional scoring of Ki67.
 
@@ -12,19 +25,6 @@ They can be applied for the *classification* of all *detections* within QuPath, 
 
 :::{note}
 It is a good idea to read through the {doc}`cell_detection` section before this one.
-:::
-
-:::{sidebar} YouTube content
-```{raw} html
-<div class="video-divert">
-<a href="https://www.youtube.com/watch?v=-4JZ73ZEicY" target="blank"
-    aria-label="follow this link to learn more about cell classification in QuPath">
-    <img src="https://i.ytimg.com/vi/-4JZ73ZEicY/maxresdefault.jpg">
-    <div class="overlay"><p>View on YouTube</p></div>
-</a>
-<a class="caption-link" href="https://www.youtube.com/watch?v=-4JZ73ZEicY" target="blank">Cell classification in QuPath</a>
-</div>
-```
 :::
 
 

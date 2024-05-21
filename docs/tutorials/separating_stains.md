@@ -1,5 +1,18 @@
 # Separating stains
 
+:::{sidebar} YouTube content
+```{raw} html
+<div class="video-divert">
+<a href="https://www.youtube.com/watch?v=Oe0rfzLtTO0" target="blank"
+    aria-label="follow this link to learn more about separating stains in QuPath">
+    <img src="https://i.ytimg.com/vi/Oe0rfzLtTO0/maxresdefault.jpg">
+    <div class="overlay"><p>View on YouTube</p></div>
+</a>
+<a class="caption-link" href="https://www.youtube.com/watch?v=Oe0rfzLtTO0" target="blank">Separating stains in QuPath</a>
+</div>
+```
+:::
+
 QuPath supports images of different kinds.
 
 Some commands will work on almost any kind of image without complaint, while some need to know a bit more about the image.
@@ -23,19 +36,6 @@ If the type is very wrong, double-click on it to make changes.
 The main distinction is that *Fluorescence* indicates that the structures of interest have higher values than the background, *Brightfield* indicates that they have lower values (and are generally RGB).
 
 The choice of image type also has an impact on how stains may be separated.
-
-:::{sidebar} YouTube content
-```{raw} html
-<div class="video-divert">
-<a href="https://www.youtube.com/watch?v=Oe0rfzLtTO0" target="blank"
-    aria-label="follow this link to learn more about separating stains in QuPath">
-    <img src="https://i.ytimg.com/vi/Oe0rfzLtTO0/maxresdefault.jpg">
-    <div class="overlay"><p>View on YouTube</p></div>
-</a>
-<a class="caption-link" href="https://www.youtube.com/watch?v=Oe0rfzLtTO0" target="blank">Separating stains in QuPath</a>
-</div>
-```
-:::
 
 ## Step-by-step
 

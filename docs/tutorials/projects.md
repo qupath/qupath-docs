@@ -1,5 +1,19 @@
 (tutorials-projects)=
+
 # Projects
+
+:::{sidebar} YouTube content
+```{raw} html
+<div class="video-divert">
+<a href="https://www.youtube.com/watch?v=kCEp89ypmAY" target="blank"
+    aria-label="follow this link to learn more about projects in QuPath">
+    <img src="https://i.ytimg.com/vi/kCEp89ypmAY/maxresdefault.jpg">
+    <div class="overlay"><p>View on YouTube</p></div>
+</a>
+<a class="caption-link" href="https://www.youtube.com/watch?v=kCEp89ypmAY" target="blank">Projects in QuPath</a>
+</div>
+```
+:::
 
 QuPaths allows you to view and work with single images.
 However, if you will be saving and reloading data associated with multiple images it is *highly* recommended to use a **Project**.
@@ -15,19 +29,6 @@ However, if you will be saving and reloading data associated with multiple image
 Using QuPath without creating a project should be the exception rather than the rule (e.g. when wanting to quickly view an image, but not save any data).
 
 Some commands and scripts *only* work within projects.
-:::
-
-:::{sidebar} YouTube content
-```{raw} html
-<div class="video-divert">
-<a href="https://www.youtube.com/watch?v=kCEp89ypmAY" target="blank"
-    aria-label="follow this link to learn more about projects in QuPath">
-    <img src="https://i.ytimg.com/vi/kCEp89ypmAY/maxresdefault.jpg">
-    <div class="overlay"><p>View on YouTube</p></div>
-</a>
-<a class="caption-link" href="https://www.youtube.com/watch?v=kCEp89ypmAY" target="blank">Projects in QuPath</a>
-</div>
-```
 :::
 
 ## Step-by-step

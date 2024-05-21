@@ -1,15 +1,5 @@
 # Density maps
 
-Density maps were introduced in QuPath v0.3.0. They were originally created to help find 'hotspots' for specific applications in pathology (e.g. tumor budding, Ki67 scoring).
-However, their implementation in QuPath is designed to be much more flexible than that.
-
-In some cases, density maps can even be a replacement for {doc}`pixel_classification` or {doc}`superpixels`.
-
-:::{warning}
-Like most commands in QuPath, Density Maps are currently calculated only in 2D.
-And, like many other commands, you should create Density Maps within a {ref}`project <Projects>` if you want to reuse them later.
-:::
-
 :::{sidebar} YouTube content
 ```{raw} html
 <div class="video-divert">
@@ -21,6 +11,16 @@ And, like many other commands, you should create Density Maps within a {ref}`pro
 <a class="caption-link" href="https://www.youtube.com/watch?v=lGtYOlv8XFU" target="blank">Density maps in QuPath</a>
 </div>
 ```
+:::
+
+Density maps were introduced in QuPath v0.3.0. They were originally created to help find 'hotspots' for specific applications in pathology (e.g. tumor budding, Ki67 scoring).
+However, their implementation in QuPath is designed to be much more flexible than that.
+
+In some cases, density maps can even be a replacement for {doc}`pixel_classification` or {doc}`superpixels`.
+
+:::{warning}
+Like most commands in QuPath, Density Maps are currently calculated only in 2D.
+And, like many other commands, you should create Density Maps within a {ref}`project <Projects>` if you want to reuse them later.
 :::
 
 ## Step-by-step

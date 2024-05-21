@@ -1,5 +1,18 @@
 # Cell detection
 
+:::{sidebar} YouTube content
+```{raw} html
+<div class="video-divert">
+<a href="https://www.youtube.com/watch?v=14ZQCSmICCA" target="blank"
+    aria-label="follow this link to learn more about cell detection in QuPath">
+    <img src="https://i.ytimg.com/vi/14ZQCSmICCA/maxresdefault.jpg">
+    <div class="overlay"><p>View on YouTube</p></div>
+</a>
+<a class="caption-link" href="https://www.youtube.com/watch?v=14ZQCSmICCA" target="blank">Cell detection in QuPath</a>
+</div>
+```
+:::
+
 Previous sections described some of QuPath's tools for manually drawing regions and counting objects inside them.
 While this approach may be fine for some applications, the laborious manual counting step does not scale well to handling large numbers of objects.
 Here, we look at how QuPath's detection capabilities can be used to obtain results much more quickly and reproducibility -- and often with higher accuracy, and less bias.
@@ -24,19 +37,6 @@ For more information on Ki67 in breast cancer, see for example
 
 In this case, tumor cells are identified by manually drawing around them to create annotations, after which QuPath is able to very quickly detect the cells and calculate the positive percentage inside each annotation.
 In {doc}`cell_classification` we will look at improving on this by training QuPath to identify tumor cells itself.
-
-:::{sidebar} YouTube content
-```{raw} html
-<div class="video-divert">
-<a href="https://www.youtube.com/watch?v=14ZQCSmICCA" target="blank"
-    aria-label="follow this link to learn more about cell detection in QuPath">
-    <img src="https://i.ytimg.com/vi/14ZQCSmICCA/maxresdefault.jpg">
-    <div class="overlay"><p>View on YouTube</p></div>
-</a>
-<a class="caption-link" href="https://www.youtube.com/watch?v=14ZQCSmICCA" target="blank">Cell detection in QuPath</a>
-</div>
-```
-:::
 
 % .. figure:: images/ki67_detecting_origin.jpg
 
