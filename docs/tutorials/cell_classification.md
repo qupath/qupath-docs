@@ -27,10 +27,7 @@ They can be applied for the *classification* of all *detections* within QuPath, 
 It is a good idea to read through the {doc}`cell_detection` section before this one.
 :::
 
-
-## Step-by-step
-
-### Annotate the main region of interest
+## Annotate the main region of interest
 
 The first step is to draw a generous annotation that corresponds to a region of interest within which cells should be detected.
 This can be done very quickly, and should include a mixture of both tumor and non-tumor cells for the classification to be meaningful.
@@ -47,7 +44,7 @@ See {doc}`thresholding` for other ways to define the region of interest automati
 You can also create an annotation corresponding to the entire image using {menuselection}`Objects --> Create full image annotation` -- but generally this is a bad idea, since it can lead to a lot of unnecessary processing and memory use within areas of the image that are not relevant.
 :::
 
-### Run *Cell detection* command
+## Run *Cell detection* command
 
 With the annotation selected, the {menuselection}`Analyze --> Cell detection --> Cell detection` command can be used to detect cells.
 
@@ -81,7 +78,7 @@ The resulting cell detection is shown below.
 Detected cells
 :::
 
-### View cell measurements (if you want)
+## View cell measurements (if you want)
 
 QuPath's ability to distinguish between different cell types depends upon which measurements have been made.
 
@@ -108,7 +105,7 @@ The *Nucleus/Cell area ratio* incorporates both of these characteristics in a si
 Measurement map for Nucleus/Cell area ratio
 :::
 
-### Calculate additional features
+## Calculate additional features
 
 Despite the usefulness of the *Nucleus/Cell area ratio* for identifying tumor cells, on its own it is not enough.
 One reason is that dense populations of immune cells can also have high values for this measurement.
@@ -148,7 +145,7 @@ This will help QuPath to identify all the cells within tumor areas correctly.
 Measurement map for smoothed Nucleus/Cell area ratio
 :::
 
-### Annotate regions containing different cell types
+## Annotate regions containing different cell types
 
 The next step is to begin annotating regions according to how the cells contained within them should be classified.
 
@@ -184,7 +181,7 @@ It is important to annotate regions where cells have already been detected!
 Don't be misled by the fact you can't see them in the screenshots -- I have hidden the cells temporarily to make it easier to distinguish areas of tumor.
 :::
 
-### Train a cell classifier based on annotations
+## Train a cell classifier based on annotations
 
 Once you have several annotations with different classes, it is time to create the classifier to see how well QuPath can distinguish the cells.
 
@@ -230,12 +227,12 @@ If you add extra measurements later (e.g. by running *Add smoothed features* aga
 {guilabel}`Advanced options` can generally be ignored; it enables feature normalization, but this should not matter for the random trees classifier.
 :::
 
-### Save the classifier
+## Save the classifier
 
 Once the classifier is sufficiently accurate, you can save it by supplying a name and pressing {guilabel}`Save`.
 This will allow you to load it again later on via {menuselection}`Classify --> Object classification --> Load object classifier`, whenever you wish to classify other detections.
 
-### Apply intensity classification
+## Apply intensity classification
 
 Once you are satisfied with QuPath's ability to identify tumor cells, it is now time to apply DAB staining intensity classification.
 To do so, you can run the {menuselection}`Classify --> Object classification --> Set cell intensity classifications`.
@@ -262,7 +259,7 @@ You can set up to three intensity thresholds, to categorize cells as *Negative*,
 If you do this, QuPath will automatically calculate H-scores, in the range 0--300.
 :::
 
-### View the results
+## View the results
 
 That's it!  If you select the original, large annotation containing all the cells then the Ki67 labelling index show appear in the lower measurements section of the *Annotations* tab on the left of the screen as *Positive %*.
 You can also generate results tables if necessary.

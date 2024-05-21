@@ -23,11 +23,9 @@ This tutorial has three main steps:
 
 But first we have a few routine things we need to take care of so that things can run smoothly.
 
-## Step-by-step
+## Before we begin...
 
-### Before we begin...
-
-#### Create a project containing your images
+### Create a project containing your images
 
 Many things in QuPath work best if you create a {doc}`Project <projects>`.
 Here, it is really necessary so that classifiers generated along the way are saved in the right place to become available later.
@@ -38,7 +36,7 @@ Here, it is really necessary so that classifiers generated along the way are sav
 Example of a project with the luca-7color image
 :::
 
-#### Set the image type
+### Set the image type
 
 As usual when working with an image in QuPath, it is important to ensure the {doc}`Image type <../starting/first_steps>` is appropriate.
 In this case, the best choice is *Fluorescence*.
@@ -56,7 +54,7 @@ Good cell segmentation is really *essential* for accurate multiplexed analysis.
 New and improved methods of segmenting cells in QuPath are being actively explored...
 :::
 
-#### Set up the channel names
+### Set up the channel names
 
 The *channel names* are particularly important for multiplexed analysis, since these typically correspond to the markers of interest.
 They will also be reused within the names for the cell classifications.
@@ -105,7 +103,7 @@ You can retrieve them later by going to the *Image* tab, and double-clicking the
 This allows you to reset all the image metadata to whatever was read originally from the file, including the channel names.
 :::
 
-#### Setting up the classifications
+### Setting up the classifications
 
 We now want to make the channel names available as *classifications*.
 
@@ -118,7 +116,7 @@ You can either right-click this list or select the {guilabel}`⋮` button and ch
 Populating the classifications from the image channels
 :::
 
-### Detect & measure cells
+## Detect & measure cells
 
 QuPath's default {doc}`Cell detection <cell_detection>` command can be applied for fluorescence and multiplexed images, not only brightfield.
 
@@ -140,7 +138,7 @@ Because these measurements are based on the channel names, it is important to ha
 Exploring the detection results using measurement maps
 :::
 
-### Create a classifier for each marker
+## Create a classifier for each marker
 
 The next step involves finding a way to identify whether cells are positive or negative *for each marker independently* based upon the detections and measurements made during the previous step.
 
@@ -152,7 +150,7 @@ Since QuPath v0.2.0 there are two different ways to do this:
 Both methods are described below.
 You do not have to choose the same method for every marker, but can switch between the two methods.
 
-#### Option #1. Simple thresholding
+### Option #1. Simple thresholding
 
 QuPath v0.2.0 introduced a new command, {menuselection}`Classify --> Object classification --> Create single measurement classifier`.
 This gives us a quick way to classify based on the value of one measurement.
@@ -190,13 +188,13 @@ This will save a classifier with the current settings to the project.
 
 Now you can return to the **Channel filter** and work through the steps for the other channels.
 
-#### Option #2. Machine learning
+### Option #2. Machine learning
 
 If you are entirely happy with the process above, you can skip this section.
 But sometimes thresholding a single measurement isn't sufficient to generate a usable classification - and taking a machine learning approach can help.
 This process is a bit more involved, but the effort is often worth it.
 
-##### Create training images
+#### Create training images
 
 It is very difficult and confusing to try to train multiple classifiers by annotating the same image.
 
@@ -217,7 +215,7 @@ It's useful to run cell detection **before** duplicating the images so the detec
 It is a good idea to turn the **Initialize Points annotation** option *on*... it might help us later.
 :::
 
-##### Train & save classifiers
+#### Train & save classifiers
 
 Now you should have multiple duplicate images in your project, with names derived from the original channel names.
 Because you ran this after cell detection (right?!), these duplicate images will bring across all the original cells.
@@ -286,7 +284,7 @@ I find three things helpful when training a single-channel classifier:
 You can then proceed to annotate cells, largely free of the distraction of what QuPath had actually previously detected.
 :::
 
-### Combine the classifiers
+## Combine the classifiers
 
 At this point, the hard work has been done.
 
@@ -313,7 +311,7 @@ Loading and combining multiple classifiers
 To avoid needing to repeatedly select more than one classifier under {menuselection}`Load object classifier`, you can create a single 'combined' classifier using {menuselection}`Classify --> Object classification --> Create composite classifier`.
 :::
 
-### Making sense of it all
+## Making sense of it all
 
 :::{figure} images/multiplex_all_classified.jpg
 :class: shadow-image full-image

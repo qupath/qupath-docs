@@ -17,9 +17,7 @@ Perhaps one of the earliest and most familiar applications of image analysis in 
 
 We can apply this to {doc}`OS-3.ndpi <../intro/acknowledgements>` to answer the question: what is the area of the brown region, and what proportion of the tissue does it occupy?
 
-## Step-by-step
-
-### Define the region of interest
+## Define the region of interest
 
 Absolute measurements of stained area are generally not very meaningful: they need to be normalized to something.
 
@@ -31,7 +29,7 @@ We can define the 'full' area of interest by drawing an annotation, or create on
 Tissue detected by thresholding
 :::
 
-### Threshold stained areas
+## Threshold stained areas
 
 QuPath makes it easy to digitally separate stains by color deconvolution, as described in {doc}`separating_stains`.
 *Create thresholder* allows you to use the stain separation along with thresholding.
@@ -45,7 +43,7 @@ The range of 'optical densities' after color deconvolution is typically (but not
 Preview of stained area detection
 :::
 
-### Viewing measurements
+## Viewing measurements
 
 Selecting the {guilabel}`Annotations` tab, you can see that QuPath is already generating live measurements of stained areas.
 These are computed automatically while you adjust thresholding parameters.
@@ -89,7 +87,7 @@ The areas QuPath normally reports for annotations is based upon *the coordinates
 Depending upon the resolution of the classification, the 'counting pixels' approach gives a rather lower-resolution approximation of the area that does not exactly match the geometry-based approach (but it should generally be close).
 :::
 
-### Generating results
+## Generating results
 
 The live measurements will disappear when you close you the thresholder dialog.
 At this point you *could* generate annotations from your thresholded brown regions to preserve the information -- but you typically do not have to.

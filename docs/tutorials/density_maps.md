@@ -23,9 +23,7 @@ Like most commands in QuPath, Density Maps are currently calculated only in 2D.
 And, like many other commands, you should create Density Maps within a {ref}`project <Projects>` if you want to reuse them later.
 :::
 
-## Step-by-step
-
-### Getting started with density maps
+## Getting started with density maps
 
 The starting point for creating a density map is usually to generate and classify a large number of detections on an image.
 Here, we use do this by following the steps in {doc}`cell_detection` and {doc}`cell_classification`.
@@ -54,12 +52,12 @@ You will probably need to toggle off the detections to see the density map more 
 You can do this by pressing the {kbd}`D` shortcut or {{ icon_detections }} toolbar button.
 :::
 
-### Customizing density maps
+## Customizing density maps
 
 The density map options dialog aims to guide you through the parameters you might want to adjust.
 Hovering your mouse over any option should provide some help text.
 
-#### Choosing objects to include
+### Choosing objects to include
 
 The {guilabel}`Object type` and {guilabel}`Main class` define which objects will contribute to the density map in some way.
 
@@ -83,7 +81,7 @@ The location of a detection contributing to the density map is based on its *ROI
 Density maps also support point annotations, in which case the individual points will be used.
 :::
 
-#### Defining densities
+### Defining densities
 
 The {guilabel}`Secondary class` makes it possible to select a *subset* of objects that are of particular interest.
 This is optional -- it can be left at *Any* if it isn't needed.
@@ -131,7 +129,7 @@ Often, the density of objects with a single classification is all you need.
 In that case, it doesn't really matter if you set that classification to be the *Main class*, *Secondary class* or both -- QuPath will try to untangle them to create a suitable map.
 :::
 
-#### Customizing the appearance
+### Customizing the appearance
 
 Expanding the {guilabel}`Customize appearance` panel provides various options to change the appearance of the density map, including the colormap.
 These are purely for visualization, and don't influence the behavior of the map for thresholding or hotspot detection.
@@ -162,11 +160,11 @@ Density map showing positive % tumor cells with gamma = 0
 :::
 ::::
 
-### Using density maps
+## Using density maps
 
 The buttons at the bottom of the pane enable density maps to move beyond a visualization tool into becoming useful for analysis.
 
-#### Save the density map
+### Save the density map
 
 Before going further, you *should* really save your density map.
 This requires that you're using a project (so there is a place to save the map).
@@ -180,7 +178,7 @@ However, you won't be able to call the density map commands later in a script.
 
 You can then use :{guilabel}`Analyze --> Density maps --> Load density map` to access the density map later and apply it to any image.
 
-#### Find hotspots
+### Find hotspots
 
 A common use of density maps in pathology is to find 'hotspots': regions with a high density of *something*, however 'density' is defined.
 
@@ -227,7 +225,7 @@ It also means that slightly shifting the hotspot (by a distance lower than the d
 In this way, the command really provides an efficient estimate of hotspots, rather than precise locations from an exhaustive search -- but any differences can be expected to be small.
 :::
 
-#### Threshold
+### Threshold
 
 Another use of a density map is to convert detections to annotations.
 
@@ -245,7 +243,7 @@ I imagine this could be worthwhile in assessing tumor infiltrating lymphcytes, a
 - **Delete existing similar annotations** -- Useful when running the command multiple times to refine parameters.
 - **Select new annotations** -- Useful when you want to *do* something immediately with the annotations that were created. This is most helpful within scripts.
 
-#### Export map
+### Export map
 
 Finally, density maps can be export for use elsewhere -- or sent to ImageJ for further processing.
 

@@ -50,9 +50,7 @@ In {doc}`cell_classification` we will look at improving on this by training QuPa
 
 % Ki67 image
 
-## Step-by-step
-
-### Annotate a region of interest
+## Annotate a region of interest
 
 Using some of the tools introduced in {doc}`../starting/annotating`, create an annotation around a region containing tumor cells that should be detected and counted.
 
@@ -66,7 +64,7 @@ Avoid drawing a very large region! It is better to start small, especially when 
 Ki67 image with annotation
 :::
 
-### Run *Positive cell detection*
+## Run *Positive cell detection*
 
 Run the {menuselection}`Analyze --> Cell detection --> Positive cell detection` command.
 This will bring up a dialog, where most of the options relate to how the cells are detected.
@@ -113,7 +111,7 @@ In this specific case, using *Optical density sum* rather than *Hematoxylin OD* 
 This is discussed in much more detail in the *IHC analysis* tutorial on YouTube, see {doc}`../starting/help` for links.
 :::
 
-### View cell-by-cell results
+## View cell-by-cell results
 
 It may be the case that 12.4% is already the final result that is required and the work is done.
 However, QuPath provides the opportunity to look in more detail.
@@ -143,7 +141,7 @@ A small proportion of negative values is generally tolerable because of the inhe
 However, it is important to note that when the stain estimates are improved then all cell detection should be repeated.
 :::
 
-### Analyze additional annotations
+## Analyze additional annotations
 
 If necessary, it is possible to then proceed to draw further annotations around areas of interest.
 These can be processed one-by-one by running *Positive cell detection* on an annotation when it is selected, or else they can be processed all together (in parallel).
@@ -164,7 +162,7 @@ The final result should look something like that below.
 Multiple annotations for Ki67 image
 :::
 
-### View results
+## View results
 
 Whenever you have multiple annotations, it can be helpful to generate a results table for these.
 This is similar to creating a results table for detections, but requires the {menuselection}`Measure --> Show annotation measurements` command instead.
