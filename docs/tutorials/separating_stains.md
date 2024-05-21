@@ -1,5 +1,18 @@
 # Separating stains
 
+:::{sidebar} YouTube content
+```{raw} html
+<div class="video-divert">
+<a href="https://www.youtube.com/watch?v=Oe0rfzLtTO0" target="blank"
+    aria-label="follow this link to learn more about separating stains in QuPath">
+    <img src="https://i.ytimg.com/vi/Oe0rfzLtTO0/maxresdefault.jpg">
+    <div class="overlay"><p>View on YouTube</p></div>
+</a>
+<a class="caption-link" href="https://www.youtube.com/watch?v=Oe0rfzLtTO0" target="blank">Separating stains in QuPath</a>
+</div>
+```
+:::
+
 QuPath supports images of different kinds.
 
 Some commands will work on almost any kind of image without complaint, while some need to know a bit more about the image.
@@ -24,17 +37,7 @@ The main distinction is that *Fluorescence* indicates that the structures of int
 
 The choice of image type also has an impact on how stains may be separated.
 
-## Video tutorial
-
-```{raw} html
-<div class="iframe-wrapper">
-<iframe src="https://www.youtube-nocookie.com/embed/Oe0rfzLtTO0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
-```
-
-## Step-by-step
-
-### Fluorescence images
+## Fluorescence images
 
 In the easier case of fluorescence images, QuPath assumes that each channel of the image corresponds to a different stain or marker of some kind.
 
@@ -60,7 +63,7 @@ A quick way to toggle a channel on or off is to simply press a number: {kbd}`1` 
 If you require spectral unmixing, this should be performed beforehand.
 :::
 
-### Brightfield images
+## Brightfield images
 
 Stain separation for brightfield is more difficult. <br />
 QuPath uses the *color deconvolution* method introduced by Ruifrok and Johnston:
@@ -109,7 +112,7 @@ Gabriel Landini has also provided a very useful ImageJ plugin to implement color
 This is **highly** recommended reading, particularly as a warning against over-interpreting measurements made from DAB staining.
 :::
 
-#### Setting stain vectors
+### Setting stain vectors
 
 The stain vectors are key to color deconvolution.
 They ought to give a normalized representation of the color of each 'pure' stain in the image, without regard for staining intensity.
@@ -135,7 +138,7 @@ Manually selecting a region to set a stain vector
 If you only have two stains, the third 'residual' stain is automatically generated.
 :::
 
-#### Estimating stain vectors
+### Estimating stain vectors
 
 When setting stain vectors manually, each drawn rectangle should be as 'pure' as possible -- any mixture of other stains will reduce the accuracy.
 This can be difficult (or impossible) to achieve exactly.
@@ -145,7 +148,7 @@ However, one may naturally wish to be as accurate as possible.
 
 In cases where there are *precisely two* stains involved, {menuselection}`Analyze --> Preprocessing --> Estimate stain vectors` can be used to help improve the stain separation.
 
-##### Find a representative region
+#### Find a representative region
 
 Before running *Estimate stain vectors*, you should first find a representative region containing relatively clear examples of the stains that you want - *along with an area of background, if possible*.
 Then draw a rectangle annotation around this region.
@@ -163,7 +166,7 @@ Since downsampling means averaging adjacent pixels - which dilutes the useful in
 In other words, you should try to choose a small region containing all the information you need.
 :::
 
-##### Run *Estimate stain vectors*
+#### Run *Estimate stain vectors*
 
 Now you are ready to actually run the {menuselection}`Analyze --> Preprocessing --> Estimate stain vectors` command.
 
@@ -178,7 +181,7 @@ If not, click {guilabel}`No`.
 Stain estimation background prompt
 :::
 
-##### Check scatterplots
+#### Check scatterplots
 
 QuPath now builds scatterplots to help view the relationships between the red, green and blue values for each pixel.
 
@@ -227,14 +230,14 @@ QuPath makes its decision based on the parameters given below the plots.
 Hovering the cursor over the parameters will show some more information about what they do, and you can try adjusting them and press {guilabel}`Auto` again to see their effect.
 :::
 
-##### Set a name for the updated stains
+#### Set a name for the updated stains
 
 If you are happy with the results, press {guilabel}`OK` and then enter a name to identify your new stain vectors when prompted.
 
 This name can help identify your stains later, e.g. within scripts.
 For this reason, is **strongly** recommended to add an informative (and unique) name at this point.
 
-##### View the results
+#### View the results
 
 Now, the dialog window will disappear and you will be returned to the original image.
 Typically this does not look different at all, however the stain vectors in the *Image* panel will be updated to reflect the changes.
@@ -284,7 +287,7 @@ Firstly, running the command at all only makes sense for brightfield images with
 Secondly, if you have a large image set containing multiple images acquired with similar staining, then you are likely to want to estimate the stain vectors only on one 'typical' image, and then use the same vectors across all images.
 :::
 
-#### Setting stains for a project
+### Setting stains for a project
 
 Whenever the image type and stain vectors are set, this is recorded in the {doc}`command history <../scripting/workflows>`.
 Using this, you can quickly generate a script that should contain two lines, e.g.

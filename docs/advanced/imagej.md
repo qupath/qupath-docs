@@ -1,10 +1,17 @@
 # ImageJ
 
+:::{sidebar} YouTube content
 ```{raw} html
-<div class="iframe-wrapper">
-<iframe src="https://www.youtube-nocookie.com/embed/xW2Ya205nvo?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div class="video-divert">
+<a href="https://youtu.be/xW2Ya205nvo?si=5hCfmsxUb859lb2E" target="blank"
+    aria-label="follow this link to learn more about QuPath for ImageJ users">
+    <img src="https://i.ytimg.com/vi/xW2Ya205nvo/hqdefault.jpg">
+    <div class="overlay"><p>View on YouTube</p></div>
+</a>
+<a class="caption-link" href="https://youtu.be/xW2Ya205nvo?si=5hCfmsxUb859lb2E" target="blank">QuPath for ImageJ users</a>
 </div>
 ```
+:::
 
 QuPath was created by someone who was (and is) a big fan of ImageJ.
 

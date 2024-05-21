@@ -25,9 +25,7 @@ In practice, superpixels are usually much more awkward to use than pixel classif
 If you can solve your analysis problem without superpixels, then you probably should.
 :::
 
-## Step-by-step
-
-### Generating superpixels
+## Generating superpixels
 
 QuPath has two superpixel-generating commands:
 
@@ -68,7 +66,7 @@ Keep in mind that a superpixel can only have *one* classification in the end -- 
 Therefore the (in)accuracy of superpixels will already put a limit on the accuracy of the final result.
 :::
 
-### Adding features
+## Adding features
 
 At first, your superpixels are 'empty': they have none of the features a classifier needs to do its job.
 
@@ -91,7 +89,7 @@ Adding intensity features to superpixel detections
 Visualizing measurements added to superpixels using *Add intensity features*
 :::
 
-### Training a classifier
+## Training a classifier
 
 Having created superpixels and given them measurements as features, you can train an object classifier using {doc}`exactly the same process as for cells <cell_classification>`.
 
@@ -101,7 +99,7 @@ Having created superpixels and given them measurements as features, you can trai
 Classified superpixels
 :::
 
-### Merging tiles
+## Merging tiles
 
 You can generate some measurements from superpixels just as they are -- but be aware that automatically-generated object measurements like *Positive %* will be based upon *counts*, not their areas.
 This is one reason why the pixel classifier is usually preferable.

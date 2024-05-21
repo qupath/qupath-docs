@@ -16,9 +16,7 @@ As a rule of thumb, if you have:
 - **multiple images**: use the *Measurement Exporter* or a script
 :::
 
-## Step-by-step
-
-### Via the measurement table
+## Via the measurement table
 
 The measurement table allows you to export measurements from a single image, currently opened in the viewer.
 It is therefore **not** recommended if you wish to export measurements for multiple images or across a whole project.
@@ -41,7 +39,7 @@ This method creates a table with different columns, which all depend on the obje
 If your analysis involves combining measurements from different images, it is recommended to use the Measurement Exporter, detailed in the next subsection.
 :::
 
-### Via the Measurement Exporter
+## Via the Measurement Exporter
 
 The cleanest way to export different types of measurements in QuPath across multiple images is with the **Measurement Exporter**.
 
@@ -76,7 +74,7 @@ If you have an open image in an active viewer, be sure to always save your data 
 A small red-colored warning will appear to remind you.
 :::
 
-### Via scripting
+## Via scripting
 
 In cases where you would want to automate your analysis and exporting process, the Measurement Exporter can be easily used with scripting.
 To do so, you can create a `MeasurementExporter`, customize it the way you want it, then call `exportMeasurements(outputFile)` to start the export process.

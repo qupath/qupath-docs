@@ -1,5 +1,19 @@
 (tutorials-projects)=
+
 # Projects
+
+:::{sidebar} YouTube content
+```{raw} html
+<div class="video-divert">
+<a href="https://www.youtube.com/watch?v=kCEp89ypmAY" target="blank"
+    aria-label="follow this link to learn more about projects in QuPath">
+    <img src="https://i.ytimg.com/vi/kCEp89ypmAY/maxresdefault.jpg">
+    <div class="overlay"><p>View on YouTube</p></div>
+</a>
+<a class="caption-link" href="https://www.youtube.com/watch?v=kCEp89ypmAY" target="blank">Projects in QuPath</a>
+</div>
+```
+:::
 
 QuPaths allows you to view and work with single images.
 However, if you will be saving and reloading data associated with multiple images it is *highly* recommended to use a **Project**.
@@ -17,19 +31,9 @@ Using QuPath without creating a project should be the exception rather than the 
 Some commands and scripts *only* work within projects.
 :::
 
-## Video tutorial
+## Create a project
 
-```{raw} html
-<div class="iframe-wrapper">
-<iframe src="https://www.youtube-nocookie.com/embed/kCEp89ypmAY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
-```
-
-## Step-by-step
-
-### Create a project
-
-#### Choose a folder
+### Choose a folder
 
 The first step of creating a project is to create an empty folder somewhere on your computer.
 You can then set this to be the project directory in one of two ways:
@@ -44,7 +48,7 @@ QuPath will assume it's allowed to do whatever you like within the folder you gi
 For this reason, it's best to leave the management of that folder entirely up to QuPath and to avoid adding, removing or renaming files manually within it.
 :::
 
-#### Add images
+### Add images
 
 The easiest way to add images to a project is usually to drag them on top of QuPath.
 
@@ -73,7 +77,7 @@ You can also merge projects using the `Add images` dialog.
 Simply add the *project.qpproj* file from another compatible QuPath project to bring all images into the current project.
 :::
 
-#### Remove images
+### Remove images
 
 You can remove images by right-clicking one or more entries under the *Project* tab and choosing {menuselection}`Remove image(s)`.
 
@@ -84,9 +88,9 @@ If you choose not to, these files will linger around - you won't be able to acce
 On platforms that support it, QuPath will try to remove data by sending it to the recycle bin rather than permanently deleting it immediately.
 :::
 
-### Working with projects
+## Working with projects
 
-#### Reopen a project
+### Reopen a project
 
 There are four ways to reopen an existing project:
 
@@ -95,7 +99,7 @@ There are four ways to reopen an existing project:
 - Use {menuselection}`File --> Project... --> Open project`
 - Use {menuselection}`File --> Recent projects... --> [your project]`
 
-#### Fix paths
+### Fix paths
 
 It is important to recognize that your project folder does **not** (usually) contain your images.
 Rather, it contains QuPath's associated data files only - and the paths to where your images are located.
