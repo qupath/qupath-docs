@@ -193,7 +193,7 @@ Some parameters are intuitive, but there are some important-but-not-obvious subt
 
 - **Num hotspots** -- This defines the *maximum* number of hotspots within the selected region (or full image). If the region is too small, a smaller number of hotspots may be returned.
 - **Min object count** -- This can be used to exclude areas containing few objects from consideration, to avoid generating spurious hotspots that are really just due to outliers.
-- **Density peaks only** -- In theory, one might expect a hotspot to be a 'peak' in the density map, where the density is higher than in surrounding pixels. In practice, the mighest density within any region might not be a peak (because the peak is outside the region). On the other hand, removing the peak criterion could result in multiple hotspots being generated within a single large, high-density region. This option allows you to toggle whether a peak criterion is used or not.
+- **Density peaks only** -- In theory, one might expect a hotspot to be a 'peak' in the density map, where the density is higher than in surrounding pixels. In practice, the highest density within any region might not be a peak (because the peak is outside the region). On the other hand, removing the peak criterion could result in multiple hotspots being generated within a single large, high-density region. This option allows you to toggle whether a peak criterion is used or not.
 - **Delete existing hotspots** -- This is handy when running the command multiple times, such as when tweaking parameters. It removes only hotspots with the same classification as the new hotspots being created.
 
 :::{figure} images/density_map_hotspots.jpg
