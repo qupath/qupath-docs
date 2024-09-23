@@ -126,7 +126,7 @@ In addition to models downloaded from the WSInfer zoo, you may also use your own
 Inside the local models directory, every model should be contained in a subdirectory. The subdirectory name becomes the model name in the model selection menu.
 Inside it, there will be:
 
-- the model in Torchscript format, with the name `torchscript_model.pt`;
+- the model in Torchscript format, with the name `torchscript_model.pt`, and
 - a `config.json` file, as explained [here](https://wsinfer.readthedocs.io/en/latest/user_guide.html#use-your-own-model). An example of config file is shown [here](https://github.com/SBU-BMI/wsinfer/issues/221).
 
 Thus, the structure of the models directory could be as follows:
