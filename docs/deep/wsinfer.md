@@ -119,9 +119,9 @@ It won't automatically find any existing PyTorch you might have installed: Deep 
 If you have a compatible GPU, and want CUDA support, you'll need to ensure you have an appropriate CUDA installed *before* PyTorch is downloaded.
 :::
 
-## Use your own models
+## Using your own models
 
-In addition to models downloaded from the WSInfer zoo, you may also use your own models by putting them in a specific local directory called `user` or `local`. This in turn should be put into the model directory (the path can be seen in the WSI dialog), as sibling of the `kaczmarj` directory that contains the downloaded models.
+In addition to models downloaded from the WSInfer zoo, you may also use your own models by putting them in a specific local directory called `user` or `local`. This in turn should be put into the model directory (the path can be seen in the WSI dialog) as a sibling of the `kaczmarj` directory that contains the downloaded models.
 
 Inside the local models directory, every model should be contained in a subdirectory. The subdirectory name becomes the model name in the model selection menu.
 Inside it, there will be:
