@@ -6,7 +6,7 @@ Welcome to the expanded release notes for QuPath v0.6.0. This version was releas
 2. [Enhancements](../reference/release_notes.html#enhancements) - Additions to make existing features better
 3. [Experimental features](../reference/release_notes.html#experimental-featuress) -  New features included for testing and feedback. They may change or be removed in future versions.
 4. [Bugs fixed](../reference/release_notes.html#bug-fixed) - Previous problems that have been resolved
-5. [Scripting changes](../reference/release_notes.html#api-changess) - Changes related to the API and anything script related
+5. [Scripting and API changes](../reference/release_notes.html#api-changess) - Changes related to the API and anything script related. Useful notes for script writers and extension developers!
 6. [Dependency updates](../reference/release_notes.html#dependency-updates) - External libraries and package updates
 
 ## 🚀 Major features
@@ -16,13 +16,13 @@ Welcome to the expanded release notes for QuPath v0.6.0. This version was releas
 In this new version we have added support for the exciting new segmentation extension [InstanSeg](https://github.com/qupath/qupath-extension-instanseg). This extension provides speedy and accurate segmentation of cells for both brightfield and fluorescent images. Learn more about InstanSeg and how to use it in QuPath [here](../deep/instanseg.md).
 
 :::{figure} https://global.discourse-cdn.com/business4/uploads/imagej/optimized/3X/0/0/0047d91a99114d47e9a22e68c04eacd9e1cd24a5_2_690x392.jpeg
-:class: shadow-image
+:class: shadow-image full-image
 
 InstanSeg segmentation of haematoxylin and dab nuclei
 :::
 
 :::{figure} https://global.discourse-cdn.com/business4/uploads/imagej/optimized/3X/a/9/a970374cfd08ec4708364ca5b42807ceaaa24133_2_690x392.jpeg
-:class: shadow-image
+:class: shadow-image full-image
 
 InstanSeg segmentation of nuclei in a fluorescent image
 :::
@@ -42,8 +42,8 @@ Its now possible to open and work with OME-Zarr images in QuPath. This is a new 
 
 Previously when displaying annotation names the label would be displayed in the center of the annotation. This could be problematic when the annotation was small or overlapped with another. Now the label is displayed consistently at the top of the annotation. This makes it easier to see which label relates to which annotation as seen below.
 
-:::{figure} : https://github.com/user-attachments/assets/f180d900-f6de-4230-a7b7-fe054b70108e
-:class: shadow-image
+:::{figure} https://github.com/user-attachments/assets/f180d900-f6de-4230-a7b7-fe054b70108e
+:class: shadow-image full-image
 
 Annotation names displayed at the top of the annotation
 :::
@@ -100,23 +100,19 @@ Due to some troubles with opening remote OME-Zarr images, bioformats default is 
 
 The foundations for stain normalization and background subtraction have been startd. Currently they are only accessible via the scripting and not yet available to interface only users (but watch this sapce!).
 
-***TODO***: Fix in-line example images
-
-![Image 1](https://github.com/user-attachments/assets/84b18c6c-260e-47d7-acf2-9ee97d9c3c76) ![Image 2](https://github.com/user-attachments/assets/ecd1d6a7-9b49-4a93-b635-2298d43abf09) ![Image 3](https://github.com/user-attachments/assets/12d7060b-35bc-40ca-89a3-f837c5417dbf)
-
-```{image} {https://private-user-images.githubusercontent.com/4690904/345100501-84b18c6c-260e-47d7-acf2-9ee97d9c3c76.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjgyNDkxNTYsIm5iZiI6MTcyODI0ODg1NiwicGF0aCI6Ii80NjkwOTA0LzM0NTEwMDUwMS04NGIxOGM2Yy0yNjBlLTQ3ZDctYWNmMi05ZWU5N2Q5YzNjNzYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MTAwNiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDEwMDZUMjEwNzM2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YzYzNTM3MDAxYzM0MTNjMmE0YmZlNWRkYTA1NWNmZWVjZDMyZTA3YzhjZjY5OTI0ZDhhYjU1MTQ3OWQ3N2NiZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.l18GWWquTouo7lS4umx9m6VQLSdZ1SfUQ2K-ei6IL_8}
-:class: mini-image
-:width: 30%
+```{image} https://github.com/user-attachments/assets/84b18c6c-260e-47d7-acf2-9ee97d9c3c76
+:width: 48%
 ```
 
-```{image} https://private-user-images.githubusercontent.com/4690904/345100588-ecd1d6a7-9b49-4a93-b635-2298d43abf09.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjgyNDkxNTYsIm5iZiI6MTcyODI0ODg1NiwicGF0aCI6Ii80NjkwOTA0LzM0NTEwMDU4OC1lY2QxZDZhNy05YjQ5LTRhOTMtYjYzNS0yMjk4ZDQzYWJmMDkucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MTAwNiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDEwMDZUMjEwNzM2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MDlmNDIxNDUxYjEzMTQ4N2Y0MmQ3M2QwOTZmMDM3NjhmNDljNDkwMzgyZDlmNzJjYWZhYjlkNzBmZjFjYjk1NiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.CORhm0Kv85fjGiqBJMM411WXQDtPZzRkbTVUUBTylLQ
-:class: mini-image
-:width: 30%
+```{image} https://github.com/user-attachments/assets/ecd1d6a7-9b49-4a93-b635-2298d43abf09
+:width: 48%
 ```
-```{image} https://private-user-images.githubusercontent.com/4690904/345103010-12d7060b-35bc-40ca-89a3-f837c5417dbf.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjgyNDkxNTYsIm5iZiI6MTcyODI0ODg1NiwicGF0aCI6Ii80NjkwOTA0LzM0NTEwMzAxMC0xMmQ3MDYwYi0zNWJjLTQwY2EtODlhMy1mODM3YzU0MTdkYmYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MTAwNiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDEwMDZUMjEwNzM2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ODJlNmQ5ZWYzNzAxNWUzY2NhOGExNTE1MmM2ODg3NmRiMTNlYmE5NGQ4NjM1MjY4ODM4YTU0ODU4NzRmZTE0YiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.wzlzrABeXctUMPYKgbp68LH_XUl-G4xzLs7jv5PsPH8
-:class: mini-image
-:width: 30%
-```
+
+:::{Figure} https://github.com/user-attachments/assets/12d7060b-35bc-40ca-89a3-f837c5417dbf
+:class: mid-image
+
+Top Left: Original image, Top Right: Image after background subtraction, Bottom Middle: Image after stain normalization and background subtraction.
+:::
 
 ## 🐛 Bugs fixed
 
