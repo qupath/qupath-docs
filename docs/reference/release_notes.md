@@ -1,13 +1,13 @@
 # Release Notes v0.6.0
 
-Welcome to the expanded release notes for QuPath v0.6.0. This version was released on 2024-**-**. The hopes of this document are to provide a more detailed overview of the changes in this version than the original github [release notes](https://github.com/qupath/qupath/blob/main/CHANGELOG.md).
+Welcome to the expanded release notes for QuPath v0.6.0. This version was released on 2024-**-** ***TODO***. The hopes of this document are to provide a more detailed overview of the changes in this version than the original github [release notes](https://github.com/qupath/qupath/blob/main/CHANGELOG.md).
 
-1. [Major features](../reference/release_notes.html#major-features) - Spotlight changes
-2. [Enhancements](../reference/release_notes.html#enhancements) - Additions to make existing features better
-3. [Experimental features](../reference/release_notes.html#experimental-featuress) -  New features included for testing and feedback. They may change or be removed in future versions.
-4. [Bugs fixed](../reference/release_notes.html#bug-fixed) - Previous problems that have been resolved
-5. [Scripting and API changes](../reference/release_notes.html#api-changess) - Changes related to the API and anything script related. Useful notes for script writers and extension developers!
-6. [Dependency updates](../reference/release_notes.html#dependency-updates) - External libraries and package updates
+1. [Major features](#major-features) - Spotlight changes
+2. [Enhancements](#enhancements) - Additions to make existing features better
+3. [Experimental features](#experimental-features) -  New features included for testing and feedback. They may change or be removed in future versions.
+4. [Bugs fixed](#bugs-fixed) - Previous problems that have been resolved
+5. [Scripting and API changes](#scripting-and-api-changes) - Changes related to the API and anything script related. Useful notes for script writers and extension developers!
+6. [Dependency updates](#dependency-updates) - External libraries and package updates
 
 ## 🚀 Major features
 
@@ -111,7 +111,7 @@ The foundations for stain normalization and background subtraction have been sta
 :::{Figure} https://github.com/user-attachments/assets/12d7060b-35bc-40ca-89a3-f837c5417dbf
 :class: mid-image
 
-Top Left: Original image, Top Right: Image after background subtraction, Bottom Middle: Image after stain normalization and background subtraction.
+Top Left: Original image, Top Right: Image after background subtraction, Bottom: Image after stain normalization and background subtraction.
 :::
 
 ## 🐛 Bugs fixed
