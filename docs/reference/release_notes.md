@@ -1,6 +1,6 @@
 # Release Notes v0.6.0
 
-Welcome to the expanded release notes for QuPath v0.6.0. This version was released on 2024-**-** ***TODO***. The hopes of this document are to provide a more detailed overview of the changes in this version than the original github [release notes](https://github.com/qupath/qupath/blob/main/CHANGELOG.md).
+Welcome to the expanded release notes for QuPath v0.6.0. This version was released on 2024- ***TODO***. The hopes of this document are to provide a more detailed overview of the changes in this version than the original github [release notes](https://github.com/qupath/qupath/blob/main/CHANGELOG.md).
 
 1. [Major features](#major-features) - Spotlight changes
 2. [Enhancements](#enhancements) - Additions to make existing features better
@@ -26,6 +26,8 @@ InstanSeg segmentation of haematoxylin and dab nuclei
 
 InstanSeg segmentation of nuclei in a fluorescent image
 :::
+
+***TODO*** Update images once InstanSeg page is complete (since images have been compressed)
 
 ### OME-Zarr images are now supported
 
@@ -64,17 +66,17 @@ Lastly, the selection mode can now be quickly accessed by using the 'S' key when
 
 When viewing histograms in QuPath, the scaling can now be using log$_{10}$ rather than natural log. Measurement tables for annotations and detections are both now able to utilize this feature.
 
-***TODO***: Confirm replication steps and insert image of histogram
+***TODO***: Add images of log scaling once general doc update is complete
 
 ### Classy TMAs
 
 TMA cores now by default are assigned a specific class when created, keeping them further distinguished from other annotations types. The default color for this class is now lighter to make it easier to see for both brightfield and fluorescent images. If a core is missing from the grid then it will be displayed the same color as the other cores but with more transparency.
 
-***TODO***: Add image of TMA updated cores once image confirmed
+***TODO***: Add image of TMA once TMA page is complete
 
 ### Classification color warnings
 
-Changing the color of your annotations can get tricky when your needing more colors than are in the color pallete. Now when you slelct a color very similar to one already used, QuPath will warn you and suggest a new color to use.
+Changing the color of your annotations can get tricky when your needing more colors than are in the color palette. Now when you select a color very similar to one already used, QuPath will warn you and suggest a new color to use.
 
 ***TODO***: Add image of color warning and check full functionality
 
@@ -88,9 +90,9 @@ Previously an RGB fluorescence image would be stuck with the default "red", "gre
 
 ### Symbolic Links Support
 
-Symlinks (short for symbolic links) are special types of files in an operating system that act as references or pointers to other files or directories. They are often used to create shortcuts or aliases to another file or folder without duplicating the actual data. QuPath now supports SymLinks for images giving users more flexibility with image organisation.
+Symlinks (short for symbolic links) are special types of files in an operating system that act as references or pointers to other files or directories. They are often used to create shortcuts or aliases to another file or folder without duplicating the actual data. QuPath now supports SymLinks for images giving users more flexibility with image organization.
 
-### Bio-Formats defualt preferences
+### Bio-Formats default preferences
 
 Due to some troubles with opening remote OME-Zarr images, bioformats default is set to "local files only" within preferences.
 
@@ -98,7 +100,7 @@ Due to some troubles with opening remote OME-Zarr images, bioformats default is 
 
 ### Stain normalization and background subtraction
 
-The foundations for stain normalization and background subtraction have been startd. Currently they are only accessible via the scripting and not yet available to interface only users (but watch this sapce!).
+The foundations for stain normalization and background subtraction have been started. Currently they are only accessible via the scripting and not yet available to interface only users (but watch this space!).
 
 ```{image} https://github.com/user-attachments/assets/84b18c6c-260e-47d7-acf2-9ee97d9c3c76
 :width: 48%
@@ -118,15 +120,16 @@ Top Left: Original image, Top Right: Image after background subtraction, Bottom:
 
 ### Script saving on close
 
-Users will be prompted to save unsaved changes to scripts when closing QuPath, even when the scripting editor is minimised so your precious code is safe.
+Users will be prompted to save unsaved changes to scripts when closing QuPath, even when the scripting editor is minimized so your precious code is safe.
 
-###
+### OME.tiff exporting 8 bit
+When using the Tile exporter to export an OME.tiff image, the image previously went through a RGB check that resulted in the images wrongly being converted to 8-bit. It now exports in the correct bit depth of the original image.
 
 ## 👩‍💻 Scripting and API changes
 
 ### Faster running scripts for projects
 
-When images arented needed in a script (for example exporting measurements) it will run faster. This is due to the image pixels are no longer fetched regardless if they are used or not.
+When images are not needed in a script (for example exporting measurements) it will run faster. This is due to the image pixels are no longer fetched regardless if they are used or not.
 
 ## 📚 Dependency updates
 
