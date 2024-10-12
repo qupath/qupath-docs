@@ -119,7 +119,6 @@ It won't automatically find any existing PyTorch you might have installed: Deep 
 If you have a compatible GPU, and want CUDA support, you'll need to ensure you have an appropriate CUDA installed *before* PyTorch is downloaded.
 :::
 
-
 ## Scripting
 
 The QuPath WSInfer extension is scriptable, which makes it much easier to apply across multiple images.
