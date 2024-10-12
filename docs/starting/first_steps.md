@@ -4,15 +4,29 @@
 The following tutorial will guide you through your first steps with QuPath, and introduce you to the main features, buttons and concepts you need to get started.
 You will see how to:
 
-- QuPath Welcome window
-- Open a whole slide image
-- View image properties
-- Navigate around images
-- Manually annotate regions
-- Detect cells
-- View measurements
-- Export results
-- Save & reload your data
+- [First steps](#first-steps)
+  - [Starting out](#starting-out)
+    - [Running QuPath](#running-qupath)
+    - [Opening an image](#opening-an-image)
+    - [Setting the image type](#setting-the-image-type)
+    - [Seeing the image properties](#seeing-the-image-properties)
+    - [Setting the pixel size](#setting-the-pixel-size)
+  - [Looking around](#looking-around)
+    - [Zooming in \& out](#zooming-in--out)
+    - [Panning](#panning)
+  - [Introducing objects](#introducing-objects)
+    - [Drawing annotations](#drawing-annotations)
+    - [Identifying selections](#identifying-selections)
+    - [Changing colors \& properties](#changing-colors--properties)
+    - [Viewing measurements](#viewing-measurements)
+    - [Removing annotations](#removing-annotations)
+    - [Detecting cells](#detecting-cells)
+    - [Showing \& hiding](#showing--hiding)
+    - [Creating measurement tables](#creating-measurement-tables)
+  - [Finishing up](#finishing-up)
+    - [Saving data](#saving-data)
+    - [Reopening data](#reopening-data)
+  - [Recap \& outlook](#recap--outlook)
 
 ## Starting out
 
@@ -21,9 +35,9 @@ If you do not have a whole slide image handy, see {doc}`here <../intro/acknowled
 :::
 
 ### Running QuPath
-Running QuPath for the first time will present you with the welcome window. This contains useful links should you have an issue or want to learn more. 
+Running QuPath for the first time will present you with the welcome window. This contains useful links should you have an issue or want to learn more.
 
-For those that like working on software in dark mode (or want to use their own creative themes) it's possible to change that here. Additionally updates to QuPath or extensions can be checked for ensuring you have access to the latest features. 
+For those that like working on software in dark mode (or want to use their own creative themes) it's possible to change that here. Additionally updates to QuPath or extensions can be checked for ensuring you have access to the latest features.
 
 :::{figure} images/steps_welcome.jpg
 :class: shadow-image full-image
@@ -84,10 +98,16 @@ Image tab showing the image properties in QuPath
 
 ### Setting the pixel size
 
-The pixel size is used extensively by QuPath. This is why it is good practice to make sure it's correct.
+The pixel size is used extensively by QuPath. This is why it is good practice to make sure it's correct or any measurements could be wrong.
 
-If stored in the image file, QuPath should automatically fetch the pixel size and display it under the **Image** tab ('Pixel width' & 'Pixel height').
+If stored in the image file, QuPath should automatically fetch the pixel size and display it under the **Image** tab as seen in the figure above ('Pixel width' & 'Pixel height').
 If not, you can set the pixel size manually by double-clicking on either row and type the correct values.
+
+:::{figure} images/steps_image_tab.jpg
+:class: shadow-image full-image
+
+Image tab showing the image properties in QuPath
+:::
 
 :::{Tip}
 You can also set the pixel size based on a specific region of your image.

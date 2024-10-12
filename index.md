@@ -3,17 +3,11 @@
 :width: 75%
 :::
 
-:::{sidebar} New release online!
-**QuPath {{ env.config.release }}** is available at [https://qupath.github.io](https://qupath.github.io).
-
-See what's new in the [changelog](https://github.com/qupath/qupath/blob/main/CHANGELOG.md) - or check out the [I2K YouTube video](https://www.youtube.com/watch?v=tV-BYEHVCw8).
-:::
-
 # Welcome to QuPath!
 
 This page hosts the documentation for **QuPath {{ env.config.version }}.x**.
 
-The latest release is [**QuPath {{ env.config.release }}**](https://github.com/qupath/qupath/releases).
+The latest release is [**QuPath {{ env.config.release }}**](https://github.com/qupath/qupath/releases). To read up on the latest changes, check out the [release notes](https://github.com/qupath/qupath/blob/main/CHANGELOG.md)
 
 ## Quick links
 
