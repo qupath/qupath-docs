@@ -133,12 +133,20 @@ Consequently, although OpenSlide and Bio-Formats support many TIFF files, it is 
 Perhaps the most common reason for this is that the file does not contain pyramidal layers, or these layers cannot be automatically recognized.
 This is one reason why well-supported, open formats should generally be preferred (e.g. OME-TIFF).
 
+#### OME-Zarr
+QuPath version 0.6.0 introduced support for reading and writing [OME-Zarr](https://link.springer.com/article/10.1007/s00418-023-02209-1) images. This file type was developed by the OME team in collaboration with many individuals and institutes to address the need for a scalable and cloud-friendly large image format.
+
+***TODO*** Add more details about OME-Zarr by some that knows more about it. May need to move or add in additional section within the OMERO section...?
+
 ## Open URI
 
 QuPath is not limited to working with image files stored locally.
 
 {menuselection}`File --> Open URI...` provides a way to access some images stored elsewhere, *however* extensions are needed to support different kinds of image server.
 A few such extensions exist already, hopefully more will be created in the future by QuPath users.
+
+## SymLink
+Similar to Open URI, QuPath can also open images using a symlink to a file or directory. Symlinks (short for symbolic links) are special types of files in an operating system that act as references or pointers to other files or directories. They can be used to create shortcuts or aliases to another image without duplicating the actual data.
 
 ### OMERO
 
@@ -164,6 +172,8 @@ It is already possible to add URLs in a variety of formats that OMERO can provid
 
 This makes it possible to import multiple images -- even including some annotations -- to a QuPath {doc}`project <../tutorials/projects>` in one go.
 :::
+
+***TODO*** Confirm these details are all still relevant with Leos new Omero extension
 
 ### Community extensions
 

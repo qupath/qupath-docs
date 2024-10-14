@@ -71,15 +71,6 @@ Whenever you click on the image, you will add points to whichever entry in the l
 Continuing counting
 :::
 
-## Saving & exporting
-
-Once you're finished, you may only need to read off the number of points from the list.
-If you {doc}`save the image data as normal <first_steps>`, the points will be included in the `.qpdata` file and can be recovered that way if necessary.
-This is the preferred method of saving if you want to continue working on the data with QuPath.
-
-However, you can also select the *Save points* option in the counting panel if you would like to export the coordinates of all your points for import elsewhere.
-This will save the coordinates in a simple tab-delimited format that may be useful to get the data into another software application.
-
 :::{TIP}
 Manual counting is generally not very pleasurable - although it can be necessary when considerable human expertise is needed.
 The following tips and hidden features may help (they assume that you have selected the {{ icon_points }} tool).
@@ -88,6 +79,15 @@ The following tips and hidden features may help (they assume that you have selec
 - If you click on an existing point, within the same collection of points currently selected in the counting panel list, while holding down the {kbd}`Alt` key, the point will be deleted.
 - If you click on an existing point, within the *a different* collection of points to the one currently selected in the counting panel list, while holding down the {kbd}`Alt` key, *the collection of points containing the one that was clicked will become selected*. This gives a fast way to switch between counting e.g. positive and negative cells, without needing to go back to the list - just *Alt + click* on the nearest cell belonging to the collection you want to switch to.
 :::
+
+## Saving & exporting
+
+Once you're finished, you may only need to read off the number of points from the list.
+If you {doc}`save the image data as normal <first_steps>`, the points will be included in the `.qpdata` file and can be recovered that way if necessary.
+This is the preferred method of saving if you want to continue working on the data with QuPath.
+
+However, you can also select the *Save points* option in the counting panel if you would like to export the coordinates of all your points for import elsewhere.
+This will save the coordinates in a simple tab-delimited format that may be useful to get the data into another software application.
 
 ::::{tip}
 {guilabel}`Show point convex hull` can be used to check for errant clicks.

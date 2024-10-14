@@ -105,6 +105,10 @@ The *Nucleus/Cell area ratio* incorporates both of these characteristics in a si
 Measurement map for Nucleus/Cell area ratio
 :::
 
+:::{tip}
+Need the color bar out of QuPath as a reference? It can be copied as an image by simply right clicking on it and selecting {guilabel}`copy`.
+:::
+
 ## Calculate additional features
 
 Despite the usefulness of the *Nucleus/Cell area ratio* for identifying tumor cells, on its own it is not enough.
@@ -273,3 +277,7 @@ Ki67 analysis results with cell classification
 Provided that you saved your classifier, you can apply it to a similar image in the future. To do so, you can run the cell detection and feature calculations as before, and then apply your pre-trained classifier with {menuselection}`Classifier --> Load object classifier`.
 
 Or see also the {doc}`../scripting/index` section for more information about how to batch process larger numbers of images in a reproducible way.
+
+***TODO*** Update cell classification screenshots as the UI is too small to read and window doesnt need to be as wide
+
+***TODO*** Cell measurement histogram needs updated and guide to viewing possibilities

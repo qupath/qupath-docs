@@ -54,6 +54,8 @@ Good cell segmentation is really *essential* for accurate multiplexed analysis.
 New and improved methods of segmenting cells in QuPath are being actively explored...
 :::
 
+***TODO*** link to instanseg!
+
 ### Set up the channel names
 
 The *channel names* are particularly important for multiplexed analysis, since these typically correspond to the markers of interest.
@@ -350,3 +352,11 @@ def parts = PathClassTools.splitNames(pathObject.getPathClass())
 println(parts)
 ```
 :::
+
+***TODO*** LUCA image usage. Confirm if we are keeping it
+
+***TODO*** update to include the option to save viewing parameters!
+
+***TODO*** Images of B&C out of date, very much need updated
+
+***TODO*** GRID VIEW MENTION!

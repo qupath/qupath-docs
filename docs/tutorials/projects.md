@@ -55,7 +55,7 @@ The easiest way to add images to a project is usually to drag them on top of QuP
 This opens a dialog box, which shows a list of images to import and provides some options to customize how it will happen.
 
 :::{figure} images/project_import.png
-:class: shadow-image mid-image
+:class: shadow-image small-image
 
 Dragging images on top of QuPath for project import
 :::
@@ -66,6 +66,9 @@ The options are:
 > - **Image type:** Setting the image type is often the first thing you should do when opening an image in QuPath. This can save you the effort by setting the type on import.
 > - **Rotation:** Specify that the image should be rotated in an increment of 90 degrees. The file itself will not be changed, but QuPath will treat the image as if it has the new orientation.
 > - **Auto-generate pyramids:** If selected, QuPath will dynamically generate a pyramid for large-but-not-too-large images (e.g. 10,000 x 10,000 pixels) that don't already have multiple stored resolutions. These images are small enough to fit in memory, but big enough to be unwieldy. For most whole slide images (which are already pyramidal) this has no effect.
+> - **Auto-generate pyramids:** For large single resolution images, QuPath can generate pyramids to handle the images data more efficiently.
+> - **Import Objects:** If selected then any objects (e.g. annotations) saved in the image file will be imported into the project. This is useful if you have already annotated the image in another software and want to bring these annotations into QuPath.
+> - **Show image selector:** The image selector window adds an additional step to importing which allows you to select which of the images being imported to accept or not import. This is particularly useful whenever the same URI contains multiple images. When off, this will result in all images being imported.
 
 :::{tip}
 You can also use {menuselection}`File --> Project... --> Add images` to add multiple images to a project.
@@ -86,6 +89,32 @@ If you choose not to, these files will linger around - you won't be able to acce
 
 :::{note}
 On platforms that support it, QuPath will try to remove data by sending it to the recycle bin rather than permanently deleting it immediately.
+:::
+
+:::{figure} images/project_remove_image.png
+:class: shadow-image small-image
+
+Removing images from a project
+:::
+
+### Sorting images
+Within the project it is possible to sort images by name, ID URI (path to the image file) or none (which is the order of import). To see the options, right click on the project pane and select {kbd}`Sort by...`. 
+
+It's also possible to add new sortable parameters by adding metadata to the images. This can be done by right clicking on the image and selecting {menuselection}`Add metadata`.
+
+:::{figure} images/project_metadata.png
+:class: shadow-image mini-image
+
+Adding metadata to images
+:::
+
+### Alternative project viewing
+Image thumbnails can be increased in size by right clicking and selecting {kbd}`Thumbnail size` and choosing a larger size or hide them for blinded studies. Additionally the names of the images can be masked by right clicking and selecting {kbd}`Mask image names`. To undo this, right click again and select {kbd}`Mask image names`.
+
+:::{figure} images/project_masking.png
+:class: shadow-image small-image
+
+A project with hidden icons and masked names
 :::
 
 ## Working with projects

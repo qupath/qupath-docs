@@ -18,6 +18,7 @@ We don't yet have a central list for extensions.
 The main places to find out about them are:
 
 * These docs --- some examples include:
+  * [Instanseg](instaseg-extension)
   * [StarDist](stardist-extension)
   * [WSInfer](wsinfer-extension)
   * [OMERO](omero-extension)
@@ -62,6 +63,8 @@ The extension itself is a (usually small) file with that ends with `.jar`, often
 If you drag this onto QuPath's main window, QuPath should copy it to your QuPath user directory.
 
 Often the extension will be ready to use immediately, but it's generally a good idea to restart QuPath in case it needs to do any extra work at startup.
+
+***TODO*** Update extension UI and functionality (it isnt behaving as expected, not sure if its because the extensions dont work in 0.6 or the manager isnt reporting correctly)
 
 ## Removing extensions
 

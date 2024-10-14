@@ -13,7 +13,7 @@
 ```
 :::
 
-Density maps were introduced in QuPath v0.3.0. They were originally created to help find 'hotspots' for specific applications in pathology (e.g. tumor budding, Ki67 scoring).
+Density maps were originally created to help find 'hotspots' for specific applications in pathology (e.g. tumor budding, Ki67 scoring).
 However, their implementation in QuPath is designed to be much more flexible than that.
 
 In some cases, density maps can even be a replacement for {doc}`pixel_classification` or {doc}`superpixels`.
@@ -251,3 +251,5 @@ Note that the **Color overlay** option includes *only* the density map, and not 
 This is useful if you want a translucent PNG for superimposing elsewhere.
 
 If you want to export the image as it appears in the viewer, use instead {menuselection}`File --> Export images... --> Rendered RGB (with overlays)`.
+
+***TODO*** screenshots way too wide resulting in very small text - will update

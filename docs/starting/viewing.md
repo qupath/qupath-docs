@@ -88,3 +88,5 @@ If you have a compatible pressure-sensitive graphics tablet, QuPath's *Brush* to
 :::{NOTE}
 So far, this has been tested only with Wacom tablets (Intuos and Cintiq).
 :::
+
+***TODO*** GRID VIEW!!

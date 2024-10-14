@@ -109,6 +109,8 @@ The sources and terms of reuse for these images are summarized in the table belo
   - CC-BY 4.0
 ::::
 
+***TODO*** Add TMA image to the table
+
 Additionally, the icons used in QuPath are exported as PNG for use in the docs.
 Most are original, but some are free icons from [Font Awesome](https://github.com/FortAwesome/Font-Awesome).
 
