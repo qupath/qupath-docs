@@ -119,5 +119,3 @@ def exporter  = new MeasurementExporter()
 
 print "Done!"
 ```
-
-***TODO*** confirm script at end hasnt been broken

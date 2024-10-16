@@ -139,5 +139,3 @@ Instead, it's defining a region, and objects inside that region will be selected
 There are other, faster, fancier ways to create similar *Annotation objects*, i.e. by thresholding, pixel classification, or by temporarily dipping into another tool, such as ImageJ.
 
 These will be discussed elsewhere...
-
-***TODO*** Update the selection button icon (need to export and link via the conf.py file)

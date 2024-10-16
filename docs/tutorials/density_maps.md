@@ -252,4 +252,4 @@ This is useful if you want a translucent PNG for superimposing elsewhere.
 
 If you want to export the image as it appears in the viewer, use instead {menuselection}`File --> Export images... --> Rendered RGB (with overlays)`.
 
-***TODO*** screenshots way too wide resulting in very small text - will update
+

@@ -186,11 +186,3 @@ See {doc}`../starting/cell_counting` for more info on manual counting.
 Points tool window
 ```
 :::
-
-***TODO*** Update cell detection screenshots as the UI is too small to read and window doesnt need to be as wide
-
-***TODO*** also update the annotation results table and add in ability to sort the columns
-
-***TODO*** mention fast counts for huge images where annotations arent needed?
-
-***TODO*** Add in section on the new button that shows relationships between cells....? or too complex here?
