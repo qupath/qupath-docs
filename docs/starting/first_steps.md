@@ -70,7 +70,7 @@ One of the most important properties is the **Image type**, which can impact the
 You should choose the closest match for the image, e.g. *Brightfield*, *Fluorescence*.
 
 :::{figure} images/steps_image_type.png
-:class: shadow-image full-image
+:class: shadow-image mini-image
 
 Option window for setting the image type in QuPath
 :::
@@ -100,7 +100,7 @@ Image tab showing the image properties in QuPath
 
 ### Setting the pixel size
 
-The pixel size is used extensively by QuPath. This is why it is good practice to make sure it's correct or any measurements could be wrong.
+The pixel size is used extensively by QuPath. This is why it is good practice to make sure it's correct or any measurements could be incorrect.
 
 If stored in the image file, QuPath should automatically fetch the pixel size and display it under the **Image** tab as seen in the figure above ('Pixel width' & 'Pixel height').
 If not, you can set the pixel size manually by double-clicking on either row and type the correct values.
@@ -349,7 +349,7 @@ You can generate a results table containing measurements for your objects by sel
 You can then choose whether you want your table to contain annotations or detections.
 
 Note that this table remains connected to the image, and allows you to select individual objects, or sort by columns.
-Each measurement can also be viewed in a histogram by clicking on {kbd}`show histogram` with various viewing options available. For further data analysis, the table can be saved as a CSV file or {kbd}`copied to the clipboard` for pasting into another application, e.g. Excel.
+Each measurement can also be viewed in a histogram by clicking on {guilabel}`show histogram` with various viewing options available. For further data analysis, the table can be saved as a CSV file or {guilabel}`copied to the clipboard` for pasting into another application, e.g. Excel.
 
 :::{figure} images/steps_table.jpg
 :class: shadow-image full-image

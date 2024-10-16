@@ -64,7 +64,7 @@ Installing the Deep Java Library extension using the extension manager
 An example of extension version options for WSInfer
 :::
 
-If both of these extension installation options dont work, you can try downloading the extension manually.
+If both of these extension installation options don't work, you can try downloading the extension manually.
 The extension itself is a (usually small) file with that ends with `.jar`, often available from the `Releases` section of the GitHub repository.
 If you drag this onto QuPath's main window, QuPath should copy it to your QuPath user directory.
 
@@ -92,7 +92,7 @@ This will probably only work if QuPath isn't running.
 At this point, it's best to close QuPath and delete whichever extension files you don't want.
 
 :::{admonition} Did I install that?!
-:class: warning 
+:class: warning
 
 QuPath comes with several built-in extensions (for ImageJ, OpenSlide, Bio-Formats and more). These are found in the main QuPath installation, and not the regular extensions directory.
 These are each identified in the extension manager as a "Core extension (part of QuPath)".

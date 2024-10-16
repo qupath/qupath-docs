@@ -9,9 +9,9 @@ Features include:
 - Powerful annotation & visualization tools using a modern JavaFX interface
 - Built-in algorithms for common tasks, including cell and tissue detection
 - Interactive machine learning, both for object and pixel classification
-- Compatibility with other popular open tools, including ImageJ, OpenCV, Java Topology Suite and OMERO. 
+- Compatibility with other popular open tools, including ImageJ, OpenCV, Java Topology Suite and OMERO
 - Support for many image formats through Bio-Formats and OpenSlide, including whole slide images and multiplexed data
 - Groovy scripting for customization and deeper data interrogation
-- Access to cutting edge techniques through an increasing number of extensions.
+- Access to cutting edge techniques through an increasing number of extensions
 
 To find out more, check out the [original publication introducing QuPath](https://doi.org/10.1038/s41598-017-17204-5) or {doc}`dive into the tutorials <../tutorials/index>` to see some of what it can do.

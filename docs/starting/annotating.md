@@ -41,7 +41,7 @@ Rather than drawing rectangles or ellipses, {menuselection}`Objects --> Annotati
 
 ### {{ tool_line }} Line tool
 
-Lines can be drawn using the *Line tool*, by clicking once for the starting point, and *double-clicking* for the end point. When right clicking the line button other types of lines can be drawn, such as arrows or double arrows.
+Lines can be drawn using the *Line tool*, by clicking once for the starting point, and *double-clicking* for the end point. The line button can be right clicked to draw other variations of lines such as arrows or double arrows.
 
 :::{figure} images/annotating_line_options.png
 :class: shadow-image mini-image
