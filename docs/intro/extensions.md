@@ -18,7 +18,7 @@ We don't yet have a central list for extensions.
 The main places to find out about them are:
 
 * These docs --- some examples include:
-  * [Instanseg](instaseg-extension)
+  <!-- * [Instanseg](instanseg-extension) -->
   * [StarDist](stardist-extension)
   * [WSInfer](wsinfer-extension)
   * [OMERO](omero-extension)
@@ -47,7 +47,7 @@ from your web browser onto QuPath's main window.
 A prompt should appear asking if you want to proceed, and if you do, QuPath will download the extension and install it for you, including some necessary configuration along the way.
 
 Alternatively, if you know the owner and name of the GitHub repository housing an extension, you can enter these in the extension manager and click the download button.
-Again, QuPath will ask if you wish to download and install the extension.
+Again, QuPath will ask if you wish to download and install the extension and present you with the versions currently available for that extension.
 
 If you don't have a user directory, QuPath will prompt you to select a folder on your computer to use.
 You can change it later under {menuselection}`Edit --> Preferences...` if you want to.
@@ -58,7 +58,13 @@ You can change it later under {menuselection}`Edit --> Preferences...` if you wa
 Installing the Deep Java Library extension using the extension manager
 :::
 
-If neither of these options work, you can try downloading the extension manually.
+:::{figure} images/extension_manager_installing_version.png
+:class: shadow-image mini-image
+
+An example of extension version options for WSInfer
+:::
+
+If both of these extension installation options dont work, you can try downloading the extension manually.
 The extension itself is a (usually small) file with that ends with `.jar`, often available from the `Releases` section of the GitHub repository.
 If you drag this onto QuPath's main window, QuPath should copy it to your QuPath user directory.
 
