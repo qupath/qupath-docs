@@ -38,3 +38,5 @@ If you find yourself wanting to run the same command repeatedly, uncheck the {gu
 
 QuPath's 'Command list'
 :::
+
+<!-- For more tips and tricks, check out the QuPath [tips and tricks](tips-and-tricks) page. -->

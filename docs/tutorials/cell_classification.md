@@ -105,6 +105,10 @@ The *Nucleus/Cell area ratio* incorporates both of these characteristics in a si
 Measurement map for Nucleus/Cell area ratio
 :::
 
+:::{tip}
+Need the color bar out of QuPath as a reference? It can be copied as an image by simply right clicking on it and selecting {guilabel}`copy`.
+:::
+
 ## Calculate additional features
 
 Despite the usefulness of the *Nucleus/Cell area ratio* for identifying tumor cells, on its own it is not enough.

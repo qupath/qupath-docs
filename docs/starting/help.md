@@ -3,7 +3,7 @@
 Here are the main sources of help with QuPath questions:
 
 - This documentation, including {doc}`../reference/faqs`
-- The {doc}`Command List <essential_tips>` & its built-in help
+- The {doc}`Command List <essential_tips>` & its built-in help menu option
 - [forum.image.sc](https://forum.image.sc/tags/qupath) - **main user forum**, shared with other open source projects
 - [Issues on GitHub](https://github.com/qupath/qupath/issues) - bug reports, *not* general questions
 - [YouTube channel](http://youtube.com/c/qupath) - includes **video tutorials** and **webinars**

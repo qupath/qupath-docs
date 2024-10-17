@@ -174,8 +174,6 @@ You can also access this command from the *Measurement table* icon in the toolba
 Annotation results table
 :::
 
-Note that the figure above was taken before adding a fourth annotation (and detecting its cells).
-
 :::{tip}
 You can use the {guilabel}`Convert detections to points` button within the **Points tool** {{ icon_points }} to generate an editable points annotation from the detected cells.
 This provides a 'semi-automated' alternative to manually clicking on every cell to generate counts whenever the automated detection alone is not quite accurate enough.

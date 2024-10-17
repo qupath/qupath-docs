@@ -133,6 +133,10 @@ Consequently, although OpenSlide and Bio-Formats support many TIFF files, it is 
 Perhaps the most common reason for this is that the file does not contain pyramidal layers, or these layers cannot be automatically recognized.
 This is one reason why well-supported, open formats should generally be preferred (e.g. OME-TIFF).
 
+#### OME-Zarr
+QuPath version 0.6.0 introduced support for reading and writing [OME-Zarr](https://link.springer.com/article/10.1007/s00418-023-02209-1) images.
+This file type was developed by the OME team in collaboration with many individuals and institutes to address the need for a scalable and cloud-friendly large image format.
+
 ## Open URI
 
 QuPath is not limited to working with image files stored locally.

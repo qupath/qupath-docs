@@ -4,15 +4,29 @@
 The following tutorial will guide you through your first steps with QuPath, and introduce you to the main features, buttons and concepts you need to get started.
 You will see how to:
 
-- QuPath Welcome window
-- Open a whole slide image
-- View image properties
-- Navigate around images
-- Manually annotate regions
-- Detect cells
-- View measurements
-- Export results
-- Save & reload your data
+- [First steps](#first-steps)
+  - [Starting out](#starting-out)
+    - [Running QuPath](#running-qupath)
+    - [Opening an image](#opening-an-image)
+    - [Setting the image type](#setting-the-image-type)
+    - [Seeing the image properties](#seeing-the-image-properties)
+    - [Setting the pixel size](#setting-the-pixel-size)
+  - [Looking around](#looking-around)
+    - [Zooming in \& out](#zooming-in--out)
+    - [Panning](#panning)
+  - [Introducing objects](#introducing-objects)
+    - [Drawing annotations](#drawing-annotations)
+    - [Identifying selections](#identifying-selections)
+    - [Changing colors \& properties](#changing-colors--properties)
+    - [Viewing measurements](#viewing-measurements)
+    - [Removing annotations](#removing-annotations)
+    - [Detecting cells](#detecting-cells)
+    - [Showing \& hiding](#showing--hiding)
+    - [Creating measurement tables](#creating-measurement-tables)
+  - [Finishing up](#finishing-up)
+    - [Saving data](#saving-data)
+    - [Reopening data](#reopening-data)
+  - [Recap \& outlook](#recap--outlook)
 
 ## Starting out
 
@@ -21,9 +35,13 @@ If you do not have a whole slide image handy, see {doc}`here <../intro/acknowled
 :::
 
 ### Running QuPath
-Running QuPath for the first time will present you with the welcome window. This contains useful links should you have an issue or want to learn more. 
+Running QuPath for the first time will present you with the welcome window.
+This contains useful links should you have an issue or want to learn more.
 
-For those that like working on software in dark mode (or want to use their own creative themes) it's possible to change that here. Additionally updates to QuPath or extensions can be checked for ensuring you have access to the latest features. 
+By default QuPaths color theme should be either light or dark, depending upon your system.
+This can be changed from the welcome window (you can even create your own theme if you want - check out {doc}`../reference/styling` for details).
+
+Updates to QuPath or extensions can also be checked from the welcome window, ensuring you have access to the latest features.
 
 :::{figure} images/steps_welcome.jpg
 :class: shadow-image full-image
@@ -53,8 +71,8 @@ A whole slide image (*CMU-1.svs*) opened within QuPath
 One of the most important properties is the **Image type**, which can impact the behavior of some QuPath commands. When opening an image in QuPath you will be presented with a window allowing you to choose the image type. To find out more about what this means, check out the {guilabel}`Show details` section. 
 You should choose the closest match for the image, e.g. *Brightfield*, *Fluorescence*.
 
-:::{figure} images/steps_image_type.jpg
-:class: shadow-image full-image
+:::{figure} images/steps_image_type.png
+:class: shadow-image mini-image
 
 Option window for setting the image type in QuPath
 :::
@@ -84,10 +102,17 @@ Image tab showing the image properties in QuPath
 
 ### Setting the pixel size
 
-The pixel size is used extensively by QuPath. This is why it is good practice to make sure it's correct.
+The pixel size is used extensively by QuPath.
+This is why it is good practice to make sure it's correct or any measurements could be incorrect.
 
-If stored in the image file, QuPath should automatically fetch the pixel size and display it under the **Image** tab ('Pixel width' & 'Pixel height').
+If stored in the image file, QuPath should automatically fetch the pixel size and display it under the **Image** tab as seen in the figure above ('Pixel width' & 'Pixel height').
 If not, you can set the pixel size manually by double-clicking on either row and type the correct values.
+
+:::{figure} images/steps_image_pixels.png
+:class: shadow-image small-image
+
+Image tab with pixel width and height adjustments
+:::
 
 :::{Tip}
 You can also set the pixel size based on a specific region of your image.
@@ -327,7 +352,8 @@ You can generate a results table containing measurements for your objects by sel
 You can then choose whether you want your table to contain annotations or detections.
 
 Note that this table remains connected to the image, and allows you to select individual objects, or sort by columns.
-You can also generate histograms for any measurements, and save the table to a CSV file or copy its contents for pasting into another application, e.g. Excel.
+Each measurement can also be viewed in a histogram by clicking on {guilabel}`Show Histogram` with various viewing options available.
+For further data analysis, the table can be saved as a CSV file or copied to the clipboard for pasting into another application, e.g. Excel.
 
 :::{figure} images/steps_table.jpg
 :class: shadow-image full-image

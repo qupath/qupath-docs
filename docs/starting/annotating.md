@@ -42,6 +42,13 @@ Rather than drawing rectangles or ellipses, {menuselection}`Objects --> Annotati
 ### {{ tool_line }} Line tool
 
 Lines can be drawn using the *Line tool*, by clicking once for the starting point, and *double-clicking* for the end point.
+The line button can be right clicked to draw other variations of lines such as arrows or double arrows.
+
+:::{figure} images/annotating_line_options.png
+:class: shadow-image mini-image
+
+Alternative line tool options
+:::
 
 ### {{ tool_polygon }} Polygon tool
 
@@ -61,7 +68,6 @@ Otherwise, the ROI is finished by *double-clicking* on the image at the location
 ### {{ tool_polyline }} Polyline tool
 
 The *Polyline tool* is similar to the *Polygon tool* except that it is not closed; it has a length (like a line), but not an area.
-
 
 ### {{ tool_brush }} Brush tool
 
@@ -95,7 +101,6 @@ Additionally, the *Wand tool* is influenced by any color transforms that have be
 
 This is something of a special case, covered in {doc}`cell_counting`.
 
-
 ## Locking & unlocking
 
 Annotating can be a laborious process.
@@ -121,6 +126,14 @@ One toolbar button that lives *beside* the annotation tools is not actually used
 The {guilabel}`Selection mode` button is used to temporarily repurpose the annotation tools so that they can be used to *select* objects (e.g. other annotations) by drawing around them.
 
 If selection mode is turned on, using an annotation tool draws a shape with a dashed line to indicate that it isn't a regular annotation.
+This is indicated by the button changing to a dashed version of the icon.
+
+:::{figure} images/annotating_selection_tools.png
+:class: shadow-image small-image
+
+Selection version of the drawing tools
+:::
+
 Instead, it's defining a region, and objects inside that region will be selected when the drawing is finished.
 
 ## Other ways to annotate
