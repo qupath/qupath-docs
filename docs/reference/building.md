@@ -14,7 +14,7 @@ Just download an existing installer from [qupath.github.io](https://qupath.githu
 If you're moderately comfortable working from a command line, there's not much required to build QuPath:
 
 1. Install git, e.g. from <https://git-scm.com>
-2. Install OpenJDK 17, e.g. from [adoptium.net](https://adoptium.net/en-GB/temurin/releases/?version=17)
+2. Install OpenJDK 21 or later, e.g. from [adoptium.net](https://adoptium.net/en-GB/temurin/releases/?version=21)
 3. Open a command prompt in an empty directory and run the following:
 
 
@@ -64,21 +64,6 @@ Note that some problems have been reported using a version of OpenJDK based on O
 Switching to an OpenJDK distribution based on HotSpot may help -- see [here](https://github.com/qupath/qupath/issues/484) for details.
 :::
 
-:::{admonition} Notes for Apple silicon
-:class: warning
-
-If you're working on a recent Mac with Apple silicon, the easiest thing to do is use a Java JDK for Intel.
-Everything will run a bit slower through Rosetta2 -- but the difference might not be noticeable.
-
-If you use a JDK for Apple silicon, most things should work - but note the caveats [described on the installation page](apple-silicon);
-
-You can add OpenSlide support from the start by:
-* Installing [OpenSlide Java using Homebrew](https://github.com/petebankhead/homebrew-qupath)
-* Building QuPath with the command `./gradlew clean jpackage -P openslide=/opt/homebrew/opt/openslide-java/lib/openslide-java/openslide.jar`
-
-This should then use your local OpenSlide installation.
-The disadvantage is that it won't be found if you transfer QuPath to another computer.
-:::
 
 ### Customizing the build
 
@@ -149,22 +134,21 @@ Two important things to note are:
 If you often add `-P` flags when building QuPath, you can store these in the base QuPath directory in a file called `gradle.properties`.
 This also gives a place to add more custom flags that can change the build.
 
-For example, on my Apple silicon Mac I might put the following into `gradle.properties`:
+For example, on my Mac I might put the following into `gradle.properties`:
 ```
 org.gradle.parallel=true
 org.gradle.java.home=/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
-openslide=/opt/homebrew/Cellar/openslide-java/0.12.2/lib/openslide-java/openslide.jar
 djl.engines=pytorch,mxnet,onnxruntime
 djl.zoos=all
 ```
 
-This tries to speed up the build process by parallelization, specifies which JDK to use, provides a path to OpenSlide, and specifies some [Deep Java Library](deep-java-library) engines that I would like to include.
+This tries to speed up the build process by parallelization, specifies which JDK to use, and selects some [Deep Java Library](deep-java-library) engines that I would like to include.
 
 Then I only need to call
 ```
 ./gradlew jpackage
 ```
-rather than some elaborate command.
+rather than some elaborate command that includes all these options.
 :::
 
 #### Building a specific version
@@ -190,7 +174,7 @@ These might be better if you a) don't like the command line much, or b) want to 
 If you're using either Mac or Windows, [GitHub Desktop] provides a friendly way to get the QuPath code.
 The main steps are
 
-- Install [Atom] (a text editor -- not essential, but helpful)
+- Install [Visual Studio Code] (a text editor -- not essential, but helpful)
 - Install [GitHub Desktop]
 - Navigate to [https://github.com/qupath/qupath](https://github.com/qupath/qupath) in a browser
 - Press {guilabel}`Clone or download` and choose {guilabel}`Open in Desktop`
@@ -207,7 +191,7 @@ You can now open a command prompt in the correct directory directly from GitHub 
 At this point you may be asked if you want to install Git.
 
 You don't have to (I think...), but if you do then you'll be ask a lot of questions during the installation.
-One of them is to choose a text editor, where you can select *Atom*.
+One of them is to choose a text editor, where you can select *Visual Studio Code*.
 :::
 
 Finally, the command needed to build QuPath is then the same as above:
@@ -271,15 +255,10 @@ the software in debug mode -- and even change the code while it is running.
 
 To do this, you can either:
 
-* download and build QuPath once as describe above,
-  and use {menuselection}`Open` from within IntelliJ, and
-  navigate to the directory containing the QuPath code, or
-* use {menuselection}`Get from VCS` in IntelliJ to download the code
-  directly from GitHub using git. To do this, you should use the URL
-  `https://github.com/qupath/qupath.git` (or the URL to your own git repository
-  housing the QuPath code).  
-  If you download the code using this method, you should make sure you have
-  installed a Java JDK before proceeding any further (see instructions above).
+* download and build QuPath once as described above, then use {menuselection}`Open` from within IntelliJ, and navigate to the directory containing the QuPath code, or
+* use {menuselection}`Get from VCS` in IntelliJ to download the code directly from GitHub using git. To do this, you should use the URL `https://github.com/qupath/qupath.git` (or the URL to your own git repository housing the QuPath code).
+
+If you download the code using this approach, you should make sure you have installed a Java JDK before proceeding any further (see instructions above).
 
 :::{figure} images/building-intellij-import.png
 :class: shadow-image mid-image
@@ -287,11 +266,9 @@ To do this, you can either:
 IntelliJ start up window
 :::
 
-After opening the QuPath project (usually accepting any
-default import options is fine), {menuselection}`Run --> Debug (Alt + Shift + F9)`,
-and select "Edit Configurations..." from the drop-down menu, and 
-{menuselection}`Add new configuration --> Gradle`. Then, enter `run` as the task,
-as in the image below.
+After opening the QuPath project (usually accepting any default import options is fine), {menuselection}`Run --> Debug (Alt + Shift + F9)`.
+Then select {guilabel}`Edit Configurations...` from the drop-down menu, and {menuselection}`Add new configuration --> Gradle`.
+Finally, enter `run` as the task, as in the image below.
 
 :::{figure} images/building-intellij-launch.png
 :class: shadow-image mid-image
@@ -299,20 +276,18 @@ as in the image below.
 Configuring QuPath to run in debug mode
 :::
 
-Now press {menuselection}`Apply` and then {menuselection}`Debug` in this window.
+Now press {guilabel}`Apply` and then {guilabel}`Debug` in this window.
 
 You can now use {menuselection}`Debug --> QuPath (Alt + Shift + F9)` to launch
 QuPath with the same configuration in the future.
 
 The useful thing about using debug mode is that you can make changes to the
-QuPath code, and use
-{menuselection}`Run --> Debugging Actions --> Reload Changed Classes`
-to reload the changes *while QuPath is running* and, providing they aren't *too*
-extreme, they will be incorporated into the software without needing to relaunch it.
-For example, any changes that alter method signatures (e.g. adding or removing
-arguments, or changing return types) will require a restart.
+QuPath code, and use {menuselection}`Run --> Debugging Actions --> Reload Changed Classes`
+to reload the changes *while QuPath is running*.
+Provided they aren't *too* extreme, the changes will be incorporated into the software without needing to relaunch it.
+However, any major changes that alter method signatures (e.g. adding or removing arguments, or changing return types) will require QuPath to be relaunched.
 
-[atom]: https://atom.io/
+[Visual Studio Code]: https://code.visualstudio.com
 [IntelliJ IDEA]: https://www.jetbrains.com/idea/
 [github desktop]: https://desktop.github.com/
 [gradle]: http://gradle.org
