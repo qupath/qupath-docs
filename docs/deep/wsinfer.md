@@ -1,5 +1,6 @@
-(wsinfer-extension)=
 # WSInfer
+
+(wsinfer-extension)=
 
 The [WSInfer QuPath extension](https://github.com/qupath/qupath-extension-wsinfer/) makes it possible to do patch-based deep learning inference for digital pathology, without any need for scripting.
 
@@ -25,7 +26,6 @@ Kaczmarzyk, J.R., O’Callaghan, A., Inglis, F. et al. Open and reusable deep le
 A GPU is not required but can dramatically speed up processing.
 If you have an NVIDIA GPU and want to use it with WSInfer, you will need to install a version of CUDA compatible with PyTorch - please see {doc}`gpu`.
 :::
-
 
 ## Set-up
 
@@ -102,9 +102,9 @@ However the most (potentially) exciting additional option is the {guilabel}`Pref
 
 The options available will depend upon your computer's capabilities (at least as far as they could be discerned by Deep Java Library):
 
-* **CPU**: This is generally the safest - and slowest - option, because it should be supported on all computers.
-* **MPS**: This stands for *Metal Performance Shaders*, and should be available on recent Apple silicon - it is the Mac version of GPU acceleration
-* **GPU**: This should appear if you have an NVIDIA GPU, CUDA... and a little bit of luck.
+- **CPU**: This is generally the safest - and slowest - option, because it should be supported on all computers.
+- **MPS**: This stands for *Metal Performance Shaders*, and should be available on recent Apple silicon - it is the Mac version of GPU acceleration
+- **GPU**: This should appear if you have an NVIDIA GPU, CUDA... and a little bit of luck.
 
 If either MPS or GPU work for you, they should reduce the time required for inference by a *lot*.
 However configuration for GPU can be tricky, as it will depend upon other hardware and software on your computer - CUDA in particular.
@@ -166,11 +166,10 @@ where the `selectAnnotation()` line was added when I pressed the {guilabel}`Anno
 
 To process in batch, I would need to
 
-* Add my images to a QuPath project
-* Annotate the regions of interest in the images (and save the data)
-* Open the above script in QuPath's script editor
-* Choose {menuselection}`Run --> Run for project`, and select the images I want to process
-
+- Add my images to a QuPath project
+- Annotate the regions of interest in the images (and save the data)
+- Open the above script in QuPath's script editor
+- Choose {menuselection}`Run --> Run for project`, and select the images I want to process
 
 ## Identifying TILs (overlaying predictions of two models)
 
