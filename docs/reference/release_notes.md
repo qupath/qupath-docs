@@ -90,7 +90,9 @@ Previously an RGB fluorescence image would be stuck with the default "red", "gre
 
 ### Symbolic Links Support
 
-Symlinks (short for symbolic links) are special types of files in an operating system that act as references or pointers to other files or directories. They are often used to create shortcuts or aliases to another file or folder without duplicating the actual data. QuPath now supports SymLinks for images giving users more flexibility with image organization.
+Symlinks (short for symbolic links) are special types of files in an operating system that act as references or pointers to other files or directories.
+They are often used to create shortcuts or aliases to another file or folder without duplicating the actual data.
+QuPath now better supports symlinks for images, giving users more flexibility with image organization.
 
 ### Bio-Formats default preferences
 

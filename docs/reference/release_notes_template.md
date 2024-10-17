@@ -1,6 +1,8 @@
 # Release Notes Template ***TODO***
 
-Welcome to the expanded release notes for QuPath ***TODO***. This version was released on ***TODO***. The hopes of this document are to provide a more detailed overview of the changes in this version than the original github [release notes](https://github.com/qupath/qupath/blob/main/CHANGELOG.md) ***TODO***.
+Welcome to the expanded release notes for QuPath ***TODO***.
+This version was released on ***TODO***.
+The aim of this document is to provide a more detailed overview of the changes in this version than the original github [release notes](https://github.com/qupath/qupath/blob/main/CHANGELOG.md) ***TODO***.
 
 1. [Major features](#major-features) - Spotlight changes
 2. [Enhancements](#enhancements) - Additions to make existing features better

@@ -98,9 +98,11 @@ Removing images from a project
 :::
 
 ### Sorting images
-Within the project it is possible to sort images by name, ID URI (path to the image file) or none (which is the order of import). To see the options, right click on the project pane and select {menuselection}`Sort by...`.
+Within the project it is possible to sort images by name, ID URI (path to the image file) or none (which is the order of import).
+To see the options, right click on the project pane and select {menuselection}`Sort by...`.
 
-It's also possible to add new sortable parameters by adding metadata to the images. This can be done by right clicking on the image and selecting {menuselection}`Add metadata`.
+It's also possible to add new sortable parameters by adding metadata to the images.
+This can be done by right clicking on the image and selecting {menuselection}`Add metadata`.
 
 :::{figure} images/project_metadata.png
 :class: shadow-image mini-image
@@ -109,7 +111,8 @@ Adding metadata to images
 :::
 
 ### Alternative project viewing
-Image thumbnails can be increased in size by right clicking and selecting {menuselection}`Thumbnail size` and choosing a larger size or hide them for blinded studies. Additionally the names of the images can be masked by right clicking and selecting {menuselection}`Mask image names`. To undo this, right click again and select {menuselection}`Mask image names`.
+Image thumbnails can be increased in size by right clicking and selecting {menuselection}`Thumbnail size` and choosing a larger size or hide them for blinded studies.
+Additionally the names of the images can be masked by right clicking and selecting {menuselection}`Mask image names`. To undo this, right click again and select {menuselection}`Mask image names`.
 
 :::{figure} images/project_masking.png
 :class: shadow-image small-image

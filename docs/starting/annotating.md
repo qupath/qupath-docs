@@ -41,7 +41,8 @@ Rather than drawing rectangles or ellipses, {menuselection}`Objects --> Annotati
 
 ### {{ tool_line }} Line tool
 
-Lines can be drawn using the *Line tool*, by clicking once for the starting point, and *double-clicking* for the end point. The line button can be right clicked to draw other variations of lines such as arrows or double arrows.
+Lines can be drawn using the *Line tool*, by clicking once for the starting point, and *double-clicking* for the end point.
+The line button can be right clicked to draw other variations of lines such as arrows or double arrows.
 
 :::{figure} images/annotating_line_options.png
 :class: shadow-image mini-image
@@ -124,7 +125,8 @@ One toolbar button that lives *beside* the annotation tools is not actually used
 
 The {guilabel}`Selection mode` button is used to temporarily repurpose the annotation tools so that they can be used to *select* objects (e.g. other annotations) by drawing around them.
 
-If selection mode is turned on, using an annotation tool draws a shape with a dashed line to indicate that it isn't a regular annotation. This is indicated by the button changing to a dashed version of the icon.
+If selection mode is turned on, using an annotation tool draws a shape with a dashed line to indicate that it isn't a regular annotation.
+This is indicated by the button changing to a dashed version of the icon.
 
 :::{figure} images/annotating_selection_tools.png
 :class: shadow-image small-image

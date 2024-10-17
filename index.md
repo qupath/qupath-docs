@@ -7,7 +7,8 @@
 
 This page hosts the documentation for **QuPath {{ env.config.version }}.x**.
 
-The latest release is [**QuPath {{ env.config.release }}**](https://github.com/qupath/qupath/releases). To read up on the latest changes, check out the [release notes](https://github.com/qupath/qupath/blob/main/CHANGELOG.md)
+The latest release is [**QuPath {{ env.config.release }}**](https://github.com/qupath/qupath/releases).
+To read up on the latest changes, check out the [release notes](https://github.com/qupath/qupath/blob/main/CHANGELOG.md)
 
 ## Quick links
 

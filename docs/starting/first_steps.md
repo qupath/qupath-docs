@@ -35,9 +35,11 @@ If you do not have a whole slide image handy, see {doc}`here <../intro/acknowled
 :::
 
 ### Running QuPath
-Running QuPath for the first time will present you with the welcome window. This contains useful links should you have an issue or want to learn more.
+Running QuPath for the first time will present you with the welcome window.
+This contains useful links should you have an issue or want to learn more.
 
-By default QuPaths color theme will be set to the systems default (if set to light or dark). This can be reverted to either light or dark mode from the welcome window (it is also possible to create your own theme but this is more advanced and will not be covered here).
+By default QuPaths color theme should be either light or dark, depending upon your system.
+This can be changed from the welcome window (you can even create your own theme if you want - check out {doc}`../reference/styling` for details).
 
 Updates to QuPath or extensions can also be checked from the welcome window, ensuring you have access to the latest features.
 
@@ -100,7 +102,8 @@ Image tab showing the image properties in QuPath
 
 ### Setting the pixel size
 
-The pixel size is used extensively by QuPath. This is why it is good practice to make sure it's correct or any measurements could be incorrect.
+The pixel size is used extensively by QuPath.
+This is why it is good practice to make sure it's correct or any measurements could be incorrect.
 
 If stored in the image file, QuPath should automatically fetch the pixel size and display it under the **Image** tab as seen in the figure above ('Pixel width' & 'Pixel height').
 If not, you can set the pixel size manually by double-clicking on either row and type the correct values.
@@ -349,7 +352,8 @@ You can generate a results table containing measurements for your objects by sel
 You can then choose whether you want your table to contain annotations or detections.
 
 Note that this table remains connected to the image, and allows you to select individual objects, or sort by columns.
-Each measurement can also be viewed in a histogram by clicking on {guilabel}`show histogram` with various viewing options available. For further data analysis, the table can be saved as a CSV file or {guilabel}`copied to the clipboard` for pasting into another application, e.g. Excel.
+Each measurement can also be viewed in a histogram by clicking on {guilabel}`Show Histogram` with various viewing options available.
+For further data analysis, the table can be saved as a CSV file or copied to the clipboard for pasting into another application, e.g. Excel.
 
 :::{figure} images/steps_table.jpg
 :class: shadow-image full-image
