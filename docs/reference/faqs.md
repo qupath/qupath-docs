@@ -25,16 +25,19 @@ If not, use [the QuPath discussion forum at image.sc](http://forum.image.sc/tags
 :::{tip}
 The following tips will improve your chances of receiving a useful answer on the forum.
 
-- Make sure you **use the \*qupath\* tag** with your post
+- Make sure you **use the `qupath` tag** with your post
 
-- **Be specific!** Broad questions lead to lots of guesswork and back-and-forth discussion to try to ascertain what you really want. Try to already include the key information in your first post.
+- **Be specific!** Broad questions lead to lots of guesswork and back-and-forth discussion to try to ascertain what you really want.
+Try to already include the key information in your first post.
 
 - If your question is about how to analyze your images:
 
-  - **Include screenshots and example images!** If you are not able to share your own image (e.g. you don't have permission), you can link to similar images online. Otherwise the discussion can be very long as people trying to help have to guess how your images look, and may be completely wrong.
+  - **Include screenshots and example images!** If you are not able to share your own image (e.g. you don't have permission), you can link to similar images online.
+  Otherwise the discussion can be very long as people trying to help have to guess how your images look, and may be completely wrong.
   - **Mention the QuPath version you are using**
   - **Describe clearly what you have already tried**
-  - **Describe what you want to achieve at the end** - *not* just any specific step you are stuck with. There might be a better/more efficient way to achieve your end goal that you haven't considered, making the awkward step unnecessary.
+  - **Describe what you want to achieve at the end** - *not* just any specific step you are stuck with.
+  There might be a better/more efficient way to achieve your end goal that you haven't considered, making the awkward step unnecessary.
 :::
 
 ### How do I report a bug?

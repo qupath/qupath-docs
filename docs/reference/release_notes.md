@@ -1,9 +1,11 @@
 # Release Notes v0.6.0
 
-Welcome to the expanded release notes for QuPath v0.6.0. This version was released on 2024- ***TODO***. The hopes of this document are to provide a more detailed overview of the changes in this version than the original github [release notes](https://github.com/qupath/qupath/blob/main/CHANGELOG.md).
+Welcome to the expanded release notes for QuPath v0.6.0.
+
+The aim of this document is to provide a more detailed (and readable...) overview of the highlights in this version than the original github [CHANGELOG](https://github.com/qupath/qupath/blob/main/CHANGELOG.md).
 
 1. [Major features](#major-features) - Spotlight changes
-2. [Enhancements](#enhancements) - Additions to make existing features better
+2. [Enhancements](#enhancements) - Improvements to existing features
 3. [Experimental features](#experimental-features) -  New features included for testing and feedback. They may change or be removed in future versions.
 4. [Bugs fixed](#bugs-fixed) - Previous problems that have been resolved
 5. [Scripting and API changes](#scripting-and-api-changes) - Changes related to the API and anything script related. Useful notes for script writers and extension developers!
@@ -13,7 +15,9 @@ Welcome to the expanded release notes for QuPath v0.6.0. This version was releas
 
 ### New InstanSeg Segmentation
 
-In this new version we have added support for the exciting new segmentation extension [InstanSeg](https://github.com/qupath/qupath-extension-instanseg). This extension provides speedy and accurate segmentation of cells for both brightfield and fluorescent images. Learn more about InstanSeg and how to use it in QuPath [here](../deep/instanseg.md).
+In this new version we have added support for the exciting new segmentation extension [InstanSeg](https://github.com/qupath/qupath-extension-instanseg).
+This extension provides speedy and accurate segmentation of cells for both brightfield and fluorescent images.
+Learn more about InstanSeg and how to use it in QuPath [here](../deep/instanseg.md).
 
 :::{figure} https://global.discourse-cdn.com/business4/uploads/imagej/optimized/3X/0/0/0047d91a99114d47e9a22e68c04eacd9e1cd24a5_2_690x392.jpeg
 :class: shadow-image full-image
@@ -31,18 +35,23 @@ InstanSeg segmentation of nuclei in a fluorescent image
 
 ### OME-Zarr images are now supported
 
-Its now possible to open and work with OME-Zarr images in QuPath. This is a new format that is designed to be more efficient and scalable than the traditional OME-TIFF format. Learn more about OME-Zarr in general check out [this paper](https://link.springer.com/article/10.1007/s00418-023-02209-1) and how to use it in QuPath [here](../reference/ome_zarr.md).
+Its now possible to open and work with OME-Zarr images in QuPath.
+This is a new format that is designed to be more efficient and scalable than the traditional OME-TIFF format.
+Learn more about OME-Zarr in general check out [this paper](https://link.springer.com/article/10.1007/s00418-023-02209-1) and how to use it in QuPath [here](../reference/ome_zarr.md).
 
 ## ✨ Enhancements
 
 ### New keyboard shortcuts
 
-* **Tired of using the mouse to close sub-windows?** Now you can use the escape key or ctrl/cmd + W to close them! (well most of them... we're working on the less frequently used ones).
+* **Tired of using the mouse to close sub-windows?** Now you can press {kbd}`Esc` or {kbd}`Ctrl + W` to close them (well, most of them... let us know if an important window isn't responding to this and you think it should).
 * **Got lots of things to select?** Quickly activate the selection tool by pressing 'S' when the main viewer is selected.
 
 ### Viewing Annotation Names
 
-Previously when displaying annotation names the label would be displayed in the center of the annotation. This could be problematic when the annotation was small or overlapped with another. Now the label is displayed consistently at the top of the annotation. This makes it easier to see which label relates to which annotation as seen below.
+Previously when displaying annotation names the label would be displayed in the center of the annotation.
+This could be problematic when the annotation was small or overlapped with another.
+Now the label is displayed consistently at the top of the annotation.
+This makes it easier to see which label relates to which annotation as seen below.
 
 :::{figure} https://github.com/user-attachments/assets/f180d900-f6de-4230-a7b7-fe054b70108e
 :class: shadow-image full-image
@@ -64,29 +73,35 @@ Lastly, the selection mode can now be quickly accessed by using the 'S' key when
 
 ### Histograms now use Logarithmic scaling
 
-When viewing histograms in QuPath, the scaling can now be using log$_{10}$ rather than natural log. Measurement tables for annotations and detections are both now able to utilize this feature.
+When viewing histograms in QuPath, the scaling can now be using log$_{10}$ rather than natural log.
+Measurement tables for annotations and detections are both now able to utilize this feature.
 
 ***TODO***: Add images of log scaling once general doc update is complete
 
 ### Classy TMAs
 
-TMA cores now by default are assigned a specific class when created, keeping them further distinguished from other annotations types. The default color for this class is now lighter to make it easier to see for both brightfield and fluorescent images. If a core is missing from the grid then it will be displayed the same color as the other cores but with more transparency.
+TMA cores now by default are assigned a specific class when created, keeping them further distinguished from other annotations types.
+The default color for this class is now lighter to make it easier to see for both brightfield and fluorescent images.
+If a core is missing from the grid then it will be displayed the same color as the other cores but with more transparency.
 
 ***TODO***: Add image of TMA once TMA page is complete
 
 ### Classification color warnings
 
-Changing the color of your annotations can get tricky when your needing more colors than are in the color palette. Now when you select a color very similar to one already used, QuPath will warn you and suggest a new color to use.
+Changing the color of your annotations can get tricky when your needing more colors than are in the color palette.
+Now when you select a color very similar to one already used, QuPath will warn you and suggest a new color to use.
 
 ***TODO***: Add image of color warning and check full functionality
 
 ### Package project warnings removed
 
-When using self contained projects with all your images in beside the project file, QuPath would previously prompt users to update the image paths if the project was moved. This is no longer the case so enjoy taking your projects to new locations!
+When using self contained projects with all your images in beside the project file, QuPath would previously prompt users to update the image paths if the project was moved.
+This is no longer the case so enjoy taking your projects to new locations!
 
 ### RGB fluorescence images
 
-Previously an RGB fluorescence image would be stuck with the default "red", "green" and "blue" channels. Now you can change these to any name you like.
+Previously an RGB fluorescence image would be stuck with the default "red", "green" and "blue" channels.
+Now you can change these to any name you like.
 
 ### Symbolic Links Support
 
@@ -102,7 +117,8 @@ Due to some troubles with opening remote OME-Zarr images, bioformats default is 
 
 ### Stain normalization and background subtraction
 
-The foundations for stain normalization and background subtraction have been started. Currently they are only accessible via the scripting and not yet available to interface only users (but watch this space!).
+The foundations for stain normalization and background subtraction have been started.
+Currently they are only accessible via the scripting and not yet available to interface only users (but watch this space!).
 
 ```{image} https://github.com/user-attachments/assets/84b18c6c-260e-47d7-acf2-9ee97d9c3c76
 :width: 48%
@@ -125,13 +141,15 @@ Top Left: Original image, Top Right: Image after background subtraction, Bottom:
 Users will be prompted to save unsaved changes to scripts when closing QuPath, even when the scripting editor is minimized so your precious code is safe.
 
 ### OME.tiff exporting 8 bit
-When using the Tile exporter to export an OME.tiff image, the image previously went through a RGB check that resulted in the images wrongly being converted to 8-bit. It now exports in the correct bit depth of the original image.
+When using the Tile exporter to export an OME.tiff image, the image previously went through a RGB check that resulted in the images wrongly being converted to 8-bit.
+It now exports in the correct bit depth of the original image.
 
 ## 👩‍💻 Scripting and API changes
 
 ### Faster running scripts for projects
 
-When images are not needed in a script (for example exporting measurements) it will run faster. This is due to the image pixels are no longer fetched regardless if they are used or not.
+When images are not needed in a script (for example exporting measurements) it will run faster.
+This is due to the image pixels are no longer fetched regardless if they are used or not.
 
 ## 📚 Dependency updates
 
