@@ -31,8 +31,7 @@ extensions = [
     'myst_parser',
     'sphinx_rtd_theme',
     'sphinx_design',
-    'sphinx.ext.autosectionlabel',
-    'sphinx_search.extension'
+    'sphinx.ext.autosectionlabel'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
