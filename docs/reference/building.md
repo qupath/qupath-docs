@@ -14,7 +14,7 @@ Just download an existing installer from [qupath.github.io](https://qupath.githu
 If you're moderately comfortable working from a command line, there's not much required to build QuPath:
 
 1. Install git, e.g. from <https://git-scm.com>
-2. Install OpenJDK 21 or later, e.g. from [adoptium.net](https://adoptium.net/en-GB/temurin/releases/?version=21)
+2. Install OpenJDK {{java_version}} or later, e.g. from [adoptium.net](https://adoptium.net/)
 3. Open a command prompt in an empty directory and run the following:
 
 
@@ -58,7 +58,7 @@ You can find QuPath inside the `./build/dist/` subdirectory.
 
 If you already have Java installed, you might be able to skip Step 2.
 Most Java versions >= 8 should work to launch Gradle, which will then automatically download the version it needs.
-However, since QuPath currently requires OpenJDK 17, we recommend just installing that and saving Gradle the extra effort.
+However, since QuPath currently requires OpenJDK {{java_version}}, we recommend just installing that and saving Gradle the extra effort.
 
 Note that some problems have been reported using a version of OpenJDK based on OpenJ9, such as may be provided by some package managers.
 Switching to an OpenJDK distribution based on HotSpot may help -- see [here](https://github.com/qupath/qupath/issues/484) for details.
@@ -137,7 +137,7 @@ This also gives a place to add more custom flags that can change the build.
 For example, on my Mac I might put the following into `gradle.properties`:
 ```
 org.gradle.parallel=true
-org.gradle.java.home=/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+org.gradle.java.home=/Library/Java/JavaVirtualMachines/temurin-|javaVersion|.jdk/Contents/Home
 djl.engines=pytorch,mxnet,onnxruntime
 djl.zoos=all
 ```
