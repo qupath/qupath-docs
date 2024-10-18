@@ -101,12 +101,16 @@ html_logo = 'docs/images/qupath_128.png'
 
 html_favicon = 'docs/images/QuPath.ico'
 
-release = '0.5.1'
-version = '0.5'
+# Variables for current QuPath version
+release = '0.6.0-rc3'
+version = '0.6'
+java_version = '21'
 
 # myst_heading_anchors = 2
 
 myst_substitutions = {
+
+    "java_version": java_version,
 
     "rectangle": '<img src="../images/icons/RECTANGLE_TOOL.png" />',
     "icon_rectangle": '<img src="../images/icons/RECTANGLE_TOOL.png" class="inline-icon" />',
