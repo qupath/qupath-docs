@@ -180,7 +180,7 @@ On Windows, this should be a `.bat` file that can be launched with a double-clic
 :class: tip
 
 There are some extra PyTorch options with DJL.
-There are more details in the [DJL docs](https://docs.djl.ai/engines/pytorch/pytorch-engine/index.html).
+There are more details in the [DJL docs](https://docs.djl.ai/master/engines/pytorch/pytorch-engine/index.html).
 
 *In theory* you should be able to point to a PyTorch installation, to use it rather than have DJL download PyTorch entirely.
 *In practice* I have found that often fails for me, and it is more reliable to have DJL download PyTorch itself.
