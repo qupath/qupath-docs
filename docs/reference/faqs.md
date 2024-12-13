@@ -122,7 +122,6 @@ We don't have any particular recommendation, but if you want to get into the det
 Generally no... our current focus is the stability and functionality – and finding efficient ways to do things that don’t require any particular hardware.
 
 But we realise that will have limits and we are certainly also thinking about GPUs.
-There is some info about adding GPU support for specific cases in {ref}`building-gpu`.
 
 However, note that many bottlenecks depend upon things that cannot be solved by the GPU alone (e.g. reading image tiles, the user interface thread).
 Therefore the real-world impact on performance may be quite modest for many applications.
