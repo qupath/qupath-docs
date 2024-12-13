@@ -508,11 +508,9 @@ This has been replaced by the Deep Java Library extension.
 
 ### Use CUDA
 
-If you have a recent NVIDIA graphics card, you *might* benefit from running StarDist using CUDA.
-This is possible with both OpenCV and TensorFlow -- although I have found it easier to set up with OpenCV.
+If you have a recent NVIDIA graphics card, you might benefit from running StarDist using CUDA.
 
-To do this, build QuPath from source as described in {ref}`building-gpu`.
-If your GPU-friendly build of QuPath is able to detect CUDA support through OpenCV, it will be used automatically.
+The best way to do this is to use TensorFlow via Deep Java Library, as described above.
 
 ### Use OpenVINO
 

@@ -3,12 +3,12 @@
 :::{sidebar} YouTube content
 ```{raw} html
 <div class="video-divert">
-<a href="https://youtu.be/xW2Ya205nvo?si=5hCfmsxUb859lb2E" target="blank"
+<a href="https://youtu.be/PKQN3uTNR1s" target="blank"
     aria-label="follow this link to learn more about QuPath for ImageJ users">
-    <img src="https://i.ytimg.com/vi/xW2Ya205nvo/hqdefault.jpg">
+    <img src="https://i.ytimg.com/vi/PKQN3uTNR1s/hqdefault.jpg">
     <div class="overlay"><p>View on YouTube</p></div>
 </a>
-<a class="caption-link" href="https://youtu.be/xW2Ya205nvo?si=5hCfmsxUb859lb2E" target="blank">QuPath for Fiji Users (I2K 2022)</a>
+<a class="caption-link" href="https://youtu.be/PKQN3uTNR1s" target="blank">QuPath for Fiji Users (I2K 2022)</a>
 </div>
 ```
 :::
@@ -204,8 +204,9 @@ This enables any ImageJ macro to be run based on extracting image regions from o
 
 Together, these integration features add up to both enabling ImageJ to operate with support for whole slide images, and providing QuPath with a wide-range of pixel-based functionality to supplement its existing object-based tools.
 
-:::{note}
-Unfortunately, it is not currently possible to send color-transformed pixels from QuPath to ImageJ through the macro runner.
+:::{admonition} New in v0.6.0!
+QuPath v0.6.0 introduces {menuselection}`Extensions --> ImageJ --> ImageJ script runner`.
+This is a more powerful replacement for the original macro runner.
 :::
 
 ### Macros and parallelization
