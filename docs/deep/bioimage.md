@@ -116,7 +116,7 @@ QuPath currently aims to support:
 
 * Models that take a single 2D input image and give a single 2D output image (+ channels)
 * Models without custom pre/post-processing
-  * StarDist uses custom post-processing - so you should check out [StarDist](stardist-extension) instead
+  * StarDist uses custom post-processing - so you should check out [the StarDist extension](stardist-extension) instead
   * Preprocessing with a fixed scale factor and offset is generally fine; preprocessing that requires global statistics (e.g. percentile normalization) may 'work', but give different results because these values are calculated per image tile and not across the full image
 * Models with compatible weights
   * Assuming you've DJL installed, this means:
