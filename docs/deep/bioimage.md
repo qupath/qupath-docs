@@ -66,12 +66,9 @@ If all goes well, QuPath will check the model is compatible and show a dialog:
 
 
 ```{figure} images/bioimage_dialog.png
-:class: shadow-image
-:width: 50%
-:align: center
+:class: shadow-image small-image
 
-Dialog showing pixel classifier options for a model zoo model.<br />
-Figures here were generated using the [*unet2d_nuclei_broad* model spec](https://github.com/bioimage-io/spec-bioimage-io/tree/v0.4.8/example_specs/models/unet2d_nuclei_broad).
+Dialog showing pixel classifier options for a model zoo model. Figures here were generated using the [*unet2d_nuclei_broad* model spec](https://github.com/bioimage-io/spec-bioimage-io/tree/v0.4.8/example_specs/models/unet2d_nuclei_broad).
 ```
 
 This provides an opportunity to customize a few QuPath-specific aspects:
@@ -87,19 +84,19 @@ This applies the prediction using QuPath to some small sample images included wi
 After pressing this button, QuPath will open ImageJ and show the input test image, the target prediction, the actual prediction, and the difference between them.
 
 ```{image} images/bioimage_broad_image.png
-:class: shadow-image
+:class: mini-image
 :width: 24%
 ```
 ```{image} images/bioimage_broad_target.png
-:class: shadow-image
+:class: mini-image
 :width: 24%
 ```
 ```{image} images/bioimage_broad_prediction.png
-:class: shadow-image
+:class: mini-image
 :width: 24%
 ```
 ```{image} images/bioimage_broad_difference.png
-:class: shadow-image
+:class: mini-image
 :width: 24%
 ```
 
@@ -119,7 +116,7 @@ QuPath currently aims to support:
 
 * Models that take a single 2D input image and give a single 2D output image (+ channels)
 * Models without custom pre/post-processing
-  * StarDist uses custom post-processing - so you should check out [StarDist](stardist-extension) instead
+  * StarDist uses custom post-processing - so you should check out [the StarDist extension](stardist-extension) instead
   * Preprocessing with a fixed scale factor and offset is generally fine; preprocessing that requires global statistics (e.g. percentile normalization) may 'work', but give different results because these values are calculated per image tile and not across the full image
 * Models with compatible weights
   * Assuming you've DJL installed, this means:

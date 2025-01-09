@@ -1,34 +1,35 @@
 # Measuring areas
 
+:::{sidebar} YouTube content
+```{raw} html
+<div class="video-divert">
+<a href="https://www.youtube.com/watch?v=KGE7v4VIQ_0" target="blank"
+    aria-label="follow this link to learn more about measuring areas in QuPath">
+    <img src="https://i.ytimg.com/vi/KGE7v4VIQ_0/maxresdefault.jpg">
+    <div class="overlay"><p>View on YouTube</p></div>
+</a>
+<a class="caption-link" href="https://www.youtube.com/watch?v=KGE7v4VIQ_0" target="blank">Measuring areas in QuPath</a>
+</div>
+```
+:::
+
 Perhaps one of the earliest and most familiar applications of image analysis in pathology is to quantify stained areas, sometimes referred to as *positive pixel counting*.
 
 We can apply this to {doc}`OS-3.ndpi <../intro/acknowledgements>` to answer the question: what is the area of the brown region, and what proportion of the tissue does it occupy?
 
-## Video tutorial
-
-```{raw} html
-<div style="text-align: center; margin-bottom: 2em;">
-<iframe width="100%" height="350" src="https://www.youtube-nocookie.com/embed/KGE7v4VIQ_0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
-```
-
-## Step-by-step
-
-### Define the region of interest
+## Define the region of interest
 
 Absolute measurements of stained area are generally not very meaningful: they need to be normalized to something.
 
 We can define the 'full' area of interest by drawing an annotation, or create one automatically around the entire tissue using the techniques described in {doc}`thresholding`.
 
 :::{figure} images/areas_tissue.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
-Tissue detected by thresholding.
+Tissue detected by thresholding
 :::
 
-### Threshold stained areas
+## Threshold stained areas
 
 QuPath makes it easy to digitally separate stains by color deconvolution, as described in {doc}`separating_stains`.
 *Create thresholder* allows you to use the stain separation along with thresholding.
@@ -37,14 +38,12 @@ In this case, set the {guilabel}`Channel` to {guilabel}`DAB` and *decrease the t
 The range of 'optical densities' after color deconvolution is typically (but not strictly!) around 0 -- 2, and an appropriate threshold might be around 0.25.
 
 :::{figure} images/areas_preview.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
-Preview of stained area detection.
+Preview of stained area detection
 :::
 
-### Viewing measurements
+## Viewing measurements
 
 Selecting the {guilabel}`Annotations` tab, you can see that QuPath is already generating live measurements of stained areas.
 These are computed automatically while you adjust thresholding parameters.
@@ -52,11 +51,9 @@ These are computed automatically while you adjust thresholding parameters.
 These are important, because they allow you to see how your results will be impacted by changing thresholds and other parameters.
 
 :::{figure} images/areas_threshold_25.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
-A higher threshold results in a lower stained percentage measurement.
+A higher threshold results in a lower stained percentage measurement
 :::
 
 :::{admonition} Why don't I see live measurements?
@@ -74,11 +71,9 @@ If I would like to automatically generate measurements for the relative proporti
 For this reason, I have chosen to assign both *Positive* and *Negative* classifications.
 
 :::{figure} images/areas_threshold_15.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
-A lower threshold results in a higher stained percentage measurement.
+A lower threshold results in a higher stained percentage measurement
 :::
 
 :::{tip}
@@ -92,7 +87,7 @@ The areas QuPath normally reports for annotations is based upon *the coordinates
 Depending upon the resolution of the classification, the 'counting pixels' approach gives a rather lower-resolution approximation of the area that does not exactly match the geometry-based approach (but it should generally be close).
 :::
 
-### Generating results
+## Generating results
 
 The live measurements will disappear when you close you the thresholder dialog.
 At this point you *could* generate annotations from your thresholded brown regions to preserve the information -- but you typically do not have to.
@@ -100,32 +95,25 @@ At this point you *could* generate annotations from your thresholded brown regio
 Rather, you can save your thresholder and click {guilabel}`Measure`.
 
 :::{figure} images/areas_dialog.png
-:align: center
-:class: shadow-image
-:width: 50%
+:class: shadow-image small-image
 
-Saving the thresholder.
+Saving the thresholder
 :::
 
 You can then select what kinds of object you want to measure (e.g. annotations, or the full image again) and add some extra text to help you identify the measurements later.
 
 :::{figure} images/areas_name.png
-:align: center
-:class: shadow-image
-:width: 50%
+:class: shadow-image small-image
 
-Add a name to distinguish your measurements.
+Add a name to distinguish your measurements
 :::
 
 The various measurement tables accessed through the {menuselection}`Measure` menu allow you to view and export the measurements at the end.
 
 :::{figure} images/areas_result.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
-Results of calculating the stained area percentage.
-The overlay is not displayed after the dialog is closed, but you can reload the threshold settings with {menuselection}`Load pixel classifier`.
+Results of calculating the stained area percentage. The overlay is not displayed after the dialog is closed, but you can reload the threshold settings with {menuselection}`Load pixel classifier`.
 :::
 
 :::{admonition} Image analysis & objectivity

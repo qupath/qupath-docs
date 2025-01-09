@@ -5,6 +5,8 @@
 
 djl
 bioimage
+<!-- instanseg -->
 stardist
 wsinfer
+gpu
 ```

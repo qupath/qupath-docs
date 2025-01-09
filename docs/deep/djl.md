@@ -20,7 +20,6 @@ There are a few important technical limitations to know about:
 * **TensorFlow** models *must* be stored as Saved Model Bundles (rather than Keras); additionally, TensorFlow doesn't yet work on recent Macs using Apple silicon - even using the Intel build
 :::
 
-
 ## Getting started with QuPath + DJL
 
 To start using DJL from within QuPath, download the [QuPath Deep Java Library extension](https://github.com/qupath/qupath-extension-djl).
@@ -30,20 +29,27 @@ This should be a .jar file, which you can drag onto QuPath's main window to inst
 This adds a command {menuselection}`Extensions --> Deep Java Library --> Manage DJL Engines`.
 Running this will show you a list of the available engines - usually either PyTorch and TensorFlow, or just PyTorch.
 
-```{image} images/djl_engines.png
----
-class: shadow-image
-width: 50%
-align: center
----
-```
+:::{figure} ../deep/images/djl_engines.png
+:class: shadow-image small-image
+
+The DJL library manager in QuPath
+:::
 
 By default, QuPath doesn't actually include the PyTorch and TensorFlow frameworks themselves (which are rather big).
 Instead, DJL can download them when they are needed and store them locally on your computer.
 This *can* happen automatically, but QuPath tells DJL not to do that since downloading large files unexpectedly could be troublesome for some users.
 Instead, you should use the {menuselection}`Manage DJL Engines` to explicitly request the download.
 
-If the download is successful, the indicator beside the engine should switch to green.
+(deep-java-library-gpu)=
+:::{admonition} GPU support
+:class: tip
+
+To use an NVIDIA GPU with either TensorFlow or Pytorch, you will need to have a *compatible* version of CUDA installed *before* downloading the engine.
+
+See {ref}`gpu-support` for more details.
+:::
+
+If downloading the engine is successful, the indicator beside the engine should switch to green.
 
 :::{admonition} Why an extension?
 The *QuPath Deep Java Library extension* is at an early stage and under active development.
@@ -148,9 +154,7 @@ println "Detected objects: ${detected.orElse([])}"
 ```
 
 :::{figure} images/djl_stein_object_detection.jpg
-:class: shadow-image
-:align: center
-:width: 90%
+:class: shadow-image full-image
 
 Object detection using DJL model zoo (PyTorch SSD)
 :::
@@ -163,9 +167,7 @@ These are shown as QuPath annotations with the classifications 'dog' and 'cup'..
 Results are better when applied to this recent photo from a trip to the Northern Irish coast:
 
 :::{figure} images/djl_holiday_cows_object_detection.jpg
-:class: shadow-image
-:align: center
-:width: 90%
+:class: shadow-image full-image
 
 Object detection of holidaying cows using DJL model zoo (PyTorch SSD)
 :::
@@ -203,14 +205,10 @@ println(segmented.orElse([]))
 ```
 
 :::{figure} images/djl_holiday_cows_semantic.jpg
-:class: shadow-image
-:align: center
-:width: 90%
+:class: shadow-image full-image
 
 Semantic segmentation of holidaying cows using DJL model zoo (PyTorch DeepLabv3)
 :::
-
-
 
 ### Style transfer
 
@@ -338,3 +336,22 @@ Because Groovy gives access to all of QuPath and all of DJL, a lot more can alre
 Check out the DJL documentation for more details.
 
 Over time, the QuPath extension and docs will be updated as we make deep learning easier to use without needing to grapple with DJL directly.
+
+
+
+## Appendix: CUDA via Conda
+
+Getting CUDA installed and then having it play nicely with PyTorch can be quite painful.
+
+If you have an NVIDA GPU but are struggling to get it to work with Deep Java Library, it may help to try using a local version of PyTorch installed via `conda` - or, preferably, `mamba`, which is like `conda` except faster.
+
+1. Install `miniforge` as described [here](https://github.com/conda-forge/miniforge)
+2. Open a command prompt (Linux) or *Miniforge Prompt* (Windows, installed at step 1)
+3. Create and activate a new environment
+   * `mamba create -n pytorch`
+   * `mamba activate pytorch`
+4. Check which versions of PyTorch are compatible with Deep Java Library [here](https://docs.djl.ai/engines/pytorch/pytorch-engine/index.html#supported-pytorch-versions)
+   * For QuPath v0.5, PyTorch 2.0.1 is compatible
+5. Install a compatible Pytorch as described [here](https://pytorch.org/get-started/previous-versions/)
+   * `conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.8 -c pytorch -c nvidia`
+6. 

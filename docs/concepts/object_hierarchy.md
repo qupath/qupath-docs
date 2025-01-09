@@ -24,8 +24,7 @@ There might even be additional, subcellular structures.
 Once we can identify the objects in an image and their key relationships, generating image analysis results typically involves simply summarizing this information.
 
 :::{figure} images/hierarchy_complex.png
-:align: center
-:width: 60%
+:class: mid-image
 
 Schematic illustration of an object hierarchy in QuPath.
 Annotations are shown in red, detections in green.
@@ -57,10 +56,9 @@ The tree structure of the object hierarchy can be visualized under the {guilabel
 The root object is omitted, but all other objects can be displayed.
 
 :::{figure} images/hierarchy_view.jpg
-:align: center
-:width: 80%
+:class: shadow-image full-image
 
-Viewing the object hierarchy in QuPath.
+Viewing the object hierarchy in QuPath
 :::
 
 :::{tip}

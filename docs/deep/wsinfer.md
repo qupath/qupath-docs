@@ -1,13 +1,18 @@
-(wsinfer-extension)=
 # WSInfer
+
+(wsinfer-extension)=
 
 The [WSInfer QuPath extension](https://github.com/qupath/qupath-extension-wsinfer/) makes it possible to do patch-based deep learning inference for digital pathology, without any need for scripting.
 
-It's a collaboration between the QuPath group (the extension) and Stony Brook University ([WSInfer](https://wsinfer.readthedocs.io/en/latest/)).
+It's a collaboration between Stony Brook University ([WSInfer](https://wsinfer.readthedocs.io/en/latest/)) and the QuPath group (the [extension](https://github.com/qupath/qupath-extension-wsinfer/) that brings WSInfer models to QuPath).
 
 :::{admonition} Cite the paper!
 :class: warning
-If you use WSInfer and/or this extension in a publication, please make sure to cite our preprint at <https://arxiv.org/abs/2309.04631>
+If you use WSInfer and/or this extension in a publication, please make sure to cite our paper.
+
+Kaczmarzyk, J.R., O’Callaghan, A., Inglis, F. et al. Open and reusable deep learning for pathology with WSInfer and QuPath. *npj Precis. Onc.* **8**, 9 (2024). <https://doi.org/10.1038/s41698-024-00499-9>
+
+(And if you use it in combination with QuPath, be sure to [cite the QuPath paper too!](citing))
 :::
 
 ## Requirements
@@ -17,6 +22,11 @@ If you use WSInfer and/or this extension in a publication, please make sure to c
 - [WSInfer QuPath Extension](https://github.com/qupath/qupath-extension-wsinfer/releases)
 - PyTorch (this can be downloaded while using the extension)
 
+:::{tip}
+A GPU is not required but can dramatically speed up processing.
+If you have an NVIDIA GPU and want to use it with WSInfer, you will need to install a version of CUDA compatible with PyTorch - please see {doc}`gpu`.
+:::
+
 ## Set-up
 
 With QuPath installed and running, drag and drop the WSInfer extension into the application and restart QuPath.
@@ -24,9 +34,7 @@ Once installed, open up an image and run the extension via {menuselection}`Exten
 You should see the window below:
 
 :::{figure} images/wsinfer.png
-:align: center
-:class: shadow-image
-:width: 40%
+:class: shadow-image small-image
 
 The WSInfer user interface
 :::
@@ -85,9 +93,7 @@ The {guilabel}`Results Table` provides details for each tile and the option to e
 You can also use the additional options to specify where models should be stored, and also the number of parallel threads used to read patches from the image (usually 1 or 2).
 
 :::{figure} images/wsinfer_options.png
-:align: center
-:class: shadow-image
-:width: 40%
+:class: shadow-image small-image
 
 WSInfer's additional options
 :::
@@ -96,18 +102,83 @@ However the most (potentially) exciting additional option is the {guilabel}`Pref
 
 The options available will depend upon your computer's capabilities (at least as far as they could be discerned by Deep Java Library):
 
-* **CPU**: This is generally the safest - and slowest - option, because it should be supported on all computers.
-* **MPS**: This stands for *Metal Performance Shaders*, and should be available on recent Apple Silicon - it is the Mac version of GPU acceleration
-* **GPU**: This should appear if you have an NVIDIA GPU, CUDA... and some luck.
+- **CPU**: This is generally the safest - and slowest - option, because it should be supported on all computers.
+- **MPS**: This stands for *Metal Performance Shaders*, and should be available on recent Apple silicon - it is the Mac version of GPU acceleration
+- **GPU**: This should appear if you have an NVIDIA GPU, CUDA... and a little bit of luck.
 
 If either MPS or GPU work for you, they should reduce the time required for inference by a *lot*.
-However configuration for GPU can be tricky, as it will depend upon other hardware and software on your computer.
-
+However configuration for GPU can be tricky, as it will depend upon other hardware and software on your computer - CUDA in particular.
+For more info, see {doc}`gpu`.
 
 :::{admonition} PyTorch & CUDA versions
+:class: tip
+
 The WSInfer extension is using Deep Java Library to manage its PyTorch installation.
 It won't automatically find any existing PyTorch you might have installed: Deep Java Library will download its own.
 
 If you have a compatible GPU, and want CUDA support, you'll need to ensure you have an appropriate CUDA installed *before* PyTorch is downloaded.
-QuPath v0.4.x uses PyTorch 1.13.x by default, which is expected to work with CUDA 11.6 or 11.7.
 :::
+
+## Using your own models
+
+In addition to models downloaded from the WSInfer zoo, you may also use your own models by putting them in a specific local directory called `user` or `local`.
+This in turn should be put into the model directory (the path can be seen in the WSI dialog) as a sibling of the `kaczmarj` directory that contains the downloaded models.
+
+Inside the local models directory, every model should be contained in a subdirectory. The subdirectory name becomes the model name in the model selection menu.
+Inside it, there will be:
+
+- the model in Torchscript format, with the name `torchscript_model.pt`, and
+- a `config.json` file, as explained [here](https://wsinfer.readthedocs.io/en/latest/user_guide.html#use-your-own-model).
+An example of config file is shown [here](https://github.com/SBU-BMI/wsinfer/issues/221).
+
+Thus, the structure of the models directory could be as follows:
+
+```text
+wsinfer
+  kaczmarj
+    breast-tumor-resnet34.tcga-brca
+      main
+        README.md
+        config.json
+        lfs-pointer.txt
+        torchscript_model.pt
+  local
+    my_model
+      config.json
+      torchscript_model.pt
+  wsinfer-zoo-registry.json
+```
+
+## Scripting
+
+The QuPath WSInfer extension is scriptable, which makes it much easier to apply across multiple images.
+
+When a model is run, the command parameters are stored in the [workflow](workflows) so that a [script can be generated automatically](workflows-to-scripts).
+
+An example script would be
+
+```groovy
+selectAnnotations()
+qupath.ext.wsinfer.WSInfer.runInference("kaczmarj/pancancer-lymphocytes-inceptionv4.tcga")
+```
+
+where the `selectAnnotation()` line was added when I pressed the {guilabel}`Annotations` button in the WSInfer dialog, and the following line runs the specified model (creating tiles automatically).
+
+To process in batch, I would need to
+
+- Add my images to a QuPath project
+- Annotate the regions of interest in the images (and save the data)
+- Open the above script in QuPath's script editor
+- Choose {menuselection}`Run --> Run for project`, and select the images I want to process
+
+## Identifying TILs (overlaying predictions of two models)
+
+By combining multiple WSInfer models, it's possible to develop more complex end-to-end workflows in QuPath.
+This is easiest to achieve using scripting.
+
+The script below aims to identify regions containing **tumor-infiltrating lymphocytes (TILs)**.
+It does this by applying a lymphocyte patch classification model and then a breast tumor classification model on the same patches.
+
+After running the script, you can [export results](exporting-measurements) or [markup images](exporting-rendered-images).
+
+<script src="https://gist.github.com/petebankhead/aebd135d3f5a080f6216fb05d8029c42.js"></script>

@@ -22,19 +22,19 @@ Digital images are composed of **pixels**, which is a term derived from **pictur
 When zooming in a lot, each pixel is typically visualized as a small square of a certain color.
 
 :::{figure} images/pixels_zoom.png
-:align: center
-:width: 75%
+:class: mid-image
+
+Illustration of a pixel viewed at low magnification *(left)* and zoomed-in to make individual pixels identifiable *(right)*
 :::
 
-% Image viewed at low magification *(left)* and zoomed-in to make individual pixels identifiable *(right)*.
+% Image viewed at low magification *(left)* and zoomed-in to make individual pixels identifiable *(right)*
 
 However, this is *just a visualization*.
 As far as the computer is concerned, each pixel is really just a number and the full image is a 2D matrix of these numbers: the **pixel values**.
 The values just happen to be displayed using colors for our benefit to aid interpretation.
 
 :::{figure} images/magnified_pixels.png
-:align: center
-:width: 75%
+:class: mid-image
 
 Illustration an image as it is normally visualized *(left)* and how the structures apparent within the image are reflected in the underlying pixel values that make up the image *(right)*.
 In science, the pixel values are crucial - how they are displayed is not.
@@ -49,15 +49,17 @@ Beside these, a LUT is shown *(right)* containing 256 shades of gray, correspond
 For each pixel in both images, the pixel value is used to index the LUT and find out which color to display for that pixel.
 
 :::{figure} images/luts_orig.png
-:align: center
-:width: 75%
+:class: mid-image
+
+Example of how the LUT corresponds to the pixel values in an image
 :::
 
 By separating the display color from the pixel value using LUTs, it becomes possible to change the brightness/contrast of an image *without* changing the underlying pixel values - simply by changing the LUT.
 
 :::{figure} images/luts_brighter.png
-:align: center
-:width: 75%
+:class: mid-image
+
+Changing the LUT changes the brightness/contrast without changing the underlying values
 :::
 
 % Brightness enhanced by modifying the LUT *but keeping the pixel values unchanged*.
@@ -69,8 +71,9 @@ Of course, having separated pixel values from the colors used to display them, t
 Other LUTs can be used to add other colors.
 
 > :::{figure} images/luts_fire.png
-> :align: center
-> :width: 75%
+> :class: mid-image
+>
+> LUTS are not limited to greyscale - here the *Fire* LUT is used
 > :::
 
 % Image displayed using the *Fire* LUT from ImageJ.
@@ -94,10 +97,9 @@ An alternative visualization might use a smoother *interpolation* between pixel 
 One example is *bilinear interpolation*, available in QuPath under {menuselection}`Edit --> Preferences...`.
 
 :::{figure} images/interpolation.png
-:align: center
-:width: 60%
+:class: mid-image
 
-Image viewed in QuPath using the default (nearest-neighbor, 'square') interpolation *(left)* and also bilinear interpolation *(right)*.
+Image viewed in QuPath using the default (nearest-neighbor, 'square') interpolation *(left)* and also bilinear interpolation *(right)*
 :::
 
 However, it is generally advisable to turn bilinear interpolation *off*, since the default 'square' interpolation gives a more accurate depiction of the level of detail present in the image.
@@ -116,8 +118,9 @@ The red horizontal line spans 1618 pixels in length (which can be determined jus
 We can then infer that the 'pixel width' is approximately 10/1618 = 0.0061 cm, or 61 µm.
 
 :::{figure} images/ruler.jpg
-:align: center
-:width: 100%
+:class: shadow-image full-image
+
+Photograph of a ruler with a red line spanning 1618 pixels
 :::
 
 :::{tip}
@@ -146,8 +149,9 @@ The pixel size relates to the **resolution** within the detail: informally, the 
 As a rule of thumb, a smaller pixel size means more detail is available.
 
 :::{figure} images/pixel_sizes.png
-:align: center
-:width: 100%
+:class: full-image
+
+Images with very different pixel sizes
 :::
 
 Another way this is often expressed is using the **magnification** of the objective lens used during image acquisition.
@@ -157,8 +161,7 @@ Therefore, for example, an image scanned at x40 magnification may have a pixel s
 In other words, a x20 image from one scanner might have a quite different pixel size compared to a x20 image from another scanner.
 
 :::{figure} images/pixel_sizes_mag.png
-:align: center
-:width: 100%
+:class: full-image
 
 Examples of the same slide scanned with an Aperio (left) and a Trestle (right) scanner. <br />
 Whole slide images from the OpenSlide freely distributable test data.
@@ -184,8 +187,7 @@ In practice, for light microscopy one quickly runs up against the *diffraction l
 The details are not essential right now (for a more thorough introduction see [Blur and the PSF]) but, very crudely, this means that anything smaller than a few hundred nm will *appear* at least to be at least this large when imaged with a (conventional) light microscope, and any structures closer than this limit can merge and appear as one.
 
 :::{figure} images/resolution_separation.png
-:align: center
-:width: 75%
+:class: full-image
 
 Illustration of how the diffraction limit can make small nearby structures appear to merge. <br />
 *(Top)* Diffraction-limited (i.e. blurry) images of two identical point-like structures, separated by different distances. *(Bottom)* Plots of the pixel values across the centre of each corresponding image.
@@ -205,18 +207,15 @@ Many images - including most brightfield images in QuPath - have *three color ch
 One way to think of such *RGB images* is that each pixel effectively has three values rather than one, and these represent the amounts of red, green and blue that should generally be used to display the pixel.
 
 :::{figure} images/rgb.png
-:align: center
-:width: 90%
+:class: full-image
 
-Red, green and blue channels combining to create an RGB image (here, a brightfield H&E scan).
+Red, green and blue channels combining to create an RGB image (here, a brightfield H&E scan)
 :::
 
 These red, green and blue values are depicted in the bottom right corner when moving the cursor over an image in QuPath.
 
 :::{figure} images/rgb_cursor.jpg
-:align: center
-:class: shadow-image
-:width: 60%
+:class: shadow-image mid-image
 
 Red, green and blue values shown below the cursor location.
 *Typically*, a pixel with RGB values `0,0,0` would be shown as black and `255,255,255` would be white. The `167,74,121` shown in the screenshot indicates the pink pixel under the cursor is 'mostly red, with quite a bit of blue and not a lot of green'.
@@ -232,10 +231,9 @@ We can adjust the brightness/contrast by changing the LUTs independently or all 
 The final colors we see are a mixture of the the red, green and blue components calculated for each pixel.
 
 :::{figure} images/rgb_contrast.png
-:align: center
-:width: 90%
+:class: full-image
 
-RGB image as above, with brightness/contrast adjustments applied to each channel.
+RGB image as above, with brightness/contrast adjustments applied to each channel
 :::
 
 ### Multichannel images
@@ -247,25 +245,29 @@ QuPath supports these images too.
 {menuselection}`View --> Brightness/Contrast` enables you to view the names of each channel, toggle channels on or off (for display), double-click on a channel to change the color used to visualize it, and adjust brightness/contrast for each channel independently.
 
 :::{figure} images/multichannel_contrast.jpg
-:align: center
-:class: shadow-image
-:width: 80%
+:class: shadow-image full-image
+
+Adjusting channel brightness/contrast in the LUCA 7 channel multiplex image
 :::
 
 Furthermore, {menuselection}`View --> Mini viewers --> Show channel viewer` makes it possible to see multiple channels simultaneously, side-by-side.
 
+:::{tip}
+Press and hold {kbd}`Shift` to pause the viewer, or right click on the channel viewer to customize its display.
+:::
+
 :::{figure} images/multichannel_viewer.jpg
-:align: center
-:class: shadow-image
-:width: 80%
+:class: shadow-image full-image
+
+Viewing multiple channels simultaneously in the channel viewer
 :::
 
 *Cell detection* in QuPath enables you to select which channel contains nuclear staining (for detection), and will then subsequently measure intensity values within different cell compartments for all channels.
 
 :::{figure} images/multichannel_detection.jpg
-:align: center
-:class: shadow-image
-:width: 80%
+:class: shadow-image full-image
+
+Viewing detection results from cell detection using DAPI as the nuclear channel
 :::
 
 ### Color deconvolution
@@ -317,6 +319,7 @@ Objects (e.g. annotations, cells) also should remember which plane they belong t
 
 For more sophisticated multidimensional image analysis you might want to turn to other software, such as [Fiji].
 
+[Introduction to Bioimage Analysis]: https://petebankhead.gitbooks.io/imagej-intro/content/
 [a pixel is not a little square]: http://alvyray.com/Memos/CG/Microsoft/6_pixel.pdf
 [analyzing fluorescence microscopy images with imagej]: https://bioimagebook.github.io/
 [blur and the psf]: https://bioimagebook.github.io/chapters/3-fluorescence/2-formation_spatial/formation_spatial.html

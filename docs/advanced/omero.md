@@ -1,15 +1,18 @@
 (omero-extension)=
 # OMERO
 
+This page describes how to use the OMERO extension in QuPath to access and interact with images hosted on OMERO servers. The installation instructions can be found [here](https://github.com/qupath/qupath-extension-omero-web).
+
 :::{caution}
-The QuPath OMERO extension has not yet been updated to work with QuPath v0.4.0.
+This extension makes use of the [OMERO JSON API](https://docs.openmicroscopy.org/omero/5.6.0/developers/json-api.html), which currently only allows rendered RGB images to be accessed.
+If you need the raw pixels for your analysis, consider downloading your files locally rather than accessing them from OMERO via QuPath.
+
+The extension was updated for QuPath v0.5.0 and renamed to `qupath-extension-omero-web`.
+
+A new version of the QuPath OMERO extension is currently under development.
+A major goal for the new extension will be to provide raw pixel access -- a preview version will be available soon for testing.
 :::
 
-This page describes how to use the built-in OMERO extension in QuPath to access and interact with images hosted on OMERO servers. The installation instructions for this extension can be found [here](https://github.com/qupath/qupath-extension-omero).
-
-:::{warning}
-This extension makes use of the [OMERO JSON API](https://docs.openmicroscopy.org/omero/5.6.0/developers/json-api.html), which currently only allows rendered images to be accessed. If you need the raw pixels for your analysis, consider downloading your files locally rather than accessing them from OMERO via QuPath.
-:::
 
 ## Adding OMERO images to your project
 
@@ -17,9 +20,9 @@ QuPath can import OMERO images to a project via their links. This can be done in
 
 - {menuselection}`File --> Open URI...` (Shortcut {kbd}`Ctrl + Shift + O`) and enter the URL of your OMERO image.
 - {menuselection}`File --> Project --> Add images` and click 'Input URL' or 'From clipboard'.
-- Via the OMERO Browser (see [Browsing an OMERO server]).
+- Via the OMERO Browser (see [Browsing an OMERO server](omero-browsing)).
 
-Should the server require authentication, QuPath will prompt you to enter your credentials and will handle the permission issues. For more information about OMERO accounts in QuPath, see [Managing OMERO clients].
+Should the server require authentication, QuPath will prompt you to enter your credentials and will handle the permission issues. For more information about OMERO accounts in QuPath, see [Managing OMERO clients](omero-clients).
 
 :::{admonition} URL formats
 QuPath only accepts the following OMERO URL formats:
@@ -33,12 +36,14 @@ E.g. <http://idr.openmicroscopy.org/webclient/?show=image-1920093>
 :::
 
 :::{tip}
-QuPath now also accepts links to datasets and projects (screens/wells/plates are not yet implemented), in which case all the compatible images inside them will be fetched and added to the current project. The supported URL formats for projects and datasets are the following:
+QuPath now also accepts links to datasets and projects (screens/wells/plates are not yet implemented), in which case all the compatible images inside them will be fetched and added to the current project.
+The supported URL formats for projects and datasets are the following:
 
 - `https://<server>/webclient/?show=project-<projectId>`
 - `https://<server>/webclient/?show=dataset-<datasetId>`
 :::
 
+(omero-browsing)=
 ## Browsing an OMERO server
 
 You can browse OMERO servers via the {menuselection}`Extensions --> OMERO --> Browse server...` command.
@@ -46,24 +51,20 @@ You can browse OMERO servers via the {menuselection}`Extensions --> OMERO --> Br
 The menu will list all the servers that were opened in the current QuPath session, from which you can choose the one to browse.
 
 :::{figure} images/omero_browse_new_servers.jpg
-:align: center
-:class: shadow-image
-:width: 87%
+:class: shadow-image small-image
 
 How to browse an OMERO server
 :::
 
 :::{note}
-The list of servers is the same one used in the OMERO web client window (see [Managing OMERO clients]).
+The list of servers is the same one used in the OMERO web client window (see [Managing OMERO clients](omero-clients)).
 :::
 
-Alternatively, you can provide a new OMERO server (with which no connection was previously established) to browse by clicking on 'New server...'.
+Alternatively, you can provide a new OMERO server (with which no connection was previously established) to browse by clicking on {guilabel}`New server...`.
 The URL to provide should not contain any [URL query](https://en.wikipedia.org/wiki/Query_string) or unnecessary characters.
 
 :::{figure} images/omero_browse_new_server_link.jpg
-:align: center
-:class: shadow-image
-:width: 87%
+:class: shadow-image small-image
 
 E.g. `https://<server>.com`, **not** `https://<server>.com/webclient/?show=image-001)`
 :::
@@ -71,25 +72,23 @@ E.g. `https://<server>.com`, **not** `https://<server>.com/webclient/?show=image
 The browser will display all the projects, datasets and images filtered by OMERO group and owner. The design is very similar to OMERO's webclient.
 
 :::{figure} images/omero_browser.jpg
-:align: center
-:class: shadow-image
-:width: 87%
+:class: shadow-image mid-image
 
 The OMERO browser (<http://idr.openmicroscopy.org>)
 :::
 
-You can add an individual image to your project by double-clicking on it. Alternatively, select the relevant projects/datasets/images and click 'Import OMERO project/dataset/image/selected'.
+You can add an individual image to your project by double-clicking on it.
+Alternatively, select the relevant projects/datasets/images and click {guilabel}`Import OMERO project/dataset/image/selected`.
 
 :::{Tip}
 You can display more OMERO information on the selected file such as tags, key-value pairs and comments with {menuselection}`right click --> More info...`.
 :::
 
-To query a file on the OMERO server, one can also access the 'Advanced...' feature, which will search the dataset for the input query. Again, the results can be opened by either double-clicking on them or by selecting them and clicking 'Import project/dataset/image/OMERO objects'.
+To query a file on the OMERO server, one can also access the {guilabel}`Advanced...` feature, which will search the dataset for the input query.
+Again, the results can be opened by either double-clicking on them or by selecting them and clicking {guilabel}`Import project/dataset/image/OMERO objects`.
 
 :::{figure} images/omero_advanced_search.png
-:align: center
-:class: shadow-image
-:width: 87%
+:class: shadow-image mid-image
 
 Advanced search
 :::
@@ -128,6 +127,7 @@ You'll notice that it is indeed possible to send detection objects as well (e.g.
 Additionally, the `writePathObjects(..)` method was not designed for processing too many objects. So beware not to send a huge amount of objects at once!
 :::
 
+(omero-clients)=
 ## Managing OMERO clients
 
 :::{sidebar} Status refresh
@@ -144,9 +144,7 @@ If an account with authentication is currently connected to the server, its user
 The green circle next to a server indicates whether the account is logged in to it (which will always be green if the server is public). The green circle next to the images’ URI indicates whether the image can be accessed with the current account.
 
 :::{figure} images/omero_manage_clients.png
-:align: center
-:class: shadow-image
-:width: 87%
+:class: shadow-image small-image
 
 Manage OMERO server connections
 :::
@@ -160,9 +158,7 @@ You can still attempt a login to a public server, which is sensible if you have 
 If clicking 'Log out' next to the first server, the following will happen:
 
 :::{figure} images/omero_manage_clients_not_logged_in.png
-:align: center
-:class: shadow-image
-:width: 87%
+:class: shadow-image small-image
 
 Logging out of an OMERO server
 :::

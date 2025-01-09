@@ -1,5 +1,18 @@
 # Detecting tissue
 
+:::{sidebar} YouTube content
+```{raw} html
+<div class="video-divert">
+<a href="https://www.youtube.com/watch?v=B03-TlH-yVU" target="blank"
+    aria-label="follow this link to learn more about thresholding in QuPath">
+    <img src="https://i.ytimg.com/vi/B03-TlH-yVU/maxresdefault.jpg">
+    <div class="overlay"><p>View on YouTube</p></div>
+</a>
+<a class="caption-link" href="https://www.youtube.com/watch?v=B03-TlH-yVU" target="blank">Thresholding in QuPath</a>
+</div>
+```
+:::
+
 Often, we want to create annotations around regions that are *clearly* different from their surroundings: either brighter or darker.
 
 The *Wand* tool helps, but still involves manually drawing.
@@ -10,17 +23,7 @@ Thresholding may become one of the QuPath commands you use most often.
 It provides a way to define regions of interest without needing to manually annotate everything.
 :::
 
-## Video tutorial
-
-```{raw} html
-<div style="text-align: center; margin-bottom: 2em;">
-<iframe width="100%" height="350" src="https://www.youtube-nocookie.com/embed/B03-TlH-yVU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
-```
-
-## Step-by-step
-
-### Thresholders in QuPath
+## Thresholders in QuPath
 
 At its most basic level, thresholding distinguishes between two classes of pixels: those with values above the specified threshold, and those with values below.
 
@@ -32,7 +35,7 @@ However, there are a few things that complicate matters:
 
 A *thresholder* in QuPath is something that can apply a threshold to an image while addressing all of these problems.
 
-### Thresholds in action
+## Thresholds in action
 
 You can create a thresholder using the {menuselection}`Classify --> Pixel classification --> Create thresholder` command.
 
@@ -41,27 +44,23 @@ There are three main purposes for this: to create objects (usually annotations),
 The most common of these is to create objects, so it is the one we will worry about first.
 
 :::{figure} images/threshold_final.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
-Tissue detected by thresholding.
+Tissue detected by thresholding
 :::
 
 :::{tip}
 A *thresholder* in QuPath is a special example of a *pixel classifier*... which is why you'll see both terms appearing.
 :::
 
-### Adjusting parameters
+## Adjusting parameters
 
 When running the command, you'll be confronted by the following dialog.
 
 :::{figure} images/threshold_dialog.png
-:align: center
-:class: shadow-image
-:width: 50%
+:class: shadow-image small-image
 
-Dialog box for *Create thresholder*.
+Dialog box for *Create thresholder*
 :::
 
 You can adjust a number of parameters:
@@ -77,11 +76,9 @@ You can adjust a number of parameters:
 When you adjust these settings, you should see an overlay that color-codes pixels according to the above/below threshold classifications.
 
 :::{figure} images/threshold_overlay.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
-Previewing the thresholded image.
+Previewing the thresholded image
 :::
 
 :::{tip}
@@ -94,7 +91,7 @@ You can adjust the overlay opacity using the slider at the top, or by scrolling 
 The settings shown in the screenshot are a reasonable starting point for any brightfield whole slide image -- then adjust the smoothing and threshold if you need to.
 :::
 
-### Saving your thresholder
+## Saving your thresholder
 
 Once you are happy with the look of the preview overlay, it's time to do something with it.
 
@@ -112,11 +109,9 @@ Keep QuPath happy by entering a classifier name and pressing {guilabel}`Save`.
 The buttons below should become magically activated.
 
 :::{figure} images/threshold_name_saved.png
-:align: center
-:class: shadow-image
-:width: 50%
+:class: shadow-image small-image
 
-Saving a thresholder to a project.
+Saving a thresholder to a project
 :::
 
 :::{tip}
@@ -128,7 +123,7 @@ Beware that doing this can thwart attempts to generate scripts using the thresho
 You can reload a saved thresholder with {menuselection}`Classify --> Pixel classification --> Load pixel classifier`.
 :::
 
-### Creating objects
+## Creating objects
 
 Now you can finally click on {guilabel}`Create objects`.
 But your choices are not over.
@@ -138,19 +133,17 @@ You can decide whether to create objects across the full image, within annotated
 In this case, because we have no existing annotations, our only option is {guilabel}`Full image`.
 
 :::{figure} images/threshold_parent.png
-:align: center
-:class: shadow-image
-:width: 50%
+:class: shadow-image small-image
 
-Choose the parent objects within which to threshold, or the full image.
+Choose the parent objects within which to threshold, or the full image
 :::
 
 After this, there is just one final set of options to navigate, which offers more fine-grained control over exactly what kind of objects will be created -- and the extent to which small fragments and holes will be cleaned up.
 
 :::{figure} images/threshold_objects_split.png
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image small-image
+
+Additional options for filtering the objects created by thresholding
 :::
 
 :::{tip}
@@ -162,9 +155,7 @@ To decipher {guilabel}`Create objects for ignored classes`, see [Ignored* classi
 The final result should be the detected tissue regions, as classified QuPath annotations.
 
 :::{figure} images/threshold_final.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
-The end result of tissue detected by thresholding.
+The end result of tissue detected by thresholding
 :::

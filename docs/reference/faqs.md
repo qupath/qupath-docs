@@ -25,16 +25,19 @@ If not, use [the QuPath discussion forum at image.sc](http://forum.image.sc/tags
 :::{tip}
 The following tips will improve your chances of receiving a useful answer on the forum.
 
-- Make sure you **use the \*qupath\* tag** with your post
+- Make sure you **use the `qupath` tag** with your post
 
-- **Be specific!** Broad questions lead to lots of guesswork and back-and-forth discussion to try to ascertain what you really want. Try to already include the key information in your first post.
+- **Be specific!** Broad questions lead to lots of guesswork and back-and-forth discussion to try to ascertain what you really want.
+Try to already include the key information in your first post.
 
 - If your question is about how to analyze your images:
 
-  - **Include screenshots and example images!** If you are not able to share your own image (e.g. you don't have permission), you can link to similar images online. Otherwise the discussion can be very long as people trying to help have to guess how your images look, and may be completely wrong.
+  - **Include screenshots and example images!** If you are not able to share your own image (e.g. you don't have permission), you can link to similar images online.
+  Otherwise the discussion can be very long as people trying to help have to guess how your images look, and may be completely wrong.
   - **Mention the QuPath version you are using**
   - **Describe clearly what you have already tried**
-  - **Describe what you want to achieve at the end** - *not* just any specific step you are stuck with. There might be a better/more efficient way to achieve your end goal that you haven't considered, making the awkward step unnecessary.
+  - **Describe what you want to achieve at the end** - *not* just any specific step you are stuck with.
+  There might be a better/more efficient way to achieve your end goal that you haven't considered, making the awkward step unnecessary.
 :::
 
 ### How do I report a bug?
@@ -119,7 +122,6 @@ We don't have any particular recommendation, but if you want to get into the det
 Generally no... our current focus is the stability and functionality – and finding efficient ways to do things that don’t require any particular hardware.
 
 But we realise that will have limits and we are certainly also thinking about GPUs.
-There is some info about adding GPU support for specific cases in {ref}`building-gpu`.
 
 However, note that many bottlenecks depend upon things that cannot be solved by the GPU alone (e.g. reading image tiles, the user interface thread).
 Therefore the real-world impact on performance may be quite modest for many applications.
@@ -220,9 +222,9 @@ When importing an image into an project, there is a {guilabel}`Rotate image` opt
 This can be used to rotate the image as it is being imported, so that QuPath will treat it from the beginning as if the actual image stored within the file had a different orientation.
 
 :::{figure} images/importing-option-rotate.png
-:align: center
-:class: shadow-image
-:width: 60%
+:class: shadow-image mid-image
+
+Screenshot of the import dialog window showing the *Rotate image* option.
 :::
 
 ### How do I create a new annotation inside an existing one using the *Brush* or *Wand*?

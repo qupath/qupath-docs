@@ -1,3 +1,4 @@
+(exporting-measurements)=
 # Exporting measurements
 
 There are 3 different ways to export measurements within QuPath, via:
@@ -15,9 +16,7 @@ As a rule of thumb, if you have:
 - **multiple images**: use the *Measurement Exporter* or a script
 :::
 
-## Step-by-step
-
-### Via the measurement table
+## Via the measurement table
 
 The measurement table allows you to export measurements from a single image, currently opened in the viewer.
 It is therefore **not** recommended if you wish to export measurements for multiple images or across a whole project.
@@ -27,10 +26,9 @@ As mentioned in [Introducing objects](introducing-objects), you can create a mea
 After choosing the objects you wish to export (e.g. detections, annotations), a similar measurement table to the one below will be shown on screen.
 
 :::{figure} images/measurement_table.png
-:align: center
-:width: 70%
+:class: shadow-image mid-image
 
-Saving cell detection measurements via the measurement table.
+Saving cell detection measurements via the measurement table
 :::
 
 You can then save your measurement by pressing **Save** and choosing an appropriate name for your output `.txt` file.
@@ -41,18 +39,16 @@ This method creates a table with different columns, which all depend on the obje
 If your analysis involves combining measurements from different images, it is recommended to use the Measurement Exporter, detailed in the next subsection.
 :::
 
-### Via the Measurement Exporter
+## Via the Measurement Exporter
 
 The cleanest way to export different types of measurements in QuPath across multiple images is with the **Measurement Exporter**.
 
 Provided that your images are stored in a {doc}`project <../tutorials/projects>`, you can access it through {menuselection}`Measure --> Export measurements`.
 
 :::{figure} images/exporting_measurements.png
-:align: center
-:class: shadow-image
-:width: 70%
+:class: shadow-image mid-image
 
-The Measurement Exporter.
+The Measurement Exporter
 :::
 
 From there, you can decide from which image(s) the measurements will the be exported (similar to the {doc}`Run for project <../scripting/workflows_to_scripts>` command in the script editor).
@@ -78,7 +74,7 @@ If you have an open image in an active viewer, be sure to always save your data 
 A small red-colored warning will appear to remind you.
 :::
 
-### Via scripting
+## Via scripting
 
 In cases where you would want to automate your analysis and exporting process, the Measurement Exporter can be easily used with scripting.
 To do so, you can create a `MeasurementExporter`, customize it the way you want it, then call `exportMeasurements(outputFile)` to start the export process.

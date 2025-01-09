@@ -28,10 +28,9 @@ Bio-Formats supports most images that can be read by OpenSlide, but not all - an
 However, file formats are tricky and tend to have lots of variants. Just because a format is listed as being supported by Bio-Formats or OpenSlide doesn't mean files in that format will always open (properly) in QuPath. The following sections contain some extra details and caveats, partly based on user feedback about what does and doesn't work.
 
 :::{important}
-If you're using a QuPath build for **Apple silicon** (i.e. a recent Mac with M1/M2 processor), then you might not have OpenSlide available by default.
-Check out <https://github.com/petebankhead/homebrew-qupath> for instructions how to install this.
+If you're using a QuPath build for **Apple silicon** (i.e. a recent Mac with M1/M2/M3 processor), then you might find that *.ndpi* and *.czi* images don't work with Bio-Formats.
 
-The same link can also help if you're using another Mac or Linux computer and want to update the version of OpenSlide that QuPath uses.
+See [here](qupath-versions-for-mac) for more details and workarounds.
 :::
 
 ### Reporting problems
@@ -78,11 +77,16 @@ Since the release of [Bio-Formats v5.3.0](https://www.openmicroscopy.org/site/su
 
 To open CZI files that use JPEG-XR compression on **Windows**, you may also need to install the *Visual Studio 2015 C++ Redistributable* - see [here](https://www.openmicroscopy.org/site/support/bio-formats/formats/zeiss-czi.html) for more information.
 
+If you're using the [Apple silicon build](qupath-versions-for-mac), Bio-Formats can't read .czi files that use JPEG-XR compression. You'll either need to convert the images outside of QuPath, or switch to using the Intel build of QuPath for macOS.
+
 
 #### DICOM
 
 Bio-Formats 6.8.0 introduced support for DICOM whole slide images.
 This is available in QuPath from v0.4.0.
+
+OpenSlide 4.0 also added support for DICOM whole slide images.
+This is available in QuPath from v0.5.0.
 
 
 #### iSyntax (Philips)
@@ -116,6 +120,9 @@ See [here](https://www.glencoesoftware.com/blog/2019/12/09/converting-whole-slid
 NDPI is generally quite well supported by both Bio-Formats and OpenSlide.
 Note that z-stacks are only supported by Bio-Formats; with OpenSlide, only one plane will be opened.
 
+If you're using the [Apple silicon build](qupath-versions-for-mac), Bio-Formats can't read most .ndpi (or .ndpis) files. 
+Fortunately, OpenSlide can handle .ndpi so this usually isn't a problem.
+
 #### TIFF
 
 TIFF is a file format commonly used for whole slide images, but it is important to recognize that not all TIFFs are the same.
@@ -125,6 +132,10 @@ Consequently, although OpenSlide and Bio-Formats support many TIFF files, it is 
 
 Perhaps the most common reason for this is that the file does not contain pyramidal layers, or these layers cannot be automatically recognized.
 This is one reason why well-supported, open formats should generally be preferred (e.g. OME-TIFF).
+
+#### OME-Zarr
+QuPath version 0.6.0 introduced support for reading and writing [OME-Zarr](https://link.springer.com/article/10.1007/s00418-023-02209-1) images.
+This file type was developed by the OME team in collaboration with many individuals and institutes to address the need for a scalable and cloud-friendly large image format.
 
 ## Open URI
 

@@ -17,11 +17,9 @@ Releasing the {kbd}`Spacebar` returns to the previously selected tool.
 Alternatively, to move quickly to a specific region simply click on the area you wish to navigate to in the *overview* shown in the top right corner.
 
 :::{figure} images/steps_overview.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
-Clicking on the image overview (top right) shifts to view another part of the image.
+Clicking on the image overview (top right) shifts to view another part of the image
 :::
 
 ### Zooming

@@ -11,10 +11,9 @@ Objects themselves are simple, but the idea is powerful as it enables us to gene
 This is the QuPath approach to image analysis {doc}`introduced in the previous section <processing_and_analysis>`.
 
 :::{figure} images/qupath_approach.png
-:align: center
-:width: 90%
+:class: full-image
 
-General workflow for analyzing images in QuPath.
+General workflow for analyzing images in QuPath
 :::
 
 ## Types of object
@@ -38,21 +37,17 @@ QuPath provides three main **object types** to help manage these differences:
 Each object type can be independently shown and hidden using toolbar buttons and shortcut keys.
 
 :::{figure} images/toolbar_objects.png
-:align: center
-:class: shadow-image
-:width: 20%
+:class: mini-image
 
-Show/hide buttons for *annotations* (shortcut: `A`), *TMA cores* (`G`) and *detections* (`D`) respectively.
+Show/hide buttons for *annotations* (shortcut: `A`), *TMA cores* (`G`) and *detections* (`D`) respectively
 :::
 
 We will focus only on annotations and detections, because TMA cores are rather specialized and act very much like annotations anyway.
 
 :::{figure} images/object_types.jpg
-:align: center
-:class: shadow-image
-:width: 40%
+:class: shadow-image small-image
 
-A rectangular annotation (yellow) containing over 600 detections (red and blue).
+A rectangular annotation (yellow) containing over 600 detections (red and blue)
 :::
 
 ### Annotations & detections
@@ -109,11 +104,9 @@ The **name** is simply a short description that might be added for identificatio
 It is frequently left empty.
 
 :::{figure} images/objects_named.jpg
-:align: center
-:class: shadow-image
-:width: 60%
+:class: shadow-image full-image
 
-Annotations with (ellipse, rectangle) and without (line) names.
+Annotations with (ellipse, rectangle) and without (line) names
 :::
 
 :::{tip}
@@ -130,11 +123,9 @@ The **ROI** is what makes an object 'visible': it is the shape drawn on top of t
 It may be a rectangle, line, ellipse, polygon or more complex 2D shape.
 
 :::{figure} ../starting/images/drawings.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image mid-image
 
-ROIs of different shapes.
+ROIs of different shapes
 :::
 
 ### Classification
@@ -148,11 +139,9 @@ Knowing the classification makes it possible to do more interesting things, e.g.
 *Sub-classifications* can also be derived from classifications to encode multiple pieces of information about an object's class.
 
 :::{figure} images/objects_classification.jpg
-:align: center
-:class: shadow-image
-:width: 60%
+:class: shadow-image full-image
 
-Detected nucleus assigned the *sub-classification* `Tumor: Positive`.
+Detected nucleus assigned the *sub-classification* `Tumor: Positive`
 :::
 
 ### Measurement list
@@ -162,11 +151,9 @@ The **measurement list** encapsulates some (numeric) measurements of an object.
 These measurements may be interesting in themselves, but they can also be useful to {doc}`train a machine learning classifier <../tutorials/cell_classification>` to assign classifications automatically.
 
 :::{figure} images/objects_hierarchy.jpg
-:align: center
-:class: shadow-image
-:width: 60%
+:class: shadow-image full-image
 
-Measurement list (bottom left) for a selected detection object.
+Measurement list (bottom left) for a selected detection object
 :::
 
 ## Summary

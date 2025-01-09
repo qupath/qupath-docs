@@ -25,9 +25,7 @@ In practice, superpixels are usually much more awkward to use than pixel classif
 If you can solve your analysis problem without superpixels, then you probably should.
 :::
 
-## Step-by-step
-
-### Generating superpixels
+## Generating superpixels
 
 QuPath has two superpixel-generating commands:
 
@@ -68,7 +66,7 @@ Keep in mind that a superpixel can only have *one* classification in the end -- 
 Therefore the (in)accuracy of superpixels will already put a limit on the accuracy of the final result.
 :::
 
-### Adding features
+## Adding features
 
 At first, your superpixels are 'empty': they have none of the features a classifier needs to do its job.
 
@@ -79,33 +77,29 @@ Be sure to select your tiles/superpixels/detections before adding measurements.
 The same command can be used to add measurements to other kinds of object (e.g. annotations) depending upon what is selected -- but that won't help us here.
 
 :::{figure} images/superpixels_features.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
+
+Adding intensity features to superpixel detections
 :::
 ::::
 
 :::{figure} images/superpixels_heatmap.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
-Visualizing measurements added to superpixels using *Add intensity features*.
+Visualizing measurements added to superpixels using *Add intensity features*
 :::
 
-### Training a classifier
+## Training a classifier
 
 Having created superpixels and given them measurements as features, you can train an object classifier using {doc}`exactly the same process as for cells <cell_classification>`.
 
 :::{figure} images/superpixels_classification.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
-Classified superpixels.
+Classified superpixels
 :::
 
-### Merging tiles
+## Merging tiles
 
 You can generate some measurements from superpixels just as they are -- but be aware that automatically-generated object measurements like *Positive %* will be based upon *counts*, not their areas.
 This is one reason why the pixel classifier is usually preferable.

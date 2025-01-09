@@ -13,9 +13,7 @@ But pixel classifiers can also do much more sophisticated things.
 Please read {doc}`thresholding` and {doc}`measuring_areas` first!
 :::
 
-## Step-by-step
-
-### Stained areas (again)
+## Stained areas (again)
 
 Returning to the example in {doc}`measuring_areas`, we could replace either of the thresholding steps with {menuselection}`Classify --> Pixel classification --> Train pixel classifier`.
 
@@ -25,17 +23,15 @@ You can get started quickly with {menuselection}`Train pixel classifier` by draw
 Press {guilabel}`Live prediction` and QuPath should already start showing its predicted classifications.
 
 :::{figure} images/pixel_os3.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
-Pixel classification to find positive pixels.
+Pixel classification to find positive pixels
 :::
 
 You can proceed to add more annotations to refine these predictions.
 When you are done, you can enter the classifier name, save it, and create measurements or objects -- {doc}`in exactly the same way as for thresholding <measuring_areas>`.
 
-### More complex classifications
+## More complex classifications
 
 Training a pixel classifier makes it possible to incorporate a lot more information than is possible with a simple threshold, and to determine the output in a much more sophisticated way.
 
@@ -45,9 +41,7 @@ We will explore this using the example image {doc}`OS-1.ndpi <../intro/acknowled
 We will further look to identify everything else that is tissue, *and a third class* for the whitespace in the background.
 
 :::{figure} images/pixel_os1.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
 OS-1.ndpi
 :::
@@ -58,30 +52,26 @@ OS-1.ndpi
 You can adjust the overlay opacity using the slider at the top, or by scrolling with the {guilabel}`Ctrl` or {guilabel}`Cmd` key pressed.
 :::
 
-### Getting started
+## Getting started
 
 As before, we begin by annotating **small** regions that correspond to the different classes we are interested in, and use {guilabel}`Live prediction` to get a first impression.
 
 :::{figure} images/pixel_os1_starting.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
-Annotating regions for three classes (*Tumor*, *Stroma* and *Ignore\**).
+Annotating regions for three classes (*Tumor*, *Stroma* and *Ignore\**)
 :::
 
 :::{figure} images/pixel_os1_preview.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
-Live prediction based on one annotation per class.
+Live prediction based on one annotation per class
 :::
 
 You should find it quickly get some parts right... but quite a lot wrong.
 We can resolve some errors by adding more annotations, but this alone won't be enough.
 
-### Improving the classifier
+## Improving the classifier
 
 To use the pixel classifier effectively, we need to know:
 
@@ -89,7 +79,7 @@ To use the pixel classifier effectively, we need to know:
 2. How to control the *other* options we have at our disposal to improve the classifier
 3. When we've stretched the pixel classifier to its limit... and might need to supplement it with something else
 
-#### Annotating effectively
+### Annotating effectively
 
 The pie charts in the screenshots show the relative proportion of training samples for each class.
 This depends upon the number of annotations with each classification, and the size of those annotations.
@@ -101,7 +91,7 @@ You should usually aim to annotate your image so that you have:
 
 If you give the classifier lots of examples of pixels that look nearly the same, it will be harder to train it to identify anything else.
 
-#### Adjusting other options
+### Adjusting other options
 
 Some of the options available to customize the classifier during training are the same as those we met while {doc}`thresholding <thresholding>` (since a thresholder is just a simple pixel classifier), while others are not.
 
@@ -114,11 +104,9 @@ The options include:
 - **Region**: As with the thresholder, this controls where the overlay previews the classification. It does not impact the results.
 
 :::{figure} images/pixel_dialog.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
-Pixel classification dialog.
+Pixel classification dialog
 :::
 
 :::{tip}
@@ -134,17 +122,15 @@ There are relatively few options for the classifier choice and resolution -- you
 
 Selecting features takes a bit more thought.
 
-#### Selecting features
+### Selecting features
 
 The {guilabel}`Edit` button opens a dialog to select features.
 These are essentially transformed versions of the image that will contribute to the final output of the classifier.
 
 :::{figure} images/pixel_features.png
-:align: center
-:class: shadow-image
-:width: 60%
+:class: shadow-image small-image
 
-Selecting features.
+Selecting features
 :::
 
 - **Channels**: Choose the channels that are relevant for what you want to detect. For example, if you are looking to identify brown staining, use **DAB**. The options that are available will depend upon the image type.
@@ -156,21 +142,21 @@ The best way to understand the specific features it to visualize them.
 You can do that by choosing a few (not too many at a time, to avoid upsetting your computer) and using the drop-down menu below the preview image.
 
 :::{figure} images/pixel_feature_weighted.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
+
+Pixel classifier using weighted deviation of Hematoxylin channel
 :::
 
 :::{figure} images/pixel_feature_hessian_det.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
+
+Pixel classifier using Hessian determinant of Hematoxylin channel
 :::
 
 :::{figure} images/pixel_feature_hessian_max.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
+
+Pixel classifier using Hessian maximum eigenvalue of Hematoxylin channel
 :::
 
 You will soon find that some features have a particular characteristic appearance, which makes them especially suited to some applications.
@@ -215,7 +201,7 @@ It can help to approach features with the expectation: *"less is more"*.
 In other words, it can be *much* more effective to use a smaller number of well-chosen features rather than throwing them all in to see what comes out the other end.
 :::
 
-### Knowing when to quit
+## Knowing when to quit
 
 Applying the above knowledge, you should be able to generate an effective pixel classifier for many circumstances.
 
@@ -230,11 +216,9 @@ With that in mind, you may often need to apply your superior knowledge to annota
 You can then user the classifier to make fine-grained measurements within these regions -- but not depend upon it to make decisions that take years of training and experience.
 
 :::{figure} images/pixel_limited.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
-Measuring within a defined region (excluding where the classifier is unreliable).
+Measuring within a defined region (excluding where the classifier is unreliable)
 :::
 
 :::{tip}
@@ -244,7 +228,7 @@ This means that the above classification computes the *Tumor %* as the proportio
 See [Ignored* classifications`](ignored-classifications) for more information.
 :::
 
-### Handling variation
+## Handling variation
 
 Variation represents probably the biggest challenge to applying image analysis and machine learning in practice.
 
@@ -259,7 +243,7 @@ There are two main ways you can train pixel classifiers across images in QuPath:
 You can also use both approaches: create a classifier trained from annotations made on multiple images composed of pieces extracted from other images...
 :::
 
-### Train from multiple images
+## Train from multiple images
 
 When training a classifier, simply press the {guilabel}`Load training` button, and select the images (within the same project) that you want to use for training.
 
@@ -271,7 +255,7 @@ Be aware that training using multiple images can require much more computational
 This makes it *even more important* to create small and diverse annotations.
 :::
 
-### Create a training image
+## Create a training image
 
 You can create a training image composed of pieces from other images within a project first by selecting the pieces you want.
 You do this by annotating rectangles, and assigning them a classification so they can be identified later.
@@ -288,27 +272,25 @@ Make sure that you save the data when you have made your annotations (i.e. {menu
 % :width: 35%
 
 :::{figure} images/pixel_create_regions.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
+
+Creating regions for a training image
 :::
 
 Then you can run {menuselection}`Classify --> Training images --> Create training image` and select the classification you used when annotating.
 
 :::{figure} images/pixel_create_training_dialog.png
-:align: center
-:class: shadow-image
-:width: 80%
+:class: shadow-image mid-image
+
+Creating a training image dialog
 :::
 
 This will go through the images in your project, and extract annotations that have a specific classification -- and merge these together to form a single image, adding this image to your project.
 
 :::{figure} images/pixel_training_image.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
 
-A training image, created by stitching annotated regions together.
+A training image, created by stitching annotated regions together
 :::
 
 :::{tip}

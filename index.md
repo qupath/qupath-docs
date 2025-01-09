@@ -3,19 +3,12 @@
 :width: 75%
 :::
 
-:::{sidebar} New release online!
-**QuPath {{ env.config.release }}** is available at [https://qupath.github.io](https://qupath.github.io).
-
-This fixes several bugs in v0.4.0 -- including one that prevents the user being told when there's an update.
-
-Note that these docs are still being revised for the latest release.
-:::
-
 # Welcome to QuPath!
 
 This page hosts the documentation for **QuPath {{ env.config.version }}.x**.
 
 The latest release is [**QuPath {{ env.config.release }}**](https://github.com/qupath/qupath/releases).
+To read up on the latest changes, check out the [release notes](https://github.com/qupath/qupath/blob/main/CHANGELOG.md)
 
 ## Quick links
 
@@ -23,7 +16,7 @@ Can't install QuPath?
 : Check out {ref}`installation` for instructions & solutions to common problems
 
 Images won't open?
-: See {ref}`supported-image-formats` to find out which formats *should* work - and ways to increase this (including instructions for **Apple silicon** users to install [OpenSlide](https://openslide.org))
+: See {ref}`supported-image-formats` to find out which formats *should* work - and ways to increase this.
 
 Not sure where to begin?
 : See {ref}`first-steps` for a quick guide, before heading to {ref}`tutorials` for more details & videos

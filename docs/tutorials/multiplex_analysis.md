@@ -3,9 +3,9 @@
 This tutorial outlines the basics of how multiplexed images can be analyzed in QuPath using the sample {doc}`LuCa-7color_[13860,52919]_1x1component_data <../intro/acknowledgements>`.
 
 :::{figure} ../intro/images/LuCa-7color_[13860,52919]_1x1component_data.jpg
-:align: center
-:class: shadow-image
-:width: 60%
+:class: shadow-image mid-image
+
+The LuCa-7color image
 :::
 
 We will focus on the main task of identifying each cell, and classifying the cells according to whether they are positive or not for different markers.
@@ -23,22 +23,20 @@ This tutorial has three main steps:
 
 But first we have a few routine things we need to take care of so that things can run smoothly.
 
-## Step-by-step
+## Before we begin...
 
-### Before we begin...
-
-#### Create a project containing your images
+### Create a project containing your images
 
 Many things in QuPath work best if you create a {doc}`Project <projects>`.
 Here, it is really necessary so that classifiers generated along the way are saved in the right place to become available later.
 
 :::{figure} images/multiplex_project.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
+
+Example of a project with the luca-7color image
 :::
 
-#### Set the image type
+### Set the image type
 
 As usual when working with an image in QuPath, it is important to ensure the {doc}`Image type <../starting/first_steps>` is appropriate.
 In this case, the best choice is *Fluorescence*.
@@ -56,7 +54,7 @@ Good cell segmentation is really *essential* for accurate multiplexed analysis.
 New and improved methods of segmenting cells in QuPath are being actively explored...
 :::
 
-#### Set up the channel names
+### Set up the channel names
 
 The *channel names* are particularly important for multiplexed analysis, since these typically correspond to the markers of interest.
 They will also be reused within the names for the cell classifications.
@@ -67,9 +65,9 @@ The names can be seen in the *Brightness/Contrast* dialog, and edited by double-
 Here, I would remove any '(Opal)' parts.
 
 :::{figure} images/multiplex_channels.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
+
+Adjusting the channel names in the Brightness & Contrast dialog
 :::
 
 ::::{tip}
@@ -80,9 +78,9 @@ Two tricks can help.
 Copy this list to the clipboard, and then select the corresponding channels in the *Brightness/Contrast* dialog and press {kbd}`Ctrl + V` to paste them.
 
 :::{figure} images/multiplex_channel_names.jpg
-:align: center
-:class: shadow-image
-:width: 60%
+:class: shadow-image small-image
+
+Example of a list of channel names, each on a separate line
 :::
 
 2. Run a script like the following:
@@ -105,7 +103,7 @@ You can retrieve them later by going to the *Image* tab, and double-clicking the
 This allows you to reset all the image metadata to whatever was read originally from the file, including the channel names.
 :::
 
-#### Setting up the classifications
+### Setting up the classifications
 
 We now want to make the channel names available as *classifications*.
 
@@ -113,12 +111,12 @@ The classifications currently available are shown under the *Annotations* tab.
 You can either right-click this list or select the {guilabel}`⋮` button and choose {menuselection}`Populate from image channels` to quickly set these.
 
 :::{figure} images/multiplex_populate_channels.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
+
+Populating the classifications from the image channels
 :::
 
-### Detect & measure cells
+## Detect & measure cells
 
 QuPath's default {doc}`Cell detection <cell_detection>` command can be applied for fluorescence and multiplexed images, not only brightfield.
 
@@ -126,21 +124,21 @@ The key requirement is that a single channel can be used to detect all nuclei.
 If so, select that channel and explore different parameters and thresholds until the detection looks acceptable.
 
 :::{figure} images/multiplex_cells.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
+
+Example of cell detection in the luca-7color image
 :::
 
 Along with the cell detection, QuPath automatically measures all channels in different cell compartments.
 Because these measurements are based on the channel names, it is important to have these names established first.
 
 :::{figure} images/multiplex_cell_measurements.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
+
+Exploring the detection results using measurement maps
 :::
 
-### Create a classifier for each marker
+## Create a classifier for each marker
 
 The next step involves finding a way to identify whether cells are positive or negative *for each marker independently* based upon the detections and measurements made during the previous step.
 
@@ -152,7 +150,7 @@ Since QuPath v0.2.0 there are two different ways to do this:
 Both methods are described below.
 You do not have to choose the same method for every marker, but can switch between the two methods.
 
-#### Option #1. Simple thresholding
+### Option #1. Simple thresholding
 
 QuPath v0.2.0 introduced a new command, {menuselection}`Classify --> Object classification --> Create single measurement classifier`.
 This gives us a quick way to classify based on the value of one measurement.
@@ -160,9 +158,9 @@ This gives us a quick way to classify based on the value of one measurement.
 As usual, you can consider the options in the dialog box in order from top to bottom, and hover the cursor over each for a short description of what it means.
 
 :::{figure} images/multiplex_single_pdl1.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
+
+Creating a single measurement classifier for PDL1
 :::
 
 In this case, we can ignore the **Object filter** (all our detections are cells, so no need to distinguish between them).
@@ -180,9 +178,9 @@ We can achieve this by leaving *Below threshold* to be blank, or alternatively s
 To see the effects of any adjustments we make, we can use the **Live preview** option.
 
 :::{figure} images/multiplex_single_ck.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
+
+Looking at the live view of the CK single measurement classifier
 :::
 
 Once you are reasonably content with the results, check (and amend if necessary) the **Classifier name** and click {guilabel}`Save`.
@@ -190,13 +188,13 @@ This will save a classifier with the current settings to the project.
 
 Now you can return to the **Channel filter** and work through the steps for the other channels.
 
-#### Option #2. Machine learning
+### Option #2. Machine learning
 
 If you are entirely happy with the process above, you can skip this section.
 But sometimes thresholding a single measurement isn't sufficient to generate a usable classification - and taking a machine learning approach can help.
 This process is a bit more involved, but the effort is often worth it.
 
-##### Create training images
+#### Create training images
 
 It is very difficult and confusing to try to train multiple classifiers by annotating the same image.
 
@@ -204,9 +202,9 @@ The process is made easier by creating duplicate images within the project for e
 To do this, choose {menuselection}`Classify --> Training Images --> Create duplicate channel training images`.
 
 :::{figure} images/multiplex_duplicating.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
+
+Creating duplicate training images for each channel
 :::
 
 :::{Note}
@@ -217,7 +215,7 @@ It's useful to run cell detection **before** duplicating the images so the detec
 It is a good idea to turn the **Initialize Points annotation** option *on*... it might help us later.
 :::
 
-##### Train & save classifiers
+#### Train & save classifiers
 
 Now you should have multiple duplicate images in your project, with names derived from the original channel names.
 Because you ran this after cell detection (right?!), these duplicate images will bring across all the original cells.
@@ -225,9 +223,9 @@ Because you ran this after cell detection (right?!), these duplicate images will
 We can then proceed with {menuselection}`Classify --> Object classification --> Train object classifier`.
 
 :::{figure} images/multiplex_train_dialog.jpg
-:align: center
-:class: shadow-image
-:width: 60%
+:class: shadow-image small-image
+
+The dialog box for training an object classifier
 :::
 
 The concepts are similar to those in {doc}`Cell classification <cell_classification>`: we annotate the image with points or areas where we know what the classification should be, and assign that classification to our annotations.
@@ -263,18 +261,17 @@ The essential thing we *must* do is assign annotations for 'positive' cells with
 We shouldn't use any other classes in the training annotations.
 
 :::{figure} images/multiplex_foxp3.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
+
+Training an object classifier for FoxP3 by selecting individual cells
 :::
 
 Once you are done with one marker, choose {menuselection}`Save & Apply` and enter a name to identify your classifier.
 Then save the image data and open the image associated with the next marker of interest, repeating the process as many times as necessary.
 
 :::{figure} images/multiplex_ck.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
+Training an object classifier for CK using the brush tool to annotate many cells at once
 :::
 
 :::{tip}
@@ -287,16 +284,16 @@ I find three things helpful when training a single-channel classifier:
 You can then proceed to annotate cells, largely free of the distraction of what QuPath had actually previously detected.
 :::
 
-### Combine the classifiers
+## Combine the classifiers
 
 At this point, the hard work has been done.
 
 You can return to your original image that you want to classify and choose {menuselection}`Classify --> Object classification --> Load object classifier`.
 
 :::{figure} images/multiplex_load.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
+
+Loading a trained classifier
 :::
 
 This should display all the classifiers available within the project.
@@ -305,21 +302,21 @@ Choose any and press {guilabel}`Apply classifier` to see it in action.
 Then, choose *any combination* of classifiers and press {guilabel}`Apply classifiers sequentially` to see the effect of *all* of them upon the image.
 
 :::{figure} images/multiplex_load_sequentially.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
+
+Loading and combining multiple classifiers
 :::
 
 :::{tip}
 To avoid needing to repeatedly select more than one classifier under {menuselection}`Load object classifier`, you can create a single 'combined' classifier using {menuselection}`Classify --> Object classification --> Create composite classifier`.
 :::
 
-### Making sense of it all
+## Making sense of it all
 
 :::{figure} images/multiplex_all_classified.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
+
+The image with multiple classifiers applied
 :::
 
 Amidst a blaze of color, it can rapidly become difficult to interpret images.
@@ -331,9 +328,9 @@ A few things can help:
 - Right-click on the image and choose {menuselection}`Cells --> Centroids only` to have another view of the classified cells. Now, the shape drawn for each cell relates to the 'number of components' of its classification, while its color continues to depict the specific class. This makes similar-but-not-the-same classifications to be spotted more easily than using (often subtle) color differences alone.
 
 :::{figure} images/multiplex_centroids.jpg
-:align: center
-:class: shadow-image
-:width: 90%
+:class: shadow-image full-image
+
+Using the channel viewer to see the varying centroid shapes and colors
 :::
 
 :::{admonition} One class or many?

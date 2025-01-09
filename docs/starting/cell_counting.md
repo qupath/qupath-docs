@@ -12,9 +12,7 @@ The tools described here can be used for all kinds of manual counting tasks.
 However, we will return to this application in the sections {doc}`../tutorials/cell_detection` and {doc}`../tutorials/cell_classification` to show how more sophisticated tools within QuPath can be used to automate some or all of the specific task of cell counting.
 
 :::{figure} images/counting_image.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
 Ki67 (OS-2.ndpi)
 :::
@@ -24,31 +22,26 @@ Ki67 (OS-2.ndpi)
 The first task is to find a suitable region in which cells should be counted, using the controls described in {doc}`viewing` to browse around the slide.
 
 :::{figure} images/counting_region.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
-Selected region for counting.
+Chosen area for counting
 :::
 
 Having done this, it is optional - but helpful - to overlay a grid on top of the image to assist with counting in a fixed area.
 This can be done simply by clicking the **Show grid** toolbar button {{ icon_grid }}.
 
 :::{figure} images/counting_grid.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
-Applying a counting grid.
+Applying a counting grid
 :::
 
 If necessary, the grid spacing can be adjusted under {menuselection}`Edit --> Preferences...` {{ icon_cog }}.
 
 :::{figure} images/counting_grid_size.jpg
-:align: center
-:class: shadow-image
+:class: shadow-image small-image
 
-Set counting grid spacing.
+Set counting grid spacing
 :::
 
 ## Clicking cells
@@ -62,9 +55,7 @@ At this stage, you should only click on cells that are of the same class (e.g. p
 :::
 
 :::{figure} images/counting_manual_start.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
 Starting to count
 :::
@@ -75,11 +66,18 @@ You can do this by double-clicking on an entry in the counting panel, and settin
 Whenever you click on the image, you will add points to whichever entry in the list is selected.
 
 :::{figure} images/counting_manual_continued.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
-Continuing counting.
+Continuing counting
+:::
+
+:::{TIP}
+Manual counting is generally not very pleasurable - although it can be necessary when considerable human expertise is needed.
+The following tips and hidden features may help (they assume that you have selected the {{ icon_points }} tool).
+
+- If you click on an existing point, within the same collection of points currently selected in the counting panel list, you can drag the point to move it to a new location.
+- If you click on an existing point, within the same collection of points currently selected in the counting panel list, while holding down the {kbd}`Alt` key, the point will be deleted.
+- If you click on an existing point, within the *a different* collection of points to the one currently selected in the counting panel list, while holding down the {kbd}`Alt` key, *the collection of points containing the one that was clicked will become selected*. This gives a fast way to switch between counting e.g. positive and negative cells, without needing to go back to the list - just *Alt + click* on the nearest cell belonging to the collection you want to switch to.
 :::
 
 ## Saving & exporting
@@ -91,24 +89,13 @@ This is the preferred method of saving if you want to continue working on the da
 However, you can also select the *Save points* option in the counting panel if you would like to export the coordinates of all your points for import elsewhere.
 This will save the coordinates in a simple tab-delimited format that may be useful to get the data into another software application.
 
-:::{TIP}
-Manual counting is generally not very pleasurable - although it can be necessary when considerable human expertise is needed.
-The following tips and hidden features may help (they assume that you have selected the {{ icon_points }} tool).
-
-- If you click on an existing point, within the same collection of points currently selected in the counting panel list, you can drag the point to move it to a new location.
-- If you click on an existing point, within the same collection of points currently selected in the counting panel list, while holding down the {kbd}`Alt` key, the point will be deleted.
-- If you click on an existing point, within the *a different* collection of points to the one currently selected in the counting panel list, while holding down the {kbd}`Alt` key, *the collection of points containing the one that was clicked will become selected*. This gives a fast way to switch between counting e.g. positive and negative cells, without needing to go back to the list - just *Alt + click* on the nearest cell belonging to the collection you want to switch to.
-:::
-
 ::::{tip}
 {guilabel}`Show point convex hull` can be used to check for errant clicks.
 This will draw a shape around all the points you've drawn - which can help determine if there is a wild outlier somewhere else.
 
 :::{figure} images/counting_convex.jpg
-:align: center
-:class: shadow-image
-:width: 60%
+:class: shadow-image full-image
 
-Viewing the convex hull of a collection of points, showing that a red point has been added somewhere way out to the right - beyond the current field of view.
+Viewing the convex hull of a collection of points, showing that a red point has been added somewhere way out to the right - beyond the current field of view
 :::
 ::::

@@ -1,10 +1,17 @@
 # ImageJ
 
+:::{sidebar} YouTube content
 ```{raw} html
-<div style="text-align: center; margin-bottom: 2em;">
-<iframe width="100%" height="350" src="https://www.youtube-nocookie.com/embed/xW2Ya205nvo?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div class="video-divert">
+<a href="https://youtu.be/PKQN3uTNR1s" target="blank"
+    aria-label="follow this link to learn more about QuPath for ImageJ users">
+    <img src="https://i.ytimg.com/vi/PKQN3uTNR1s/hqdefault.jpg">
+    <div class="overlay"><p>View on YouTube</p></div>
+</a>
+<a class="caption-link" href="https://youtu.be/PKQN3uTNR1s" target="blank">QuPath for Fiji Users (I2K 2022)</a>
 </div>
 ```
+:::
 
 QuPath was created by someone who was (and is) a big fan of ImageJ.
 
@@ -27,45 +34,34 @@ Fortunately, since they are both open source, it's not necessary to choose one o
 The commands described here are accessible from the *ImageJ toolbar button* in QuPath, and also in the {menuselection}`Extensions --> ImageJ` submenu.
 
 :::{figure} images/imagej_toolbar.jpg
-:align: center
-:class: shadow-image
-:width: 40%
+:class: shadow-image small-image
 
-ImageJ menu in the QuPath toolbar.
+ImageJ menu in the QuPath toolbar
 :::
 
-% NOTE:
-% The toolbar button will only be available if you have the ImageJ extension installed.
-% But since it's included by default in the main QuPath distribution, you probably do.
 
 ## Sending image regions to ImageJ
 
 In general, ImageJ can't open whole slide images directly -- the images are just too big (often up to 40 GB when uncompressed), and ImageJ requires all that to be read into the computer's RAM.
 QuPath gets around this by quickly pulling out only the bits of the image that it needs at any one moment, and remembering what it has seen before for as long as its memory can cope with.
 
-Using the excellent [Bio-Formats plugin for ImageJ](https://www.openmicroscopy.org/site/support/bio-formats/users/imagej/) it's possible to open some cropped regions of whole slide images within ImageJ, but this involves entering the coordinates for the desired region -- which isn't always very easy to do.
+Using the excellent [Bio-Formats plugin for ImageJ](https://bio-formats.readthedocs.io/en/stable/users/imagej/) it's possible to open some cropped regions of whole slide images within ImageJ, but this involves entering the coordinates for the desired region -- which isn't always very easy to do.
 
 The alternative is to open the image within QuPath, and interactively draw an annotation around any region of interest.
 Then by clicking on the *Send region to ImageJ* command {{ icon_extract_image }}, ImageJ can be launched and passed the pixels from within the selected region.
 
 :::{figure} images/imagej_send_region.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
-Sending an image region to ImageJ.
+Sending an image region to ImageJ
 :::
 
 ### Downsampling and image calibration
 
 When running {menuselection}`Send region to ImageJ`, you are requested to choose how much **downsampling** to apply to the region that is passed.
 
-### ImageJ menu in the QuPath toolbar
-
 :::{figure} images/imagej_downsample.jpg
-:align: center
-:class: shadow-image
-:width: 50%
+:class: shadow-image small-image
 
 ImageJ downsample value
 :::
@@ -84,7 +80,7 @@ If you open the image properties in ImageJ ({menuselection}`Image --> Properties
 This means that measurements made within QuPath and ImageJ should be comparable, because the images in both places have been calibrated accordingly.
 
 :::{note}
-The *'Image Properties...'* shown above also indicates that the 'Origin' of the image in ImageJ has been set to something other than the default of (0, 0).
+The {guilabel}'Image Properties...'* shown above also indicates that the 'Origin' of the image in ImageJ has been set to something other than the default of (0, 0).
 This tells ImageJ that the image it has was extracted from something larger, and indicates where in the larger image it came from.
 
 This is what makes it possible to send information from ImageJ back to QuPath, and have it rescaled and translated appropriately.
@@ -92,17 +88,15 @@ This is what makes it possible to send information from ImageJ back to QuPath, a
 
 ### Color transforms
 
-The *Send region to ImageJ* command also works with color transforms that can be applied in QuPath using the *Brightness/Contrast...* dialog (or by pressing one of the numeric keys).
+The {menuselection}`Extensions --> ImageJ --> Send region to ImageJ` command also works with color transforms that can be applied in QuPath using the {menuselection}`View --> Brightness/Contrast` dialog (or by pressing one of the numeric keys).
 These include techniques such as *color deconvolution* to digitally separate stains.
 
 When such a color transform has been applied, QuPath will pass the transformed pixels, not the raw values.
 
 :::{figure} images/imagej_send_transformed_region.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
-Sending a color-transformed image region to ImageJ.
+Sending a color-transformed image region to ImageJ
 :::
 
 In the screenshot above, the original image was sent first by running the *Send region to ImageJ* command, and then hematoxylin and DAB transformed images were also sent (separately) in the same way, after applying the appropriate transform within QuPath.
@@ -123,11 +117,9 @@ ImageJ ROIs and overlays cannot represent all the same information that can be c
 Consequently, when sending an image region to ImageJ, QuPath uses them to make its best effort to convert its objects into the most ImageJ-friendly form that it can.
 
 :::{figure} images/imagej_objects.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
-Sending an image region & objects to ImageJ.
+Sending an image region & objects to ImageJ
 :::
 
 The screenshot above depicts how this works.
@@ -150,11 +142,9 @@ This will also launch ImageJ, this time giving it a screenshot from the current 
 The result will be similar to what is generated in QuPath with the {menuselection}`Edit --> Copy view to clipboard` command.
 
 :::{figure} images/imagej_snapshot.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
-Sending a snapshot image to ImageJ.
+Sending a snapshot image to ImageJ
 :::
 
 Note that the snapshot command is really **only** for creating screenshots -- **not** for transferring images for further analysis.
@@ -163,10 +153,11 @@ The snapshot that is available within ImageJ will be RGB, and does not contain t
 ## Accessing ImageJ plugins
 
 One application of passing image regions to ImageJ is simply to use ImageJ's commands to save the image regions or to create figures.
-But it can also be helpful to apply some extra processing within ImageJ, including external plugins such as [ImmunoRatio](http://jvsmicroscope.uta.fi/sites/default/files/software/immunoratio-plugin/index.html).
+But it can also be helpful to apply some extra processing within ImageJ, including external ImageJ plugins.
 
 Because QuPath keeps its own version of ImageJ internally, which does not match with any one you might have installed elsewhere on your computer, it won't necessarily have immediate access to the plugins you want.
-However, you can set QuPath's ImageJ to use whichever plugins directory you like -- including the plugins directory for an existing ImageJ with {menuselection}`Extensions --> ImageJ --> Set ImageJ plugins directory`.
+However, you can set QuPath's ImageJ to use the directory belonging to a different ImageJ installation if you like using {menuselection}`Extensions --> ImageJ --> Set local ImageJ directory`.
+
 
 ## Sending objects to QuPath
 
@@ -177,11 +168,9 @@ These are found inside ImageJ's *Plugins* menu (probably at the bottom).
 ### Send ROI to QuPath
 
 :::{figure} images/imagej_return_roi.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
-Sending a ROI from ImageJ to QuPath.
+Sending a ROI from ImageJ to QuPath
 :::
 
 Running {menuselection}`Plugins --> Send ROI to QuPath` will take whichever ROI is currently active in ImageJ, and send it to QuPath as an annotation object.
@@ -190,11 +179,9 @@ All rescaling etc. will happen automatically.
 ### Send Overlay to QuPath
 
 :::{figure} images/imagej_return_overlay.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
-Sending an overlay from ImageJ to QuPath.
+Sending an overlay from ImageJ to QuPath
 :::
 
 Running {menuselection}`Plugins --> Send Overlay to QuPath` will take **all** the ROIs on the current ImageJ overlay, and send them back to QuPath as either annotation or detection objects.
@@ -217,8 +204,9 @@ This enables any ImageJ macro to be run based on extracting image regions from o
 
 Together, these integration features add up to both enabling ImageJ to operate with support for whole slide images, and providing QuPath with a wide-range of pixel-based functionality to supplement its existing object-based tools.
 
-:::{note}
-Unfortunately, it is not currently possible to send color-transformed pixels from QuPath to ImageJ through the macro runner.
+:::{admonition} New in v0.6.0!
+QuPath v0.6.0 introduces {menuselection}`Extensions --> ImageJ --> ImageJ script runner`.
+This is a more powerful replacement for the original macro runner.
 :::
 
 ### Macros and parallelization
@@ -241,6 +229,8 @@ This can lead to some stability problems or errors appearing.
 The data exchange functions within QuPath try to take care of this using the `Platform.runLater` and `EDT.invokeLater` methods.
 Any developer looking to develop any further ImageJ plugins or QuPath extensions to share data will need to be cautious about this too.
 
-Finally, JavaFX vs. AWT is the cause of an [irritating bug](https://github.com/qupath/qupath/issues/6) within QuPath whereby the ImageJ menubar is appended to the end of the QuPath menubar whenever ImageJ is launched -- and it doesn't go away easily.
-Any fixes for this issue would be much appreciated...
+Finally, JavaFX vs. AWT is the cause of an [irritating bug](https://github.com/qupath/qupath/issues/6) within QuPath running on macOS, where the system menubar doesn't behave properly.
+
+For that reason, when ImageJ is launched QuPath's menubars will automatically move from the top of the screen to be within each window.
+If you prefer the menubar to be directly in the window anyway, you can change the {guilabel}`Use system menubar` setting under {menuselection}`Edit --> Preferences...`.
 :::

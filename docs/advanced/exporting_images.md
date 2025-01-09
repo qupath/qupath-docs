@@ -31,6 +31,7 @@ Exporting an RGB image as a JPEG, for example, may introduce new compression art
 The point is that no bit-depth or channel conversion is involved.
 :::
 
+(exporting-rendered-images)=
 ### Rendered images
 
 Images within QuPath can have different numbers of channels and various bit-depths, but when they are displayed they generally need to be *rendered* as [3-channel, 8-bit RGB](https://petebankhead.gitbooks.io/imagej-intro/content/chapters/colors/colors.html#rgb-images).
@@ -55,10 +56,9 @@ There are two additional options under *Export snapshot* , which enable exportin
 All of the *Export snapshot...* options have counterparts under {menuselection}`Edit --> Copy to clipboard...`
 
 :::{figure} images/export_window_snapshots.png
-:align: center
-:width: 90%
+:class: full-image
 
-Snapshot exports of the *Main window screenshot* (left) and *Main window content* (right).
+Snapshot exports of the *Main window screenshot* (left) and *Main window content* (right)
 :::
 ::::
 

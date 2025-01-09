@@ -34,8 +34,9 @@ If you find yourself wanting to run the same command repeatedly, uncheck the {gu
 :::
 
 :::{figure} images/tips_command.jpg
-:align: center
-:class: shadow-image
+:class: shadow-image full-image
 
 QuPath's 'Command list'
 :::
+
+<!-- For more tips and tricks, check out the QuPath [tips and tricks](tips-and-tricks) page. -->

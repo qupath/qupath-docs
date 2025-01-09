@@ -1,5 +1,18 @@
 # Cell detection
 
+:::{sidebar} YouTube content
+```{raw} html
+<div class="video-divert">
+<a href="https://www.youtube.com/watch?v=14ZQCSmICCA" target="blank"
+    aria-label="follow this link to learn more about cell detection in QuPath">
+    <img src="https://i.ytimg.com/vi/14ZQCSmICCA/maxresdefault.jpg">
+    <div class="overlay"><p>View on YouTube</p></div>
+</a>
+<a class="caption-link" href="https://www.youtube.com/watch?v=14ZQCSmICCA" target="blank">Cell detection in QuPath</a>
+</div>
+```
+:::
+
 Previous sections described some of QuPath's tools for manually drawing regions and counting objects inside them.
 While this approach may be fine for some applications, the laborious manual counting step does not scale well to handling large numbers of objects.
 Here, we look at how QuPath's detection capabilities can be used to obtain results much more quickly and reproducibility -- and often with higher accuracy, and less bias.
@@ -25,14 +38,6 @@ For more information on Ki67 in breast cancer, see for example
 In this case, tumor cells are identified by manually drawing around them to create annotations, after which QuPath is able to very quickly detect the cells and calculate the positive percentage inside each annotation.
 In {doc}`cell_classification` we will look at improving on this by training QuPath to identify tumor cells itself.
 
-## Video tutorial
-
-```{raw} html
-<div style="text-align: center; margin-bottom: 2em;">
-<iframe width="100%" height="350" src="https://www.youtube-nocookie.com/embed/14ZQCSmICCA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
-```
-
 % .. figure:: images/ki67_detecting_origin.jpg
 
 % :class: shadow-image
@@ -45,9 +50,7 @@ In {doc}`cell_classification` we will look at improving on this by training QuPa
 
 % Ki67 image
 
-## Step-by-step
-
-### Annotate a region of interest
+## Annotate a region of interest
 
 Using some of the tools introduced in {doc}`../starting/annotating`, create an annotation around a region containing tumor cells that should be detected and counted.
 
@@ -56,14 +59,12 @@ Avoid drawing a very large region! It is better to start small, especially when 
 :::
 
 :::{figure} images/ki67_detecting_annotation.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
 Ki67 image with annotation
 :::
 
-### Run *Positive cell detection*
+## Run *Positive cell detection*
 
 Run the {menuselection}`Analyze --> Cell detection --> Positive cell detection` command.
 This will bring up a dialog, where most of the options relate to how the cells are detected.
@@ -78,9 +79,7 @@ However, in this case we are not interested in multiple intensity classification
 Therefore the *Single threshold* option should be ticked, and only the first threshold will actually be used.
 
 :::{figure} images/ki67_detecting_positive_dialog.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
 Positive cell detection dialog
 :::
@@ -94,9 +93,7 @@ For a quick recap on the difference between annotation and detection objects, se
 :::
 
 :::{figure} images/ki67_detecting_final_markup.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
 Positive cell detection image results
 :::
@@ -114,7 +111,7 @@ In this specific case, using *Optical density sum* rather than *Hematoxylin OD* 
 This is discussed in much more detail in the *IHC analysis* tutorial on YouTube, see {doc}`../starting/help` for links.
 :::
 
-### View cell-by-cell results
+## View cell-by-cell results
 
 It may be the case that 12.4% is already the final result that is required and the work is done.
 However, QuPath provides the opportunity to look in more detail.
@@ -127,9 +124,7 @@ This should open up a results table with the measurements of all cells.
 From this, it is possible to generate histograms, sort columns, select individual cells (which will then be selected on the image) and to export the measurements to a CSV file for use elsewhere.
 
 :::{figure} images/ki67_detecting_results_detections.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
 Cell detection results table
 :::
@@ -146,7 +141,7 @@ A small proportion of negative values is generally tolerable because of the inhe
 However, it is important to note that when the stain estimates are improved then all cell detection should be repeated.
 :::
 
-### Analyze additional annotations
+## Analyze additional annotations
 
 If necessary, it is possible to then proceed to draw further annotations around areas of interest.
 These can be processed one-by-one by running *Positive cell detection* on an annotation when it is selected, or else they can be processed all together (in parallel).
@@ -154,9 +149,7 @@ The easiest way to do the latter is to ensure that no annotations are selected (
 QuPath will then prompt you to confirm if you want to run the detection for all *Annotations*.
 
 :::{figure} images/ki67_detecting_multiple_parallel_annotations.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
 Positive cell detection in parallel for multiple annotations
 :::
@@ -164,28 +157,22 @@ Positive cell detection in parallel for multiple annotations
 The final result should look something like that below.
 
 :::{figure} images/ki67_detecting_multiple_rois.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
 Multiple annotations for Ki67 image
 :::
 
-### View results
+## View results
 
 Whenever you have multiple annotations, it can be helpful to generate a results table for these.
 This is similar to creating a results table for detections, but requires the {menuselection}`Measure --> Show annotation measurements` command instead.
 You can also access this command from the *Measurement table* icon in the toolbar {{ icon_table }}.
 
 :::{figure} images/ki67_detecting_results_annotations.jpg
-:align: center
-:class: shadow-image
-:width: 75%
+:class: shadow-image full-image
 
 Annotation results table
 :::
-
-Note that the figure above was taken before adding a fourth annotation (and detecting its cells).
 
 :::{tip}
 You can use the {guilabel}`Convert detections to points` button within the **Points tool** {{ icon_points }} to generate an editable points annotation from the detected cells.
@@ -193,8 +180,9 @@ This provides a 'semi-automated' alternative to manually clicking on every cell 
 
 See {doc}`../starting/cell_counting` for more info on manual counting.
 
-```{image} images/convert_detections.jpg
-:align: center
-:width: 40%
+```{figure} images/convert_detections.jpg
+:class: shadow-image small-image
+
+Points tool window
 ```
 :::
