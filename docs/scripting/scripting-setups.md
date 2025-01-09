@@ -81,6 +81,7 @@ To enable autocomplete, there are a few slightly complex steps.
     ]
     ```
 
+
 As described in the IntelliJ section,
 you can now open this file in both VSCode and QuPath's script editor at the
 same time. When you manually save the script in VSCode, QuPath should
