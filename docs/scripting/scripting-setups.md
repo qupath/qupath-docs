@@ -14,38 +14,15 @@ both of which are broadly similar in functionality when it comes to features
 relevant to writing code for QuPath. Importantly, it enables autocomplete,
 symbol lookup, and dependency management for complex projects.
 
-To set up IntelliJ for writing QuPath scripts, first create an IntelliJ project
-using the following settings, noting that the JVM version should be the same as
-is used by the version of QuPath that you are using --- this can be found
-[in the main QuPath git repo](https://github.com/qupath/qupath/blob/main/gradle/libs.versions.toml)
+To set up IntelliJ for writing QuPath scripts, first download the 
+[QuPath gradle scripting project](https://github.com/qupath/qupath-gradle-scripting-project),
+using IntelliJ to download the repository or using git directly.
 
-:::{figure} images/scripting-setup-project.png
-:align: center
-:class: shadow-image
-:width: 75%
-Basic setup for a QuPath scripting project.
-:::
-
-Following this, you will be met with a default groovy project. Here,
-you can create a new Groovy file using
-`Menu -> File -> New -> Groovy Class`, optionally removing any of the
-auto-populated content of this file.
-
-`Menu -> File -> Project structure`, then go to `Modules`, and focus on the
-`Dependencies` tab. Click the `+` icon
-and then add the directory containing the QuPath Jar files as a dependency.
-
-:::{figure} images/scripting-setup-modules.png
-:align: center
-:class: shadow-image
-:width: 75%
-Adding QuPath classes as dependencies to the project's classpath.
-:::
-
-Following this, you should have autocomplete support for most relevant QuPath
+Following this, you should have a project with a simple example script,
+but more importantly autocomplete support for most relevant QuPath
 classes, and even QuPath's dependencies. However, there is no easy way to
 run this code in QuPath yet. To solve this, you can open the same file in both
-IntellijJ and QuPath's script editor at the same time.
+IntelliJ and QuPath's script editor at the same time.
 IntelliJ auto-saves files by default when they are edited. QuPath should
 automatically reload the file when these changes are saved to disk.
 This enables you to write code with all of the modern conveniences
@@ -73,14 +50,12 @@ To enable autocomplete, there are a few slightly complex steps.
     `groovy.classpath` in the `settings.json`, pointing to the path that contains
     all of the QuPath Jar files, as well as (optionally) the extensions directory.
     For example:
-
-    ```json
-    "groovy.classpath": [
-        "/path/to/QuPath/lib/app/",
-        "/path/to/QuPath/extensions/"
-    ]
-    ```
-
+```json
+"groovy.classpath": [
+"/path/to/QuPath/lib/app/",
+"/path/to/QuPath/extensions/"
+]
+```
 
 As described in the IntelliJ section,
 you can now open this file in both VSCode and QuPath's script editor at the
