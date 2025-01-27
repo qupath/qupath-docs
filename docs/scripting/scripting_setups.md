@@ -1,6 +1,8 @@
 # Scripting setups
 
-When writing scripts for QuPath, the script editor built-in to QuPath is a good option for prototyping scripts. Alternatively, extensions can provide alternative script editor implementations. However, these are generally somewhat limited when compared to fully-fledge text editors and IDEs. In this document, we outline some options for setting up external editing tools with QuPath.
+When writing scripts for QuPath, the script editor built-in to QuPath is a good option for prototyping scripts. Alternatively, extensions can provide alternative script editor implementations.
+
+However, these are generally somewhat limited when compared to fully-fledge text editors and IDEs. In this document, we outline some options for setting up external editing tools with QuPath.
 
 ## IntelliJ setup
 
