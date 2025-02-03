@@ -59,7 +59,7 @@ To convert a model zoo model to a QuPath pixel classifier, you'll need:
   * If you download a TensorFlow model, you should also unzip the model weights (saved model bundle)
 * Some good fortune
 
-With the extensions installed, run the command {menuselection}`Extensions --> Bioimage Model Zoo --> Create pixel classifier (Bioimage Model Zoo)` and select the model specification file.
+With the extensions installed, run the command {menuselection}`Extensions --> BioImage Model Zoo --> Create pixel classifier (Bioimage Model Zoo)` and select the model specification file.
 This is usually called `rdf.yaml`, although might be `model.yaml` for some older models.
 
 If all goes well, QuPath will check the model is compatible and show a dialog:
