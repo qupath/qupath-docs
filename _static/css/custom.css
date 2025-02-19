@@ -77,19 +77,19 @@ p.caption {
 }
 
 .full-image {
-  width: 80%;
+  max-width: 80%;
 }
 
 .mid-image {
-  width: 60%;
+  max-width: 60%;
 }
 
 .small-image {
-  width: 40%;
+  max-width: 40%;
 }
 
 .mini-image {
-  width: 20%;
+  max-width: 20%;
 }
 
 /* VIDEOS */
