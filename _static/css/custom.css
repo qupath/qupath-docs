@@ -76,21 +76,21 @@ p.caption {
   box-shadow: 4px 4px 8px rgba(1, 1, 1, 0.2);
 }
 
-.full-image {
-  max-width: 80%;
+/* .full-image {
+  max-width: 80% !important;
 }
 
 .mid-image {
-  max-width: 60%;
+  max-width: 60% !important;
 }
 
 .small-image {
-  max-width: 40%;
+  max-width: 40% !important;
 }
 
 .mini-image {
-  max-width: 20%;
-}
+  max-width: 20% !important;
+} */
 
 /* VIDEOS */
 .video-divert {
