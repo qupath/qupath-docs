@@ -26,7 +26,6 @@ If an annotation is selected, only the region of the image corresponding to that
 In this way, they can support much larger images than *Original pixels* in OME formats.
 You can still customize the compression within the image, and the number of pyramidal levels.
 
-
 :::{warning}
 'Original pixel values' is occasionally an aspirational term.
 Exporting an RGB image as a JPEG, for example, may introduce new compression artefacts that mean pixel values are not *identical* -- but should be close to one another.
