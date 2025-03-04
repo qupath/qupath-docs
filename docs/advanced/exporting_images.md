@@ -10,10 +10,11 @@ This section describes some of the many ways that images can be exported from Qu
 
 ### Original pixels
 
-Two commands make it possible to export images containing the original pixel values:
+Three commands make it possible to export images containing the original pixel values:
 
 - {menuselection}`File --> Export images... --> Original pixels`
-- {menuselection}`File --> Export images... --> OME TIFF`
+- {menuselection}`File --> Export images... --> OME-TIFF`
+- {menuselection}`File --> Export images... --> OME-Zarr`
 
 *Original pixels* will provide a drop-down list of available file formats that support the current image.
 This can vary for different images: for example, JPEG or PNG cannot be used for most multichannel fluorescence images, since they cannot support these values, whereas an ImageJ TIFF can.
@@ -21,9 +22,10 @@ This can vary for different images: for example, JPEG or PNG cannot be used for 
 You can also specify the amount to downsample the image.
 If an annotation is selected, only the region of the image corresponding to that annotation will be written to the file.
 
-*OME TIFF* is the export command capable of writing image pyramids.
-In this way, it can support much larger images than *Original pixels* -- but only in one format (i.e. OME-TIFF).
-Nevertheless, you can still customize the compression within the TIFF and the number of pyramidal levels.
+*OME-TIFF* and *OME-Zarr* are export commands capable of writing image pyramids.
+In this way, they can support much larger images than *Original pixels* in OME formats.
+You can still customize the compression within the image, and the number of pyramidal levels.
+
 
 :::{warning}
 'Original pixel values' is occasionally an aspirational term.
