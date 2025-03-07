@@ -23,90 +23,99 @@ The sources and terms of reuse for these images are summarized in the table belo
 :header-rows: 1
 :align: center
 
-* - Image
-  - Source
-  - Reuse
-* - :::{figure} images/CMU-1.jpg
+* * Image
+  * Source
+  * Reuse
+* * :::{figure} images/CMU-1.jpg
     :height: 100px
     :class: shadow-image
 
     CMU-1.svs
     :::
 
-  - [OpenSlide (Aperio)](http://openslide.cs.cmu.edu/download/openslide-testdata/Aperio/)
-  - CC0 1.0
-* - :::{figure} images/CMU-2.jpg
+  * [OpenSlide (Aperio)](http://openslide.cs.cmu.edu/download/openslide-testdata/Aperio/)
+  * CC0 1.0
+* * :::{figure} images/CMU-2.jpg
     :height: 100px
     :class: shadow-image
 
     CMU-2.svs
     :::
 
-  - [OpenSlide (Aperio)](http://openslide.cs.cmu.edu/download/openslide-testdata/Aperio/)
-  - CC0 1.0
-* - :::{figure} images/CMU-3.jpg
+  * [OpenSlide (Aperio)](http://openslide.cs.cmu.edu/download/openslide-testdata/Aperio/)
+  * CC0 1.0
+* * :::{figure} images/CMU-3.jpg
     :height: 100px
     :class: shadow-image
 
     CMU-3.svs
     :::
 
-  - [OpenSlide (Aperio)](http://openslide.cs.cmu.edu/download/openslide-testdata/Aperio/)
-  - CC0 1.0
-* - :::{figure} images/OS-1.jpg
+  * [OpenSlide (Aperio)](http://openslide.cs.cmu.edu/download/openslide-testdata/Aperio/)
+  * CC0 1.0
+* * :::{figure} images/OS-1.jpg
     :height: 100px
     :class: shadow-image
 
     OS-1.ndpi
     :::
 
-  - [OpenSlide (Hamamatsu)](http://openslide.cs.cmu.edu/download/openslide-testdata/Hamamatsu/)
-  - Freely-distributable
-* - :::{figure} images/OS-2.jpg
+  * [OpenSlide (Hamamatsu)](http://openslide.cs.cmu.edu/download/openslide-testdata/Hamamatsu/)
+  * Freely-distributable
+* * :::{figure} images/OS-2.jpg
     :height: 100px
     :class: shadow-image
 
     OS-2.ndpi
     :::
 
-  - [OpenSlide (Hamamatsu)](http://openslide.cs.cmu.edu/download/openslide-testdata/Hamamatsu/)
-  - Freely-distributable
-* - :::{figure} images/OS-3.jpg
+  * [OpenSlide (Hamamatsu)](http://openslide.cs.cmu.edu/download/openslide-testdata/Hamamatsu/)
+  * Freely-distributable
+* * :::{figure} images/OS-3.jpg
     :height: 100px
     :class: shadow-image
 
     OS-3.ndpi
     :::
 
-  - [OpenSlide (Hamamatsu)](http://openslide.cs.cmu.edu/download/openslide-testdata/Hamamatsu/)
-  - Freely-distributable
-* - :::{figure} images/LuCa-7color_[13860,52919]_1x1component_data.jpg
+  * [OpenSlide (Hamamatsu)](http://openslide.cs.cmu.edu/download/openslide-testdata/Hamamatsu/)
+  * Freely-distributable
+* * :::{figure} images/LuCa-7color_[13860,52919]_1x1component_data.jpg
     :height: 100px
     :class: shadow-image
 
     LuCa-7color_[13860,52919]_1x1
     :::
 
-  - [Perkin Elmer](https://downloads.openmicroscopy.org/images/Vectra-QPTIFF/perkinelmer/)
-  - CC-BY 4.0
-* - :::{figure} images/LuCa-7color_[17572,60173]_3x3component_data.jpg
+  * [Perkin Elmer](https://downloads.openmicroscopy.org/images/Vectra-QPTIFF/perkinelmer/)
+  * CC-BY 4.0
+* * :::{figure} images/LuCa-7color_[17572,60173]_3x3component_data.jpg
     :height: 100px
     :class: shadow-image
 
     LuCa-7color_[17572,60173]_3x3
     :::
 
-  - [Perkin Elmer](https://downloads.openmicroscopy.org/images/Vectra-QPTIFF/perkinelmer/)
-  - CC-BY 4.0
-* - :::{figure} images/LuCa-7color_Scan1.jpg
+  * [Perkin Elmer](https://downloads.openmicroscopy.org/images/Vectra-QPTIFF/perkinelmer/)
+  * CC-BY 4.0
+* * :::{figure} images/LuCa-7color_Scan1.jpg
     :height: 100px
     :class: shadow-image
 
     LuCa-7color_Scan1.qptiff
     :::
 
-  - [Perkin Elmer](https://downloads.openmicroscopy.org/images/Vectra-QPTIFF/perkinelmer/)
-  - CC-BY 4.0
+  * [Perkin Elmer](https://downloads.openmicroscopy.org/images/Vectra-QPTIFF/perkinelmer/)
+  * CC-BY 4.0
+* * :::{figure} images/Patient_1_ome_tiff.png
+    :height: 100px
+    :class: shadow-image
+
+    Patient_1.ome.tiff
+    :::
+
+  * [EBI BioImage Archive](https://www.ebi.ac.uk/bioimage-archive/galleries/S-BIAD463-ai.html)
+  * CC0
 ::::
 
 Additionally, the icons used in QuPath are exported as PNG for use in the docs.
