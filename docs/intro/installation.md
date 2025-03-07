@@ -119,13 +119,4 @@ However, as an open source project, we don't currently have the time and resourc
 
 ### Linux
 
-QuPath for Linux was compiled on Ubuntu, with best efforts made to include all dependencies, although in the case of OpenSlide this wasn't entirely successful.
-You may need to install OpenSlide separately through your package manager.
-
-Known issues are:
-
-* Black/white tiles can appear in some images reading using OpenSlide; updating libpixman can resolve this (see [Issue #355](https://github.com/qupath/qupath/issues/355)), or alternatively you can try the alternative bash script `/path/to/QuPath/bin/QuPath.sh` to launch the software.
-* QuPath (like other Java applications) cannot be started if its installation path contains a directory named `bin`; moving to another directory resolves this (see [Issue #614](https://github.com/qupath/qupath/issues/614))
-* Some sub-dependencies might not be found (reported [on the forum](https://forum.image.sc/t/qupath-v0-4-0-now-available/74887/7))
-
-If you still have trouble getting OpenSlide to work, you could also try [installing OpenSlide Java using Homebrew](https://github.com/petebankhead/homebrew-qupath).
+QuPath for Linux was compiled on Ubuntu, with best efforts made to include all dependencies.
