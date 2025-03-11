@@ -26,7 +26,7 @@ This appears high in Google Scholar results for QuPath, but isn't an appropriate
 
 ## Publications using QuPath (until 2021)
 
-In the early years, scraping keep the project alive and unable to rely on QuPath being cited whenever it was used, I maintained a curated list where I checked every paper that *mentioned* QuPath to see if it was used and/or cited.
+In the early years, struggling to keep the project alive and unable to rely on QuPath being cited whenever it was used, I maintained a curated list where I checked every paper that *mentioned* QuPath to see if it was used and/or cited.
 
 I stopped that at the end of 2021 because... well, there were just too many.
 We now rely on citation counts - and, indeed, citing the right paper.
