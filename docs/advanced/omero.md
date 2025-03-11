@@ -1,17 +1,21 @@
 (omero-extension)=
 # OMERO
 
-This page describes how to use the OMERO extension in QuPath to access and interact with images hosted on OMERO servers. The installation instructions can be found [here](https://github.com/qupath/qupath-extension-omero?tab=readme-ov-file#installing).
+This page describes the [QuPath OMERO extension](https://github.com/qupath/qupath-extension-omero), which is the current extension created and maintained by the QuPath team. It's compatible with QuPath v0.6.0 and later. It has been completely rewritten to provide features and flexibility, including the ability to retrieve pixel values - including raw values - in different ways, depending upon how the OMERO server is set up (see the [Retrieving pixel values](pixel-values) section).
 
 :::{caution}
-Several versions of the OMERO extension exist:
+Two other OMERO extensions exist:
 
-- The [QuPath Web OMERO extension](https://github.com/qupath/qupath-extension-omero-web) is a deprecated version developed by the QuPath team that only allows rendered RGB images to be accessed.
-- The [BIOP OMERO extension](https://github.com/BIOP/qupath-extension-biop-omero) is a version developed by the BioImaging And Optics Platform (BIOP) to address the limitations of the QuPath Web OMERO extension by providing access to raw pixels of all types of images and by including more features. 
-- The [QuPath OMERO extension](https://github.com/qupath/qupath-extension-omero) is a an improved version of the QuPath Web OMERO extension developped by the QuPath team. It allows more flexibility by letting the user choose between different methods to retrieve pixel values, and offers the same features as the BIOP OMERO extension. This is the version presented in this page.
+- The [QuPath Web OMERO extension](https://github.com/qupath/qupath-extension-omero-web) is the original (now deprecated) version developed by the QuPath team. It only allows JPEG-compressed RGB images to be accessed (no raw pixel values, no support for non-RGB images).
+- The [BIOP OMERO extension](https://github.com/BIOP/qupath-extension-biop-omero), developed by the BioImaging and Optics Platform (BIOP) to address the limitations of the QuPath Web OMERO extension. This provides access to raw pixels using the OMERO Gateway API only. It also adds more features, many of which have now been incorporated into the main QuPath OMERO extension.
 
-See the [Migrating from QuPath Web OMERO extension](migrating) if you previously used the QuPath Web OMERO extension and want to make your QuPath projects usable by this extension.
+See [Migrating from QuPath Web OMERO extension](migrating) if you previously used the QuPath Web OMERO extension and want to make your QuPath projects usable by this extension.
 :::
+
+
+## Installing the extension
+
+The installation instructions can be found on the [GitHub page of the extension](https://github.com/qupath/qupath-extension-omero?tab=readme-ov-file#installing).
 
 
 (omero-browsing)=
@@ -31,7 +35,7 @@ You can browse an existing OMERO server, or a new one (with which no connection 
 The URL is the one you use when accessing the OMERO server with a web browser (e.g. <https://idr.openmicroscopy.org>) and there are two possibilities for the credentials:
 
 - You can check the `Log in as a public user` checkbox. That way, you will be able to browse the server without giving a username/password combination by using a public account (provided the server allows it). However, some features of the extension won't be available (see the [Send data to an OMERO server](sending-data) section for example).
-- If you don't check the `Log in as a public user` checkbox, you will have to give your OMERO credentials but you won't have any of the restrictions mentionned above.
+- If you don't check the `Log in as a public user` checkbox, you will have to give your OMERO credentials but you won't have any of the restrictions mentioned above.
 
 :::{figure} images/omero_browse_new_server.png
 :class: shadow-image small-image
@@ -90,7 +94,10 @@ The supported URL formats for projects and datasets are the following:
 - `<omero-web-server>/webclient/?show=dataset-<datasetId>`
 :::
 
-If no active connection with the OMERO server exists, QuPath will prompt you to enter your credentials, as mentionned in the [Browsing an OMERO server](omero-browsing) section.
+If no active connection with the OMERO server exists, QuPath will prompt you to enter your credentials, as mentioned in the [Browsing an OMERO server](omero-browsing) section.
+
+(pixel-values)=
+### Retrieving pixel values
 
 The extension can use three different methods (called 'pixel APIs') to retrieve pixel values:
 
