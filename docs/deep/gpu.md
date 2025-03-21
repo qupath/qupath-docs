@@ -151,16 +151,11 @@ This increases the chances we end up with a working combination
 
 To do this, check the [PyTorch + CUDA combination required for QuPath](gpu-versions-pytorch) and then the [PyTorch installation instructions](https://pytorch.org/get-started/previous-versions/) -- replacing `conda` with `mamba` if you like.
 
-If you want PyTorch 1.13.1 (recommended for Windows/Linux, but *not* Apple Silicon):
+
+If you want PyTorch 2.5.1:
 
 ```sh
-mamba install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 -c pytorch
-```
-
-If you want PyTorch 2.0.1 (needs a bit more work on Windows/Linux, [see below](djl-gpu-pytorch-201)):
-
-```sh
-mamba install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.8 -c pytorch -c nvidia
+mamba install pytorch==2.5.1 torchvision torchaudio pytorch-cuda=12.4 -c pytorch -c nvidia
 ```
 
 You can now [verify your PyTorch installation](https://pytorch.org/get-started/locally/#mac-verification) if needed.
@@ -196,10 +191,10 @@ Here, we *won't* install TensorFlow entirely, but rather only CUDA.
 This is because DJL's preferred TensorFlow/CUDA combo can be different from what conda will give us.
 
 ```sh
-mamba create -n cuda-11-3
-mamba activate cuda-11-3
+mamba create -n cuda-12-1
+mamba activate cuda-12-1
 
-mamba install cudatoolkit=11.3 cudnn
+mamba install cuda=12.1 cudnn cuda-version=12.1 -c nvidia
 ```
 
 You can then create a launch script just as with PyTorch above, ignoring all the optional PyTorch parts.
@@ -229,14 +224,14 @@ If all has gone well, you should see something like this:
 INFO: PyTorch graph executor optimizer is enabled, this may impact your inference latency and throughput. See: https://docs.djl.ai/docs/development/inference_performance_optimization.html#graph-executor-optimization
 INFO: Number of inter-op threads is 4
 INFO: Number of intra-op threads is 4
-INFO: PyTorch:2.0.1, capabilities: [
+INFO: PyTorch:2.5.1, capabilities: [
       CUDA,
       CUDNN,
       OPENMP,
       MKL,
       MKLDNN,
 ]
-PyTorch Library: C:\Users\yourname\.djl.ai\pytorch\2.0.1-cu118-win-x86_64
+PyTorch Library: C:\Users\yourname\.djl.ai\pytorch\2.5.1-cu124-win-x86_64
 ```
 
 If not, the troubleshooting below may help.
