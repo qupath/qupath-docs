@@ -342,16 +342,4 @@ Over time, the QuPath extension and docs will be updated as we make deep learnin
 ## Appendix: CUDA via Conda
 
 Getting CUDA installed and then having it play nicely with PyTorch can be quite painful.
-
-If you have an NVIDA GPU but are struggling to get it to work with Deep Java Library, it may help to try using a local version of PyTorch installed via `conda` - or, preferably, `mamba`, which is like `conda` except faster.
-
-1. Install `miniforge` as described [here](https://github.com/conda-forge/miniforge)
-2. Open a command prompt (Linux) or *Miniforge Prompt* (Windows, installed at step 1)
-3. Create and activate a new environment
-   * `mamba create -n pytorch`
-   * `mamba activate pytorch`
-4. Check which versions of PyTorch are compatible with Deep Java Library [here](https://docs.djl.ai/engines/pytorch/pytorch-engine/index.html#supported-pytorch-versions)
-   * For QuPath v0.5, PyTorch 2.0.1 is compatible
-5. Install a compatible Pytorch as described [here](https://pytorch.org/get-started/previous-versions/)
-   * `conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.8 -c pytorch -c nvidia`
-6. 
+There are detailed instructions on [the GPU support page](gpu-support).

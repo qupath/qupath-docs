@@ -85,6 +85,7 @@ The following sections attempt to outline the versions (as best I can figure the
 
 | QuPath | DJL     | PyTorch | CUDA |
 |--------|---------|---------|------|
+| v0.6.x | 0.32.0  | 2.5.1   | 12.4 |
 | v0.5.x | 0.24.0  | 2.0.1   | 11.8 |
 | v0.4.x | 0.20.0  | 1.13.0  | 11.7 |
 
@@ -94,6 +95,7 @@ The following sections attempt to outline the versions (as best I can figure the
 
 | QuPath | DJL     | TensorFlow | CUDA |
 |--------|---------|------------|------|
+| v0.6.x | 0.32.0  | 2.16.1     | 12.1 |
 | v0.5.x | 0.24.0  | 2.10.1     | 11.3 |
 | v0.4.x | 0.20.0  | 2.7.4      | 11.2 |
 
@@ -122,7 +124,7 @@ It is *mostly* used with Python, but not exclusively.
 For more info, see the [conda docs here](https://docs.conda.io).
 
 [Mamba](https://mamba.readthedocs.io) is a tool that allows you to create and manage conda environments.
-It has the advantage of generally being a lot faster than conda when trying to figure out which versions of packages are compatible with one another.
+It is *mostly* interchangeable with conda, but conda defaults to using the anaconda repository, which has a slightly more restrictive license than mamba's default channels.
 
 In this example, I'll use `mamba` installed on Windows using [the installation instructions here](https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html).
 These specify installing the *Miniforge* distribution... but it's not really necessary to remember all the different terms and distributions.
