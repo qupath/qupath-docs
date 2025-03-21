@@ -104,12 +104,13 @@ The extension can use three different methods (called 'pixel APIs') to retrieve 
 - The **web** pixel API: this method is enabled by default and is available on every OMERO server. It is fast but only 8-bit RGB images can be read, and they are JPEG-compressed. This effectively means it is most useful for viewing and annotating RGB images (including whole slide images), but is not suitable for quantitative analysis where JPEG compression artifacts would be problematic.
 - The **Ice** pixel API: this method can read every image and access raw pixel values, so it doesn't have the limitations of the web pixel API. However, you have to install additional dependencies to enable it. Take a look at the [extension page](https://github.com/qupath/qupath-extension-omero) to see how to install them.
   - Note that it is not possible to use the Ice pixel API when accessing an OMERO server with a public account, you have to be authenticated.
-  - If you can't open any image with the Ice pixel API, it may be because the OMERO.server instance is on a different server than the OMERO.web instance. You can define a different address and port to the OMERO.server in the settings of the extension, accessible in the browser:
+  - If you can't open any image with the Ice pixel API, it may be because the OMERO.server instance is on a different server than the OMERO.web instance. You can define a different address and port to the OMERO.server in the settings of the extension, accessible in the browser (these parameters will only be used if the extension cannot by itself determine the address of the OMERO.server):
 
   :::{figure} images/omero_ice_settings.png
   :class: shadow-image small-image
   Setting the address and port of an OMERO.server instance
   :::
+
   
   - Note that two images belonging to two different groups of the same server cannot currently be read at the same time with the Ice pixel API (see [this issue](https://github.com/ome/omero-gateway-java/issues/98)). Also, consecutively opening images of different groups can create problems (see [this issue](https://github.com/ome/omero-gateway-java/issues/99)).
 - The **pixel data microservice** API: this method can read every image and access raw pixel values, without the limitations of the Ice pixel API. However, you need to install [this plugin](https://github.com/glencoesoftware/omero-ms-pixel-buffer) on the OMERO server. If this plugin is installed and the OMERO extension cannot detect it, check that the port indicated in the settings of the extension corresponds to the port used by the microservice on the OMERO server (by default `8082`).
@@ -179,7 +180,7 @@ The extension can send annotations to the OMERO server. To do so, select the ann
   - Parameter selection
 ::::
 
-You have the possibility to delete annotations already present on the OMERO server. Since some groups allow multiple users to send annotations to the same image, you can delete the annotations of all or of one specific user. Deleting annotations of different users might not always work due to permissions.
+You have the possibility to delete annotations already present on the OMERO server. Since some groups allow multiple users to send annotations to the same image, you can delete the annotations of all or of one specific user. Note that you will only see users for whom you have sufficient permissions to delete annotations.
 
 :::{Note}
 The user interface only lets the possibility to send annotations, not detections. This is because OMERO does not well support sending thousands of objects. If you do so, you might make the entire server unresponsive.
@@ -195,7 +196,7 @@ An annotation on the OMERO server
 
 :::
 
-If the QuPath image contains annotation or detection measurements (see {menuselection}`Measure --> Show annotation measurements` or {menuselection}`Measure --> Show detection measurements`), they can also be sent to the OMERO server. They will be stored as `Attachments` on the OMERO server.
+If the QuPath image contains annotation or detection measurements (see {menuselection}`Measure --> Show annotation measurements` or {menuselection}`Measure --> Show detection measurements`), they can also be sent to the OMERO server. They will be stored as `Attachments` on the OMERO server. As with annotations, you can delete existing measurements of a specific user or of all users.
 
 :::{figure} images/omero_measurements_attachment.png
 :class: shadow-image small-image
@@ -223,7 +224,10 @@ Each image of a QuPath project has metadata (which consist of key-value pairs) a
   - Parameter selection
 ::::
 
-You can select which pairs to send, as well as how to proceed if two keys are duplicate. An OMERO server can store multiple keys, while keys in QuPath are unique.
+You can select which pairs to send, as well as how to proceed if two keys are duplicate. An OMERO server can store multiple keys, while keys in QuPath are unique:
+
+ - If you choose "Replace existing key-value pairs", all existing keys will be replaced and a new bloc of key-value pairs will be created for new keys.
+ - If you choose "Keep existing key-value pairs", a new bloc of key-value pairs is created with the new values.
 
 In OMERO, key-value pairs can be grouped by a `namespace`. You can choose which namespace to use when sending key-value pairs.
 
@@ -317,7 +321,7 @@ In OMERO, key-value pairs can be grouped by a `namespace`. You can select which 
 QuPath metadata can only have unique keys. Therefore, you can specify what to do when a duplicate happens.
 
 :::{Note}
-When importing an image to a QuPath project from the browser (see the [Browsing an OMERO server](omero-browsing) section), key-value pairs and the parent dataset ID/name of the OMERO image are automatically imported. This can be disabled by unchecking {menuselection}`Edit --> Preferences... --> OMERO extension --> Automatically import key-value pairs and parent dataset information`.
+When importing an image to a QuPath project from the browser (see the [Browsing an OMERO server](omero-browsing) section), key-value pairs of the default namespace and the parent dataset ID/name of the OMERO image are automatically imported. This can be disabled by unchecking {menuselection}`Edit --> Preferences... --> OMERO extension --> Automatically import key-value pairs of default namespace and parent dataset information`.
 :::
 
 :::{caution}
