@@ -29,6 +29,7 @@ The sources and terms of reuse for these images are summarized in the table belo
 * * :::{figure} images/CMU-1.jpg
     :height: 100px
     :class: shadow-image
+    :target: https://openslide.cs.cmu.edu/download/openslide-testdata/Aperio/
 
     CMU-1.svs
     :::
@@ -38,6 +39,7 @@ The sources and terms of reuse for these images are summarized in the table belo
 * * :::{figure} images/CMU-2.jpg
     :height: 100px
     :class: shadow-image
+    :target: https://openslide.cs.cmu.edu/download/openslide-testdata/Aperio/
 
     CMU-2.svs
     :::
@@ -47,6 +49,7 @@ The sources and terms of reuse for these images are summarized in the table belo
 * * :::{figure} images/CMU-3.jpg
     :height: 100px
     :class: shadow-image
+    :target: https://openslide.cs.cmu.edu/download/openslide-testdata/Aperio/
 
     CMU-3.svs
     :::
@@ -56,6 +59,7 @@ The sources and terms of reuse for these images are summarized in the table belo
 * * :::{figure} images/OS-1.jpg
     :height: 100px
     :class: shadow-image
+    :target: https://openslide.cs.cmu.edu/download/openslide-testdata/Aperio/
 
     OS-1.ndpi
     :::
@@ -65,6 +69,7 @@ The sources and terms of reuse for these images are summarized in the table belo
 * * :::{figure} images/OS-2.jpg
     :height: 100px
     :class: shadow-image
+    :target: http://openslide.cs.cmu.edu/download/openslide-testdata/Hamamatsu/
 
     OS-2.ndpi
     :::
@@ -74,6 +79,7 @@ The sources and terms of reuse for these images are summarized in the table belo
 * * :::{figure} images/OS-3.jpg
     :height: 100px
     :class: shadow-image
+    :target: http://openslide.cs.cmu.edu/download/openslide-testdata/Hamamatsu/
 
     OS-3.ndpi
     :::
@@ -83,6 +89,7 @@ The sources and terms of reuse for these images are summarized in the table belo
 * * :::{figure} images/LuCa-7color_[13860,52919]_1x1component_data.jpg
     :height: 100px
     :class: shadow-image
+    :target: https://downloads.openmicroscopy.org/images/Vectra-QPTIFF/perkinelmer/PKI_fields/
 
     LuCa-7color_[13860,52919]_1x1
     :::
@@ -92,6 +99,7 @@ The sources and terms of reuse for these images are summarized in the table belo
 * * :::{figure} images/LuCa-7color_[17572,60173]_3x3component_data.jpg
     :height: 100px
     :class: shadow-image
+    :target: https://downloads.openmicroscopy.org/images/Vectra-QPTIFF/perkinelmer/PKI_fields/
 
     LuCa-7color_[17572,60173]_3x3
     :::
@@ -101,6 +109,7 @@ The sources and terms of reuse for these images are summarized in the table belo
 * * :::{figure} images/LuCa-7color_Scan1.jpg
     :height: 100px
     :class: shadow-image
+    :target: https://downloads.openmicroscopy.org/images/Vectra-QPTIFF/perkinelmer/PKI_scans/
 
     LuCa-7color_Scan1.qptiff
     :::
@@ -110,6 +119,7 @@ The sources and terms of reuse for these images are summarized in the table belo
 * * :::{figure} images/Patient_1_ome_tiff.png
     :height: 100px
     :class: shadow-image
+    :target: https://www.ebi.ac.uk/bioimage-archive/galleries/S-BIAD463-ai.html
 
     Patient_1.ome.tiff
     :::
