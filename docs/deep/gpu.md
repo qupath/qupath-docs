@@ -100,7 +100,7 @@ The following sections attempt to outline the versions (as best I can figure the
 | v0.4.x | 0.20.0  | 2.7.4      | 11.2 |
 
 > Note: DJL + TensorFlow will currently not work **at all** on Apple silicon (no matter whether you have the Intel or Apple silicon build of QuPath... unless you build TensorFlow from source).
-> TensorFlow also [dropped GPU support on Windows as of version 2.10](https://www.tensorflow.org/install/pip#windows-native), so your best bet is to try to use a previous compatible version or to run QuPath (and TensorFlow) on the [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install).
+> TensorFlow also [dropped GPU support on Windows as of version 2.10](https://www.tensorflow.org/install/pip#windows-native).
 
 ## Conda environments
 
@@ -186,9 +186,9 @@ There are more details in the [DJL docs](https://docs.djl.ai/master/engines/pyto
 
 ### Creating a conda environment for TensorFlow
 
-TensorFlow is rather more difficult to wrangle. We provide instructions here that may work for TensorFlow for Linux under limited circumstances.
-
 If needed, we can follow a similar process to create an environment for TensorFlow.
+TensorFlow is rather more difficult to wrangle.
+We provide instructions here that may work for TensorFlow for Linux under limited circumstances.
 
 ```sh
 mamba create -n qupath-tensorflow
