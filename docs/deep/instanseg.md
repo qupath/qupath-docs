@@ -37,7 +37,7 @@ If you have an NVIDIA GPU and want to use it with InstanSeg, you will need to in
 
 ## Set-up
 
-InstanSeg can be dragged and dropped into QuPath when its running. After this, restart QuPath and you should see the extension within the Extensions menu {menuselection}`Extensions --> InstanSeg`.
+InstanSeg can be installed into QuPath as described on [the extension page](qupath-extensions). After this, restart QuPath and you should see the extension within the Extensions menu {menuselection}`Extensions --> InstanSeg`.
 The InstanSeg dialog will appear as shown below:
 
 :::{figure} images/instanseg.png
