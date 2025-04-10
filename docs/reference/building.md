@@ -4,9 +4,13 @@
 
 Building software can be tricky, but hopefully this won't be - thanks to [Gradle].
 
-:::{note} Do you need this?!
+:::{note}
 Most people using QuPath won't need to build QuPath from source!
 Just download an existing installer from [qupath.github.io](https://qupath.github.io) and use that instead.
+
+These instructions are for when you
+  1. need to change QuPath's code yourself
+  2. want to try the *very latest code* before a new release is available
 :::
 
 ## Building from the command line
@@ -40,6 +44,10 @@ cd qupath
 ```
 :::
 ::::
+
+:::{warning}
+You'll need to type `gradlew` if you're using a standard command prompt on Windows, but `./gradlew` if you're using macOS, Linux, or Windows with some other shell prompt.
+:::
 
 It will take a few minutes to download everything required and build the software.
 If all goes well, you should see a triumphant message that the build was successful.
