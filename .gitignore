@@ -8,3 +8,4 @@ venv
 /lib
 /bin
 docs/_build/
+env/
