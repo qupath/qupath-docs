@@ -186,15 +186,14 @@ There are more details in the [DJL docs](https://docs.djl.ai/master/engines/pyto
 
 ### Creating a conda environment for TensorFlow
 
+TensorFlow is rather more difficult to wrangle. We provide instructions here that may work for TensorFlow for Linux under limited circumstances.
+
 If needed, we can follow a similar process to create an environment for TensorFlow.
 
 ```sh
 mamba create -n qupath-tensorflow
 mamba activate qupath-tensorflow
 
-# For CPU only
-pip install tensorflow==2.16.1
-# For GPU
 pip install tensorflow[and-cuda]==2.16.1
 ```
 
