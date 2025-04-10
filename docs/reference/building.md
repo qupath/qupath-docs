@@ -8,9 +8,9 @@ Building software can be tricky, but hopefully this won't be - thanks to [Gradle
 Most people using QuPath won't need to build QuPath from source!
 Just download an existing installer from [qupath.github.io](https://qupath.github.io) and use that instead.
 
-These instructions are for if you
-1. need to change QuPath's code yourself
-2. want to try the *very latest code* before a new release is available
+These instructions are for when you
+  1. need to change QuPath's code yourself
+  2. want to try the *very latest code* before a new release is available
 :::
 
 ## Building from the command line
