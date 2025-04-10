@@ -100,6 +100,7 @@ The following sections attempt to outline the versions (as best I can figure the
 | v0.4.x | 0.20.0  | 2.7.4      | 11.2 |
 
 > Note: DJL + TensorFlow will currently not work **at all** on Apple silicon (no matter whether you have the Intel or Apple silicon build of QuPath... unless you build TensorFlow from source).
+> TensorFlow also [dropped GPU support on Windows as of version 2.10](https://www.tensorflow.org/install/pip#windows-native), so your best bet is to try to use a previous compatible version or to run QuPath (and TensorFlow) on the [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install).
 
 ## Conda environments
 
@@ -187,14 +188,14 @@ There are more details in the [DJL docs](https://docs.djl.ai/master/engines/pyto
 
 If needed, we can follow a similar process to create an environment for TensorFlow.
 
-Here, we *won't* install TensorFlow entirely, but rather only CUDA.
-This is because DJL's preferred TensorFlow/CUDA combo can be different from what conda will give us.
-
 ```sh
-mamba create -n cuda-12-1
-mamba activate cuda-12-1
+mamba create -n qupath-tensorflow
+mamba activate qupath-tensorflow
 
-mamba install cuda=12.1 cudnn cuda-version=12.1 -c nvidia
+# For CPU only
+pip install tensorflow==2.16.1
+# For GPU
+pip install tensorflow[and-cuda]==2.16.1
 ```
 
 You can then create a launch script just as with PyTorch above, ignoring all the optional PyTorch parts.
