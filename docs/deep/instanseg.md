@@ -26,6 +26,7 @@ Goldsborough, Thibaut, et al. A novel channel invariant architecture for the seg
 
 - QuPath [version 0.6](https://qupath.github.io/) (installation instructions [here](https://qupath.readthedocs.io/en/0.4/docs/intro/installation.html))
 - At least one whole slide image
+- [Deep Java Library QuPath Extension](https://github.com/qupath/qupath-extension-djl)
 - [InstanSeg QuPath Extension](https://github.com/qupath/qupath-extension-instanseg)
 - Internet access to download models and pytorch if needed
 - PyTorch (this can be downloaded while using the extension so don't worry about now)
