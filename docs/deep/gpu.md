@@ -85,6 +85,7 @@ The following sections attempt to outline the versions (as best I can figure the
 
 | QuPath | DJL     | PyTorch | CUDA |
 |--------|---------|---------|------|
+| v0.6.x | 0.32.0  | 2.5.1   | 12.4 |
 | v0.5.x | 0.24.0  | 2.0.1   | 11.8 |
 | v0.4.x | 0.20.0  | 1.13.0  | 11.7 |
 
@@ -94,10 +95,12 @@ The following sections attempt to outline the versions (as best I can figure the
 
 | QuPath | DJL     | TensorFlow | CUDA |
 |--------|---------|------------|------|
+| v0.6.x | 0.32.0  | 2.16.1     | 12.1 |
 | v0.5.x | 0.24.0  | 2.10.1     | 11.3 |
 | v0.4.x | 0.20.0  | 2.7.4      | 11.2 |
 
 > Note: DJL + TensorFlow will currently not work **at all** on Apple silicon (no matter whether you have the Intel or Apple silicon build of QuPath... unless you build TensorFlow from source).
+> TensorFlow also [dropped GPU support on Windows as of version 2.10](https://www.tensorflow.org/install/pip#windows-native).
 
 ## Conda environments
 
@@ -122,7 +125,7 @@ It is *mostly* used with Python, but not exclusively.
 For more info, see the [conda docs here](https://docs.conda.io).
 
 [Mamba](https://mamba.readthedocs.io) is a tool that allows you to create and manage conda environments.
-It has the advantage of generally being a lot faster than conda when trying to figure out which versions of packages are compatible with one another.
+It is *mostly* interchangeable with conda, but conda defaults to using the anaconda repository, which has a slightly more restrictive license than mamba's default channels.
 
 In this example, I'll use `mamba` installed on Windows using [the installation instructions here](https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html).
 These specify installing the *Miniforge* distribution... but it's not really necessary to remember all the different terms and distributions.
@@ -149,16 +152,11 @@ This increases the chances we end up with a working combination
 
 To do this, check the [PyTorch + CUDA combination required for QuPath](gpu-versions-pytorch) and then the [PyTorch installation instructions](https://pytorch.org/get-started/previous-versions/) -- replacing `conda` with `mamba` if you like.
 
-If you want PyTorch 1.13.1 (recommended for Windows/Linux, but *not* Apple Silicon):
+
+If you want PyTorch 2.5.1:
 
 ```sh
-mamba install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 -c pytorch
-```
-
-If you want PyTorch 2.0.1 (needs a bit more work on Windows/Linux, [see below](djl-gpu-pytorch-201)):
-
-```sh
-mamba install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.8 -c pytorch -c nvidia
+mamba install pytorch==2.5.1 torchvision torchaudio pytorch-cuda=12.4 -c pytorch -c nvidia
 ```
 
 You can now [verify your PyTorch installation](https://pytorch.org/get-started/locally/#mac-verification) if needed.
@@ -189,15 +187,14 @@ There are more details in the [DJL docs](https://docs.djl.ai/master/engines/pyto
 ### Creating a conda environment for TensorFlow
 
 If needed, we can follow a similar process to create an environment for TensorFlow.
-
-Here, we *won't* install TensorFlow entirely, but rather only CUDA.
-This is because DJL's preferred TensorFlow/CUDA combo can be different from what conda will give us.
+TensorFlow is rather more difficult to wrangle.
+We provide instructions here that may work for TensorFlow for Linux under limited circumstances.
 
 ```sh
-mamba create -n cuda-11-3
-mamba activate cuda-11-3
+mamba create -n qupath-tensorflow
+mamba activate qupath-tensorflow
 
-mamba install cudatoolkit=11.3 cudnn
+pip install tensorflow[and-cuda]==2.16.1
 ```
 
 You can then create a launch script just as with PyTorch above, ignoring all the optional PyTorch parts.
@@ -227,14 +224,14 @@ If all has gone well, you should see something like this:
 INFO: PyTorch graph executor optimizer is enabled, this may impact your inference latency and throughput. See: https://docs.djl.ai/docs/development/inference_performance_optimization.html#graph-executor-optimization
 INFO: Number of inter-op threads is 4
 INFO: Number of intra-op threads is 4
-INFO: PyTorch:2.0.1, capabilities: [
+INFO: PyTorch:2.5.1, capabilities: [
       CUDA,
       CUDNN,
       OPENMP,
       MKL,
       MKLDNN,
 ]
-PyTorch Library: C:\Users\yourname\.djl.ai\pytorch\2.0.1-cu118-win-x86_64
+PyTorch Library: C:\Users\yourname\.djl.ai\pytorch\2.5.1-cu124-win-x86_64
 ```
 
 If not, the troubleshooting below may help.
