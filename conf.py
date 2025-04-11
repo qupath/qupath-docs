@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'QuPath'
-copyright = '2019-2024, QuPath docs authors'
+copyright = '2019-2025, QuPath docs authors'
 author = 'QuPath authors'
 
 
@@ -101,7 +101,7 @@ html_logo = 'docs/images/qupath_128.png'
 html_favicon = 'docs/images/QuPath.ico'
 
 # Variables for current QuPath version
-release = '0.6.0-rc3'
+release = '0.6.0-rc4'
 version = '0.6'
 java_version = '21'
 
