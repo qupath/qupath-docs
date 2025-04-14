@@ -49,6 +49,7 @@ The InstanSeg user interface
 
 :::{note}
 Please note that you'll need internet access to download models and PyTorch, if required.
+You should install PyTorch using the [Deep Java Library](deep-java-library) extension before attempting to use InstanSeg.
 :::
 
 ## Using InstanSeg
