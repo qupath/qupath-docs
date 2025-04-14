@@ -68,7 +68,7 @@ These remotely-stored models will be stored in a `downloaded` directory within y
 Any local models that you want to include should be stored in a `local` directory within the model folder.
 Here is an example of a suitable directory structure:
 
-```
+```none
 ├── downloaded
 │   ├── brightfield_nuclei-0.1.0
 │   ├── brightfield_nuclei-0.1.0.zip
