@@ -64,7 +64,25 @@ Click on the folder icon to choose a directory either containing models you alre
 Select the dropdown box to see the available models.
 Options with a cloud icon will need to be downloaded, as they are not local to your machine.
 To do this, select the model and click the download button to fetch them.
-If you have local models in your directory, you can also select these from the dropdown box.
+These remotely-stored models will be stored in a `downloaded` directory within your model folder.
+Any local models that you want to include should be stored in a `local` directory within the model folder.
+Here is an example of a suitable directory structure:
+
+```
+├── downloaded
+│   ├── brightfield_nuclei-0.1.0
+│   ├── brightfield_nuclei-0.1.0.zip
+│   ├── fluorescence_nuclei_and_cells-0.1.0
+│   ├── fluorescence_nuclei_and_cells-0.1.0.zip
+├── local
+│   ├── brightfield_nuclei_30303
+│   ├── fluorescence_nuclei_and_cells_tmp
+│   └── universal 1
+└── releases.json
+```
+
+Here, zip files and model directories in the `downloaded` subdirectory are managed by the InstanSeg extension.
+Models and files within the `local` subdirectory are managed by the user.
 
 You should select a suitable model for the type of image you are working with.
 For example, for brightfield images we would usually use the brightfield_nuclei model that was trained on images with haematoxylin and DAB stain, but this model can also be used on images captured using other stains.
