@@ -55,7 +55,7 @@ When you want to use a deep learning framework, DJL can try to find and download
 
 For example, suppose you want to use PyTorch.
 
-DJL would check your computer (e.g. Windows, Linux, Mac), detect whether you have CUDA installed, and download [a supported version of PyTorch](https://docs.djl.ai/engines/pytorch/pytorch-engine/index.html#supported-pytorch-versions) with or without GPU support based on that.
+DJL would check your computer (e.g. Windows, Linux, Mac), detect whether you have CUDA installed, and download [a supported version of PyTorch](https://docs.djl.ai/master/engines/pytorch/pytorch-engine/index.html#supported-pytorch-versions) with or without GPU support based on that.
 
 *However*, DJL can't currently check that you have the *right* version of CUDA, driver & cuDNN in advance.
 
