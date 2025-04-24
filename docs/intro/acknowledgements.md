@@ -116,7 +116,7 @@ The sources and terms of reuse for these images are summarized in the table belo
 
   * [Perkin Elmer](https://downloads.openmicroscopy.org/images/Vectra-QPTIFF/perkinelmer/)
   * CC-BY 4.0
-* * :::{figure} images/Patient_1_ome_tiff.png
+* * :::{figure} images/Patient_1_ome_tiff.jpg
     :height: 100px
     :class: shadow-image
     :target: https://www.ebi.ac.uk/bioimage-archive/galleries/S-BIAD463-ai.html
