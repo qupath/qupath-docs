@@ -54,6 +54,7 @@ Right-click on the .zip file and choose to extract all the contents.
 This should give you a normal folder containing QuPath's files.
 
 Double-click on either *QuPath.exe* or *QuPath (console).exe* to start QuPath.
+The first time you try this, you might see similar warning dialogs to those shown with the `.msi` above.
 
 :::{admonition} *QuPath* or *QuPath (console)*?
 :class: tip

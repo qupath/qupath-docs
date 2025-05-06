@@ -45,11 +45,13 @@ You can open it by clicking on {menuselection}`Extensions --> Manage extensions`
 The extension manager window
 :::
 
-There, you will see a list of extensions grouped by "catalog".
-A "catalog" represents a collection of extensions developed by a group.
+There, you will see a list of extensions grouped by *"catalog"*.
+
+A catalog typically represents a collection of extensions developed by a specific group of people.
 By default, you will only see the "QuPath catalog", which contains extensions developed by the QuPath team.
-If the extension you want to manage is present in this list, you can go to the next section.
-Otherwise, click on `Manage extension catalogs` in the extension manager. This will open the extension catalog manager window.
+
+If the extension you want is present in this list, you can go to the next section.
+Otherwise, click on {guilabel}`Manage extension catalogs` in the extension manager. This will open the extension catalog manager window.
 
 :::{figure} images/extension_catalog_manager.png
 :class: shadow-image mid-image
@@ -71,7 +73,7 @@ In that case, see the [Managing extensions without the extension manager](managi
 ### Installing extensions
 
 Installing an extension with the extension manager is very easy.
-You just need to click on the "+" green button next to the extension name. This will show the installation window.
+You just need to click on the {guilabel}`+` green button next to the extension name. This will show the installation window.
 
 :::{figure} images/extension_installation.png
 :class: shadow-image mid-image
@@ -82,7 +84,7 @@ The extension installation window
 There, you can select the extension version and whether to install optional dependencies.
 Not always present, optional dependencies are additional files that may add features to the extension (refer to the extension documentation for more information).
 
-When you click on `Install`, the extension files will be downloaded and added to your QuPath user directory.
+When you click on {guilabel}`Install`, the extension files will be downloaded and added to your QuPath user directory.
 Often the extension will be ready to use immediately, but it’s generally a good idea to restart QuPath in case it needs to do any extra work at startup.
 
 
@@ -117,7 +119,7 @@ In that case, click on the cog button next to the extension name. This opens the
 The edit extension window
 :::
 
-This window is similar to the extension installation window, where you can specify the version and whether to install optional dependencies. Select the newest version and click on `Update`.
+This window is similar to the extension installation window, where you can specify the version and whether to install optional dependencies. Select the newest version and click on {guilabel}`Update`.
 You should then restart QuPath.
 
 
@@ -158,5 +160,5 @@ Alternatively, you can delete the jar file of the extension from your QuPath use
 
 ### Updating extensions
 
-Manually installed extensions cannot be easily updated.
+Manually installed extensions can't be easily updated.
 You have to remove them and install them again with the newer version.
