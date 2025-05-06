@@ -23,14 +23,20 @@ Both libraries have their own distinct advantages:
 - OpenSlide is typically fast, lightweight and programmer-friendly (especially through Python), but is restricted to *only* 2D, 8-bit, RGB images.
 - Bio-Formats can support a much wider range of image types, including multidimensional data (e.g. z-stacks, time series and multiplexed images).
 
-Bio-Formats supports most images that can be read by OpenSlide, but not all - and therefore QuPath continues to include both libraries.
+Bio-Formats supports most images that can be read by OpenSlide, but not all.
+Also, when both libraries support the same file format, OpenSlide tends to be *slightly* faster.
+Therefore QuPath continues to include both libraries.
 
-However, file formats are tricky and tend to have lots of variants. Just because a format is listed as being supported by Bio-Formats or OpenSlide doesn't mean files in that format will always open (properly) in QuPath. The following sections contain some extra details and caveats, partly based on user feedback about what does and doesn't work.
+However, file formats are tricky and tend to have lots of variants.
+Just because a format is listed as being supported by Bio-Formats or OpenSlide doesn't mean files in that format will always open (properly) in QuPath.
+The following sections contain some extra details and caveats, partly based on user feedback about what does and doesn't work.
 
 :::{important}
-If you're using a QuPath build for **Apple silicon** (i.e. a recent Mac with M1/M2/M3 processor), then you might find that *.ndpi* and *.czi* images don't work with Bio-Formats.
+:class: warning
 
-See [here](qupath-versions-for-mac) for more details and workarounds.
+If you're using a QuPath build for **Apple silicon** (i.e. a recent Mac with M1/M2/M3/M4 processor), then you might find that *.ndpi* and *.czi* images don't work with Bio-Formats.
+
+There are more details and workaround on the [installation page](qupath-versions-for-mac).
 :::
 
 ### Reporting problems
@@ -56,10 +62,11 @@ In some cases, this is simply because the format isn't supported.
 
 You can also check the [QuPath issues page] for past discussions.
 
-:::{note}
-OpenSlide has not been updated for several years, whereas Bio-Formats is actively maintained by the OME team.
+:::{admonition} I've found a bug!
+If you find a file that doesn't open properly in QuPath, despite being listed as supported by OpenSlide or Bio-Formats, that's *usually* not something we can fix in QuPath.
+Most of the time, a change needs to be made in the library that is reading the file.
 
-**However**, before relying on Bio-Formats to continue supporting and adding proprietary formats forever, one should read the [OME position regarding file formats](https://blog.openmicroscopy.org/community/file-formats/2019/06/25/formats/).
+**However**, before relying on Bio-Formats to continue supporting and adding proprietary formats forever, you should read the [OME position regarding file formats](https://blog.openmicroscopy.org/community/file-formats/2019/06/25/formats/).
 :::
 
 ### Specific formats
@@ -67,17 +74,16 @@ OpenSlide has not been updated for several years, whereas Bio-Formats is activel
 #### BIF (Ventana)
 
 Both OpenSlide and (more recently) Bio-Formats now support BIF images.
-If you have trouble with one library, you might try reading the images with the other.
+If you have trouble with one library, you might [try reading the images with the other](project-add-images).
 
-There have previously been problems with misaligned tiles (see [here](https://github.com/qupath/qupath/issues/323)).
+There have previously been [problems with misaligned tiles](https://github.com/qupath/qupath/issues/323).
 
 #### CZI (Zeiss)
 
 Since the release of [Bio-Formats v5.3.0](https://www.openmicroscopy.org/site/support/bio-formats5.3/about/whats-new.html) QuPath has been able to work with `.czi` files.
-
-To open CZI files that use JPEG-XR compression on **Windows**, you may also need to install the *Visual Studio 2015 C++ Redistributable* - see [here](https://www.openmicroscopy.org/site/support/bio-formats/formats/zeiss-czi.html) for more information.
-
-If you're using the [Apple silicon build](qupath-versions-for-mac), Bio-Formats can't read .czi files that use JPEG-XR compression. You'll either need to convert the images outside of QuPath, or switch to using the Intel build of QuPath for macOS.
+However, for CZI images using JPEG-XR compression (which is common for whole slide images) there are caveats:
+* On **Windows**, you may need to install the *Visual Studio 2015 C++ Redistributable* - see [here](https://www.openmicroscopy.org/site/support/bio-formats/formats/zeiss-czi.html) for more information.
+* Bio-Formats doens't currently support JPEG-XR for [Apple silicon](qupath-versions-for-mac). You'll either need to convert the images outside of QuPath, or switch to using the Intel build of QuPath for macOS.
 
 
 #### DICOM
@@ -92,7 +98,7 @@ This is available in QuPath from v0.5.0.
 #### iSyntax (Philips)
 
 iSyntax is a proprietary format, not compatible with QuPath.
-We are unaware of any open source library capable of reading iSyntax files.
+We aren't aware of any QuPath-compatible open source library capable of reading iSyntax files.
 
 :::{tip}
 See [here](https://www.glencoesoftware.com/blog/2019/12/09/converting-whole-slide-images-to-OME-TIFF.html) for a blog post from Glencoe Software about converting iSyntax to OME-TIFF.
@@ -120,15 +126,18 @@ See [here](https://www.glencoesoftware.com/blog/2019/12/09/converting-whole-slid
 NDPI is generally quite well supported by both Bio-Formats and OpenSlide.
 Note that z-stacks are only supported by Bio-Formats; with OpenSlide, only one plane will be opened.
 
-If you're using the [Apple silicon build](qupath-versions-for-mac), Bio-Formats can't read most .ndpi (or .ndpis) files. 
-Fortunately, OpenSlide can handle .ndpi so this usually isn't a problem.
+There is a variation of `.ndpi` with the file extension `.ndpis`.
+This is typically used for fluorescence images and only supported by Bio-Formats.
+
+If you're using the [Apple silicon build](qupath-versions-for-mac), Bio-Formats can't read most `.ndpi` or `.ndpis` files. 
+Fortunately, OpenSlide's `.ndpi` support means this isn't usually isn't a problem - at least for 2D brightfield images.
 
 #### TIFF
 
-TIFF is a file format commonly used for whole slide images, but it is important to recognize that not all TIFFs are the same.
+TIFF is a file format commonly used for whole slide images, but it's important to recognize that not all TIFFs are the same.
 Internally, the data in a TIFF file can be represented quite differently in terms of layout and compression.
 
-Consequently, although OpenSlide and Bio-Formats support many TIFF files, it is quite possible to encounter variants that cannot be opened with QuPath.
+Although OpenSlide and Bio-Formats support many TIFF files, it is quite possible to encounter variants that cannot be opened with QuPath.
 
 Perhaps the most common reason for this is that the file does not contain pyramidal layers, or these layers cannot be automatically recognized.
 This is one reason why well-supported, open formats should generally be preferred (e.g. OME-TIFF).
@@ -146,28 +155,12 @@ A few such extensions exist already, hopefully more will be created in the futur
 
 ### OMERO
 
-QuPath includes a built-in extension to work with whole slide images hosted through [OMERO](https://www.openmicroscopy.org/omero/).
+QuPath doesn't strictly require images to be files on your local computer.
+For example, it can access images hosted through [OMERO](https://www.openmicroscopy.org/omero/).
 
-To use it, simply find the image you want through the OMERO web viewer, copy the URI, and paste it into the {menuselection}`File --> Open URI...` dialog in QuPath.
+Check out the [QuPath OMERO extension](omero-extension) page for more details - this received a *major* update for QuPath v0.6.0.
 
-There is some additional documentation from the OMERO team in the [OMERO Guide](https://omero-guides.readthedocs.io/en/latest/qupath/docs/).
-
-:::{warning}
-OMERO support is via the web API.
-This results in several limitations:
-
-- Only RGB images are supported
-- Image tiles are JPEG compressed
-
-Essentially, QuPath is requesting image tiles in the same way as the OMERO web viewer.
-:::
-
-:::{tip}
-QuPath's OMERO support will be improved in future releases.
-It is already possible to add URLs in a variety of formats that OMERO can provide.
-
-This makes it possible to import multiple images -- even including some annotations -- to a QuPath {doc}`project <../tutorials/projects>` in one go.
-:::
+There is some additional documentation from the OMERO team in the [OMERO Guide](https://omero-guides.readthedocs.io/en/latest/qupath/docs/) (at the time of writing, this is for an earlier version of the extension).
 
 ### Community extensions
 

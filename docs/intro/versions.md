@@ -18,7 +18,12 @@ For practical purposes, the general rules are:
 - An updated PATCH means bugs have been fixed... *you probably want these fixes now!*
 - An updated MAJOR or MINOR version means the software has changed more substantially.
 
-For reproducibility, you *shouldn't* mix the analysis of images using different MAJOR or MINOR versions within the same project or analysis study.
+Sometimes there's an extra bit at the end, e.g. `v0.6.0-rc1` where the `rc1` stands for for 'Release Candidate 1'.
+When that's the case, the extra bit indicates that it is *pre-release* of the software for testing - not a final version.
+
+You *shouldn't* use pre-release versions for important work: they contain features that are still in development and might well change before the final release.
+
+For reproducibility, you also *shouldn't* mix the analysis of images using different MAJOR or MINOR versions within the same project or analysis study.
 The results of commands (e.g. cell detection or classification) or scripts might be different.
 
 For that reason, if you're in the middle of a project and a new MAJOR or MINOR version is released you might not want to update immediately... unless you're prepared to redo your analysis in the latest version.
@@ -30,7 +35,9 @@ You can find out what exactly was fixed by checking the [changelog].
 If you have laboriously drawn a lot of annotations, you probably don't want to draw them again.
 In this case, the key thing is usually that the correct regions are marked -- not the process (or software) by which they have been marked.
 
-In general, it should be possible to transfer annotations made by older versions of QuPath into the latest release.
+In general, we try to always make it possible to transfer annotations made by older versions of QuPath into the latest release.
+
+We can't promise it will be possible to go in the opposite direction - i.e. move annotations to an *older* QuPath version - without losing information.
 :::
 
 ## A commitment of sorts
@@ -46,10 +53,11 @@ To help, please be sure to {doc}`cite the paper <citing>` when you use it!
 As developers, we try to keep these rules in mind when changing the software.
 
 We are continually working on new MAJOR/MINOR releases, updated to add features -- which are often inspired by our own needs and research projects we are working on.
-We're still learning what a plausible schedule is, but we expect two or three such releases per year.
+We're still learning what a plausible schedule is, but we expect one or two such releases per year.
 
-Between MAJOR/MINOR releases we will try to fix critical bugs, and include these in regular PATCH releases -- approximately one per month, depending upon how much is fixed and how important it is.
-We will resist the temptation to add new features in a PATCH, particularly if there is a risk these changes might modify the behavior of the software unexpectedly.
+Between MAJOR/MINOR releases we will try to fix critical bugs, and include these in regular PATCH releases.
+These generally appear a few times per year, depending upon how much is fixed and how important it is.
+We will resist the temptation to significant add new features in a PATCH, particularly if there is a risk these changes might modify the behavior of the software unexpectedly.
 
 This means you can update PATCH versions and not expect huge differences.
 We will try to fix bugs promptly, but we can only fix the problems we know about.

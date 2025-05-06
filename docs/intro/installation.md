@@ -154,7 +154,7 @@ Double-clicking should work as normal once it has been run once.
 ## Linux
 
 Download and extract the `.tar.xz` file.
-You'll probably have to use `chmod u+x /path/to/QuPath/bin/QuPath` to make the launcher executable.
+You might have to use `chmod u+x /path/to/QuPath/bin/QuPath` to make the launcher executable (but you might not).
 
 QuPath for Linux was compiled on Ubuntu - with best efforts made to include all dependencies, so you shouldn't need to install anything else.
 

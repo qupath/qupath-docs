@@ -129,6 +129,6 @@ The sources and terms of reuse for these images are summarized in the table belo
 ::::
 
 Additionally, the icons used in QuPath are exported as PNG for use in the docs.
-Most are original, but some are free icons from [Font Awesome](https://github.com/FortAwesome/Font-Awesome).
+Some are original, but others are free icons from [Font Awesome](https://github.com/FortAwesome/Font-Awesome).
 
-To find the source of any specific icon, see [`IconFactory.java`](https://github.com/qupath/qupath/blob/6bd29f9586a9b34759498854ad8f36920dfa386b/qupath-gui-fx/src/main/java/qupath/lib/gui/tools/IconFactory.java).
+To find the source of specific icons, see [`IconFactory.java`](https://github.com/qupath/qupath/blob/6bd29f9586a9b34759498854ad8f36920dfa386b/qupath-gui-fx/src/main/java/qupath/lib/gui/tools/IconFactory.java).
