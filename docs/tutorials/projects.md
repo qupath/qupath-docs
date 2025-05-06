@@ -48,6 +48,7 @@ QuPath will assume it's allowed to do whatever you like within the folder you gi
 For this reason, it's best to leave the management of that folder entirely up to QuPath and to avoid adding, removing or renaming files manually within it.
 :::
 
+(project-add-images)=
 ### Add images
 
 The easiest way to add images to a project is usually to drag them on top of QuPath.
@@ -62,7 +63,7 @@ Dragging images on top of QuPath for project import
 
 The options are:
 
-> - **Image provider:** This is the {doc}`library used to read the images <../intro/formats>`. The default is to allow QuPath to make this decision, but in some cases (e.g. a file type that you know Bio-Formats handles better than OpenSlide) you may prefer to take control and specify which library to use.
+> - **Image server:** This is the {doc}`library used to read the images <../intro/formats>`. The default is to allow QuPath to make this decision, but in some cases (e.g. a file type that you know Bio-Formats handles better than OpenSlide) you may prefer to take control and specify which library to use.
 > - **Image type:** Setting the image type is often the first thing you should do when opening an image in QuPath. This can save you the effort by setting the type on import.
 > - **Rotation:** Specify that the image should be rotated in an increment of 90 degrees. The file itself will not be changed, but QuPath will treat the image as if it has the new orientation.
 > - **Auto-generate pyramids:** If selected, QuPath will dynamically generate a pyramid for large-but-not-too-large images (e.g. 10,000 x 10,000 pixels) that don't already have multiple stored resolutions. These images are small enough to fit in memory, but big enough to be unwieldy. For most whole slide images (which are already pyramidal) this has no effect.

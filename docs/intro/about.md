@@ -4,6 +4,11 @@
 
 QuPath is often used for **digital pathology in research** because it offers a powerful set of tools for working with **whole slide images** - but it can be applied to lots of other kinds of image as well.
 
+:::{admonition} Important
+:class: warning
+**QuPath is _not_ intended or validated for clinical use.**
+:::
+
 Features include:
 
 - Powerful annotation & visualization tools using a modern JavaFX interface
