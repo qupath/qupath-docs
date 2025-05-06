@@ -17,7 +17,7 @@ Please read {doc}`thresholding` and {doc}`measuring_areas` first!
 
 Returning to the example in {doc}`measuring_areas`, we could replace either of the thresholding steps with {menuselection}`Classify --> Pixel classification --> Train pixel classifier`.
 
-This would allow us to identify regions not my manually defining thresholds, but rather through training by example.
+This would allow us to identify regions not by manually defining thresholds, but rather through training by example.
 
 You can get started quickly with {menuselection}`Train pixel classifier` by drawing two annotations in different parts of the image, and assigning classifications to these.
 Press {guilabel}`Live prediction` and QuPath should already start showing its predicted classifications.
