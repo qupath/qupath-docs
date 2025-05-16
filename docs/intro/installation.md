@@ -42,6 +42,14 @@ If you would like to get past this screen, press *'More info'* and the option to
 Windows warning run anyway
 :::
 
+Sometimes, you won't see any *'More info'* button. In such situations, you can try to right click on the file, click on *'Properties'*, and tick the *'Unblock'* checkbox:
+
+:::{figure} images/unblocking_qupath.png
+:class: shadow-image mid-width
+
+Unblocking the QuPath file
+:::
+
 :::{admonition} The installer won't start!
 :class: warning
 
