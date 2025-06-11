@@ -44,7 +44,7 @@ Also, with this refresh, there has also been a big refresh to how the extension 
 
 Check out the [OMERO extension documentation](../reference/omero.md) for more information on how to get started.
 
-:::{figure}
+:::{figure} ../reference/images/omero-overview.png
 :class: shadow-image full-image
 
 Viewing an image using OMERO extension
