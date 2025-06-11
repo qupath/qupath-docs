@@ -13,7 +13,7 @@ This document isn't a complete list of changes, for this please refer to the [CH
 
 Ever been confused about which extensions you have installed or how to install new ones? Well hopefully the extension manager will help with that! You can now easily install, update and remove extensions all from within QuPath. The pre-existing installation method does still work but this new method is much more user friendly and will help you keep track of your extensions. More on the extension manager can be found in the [extension manager documentation](../intro/extensions.html#managing-extensions-with-the-extension-manager).
 
-For extensions developed outside of the QuPath team, check out [the documentation]() on how to add your extension to the extension catalogue too.
+For extensions developed outside of the QuPath team, check out the [extension catalog github](https://github.com/qupath/extension-catalog-model) for how to add your extension to the extension catalog so other users can easily download it.
 
 :::{figure}
 :class: shadow-image full-image
