@@ -1,6 +1,6 @@
 # Release Notes v0.6.0
 
-Lots of useful and some very exciting changes have been made in this version of QuPath and we are thrilled to finally to share them with you!
+Lots of useful and exciting changes have been made in this version of QuPath and we are thrilled to finally share them with you!
 This document isn't a complete list of changes, for this please refer to the [CHANGELOG](https://github.com/qupath/qupath/blob/main/CHANGELOG.md).
 
 1. [Major features](#major-features) - Spotlight changes
@@ -22,7 +22,7 @@ Extension manager showing installed extensions
 
 ### New InstanSeg Segmentation
 
-It's here!!! For those ready to get using the award winning [InstanSeg](https://github.com/qupath/qupath-extension-instanseg) segmentation from Thibaut Goldsborough you can now do so in QuPath via the InstanSeg extension. This extension provides a greatly improved accuracy in segmentation of cells for both brightfield and fluorescent images. It also gets increasingly speedy with GPU support. Learn more about InstanSeg and how to use it in QuPath [here](../deep/instanseg.md).
+It's here!!! The award winning [InstanSeg](https://github.com/qupath/qupath-extension-instanseg) segmentation method from Thibaut Goldsborough you can now do so in QuPath via the InstanSeg extension. This extension provides a greatly improved accuracy in segmentation of cells for both brightfield and fluorescent images. It also gets increasingly speedy with GPU support. Learn more about InstanSeg and how to use it in QuPath [here](../deep/instanseg.md).
 
 :::{figure}
 :class: shadow-image full-image
@@ -38,11 +38,9 @@ InstanSeg segmentation of nuclei in a fluorescent image
 
 ### Major OMERO Extension Reset
 
-The OMERO extension has been completely rewritten under the hood, improving it's flexibility and giving access to more features such as the ability to retrieve pixel values (including raw values) in the way that your server is set up. 
+The OMERO extension has been completely rewritten under the hood, improving it's flexibility and giving access to more features such as the ability to retrieve pixel values (including raw values) in the way that your server is set up.
 
-Also, with this refresh, there has also been a big refresh to how the extension looks and feels, making it easier to use and navigate.
-
-Check out the [OMERO extension documentation](../reference/omero.md) for more information on how to get started.
+There has also been a big refresh to how the extension looks and feels, making it easier to use and navigate. Check out the [OMERO extension documentation](../reference/omero.md) for more information on how to get started.
 
 :::{figure} ../reference/images/omero-overview.png
 :class: shadow-image full-image
@@ -52,7 +50,7 @@ Viewing an image using OMERO extension
 
 ### OME-Zarr images are now supported 🎉
 
-It's now possible to open and work with OME-Zarr images in QuPath! Developed by the OME team in collaboration with many individuals and institutes with the goal to provide a more efficient and scalable format for large images. To get started, drag and drop an OME-Zarr image into QuPath or use the 'Open' dialog to select an OME-Zarr image. Alternatively, you can also export to OME-Zarr format.
+It's now possible to open and work with OME-Zarr images in QuPath! OME-Zarr was developed by the OME team in collaboration with many individuals and institutes with the goal to provide a more efficient and scalable format for large images. To get started using this file type in QuPath, drag and drop an OME-Zarr image into the main window or use the 'Open' dialog to select an OME-Zarr image. Alternatively, you can also export to OME-Zarr format.
 
 To learn more about OME-Zarr check out [this paper](https://link.springer.com/article/10.1007/s00418-023-02209-1) and how to export in QuPath [here](../advanced/exporting_images.html).
 
@@ -70,9 +68,9 @@ QuPath tour explaining the interface
 
 ### Toolbar Spring Clean 🧹
 
-Following on from the QuPath tour, you may of notice the toolbar is looking a little different to before.
-One new button as been added which allows for quick toggling for viewing connections between objects (if you have any).
-Also QuPath viewer related tools have been combined into one so that less frequently used tools aren't on screen all the time and so the toolbar is less busy.
+Following on from the QuPath tour, you may of notice the toolbar is looking a little different from before.
+One new button has been added which allows for quick viewing of connections between objects (if you have any).
+Viewer related tools such as "show scalebar", "show grid" and "show input display" have been combined into a dropdown button so that these less frequently used tools aren't always on screen, making the toolbar less busy.
 
 :::{figure}
 :class: shadow-image full-image
@@ -80,9 +78,7 @@ Also QuPath viewer related tools have been combined into one so that less freque
 Updated 0.6.0 toolbar
 :::
 
-Alongside a shiny new icon design, tool buttons will now change when the selection mode is selected to make it easier to see which mode is currently active.
-
-If the current tool options that work with selection mode are not enough it's now possible to use the line tool too with any object that the line intercepts being selected.
+Alongside a shiny new icon design, tool buttons compatible with selection mode will now visually change when the selection mode is on to make it easier to see which mode is currently active.
 
 Lastly, the selection mode can now be quickly accessed by using the 'S' key when the main viewer is selected.
 
@@ -99,13 +95,21 @@ Annotation names displayed at the top of the annotation
 ### Class management
 
 The class list within the annotation pane has been improved to make it easier to manage classes and less dependant on the one dropdown.
-To add or remove classes, these options can now all be found at the top of the pane.
-Below in the list itself, the options are related to showing or hiding classes within the viewer. Each class has a visual indicator for whether it's being shown or not and can be toggled on or off by clicking the eye icon next to the class name.
+
+To add or remove or populate the class list in specific ways, this can now all be done from top of the pane.
 
 :::{figure}
 :class: shadow-image full-image
 
-Class list pane with new class management options
+Class list pane with new class addition and deletion options
+:::
+
+Below, the options are related to showing or hiding classes within the viewer. Each class has a visual indicator for whether it's being shown or not and can be toggled on or off by clicking the eye icon next to that class name.
+
+:::{figure}
+:class: shadow-image full-image
+
+Class list pane with new class viewing options
 :::
 
 ### Project browser improvements
@@ -117,7 +121,7 @@ Class list pane with new class management options
 
 ### Measurement viewing improvements
 
-Minor visual improvements have been made to the measurement tables for annotations and detections. We hope this makes it clearer to use the tools already available and also the new feature which links up the classes currently being displayed in the viewer to only show in the measurement table too. 
+Minor visual improvements have been made to the measurement tables for annotations and detections. We hope this makes it clearer to use the tools already available. There is also an new option "Add class visibility", which links up the classes currently being displayed in the viewer to only show in the measurement table too.
 
 :::{figure}
 :class: shadow-image full-image
@@ -125,9 +129,9 @@ Minor visual improvements have been made to the measurement tables for annotatio
 Measurement table with new class linking feature
 :::
 
-### Multidimentsional image navigation + z stack projection overlays
+### Multidimensional image navigation + z-stack projection overlays
 
-Panning through time series and stacks has had a visual refresh to hopefully make it easier to navigate through your images. Additionally for those looking to get a general overview of the z-stack, a maximum intensity projection overlay can now be displayed on top of the image. To learn more about this, check out the [multidimensional image documentation](../advanced/multidimensional_images.md).
+Navigating through time series and z-stacks now features a refreshed visual design, aimed at making it easier to explore your images. Additionally, for those looking to get a general overview of the z-stack, a maximum intensity projection overlay can now be displayed on top of the image. To learn more about this, check out the [multidimensional image documentation](../advanced/multidimensional_images.md).
 
 ### ImageJ script runner
 
