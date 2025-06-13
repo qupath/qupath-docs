@@ -8,7 +8,7 @@
     <img src="https://i.ytimg.com/vi/PKQN3uTNR1s/hqdefault.jpg">
     <div class="overlay"><p>View on YouTube</p></div>
 </a>
-<a class="caption-link" href="https://youtu.be/PKQN3uTNR1s" target="blank">QuPath for Fiji Users (I2K 2022)</a>
+<a class="caption-link" href="https://youtu.be/PKQN3uTNR1s" target="blank">QuPath for Fiji Fans (I2K 2024)</a>
 </div>
 ```
 :::
@@ -33,7 +33,7 @@ Fortunately, since they are both open source, it's not necessary to choose one o
 
 The commands described here are accessible from the *ImageJ toolbar button* in QuPath, and also in the {menuselection}`Extensions --> ImageJ` submenu.
 
-:::{figure} images/imagej_toolbar.jpg
+:::{figure} images/imagej_toolbar.png
 :class: shadow-image small-image
 
 ImageJ menu in the QuPath toolbar
