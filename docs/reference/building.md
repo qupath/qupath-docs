@@ -178,7 +178,7 @@ Some older QuPath versions might require different build commands (e.g. the step
 Check out the docs associated with the specific version if this is the case.
 :::
 
-
+(building-qupath-fiji)=
 ## Building with Fiji
 By default, QuPath embeds a version of [ImageJ](https://imagej.net/software/imagej/).
 This allows you to [send image regions to ImageJ, and even use custom ImageJ plugins](ImageJ).
