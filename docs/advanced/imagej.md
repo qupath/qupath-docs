@@ -15,19 +15,26 @@
 
 QuPath was created by someone who was (and is) a big fan of ImageJ.
 
-Because of this, there is a considerable amount of ImageJ inspiration that has gone into QuPath's design, and a conscious decision made to try to make QuPath more immediately accessible to someone with ImageJ experience.
+Some elements of QuPath are specifically designed to make the software more immediately accessible to someone with ImageJ experience.
 This ranges from the design of the icons in the toolbar to the choice of some shortcuts.
 
 Part of ImageJ's success comes from its fantastic extensibility, as seen in the [huge range of plugins that have been written for it](https://imagej.nih.gov/ij/plugins/index.html) and the popularity of [Fiji](http://fiji.sc) as an ImageJ distribution for the life sciences.
-In fact, QuPath started life as a collection of ImageJ plugins that aimed to extend it for digital pathology, but over time the situation flipped around... so that QuPath was rewritten from scratch as a completely new application, which uses ImageJ as an extension.
 
-:::{NOTE}
-Currently, QuPath only integrates directly with the 'original' [ImageJ](http://imagej.nih.gov) -- and not with [ImageJ2](http://www.imagej.net).
+In fact, QuPath started life as a collection of ImageJ plugins for digital pathology.
+Over time, the situation flipped around: QuPath was rewritten from scratch as a completely new application, which uses ImageJ as an extension.
+
+:::{admonition} QuPath & Fiji
+:class: note
+
+By default, QuPath only integrates directly with the 'original' [ImageJ](http://imagej.nih.gov).
+See [](building-qupath-fiji) if you want to link QuPath with Fiji. 
 :::
 
 There's a lot that QuPath can do that ImageJ can't, especially when it comes to working with whole slide images and object classification.
 But it works the other way too: there's also a lot that's possible with ImageJ, but which isn't possible with QuPath alone.
-Fortunately, since they are both open source, it's not necessary to choose one or the other -- and they can be used together.
+
+Fortunately, you don't have to choose one or the other.
+They are both open source and can be used together.
 
 ## Finding ImageJ commands
 
@@ -42,13 +49,24 @@ ImageJ menu in the QuPath toolbar
 
 ## Sending image regions to ImageJ
 
-In general, ImageJ can't open whole slide images directly -- the images are just too big (often up to 40 GB when uncompressed), and ImageJ requires all that to be read into the computer's RAM.
-QuPath gets around this by quickly pulling out only the bits of the image that it needs at any one moment, and remembering what it has seen before for as long as its memory can cope with.
+In general, ImageJ can't open whole slide images directly -- they are just too big.
+The result is often the dreaded `ArrayIndexOutOfBoundsException` message, as ImageJ attempts to squeeze all the pixels for each 2D plane into the computer's memory as a single Java array.
+Even if you have a lot of RAM, Java arrays are limited to ~2<sup>31</sup> elements -- which often isn't enough.
+
+:::{figure} images/imagej_out_of_bounds.png
+:class: shadow-image mid-image
+
+Common error when trying to open a whole slide image with ImageJ/Fiji + Bio-Formats
+:::
+
+QuPath gets around this by quickly pulling out only the bits of the image that it needs at any one moment, and remembering what it has seen for as long as its memory can cope with... then selectively forgetting old parts of the image, to make space for the new.
 
 Using the excellent [Bio-Formats plugin for ImageJ](https://bio-formats.readthedocs.io/en/stable/users/imagej/) it's possible to open some cropped regions of whole slide images within ImageJ, but this involves entering the coordinates for the desired region -- which isn't always very easy to do.
 
 The alternative is to open the image within QuPath, and interactively draw an annotation around any region of interest.
-Then by clicking on the *Send region to ImageJ* command {{ icon_extract_image }}, ImageJ can be launched and passed the pixels from within the selected region.
+Then by clicking on the {menuselection}`Send region to ImageJ...` command {{ icon_extract_image }}.
+
+QuPath then launches its embedded ImageJ and passes the pixels from within the selected region.
 
 :::{figure} images/imagej_send_region.jpg
 :class: shadow-image full-image
@@ -58,18 +76,18 @@ Sending an image region to ImageJ
 
 ### Downsampling and image calibration
 
-When running {menuselection}`Send region to ImageJ`, you are requested to choose how much **downsampling** to apply to the region that is passed.
+When running {menuselection}`Send region to ImageJ`, you have some options.
 
-:::{figure} images/imagej_downsample.jpg
+:::{figure} images/imagej_send_region_dialog.png
 :class: shadow-image small-image
 
-ImageJ downsample value
+'Send region to ImageJ' dialog
 :::
 
-The downsampling effectively determines how much to scale (down) the region.
-Higher numbers indicate smaller images or, equivalently, lower magnification.
-If the downsampling factor is 1, then the full resolution image will be sent.
-If it is 2, then the width and height will both be divided by 2 and the image rescaled accordingly.
+The resolution effectively controls how the image should be scaled when it is being sent to ImageJ.
+There are two ways this can be defined:
+1. In 'pixel' (or 'downsample') units. A value of 1.0 means that the full resolution image will be sent. A value of 2.0 means that the image will be downsampled by a factor of 2, so the width and height of the image are halved.
+2. In 'µm' units (where available). Here, a value of 1.0 means that the image is rescaled to try to make the pixel width and height correspond to 1 µm.
 
 This is extremely important, since sending a very large region at the maximum high resolution (i.e. downsample of 1) is quite likely to fail because of the amount of memory required by ImageJ to store the region.
 Therefore the area of the region selected to send, along with the downsampling, together control how large an image (in terms of pixels, and therefore memory) will be sent.
@@ -80,7 +98,7 @@ If you open the image properties in ImageJ ({menuselection}`Image --> Properties
 This means that measurements made within QuPath and ImageJ should be comparable, because the images in both places have been calibrated accordingly.
 
 :::{note}
-The {guilabel}'Image Properties...'* shown above also indicates that the 'Origin' of the image in ImageJ has been set to something other than the default of (0, 0).
+The {guilabel}`Image Properties...` can also encode an {guilabel}`Origin` value.
 This tells ImageJ that the image it has was extracted from something larger, and indicates where in the larger image it came from.
 
 This is what makes it possible to send information from ImageJ back to QuPath, and have it rescaled and translated appropriately.
@@ -136,7 +154,7 @@ This includes both `.roi` and `RoiSet.zip` files saved through ImageJ's ROI Mana
 
 ### Sending snapshots
 
-Finally, there is also a *Send snapshot to ImageJ* {{ icon_screenshot }}.
+Finally, there is also a {menuselection}`Send snapshot to ImageJ` {{ icon_screenshot }}.
 
 This will also launch ImageJ, this time giving it a screenshot from the current viewer instead of raw pixel values.
 The result will be similar to what is generated in QuPath with the {menuselection}`Edit --> Copy view to clipboard` command.
