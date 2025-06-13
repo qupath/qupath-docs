@@ -4,7 +4,7 @@
 
 Building software can be tricky, but hopefully this won't be - thanks to [Gradle].
 
-:::{note}
+:::{admonition} You might not need this
 Most people using QuPath won't need to build QuPath from source!
 Just download an existing installer from [qupath.github.io](https://qupath.github.io) and use that instead.
 
@@ -45,8 +45,12 @@ cd qupath
 :::
 ::::
 
-:::{warning}
-You'll need to type `gradlew` if you're using a standard command prompt on Windows, but `./gradlew` if you're using macOS, Linux, or Windows with some other shell prompt.
+:::{admonition} Dot or not?
+:class: warning
+
+You'll need to type `gradlew` if you're using a standard command prompt on Windows.
+
+You'll need `./gradlew` if you're using macOS, Linux, or Windows with some other shell prompt.
 :::
 
 It will take a few minutes to download everything required and build the software.
@@ -73,9 +77,33 @@ Switching to an OpenJDK distribution based on HotSpot may help -- see [here](htt
 :::
 
 
-### Customizing the build
+## Running with Gradle
 
-#### Creating installers
+You can also run QuPath from the command line via Gradle, without needing to create the package.
+
+To do this, replace `jpackage` above with `run` (and `clean` is optional).
+The command would then be simply
+
+::::{tab-set}
+
+:::{tab-item} Windows
+:sync: win
+
+``` bash
+gradlew run
+```
+:::
+
+:::{tab-item} macOS/Linux
+:sync: nix
+
+``` bash
+./gradlew run
+```
+:::
+::::
+
+## Creating installers
 
 If you need to create an installer for QuPath, you can use
 
@@ -124,23 +152,73 @@ Then I only need to call
 rather than some elaborate command that includes all these options.
 :::
 
-#### Building a specific version
+## Building a specific version
 
-QuPath releases are associated with different git tags.
-You can get the code associated with QuPath {{ env.config.release }} by using the command
+You can circumvent the need to use git entirely by downloading the QuPath code associated with a specific release from <http://github.com/qupath/qupath/releases>
+
+Simply choose the *Source code (zip)* or *Source code (tar.gz)* option.
+You can then build it from a command prompt as described above.
+
+Alternatively, you can get the code associated with a specific QuPath release using git tags.
+For example, to get the code for QuPath {{ env.config.release }} use the command
 
 ```{eval-rst}
 .. parsed-literal::
    git checkout tags/v\ |release|\  -b\  v\ |release|
 ```
 
-You can then try building it as above, however *note that some different versions may require different build commands* (e.g. the steps for v0.2.3 are slightly different from v0.3.0).
+You can then try building it as above.
+
+:::{admonition} Build commands might be different!
+:class: warning
+
+Some older QuPath versions might require different build commands (e.g. the steps for v0.2.3 are slightly different from v0.3.0).
 Check out the docs associated with the specific version if this is the case.
+:::
+
+
+## Building with Fiji
+By default, QuPath embeds a version of [ImageJ](https://imagej.net/software/imagej/).
+This allows you to [send image regions to ImageJ, and even use custom ImageJ plugins](ImageJ).
+
+[Fiji](https://fiji.sc) is a special distribution of ImageJ that contains a *lot* of custom plugins, and many extra features and other changes.
+
+Thanks to [help from Curtis Rueden](https://forum.image.sc/t/embedding-fiji-inside-qupath/105065), since QuPath v0.6.0 it's possible to build QuPath with Fiji using
+
+::::{tab-set}
+
+:::{tab-item} Windows
+:sync: win
+
+``` bash
+./gradlew jpackage -Pfiji
+```
+:::
+
+:::{tab-item} macOS/Linux
+:sync: nix
+
+``` bash
+./gradlew jpackage -Pfiji
+```
+:::
+::::
+
+Note that this will take some time to download everything it needs, and the package will be a *lot* bigger.
+We also can't guarantee *everything* will work perfectly -- but most things we've tried seem to.
+
+:::{figure} images/qupath-fiji.jpg
+:class: shadow-image mid-image
+
+QuPath built with Fiji
+:::
 
 ## Other options
 
 A few other ways to obtain and/or build QuPath's code are described below.
-These might be better if you a) don't like the command line much, or b) want to make changes to the software.
+These might be better if you 
+1. don't like the command line much, or
+2. want to make changes to the software.
 
 ### GitHub Desktop
 
@@ -193,7 +271,7 @@ gradlew clean jpackage
 Once you've built QuPath once, updating it to use the latest source code in *GitHub Desktop* should be easier.
 The right-most button on the main toolbar serves two purposes: to {guilabel}`Fetch` information about the latest changes (from GitHub) and to {guilabel}`Pull` the changes down to your computer.
 
-:::{figure} images/building-branches.png
+:::{figure} images/building-fetch.png
 :class: shadow-image full-image
 
 The GitHub Desktop interface
@@ -204,18 +282,12 @@ If the option is {guilabel}`Fetch origin`, when you press the button the text wi
 You can press it again to pull those changes, and then rebuild QuPath using `gradlew`.
 
 :::{figure} images/building-pull.png
-:class: shadow-image mid-image
+:class: shadow-image full-image
 
 Pulling changes from GitHub
 :::
 ::::
 
-### Download release
-
-You can circumvent the need to use git entirely by downloading the QuPath code associated with a specific release from <http://github.com/qupath/qupath/releases>
-
-Simply choose the *Source code (zip)* or *Source code (tar.gz)* option.
-You can then build it from a command prompt as described above.
 
 ### Running from an IDE
 
@@ -223,13 +295,14 @@ You should be able to import QuPath into any IDE (e.g. *IntelliJ*, *Eclipse*) th
 
 #### IntelliJ IDEA
 
-I personally use [IntelliJ IDEA] for QuPath development, which allows me to run
-the software in debug mode -- and even change the code while it is running.
+The QuPath devs mostly use [IntelliJ IDEA] for QuPath development.
+This allows us to run the software in debug mode -- and even change the code while it is running.
 
 To do this, you can either:
 
 * download and build QuPath once as described above, then use {menuselection}`Open` from within IntelliJ, and navigate to the directory containing the QuPath code, or
-* use {menuselection}`Get from VCS` in IntelliJ to download the code directly from GitHub using git. To do this, you should use the URL `https://github.com/qupath/qupath.git` (or the URL to your own git repository housing the QuPath code).
+* use {menuselection}`Get from VCS` in IntelliJ to download the code directly from GitHub using git.
+To do this, you should use the URL `https://github.com/qupath/qupath.git` (or the URL to your own git repository housing the QuPath code).
 
 If you download the code using this approach, you should make sure you have installed a Java JDK before proceeding any further (see instructions above).
 
