@@ -65,6 +65,8 @@ Example of command line build success
 **That's it!**
 You can find QuPath inside the `./build/dist/` subdirectory.
 
+If it *didn't* go so well, check out [](#Troubleshooting).
+
 :::{admonition} Which Java version do I need?
 :class: tip
 
@@ -332,6 +334,37 @@ QuPath code, and use {menuselection}`Run --> Debugging Actions --> Reload Change
 to reload the changes *while QuPath is running*.
 Provided they aren't *too* extreme, the changes will be incorporated into the software without needing to relaunch it.
 However, any major changes that alter method signatures (e.g. adding or removing arguments, or changing return types) will require QuPath to be relaunched.
+
+## Troubleshooting
+
+Two fairly common things can go wrong when attempting to build QuPath:
+1. The version of Java used to run Gradle is too old - *even if the right version is installed*
+    * Fix this by telling Gradle more insistently which Java version to use, via `-Dorg.gradle.java.home`
+2. Javadocs are unavailable -- or a firewall is blocking access to them
+    * Fix this by adding `-x javadoc` to the Gradle command used to build QuPath, to skip the javadocs
+
+Both are described [in this post on image.sc](https://forum.image.sc/t/building-qupath-0-6-0-rc5-from-source/113232).
+An example using both these fixes is shown below:
+
+::::{tab-set}
+
+:::{tab-item} Windows
+:sync: win
+
+``` bash
+gradlew clean jpackage -x javadoc -Dorg.gradle.java.home="C:/Program Files/Microsoft/jdk-21.0.7.6-hotspot"
+```
+:::
+
+:::{tab-item} macOS/Linux
+:sync: nix
+
+``` bash
+./gradlew clean jpackage -x javadoc -Dorg.gradle.java.home="C:/Program Files/Microsoft/jdk-21.0.7.6-hotspot"
+```
+:::
+::::
+
 
 [Visual Studio Code]: https://code.visualstudio.com
 [IntelliJ IDEA]: https://www.jetbrains.com/idea/
