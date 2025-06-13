@@ -15,8 +15,8 @@
 
 QuPath was created by someone who was (and is) a big fan of ImageJ.
 
-Some elements of QuPath are specifically designed to make the software more immediately accessible to someone with ImageJ experience.
-This ranges from the design of the icons in the toolbar to the choice of some shortcuts.
+Some elements of QuPath are designed to be familiar for ImageJ users.
+This includes the design of some icons in the toolbar to the choice of shortcuts (e.g. {kbd}`Ctrl+L` for a command list).
 
 Part of ImageJ's success comes from its fantastic extensibility, as seen in the [huge range of plugins that have been written for it](https://imagej.nih.gov/ij/plugins/index.html) and the popularity of [Fiji](http://fiji.sc) as an ImageJ distribution for the life sciences.
 
@@ -34,7 +34,7 @@ There's a lot that QuPath can do that ImageJ can't, especially when it comes to 
 But it works the other way too: there's also a lot that's possible with ImageJ, but which isn't possible with QuPath alone.
 
 Fortunately, you don't have to choose one or the other.
-They are both open source and can be used together.
+They are both open and can be used together.
 
 ## Finding ImageJ commands
 
@@ -50,7 +50,7 @@ ImageJ menu in the QuPath toolbar
 ## Sending image regions to ImageJ
 
 In general, ImageJ can't open whole slide images directly -- they are just too big.
-The result is often the dreaded `ArrayIndexOutOfBoundsException` message, as ImageJ attempts to squeeze all the pixels for each 2D plane into the computer's memory as a single Java array.
+Attempts often end in a dreaded `ArrayIndexOutOfBoundsException` message, as ImageJ attempts to squeeze all the pixels for each 2D plane into the computer's memory as a single Java array.
 Even if you have a lot of RAM, Java arrays are limited to ~2<sup>31</sup> elements -- which often isn't enough.
 
 :::{figure} images/imagej_out_of_bounds.png
@@ -63,8 +63,10 @@ QuPath gets around this by quickly pulling out only the bits of the image that i
 
 Using the excellent [Bio-Formats plugin for ImageJ](https://bio-formats.readthedocs.io/en/stable/users/imagej/) it's possible to open some cropped regions of whole slide images within ImageJ, but this involves entering the coordinates for the desired region -- which isn't always very easy to do.
 
-The alternative is to open the image within QuPath, and interactively draw an annotation around any region of interest.
-Then by clicking on the {menuselection}`Send region to ImageJ...` command {{ icon_extract_image }}.
+The alternative is to:
+1. Open the image in QuPath
+2. Interactively draw an annotation around any region of interest
+3. Click {menuselection}`Send region to ImageJ...` {{ icon_extract_image }}.
 
 QuPath then launches its embedded ImageJ and passes the pixels from within the selected region.
 
@@ -89,16 +91,16 @@ There are two ways this can be defined:
 1. In 'pixel' (or 'downsample') units. A value of 1.0 means that the full resolution image will be sent. A value of 2.0 means that the image will be downsampled by a factor of 2, so the width and height of the image are halved.
 2. In 'µm' units (where available). Here, a value of 1.0 means that the image is rescaled to try to make the pixel width and height correspond to 1 µm.
 
-This is extremely important, since sending a very large region at the maximum high resolution (i.e. downsample of 1) is quite likely to fail because of the amount of memory required by ImageJ to store the region.
+This is extremely important, since sending a very large region at the maximum high resolution (i.e. downsample of 1) is quite likely to fail for the same reason that you can't open a whole slide image in ImageJ.
 Therefore the area of the region selected to send, along with the downsampling, together control how large an image (in terms of pixels, and therefore memory) will be sent.
 
 In the screenshot above, the downsampling value was set to 4.
 However, this information is not lost.
-If you open the image properties in ImageJ ({menuselection}`Image --> Properties...`), you see that the pixel size is 4 times larger than it is in QuPath.
+If you run {menuselection}`Image --> Properties...` in ImageJ, you see that the pixel size is 4 times larger than it is in QuPath.
 This means that measurements made within QuPath and ImageJ should be comparable, because the images in both places have been calibrated accordingly.
 
 :::{note}
-The {guilabel}`Image Properties...` can also encode an {guilabel}`Origin` value.
+{guilabel}`Image Properties...` can also encode an {guilabel}`Origin` value.
 This tells ImageJ that the image it has was extracted from something larger, and indicates where in the larger image it came from.
 
 This is what makes it possible to send information from ImageJ back to QuPath, and have it rescaled and translated appropriately.
@@ -128,8 +130,8 @@ However, because QuPath sets the image properties (i.e. pixel sizes) while takin
 
 ### QuPath objects and ImageJ ROIs
 
-The closest thing that ImageJ has to a {doc}`QuPath object <../concepts/objects>` is an ImageJ [ROI](https://imagej.nih.gov/ij/docs/guide/146-10.html#toc-Section-10) (*Region Of Interest* -- sometimes also called a *Selection*).
-Similarly, where QuPath stores multiple objects relating to a single image in a {doc}`hierarchy <../concepts/object_hierarchy>`, ImageJ uses [overlays](https://imagej.nih.gov/ij/docs/guide/146-11.html).
+The closest thing that ImageJ has to a {doc}`QuPath object <../concepts/objects>` is an ImageJ [ROI](https://imagej.net/ij/docs/guide/146-10.html) (*Region Of Interest* -- sometimes also called a *Selection*).
+Similarly, where QuPath stores multiple objects relating to a single image in a {doc}`hierarchy <../concepts/object_hierarchy>`, ImageJ uses [overlays](https://imagej.net/ij/docs/guide/146-11.html).
 
 ImageJ ROIs and overlays cannot represent all the same information that can be contained within QuPath objects and hierarchies, but they can contain some.
 Consequently, when sending an image region to ImageJ, QuPath uses them to make its best effort to convert its objects into the most ImageJ-friendly form that it can.
@@ -140,8 +142,8 @@ Consequently, when sending an image region to ImageJ, QuPath uses them to make i
 Sending an image region & objects to ImageJ
 :::
 
-The screenshot above depicts how this works.
-The selected object within QuPath defines the region that will be sent, and -- so long as it isn't a rectangle -- this becomes converted into a selected ROI in ImageJ (shown in yellow in both applications).
+The screenshot above shows how this works.
+The selected object within QuPath defines the region that will be sent, and this becomes converted into a selected ROI in ImageJ (shown in yellow in both applications).
 All other QuPath objects within the region are converted into ROIs and added to the ImageJ overlay.
 
 The names of the ROIs are also set according to how they appear in QuPath, often based upon their {doc}`classification <../concepts/classifications>`.
@@ -157,7 +159,7 @@ This includes both `.roi` and `RoiSet.zip` files saved through ImageJ's ROI Mana
 Finally, there is also a {menuselection}`Send snapshot to ImageJ` {{ icon_screenshot }}.
 
 This will also launch ImageJ, this time giving it a screenshot from the current viewer instead of raw pixel values.
-The result will be similar to what is generated in QuPath with the {menuselection}`Edit --> Copy view to clipboard` command.
+The result will be similar to what is generated in QuPath with the {menuselection}`Edit --> Copy to clipboard --> Current viewer` command.
 
 :::{figure} images/imagej_snapshot.jpg
 :class: shadow-image full-image
@@ -166,22 +168,22 @@ Sending a snapshot image to ImageJ
 :::
 
 Note that the snapshot command is really **only** for creating screenshots -- **not** for transferring images for further analysis.
-The snapshot that is available within ImageJ will be RGB, and does not contain the pixel values or calibration information that is available when *Send region to ImageJ* is used instead.
+The snapshot that is available within ImageJ will be RGB, and does not contain the pixel values or calibration information that is available when {menuselection}`Send region to ImageJ...` is used instead.
 
 ## Accessing ImageJ plugins
 
 One application of passing image regions to ImageJ is simply to use ImageJ's commands to save the image regions or to create figures.
 But it can also be helpful to apply some extra processing within ImageJ, including external ImageJ plugins.
 
-Because QuPath keeps its own version of ImageJ internally, which does not match with any one you might have installed elsewhere on your computer, it won't necessarily have immediate access to the plugins you want.
-However, you can set QuPath's ImageJ to use the directory belonging to a different ImageJ installation if you like using {menuselection}`Extensions --> ImageJ --> Set local ImageJ directory`.
+Because QuPath keeps its own version of ImageJ internally, instead of using another installation you might have, it won't necessarily have immediate access to the plugins you want.
+However, you can set QuPath's ImageJ to use the directory belonging to a different ImageJ installation if you like using {menuselection}`Extensions --> ImageJ --> Set local ImageJ directory...`.
 
 
 ## Sending objects to QuPath
 
 Sometimes, after you've got an image into ImageJ and done some processing there, you might want to get some information back.
 Currently, there are two custom ImageJ plugins provided by QuPath that will allow you to do this.
-These are found inside ImageJ's *Plugins* menu (probably at the bottom).
+These are found inside ImageJ's {menuselection}`Plugins` menu (probably at the bottom).
 
 ### Send ROI to QuPath
 
@@ -203,52 +205,139 @@ Sending an overlay from ImageJ to QuPath
 :::
 
 Running {menuselection}`Plugins --> Send Overlay to QuPath` will take **all** the ROIs on the current ImageJ overlay, and send them back to QuPath as either annotation or detection objects.
-Furthermore, the measurement list for each object can optionally be populated by ImageJ measurements, according to ImageJ's {menuselection}`Analyze --> Set Measurements` specifications -- in the same ways as this command is used to specify measurements for the {menuselection}`Analyze --> Analyze Particles...` command.
+Furthermore, the measurement list for each object can optionally be populated by ImageJ measurements, according to ImageJ's {menuselection}`Analyze --> Set Measurements` specifications -- in the same way as this command is used to specify measurements for the {menuselection}`Analyze --> Analyze Particles...` command.
 
-This provides a way to (for example) run some custom cell detection plugin written for ImageJ, which ends up putting the detected cells only an overlay, and then send back the results to QuPath.
+This makes it possible to (for example) run some custom cell detection plugin written for ImageJ, which ends up putting the detected cells only an overlay, and then send back the results to QuPath.
 
 :::{note}
 The {menuselection}`Analyze Particles` command has the option of creating ROIs and adding them to an overlay -- so this can be a good step along the way to creating an overlay in a QuPath-friendly format.
 :::
 
-## Running macros
+## Running macros & scripts
 
-Another excellent feature of ImageJ is its [macro language](http://rsb.info.nih.gov/ij/developer/macro/macros.html), which enables automation in a similar way to QuPath's scripts.
+Another excellent feature of ImageJ is its [macro language](https://imagej.net/ij/developer/macro/macros.html), which enables automation in a similar way to QuPath's scripts.
 Using this, it's possible to develop custom detection algorithms to apply.
-However, applying these one by one via copious use of the *Extract region* command would quickly become tiresome.
+However, applying these one by one via extensive use of the {menuselection}`Send region to ImageJ...` command would quickly become tiresome.
 
-Here, QuPath offers an **ImageJ macro runner**.
-This enables any ImageJ macro to be run based on extracting image regions from one or more QuPath objects, and optionally return annotations or detections.
+QuPath v0.6.0 introduces {menuselection}`Extensions --> ImageJ --> ImageJ script runner` to help.
 
-Together, these integration features add up to both enabling ImageJ to operate with support for whole slide images, and providing QuPath with a wide-range of pixel-based functionality to supplement its existing object-based tools.
+### Auto-thresholding an entire image
 
-:::{admonition} New in v0.6.0!
-QuPath v0.6.0 introduces {menuselection}`Extensions --> ImageJ --> ImageJ script runner`.
-This is a more powerful replacement for the original macro runner.
+Perhaps the easiest way to get started with the script runner is by using it for thresholding.
+
+From within the script runner, you can use {menuselection}`File --> Open example --> Auto threshold.ijm` to get a built-in ImageJ macro for that purpose.
+
+Running this on the CMU-1.svs image can apply an auto-threshold to a grayscale version of the image, using the Triangle method.
+
+:::{figure} images/imagej_script_triangle.jpg
+:class: shadow-image full-image
+
+Auto-thresholding using the triangle method
 :::
 
-### Macros and parallelization
+:::{admonition} The details really matter!
+:class: important
 
-In QuPath v0.1.2, an 'experimental' ability to run macros in parallel was added (which can be turned on or off in the macro runner dialog).
-Parallelization can speed up processing, however it can also have unintended consequences -- and therefore is turned off by default.
+There are lots of options at the bottom of the script runner *and they are important!*.
+These define which regions of the image will be sent to ImageJ, and also the resolution.
+They also define what will be returned to QuPath.
 
-In particular, if your macro creates additional images (e.g. by duplication, or by splitting color channels), then this can cause a parallelized macro to fail (since macros work with an 'active' image, which changes unpredictably under these circumstances).
-The solution in this case is simply to turn off parallelization and run the processing sequentially.
+You can hover your mouse over any options for an explanation of what the option does.
+:::
 
-:::{admonition} Technical note
-Integrating QuPath and ImageJ isn't straightforward.
+The screenshot above is underwhelming, with lots of background areas detected.
 
-One of the primary reasons for this is that QuPath's user interface is written using **JavaFX**, while ImageJ (mostly) uses **Java AWT**.
+But by slightly modifying the script -- adding a Gaussian filter step, and switching to use Otsu's method for thresholding -- the results should be rather a lot better.
 
-JavaFX and AWT don't live very happily with one another.
-Each of these has a particular thread used for interacting with the GUI... and it is ([officially, at least](https://bugs.openjdk.java.net/browse/JDK-8087465?focusedCommentId=13763730&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-13763730)) a different thread in each case.
-This can lead to some stability problems or errors appearing.
+:::{figure} images/imagej_script_otsu.jpg
+:class: shadow-image full-image
 
-The data exchange functions within QuPath try to take care of this using the `Platform.runLater` and `EDT.invokeLater` methods.
-Any developer looking to develop any further ImageJ plugins or QuPath extensions to share data will need to be cautious about this too.
+Auto-thresholding a smoothed image using Otsu's method
+:::
 
-Finally, JavaFX vs. AWT is the cause of an [irritating bug](https://github.com/qupath/qupath/issues/6) within QuPath running on macOS, where the system menubar doesn't behave properly.
+Then, by selecting the checkbox to {guilabel}`Add script to command history`, it's possible to [create a QuPath script that can be applied to more images](../scripting/workflows_to_scripts.md).
 
-For that reason, when ImageJ is launched QuPath's menubars will automatically move from the top of the screen to be within each window.
-If you prefer the menubar to be directly in the window anyway, you can change the {guilabel}`Use system menubar` setting under {menuselection}`Edit --> Preferences...`.
+For example, the following script can be run in QuPath's normal script editor:
+
+```groovy
+qupath.imagej.gui.scripts.ImageJScriptRunner.fromMap(text: """/*
+ * ImageJ macro to apply an automated threshold to detect a single region.
+ * You will need to return the active Roi to see the results in QuPath.
+ */
+
+// Define method (e.g. "Triangle", "Otsu"...)
+method = "Otsu";
+
+// Check if the image has a property specifying a dark background
+// Override this by setting the value to true or false
+if (Property.get("qupath.image.background")=="dark")
+    darkBackground = true;
+else
+    darkBackground = false;
+
+// Ensure 8-bit grayscale
+resetMinAndMax();
+run("8-bit");
+run("Gaussian Blur...", "sigma=2");
+
+// Create Roi from threshold
+if (darkBackground)
+    setAutoThreshold(method + " dark");
+else
+    setAutoThreshold(method);
+run("Create Selection");
+""", downsample: [downsampleType: "maxDim", maxDimension: 1024.0], setRoi: true, setOverlay: false, closeOpenImages: false, clearChildObjects: true, activeRoiObjectType: "ANNOTATION", overlayRoiObjectType: "NONE", applyToObjects: "IMAGE", addToWorkflow: true, nThreads: 1).run()
+```
+
+### Auto-thresholding within an annotation
+
+The script above takes the entire image as input - resized so that the width and height are both less than or equal to 1024 pixels.
+
+The screenshot below shows how the options can be adjusted, here to define the image resolution to be 5 µm/px and to restrict the threshold to a selected annotation.
+
+:::{figure} images/imagej_script_otsu_small.jpg
+:class: shadow-image full-image
+
+Auto-thresholding within an existing annotation
+:::
+
+### Other script runner uses
+
+The ImageJ script runner *can* do a lot more than thresholding.
+
+For example, the screenshot below shows it being used to send all detections (cells) to ImageJ, make measurements there, then send the results back.
+This works because the script sets some properties in the detection ROI, and then that ROI is returned to QuPath as a detection.
+QuPath then uses the properties to update the original cells.
+
+:::{figure} images/imagej_script_add_measurements.jpg
+:class: shadow-image full-image
+
+Auto-thresholding within an existing annotation
+:::
+
+Still, there's a lot that the script runner can't do.
+
+It's limited by the fact that, once you're in ImageJ's world, you no longer have access to the original QuPath objects or data structures.
+
+Nevertheless, it can be useful for some tasks and prototyping new ideas.
+
+:::{admonition} Why 'script runner'?
+:class: tip
+
+Here, we've shown the script runner as a way to write ImageJ macros.
+It *does* also support running Groovy scripts for ImageJ.
+
+Currently, the best way to tell it that you have a Groovy script is to include the line
+```groovy
+def imp = ij.IJ.getImage()
+```
+That's a common way to get access to the current image in ImageJ, as an `ImagePlus` object.
+:::
+
+
+:::{admonition} The old ImageJ macro runner
+Before v0.6.0, QuPath contained a completely different ImageJ macro runner.
+It's likely to be removed in the future, especially if all its functionality becomes available in the script runner.
+
+For now, it can still be found under {menuselection}`Extensions --> ImageJ --> Legacy ImageJ macro runner`.
 :::
