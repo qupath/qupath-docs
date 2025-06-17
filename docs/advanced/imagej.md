@@ -238,7 +238,7 @@ Auto-thresholding using the triangle method
 :::{admonition} The details really matter!
 :class: important
 
-There are lots of options at the bottom of the script runner *and they are important!*.
+There are lots of options at the bottom of the script runner *and they are important!*
 These define which regions of the image will be sent to ImageJ, and also the resolution.
 They also define what will be returned to QuPath.
 
