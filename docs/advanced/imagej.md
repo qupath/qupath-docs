@@ -305,35 +305,86 @@ Auto-thresholding within an existing annotation
 
 The ImageJ script runner *can* do a lot more than thresholding.
 
-For example, the screenshot below shows it being used to send all detections (cells) to ImageJ, make measurements there, then send the results back.
-This works because the script sets some properties in the detection ROI, and then that ROI is returned to QuPath as a detection.
-QuPath then uses the properties to update the original cells.
+For example, the following simple script adds ImageJ's 'circularity' measurement to whatever ROI has been sent by QuPath.
+
+```java
+// Measure circularity
+circularity = getValue("Circ.");
+
+// Add to the ImageJ Roi
+Roi.setProperty("qupath.object.measurements.Circularity", circularity);
+```
+When QuPath receives a ROI back that is identical to a ROI that was sent, it doesn't create a new object.
+Rather, it uses the properties to update the original object.
+
+Therefore this script can be used to add a new measurement to *all* detections (cells) in an image, for example.
 
 :::{figure} images/imagej_script_add_measurements.jpg
 :class: shadow-image full-image
 
-Auto-thresholding within an existing annotation
+Adding measurements to cells
 :::
 
-Still, there's a lot that the script runner can't do.
 
-It's limited by the fact that, once you're in ImageJ's world, you no longer have access to the original QuPath objects or data structures.
+What's more, the script runner isn't limited to the ImageJ macro language.
+It can also run Groovy scripts written to work with ImageJ data structures.
 
-Nevertheless, it can be useful for some tasks and prototyping new ideas.
+Here is a much more involved Groovy script that runs through the ImageJ script runner.
+It can be used to calculate membrane measurements, for all channels that are sent.
 
-:::{admonition} Why 'script runner'?
-:class: tip
-
-Here, we've shown the script runner as a way to write ImageJ macros.
-It *does* also support running Groovy scripts for ImageJ.
-
-Currently, the best way to tell it that you have a Groovy script is to include the line
 ```groovy
-def imp = ij.IJ.getImage()
+import ij.IJ
+import ij.process.ByteProcessor
+import ij.process.ImageProcessor
+import ij.process.ImageStatistics
+import qupath.imagej.processing.IJProcessing
+import qupath.lib.objects.PathObject
+
+// Define the membrane thickness
+int thickness = 3
+
+// Access the image and original QuPath object
+var imp = IJ.getImage()
+var roi = imp.getRoi()
+PathObject pathObject = imp.getProperty("qupath.pathObject")
+
+// Create a Roi for the membrane
+var bp = new ByteProcessor(imp.getWidth(), imp.getHeight())
+bp.setValue(255)
+bp.setLineWidth(thickness)
+bp.draw(roi)
+bp.setThreshold(127, Double.MAX_VALUE, ImageProcessor.NO_LUT_UPDATE)
+var roiMembrane = IJProcessing.thresholdToRoi(bp)
+imp.setRoi(roiMembrane)
+
+// Loop through the channels
+for (int c = 1; c <= imp.getNChannels(); c++) {
+    imp.setPositionWithoutUpdate(c, imp.getSlice(), imp.getFrame())
+    var label = imp.getStack().getSliceLabel(imp.getCurrentSlice())
+    var name = label ? "Membrane - $label" : "Membrane - Channel $c"
+    // Get the mean value - other metrics could be calculated here
+    var stats = imp.getStatistics(ImageStatistics.MEAN)
+    pathObject.measurements[name] = stats.mean
+}
+
+// Reset the original Roi (to avoid returning the new one)
+// Comment out this line for a test run to see the membrane Roi
+imp.setRoi(roi)
 ```
-That's a common way to get access to the current image in ImageJ, as an `ImagePlus` object.
+
+This means that you only need to write the ImageJ processing code for one cell, and the script runner can take care of cropping out all the cells and sending them for processing.
+
+:::{figure} images/imagej_script_add_membrane.jpg
+:class: shadow-image full-image
+
+Calculating cell membrane measurements
 :::
 
+The images sent to ImageJ are also padded slightly, so that they extend beyond the ROI.
+This is needed because the membrane is thicker than 1 pixel here.
+
+Groovy scripts tend to be faster than ImageJ macros, and can also be run in parallel.
+In the screenshot above, 8 threads are used to make the calculations fast -- despite having to do quite a lot of work.
 
 :::{admonition} The old ImageJ macro runner
 Before v0.6.0, QuPath contained a completely different ImageJ macro runner.
