@@ -355,7 +355,7 @@ Note that this table remains connected to the image, and allows you to select in
 Each measurement can also be viewed in a histogram by clicking on {guilabel}`Show Histogram` with various viewing options available.
 For further data analysis, the table can be saved as a CSV file or copied to the clipboard for pasting into another application, e.g. Excel.
 
-:::{figure} images/steps_table.jpg
+:::{figure} images/steps_table.png
 :class: shadow-image full-image
 
 A 'detection' measurement table containing details of all the detected cells
