@@ -386,6 +386,8 @@ This is needed because the membrane is thicker than 1 pixel here.
 Groovy scripts tend to be faster than ImageJ macros, and can also be run in parallel.
 In the screenshot above, 8 threads are used to make the calculations fast -- despite having to do quite a lot of work.
 
+There are more examples of such scripts and macros in the script runner, under {menuselection}`File --> Open example -->`.
+
 :::{admonition} The old ImageJ macro runner
 Before v0.6.0, QuPath contained a completely different ImageJ macro runner.
 It's likely to be removed in the future, especially if all its functionality becomes available in the script runner.
