@@ -146,7 +146,6 @@ However, it is important to note that when the stain estimates are improved then
 If necessary, it is possible to then proceed to draw further annotations around areas of interest.
 These can be processed one-by-one by running *Positive cell detection* on an annotation when it is selected, or else they can be processed all together (in parallel).
 The easiest way to do the latter is to ensure that no annotations are selected (e.g. double-click a background area with the *Move* tool {{ icon_move }} selected), and then press the {guilabel}`Run` button in the *Positive cell detection* dialog window.
-QuPath will then prompt you to confirm if you want to run the detection for all *Annotations*.
 
 :::{figure} images/ki67_detecting_multiple_parallel_annotations.jpg
 :class: shadow-image full-image
