@@ -15,7 +15,7 @@ Ever been confused about which extensions you have installed or how to install n
 
 For extensions developed outside of the QuPath team, check out the [extension catalog github](https://github.com/qupath/extension-catalog-model) for how to add your extension to the extension catalog so other users can easily download it.
 
-:::{figure}
+:::{figure} ../intro/images/update_available.png
 :class: shadow-image full-image
 Extension manager showing installed extensions
 :::
@@ -24,13 +24,7 @@ Extension manager showing installed extensions
 
 It's here!!! The award winning [InstanSeg](https://github.com/qupath/qupath-extension-instanseg) segmentation method from Thibaut Goldsborough you can now do so in QuPath via the InstanSeg extension. This extension provides a greatly improved accuracy in segmentation of cells for both brightfield and fluorescent images. It also gets increasingly speedy with GPU support. Learn more about InstanSeg and how to use it in QuPath [here](../deep/instanseg.md).
 
-:::{figure}
-:class: shadow-image full-image
-
-InstanSeg segmentation of haematoxylin and dab nuclei
-:::
-
-:::{figure}
+:::{figure} ../deep/images/instanseg_fl_results.jpg
 :class: shadow-image full-image
 
 InstanSeg segmentation of nuclei in a fluorescent image
@@ -60,7 +54,7 @@ To learn more about OME-Zarr check out [this paper](https://link.springer.com/ar
 
 Unsure where to start with QuPath? Or maybe you just want a refresher on all the tools in the QuPath screen? The new QuPath tour will guide you through the interface, from the main viewing window to the toolbar and pane tabs. You can find "QuPath Tour" under the Help menu.
 
-:::{figure}
+:::{figure} ../starting/images/steps_tour.jpg
 :class: shadow-image full-image
 
 QuPath tour explaining the interface
@@ -72,7 +66,7 @@ Following on from the QuPath tour, you may of notice the toolbar is looking a li
 One new button has been added which allows for quick viewing of connections between objects (if you have any).
 Viewer related tools such as "show scalebar", "show grid" and "show input display" have been combined into a dropdown button so that these less frequently used tools aren't always on screen, making the toolbar less busy.
 
-:::{figure}
+:::{figure} images/toolbar.png
 :class: shadow-image full-image
 
 Updated 0.6.0 toolbar
@@ -86,7 +80,7 @@ Lastly, the selection mode can now be quickly accessed by using the 'S' key when
 
 Viewing the names of annotations has been tweaked to make it easier to see which label relates to which annotation, particularly when annotations are small or overlap with others. The label is now consistently displayed at the top of the annotation and better adjusts to objective changes.
 
-:::{figure}
+:::{figure} ../starting/images/annotating_names.jpg
 :class: shadow-image full-image
 
 Annotation names displayed at the top of the annotation
