@@ -35,7 +35,7 @@ If you find yourself stuck or confused, it's worthwhile clicking {{ icon_help }}
 And if the interactive help has something it really thinks you should know, a small badge will be displayed on the toolbar button.
 
 :::{figure} images/steps_context_help.png
-:class: shadow-image small-image
+:class: shadow-image mini-image
 
 Context Help
 :::

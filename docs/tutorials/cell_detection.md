@@ -123,7 +123,7 @@ Another way to view all the measurements of all the cells is by selecting {menus
 This should open up a results table with the measurements of all cells.
 From this, it is possible to generate histograms, sort columns, select individual cells (which will then be selected on the image) and to export the measurements to a CSV file for use elsewhere.
 
-:::{figure} images/ki67_detecting_results_detections.jpg
+:::{figure} images/ki67_detecting_results_detections.png
 :class: shadow-image full-image
 
 Cell detection results table
@@ -167,7 +167,7 @@ Whenever you have multiple annotations, it can be helpful to generate a results 
 This is similar to creating a results table for detections, but requires the {menuselection}`Measure --> Show annotation measurements` command instead.
 You can also access this command from the *Measurement table* icon in the toolbar {{ icon_table }}.
 
-:::{figure} images/ki67_detecting_results_annotations.jpg
+:::{figure} images/ki67_detecting_results_annotations.png
 :class: shadow-image full-image
 
 Annotation results table

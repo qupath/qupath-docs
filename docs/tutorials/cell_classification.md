@@ -124,8 +124,8 @@ Some commands that enable this are found in the {menuselection}`Analyze --> Calc
 One approach is to calculate textures from the image surrounding each cell.
 This can be very effective, although computationally quite demanding whenever there are very large numbers of cells.
 
-A much faster alternative, which can give very good results, is to simply 'smooth' the existing measurements with the {menuselection}`Analyze --> Calculate features --> Add smoothed features` command.
-This will supplement the existing measurements with new measurements calculated by taking a weighted average of the corresponding measurements of neighboring cells.
+A much faster alternative, which can give very good results, is to simply 'smooth' the existing measurements with the {menuselection}`Analyze --> Calculate features --> Add smoothed features` command. 
+This will supplement the existing measurements with new measurements calculated by taking a weighted average of the corresponding measurements of neighboring cells. A pop-up dialog will ask which regions to smooth, select all annotations.
 
 The weighting depends on distance, i.e. cells that are further away have less contribution to the result.
 Technically, distance is based on centroids and the weighting is calculated from a Gaussian function, where the parameter required in the dialog box is the [full-width-at-half-maximum](https://en.wikipedia.org/wiki/Full_width_at_half_maximum) of the Gaussian function.
@@ -133,7 +133,7 @@ Less technically, putting higher numbers into the dialog box results in more smo
 This reduces the noisiness of the measurements more effectively, but also makes it more difficult to distinguish smaller areas containing particular cell types.
 
 :::{figure} images/ki67_auto_smooth_features.jpg
-:class: shadow-image mid-image
+:class: shadow-image small-image
 
 Smooth features dialog
 :::
@@ -173,7 +173,7 @@ Training cell classification
 Continue creating annotations and assigning their classes.
 Right-clicking on the image after drawing the annotation can offer an easier way to set the class, without needing to move the mouse to the other side of the screen and press the {guilabel}`Set class` button on the left.
 
-:::{figure} images/ki67_auto_training_tumor.jpg
+:::{figure} images/ki67_auto_training_stroma.jpg
 :class: shadow-image full-image
 
 Training cell classification with right-click
