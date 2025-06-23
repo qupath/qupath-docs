@@ -105,19 +105,13 @@ When you click `Run`, InstanSeg will check for PyTorch.
 If this is not on your machine it will download it for you (this could be > 100 MB, so may take a while).
 Once this is done, the model will run and you will see the results in the viewer.
 
-:::{figure} images/instanseg_running.jpg
-:class: shadow-image large-image
-
-Running InstanSeg
-:::
-
 ### 5. Viewing Results
 
 The results will be displayed in the viewer.
 The visibility of detections can be turned on or off using the show/hide detection objects button in the toolbar.
 Additionally, using the fill/unfill detection objects button and the opacity slider in the toolbar can help distinguish the cells.
 
-:::{figure} images/instanseg_fl_results.jpg
+:::{figure} images/instanseg_fl_results.png
 :class: shadow-image large-image
 
 The results of running InstanSeg on a fluorescence image.
