@@ -92,18 +92,12 @@ The class list within the annotation pane has been improved to make it easier to
 
 To add or remove or populate the class list in specific ways, this can now all be done from top of the pane.
 
-:::{figure}
+Additionally, the options related to showing or hiding classes within the viewer. Each class has a visual indicator for whether it's being shown or not and can be toggled on or off by clicking the eye icon next to that class name.
+
+:::{figure} ../tutorials/images/multiplex_populate_channels.jpg
 :class: shadow-image full-image
 
-Class list pane with new class addition and deletion options
-:::
-
-Below, the options are related to showing or hiding classes within the viewer. Each class has a visual indicator for whether it's being shown or not and can be toggled on or off by clicking the eye icon next to that class name.
-
-:::{figure}
-:class: shadow-image full-image
-
-Class list pane with new class viewing options
+Class list pane with new class addition and deletion options in addition to eye icons for toggling visibility
 :::
 
 ### Project browser improvements
@@ -113,14 +107,20 @@ Class list pane with new class viewing options
 * **Alerts when images go missing**: Previously if an image was moved or deleted from the project folder, QuPath would not alert the user that the image was missing until the image was opened. Now, if an image is missing from the project folder, a warning will be displayed next to the name in the project browser so no more surprises when opening.
 * **Sorted our sorting**: The sorting of images in projects has been sharpened up. Images will now remain sorted when re-opening the project or after adding new metadata values.
 
+:::{figure} ../tutorials/images/project_masking.png
+:class: shadow-image small-image
+
+Masked image names with thumbnails hidden in the project browser
+:::
+
 ### Measurement viewing improvements
 
 Minor visual improvements have been made to the measurement tables for annotations and detections. We hope this makes it clearer to use the tools already available. There is also an new option "Add class visibility", which links up the classes currently being displayed in the viewer to only show in the measurement table too.
 
-:::{figure}
+:::{figure} ../tutorials/images/ki67_auto_results_detections.jpg
 :class: shadow-image full-image
 
-Measurement table with new class linking feature
+New Measurement table with new class linking option
 :::
 
 ### Multidimensional image navigation + z-stack projection overlays
@@ -129,7 +129,13 @@ Navigating through time series and z-stacks now features a refreshed visual desi
 
 ### ImageJ script runner
 
-!waiting on docs
+For those of you who use ImageJs macro language, this also can be used within QuPath. Although an existing QuPath feature, the ImageJ script runner has had a visual update and some under-the-hood improvements. To learn more about how to use this feature, check out the [ImageJ script runner documentation](../advanced/imagej.md#running-macros--scripts).
+
+:::{figure} ../advanced/images/imagej_script_triangle.jpg
+:class: shadow-image full-image
+
+The improved ImageJ script runner
+:::
 
 ### QuPath and fiji built together
 
@@ -143,4 +149,4 @@ Navigating through time series and z-stacks now features a refreshed visual desi
 
 * **Tired of using the mouse to close sub-windows?** Now you can press {kbd}`Esc` or {kbd}`Ctrl + W` to close them (well, most of them... let us know if an important window isn't responding to this and you think it should).
 * **Got lots of things to select?** Quickly activate the selection tool by pressing 'S' when the main viewer is selected.
-* **Want to select all the annodations or detections?** Use {kbd}`Ctrl + Alt + A` to select all annotations or {kbd}`Ctrl + Alt + D` to select the detections in the current image.
+* **Want to select all the annotations or detections?** Use {kbd}`Ctrl + Alt + A` to select all annotations or {kbd}`Ctrl + Alt + D` to select the detections in the current image.

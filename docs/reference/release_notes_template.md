@@ -1,8 +1,4 @@
-# Release Notes Template ***TODO***
-
-Welcome to the expanded release notes for QuPath ***TODO***.
-This version was released on ***TODO***.
-The aim of this document is to provide a more detailed overview of the changes in this version than the original github [release notes](https://github.com/qupath/qupath/blob/main/CHANGELOG.md) ***TODO***.
+# Release Notes Template
 
 1. [Major features](#major-features) - Spotlight changes
 2. [Enhancements](#enhancements) - Additions to make existing features better
@@ -28,6 +24,7 @@ Example image
 ```{image} https://github.com/user-attachments/assets/ecd1d6a7-9b49-4a93-b635-2298d43abf09
 :width: 48%
 ```
+
 Another example image format for in-line images.
 
 ## ✨ Enhancements
