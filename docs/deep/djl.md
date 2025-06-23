@@ -46,7 +46,7 @@ Instead, you should use the {menuselection}`Manage DJL Engines` to explicitly re
 
 To use an NVIDIA GPU with either TensorFlow or Pytorch, you will need to have a *compatible* version of CUDA installed *before* downloading the engine.
 
-See {ref}`gpu-support` for more details.
+See [the GPU support page](gpu-support) for more details.
 :::
 
 If downloading the engine is successful, the indicator beside the engine should switch to green.

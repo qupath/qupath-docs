@@ -105,12 +105,6 @@ When you click `Run`, InstanSeg will check for PyTorch.
 If this is not on your machine it will download it for you (this could be > 100 MB, so may take a while).
 Once this is done, the model will run and you will see the results in the viewer.
 
-:::{figure} images/instanseg_running.jpg
-:class: shadow-image large-image
-
-Running InstanSeg
-:::
-
 ### 5. Viewing Results
 
 The results will be displayed in the viewer.
