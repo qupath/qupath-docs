@@ -111,7 +111,7 @@ The results will be displayed in the viewer.
 The visibility of detections can be turned on or off using the show/hide detection objects button in the toolbar.
 Additionally, using the fill/unfill detection objects button and the opacity slider in the toolbar can help distinguish the cells.
 
-:::{figure} images/instanseg_fl_results.jpg
+:::{figure} images/instanseg_fl_results.png
 :class: shadow-image large-image
 
 The results of running InstanSeg on a fluorescence image.
