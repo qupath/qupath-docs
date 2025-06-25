@@ -30,7 +30,7 @@ It's here!!! The award winning [InstanSeg](https://github.com/qupath/qupath-exte
 InstanSeg segmentation of nuclei in a fluorescent image
 :::
 
-### Major OMERO Extension Reset
+### Major OMERO Extension Overhaul
 
 The OMERO extension has been completely rewritten under the hood, improving it's flexibility and giving access to more features such as the ability to retrieve pixel values (including raw values) in the way that your server is set up.
 
