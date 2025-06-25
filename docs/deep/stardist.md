@@ -511,22 +511,7 @@ This has been replaced by the Deep Java Library extension.
 If you have a recent NVIDIA graphics card, you might benefit from running StarDist using CUDA.
 
 The best way to do this is to use TensorFlow via Deep Java Library, as described above.
-
-### Use OpenVINO
-
-OpenVINO is a library with highly optimized primitives for Intel CPUs.
-To optimize StarDist using OpenVINO, download [QuPath OpenVINO Extension](https://github.com/dkurt/qupath-extension-openvino) and change your processing code to work with converted model:
-
-```groovy
-// Specify the model directory (you will need to change this!)
-def pathModel = '/path/to/converted_model.xml'
-def dnn = qupath.ext.openvino.OpenVINOTools.createDnnModel('/path/to/model.xml')
-def stardist = StarDist2D.builder(dnn)
-  ...
-  .build()
-```
-
-Note that this uses a community extension, which means that it isn't maintained by the QuPath developers.
+However note that TensorFlow dropped CUDA support for Windows, so this can only work with Linux.
 
 
 ## Differences from StarDist Fiji
