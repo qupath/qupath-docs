@@ -3,6 +3,8 @@
 QuPath is open-source software, available under the [GNU General Public License v3.0](https://github.com/qupath/qupath/blob/main/LICENSE).
 For more info, check out [QuPath's GitHub repo](https://github.com/qupath/qupath).
 
+Note that **QuPath is not intended for clinical, diagnostic or therapeutic purposes.**
+
 All original content in the QuPath documentation you're reading now is shared under a Creative Commons attribution license.
 You're free to reuse it, but we'd ask that you attribute the source -- and preferably include a link to this website, so that people know where to find the latest version.
 
