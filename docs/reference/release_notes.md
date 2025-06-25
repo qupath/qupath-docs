@@ -149,7 +149,9 @@ The improved ImageJ script runner
 
 ### QuPath and fiji built together
 
-!I may not be the best person to hype this up
+While QuPath has long had ImageJ support, this was somewhat limited in only running in "original ImageJ mode", meaning there was limited support for Fiji plugins and no access to ImageJ2's new features.
+Building QuPath and Fiji together unlocks some of these powerful new features and many extra plugins!
+You can find out more on [Building from source](https://qupath.readthedocs.io/en/latest/docs/reference/building.html#building-with-fiji).
 
 ### Dependency updates
 
