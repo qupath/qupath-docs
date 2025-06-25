@@ -85,7 +85,8 @@ Lastly, the selection mode can now be quickly accessed by using the 'S' key when
 
 ### Annotation names
 
-Viewing the names of annotations has been tweaked to make it easier to see which label relates to which annotation, particularly when annotations are small or overlap with others. The label is now consistently displayed at the top of the annotation and better adjusts to objective changes.
+Viewing the names of annotations has been tweaked to make it easier to see which label relates to which annotation, particularly when annotations are small or overlap with others.
+The label is now consistently displayed at the top of the annotation and better adjusts to magnification changes.
 
 :::{figure} ../starting/images/annotating_names.jpg
 :class: shadow-image full-image
