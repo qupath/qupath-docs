@@ -32,7 +32,8 @@ InstanSeg segmentation of nuclei in a fluorescent image
 
 ### Major OMERO Extension Overhaul
 
-The OMERO extension has been completely rewritten under the hood, improving it's flexibility and giving access to more features such as the ability to retrieve pixel values (including raw values) in the way that your server is set up.
+The OMERO extension has been completely rewritten under the hood, improving its flexibility and giving access to more features.
+It now allows you directly to retrieve raw pixel values using three different methods depending on how your extension and OMERO server are set up.
 
 There has also been a big refresh to how the extension looks and feels, making it easier to use and navigate. Check out the [OMERO extension documentation](../reference/omero.md) for more information on how to get started.
 
