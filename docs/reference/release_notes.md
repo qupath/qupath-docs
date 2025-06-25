@@ -129,7 +129,9 @@ New Measurement table with new class linking option
 
 ### Multidimensional image navigation + z-stack projection overlays
 
-Navigating through time series and z-stacks now features a refreshed visual design, aimed at making it easier to explore your images. Additionally, for those looking to get a general overview of the z-stack, a maximum intensity projection overlay can now be displayed on top of the image. To learn more about this, check out the [multidimensional image documentation](../advanced/multidimensional_images.md).
+Navigating through time series and z-stacks now features a refreshed visual design, aimed at making it easier to explore your images.
+Additionally, for those looking to get a general overview of a z-stack, you can now display an overlay using various projections (e.g., maximum or mean intensity projection).
+To learn more about this, check out the [multidimensional image documentation](../advanced/multidimensional_images.md).
 
 ### ImageJ script runner
 
