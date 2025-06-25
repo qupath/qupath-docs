@@ -25,8 +25,9 @@ Got more questions?
 : The [Scientific Community Image Forum](https://forum.image.sc/tag/qupath) is the best place to discuss QuPath with users & developers
 
 
+## Full contents
+
 ```{toctree}
-:caption: 'Full contents:'
 :maxdepth: 2
 
 docs/intro/index

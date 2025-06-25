@@ -6,7 +6,7 @@ QuPath is often used for **digital pathology in research** because it offers a p
 
 :::{admonition} Important
 :class: warning
-**QuPath is _not_ intended or validated for clinical use.**
+**QuPath is not intended for clinical, diagnostic or therapeutic purposes.**
 :::
 
 Features include:
