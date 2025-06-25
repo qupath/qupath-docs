@@ -97,7 +97,7 @@ setChannelNames(
 )
 ```
 
-1. Brightness and contrasts viewing settings can be saved and re-loaded by entering a name into the {guilabel}`Settings` field and pressing {guilabel}`Save`. To reload simply select the name from the drop-down list.
+1. Brightness and contrast settings can be saved and re-loaded by entering a name into the {guilabel}`Settings` field and pressing {guilabel}`Save`. To reload simply select the name from the drop-down list.
 
 :::{figure} images/multiplex_brightness_profile.png
 :class: shadow-image mini-image
