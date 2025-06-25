@@ -72,7 +72,7 @@ If it *didn't* go so well, check out [](#Troubleshooting).
 
 If you already have Java installed, you might be able to skip Step 2.
 Most Java versions >= 17 should work to launch Gradle, which will then automatically download the version it needs.
-However, since QuPath currently requires OpenJDK {{java_version}}, we recommend just installing that and saving Gradle the extra effort.
+However, since QuPath currently requires OpenJDK {{java_version}}, it's probably best to just install that and saving Gradle the extra effort.
 
 Note that some problems have been reported using a version of OpenJDK based on OpenJ9, such as may be provided by some package managers.
 Switching to an OpenJDK distribution based on HotSpot may help -- see [here](https://github.com/qupath/qupath/issues/484) for details.

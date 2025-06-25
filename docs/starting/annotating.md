@@ -119,6 +119,12 @@ You can set these quickly for a selected annotation by pressing the {kbd}`Enter`
 
 The name can be shown or hidden in the viewer using {menuselection}`View --> Show names`, or the shortcut {kbd}`N`.
 
+:::{figure} images/annotating_names.jpg
+:class: shadow-image mid-image
+
+Annotations with names displayed
+:::
+
 ## {{ tool_selection_mode }} Selection mode
 
 One toolbar button that lives *beside* the annotation tools is not actually used to draw new annotations -- but it is closely related.

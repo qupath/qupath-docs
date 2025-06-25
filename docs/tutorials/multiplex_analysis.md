@@ -50,8 +50,9 @@ Choosing *Brightfield* conveys the opposite message, which would cause problems 
 :::
 
 :::{sidebar} Accurate cell detection
-Good cell segmentation is really *essential* for accurate multiplexed analysis.
-New and improved methods of segmenting cells in QuPath are being actively explored...
+Good cell segmentation is often *essential* for multiplexed analysis.
+Instanseg is a new cell detection method available in QuPath via an extension.
+Find out more in the {doc}`InstanSeg <../deep/instanseg>` tutorial.
 :::
 
 ### Set up the channel names
@@ -72,9 +73,9 @@ Adjusting the channel names in the Brightness & Contrast dialog
 
 ::::{tip}
 Setting all the channel names individually can be very laborious.
-Two tricks can help.
+Three tricks can help.
 
-1\. Outside QuPath (or in the *Script editor*) create a list of the channel names you want, with a separate line for each name.
+1. Outside QuPath (or in the *Script editor*) create a list of the channel names you want, with a separate line for each name.
 Copy this list to the clipboard, and then select the corresponding channels in the *Brightness/Contrast* dialog and press {kbd}`Ctrl + V` to paste them.
 
 :::{figure} images/multiplex_channel_names.jpg
@@ -95,11 +96,22 @@ setChannelNames(
      'CK'
 )
 ```
+
+1. Brightness and contrast settings can be saved and re-loaded by entering a name into the {guilabel}`Settings` field and pressing {guilabel}`Save`. To reload simply select the name from the drop-down list.
+
+:::{figure} images/multiplex_brightness_profile.png
+:class: shadow-image mini-image
+
+Saved brightness and contrast settings
+:::
+
 ::::
 
-:::{tip}
-The original names are not lost.
-You can retrieve them later by going to the *Image* tab, and double-clicking the row that states *Metadata changed: Yes*.
+:::{admonition} What if I want the *original* channel names?
+When setting channel names, the original names are not lost.
+
+You can retrieve them later by going to the {guilabel}`Image` tab, and double-clicking the row that states {guilabel}`Metadata changed: Yes`.
+
 This allows you to reset all the image metadata to whatever was read originally from the file, including the channel names.
 :::
 
@@ -107,8 +119,8 @@ This allows you to reset all the image metadata to whatever was read originally 
 
 We now want to make the channel names available as *classifications*.
 
-The classifications currently available are shown under the *Annotations* tab.
-You can either right-click this list or select the {guilabel}`⋮` button and choose {menuselection}`Populate from image channels` to quickly set these.
+The classifications currently available are shown under the {guilabel}`Annotations` tab.
+You can either right-click this list or select the {guilabel}`▸` button and choose {menuselection}`Populate from image channels` to quickly set these.
 
 :::{figure} images/multiplex_populate_channels.jpg
 :class: shadow-image full-image
@@ -142,7 +154,7 @@ Exploring the detection results using measurement maps
 
 The next step involves finding a way to identify whether cells are positive or negative *for each marker independently* based upon the detections and measurements made during the previous step.
 
-Since QuPath v0.2.0 there are two different ways to do this:
+There are two different ways to do this:
 
 1. Threshold a single measurement (e.g. mean nucleus intensity)
 2. Train a machine learning classifier to decide based upon multiple measurements
@@ -152,8 +164,7 @@ You do not have to choose the same method for every marker, but can switch betwe
 
 ### Option #1. Simple thresholding
 
-QuPath v0.2.0 introduced a new command, {menuselection}`Classify --> Object classification --> Create single measurement classifier`.
-This gives us a quick way to classify based on the value of one measurement.
+A quick way to classify based on one measurement is the command {menuselection}`Classify --> Object classification --> Create single measurement classifier`.
 
 As usual, you can consider the options in the dialog box in order from top to bottom, and hover the cursor over each for a short description of what it means.
 
@@ -161,6 +172,12 @@ As usual, you can consider the options in the dialog box in order from top to bo
 :class: shadow-image full-image
 
 Creating a single measurement classifier for PDL1
+:::
+
+:::{note}
+Since PLD1 is the red channel which is also the default detection color there isn't a quick visual indicator of what is PLD1 positive.
+To resolve this, change the default detection color to something else (e.g. blue) via the {menuselection}`Preferences --> Objects --> Default object color`.
+This has been done in the figure above and then returned to the default red color.  
 :::
 
 In this case, we can ignore the **Object filter** (all our detections are cells, so no need to distinguish between them).
@@ -199,16 +216,13 @@ This process is a bit more involved, but the effort is often worth it.
 It is very difficult and confusing to try to train multiple classifiers by annotating the same image.
 
 The process is made easier by creating duplicate images within the project for each channel that needs a classifier.
-To do this, choose {menuselection}`Classify --> Training Images --> Create duplicate channel training images`.
+To do this, generate cell detections as described above and save the data in your QuPath project.
+Afterwards, run {menuselection}`Classify --> Training Images --> Create duplicate channel training images`.
 
 :::{figure} images/multiplex_duplicating.jpg
 :class: shadow-image full-image
 
 Creating duplicate training images for each channel
-:::
-
-:::{Note}
-It's useful to run cell detection **before** duplicating the images so the detections match!
 :::
 
 :::{tip}
@@ -218,11 +232,11 @@ It is a good idea to turn the **Initialize Points annotation** option *on*... it
 #### Train & save classifiers
 
 Now you should have multiple duplicate images in your project, with names derived from the original channel names.
-Because you ran this after cell detection (right?!), these duplicate images will bring across all the original cells.
+Because you ran this after cell detection and saving (right?!), these duplicate images will bring across all the original cells.
 
 We can then proceed with {menuselection}`Classify --> Object classification --> Train object classifier`.
 
-:::{figure} images/multiplex_train_dialog.jpg
+:::{figure} images/multiplex_train_dialog.png
 :class: shadow-image small-image
 
 The dialog box for training an object classifier
@@ -266,7 +280,18 @@ We shouldn't use any other classes in the training annotations.
 Training an object classifier for FoxP3 by selecting individual cells
 :::
 
-Once you are done with one marker, choose {menuselection}`Save & Apply` and enter a name to identify your classifier.
+:::{tip}
+To only see the cells that are currently classified, click on the eye next to 'None' in the {guilabel}`Class list` in the {guilabel}`Annotations` pane to hide the unclassified cells.
+
+:::{figure} images/class_list.png
+:class: shadow-image mini-image
+
+The class list, with all unclassified cells hidden
+:::
+
+:::
+
+Once you are done with one marker, enter a name to identify your classifier and then select {menuselection}`Save`.
 Then save the image data and open the image associated with the next marker of interest, repeating the process as many times as necessary.
 
 :::{figure} images/multiplex_ck.jpg
@@ -324,7 +349,7 @@ A few things can help:
 
 - The box in the bottom right corner of the viewer now shows not only the mouse location, but also the classification of the object under the cursor.
 - {menuselection}`View --> Show channel viewer` makes it possible to see all channels side-by-side. Right-click on the channel viewer to customize its display.
-- Right-clicking on the *Classifications* list under the *Annotations* tab, you can now use {menuselection}`Populate from existing objects --> All classes` to create a list of all classifications present within the image. The filter box below this list enables quickly finding classifications including specific text. You can then select these, and toggle their visibility by right-clicking or pressing the {kbd}`spacebar`.
+- Right-clicking on the {guilabel}`Class` list under the {guilabel}`Annotations` tab, you can now use {menuselection}`Populate from existing objects --> All classes` to create a list of all classifications present within the image. The filter box below this list enables quickly finding classifications including specific text. You can then select these, and toggle their visibility by clicking on the eye or pressing the {kbd}`spacebar`.
 - Right-click on the image and choose {menuselection}`Cells --> Centroids only` to have another view of the classified cells. Now, the shape drawn for each cell relates to the 'number of components' of its classification, while its color continues to depict the specific class. This makes similar-but-not-the-same classifications to be spotted more easily than using (often subtle) color differences alone.
 
 :::{figure} images/multiplex_centroids.jpg

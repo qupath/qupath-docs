@@ -123,7 +123,7 @@ Another way to view all the measurements of all the cells is by selecting {menus
 This should open up a results table with the measurements of all cells.
 From this, it is possible to generate histograms, sort columns, select individual cells (which will then be selected on the image) and to export the measurements to a CSV file for use elsewhere.
 
-:::{figure} images/ki67_detecting_results_detections.jpg
+:::{figure} images/ki67_detecting_results_detections.png
 :class: shadow-image full-image
 
 Cell detection results table
@@ -146,7 +146,6 @@ However, it is important to note that when the stain estimates are improved then
 If necessary, it is possible to then proceed to draw further annotations around areas of interest.
 These can be processed one-by-one by running *Positive cell detection* on an annotation when it is selected, or else they can be processed all together (in parallel).
 The easiest way to do the latter is to ensure that no annotations are selected (e.g. double-click a background area with the *Move* tool {{ icon_move }} selected), and then press the {guilabel}`Run` button in the *Positive cell detection* dialog window.
-QuPath will then prompt you to confirm if you want to run the detection for all *Annotations*.
 
 :::{figure} images/ki67_detecting_multiple_parallel_annotations.jpg
 :class: shadow-image full-image
@@ -168,7 +167,7 @@ Whenever you have multiple annotations, it can be helpful to generate a results 
 This is similar to creating a results table for detections, but requires the {menuselection}`Measure --> Show annotation measurements` command instead.
 You can also access this command from the *Measurement table* icon in the toolbar {{ icon_table }}.
 
-:::{figure} images/ki67_detecting_results_annotations.jpg
+:::{figure} images/ki67_detecting_results_annotations.png
 :class: shadow-image full-image
 
 Annotation results table

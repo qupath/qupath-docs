@@ -15,16 +15,30 @@ If your needs for instruction are modest, it's always worthwhile to try hovering
 
 There are two other commands that can help - which both also have toolbar buttons.
 
+### {{ tool_pin_point }} QuPath tour
+
+When uncertain about the QuPath interface or a feature, the **QuPath tour** under {menuselection}`Help → QuPath Tour` may help. It guides you though the interface by highlighting each element and offering a brief explanation of its function.
+
+:::{figure} images/steps_tour.jpg
+:class: shadow-image full-image
+
+QuPath Tour
+:::
+
 ### {{ tool_help }} Context help
 
-Starting with v0.5.0, QuPath has a new command {menuselection}`Help --> Show interactive help`.
+The context help is a great way to find out more about a tool or a parameter within QuPath or tell alert the user to . It can be found under {menuselection}`Help --> Show interactive help`.
 
-This aims to include tips and explain things that may have gone wrong.
-It also shows help text associated with any command or button under the cursor.
+This provides additional information when you hover over items in QuPath such as tools or parameters. It also warns you about potential issues that could disrupt your image analysis workflow—making it a valuable tool to keep open as you work.
 
 If you find yourself stuck or confused, it's worthwhile clicking {{ icon_help }} first to see if it can help.
 And if the interactive help has something it really thinks you should know, a small badge will be displayed on the toolbar button.
 
+:::{figure} images/steps_context_help.png
+:class: shadow-image mini-image
+
+Context Help
+:::
 
 ### {{ tool_log }} Log
 

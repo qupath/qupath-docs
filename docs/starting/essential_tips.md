@@ -33,7 +33,7 @@ The *Command List* also now includes a brief help text description for most comm
 If you find yourself wanting to run the same command repeatedly, uncheck the {guilabel}`Auto close` box to keep the command list open.
 :::
 
-:::{figure} images/tips_command.jpg
+:::{figure} images/tips_command.png
 :class: shadow-image full-image
 
 QuPath's 'Command list'
