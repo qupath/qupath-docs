@@ -22,7 +22,10 @@ Extension manager showing installed extensions
 
 ### New InstanSeg Segmentation
 
-It's here!!! The award winning [InstanSeg](https://github.com/qupath/qupath-extension-instanseg) segmentation method from Thibaut Goldsborough you can now do so in QuPath via the InstanSeg extension. This extension provides a greatly improved accuracy in segmentation of cells for both brightfield and fluorescent images. It also gets increasingly speedy with GPU support. Learn more about InstanSeg and how to use it in QuPath [here](../deep/instanseg.md).
+The award winning [InstanSeg](https://github.com/instanseg/instanseg) segmentation method from Thibaut Goldsborough can be used in QuPath via the [InstanSeg extension](https://github.com/qupath/qupath-extension-instanseg).
+This extension provides greatly improved accuracy in segmentation of cells for both brightfield and fluorescent images.
+It also gets increasingly speedy with GPU support.
+Learn more about InstanSeg and how to use it in QuPath on [its page in the docs](../deep/instanseg.md).
 
 :::{figure} ../deep/images/instanseg_fl_results.jpg
 :class: shadow-image full-image
