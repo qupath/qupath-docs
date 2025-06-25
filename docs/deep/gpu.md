@@ -4,26 +4,22 @@
 
 Graphics Processing Units (GPUs) can make the use of deep learning *much* faster... but can be notoriously awkward to set up.
 
-Deep Java Library (DJL) supports the use of NVIDIA GPUs for Windows and Linux.
+Deep Java Library (DJL) supports the use of NVIDIA GPUs for Windows (PyTorch) and Linux (PyTorch and/or TensorFlow).
 This page explains how to (hopefully) get it working.
 
-:::{admonition} Important!
+:::{admonition} What about Mac?
 :class: warning
 
 This is **only** relevant if you're using Windows or Linux with an NVIDA GPU.
+
+Deep learning GPU support for a recent Mac is more limited (i.e. it may not work for all models), but when it *does* work it should not require any of the awkward configuration here.
+
+For PyTorch, the only thing you need to do is set the device to be 'MPS' (for *Metal Performance Shaders*).
+I have used it very successfully with [InstanSeg](instanseg-extension) and [WSInfer](wsinfer-extension) -- where it gives a substantial improvement in performance.
+
+For TensorFlow, there is no way to specify whether to use MPS from the QuPath side.
 :::
 
-:::{admonition} What about Macs?
-NVIDIA GPUs are extremely uncommon in Macs (I had one in a 2013 iMac... but no more).
-More recent Macs with Apple silicon *do* have GPU acceleration, but it is quite different.
-
-Currently, Apple silicon GPU acceleration *can* work with PyTorch via Deep Java Library.
-Not all models work, but I have used it very successfully with [wsinfer.md](wsinfer-extension) and seen a substantial improvement in performance.
-
-The good news is that it requires *none of the awkward configuration here*.
-When it works, it just works.
-The only thing you need to do is set the device to be 'MPS' (for *Metal Performance Shaders*).
-:::
 
 ## Explaining the problem
 
@@ -85,7 +81,7 @@ The following sections attempt to outline the versions (as best I can figure the
 
 | QuPath | DJL     | PyTorch | CUDA |
 |--------|---------|---------|------|
-| v0.6.x | 0.32.0  | 2.5.1   | 12.4 |
+| v0.6.x | 0.33.0  | 2.5.1   | 12.4 |
 | v0.5.x | 0.24.0  | 2.0.1   | 11.8 |
 | v0.4.x | 0.20.0  | 1.13.0  | 11.7 |
 
@@ -95,12 +91,15 @@ The following sections attempt to outline the versions (as best I can figure the
 
 | QuPath | DJL     | TensorFlow | CUDA |
 |--------|---------|------------|------|
-| v0.6.x | 0.32.0  | 2.16.1     | 12.1 |
+| v0.6.x | 0.33.0  | 2.16.1     | 12.1 |
 | v0.5.x | 0.24.0  | 2.10.1     | 11.3 |
 | v0.4.x | 0.20.0  | 2.7.4      | 11.2 |
 
-> Note: DJL + TensorFlow will currently not work **at all** on Apple silicon (no matter whether you have the Intel or Apple silicon build of QuPath... unless you build TensorFlow from source).
-> TensorFlow also [dropped GPU support on Windows as of version 2.10](https://www.tensorflow.org/install/pip#windows-native).
+:::{admonition} No GPU support for TensorFlow on Windows!
+:class: warning
+
+TensorFlow [dropped GPU support on Windows as of version 2.10](https://www.tensorflow.org/install/pip#windows-native) -- so unfortunately this won't work.
+:::
 
 ## Conda environments
 
@@ -233,32 +232,3 @@ INFO: PyTorch:2.5.1, capabilities: [
 ]
 PyTorch Library: C:\Users\yourname\.djl.ai\pytorch\2.5.1-cu124-win-x86_64
 ```
-
-If not, the troubleshooting below may help.
-
-## More troubleshooting
-
-Conda environments can help solve *most* of the problems... but not all.
-This section contains assorted fixes for other issues as they arise.
-
-(djl-gpu-pytorch-201)=
-
-### Fix for UnsatisfiedLinkError (PyTorch 2.0.1, Windows)
-
-You may find that PyTorch 2.0.1 + CUDA 11.8 doesn't work on Windows.
-If you see an error, it may look like this:
-
-```cmd
-ERROR: C:\Users\yourname\.djl.ai\pytorch\2.0.1-cu118-win-x86_64\nvfuser_codegen.dll: Can't find dependent libraries in print_engine.groovy at line number 5
-java.base/jdk.internal.loader.NativeLibraries.load(Native Method)
-    java.base/jdk.internal.loader.NativeLibraries$NativeLibraryImpl.open(NativeLibraries.java:388)
-    java.base/jdk.internal.loader.NativeLibraries.loadLibrary(NativeLibraries.java:232)
-    java.base/jdk.internal.loader.NativeLibraries.loadLibrary(NativeLibraries.java:174)
-    java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2394)
-    java.base/java.lang.Runtime.load0(Runtime.java:755)
-    java.base/java.lang.System.load(System.java:1953)
-    ai.djl.pytorch.jni.LibUtils.loadNativeLibrary(LibUtils.java:353)
-```
-
-The 'solution' is to simply delete the file `nvfuser_codegen.dll`.
-For more details, see the [DJL bug report on GitHub](https://github.com/deepjavalibrary/djl/issues/2552).
