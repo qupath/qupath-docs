@@ -45,7 +45,10 @@ Viewing an image using OMERO extension
 
 ### OME-Zarr images are now supported 🎉
 
-It's now possible to open and work with OME-Zarr images in QuPath! OME-Zarr was developed by the OME team in collaboration with many individuals and institutes with the goal to provide a more efficient and scalable format for large images. To get started using this file type in QuPath, drag and drop an OME-Zarr image into the main window or use the 'Open' dialog to select an OME-Zarr image. Alternatively, you can also export to OME-Zarr format.
+It's now possible to open and work with OME-Zarr images in QuPath!
+OME-Zarr was developed by the OME team in collaboration with many individuals and institutes, with the goal to provide a more efficient and scalable format for large images.
+To get started using this file type in QuPath, drag and drop an OME-Zarr image into the main window or use the 'Open' dialog to select an OME-Zarr image.
+Alternatively, you can also export to OME-Zarr format.
 
 To learn more about OME-Zarr check out [this paper](https://link.springer.com/article/10.1007/s00418-023-02209-1) and how to export in QuPath [here](../advanced/exporting_images.html).
 
