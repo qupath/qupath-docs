@@ -68,7 +68,7 @@ QuPath tour explaining the interface
 
 Following on from the QuPath tour, you may of notice the toolbar is looking a little different from before.
 One new button has been added which allows for quick viewing of connections between objects (if you have any).
-Viewer related tools such as "show scalebar", "show grid" and "show input display" have been combined into a dropdown button so that these less frequently used tools aren't always on screen, making the toolbar less busy.
+Viewer related tools such as "Show scalebar", "Show grid" and "Show input display" have been combined into a dropdown button so that these less frequently used tools aren't always on screen, making the toolbar less busy.
 
 :::{figure} images/toolbar.png
 :class: shadow-image full-image
