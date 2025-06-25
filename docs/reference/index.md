@@ -10,5 +10,4 @@ config
 building
 styling
 projects_structure
-release_notes
 ```

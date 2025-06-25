@@ -49,9 +49,10 @@ The *Fluorescence* type here tells QuPath that 'high pixel values mean more of s
 Choosing *Brightfield* conveys the opposite message, which would cause problems because cell detection would then switch to looking for dark nuclei on a light background.
 :::
 
-:::{sidebar} Precise cell detection
-Good cell segmentation is really *essential* for higher quality multiplexed analysis.
-Instanseg is a new cell detection method available in QuPath via an extension. More information can be found in the {doc}`InstanSeg <../deep/instanseg>` tutorial.
+:::{sidebar} Accurate cell detection
+Good cell segmentation is often *essential* for multiplexed analysis.
+Instanseg is a new cell detection method available in QuPath via an extension.
+Find out more in the {doc}`InstanSeg <../deep/instanseg>` tutorial.
 :::
 
 ### Set up the channel names
@@ -96,8 +97,7 @@ setChannelNames(
 )
 ```
 
-1. Save your Brightness & Contrast settings
-Brightness and contrasts viewing settings can now be saved and re-loaded by entering a name into the {guilabel}`Settings` field and pressing {guilabel}`Save`. To reload simply select the name from the drop-down list.
+1. Brightness and contrasts viewing settings can be saved and re-loaded by entering a name into the {guilabel}`Settings` field and pressing {guilabel}`Save`. To reload simply select the name from the drop-down list.
 
 :::{figure} images/multiplex_brightness_profile.png
 :class: shadow-image mini-image
@@ -107,9 +107,11 @@ Saved brightness and contrast settings
 
 ::::
 
-:::{tip}
-The original names are not lost.
-You can retrieve them later by going to the *Image* tab, and double-clicking the row that states *Metadata changed: Yes*.
+:::{admonition} What if I want the *original* channel names?
+When setting channel names, the original names are not lost.
+
+You can retrieve them later by going to the {guilabel}`Image` tab, and double-clicking the row that states {guilabel}`Metadata changed: Yes`.
+
 This allows you to reset all the image metadata to whatever was read originally from the file, including the channel names.
 :::
 
@@ -117,7 +119,7 @@ This allows you to reset all the image metadata to whatever was read originally 
 
 We now want to make the channel names available as *classifications*.
 
-The classifications currently available are shown under the *Annotations* tab.
+The classifications currently available are shown under the {guilabel}`Annotations` tab.
 You can either right-click this list or select the {guilabel}`▸` button and choose {menuselection}`Populate from image channels` to quickly set these.
 
 :::{figure} images/multiplex_populate_channels.jpg
@@ -173,7 +175,9 @@ Creating a single measurement classifier for PDL1
 :::
 
 :::{note}
-Since PLD1 is the red channel which is also the default detection color there isn't a quick visual indicator of what is PLD1 positive. To resolve this change the default detection color to something else (e.g. blue) via the {menuselection}`Preferences --> Objects --> Default object color`. This has been done in the figure above and then returned to the default red color.  
+Since PLD1 is the red channel which is also the default detection color there isn't a quick visual indicator of what is PLD1 positive.
+To resolve this, change the default detection color to something else (e.g. blue) via the {menuselection}`Preferences --> Objects --> Default object color`.
+This has been done in the figure above and then returned to the default red color.  
 :::
 
 In this case, we can ignore the **Object filter** (all our detections are cells, so no need to distinguish between them).
@@ -212,7 +216,8 @@ This process is a bit more involved, but the effort is often worth it.
 It is very difficult and confusing to try to train multiple classifiers by annotating the same image.
 
 The process is made easier by creating duplicate images within the project for each channel that needs a classifier.
-We recommend having cell detections as detailed above and save the image and it's annotations **before** creating training images via {menuselection}`Classify --> Training Images --> Create duplicate channel training images`.
+To do this, generate cell detections as described above and save the data in your QuPath project.
+Afterwards, run {menuselection}`Classify --> Training Images --> Create duplicate channel training images`.
 
 :::{figure} images/multiplex_duplicating.jpg
 :class: shadow-image full-image
@@ -281,7 +286,7 @@ To only see the cells that are currently classified, click on the eye next to 'N
 :::{figure} images/class_list.png
 :class: shadow-image mini-image
 
-The Class list showing the 'None' class hidden
+The class list, with all unclassified cells hidden
 :::
 
 :::
@@ -344,7 +349,7 @@ A few things can help:
 
 - The box in the bottom right corner of the viewer now shows not only the mouse location, but also the classification of the object under the cursor.
 - {menuselection}`View --> Show channel viewer` makes it possible to see all channels side-by-side. Right-click on the channel viewer to customize its display.
-- Right-clicking on the *Classifications* list under the *Annotations* tab, you can now use {menuselection}`Populate from existing objects --> All classes` to create a list of all classifications present within the image. The filter box below this list enables quickly finding classifications including specific text. You can then select these, and toggle their visibility by clicking on the eye or pressing the {kbd}`spacebar`.
+- Right-clicking on the {guilabel}`Class` list under the {guilabel}`Annotations` tab, you can now use {menuselection}`Populate from existing objects --> All classes` to create a list of all classifications present within the image. The filter box below this list enables quickly finding classifications including specific text. You can then select these, and toggle their visibility by clicking on the eye or pressing the {kbd}`spacebar`.
 - Right-click on the image and choose {menuselection}`Cells --> Centroids only` to have another view of the classified cells. Now, the shape drawn for each cell relates to the 'number of components' of its classification, while its color continues to depict the specific class. This makes similar-but-not-the-same classifications to be spotted more easily than using (often subtle) color differences alone.
 
 :::{figure} images/multiplex_centroids.jpg

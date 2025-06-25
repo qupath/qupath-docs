@@ -65,6 +65,6 @@ When the project is opened, these can be accessed directly via the {menuselectio
 
 The *classifiers* directory contains files related to classification within QuPath.
 
-- A **classes.json** file, which contains the default classifications available under the *Annotations* tab (used when training classifiers)
+- A **classes.json** file, which contains the default classifications available under the {guilabel}`Annotations` tab (used when training classifiers)
 - An optional **pixel_classifiers** subdirectory containing pixel classifiers relevant to the project
 - An optional **object_classifiers** subdirectory containing object classifiers relevant to the project

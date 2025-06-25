@@ -125,7 +125,8 @@ One approach is to calculate textures from the image surrounding each cell.
 This can be very effective, although computationally quite demanding whenever there are very large numbers of cells.
 
 A much faster alternative, which can give very good results, is to simply 'smooth' the existing measurements with the {menuselection}`Analyze --> Calculate features --> Add smoothed features` command. 
-This will supplement the existing measurements with new measurements calculated by taking a weighted average of the corresponding measurements of neighboring cells. A pop-up dialog will ask which regions to smooth, select all annotations.
+This will supplement the existing measurements with new measurements calculated by taking a weighted average of the corresponding measurements of neighboring cells.
+A pop-up dialog will ask which regions to smooth; in this case, we select all annotations.
 
 The weighting depends on distance, i.e. cells that are further away have less contribution to the result.
 Technically, distance is based on centroids and the weighting is calculated from a Gaussian function, where the parameter required in the dialog box is the [full-width-at-half-maximum](https://en.wikipedia.org/wiki/Full_width_at_half_maximum) of the Gaussian function.
@@ -154,9 +155,9 @@ Measurement map for smoothed Nucleus/Cell area ratio
 The next step is to begin annotating regions according to how the cells contained within them should be classified.
 
 This requires creating annotations as normal, using any of the tools (apart from the *Line*) described in {doc}`../starting/annotating`.
-It does not matter whether the cells are shown or hidden on the image at the time; it can be helpful to toggle the detections on and off with the *Show/hide detection objects* command {{ icon_detections }} while annotating.
+It does not matter whether the cells are shown or hidden on the image at the time; it can be helpful to toggle the detections on and off with the {guilabel}`Show/hide detection objects` command {{ icon_detections }} while annotating.
 
-After an annotation has been drawn, select the *Annotations* tab in the *Analysis pane* to the left, click on the appropriate classification from the list on the top right, and press the {guilabel}`Set class` button.
+After an annotation has been drawn, select the {guilabel}`Annotations` tab in the *Analysis pane* to the left, click on the appropriate classification from the list on the top right, and press the {guilabel}`Set class` button.
 You should see the number increase beside the class that you selected.
 This is the number of annotations that you have drawn and assigned to this class.
 
@@ -265,7 +266,8 @@ If you do this, QuPath will automatically calculate H-scores, in the range 0--30
 
 ## View the results
 
-That's it!  If you select the original, large annotation containing all the cells then the Ki67 labelling index show appear in the lower measurements section of the *Annotations* tab on the left of the screen as *Positive %*.
+That's it!
+If you select the original, large annotation containing all the cells then the Ki67 labelling index show appear in the lower measurements section of the {guilabel}`Annotations` tab on the left of the screen as *Positive %*.
 You can also generate results tables if necessary.
 
 :::{figure} images/ki67_auto_final_markup.jpg
