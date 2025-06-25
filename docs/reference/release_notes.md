@@ -147,7 +147,7 @@ For those of you who use ImageJs macro language, this also can be used within Qu
 The improved ImageJ script runner
 :::
 
-### QuPath and fiji built together
+### QuPath and Fiji built together
 
 While QuPath has long had ImageJ support, this was somewhat limited in only running in "original ImageJ mode", meaning there was limited support for Fiji plugins and no access to ImageJ2's new features.
 Building QuPath and Fiji together unlocks some of these powerful new features and many extra plugins!
