@@ -81,7 +81,7 @@ Updated 0.6.0 toolbar
 
 Alongside a shiny new icon design, tool buttons compatible with selection mode will now visually change when the selection mode is on to make it easier to see which mode is currently active.
 
-Lastly, the selection mode can now be quickly accessed by using the 'S' key when the main viewer is selected.
+Lastly, selection mode can now be quickly accessed by using the 'S' key when the main viewer is selected.
 
 ### Annotation names
 
