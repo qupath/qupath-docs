@@ -4,29 +4,15 @@
 The following tutorial will guide you through your first steps with QuPath, and introduce you to the main features, buttons and concepts you need to get started.
 You will see how to:
 
-- [First steps](#first-steps)
-  - [Starting out](#starting-out)
-    - [Running QuPath](#running-qupath)
-    - [Opening an image](#opening-an-image)
-    - [Setting the image type](#setting-the-image-type)
-    - [Seeing the image properties](#seeing-the-image-properties)
-    - [Setting the pixel size](#setting-the-pixel-size)
-  - [Looking around](#looking-around)
-    - [Zooming in \& out](#zooming-in--out)
-    - [Panning](#panning)
-  - [Introducing objects](#introducing-objects)
-    - [Drawing annotations](#drawing-annotations)
-    - [Identifying selections](#identifying-selections)
-    - [Changing colors \& properties](#changing-colors--properties)
-    - [Viewing measurements](#viewing-measurements)
-    - [Removing annotations](#removing-annotations)
-    - [Detecting cells](#detecting-cells)
-    - [Showing \& hiding](#showing--hiding)
-    - [Creating measurement tables](#creating-measurement-tables)
-  - [Finishing up](#finishing-up)
-    - [Saving data](#saving-data)
-    - [Reopening data](#reopening-data)
-  - [Recap \& outlook](#recap--outlook)
+- Appreciate the welcome window
+- Open an image
+- View image properties
+- Navigate around images
+- Manually annotate regions
+- Detect cells
+- View measurements
+- Export results
+- Save & reload your data
 
 ## Starting out
 
@@ -389,6 +375,7 @@ In such cases, the `.qpdata` file alone doesn't contain enough information - tha
 
 ## Recap & outlook
 
-If you got this far, great!  You've seen many of the main features of QuPath, and had your first encounter with the fundamental idea of working with objects.
+If you got this far, great!
+You've seen many of the main features of QuPath, and had your first encounter with the fundamental idea of working with objects.
 
 Even if not everything is clear yet, hopefully it gives enough motivation to read on through the documentation and see how powerful these ideas can become when put together.
