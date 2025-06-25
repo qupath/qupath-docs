@@ -139,7 +139,11 @@ To learn more about this, check out the [multidimensional image documentation](.
 
 ### ImageJ script runner
 
-For those of you who use ImageJs macro language, this also can be used within QuPath. Although an existing QuPath feature, the ImageJ script runner has had a visual update and some under-the-hood improvements. To learn more about how to use this feature, check out the [ImageJ script runner documentation](../advanced/imagej.md#running-macros--scripts).
+For those of you who use ImageJs macro language, good news!
+QuPath 0.6.0 features a new and improved ImageJ script runner.
+Now you have much more control over how data is sent to and received from ImageJ, as well as the ability to run both groovy scripts and ImageJ macros.
+The legacy ImageJ macro runner is still around if you need it, though.
+To learn more about how to use this feature, check out the [ImageJ script runner documentation](../advanced/imagej.md#running-macros--scripts).
 
 :::{figure} ../advanced/images/imagej_script_triangle.jpg
 :class: shadow-image full-image
