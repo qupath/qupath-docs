@@ -15,7 +15,7 @@ See [Migrating from QuPath Web OMERO extension](migrating) if you previously use
 :::{figure} images/omero_overview.jpg
 :class: shadow-image full-image
 
-QuPaths OMERO extension
+QuPath's OMERO extension
 :::
 
 ## Installing the extension
