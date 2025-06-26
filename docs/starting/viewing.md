@@ -78,6 +78,22 @@ The action depends on the object currently selected:
 
 Temporarily turn on the *Move* tool {{ icon_move }} (as described above).
 
+## Viewing multiple images
+
+QuPath supports working with several images together by creating a 'grid' of viewers, and opening a different image in each viewer.
+
+The options to create a grid are found under {menuselection}`View --> Multi-view --> Set grid size -->`.
+You can also access this menu by right-clicking on an existing viewer.
+
+The viewer that is currently selected is highlighted with a red boundary.
+There are also synchronization options, so that operations such as panning and zooming propagate to other viewers.
+
+:::{figure} images/multiview.jpg
+:class: shadow-image full-image
+
+Opening OS-2.ndpi and OS-3.ndpi side-by-side, as part of a 1 x 2 viewer grid
+:::
+
 ## Multidimensional images
 
 QuPath is *mostly* used with 2D images, sometimes with many different color channels.
