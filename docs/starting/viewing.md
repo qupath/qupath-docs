@@ -28,7 +28,7 @@ Use the scroll wheel to zoom in and out.
 
 The location of the cursor determines where will be centered whenever zooming - so it is a good idea to put the cursor on top of the area that you would like to zoom to.
 
-:::{TIP}
+:::{tip}
 **If everything seems inverted:**
 
 In some cases, it may appear that scrolling makes things move in the opposite direction from what is expected.
@@ -53,12 +53,17 @@ Just don't forget to hold down the {kbd}`Shift` key when scrolling to zoom in an
 
 ## Using a keyboard
 
-### {kbd}`Up / Down / Left / Right`
+### {kbd}`↑` {kbd}`↓` {kbd}`←` {kbd}`→`
 
-For most images, scroll the image in the direction pressed.
-For a TMA image, select the next core in the direction pressed.
+The behavior of arrow keys depends upon the dimensions of the image, and whether there is a tissue microarray grid present.
 
-### {kbd}`Shift + Up / Down`
+* For most 2D images, scroll the image in the direction pressed.
+* For a TMA image, select the next core in the direction pressed.
+* For a z-stack, {kbd}`↑` and {kbd}`↓` moves between z-slices
+* For a time series, {kbd}`←` and {kbd}`→` moves between time points
+
+
+### {kbd}`Shift+↑`, {kbd}`Shift+↓`
 
 Zoom in or out.
 
@@ -68,11 +73,49 @@ The action depends on the object currently selected:
 
 - If an annotation is selected, a dialog box will be shown to set the annotation properties
 - If a TMA core is selected, a dialog box will appear to allow notes to be entered quickly
-- Otherwise, the viewer will be centered on the object (think: *'center on enter'*)
 
 ### {kbd}`Spacebar`
 
-Temporarily turn on the *Move* tool (as described above).
+Temporarily turn on the *Move* tool {{ icon_move }} (as described above).
+
+## Viewing multiple images
+
+QuPath supports working with several images together by creating a 'grid' of viewers, and opening a different image in each viewer.
+
+The options to create a grid are found under {menuselection}`View --> Multi-view --> Set grid size -->`.
+You can also access this menu by right-clicking on an existing viewer.
+
+The viewer that is currently selected is highlighted with a red boundary.
+There are also synchronization options, so that operations such as panning and zooming propagate to other viewers.
+
+:::{figure} images/multiview.jpg
+:class: shadow-image full-image
+
+Opening OS-2.ndpi and OS-3.ndpi side-by-side, as part of a 1 x 2 viewer grid
+:::
+
+## Multidimensional images
+
+QuPath is *mostly* used with 2D images, sometimes with many different color channels.
+However, it has some support for z-stacks and time series.
+
+Controls to navigate z-slices and time points are shown on the top left of the viewer, where available.
+
+:::{figure} images/multidimensional_controls.jpg
+:class: shadow-image full-image
+
+ImageJ's 5D sample image 'Mitosis' opened in QuPath, showing navigation controls
+:::
+
+QuPath v0.6.0 also introduces a new option {menuselection}`View --> Show Z-project overlay`.
+This makes it possible to view different z-projection overlays when looking at a z-stack.
+
+:::{figure} images/multidimensional_max_project.jpg
+:class: shadow-image full-image
+
+Max projection overlay applied to ImageJ's 'Mitosis' image in QuPath
+:::
+
 
 ## Other input devices
 
