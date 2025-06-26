@@ -101,7 +101,7 @@ html_logo = 'docs/images/qupath_128.png'
 html_favicon = 'docs/images/QuPath.ico'
 
 # Variables for current QuPath version
-release = '0.6.0-rc5'
+release = '0.6.0'
 version = '0.6'
 java_version = '21'
 
