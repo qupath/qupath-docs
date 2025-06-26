@@ -12,6 +12,11 @@ Two other OMERO extensions exist:
 See [Migrating from QuPath Web OMERO extension](migrating) if you previously used the QuPath Web OMERO extension and want to make your QuPath projects usable by this extension.
 :::
 
+:::{figure} images/omero_overview.jpg
+:class: shadow-image full-image
+
+QuPath's OMERO extension
+:::
 
 ## Installing the extension
 
