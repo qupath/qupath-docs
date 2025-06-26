@@ -23,6 +23,14 @@ Rectangle, Ellipse, Line, Brush, Polygon, Wand.
 
 ## Annotation tools
 
+Within the QuPath toolbar, the annotation tools discussed in this section can be found on the left side.
+
+:::{figure} images/toolbar.png
+:class: shadow-image full-image
+
+QuPaths toolbar containing lots of commonly used tools
+:::
+
 ### {{ tool_rectangle }} Rectangle tool
 
 The most basic drawing tool is the *Rectangle tool*.  Click on the starting point within the image and drag the mouse to the opposite corner of the desired rectangle, then release.  Holding {kbd}`Shift` down while drawing a rectangle will constrain the shape to be square.
