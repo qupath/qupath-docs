@@ -243,7 +243,7 @@ writeImage(labelServer, path)
 ```
 
 :::{warning}
-It is usually neither necessary nor desireable to export labels for an entire whole slide image at full resolution -- it is also not possible for some image formats (the images are just too big).
+It is usually neither necessary nor desirable to export labels for an entire whole slide image at full resolution -- it is also not possible for some image formats (the images are just too big).
 
 You can adjust the `downsample` value to help deal with this, or choose `.ome.tif` as the extension to write an image pyramid.
 :::
