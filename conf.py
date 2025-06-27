@@ -159,6 +159,8 @@ myst_substitutions = {
     "icon_log": '<img src="../images/icons/LOG_VIEWER.png" class="inline-icon" />',
     "tool_log": '<img src="../images/icons/LOG_VIEWER.png" class="tool-icon" />',
 
+    "tool_pin" : '<img src="../images/icons/MAP_PIN.png" class="tool_icon"/>',
+
     "grid": '<img src="../images/icons/GRID.png" />',
     "icon_grid": '<img src="../images/icons/GRID.png" class="inline-icon" />',
 
