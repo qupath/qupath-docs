@@ -275,7 +275,8 @@ If you select the original, large annotation containing all the cells then the K
 Ki67 analysis results with cell classification
 :::
 
-The measurement table will give you more options to view your results, such as the using the scatter plot to visualize the relationship between the *Nucleus/Cell area ratio* and the *DAB OD mean* for each cell as seen below.
+The measurement table gives you more options to view your results.
+For example, you could use a scatter plot to visualize the relationship between the Nucleus/Cell area ratio and the DAB OD mean for each cell, as seen below.
 
 :::{figure} images/ki67_cell_classification_scatter_plot.png
 :class: shadow-image full-image
