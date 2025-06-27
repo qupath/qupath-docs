@@ -210,7 +210,7 @@ Note that this will take some time to download everything it needs, and the pack
 We also can't guarantee *everything* will work perfectly -- but most things we've tried seem to.
 
 :::{figure} images/qupath-fiji.jpg
-:class: shadow-image mid-image
+:class: shadow-image full-image
 
 QuPath built with Fiji
 :::
