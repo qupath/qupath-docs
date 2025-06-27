@@ -87,7 +87,7 @@ One way to view the measurements is by generating a results table, as described 
 :::{figure} images/ki67_auto_results_detections.jpg
 :class: shadow-image full-image
 
-Detection measurement table showing the cell features
+Detection measurements table showing the cell features
 :::
 
 However, another way to visualize cell measurements is by using the {menuselection}`Measure --> Show measurement maps` command.
@@ -281,7 +281,7 @@ For example, you could use a scatter plot to visualize the relationship between 
 :::{figure} images/ki67_cell_classification_scatter_plot.png
 :class: shadow-image full-image
 
-Detection measurement table with scatter plot view
+Detection measurements table with scatter plot view
 :::
 
 Provided that you saved your classifier, you can apply it to a similar image in the future. To do so, you can run the cell detection and feature calculations as before, and then apply your pre-trained classifier with {menuselection}`Classifier --> Load object classifier`.
