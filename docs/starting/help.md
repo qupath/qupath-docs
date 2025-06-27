@@ -15,7 +15,7 @@ If your needs for instruction are modest, it's always worthwhile to try hovering
 
 There are two other commands that can help - which both also have toolbar buttons.
 
-### {{ tool_pin_point }} QuPath tour
+### {{ tool_pin }} QuPath tour
 
 When uncertain about the QuPath interface or a feature, the **QuPath tour** under {menuselection}`Help → QuPath Tour` may help. It guides you though the interface by highlighting each element and offering a brief explanation of its function.
 
