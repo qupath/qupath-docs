@@ -87,7 +87,7 @@ One way to view the measurements is by generating a results table, as described 
 :::{figure} images/ki67_auto_results_detections.jpg
 :class: shadow-image full-image
 
-Results table showing cell features
+Detection measurement table showing the cell features
 :::
 
 However, another way to visualize cell measurements is by using the {menuselection}`Measure --> Show measurement maps` command.
@@ -267,13 +267,20 @@ If you do this, QuPath will automatically calculate H-scores, in the range 0--30
 ## View the results
 
 That's it!
-If you select the original, large annotation containing all the cells then the Ki67 labelling index show appear in the lower measurements section of the {guilabel}`Annotations` tab on the left of the screen as *Positive %*.
-You can also generate results tables if necessary.
+If you select the original, large annotation containing all the cells then the Ki67 labelling index will show in the lower measurements section of the {guilabel}`Annotations` tab on the left of the screen as *Positive %*.
 
 :::{figure} images/ki67_auto_final_markup.jpg
 :class: shadow-image full-image
 
 Ki67 analysis results with cell classification
+:::
+
+The measurement table will give you more options to view your results, such as the using the scatter plot to visualize the relationship between the *Nucleus/Cell area ratio* and the *DAB OD mean* for each cell as seen below.
+
+:::{figure} images/ki67_cell_classification_scatter_plot.png
+:class: shadow-image full-image
+
+Detection measurement table with scatter plot view
 :::
 
 Provided that you saved your classifier, you can apply it to a similar image in the future. To do so, you can run the cell detection and feature calculations as before, and then apply your pre-trained classifier with {menuselection}`Classifier --> Load object classifier`.
