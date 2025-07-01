@@ -9,4 +9,5 @@ exporting_annotations
 command_line
 omero
 view_tracker
+tips
 ```
