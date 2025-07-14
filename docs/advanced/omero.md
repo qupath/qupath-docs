@@ -118,7 +118,7 @@ The extension can use three different methods (called 'pixel APIs') to retrieve 
 
   
   - Note that two images belonging to two different groups of the same server cannot currently be read at the same time with the Ice pixel API (see [this issue](https://github.com/ome/omero-gateway-java/issues/98)). Also, consecutively opening images of different groups can create problems (see [this issue](https://github.com/ome/omero-gateway-java/issues/99)).
-- The **pixel data microservice** API: this method can read every image and access raw pixel values, without the limitations of the Ice pixel API. However, you need to install [this plugin](https://github.com/glencoesoftware/omero-ms-pixel-buffer) on the OMERO server. If this plugin is installed and the OMERO extension cannot detect it, check that the port indicated in the settings of the extension corresponds to the port used by the microservice on the OMERO server (by default `8082`).
+- The **pixel data microservice** API: this method can read every image and access raw pixel values, without the limitations of the Ice pixel API. However, you need to install [this plugin](https://github.com/glencoesoftware/omero-ms-pixel-buffer) on the OMERO server. If this plugin is installed and the OMERO extension cannot detect it, check that the port indicated in the settings of the extension corresponds to the port used by the microservice on the OMERO server. The default port (`443`) is the default `https` port. If your server uses `http`, specify `80`. If you specified a different port in the microservice configuration (like for example `8082`), specify this port.
 
   :::{figure} images/omero_pixel_ms_settings.png
   :class: shadow-image small-image
