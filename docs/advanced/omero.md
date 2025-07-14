@@ -389,7 +389,7 @@ In the example above, the user `user` is connected to the first server (<http://
 
 Every feature of the extension can be run from a Groovy script with or without the user interface.
 
-Take a look at [this folder](https://github.com/qupath/qupath-extension-omero/tree/main/sample-scripts) to see examples (opening images, sending / importing data...).
+Take a look at [this folder](https://github.com/qupath/qupath-extension-omero/tree/main/src/main/resources/qupath/ext/omero/gui/sample-scripts) to see examples (opening images, sending / importing data...).
 
 
 (migrating)=
