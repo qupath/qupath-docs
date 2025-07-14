@@ -209,6 +209,10 @@ If the QuPath image contains annotation or detection measurements (see {menusele
 Annotation measurements on the OMERO server
 :::
 
+:::{caution}
+Due to the way the measurement exporter was created, it is (currently) only possible to send annotation or detection measurements when a QuPath project is open.
+:::
+
 ### Sending key-value pairs
 
 Each image of a QuPath project has metadata (which consist of key-value pairs) attached to it. This metadata can be sent to the OMERO server by clicking on {menuselection}`OMERO --> Send to OMERO --> Send key-value pairs`.
