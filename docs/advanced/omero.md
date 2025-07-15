@@ -393,7 +393,15 @@ In the example above, the user `user` is connected to the first server (<http://
 
 Every feature of the extension can be run from a Groovy script with or without the user interface.
 
-Take a look at [this folder](https://github.com/qupath/qupath-extension-omero/tree/main/src/main/resources/qupath/ext/omero/gui/sample-scripts) to see examples (opening images, sending / importing data...).
+Some sample scripts have been created to show the basic features of the extension. They are accessible:
+- Through the user interface, by clicking on {menuselection}`Extensions --> OMERO --> Sample scripts`
+
+  :::{figure} images/omero_sample_scripts.png
+  :class: shadow-image small-image
+  Opening a sample script
+  :::
+
+- In [this folder](https://github.com/qupath/qupath-extension-omero/tree/main/src/main/resources/qupath/ext/omero/gui/sample-scripts).
 
 
 (migrating)=
