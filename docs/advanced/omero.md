@@ -330,7 +330,7 @@ In OMERO, key-value pairs can be grouped by a `namespace`. You can select which 
 QuPath metadata can only have unique keys. Therefore, you can specify what to do when a duplicate happens.
 
 :::{Note}
-When importing an image to a QuPath project from the browser (see the [Browsing an OMERO server](omero-browsing) section), key-value pairs of the default namespace and the parent dataset ID/name of the OMERO image are automatically imported. This can be disabled by unchecking {menuselection}`Edit --> Preferences... --> OMERO extension --> Automatically import key-value pairs of default namespace and parent dataset information`.
+When importing an image to a QuPath project from the browser (see the [Browsing an OMERO server](omero-browsing) section), key-value pairs of the default namespace and the parent entity ID/name of the OMERO image are automatically imported. This can be disabled by unchecking {menuselection}`Edit --> Preferences... --> OMERO extension --> Automatically import key-value pairs of default namespace and parent entities information`.
 :::
 
 :::{caution}
