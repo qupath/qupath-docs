@@ -116,9 +116,14 @@ The extension can use three different methods (called 'pixel APIs') to retrieve 
   Setting the address and port of an OMERO.server instance
   :::
 
-  - You can also set on this window the number of parallel ICE readers. This corresponds to the maximum number of workers that can simultaneously read an image. Generally, setting a higher value increases the reading process. However, this may also overload the OMERO server, especially if it runs on lower-end hardware. Use a higher value only if you are sure that the OMERO server can handle it.
+  - You can also set on this window the number of parallel ICE readers. This corresponds to the maximum number of workers that can simultaneously read an image. Generally, setting a higher value results in faster image reading. However, this may also overload the OMERO server, especially if it runs on lower-end hardware.
+
+  :::{caution}
+  Define a higher number of ICE readers only if you are sure that the OMERO server can handle it. If too many users with too many readers access the same OMERO server at the same time, the server may crash.
+  :::
+
   - Note that two images belonging to two different groups of the same server cannot currently be read at the same time with the Ice pixel API (see [this issue](https://github.com/ome/omero-gateway-java/issues/98)). Also, consecutively opening images of different groups can create problems (see [this issue](https://github.com/ome/omero-gateway-java/issues/99)).
-- The **pixel data microservice** API: this method can read every image and access raw pixel values, without the limitations of the Ice pixel API. However, you need to install [this plugin](https://github.com/glencoesoftware/omero-ms-pixel-buffer) on the OMERO server. If this plugin is installed and the OMERO extension cannot detect it, check that the port indicated in the settings of the extension corresponds to the port used by the microservice on the OMERO server. The default port (`443`) is the default `https` port. If your server uses `http`, specify `80`. If you specified a different port in the microservice configuration (like for example `8082`), specify this port.
+- The **pixel data microservice** API: this method can read every image and access raw pixel values, without the limitations of the Ice pixel API. However, you need to install [the OMERO Pixel Data Microservice](https://github.com/glencoesoftware/omero-ms-pixel-buffer) on the OMERO server. If this plugin is installed and the OMERO extension cannot detect it, check that the port indicated in the settings of the extension corresponds to the port used by the microservice on the OMERO server. The default port (`443`) is the default `https` port. If your server uses `http`, specify `80`. If you specified a different port in the microservice configuration (like for example `8082`), specify this port.
 
   :::{figure} images/omero_pixel_ms_settings.png
   :class: shadow-image small-image
