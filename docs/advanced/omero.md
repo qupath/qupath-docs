@@ -116,9 +116,14 @@ The extension can use three different methods (called 'pixel APIs') to retrieve 
   Setting the address and port of an OMERO.server instance
   :::
 
-  
+  - You can also set on this window the number of parallel ICE readers. This corresponds to the maximum number of workers that can simultaneously read an image. Generally, setting a higher value results in faster image reading. However, this may also overload the OMERO server, especially if it runs on lower-end hardware.
+
+  :::{caution}
+  Define a higher number of ICE readers only if you are sure that the OMERO server can handle it. If too many users with too many readers access the same OMERO server at the same time, the server may crash.
+  :::
+
   - Note that two images belonging to two different groups of the same server cannot currently be read at the same time with the Ice pixel API (see [this issue](https://github.com/ome/omero-gateway-java/issues/98)). Also, consecutively opening images of different groups can create problems (see [this issue](https://github.com/ome/omero-gateway-java/issues/99)).
-- The **pixel data microservice** API: this method can read every image and access raw pixel values, without the limitations of the Ice pixel API. However, you need to install [this plugin](https://github.com/glencoesoftware/omero-ms-pixel-buffer) on the OMERO server. If this plugin is installed and the OMERO extension cannot detect it, check that the port indicated in the settings of the extension corresponds to the port used by the microservice on the OMERO server (by default `8082`).
+- The **pixel data microservice** API: this method can read every image and access raw pixel values, without the limitations of the Ice pixel API. However, you need to install [the OMERO Pixel Data Microservice](https://github.com/glencoesoftware/omero-ms-pixel-buffer) on the OMERO server. If this plugin is installed and the OMERO extension cannot detect it, check that the port indicated in the settings of the extension corresponds to the port used by the microservice on the OMERO server. The default port (`443`) is the default `https` port. If your server uses `http`, specify `80`. If you specified a different port in the microservice configuration (like for example `8082`), specify this port.
 
   :::{figure} images/omero_pixel_ms_settings.png
   :class: shadow-image small-image
@@ -207,6 +212,10 @@ If the QuPath image contains annotation or detection measurements (see {menusele
 :class: shadow-image small-image
 
 Annotation measurements on the OMERO server
+:::
+
+:::{caution}
+Due to the way the measurement exporter was created, it is (currently) only possible to send annotation or detection measurements when a QuPath project is open.
 :::
 
 ### Sending key-value pairs
@@ -326,7 +335,7 @@ In OMERO, key-value pairs can be grouped by a `namespace`. You can select which 
 QuPath metadata can only have unique keys. Therefore, you can specify what to do when a duplicate happens.
 
 :::{Note}
-When importing an image to a QuPath project from the browser (see the [Browsing an OMERO server](omero-browsing) section), key-value pairs of the default namespace and the parent dataset ID/name of the OMERO image are automatically imported. This can be disabled by unchecking {menuselection}`Edit --> Preferences... --> OMERO extension --> Automatically import key-value pairs of default namespace and parent dataset information`.
+When importing an image to a QuPath project from the browser (see the [Browsing an OMERO server](omero-browsing) section), key-value pairs of the default namespace and the parent entity ID/name of the OMERO image are automatically imported. This can be disabled by unchecking {menuselection}`Edit --> Preferences... --> OMERO extension --> Automatically import key-value pairs of default namespace and parent entities information`.
 :::
 
 :::{caution}
@@ -389,7 +398,15 @@ In the example above, the user `user` is connected to the first server (<http://
 
 Every feature of the extension can be run from a Groovy script with or without the user interface.
 
-Take a look at [this folder](https://github.com/qupath/qupath-extension-omero/tree/main/sample-scripts) to see examples (opening images, sending / importing data...).
+Some sample scripts have been created to show the basic features of the extension. They are accessible:
+- Through the user interface, by clicking on {menuselection}`Extensions --> OMERO --> Sample scripts`
+
+  :::{figure} images/omero_sample_scripts.png
+  :class: shadow-image small-image
+  Opening a sample script
+  :::
+
+- In [this folder](https://github.com/qupath/qupath-extension-omero/tree/main/src/main/resources/qupath/ext/omero/gui/sample-scripts).
 
 
 (migrating)=
