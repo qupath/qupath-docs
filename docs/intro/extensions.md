@@ -69,6 +69,9 @@ If you are a QuPath extension developer and want to create your own catalog, you
 Sometimes, the extension you want to install is not present in a catalog.
 In that case, see the [Managing extensions without the extension manager](managing-without-manager) section.
 
+:::{Tip}
+You can find some useful community-provided catalogs on the [image.sc forum](https://forum.image.sc/tag/qupath-catalog).
+:::
 
 ### Installing extensions
 
