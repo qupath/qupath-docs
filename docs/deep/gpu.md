@@ -219,7 +219,7 @@ println ai.djl.engine.Engine.getEngine("PyTorch")
 
 If all has gone well, you should see something like this:
 
-```cmd
+```bat
 INFO: PyTorch graph executor optimizer is enabled, this may impact your inference latency and throughput. See: https://docs.djl.ai/docs/development/inference_performance_optimization.html#graph-executor-optimization
 INFO: Number of inter-op threads is 4
 INFO: Number of intra-op threads is 4
