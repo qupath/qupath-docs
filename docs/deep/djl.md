@@ -89,7 +89,7 @@ Here, we access all the artifacts available for object detection, and select the
 import qupath.ext.djl.*
 
 var artifacts = DjlZoo.listObjectDetectionModels()
-var firstArtifact = artifacts[0]
+var firstArtifact = artifacts[0].getDefaultArtifact()
 println(firstArtifact)
 ```
 
@@ -99,7 +99,7 @@ We can see a bit more by converting the artifact to JSON:
 import qupath.ext.djl.*
 
 var artifacts = DjlZoo.listObjectDetectionModels()
-var firstArtifact = artifacts[0]
+var firstArtifact = artifacts[0].getDefaultArtifact()
 var json = GsonTools.getInstance(true).toJson(firstArtifact)
 println(json)
 ```
@@ -142,7 +142,7 @@ boolean allowDownsamples = true
 
 // Get an object detection model from the zoo
 var artifacts = DjlZoo.listObjectDetectionModels()
-var artifact = artifacts[0]
+var artifact = artifacts[0].getDefaultArtifact()
 
 // Load the model
 var criteria = DjlZoo.loadModel(artifact, allowDownsamples)
@@ -192,7 +192,7 @@ import qupath.ext.djl.*
 // Get a semantic segmentation model
 boolean allowDownloads = true
 var artifacts = DjlZoo.listSemanticSegmentationModels()
-var artifact = artifacts[0]
+var artifact = artifacts[0].getDefaultArtifact()
 println artifact
 
 // Apply the model
@@ -224,8 +224,8 @@ import ai.djl.Application.CV
 
 // Get all the image generation models with an 'artist' property
 // Note that other image generation models may not work (since they expect different inputs)
-var artifacts = DjlZoo.listModels(CV.IMAGE_GENERATION)
-artifacts = artifacts.findAll(a -> a.properties.getOrDefault("artist", null))
+var models = DjlZoo.listModels(CV.IMAGE_GENERATION)
+var artifacts = models.findAll(a -> a.getDefaultArtifact().properties.getOrDefault("artist", null))[0].listArtifacts()
 
 // Get an image
 // Note: this shouldn't be too big! Define a maximum dimension
@@ -290,7 +290,8 @@ import ai.djl.Application.CV
 import qupath.lib.gui.viewer.overlays.*
 
 // Get all the image generation models with an 'artist' property
-var artifacts = DjlZoo.listModels(CV.IMAGE_GENERATION)
+var models = DjlZoo.listModels(CV.IMAGE_GENERATION)
+var artifacts = models.findAll(a -> a.getDefaultArtifact().properties.getOrDefault("artist", null))[0].listArtifacts()
 var artifact = artifacts.find(a -> a.properties["artist"] == "vangogh")
 
 // Get an image
