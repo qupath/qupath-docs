@@ -120,19 +120,31 @@ One way is to double-click on individual cells to select them (make sure the *Mo
 
 Another way to view all the measurements of all the cells is by selecting {menuselection}`Measure --> Show detection measurements`; this command is also accessible from the *Measurement table* icon in the toolbar {{ icon_table }}.
 
-This should open up a results table with the measurements of all cells.
-From this, it is possible to generate histograms, sort columns, select individual cells (which will then be selected on the image) and to export the measurements to a CSV file for use elsewhere.
-
 :::{figure} images/ki67_detecting_results_detections.png
 :class: shadow-image full-image
 
-Cell detection results table
+Detection measurements table
+:::
+
+This should open up a results table with the measurements of all cells.
+It is possible to generate histograms, sort columns, select individual cells (which will then be selected on the image) and to export the measurements to a CSV file for use elsewhere. Toggle "Show images" button to hide the detection thumbnail for each row and select "Show Plots" to show the histogram tab.
+
+:::{figure} images/ki67_detecting_results_detections_area_plot.png
+:class: shadow-image full-image
+
+Detection measurements table with area histogram and thumbnails hidden
 :::
 
 One particular use of this table is to help determine what threshold is most appropriate to apply to the *Nucleus: DAB OD mean* measurements to determine if a cell is positive or not.
 Since this measurement is included in the table, a histogram can be generated for this value from all detected cells.
 Because most cells in this example are negative, the image below shows a large peak around 0 and a long tail to the right.
 A threshold of around 0.1 looks like it is likely to perform well (note, the threshold that was actually used was 0.2... therefore we should expect few, false positives, but we may have missed a small number of some true positive cells and instead classified them as negative).
+
+:::{figure} images/ki67_detecting_results_detections_OD_plot.png
+:class: shadow-image full-image
+
+Detection measurements table with Nucleus DAB OD mean histogram
+:::
 
 :::{note}
 The fact that a considerable number of the cells appear to have *negative* DAB OD staining (i.e. values below zero) -- which ought not to be possible -- in the histogram suggests that the stain separation has not been perfect.
