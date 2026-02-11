@@ -127,7 +127,7 @@ Detection measurements table
 :::
 
 This should open up a results table with the measurements of all cells.
-It is possible to generate histograms, sort columns, select individual cells (which will then be selected on the image) and to export the measurements to a CSV file for use elsewhere. Toggle "Show images" button to hide the detection thumbnail for each row and select "Show Plots" to show the histogram tab.
+It is possible to generate histograms, sort columns, select individual cells (which will then be selected on the image) and to export the measurements to a CSV file for use elsewhere. Toggle {kbd}`Show images` button to hide the detection thumbnail for each row and select {kbd}`Show Plots` to show the histogram tab.
 
 :::{figure} images/ki67_detecting_results_detections_area_plot.png
 :class: shadow-image full-image
