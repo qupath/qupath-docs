@@ -24,7 +24,7 @@ Some key extensions from the QuPath team are:
 
 You can also find extensions developed outside of the QuPath team:
 
-* On the [user forum](https://forum.image.sc/tag/qupath), especially by searching the tag [`qupath-catalog`](https://forum.image.sc/tag/qupath-catalog)
+* On the [user forum](https://forum.image.sc/tag/qupath), especially by searching the tag [`qupath-catalog`](https://forum.image.sc/tag/qupath-catalog).
 * By searching [for QuPath on GitHub](https://github.com/search?q=qupath).
 :::
 
