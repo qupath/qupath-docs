@@ -24,7 +24,7 @@ Goldsborough, Thibaut, et al. A novel channel invariant architecture for the seg
 
 ## Requirements
 
-- QuPath [version 0.6](https://qupath.github.io/) (installation instructions [here](https://qupath.readthedocs.io/en/0.4/docs/intro/installation.html))
+- QuPath version 0.6 or later ([installation instructions](/docs/intro/installation.html))
 - At least one whole slide image
 - [Deep Java Library QuPath Extension](https://github.com/qupath/qupath-extension-djl)
 - [InstanSeg QuPath Extension](https://github.com/qupath/qupath-extension-instanseg)

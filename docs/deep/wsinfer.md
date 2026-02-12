@@ -17,7 +17,7 @@ Kaczmarzyk, J.R., O’Callaghan, A., Inglis, F. et al. Open and reusable deep le
 
 ## Requirements
 
-- QuPath [version 0.6](https://qupath.github.io/) (installation instructions [here](https://qupath.readthedocs.io/en/0.6/docs/intro/installation.html)).
+- QuPath v0.6 or later ([installation instructions](https://qupath.readthedocs.io/en/stable/docs/intro/installation.html)).
 - At least one whole slide image
 - [WSInfer QuPath Extension](https://github.com/qupath/qupath-extension-wsinfer/releases)
 - PyTorch (this can be downloaded while using the extension)
