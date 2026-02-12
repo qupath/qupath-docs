@@ -17,7 +17,7 @@ Kaczmarzyk, J.R., O’Callaghan, A., Inglis, F. et al. Open and reusable deep le
 
 ## Requirements
 
-- QuPath [version 0.4](https://qupath.github.io/) (installation instructions [here](https://qupath.readthedocs.io/en/0.4/docs/intro/installation.html)).
+- QuPath [version 0.6](https://qupath.github.io/) (installation instructions [here](https://qupath.readthedocs.io/en/0.6/docs/intro/installation.html)).
 - At least one whole slide image
 - [WSInfer QuPath Extension](https://github.com/qupath/qupath-extension-wsinfer/releases)
 - PyTorch (this can be downloaded while using the extension)
@@ -29,7 +29,7 @@ If you have an NVIDIA GPU and want to use it with WSInfer, you will need to inst
 
 ## Set-up
 
-With QuPath installed and running, drag and drop the WSInfer extension into the application and restart QuPath.
+With QuPath installed and running, use the [extension manager](/docs/intro/extensions) to install the WSInfer extension from the QuPath catalog.
 Once installed, open up an image and run the extension via {menuselection}`Extensions --> WSInfer`.
 You should see the window below:
 
