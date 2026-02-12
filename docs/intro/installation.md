@@ -23,7 +23,7 @@ QuPath requires 64-bit Windows.
 Running QuPath on 32-bit Windows is not supported.
 :::
 
-#### Installing the Windows .msi package
+### Installing the Windows .msi package
 Double-click to launch the installer.
 
 Windows tries to protect you from software it does not know, so you'll probably see a scary-looking warning whenever the QuPath installer is first run:
@@ -57,7 +57,7 @@ If the QuPath installer does not start at all, you may not have administrator pr
 Try downloading the `.zip` file instead, which should not need such privileges.
 :::
 
-#### Installing the Windows .zip package
+### Installing the Windows .zip package
 Right-click on the .zip file and choose to extract all the contents.
 This should give you a normal folder containing QuPath's files.
 
@@ -70,7 +70,7 @@ The first time you try this, you might see similar warning dialogs to those show
 On Windows, you can either run `QuPath.exe` or `QuPath (console).exe`.
 
 The difference is that `QuPath (console).exe` will also open a small window that contains QuPath's log messages.
-The console can be useful for debugging problems, or when using the {ref}`Command line`.
+The console can be useful for debugging problems, or when using the {ref}`docs/advanced/command_line:Command line`.
 :::
 
 :::{admonition} QuPath won't launch!

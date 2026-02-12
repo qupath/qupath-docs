@@ -2,11 +2,6 @@
 
 {doc}`Objects <objects>` in QuPath need to be stored somewhere - and that place is the *object hierarchy*.
 
-:::{important}
-The hierarchy behavior has changed in v0.2.0! <br />
-If you are familiar with the old behavior, be sure to read {ref}`Differences from QuPath v0.1.2`.
-:::
-
 The name comes from the fact that the objects are all stored in a hierarchical, tree-like structure.
 This is achieved by each object having having a reference to:
 
@@ -128,8 +123,8 @@ This is crucial because the `PathObjectHierarchy` class uses spatial caching and
 
 In QuPath v0.1.2, the hierarchy was resolved automatically (without asking) and this was *essential* to make sense of the measurements.
 
-The behavior of the object hierarchy has changed in QuPath v0.2.0, with the aim of making the software faster, more powerful, and more intuitive.
-In v0.2.0 the details of the hierarchy can very often be ignored, and exists only to support sophisticated workflows where it might be needed.
+The behavior of the object hierarchy changed in QuPath v0.2.0, with the aim of making the software faster, more powerful, and more intuitive.
+In v0.2.0 and onwards, the details of the hierarchy can very often be ignored, and exists only to support sophisticated workflows where it might be needed.
 
 [This blog post](https://petebankhead.github.io/qupath/2019/11/17/changing-the-hierarchy.html) describes the reasons why it changed.
 To read about the earlier behavior see [Object hierarchies](https://github.com/qupath/qupath/wiki/Object-hierarchies) on the old wiki.

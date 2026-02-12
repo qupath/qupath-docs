@@ -20,7 +20,7 @@ In some cases, density maps can even be a replacement for {doc}`pixel_classifica
 
 :::{warning}
 Like most commands in QuPath, Density Maps are currently calculated only in 2D.
-And, like many other commands, you should create Density Maps within a {ref}`project <Projects>` if you want to reuse them later.
+And, like many other commands, you should create Density Maps within a {ref}`project <docs/tutorials/projects:Projects>` if you want to reuse them later.
 :::
 
 ## Getting started with density maps
@@ -61,7 +61,7 @@ Hovering your mouse over any option should provide some help text.
 
 The {guilabel}`Object type` and {guilabel}`Main class` define which objects will contribute to the density map in some way.
 
-Left to the defaults, the density map will make use of all detection objects (which {ref}`includes cells <types of object>`) regardless of their classification.
+Left to the defaults, the density map will make use of all detection objects (which {ref}`includes cells <docs/concepts/objects:types of object>`) regardless of their classification.
 
 If I choose the {guilabel}`Main class` to be **Tumor**, then the density map will *only* include detections that are classified as **Tumor**.
 

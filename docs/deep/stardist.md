@@ -403,7 +403,7 @@ def stardist = StarDist2D.builder(pathModel)
 
 Furthermore, we can use preprocessing to convert images to become more compatible with pretrained StarDist models.
 For example, `dsb2018_heavy_augment.pb` works very well for fluorescence microscopy images, but only supports a single input channel.
-However, by applying {ref}`color deconvolution<Separating stains>` as preprocessing we can convert a 3-channel brightfield image to a single-channel image that *looks* much more like a fluorescence image.
+However, by applying {ref}`color deconvolution<docs/tutorials/separating_stains:Separating stains>` as preprocessing we can convert a 3-channel brightfield image to a single-channel image that *looks* much more like a fluorescence image.
 If needed, we can add extra things like filters to reduce noise as well.
 
 ```groovy

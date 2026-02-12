@@ -65,7 +65,7 @@ Example of command line build success
 **That's it!**
 You can find QuPath inside the `./build/dist/` subdirectory.
 
-If it *didn't* go so well, check out [](#Troubleshooting).
+If it *didn't* go so well, check out {ref}`docs/reference/building:Troubleshooting`.
 
 :::{admonition} Which Java version do I need?
 :class: tip
@@ -181,7 +181,7 @@ Check out the docs associated with the specific version if this is the case.
 (building-qupath-fiji)=
 ## Building with Fiji
 By default, QuPath embeds a version of [ImageJ](https://imagej.net/software/imagej/).
-This allows you to [send image regions to ImageJ, and even use custom ImageJ plugins](ImageJ).
+This allows you to [send image regions to ImageJ, and even use custom ImageJ plugins](docs/advanced/imagej:ImageJ).
 
 [Fiji](https://fiji.sc) is a special distribution of ImageJ that contains a *lot* of custom plugins, and many extra features and other changes.
 

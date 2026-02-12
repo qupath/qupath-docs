@@ -16,7 +16,7 @@
 QuPath supports images of different kinds.
 
 Some commands will work on almost any kind of image without complaint, while some need to know a bit more about the image.
-This information can be provided by {ref}`setting the image type <Setting the image type>`.
+This information can be provided by {ref}`setting the image type <docs/starting/first_steps:Setting the image type>`.
 
 Typically the type will be either *Brightfield* or *Fluorescence*.
 
@@ -118,7 +118,7 @@ The stain vectors are key to color deconvolution.
 They ought to give a normalized representation of the color of each 'pure' stain in the image, without regard for staining intensity.
 A similar color vector characterizing the background encodes what 'no stain' looks like, and also plays an important role in the calculations.
 
-When {ref}`setting the image type <Setting the image type>` to *Brightfield (H&E)*, *Brightfield (H-DAB)* or *Brightfield (Other)*, QuPath will set default stain vectors to characterize hematoxylin, eosin or DAB.
+When {ref}`setting the image type <docs/starting/first_steps:Setting the image type>` to *Brightfield (H&E)*, *Brightfield (H-DAB)* or *Brightfield (Other)*, QuPath will set default stain vectors to characterize hematoxylin, eosin or DAB.
 However, you may see better results with some commands (e.g. *Cell detection*) by setting the stain and background vectors explicitly to better match the actual staining in the image.
 
 This requires two steps:

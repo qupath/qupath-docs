@@ -40,7 +40,7 @@ templates_path = ['_templates']
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', "env", ".env", ".venv", "README.md"]
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -93,12 +93,14 @@ myst_enable_extensions = [
     "tasklist",
 ]
 
+autosectionlabel_prefix_document = True
+autosectionlabel_maxdepth = 3
 
 highlight_language = 'groovy'
 
 html_logo = 'docs/images/qupath_128.png'
 
-html_favicon = 'docs/images/QuPath.ico'
+html_favicon = 'docs/images/qupath.ico'
 
 # Variables for current QuPath version
 release = '0.6.0'

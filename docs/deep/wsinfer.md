@@ -153,7 +153,7 @@ wsinfer
 
 The QuPath WSInfer extension is scriptable, which makes it much easier to apply across multiple images.
 
-When a model is run, the command parameters are stored in the [workflow](workflows) so that a [script can be generated automatically](workflows-to-scripts).
+When a model is run, the command parameters are stored in the [workflow](docs/scripting/workflows:Workflows) so that a [script can be generated automatically](docs/scripting/workflows_to_scripts:Workflows to scripts).
 
 An example script would be
 
