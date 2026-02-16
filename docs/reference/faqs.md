@@ -131,7 +131,7 @@ It is designed so that other machine learning libraries could potentially be use
 
 ### Why do I see a warning when I try to install QuPath?
 
-See {ref}`Installation`.
+See {ref}`docs/intro/installation:Installation`.
 
 (set-max-memory)=
 
@@ -185,11 +185,11 @@ See {doc}`../intro/formats` for details about which formats are supported, and t
 ### {menuselection}`File --> Open URI...` doesn't work for me!
 
 {menuselection}`File --> Open URI...` requires a compatible extension needs to read images hosted remotely.
-See {ref}`Open URI` for more details.
+See {ref}`docs/intro/formats:Open URI` for more details.
 
 ### Why does my image open but look weird?
 
-See {ref}`Why can't QuPath open my image?`
+See {ref}`docs/reference/faqs:Why can't QuPath open my image?`
 
 ### Is it possible to view slide labels?
 

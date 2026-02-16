@@ -13,7 +13,7 @@ To read up on the latest changes, check out the [release notes](https://github.c
 ## Quick links
 
 Can't install QuPath?
-: Check out {ref}`installation` for instructions & solutions to common problems
+: Check out {ref}`docs/intro/installation:installation` for instructions & solutions to common problems
 
 Images won't open?
 : See {ref}`supported-image-formats` to find out which formats *should* work - and ways to increase this.
