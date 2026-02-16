@@ -1,5 +1,7 @@
 # Installation
 
+To install QuPath, you should first download the appropriate version for your operating system (more on that below) from the [QuPath website](https://qupath.github.io/).
+
 QuPath isn't currently a signed application.
 Over the past few years, security changes on Windows & Mac make installing any unsigned application a bit more difficult.
 This page can help you navigate the challenges.
