@@ -157,7 +157,8 @@ To do this, check the [PyTorch + CUDA combination required for QuPath](gpu-versi
 If you want PyTorch 2.7.1:
 
 ```sh
-mamba install pytorch==2.7.1 torchvision torchaudio pytorch-cuda=12.8 -c pytorch -c nvidia
+mamba install pip
+pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu128
 ```
 
 You can now [verify your PyTorch installation](https://pytorch.org/get-started/locally/#mac-verification) if needed.
