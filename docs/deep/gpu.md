@@ -148,8 +148,8 @@ Then you should *activate* the environment
 mamba activate qupath-pytorch
 ```
 
-At this point, you really only need to install CUDA and cuDNN -- but to make things easier, we'll install PyTorch entirely, and rely upon mamba to figure out the necessary dependencies.
-This increases the chances we end up with a working combination
+At this point, you really only need to install CUDA and cuDNN -- but to make things easier, we'll install PyTorch entirely, and rely on pip to figure out the necessary dependencies.
+This increases the chances we end up with a working combination.
 
 To do this, check the [PyTorch + CUDA combination required for QuPath](gpu-versions-pytorch) and then the [PyTorch installation instructions](https://pytorch.org/get-started/previous-versions/) -- replacing `conda` with `mamba` if you like.
 
