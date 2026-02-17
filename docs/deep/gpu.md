@@ -137,7 +137,7 @@ For our purposes, `conda` and `mamba` are interchangeable and the distribution s
 You can create a conda (/mamba) environment by typing the following and pressing {kbd}`Enter`:
 
 ```sh
-mamba create -n qupath-pytorch
+mamba create -n qupath-pytorch python==3.13
 ```
 
 Here, `qupath-pytorch` is the name of the environment (you can call it something else).
