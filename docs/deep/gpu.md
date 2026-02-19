@@ -81,6 +81,7 @@ The following sections attempt to outline the versions (as best I can figure the
 
 | QuPath | DJL     | PyTorch | CUDA |
 |--------|---------|---------|------|
+| v0.7.x | 0.36.0  | 2.7.1   | 12.8 |
 | v0.6.x | 0.33.0  | 2.5.1   | 12.4 |
 | v0.5.x | 0.24.0  | 2.0.1   | 11.8 |
 | v0.4.x | 0.20.0  | 1.13.0  | 11.7 |
@@ -91,6 +92,7 @@ The following sections attempt to outline the versions (as best I can figure the
 
 | QuPath | DJL     | TensorFlow | CUDA |
 |--------|---------|------------|------|
+| v0.7.x | 0.36.0  | 2.16.1     | 12.1 |
 | v0.6.x | 0.33.0  | 2.16.1     | 12.1 |
 | v0.5.x | 0.24.0  | 2.10.1     | 11.3 |
 | v0.4.x | 0.20.0  | 2.7.4      | 11.2 |
@@ -135,7 +137,7 @@ For our purposes, `conda` and `mamba` are interchangeable and the distribution s
 You can create a conda (/mamba) environment by typing the following and pressing {kbd}`Enter`:
 
 ```sh
-mamba create -n qupath-pytorch
+mamba create -n qupath-pytorch python==3.13
 ```
 
 Here, `qupath-pytorch` is the name of the environment (you can call it something else).
@@ -146,16 +148,17 @@ Then you should *activate* the environment
 mamba activate qupath-pytorch
 ```
 
-At this point, you really only need to install CUDA and cuDNN -- but to make things easier, we'll install PyTorch entirely, and rely upon mamba to figure out the necessary dependencies.
-This increases the chances we end up with a working combination
+At this point, you really only need to install CUDA and cuDNN -- but to make things easier, we'll install PyTorch entirely, and rely on pip to figure out the necessary dependencies.
+This increases the chances we end up with a working combination.
 
 To do this, check the [PyTorch + CUDA combination required for QuPath](gpu-versions-pytorch) and then the [PyTorch installation instructions](https://pytorch.org/get-started/previous-versions/) -- replacing `conda` with `mamba` if you like.
 
 
-If you want PyTorch 2.5.1:
+If you want PyTorch 2.7.1:
 
 ```sh
-mamba install pytorch==2.5.1 torchvision torchaudio pytorch-cuda=12.4 -c pytorch -c nvidia
+mamba install pip
+pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu128
 ```
 
 You can now [verify your PyTorch installation](https://pytorch.org/get-started/locally/#mac-verification) if needed.
@@ -223,12 +226,12 @@ If all has gone well, you should see something like this:
 INFO: PyTorch graph executor optimizer is enabled, this may impact your inference latency and throughput. See: https://docs.djl.ai/docs/development/inference_performance_optimization.html#graph-executor-optimization
 INFO: Number of inter-op threads is 4
 INFO: Number of intra-op threads is 4
-INFO: PyTorch:2.5.1, capabilities: [
+INFO: PyTorch:2.7.1, capabilities: [
       CUDA,
       CUDNN,
       OPENMP,
       MKL,
       MKLDNN,
 ]
-PyTorch Library: C:\Users\yourname\.djl.ai\pytorch\2.5.1-cu124-win-x86_64
+PyTorch Library: C:\Users\yourname\.djl.ai\pytorch\2.7.1-cu128-win-x86_64
 ```
