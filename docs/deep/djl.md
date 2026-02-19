@@ -175,7 +175,7 @@ Object detection of holidaying cows using DJL model zoo (PyTorch SSD)
 :::{admonition} Instance segmentation
 :class: tip
 
-The same script can be used for an instance segmentation model - but there currently aren't any in the model zoos available to QuPath.
+The same script can be used for an instance segmentation model. Use `DjlZoo.listInstanceSegmentationModels()` to access all the artifacts available for instance segmentation.
 :::
 
 
