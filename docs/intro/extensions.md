@@ -24,8 +24,9 @@ Some key extensions from the QuPath team are:
 
 You can also find extensions developed outside of the QuPath team:
 
-* On the [user forum](https://forum.image.sc/tag/qupath).
+* On the [user forum](https://forum.image.sc/tag/qupath), especially by searching the tag [qupath-catalog](https://forum.image.sc/tag/qupath-catalog).
 * By searching [for QuPath on GitHub](https://github.com/search?q=qupath).
+:::
 
 :::{Note}
 Extensions are installed in the QuPath user directory.
@@ -69,9 +70,6 @@ If you are a QuPath extension developer and want to create your own catalog, you
 Sometimes, the extension you want to install is not present in a catalog.
 In that case, see the [Managing extensions without the extension manager](managing-without-manager) section.
 
-:::{Tip}
-You can find some useful community-provided catalogs on the [image.sc forum](https://forum.image.sc/tag/qupath-catalog).
-:::
 
 ### Installing extensions
 
@@ -132,7 +130,7 @@ You should then restart QuPath.
 Some extensions are not present in any catalog. In that case, you will have to manually manage them.
 
 
-### Installing extensions
+### Installing extensions manually
 
 Extensions are usually hosted on a GitHub repository.
 There, you will find instructions on how to install the extension.
@@ -146,7 +144,7 @@ Nothing prevents you from manually installing an extension that is already insta
 :::
 
 
-### Removing extensions
+### Removing extensions manually
 
 Once you have manually installed an extension, it should appear in the extension manager (which can be open by clicking on {menuselection}`Extensions --> Manage extensions` in QuPath) at the bottom after all catalogs.
 
@@ -161,7 +159,7 @@ You should then restart QuPath.
 Alternatively, you can delete the jar file of the extension from your QuPath user directory.
 
 
-### Updating extensions
+### Updating extensions manually
 
 Manually installed extensions can't be easily updated.
 You have to remove them and install them again with the newer version.
