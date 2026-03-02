@@ -175,7 +175,7 @@ Object detection of holidaying cows using DJL model zoo (PyTorch SSD)
 :::{admonition} Instance segmentation
 :class: tip
 
-The same script can be used for an instance segmentation model. Use `DjlZoo.listInstanceSegmentationModels()` to access all the artifacts available for instance segmentation.
+A similar script can be used for an instance segmentation model, by accessing available models with `DjlZoo.listInstanceSegmentationModels()`.
 :::
 
 
