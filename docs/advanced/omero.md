@@ -408,6 +408,7 @@ Some sample scripts have been created to show the basic features of the extensio
 
 - In [this folder](https://github.com/qupath/qupath-extension-omero/tree/main/src/main/resources/qupath/ext/omero/gui/sample-scripts).
 
+Detailed Javadocs covering all public fields and methods can be viewed in QuPath's built-in Javadoc viewer by clicking on {menuselection}`Help --> Show Javadocs` within QuPath's script editor. They are also available online at: https://qupath.github.io/qupath-extension-omero/stable/
 
 (migrating)=
 ## Migrating from QuPath Web OMERO extension
