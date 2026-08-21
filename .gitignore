@@ -9,3 +9,4 @@ venv
 /bin
 docs/_build/
 env/
+.venv

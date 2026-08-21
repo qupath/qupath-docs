@@ -20,7 +20,16 @@ QuPath's OMERO extension
 
 ## Installing the extension
 
-The installation instructions can be found on the [GitHub page of the extension](https://github.com/qupath/qupath-extension-omero?tab=readme-ov-file#installing).
+To install the OMERO extension, open the QuPath [extension manager](#qupath-extensions) and install the extension from there.
+
+If you haven't installed any extensions before, you'll be prompted to select a QuPath user directory.
+The extension will then be copied to a location inside that directory.
+
+You might then need to restart QuPath (but not your computer).
+
+If you want to use the ICE pixel API (see the [documentation](#opening-omero-images)), you need to install the OMERO Java dependencies. This can be done by clicking on *Install optional dependencies* when installing the extension.
+
+Full installation instructions can be found on the [GitHub page of the extension](https://github.com/qupath/qupath-extension-omero?tab=readme-ov-file#installing).
 
 
 (omero-browsing)=
@@ -73,10 +82,11 @@ The advanced search
 
 
 ## Opening OMERO images
+(opening-omero-images)=
 
 Opening OMERO images can be done in three ways:
 
-- {menuselection}`File --> Open URI...` (Shortcut {kbd}`Ctrl + Shift + O`) and enter the URL of your OMERO image.
+- {menuselection}`File --> Open URI...` (Shortcut {kbd}`Ctrl+Shift+O`) and enter the URL of your OMERO image.
 - {menuselection}`File --> Project --> Add images` and click `Input URL` or `From clipboard`.
 - Via the OMERO browser (see [Browsing an OMERO server](omero-browsing)).
 
