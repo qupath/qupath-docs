@@ -293,7 +293,7 @@ QuPath will do this automatically if needed.
 :::
 
 :::{tip}
-For brightfield RGB images with two stains only, the {menuselection}`Analyze --> Preprocess --> Estimate stain vectors` command gives a computer-assisted way to determine the stain vectors.
+For brightfield RGB images with two stains only, the {menuselection}`Analyze --> Estimate stain vectors` command gives a computer-assisted way to determine the stain vectors.
 :::
 
 :::{caution}

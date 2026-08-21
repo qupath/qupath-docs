@@ -146,7 +146,7 @@ This can be difficult (or impossible) to achieve exactly.
 This is not necessarily very problematic in practice *if you heed the warnings not to interpret 'intensity' values generated from color deconvolution quantitatively*.
 However, one may naturally wish to be as accurate as possible.
 
-In cases where there are *precisely two* stains involved, {menuselection}`Analyze --> Preprocessing --> Estimate stain vectors` can be used to help improve the stain separation.
+In cases where there are *precisely two* stains involved, {menuselection}`Analyze --> Estimate stain vectors` can be used to help improve the stain separation.
 
 #### Find a representative region
 
@@ -168,7 +168,7 @@ In other words, you should try to choose a small region containing all the infor
 
 #### Run *Estimate stain vectors*
 
-Now you are ready to actually run the {menuselection}`Analyze --> Preprocessing --> Estimate stain vectors` command.
+Now you are ready to actually run the {menuselection}`Analyze --> Estimate stain vectors` command.
 
 If the background contained in the region you have drawn does not match with the background values QuPath is currently using, it will prompt you whether you want to update the stored values.
 
