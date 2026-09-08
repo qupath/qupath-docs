@@ -1,7 +1,18 @@
 (omero-extension)=
 # OMERO
 
-This page describes the [QuPath OMERO extension](https://github.com/qupath/qupath-extension-omero), which is the current extension created and maintained by the QuPath team. It's compatible with QuPath v0.6.0 and later. It has been completely rewritten to provide features and flexibility, including the ability to retrieve pixel values - including raw values - in different ways, depending upon how the OMERO server is set up (see the [Retrieving pixel values](pixel-values) section).
+
+OMERO is a popular, open-source image management solution that enables images to be stored on a central server and viewed through a web browser.
+It is installed in institutions worldwide and is a key technology powering the [Image Data Resource (IDR)](https://idr.openmicroscopy.org) --- a major repository currently hosting over 400 TB of published imaging data.
+OMERO also supports whole slide and multiplexed images, making it a natural fit for many QuPath use cases.
+
+This page describes the [QuPath OMERO extension](https://github.com/qupath/qupath-extension-omero), which is the current extension for using OMERO with QuPath, created and maintained by the QuPath team.
+It's compatible with QuPath v0.6.0 and later.
+It has been designed to provide features and flexibility, including the ability to retrieve pixel values in different ways (including raw pixel values), depending upon how the OMERO server is set up (see the [Retrieving pixel values](pixel-values) section).
+OMERO also allows users to collaboratively share annotations and other regions of interest.
+The QuPath OMERO extension bridges the gap between OMERO and QuPath, making it possible to apply QuPath analysis to images hosted in OMERO.
+By efficiently accessing only the required pixels and metadata, the extension avoids the need to download and duplicate entire datasets.
+
 
 :::{caution}
 Two other OMERO extensions exist:
