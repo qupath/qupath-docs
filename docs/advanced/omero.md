@@ -9,6 +9,7 @@ OMERO also supports whole slide and multiplexed images, making it a natural fit 
 This page describes the [QuPath OMERO extension](https://github.com/qupath/qupath-extension-omero), which is the current extension for using OMERO with QuPath, created and maintained by the QuPath team.
 It's compatible with QuPath v0.6.0 and later.
 It has been designed to provide features and flexibility, including the ability to retrieve pixel values in different ways (including raw pixel values), depending upon how the OMERO server is set up (see the [Retrieving pixel values](pixel-values) section).
+OMERO also allows users to collaboratively share annotations and other regions of interest.
 The QuPath OMERO extension bridges the gap between OMERO and QuPath, making it possible to apply QuPath analysis to images hosted in OMERO.
 By efficiently accessing only the required pixels and metadata, the extension avoids the need to download and duplicate entire datasets.
 
